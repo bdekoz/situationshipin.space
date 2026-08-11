@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "portal_build": "izzi-review-2026-08-11.6",
-  "generated_at": "2026-08-11T09:52:54.373Z",
+  "portal_build": "izzi-review-2026-08-11.7",
+  "generated_at": "2026-08-11T10:08:50.947Z",
   "portal_repository": "bdekoz/situationshipin.space",
   "portal_source_commit": "219a9b7f0891998c1525c94fa15b43c490b5d79f",
   "izzi_repository": "bdekoz/izzi",
@@ -11,10 +11,10 @@
   "baseline_state": "NOT-PROMOTED",
   "training_conversion_transfer_state": "NOT-SHARED",
   "artifact_count": 250,
-  "artifact_payload_bytes": 14180748,
+  "artifact_payload_bytes": 13118192,
   "frame_preview_count": 7,
   "sampled_frame_count": 70,
-  "source_media_bytes_represented": 368946741,
+  "source_media_bytes_represented": 364635046,
   "source_image_count": 234,
   "source_image_bytes_represented": 243747547,
   "aesthetic_collection_counts": {
@@ -46,7 +46,7 @@
     },
     {
       "path": "data/review-items.json",
-      "sha256": "7502773819cf9fa92c61a19fd8549c3917a4ec283b4fcaf14fd438b4b76b3053"
+      "sha256": "59552d54006bbc2be55b0927fa6477f0791a9a10021470049aeedbd980db106b"
     },
     {
       "path": "scripts/check-review-site.mjs",
@@ -70,7 +70,7 @@
     }
   ],
   "artifact_inventory": "data/review-items.json",
-  "catalog_sha256": "7502773819cf9fa92c61a19fd8549c3917a4ec283b4fcaf14fd438b4b76b3053",
+  "catalog_sha256": "59552d54006bbc2be55b0927fa6477f0791a9a10021470049aeedbd980db106b",
   "notes": [
     "The catalog binds every published derivative to an Izzi source path and SHA-256.",
     "Four source MKVs are represented by forty independently reviewable JPEG samples and four portrait filmstrips; none of the MKVs is copied.",
