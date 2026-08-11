@@ -1,0 +1,156 @@
+{
+  "filmstrip": {
+    "bytes": 307319,
+    "height": 1920,
+    "path": "4d-guilloche-episode-08.filmstrip.jpg",
+    "sha256": "2c208135d8ca8a008bf27959f4fa60465344a195ebfb1d1afe7899ed17ac8ce3",
+    "width": 1080
+  },
+  "frames": [
+    {
+      "bytes": 13815,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 1,
+      "path": "frame-01.jpg",
+      "sha256": "e6d8ed0f40f11063c5695c6ba272b518e15fd56a304cab0d757ff9484866177e",
+      "time_seconds": 0.0,
+      "width": 216
+    },
+    {
+      "bytes": 12840,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 2,
+      "path": "frame-02.jpg",
+      "sha256": "d8f01438b0029231df8db60106cf3b4ca87e2b757d2d1b9a3aa1513a6efe027c",
+      "time_seconds": 26.662963,
+      "width": 216
+    },
+    {
+      "bytes": 13264,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 3,
+      "path": "frame-03.jpg",
+      "sha256": "45e5c42a09721a085cdb9352f65dc04662514332819a462896fc2abe0c44ad3e",
+      "time_seconds": 53.325926,
+      "width": 216
+    },
+    {
+      "bytes": 23121,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 4,
+      "path": "frame-04.jpg",
+      "sha256": "21e615ccd8aab0303d3681da630519e3d604d3fe706f9233095d65fd0310b7d8",
+      "time_seconds": 79.988889,
+      "width": 216
+    },
+    {
+      "bytes": 28374,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 5,
+      "path": "frame-05.jpg",
+      "sha256": "98f1a8c502b907a2a10dab2112ce79f37a4f6e8d5542f5f4bebbacf9ab1516be",
+      "time_seconds": 106.651852,
+      "width": 216
+    },
+    {
+      "bytes": 11715,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 6,
+      "path": "frame-06.jpg",
+      "sha256": "9d600184cdffa8cf9a584055bfbb08d36bf1ef7e5604ea7c3d3e984d106f6c8a",
+      "time_seconds": 133.314815,
+      "width": 216
+    },
+    {
+      "bytes": 12774,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 7,
+      "path": "frame-07.jpg",
+      "sha256": "e47712fbbc6e1e014b1d2730a8d370f0d6fea2a0b5be3534816f518c1382326f",
+      "time_seconds": 159.977778,
+      "width": 216
+    },
+    {
+      "bytes": 21557,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 8,
+      "path": "frame-08.jpg",
+      "sha256": "c9c9317f8d583e96a32e74002cb2e109a4ea14bb62abb92809a52a8ee7d667e4",
+      "time_seconds": 186.640741,
+      "width": 216
+    },
+    {
+      "bytes": 24749,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 9,
+      "path": "frame-09.jpg",
+      "sha256": "36dbfeddba810f0ce99ed2699ead10454922c80bf4c844ca561c921b6557139d",
+      "time_seconds": 213.303704,
+      "width": 216
+    },
+    {
+      "bytes": 25019,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 10,
+      "path": "frame-10.jpg",
+      "sha256": "899c8a236e569d6284d2232293f1dc7a3b55dc653d8ad14c1543d1b4331f5783",
+      "time_seconds": 239.966667,
+      "width": 216
+    }
+  ],
+  "generated_at": "2026-08-10T20:16:36-07:00",
+  "review_scope": "TEN-FRAME-PREVIEW-ONLY",
+  "review_semantics": {
+    "clip_review": "UNREVIEWED",
+    "frame_review": "UNREVIEWED",
+    "full_temporal_acceptance": "NOT-INFERRED"
+  },
+  "sampling": {
+    "frame_count": 10,
+    "method": "EVENLY-SPACED-START-TO-SAFE-END",
+    "safe_end_seconds": 239.966667,
+    "times_seconds": [
+      0.0,
+      26.662963,
+      53.325926,
+      79.988889,
+      106.651852,
+      133.314815,
+      159.977778,
+      186.640741,
+      213.303704,
+      239.966667
+    ]
+  },
+  "schema_version": "izzi-review-filmstrip-1",
+  "source_media": {
+    "bytes": 147575457,
+    "codec": "h264",
+    "duration_seconds": 240.0,
+    "frame_rate": "30/1",
+    "height": 1920,
+    "path": "outputs/review/feedback/visual/4d-synthesis/round-01/guilloche/episode-08.mkv",
+    "pixel_format": "yuv420p",
+    "published": false,
+    "sha256": "ed8baebbeb394ee85d0abfd5e337856f76765602631ddaf16313637e55b06e19",
+    "width": 1080
+  },
+  "stable_id": "4d-guilloche-episode-08",
+  "title": "4D guilloche episode 08",
+  "tools": {
+    "ffmpeg": "ffmpeg version 7.1.5 Copyright (c) 2000-2026 the FFmpeg developers",
+    "ffprobe": "ffprobe version 7.1.5 Copyright (c) 2007-2026 the FFmpeg developers",
+    "font": "/home/bkoz/.fonts/atkinson_hyperlegible.2026/Atkinson-Hyperlegible-Regular-102.otf",
+    "pillow": "11.3.0"
+  }
+}

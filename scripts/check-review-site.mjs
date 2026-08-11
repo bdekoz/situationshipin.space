@@ -1,0 +1,229 @@
+#!/usr/bin/env node
+
+import { createHash } from "node:crypto";
+import { readdir, readFile, stat } from "node:fs/promises";
+import { dirname, extname, resolve, sep } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
+const catalogPath = resolve(repositoryRoot, "data/review-items.json");
+const maximumFileBytes = 1024 * 1024;
+const maximumPayloadBytes = 8 * 1024 * 1024;
+const allowedExtensions = new Set([".png", ".jpg", ".jpeg", ".svg", ".html", ".json"]);
+const forbiddenExtensions = new Set([".mkv", ".mp4", ".wav", ".mp3", ".mov"]);
+
+let failures = 0;
+
+function fail(message) {
+  failures += 1;
+  console.error(`[FAIL] ${message}`);
+}
+
+function pass(message) {
+  console.log(`[PASS] ${message}`);
+}
+
+function withinRepository(path) {
+  return path === repositoryRoot || path.startsWith(`${repositoryRoot}${sep}`);
+}
+
+function readPngDimensions(buffer) {
+  const signature = "89504e470d0a1a0a";
+  if (buffer.length < 24 || buffer.subarray(0, 8).toString("hex") !== signature) {
+    return null;
+  }
+  return { width: buffer.readUInt32BE(16), height: buffer.readUInt32BE(20) };
+}
+
+function readJpegDimensions(buffer) {
+  if (buffer.length < 4 || buffer[0] !== 0xff || buffer[1] !== 0xd8) return null;
+  let offset = 2;
+  while (offset + 8 < buffer.length) {
+    if (buffer[offset] !== 0xff) {
+      offset += 1;
+      continue;
+    }
+    const marker = buffer[offset + 1];
+    if ([0xc0, 0xc1, 0xc2, 0xc3, 0xc5, 0xc6, 0xc7, 0xc9, 0xca, 0xcb, 0xcd, 0xce, 0xcf].includes(marker)) {
+      return { height: buffer.readUInt16BE(offset + 5), width: buffer.readUInt16BE(offset + 7) };
+    }
+    if (marker === 0xd8 || marker === 0xd9 || (marker >= 0xd0 && marker <= 0xd7)) {
+      offset += 2;
+      continue;
+    }
+    const length = buffer.readUInt16BE(offset + 2);
+    if (length < 2) return null;
+    offset += 2 + length;
+  }
+  return null;
+}
+
+async function recursiveFiles(root) {
+  const result = [];
+  for (const entry of await readdir(root, { withFileTypes: true })) {
+    const path = resolve(root, entry.name);
+    if (entry.isDirectory()) result.push(...await recursiveFiles(path));
+    else if (entry.isFile()) result.push(path);
+  }
+  return result;
+}
+
+let catalog;
+try {
+  catalog = JSON.parse(await readFile(catalogPath, "utf8"));
+  pass("catalog JSON parses");
+} catch (error) {
+  fail(`catalog cannot be parsed: ${error.message}`);
+  process.exitCode = 1;
+  process.exit();
+}
+
+if (catalog.schema_version !== "1.0" || !Array.isArray(catalog.items)) {
+  fail("catalog schema_version must be 1.0 and items must be an array");
+}
+
+const ids = new Set();
+let payloadBytes = 0;
+
+for (const item of catalog.items) {
+  if (!item.artifact_id || ids.has(item.artifact_id)) {
+    fail(`artifact ID is missing or duplicated: ${item.artifact_id || "(missing)"}`);
+  }
+  ids.add(item.artifact_id);
+
+  const extension = extname(item.published_path).toLowerCase();
+  if (!allowedExtensions.has(extension) || forbiddenExtensions.has(extension)) {
+    fail(`${item.artifact_id} uses disallowed media type ${extension || "(none)"}`);
+  }
+  if (!item.published_path.startsWith("review/")) {
+    fail(`${item.artifact_id} is outside the bounded review directory`);
+  }
+
+  const artifactPath = resolve(repositoryRoot, item.published_path);
+  if (!withinRepository(artifactPath)) {
+    fail(`${item.artifact_id} resolves outside the repository`);
+    continue;
+  }
+
+  try {
+    const artifactStat = await stat(artifactPath);
+    const bytes = await readFile(artifactPath);
+    const hash = createHash("sha256").update(bytes).digest("hex");
+    payloadBytes += artifactStat.size;
+
+    if (artifactStat.size !== item.bytes) {
+      fail(`${item.artifact_id} byte count differs from catalog`);
+    }
+    if (artifactStat.size > maximumFileBytes) {
+      fail(`${item.artifact_id} exceeds the 1 MiB prototype object budget`);
+    }
+    if (hash !== item.sha256) {
+      fail(`${item.artifact_id} SHA-256 differs from catalog`);
+    }
+    if (extension === ".png") {
+      const dimensions = readPngDimensions(bytes);
+      if (!dimensions || dimensions.width !== item.width || dimensions.height !== item.height) {
+        fail(`${item.artifact_id} dimensions differ from catalog`);
+      }
+    }
+    if (extension === ".jpg" || extension === ".jpeg") {
+      const dimensions = readJpegDimensions(bytes);
+      if (!dimensions || dimensions.width !== item.width || dimensions.height !== item.height) {
+        fail(`${item.artifact_id} JPEG dimensions differ from catalog`);
+      }
+    }
+
+    if (item.frame_manifest_path) {
+      const manifestPath = resolve(repositoryRoot, item.frame_manifest_path);
+      const manifest = JSON.parse(await readFile(manifestPath, "utf8"));
+      if (manifest.schema_version !== "izzi-review-filmstrip-1"
+          || manifest.filmstrip.sha256 !== item.sha256
+          || manifest.source_media.sha256 !== item.source_media?.sha256
+          || manifest.source_media.path !== item.source_path
+          || manifest.source_media.published !== false) {
+        fail(`${item.artifact_id} frame manifest lineage differs from catalog`);
+      }
+      if (!Array.isArray(manifest.frames) || manifest.frames.length !== 10) {
+        fail(`${item.artifact_id} does not have exactly ten sampled frames`);
+      } else {
+        let priorTime = -1;
+        for (const [index, frame] of manifest.frames.entries()) {
+          if (frame.ordinal !== index + 1 || frame.time_seconds <= priorTime) {
+            fail(`${item.artifact_id} frame order or sample time is invalid`);
+          }
+          priorTime = frame.time_seconds;
+          const framePath = resolve(dirname(manifestPath), frame.path);
+          if (!withinRepository(framePath)) {
+            fail(`${item.artifact_id} frame ${frame.ordinal} escapes the repository`);
+            continue;
+          }
+          const frameBytes = await readFile(framePath);
+          const frameStat = await stat(framePath);
+          const frameHash = createHash("sha256").update(frameBytes).digest("hex");
+          const dimensions = readJpegDimensions(frameBytes);
+          payloadBytes += frameStat.size;
+          if (frameStat.size !== frame.bytes || frameHash !== frame.sha256) {
+            fail(`${item.artifact_id} frame ${frame.ordinal} bytes or hash differs`);
+          }
+          if (!dimensions || dimensions.width !== frame.width || dimensions.height !== frame.height) {
+            fail(`${item.artifact_id} frame ${frame.ordinal} dimensions differ`);
+          }
+          if (frameStat.size > maximumFileBytes) {
+            fail(`${item.artifact_id} frame ${frame.ordinal} exceeds the object budget`);
+          }
+        }
+      }
+    }
+  } catch (error) {
+    fail(`${item.artifact_id} cannot be inspected: ${error.message}`);
+  }
+}
+
+for (const path of await recursiveFiles(resolve(repositoryRoot, "review"))) {
+  if (forbiddenExtensions.has(extname(path).toLowerCase())) {
+    fail(`source media was copied into the public review tree: ${path}`);
+  }
+}
+
+if (payloadBytes > maximumPayloadBytes) {
+  fail(`artifact payload exceeds 8 MiB: ${payloadBytes} bytes`);
+} else {
+  pass(`artifact payload is bounded: ${payloadBytes} bytes`);
+}
+
+const index = await readFile(resolve(repositoryRoot, "index.html"), "utf8");
+const script = await readFile(resolve(repositoryRoot, "assets/js/review.js"), "utf8");
+const requiredIds = [
+  "review-catalog", "artifact-grid", "artifact-template", "filter-form",
+  "download-feedback", "import-feedback", "issue-dialog", "reset-dialog"
+];
+for (const id of requiredIds) {
+  if (!index.includes(`id="${id}"`)) {
+    fail(`index.html is missing required ID ${id}`);
+  }
+}
+
+if (/<(?:script|link)[^>]+(?:src|href)=["']https?:\/\//i.test(index)) {
+  fail("index.html loads a remote script or stylesheet");
+} else {
+  pass("site code has no remote script or stylesheet dependency");
+}
+
+if (!index.includes("public GitHub issue") || !script.includes("public_submission_acknowledged")) {
+  fail("public issue disclosure or acknowledgement evidence is missing");
+}
+
+const forbiddenTerms = ["SEEDANCE_KEY", "BEGIN OPENSSH PRIVATE KEY", "aws_access_key_id"];
+for (const term of forbiddenTerms) {
+  if (index.includes(term) || script.includes(term) || JSON.stringify(catalog).includes(term)) {
+    fail(`public site content contains forbidden credential marker ${term}`);
+  }
+}
+
+if (failures === 0) {
+  pass(`${catalog.items.length} unique catalog items verified`);
+  console.log("Review-site validation passed.");
+} else {
+  console.error(`Review-site validation failed with ${failures} problem(s).`);
+  process.exitCode = 1;
+}

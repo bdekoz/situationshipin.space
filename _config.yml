@@ -1,6 +1,6 @@
-title: " "
-theme: jekyll-theme-minimal
-show_downloads: false
-include:
-  - _includes
-
+title: "situationshipin.space — Izzi artifact review"
+description: "A bounded public review surface for selected Izzi visual experiments."
+url: "https://situationshipin.space"
+lang: "en-US"
+exclude:
+  - README.md

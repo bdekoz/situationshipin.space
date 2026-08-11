@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark light">
+    <meta name="description" content="A small public review surface for selected Izzi visual experiments.">
+    <title>situationshipin.space — Izzi artifact review</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="assets/css/review.css">
+    <script src="assets/js/review.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#review-catalog">Skip to review catalog</a>
+
+    <header class="site-header">
+      <div class="wordmark" aria-label="situationship in space">
+        <span aria-hidden="true">-[{0-0}]-</span>
+        <span>situationshipin.space</span>
+      </div>
+      <p class="eyebrow">public canary · izzi visual review</p>
+      <h1>Look closely.<br>Leave a useful trace.</h1>
+      <p class="lede">
+        Ten bounded proofs from Izzi's current visual experiments: six small
+        artifacts and four ten-frame previews of larger MKVs. Review state is
+        saved only in this browser until you download it or explicitly open a
+        public GitHub issue.
+      </p>
+      <p class="boundary" role="note">
+        <strong>Current is not accepted.</strong> These previews are candidates,
+        not promoted baselines. Filmstrips do not replace review of full motion.
+      </p>
+    </header>
+
+    <main id="review-catalog">
+      <section class="summary" aria-labelledby="summary-title">
+        <div>
+          <p class="eyebrow">prototype build</p>
+          <h2 id="summary-title">A bounded first field</h2>
+        </div>
+        <dl class="metrics" id="catalog-metrics">
+          <div><dt>Proofs</dt><dd id="metric-items">—</dd></div>
+          <div><dt>Families</dt><dd id="metric-families">—</dd></div>
+          <div><dt>Payload</dt><dd id="metric-bytes">—</dd></div>
+          <div><dt>Reviewed here</dt><dd id="metric-reviewed">0</dd></div>
+        </dl>
+      </section>
+
+      <section class="controls" aria-labelledby="filter-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">find and compare</p>
+            <h2 id="filter-title">Review controls</h2>
+          </div>
+          <p id="storage-status" class="status-note" role="status" aria-live="polite">
+            Checking local draft storage…
+          </p>
+        </div>
+
+        <form id="filter-form" class="filter-grid">
+          <label>
+            Search
+            <input id="search-filter" type="search" autocomplete="off"
+              placeholder="Title, family, source…">
+          </label>
+          <label>
+            Family
+            <select id="family-filter">
+              <option value="all">All families</option>
+            </select>
+          </label>
+          <label>
+            Generation class
+            <select id="class-filter">
+              <option value="all">All classes</option>
+            </select>
+          </label>
+          <label>
+            Decision
+            <select id="decision-filter">
+              <option value="all">All decisions</option>
+              <option value="UNREVIEWED">Unreviewed</option>
+              <option value="KEEP">Keep</option>
+              <option value="KEEP-PARTS">Keep parts</option>
+              <option value="MORE-LIKE">More like this</option>
+              <option value="REVISE">Revise</option>
+              <option value="REJECT">Reject</option>
+              <option value="DISCUSS">Discuss</option>
+            </select>
+          </label>
+          <label class="checkbox-label">
+            <input id="hide-images" type="checkbox">
+            Compact text view
+          </label>
+          <button class="button button-secondary" type="reset">Clear filters</button>
+        </form>
+      </section>
+
+      <section aria-labelledby="results-title">
+        <div class="section-heading results-heading">
+          <div>
+            <p class="eyebrow">selected izzi outputs</p>
+            <h2 id="results-title">Proofs for inspection</h2>
+          </div>
+          <p id="result-count" class="result-count" role="status" aria-live="polite">Loading…</p>
+        </div>
+
+        <div id="catalog-error" class="error-panel" role="alert" hidden></div>
+        <div id="artifact-grid" class="artifact-grid" aria-busy="true"></div>
+        <p id="empty-state" class="empty-state" hidden>
+          Nothing matches those filters. Clear a filter and try again.
+        </p>
+      </section>
+
+      <section class="handoff" aria-labelledby="handoff-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">you control the handoff</p>
+            <h2 id="handoff-title">Export or submit feedback</h2>
+          </div>
+          <p id="feedback-count" class="result-count">No decisions yet</p>
+        </div>
+
+        <div class="handoff-grid">
+          <label>
+            Reviewer label <span class="optional">(optional)</span>
+            <input id="reviewer-label" type="text" maxlength="80"
+              autocomplete="name" placeholder="Name, initials, or studio session">
+          </label>
+          <div class="handoff-actions">
+            <button id="download-feedback" class="button" type="button" disabled>
+              Download review JSON
+            </button>
+            <label class="button button-secondary file-button" for="import-feedback">
+              Import review JSON
+            </label>
+            <input id="import-feedback" class="visually-hidden" type="file"
+              accept="application/json,.json">
+            <button id="open-issue-dialog" class="button button-secondary" type="button" disabled>
+              Prepare public GitHub issue
+            </button>
+            <button id="reset-feedback" class="button button-danger" type="button" disabled>
+              Reset local feedback
+            </button>
+          </div>
+        </div>
+        <p class="fine-print">
+          Drafts stay in this browser. Clearing site data may remove an
+          unexported draft. Downloaded JSON can be returned privately; GitHub
+          issues are public.
+        </p>
+        <p id="handoff-status" class="status-note" role="status" aria-live="polite"></p>
+      </section>
+
+      <section class="method" aria-labelledby="method-title">
+        <p class="eyebrow">how to read this page</p>
+        <h2 id="method-title">Technical state and human judgment stay separate</h2>
+        <div class="method-grid">
+          <article>
+            <span class="step" aria-hidden="true">01</span>
+            <h3>Inspect</h3>
+            <p>Open the full proof. Filmstrips are previews of temporal work, not the movie itself.</p>
+          </article>
+          <article>
+            <span class="step" aria-hidden="true">02</span>
+            <h3>Decide</h3>
+            <p>Keep, keep parts, ask for more, revise, reject, or mark it for discussion.</p>
+          </article>
+          <article>
+            <span class="step" aria-hidden="true">03</span>
+            <h3>Describe</h3>
+            <p>Tags make patterns comparable. Notes preserve the part that mattered to you.</p>
+          </article>
+          <article>
+            <span class="step" aria-hidden="true">04</span>
+            <h3>Hand off</h3>
+            <p>Download a private JSON package or deliberately prepare a public issue.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Built as a small public canary for
+        <a href="https://github.com/bdekoz/izzi">Izzi</a>.
+        No analytics, account token, autoplay, or source episode media.
+      </p>
+      <p><a href="data/review-items.json">Catalog JSON</a> · <a href="data/build-manifest.json">Build manifest</a></p>
+    </footer>
+
+    <dialog id="issue-dialog" aria-labelledby="issue-title">
+      <form method="dialog">
+        <div class="dialog-header">
+          <p class="eyebrow">explicit public handoff</p>
+          <h2 id="issue-title">Prepare a public GitHub issue</h2>
+        </div>
+        <p>
+          The next step opens GitHub with your reviewed artifact IDs, decisions,
+          tags, and notes in the issue body. Anyone can read a submitted issue.
+          Nothing is submitted until you review and press GitHub's final button.
+        </p>
+        <label class="checkbox-label public-check">
+          <input id="public-acknowledgement" type="checkbox">
+          I understand that submitting the prepared issue will make this feedback public.
+        </label>
+        <div class="dialog-actions">
+          <button class="button button-secondary" value="cancel">Cancel</button>
+          <button id="continue-to-github" class="button" type="button" disabled>
+            Continue to GitHub
+          </button>
+        </div>
+      </form>
+    </dialog>
+
+    <dialog id="reset-dialog" aria-labelledby="reset-title">
+      <form method="dialog">
+        <h2 id="reset-title">Reset this browser's review?</h2>
+        <p>
+          This removes all local decisions, tags, notes, and the reviewer label
+          for this portal build. Download first if you want a recoverable copy.
+        </p>
+        <div class="dialog-actions">
+          <button class="button button-secondary" value="cancel">Cancel</button>
+          <button id="confirm-reset" class="button button-danger" type="button">Reset local review</button>
+        </div>
+      </form>
+    </dialog>
+
+    <template id="artifact-template">
+      <article class="artifact-card">
+        <a class="artifact-image-link" target="_blank" rel="noopener">
+          <img class="artifact-image" loading="lazy" decoding="async" width="1080" height="1920">
+          <span class="open-label">Open full proof <span aria-hidden="true">↗</span></span>
+        </a>
+        <div class="artifact-body">
+          <div class="artifact-kicker"></div>
+          <h3 class="artifact-title"></h3>
+          <p class="artifact-description"></p>
+          <div class="state-row"></div>
+          <details class="provenance">
+            <summary>Provenance and limits</summary>
+            <dl class="artifact-metadata"></dl>
+          </details>
+          <section class="frame-review" hidden>
+            <h4>Review frames 1–10</h4>
+            <p class="frame-review-note">
+              Each sample has its own decision and note. Frame feedback does
+              not silently become acceptance of the full clip.
+            </p>
+            <div class="frame-grid"></div>
+          </section>
+          <fieldset class="decision-fieldset">
+            <legend>Clip or proof decision</legend>
+            <div class="decision-options"></div>
+          </fieldset>
+          <fieldset class="tag-fieldset">
+            <legend>What shaped your response? <span class="optional">(optional)</span></legend>
+            <div class="tag-options"></div>
+          </fieldset>
+          <label class="note-label">
+            Note <span class="optional">(optional)</span>
+            <textarea rows="3" maxlength="1200" placeholder="Keep the useful part, name the problem, or ask for a direction…"></textarea>
+          </label>
+          <p class="save-state" role="status" aria-live="polite">Not reviewed</p>
+        </div>
+      </article>
+    </template>
+  </body>
+</html>

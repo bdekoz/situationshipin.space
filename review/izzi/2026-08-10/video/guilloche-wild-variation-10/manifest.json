@@ -1,0 +1,156 @@
+{
+  "filmstrip": {
+    "bytes": 440249,
+    "height": 1920,
+    "path": "guilloche-wild-variation-10.filmstrip.jpg",
+    "sha256": "23a3788470fc42bb72f4f4f40ddbfa1d7b56b8ad60d11396c7bef8d80714ac3d",
+    "width": 1080
+  },
+  "frames": [
+    {
+      "bytes": 30146,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 1,
+      "path": "frame-01.jpg",
+      "sha256": "a1782341d4bb2353ac9a36c21cada2662e26a11d56c7e3a45a35ae0e10c73194",
+      "time_seconds": 0.0,
+      "width": 216
+    },
+    {
+      "bytes": 30138,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 2,
+      "path": "frame-02.jpg",
+      "sha256": "96b974e2afb0a18463a75799e29fb5b8fe0a24e1e0865effb619204dc8d6a4ae",
+      "time_seconds": 0.217593,
+      "width": 216
+    },
+    {
+      "bytes": 30401,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 3,
+      "path": "frame-03.jpg",
+      "sha256": "762cfb7762dcd32a421d01ff85e8a7e93bae6d3cfbd47e9cc06fea37e1395117",
+      "time_seconds": 0.435185,
+      "width": 216
+    },
+    {
+      "bytes": 30293,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 4,
+      "path": "frame-04.jpg",
+      "sha256": "9b1b5bdb49ac9fa32d8f065837698db515c15b7fca081ec721b182b09ea20a25",
+      "time_seconds": 0.652778,
+      "width": 216
+    },
+    {
+      "bytes": 30413,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 5,
+      "path": "frame-05.jpg",
+      "sha256": "54c1c665b49613d4656bfcc33542364e9394e006c4301a36b558b23c6d5f1b4a",
+      "time_seconds": 0.87037,
+      "width": 216
+    },
+    {
+      "bytes": 30065,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 6,
+      "path": "frame-06.jpg",
+      "sha256": "d3cfb8f872b7cc3dd657af5242bbe45b26092b10bbb5e519e1c4e48b72a27bdd",
+      "time_seconds": 1.087963,
+      "width": 216
+    },
+    {
+      "bytes": 30016,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 7,
+      "path": "frame-07.jpg",
+      "sha256": "6d51cdf427a7328805a07a67061a0a6a0240eb9ad709040c8098405725143797",
+      "time_seconds": 1.305556,
+      "width": 216
+    },
+    {
+      "bytes": 29713,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 8,
+      "path": "frame-08.jpg",
+      "sha256": "68b82a302fd4dd03b81e93688ba397318f05c513150296981fc0ef1b09cbec79",
+      "time_seconds": 1.523148,
+      "width": 216
+    },
+    {
+      "bytes": 29193,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 9,
+      "path": "frame-09.jpg",
+      "sha256": "adba656ed95ac11e5f40eaf79a18b59965dea20ed233ba90a846a4240fede978",
+      "time_seconds": 1.740741,
+      "width": 216
+    },
+    {
+      "bytes": 30188,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 10,
+      "path": "frame-10.jpg",
+      "sha256": "1be739561edae9871c9726db798c13e9ec663cae0aa55d3037000090b98561b1",
+      "time_seconds": 1.958333,
+      "width": 216
+    }
+  ],
+  "generated_at": "2026-08-10T20:16:16-07:00",
+  "review_scope": "TEN-FRAME-PREVIEW-ONLY",
+  "review_semantics": {
+    "clip_review": "UNREVIEWED",
+    "frame_review": "UNREVIEWED",
+    "full_temporal_acceptance": "NOT-INFERRED"
+  },
+  "sampling": {
+    "frame_count": 10,
+    "method": "EVENLY-SPACED-START-TO-SAFE-END",
+    "safe_end_seconds": 1.958333,
+    "times_seconds": [
+      0.0,
+      0.217593,
+      0.435185,
+      0.652778,
+      0.87037,
+      1.087963,
+      1.305556,
+      1.523148,
+      1.740741,
+      1.958333
+    ]
+  },
+  "schema_version": "izzi-review-filmstrip-1",
+  "source_media": {
+    "bytes": 48068514,
+    "codec": "h264",
+    "duration_seconds": 2.0,
+    "frame_rate": "24/1",
+    "height": 1920,
+    "path": "outputs/review/feedback/visual/guilloche/round-05/wild-motion/wild-variation-10.mkv",
+    "pixel_format": "yuv420p",
+    "published": false,
+    "sha256": "0aaaad32c1f22cebf119f3773b54e3d66001c8e8698e625b6af79631a8cf48ce",
+    "width": 1080
+  },
+  "stable_id": "guilloche-wild-variation-10",
+  "title": "Guilloche wild variation 10",
+  "tools": {
+    "ffmpeg": "ffmpeg version 7.1.5 Copyright (c) 2000-2026 the FFmpeg developers",
+    "ffprobe": "ffprobe version 7.1.5 Copyright (c) 2007-2026 the FFmpeg developers",
+    "font": "/home/bkoz/.fonts/atkinson_hyperlegible.2026/Atkinson-Hyperlegible-Regular-102.otf",
+    "pillow": "11.3.0"
+  }
+}

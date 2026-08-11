@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0",
+  "portal_build": "izzi-review-2026-08-10.1",
+  "generated_at": "2026-08-10T19:43:08-07:00",
+  "portal_repository": "bdekoz/situationshipin.space",
+  "portal_source_commit": "04e2a06ad2f9d71fb88b6ca9ea25a0cecb4d9547",
+  "izzi_repository": "bdekoz/izzi",
+  "izzi_source_commit": "9c38feb6ce4b704c8aae7a7a4821379d5d8f0a1e",
+  "publication_state": "PUBLIC-PROTOTYPE",
+  "human_review_state": "UNREVIEWED",
+  "baseline_state": "NOT-PROMOTED",
+  "training_conversion_transfer_state": "NOT-SHARED",
+  "artifact_count": 10,
+  "artifact_payload_bytes": 4190151,
+  "frame_preview_count": 4,
+  "sampled_frame_count": 40,
+  "source_media_bytes_represented": 361056087,
+  "maximum_artifact_bytes": 1048576,
+  "maximum_payload_bytes": 8388608,
+  "excluded_media": ["mkv", "mp4", "mov", "wav", "mp3"],
+  "code_files": [
+    {
+      "path": "index.html",
+      "sha256": "368f81b61469dd66a02d28315ce7a61042639067e5e54e02f2d558b451fbb859"
+    },
+    {
+      "path": "assets/css/review.css",
+      "sha256": "e29db76f9cc1d5f0b628a2c80bdf83a56c4baa6162eddd7370ade839dff4b935"
+    },
+    {
+      "path": "assets/js/review.js",
+      "sha256": "ce3460106c3365d3895da1d08e95bf98d80f573fc7f72f479c3628a01946683f"
+    },
+    {
+      "path": "data/review-items.json",
+      "sha256": "2cb70504722d668aac4677e85e27e0caa24430ee8eeaa27fa7421f8ab0bb9f61"
+    },
+    {
+      "path": "scripts/check-review-site.mjs",
+      "sha256": "558e3326e1c5d75bbe2866a1dad838e90f47bb9ea34bc0ee35630becf506f4d7"
+    },
+    {
+      "path": "README.md",
+      "sha256": "d790c98ddb6875a56cd26840a9b644d0c26fd5d01a92e872a4a9fbfc9f4ba222"
+    },
+    {
+      "path": "_config.yml",
+      "sha256": "603f98187f06e19a6d100487aef83776be1773e19c5b092ce7196c82a332287b"
+    },
+    {
+      "path": ".github/workflows/jekyll-gh-pages.yml",
+      "sha256": "5bf1080541a4ce20c41595234cdf9a9802358a5984aa179cd9b9bf352bfcfae7"
+    }
+  ],
+  "artifact_inventory": "data/review-items.json",
+  "notes": [
+    "The artifact catalog records each copied object's Izzi source path, SHA-256, dimensions, and byte size.",
+    "Four source MKVs totaling 361056087 bytes are represented by forty independently reviewable JPEG samples and four portrait filmstrips; none of the MKVs is copied.",
+    "No source episode media, source audio, credential, analytics code, or account token is included.",
+    "Technical publication does not imply human acceptance or baseline promotion."
+  ]
+}
