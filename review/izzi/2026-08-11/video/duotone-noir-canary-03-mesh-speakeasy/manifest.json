@@ -1,0 +1,156 @@
+{
+  "filmstrip": {
+    "bytes": 479835,
+    "height": 1920,
+    "path": "duotone-noir-canary-03-mesh-speakeasy.filmstrip.jpg",
+    "sha256": "3296390ef28531563b476c4bedac517dbfdb0a1f6aa403e6b9388d23edaa0e65",
+    "width": 1080
+  },
+  "frames": [
+    {
+      "bytes": 33892,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 1,
+      "path": "frame-01.jpg",
+      "sha256": "dd825b95635e3c59b5f7b0c5e4eb3ec261f58a61c42dc663ff2265d38e3aa5dc",
+      "time_seconds": 0.0,
+      "width": 216
+    },
+    {
+      "bytes": 34391,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 2,
+      "path": "frame-02.jpg",
+      "sha256": "99bd88b7b4846b2e40f1b75d1378091191f227a7be3e790e06563a39b83d936a",
+      "time_seconds": 0.555593,
+      "width": 216
+    },
+    {
+      "bytes": 34625,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 3,
+      "path": "frame-03.jpg",
+      "sha256": "c8c758efa5b654ce493eb10bc1493e6eadee692511072cb7df05c75d52542502",
+      "time_seconds": 1.111185,
+      "width": 216
+    },
+    {
+      "bytes": 34581,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 4,
+      "path": "frame-04.jpg",
+      "sha256": "18e2f3ab523a93aaf70b9a5b9f97e9a0b3a13c3a6e2f30de53afbb9428e114ea",
+      "time_seconds": 1.666778,
+      "width": 216
+    },
+    {
+      "bytes": 34275,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 5,
+      "path": "frame-05.jpg",
+      "sha256": "0aabd962136c10e9a173745e43390bc4d0850972b266e8e86f8dd25669b63f04",
+      "time_seconds": 2.22237,
+      "width": 216
+    },
+    {
+      "bytes": 34415,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 6,
+      "path": "frame-06.jpg",
+      "sha256": "6bbd9cbd4a519f3ad5d265bb245c62102a8c43392037aa4f96b4e8229c7f78aa",
+      "time_seconds": 2.777963,
+      "width": 216
+    },
+    {
+      "bytes": 34168,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 7,
+      "path": "frame-07.jpg",
+      "sha256": "298d3311fa743173a438a48ad07d5b79f8c4aef0b89666130532c0c00c79045b",
+      "time_seconds": 3.333556,
+      "width": 216
+    },
+    {
+      "bytes": 34207,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 8,
+      "path": "frame-08.jpg",
+      "sha256": "006109707cf7a38f1cdb067be2a88ff4102e6ce98c31f3185ffc044c5a237c1f",
+      "time_seconds": 3.889148,
+      "width": 216
+    },
+    {
+      "bytes": 34380,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 9,
+      "path": "frame-09.jpg",
+      "sha256": "124f282d3914211108b8e42787822b3b537c7b7eac8a250f2fcf2156070b2bd9",
+      "time_seconds": 4.444741,
+      "width": 216
+    },
+    {
+      "bytes": 34384,
+      "height": 384,
+      "human_review_state": "UNREVIEWED",
+      "ordinal": 10,
+      "path": "frame-10.jpg",
+      "sha256": "fb8328b06b6cb4e162c2cc0f0229c6741aea77caa8d8a04744954689033703ab",
+      "time_seconds": 5.000333,
+      "width": 216
+    }
+  ],
+  "generated_at": "2026-08-11T02:00:01-07:00",
+  "review_scope": "TEN-FRAME-PREVIEW-ONLY",
+  "review_semantics": {
+    "clip_review": "UNREVIEWED",
+    "frame_review": "UNREVIEWED",
+    "full_temporal_acceptance": "NOT-INFERRED"
+  },
+  "sampling": {
+    "frame_count": 10,
+    "method": "EVENLY-SPACED-START-TO-SAFE-END",
+    "safe_end_seconds": 5.000333,
+    "times_seconds": [
+      0.0,
+      0.555593,
+      1.111185,
+      1.666778,
+      2.22237,
+      2.777963,
+      3.333556,
+      3.889148,
+      4.444741,
+      5.000333
+    ]
+  },
+  "schema_version": "izzi-review-filmstrip-1",
+  "source_media": {
+    "bytes": 3086837,
+    "codec": "h264",
+    "duration_seconds": 5.042,
+    "frame_rate": "24/1",
+    "height": 1280,
+    "path": "outputs/review/feedback/visual/duotone-111/noir-canary-round-01/provider-clips/canary-03-mesh-speakeasy.review.mkv",
+    "pixel_format": "yuv420p",
+    "published": false,
+    "sha256": "614f83e172a04701a2cf4d045b3473ad86ce9f5b658656c335f854324cd5e04f",
+    "width": 720
+  },
+  "stable_id": "duotone-noir-canary-03-mesh-speakeasy",
+  "title": "Duotone Noir canary 03 \u00b7 mesh speakeasy",
+  "tools": {
+    "ffmpeg": "ffmpeg version 7.1.5 Copyright (c) 2000-2026 the FFmpeg developers",
+    "ffprobe": "ffprobe version 7.1.5 Copyright (c) 2007-2026 the FFmpeg developers",
+    "font": "/home/bkoz/.fonts/atkinson_hyperlegible.2026/Atkinson-Hyperlegible-Regular-102.otf",
+    "pillow": "11.3.0"
+  }
+}

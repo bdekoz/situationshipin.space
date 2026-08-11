@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "portal_build": "izzi-review-2026-08-11.4",
-  "generated_at": "2026-08-11T08:27:28.064Z",
+  "portal_build": "izzi-review-2026-08-11.5",
+  "generated_at": "2026-08-11T09:03:53.447Z",
   "portal_repository": "bdekoz/situationshipin.space",
   "portal_source_commit": "219a9b7f0891998c1525c94fa15b43c490b5d79f",
   "izzi_repository": "bdekoz/izzi",
@@ -10,11 +10,11 @@
   "human_review_state": "UNREVIEWED",
   "baseline_state": "NOT-PROMOTED",
   "training_conversion_transfer_state": "NOT-SHARED",
-  "artifact_count": 247,
-  "artifact_payload_bytes": 13087095,
-  "frame_preview_count": 4,
-  "sampled_frame_count": 40,
-  "source_media_bytes_represented": 361056087,
+  "artifact_count": 250,
+  "artifact_payload_bytes": 15593390,
+  "frame_preview_count": 7,
+  "sampled_frame_count": 70,
+  "source_media_bytes_represented": 368946741,
   "source_image_count": 234,
   "source_image_bytes_represented": 243747547,
   "aesthetic_collection_counts": {
@@ -46,11 +46,11 @@
     },
     {
       "path": "data/review-items.json",
-      "sha256": "349352a46337089ed69cd3b06a947a1ec573ce8c0de00438800b7257c96408c7"
+      "sha256": "be86966ccca2e4cdcbc55f0ee94aec98c320f8d8b6f0a459e456b5f523d052be"
     },
     {
       "path": "scripts/check-review-site.mjs",
-      "sha256": "eb50eaf931676fc27158eef561d1e767dd6ce55c6af58696fd123801be5859c9"
+      "sha256": "41cdccf59fa7e2f1e63020aced64ea06d08e9a1e7f8723584aad2892e90f89b2"
     },
     {
       "path": "scripts/update-build-manifest.mjs",
@@ -70,7 +70,7 @@
     }
   ],
   "artifact_inventory": "data/review-items.json",
-  "catalog_sha256": "349352a46337089ed69cd3b06a947a1ec573ce8c0de00438800b7257c96408c7",
+  "catalog_sha256": "be86966ccca2e4cdcbc55f0ee94aec98c320f8d8b6f0a459e456b5f523d052be",
   "notes": [
     "The catalog binds every published derivative to an Izzi source path and SHA-256.",
     "Four source MKVs are represented by forty independently reviewable JPEG samples and four portrait filmstrips; none of the MKVs is copied.",

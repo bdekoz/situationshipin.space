@@ -204,7 +204,7 @@ const styleCounts = Object.fromEntries(
   ["noir-vibezz", "tokyo-psychedelic", "neon-addict"]
     .map((family) => [family, styleItems.filter((item) => item.family === family).length])
 );
-if (proofCount !== 13 || styleItems.length !== 234
+if (proofCount !== 16 || styleItems.length !== 234
     || styleCounts["noir-vibezz"] !== 58
     || styleCounts["tokyo-psychedelic"] !== 30
     || styleCounts["neon-addict"] !== 146) {
