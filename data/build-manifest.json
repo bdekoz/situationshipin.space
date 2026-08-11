@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "portal_build": "izzi-review-2026-08-10.2",
-  "generated_at": "2026-08-11T06:41:07.360Z",
+  "generated_at": "2026-08-11T07:12:22.749Z",
   "portal_repository": "bdekoz/situationshipin.space",
   "portal_source_commit": "219a9b7f0891998c1525c94fa15b43c490b5d79f",
   "izzi_repository": "bdekoz/izzi",
@@ -54,7 +54,7 @@
     },
     {
       "path": "scripts/update-build-manifest.mjs",
-      "sha256": "488c588ae217c2d60e0748d51402e7be5ee1929e85ac54185f2ce14793fbdd56"
+      "sha256": "91eb5dfdeb8c22008d8f4df8cc85b0799f4464b2968ea87f9a554bdb45e10999"
     },
     {
       "path": "README.md",

@@ -68,7 +68,7 @@ for (const path of codePaths) {
 const manifest = {
   schema_version: "1.0",
   portal_build: catalog.portal_build,
-  generated_at: new Date().toISOString(),
+  generated_at: prior.generated_at,
   portal_repository: "bdekoz/situationshipin.space",
   portal_source_commit: prior.portal_source_commit,
   izzi_repository: "bdekoz/izzi",
@@ -108,8 +108,16 @@ const manifest = {
   ]
 };
 
-await writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
+const priorPayload = `${JSON.stringify(prior, null, 2)}\n`;
+let nextPayload = `${JSON.stringify(manifest, null, 2)}\n`;
+const changed = nextPayload !== priorPayload;
+if (changed) {
+  manifest.generated_at = new Date().toISOString();
+  nextPayload = `${JSON.stringify(manifest, null, 2)}\n`;
+  await writeFile(manifestPath, nextPayload, "utf8");
+}
 console.log(JSON.stringify({
+  changed,
   artifact_count: manifest.artifact_count,
   artifact_payload_bytes: manifest.artifact_payload_bytes,
   source_image_count: manifest.source_image_count,
