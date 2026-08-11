@@ -2,7 +2,7 @@
 
 const CATALOG_URL = "data/review-items.json";
 const ISSUE_URL = "https://github.com/bdekoz/situationshipin.space/issues/new";
-const DECISIONS = [
+const OUTPUT_DECISIONS = [
   ["KEEP", "Keep"],
   ["KEEP-PARTS", "Keep parts"],
   ["MORE-LIKE", "More like this"],
@@ -10,9 +10,20 @@ const DECISIONS = [
   ["REJECT", "Reject"],
   ["DISCUSS", "Discuss"]
 ];
+const AESTHETIC_DECISIONS = [
+  ["POSITIVE", "Accept"],
+  ["NEGATIVE", "Reject"],
+  ["HOLD", "Hold"],
+  ["EXCLUDE", "Exclude"]
+];
 const TAGS = [
   ["composition", "Composition"],
   ["color", "Color"],
+  ["texture", "Texture"],
+  ["lighting", "Lighting"],
+  ["spatial-form", "Spatial form"],
+  ["atmosphere", "Atmosphere"],
+  ["subject", "Subject"],
   ["motion", "Motion"],
   ["typography", "Typography"],
   ["legibility", "Legibility"],
@@ -24,7 +35,10 @@ const TAGS = [
 const state = {
   catalog: null,
   feedback: { reviewer: "", reviews: {} },
-  storageAvailable: true
+  storageAvailable: true,
+  category: "proofs",
+  page: 1,
+  pageSize: 10
 };
 
 const elements = {};
@@ -64,7 +78,11 @@ function cacheElements() {
     "metric-items", "metric-families", "metric-bytes", "metric-reviewed",
     "feedback-count", "reviewer-label", "download-feedback", "import-feedback",
     "open-issue-dialog", "reset-feedback", "handoff-status", "issue-dialog",
-    "public-acknowledgement", "continue-to-github", "reset-dialog", "confirm-reset"
+    "public-acknowledgement", "continue-to-github", "reset-dialog", "confirm-reset",
+    "previous-page", "next-page", "page-status", "category-proofs",
+    "category-style-processing", "category-proofs-count",
+    "category-style-processing-count", "results-eyebrow", "results-title",
+    "results-description", "issue-scope-description"
   ];
   ids.forEach((id) => {
     elements[toCamel(id)] = document.getElementById(id);
@@ -74,10 +92,14 @@ function cacheElements() {
 }
 
 function bindGlobalEvents() {
-  elements.filterForm.addEventListener("input", renderCatalog);
+  elements.filterForm.addEventListener("input", () => {
+    state.page = 1;
+    renderCatalog();
+  });
   elements.filterForm.addEventListener("reset", () => {
     window.setTimeout(() => {
       document.body.classList.remove("compact-view");
+      state.page = 1;
       renderCatalog();
     }, 0);
   });
@@ -94,6 +116,9 @@ function bindGlobalEvents() {
   elements.openIssueDialog.addEventListener("click", () => {
     elements.publicAcknowledgement.checked = false;
     elements.continueToGithub.disabled = true;
+    elements.issueScopeDescription.textContent = state.category === "style-processing"
+      ? "This prepares a public issue for reviewed images on the current ten-thumbnail page. It downloads the exact hash-identified JSON package for attachment and includes a suggested Codex handoff prompt. Nothing is submitted until you review GitHub's draft and press its final button."
+      : "This prepares a public issue for the reviewed proof set. It downloads the exact hash-identified JSON package for attachment and includes a suggested Codex handoff prompt. Nothing is submitted until you review GitHub's draft and press its final button.";
     showDialog(elements.issueDialog);
   });
   elements.publicAcknowledgement.addEventListener("change", () => {
@@ -102,6 +127,21 @@ function bindGlobalEvents() {
   elements.continueToGithub.addEventListener("click", openGitHubIssue);
   elements.resetFeedback.addEventListener("click", () => showDialog(elements.resetDialog));
   elements.confirmReset.addEventListener("click", resetFeedback);
+  elements.previousPage.addEventListener("click", () => changePage(-1));
+  elements.nextPage.addEventListener("click", () => changePage(1));
+  elements.categoryProofs.addEventListener("click", () => setCategory("proofs"));
+  elements.categoryStyleProcessing.addEventListener(
+    "click",
+    () => setCategory("style-processing")
+  );
+}
+
+function decisionsFor(item) {
+  return item.review_mode === "aesthetic" ? AESTHETIC_DECISIONS : OUTPUT_DECISIONS;
+}
+
+function decisionAllowed(item, value) {
+  return decisionsFor(item).some(([candidate]) => candidate === value);
 }
 
 function toCamel(value) {
@@ -209,7 +249,7 @@ function normalizeFeedback(candidate) {
     if (!review || typeof review !== "object") {
       continue;
     }
-    const decision = DECISIONS.some(([value]) => value === review.decision) ? review.decision : "";
+    const decision = decisionAllowed(item, review.decision) ? review.decision : "";
     const tags = Array.isArray(review.tags)
       ? review.tags.filter((tag) => allowedTags.has(tag))
       : [];
@@ -222,7 +262,7 @@ function normalizeFeedback(candidate) {
       if (!frameReview || typeof frameReview !== "object") {
         continue;
       }
-      const frameDecision = DECISIONS.some(([value]) => value === frameReview.decision)
+      const frameDecision = OUTPUT_DECISIONS.some(([value]) => value === frameReview.decision)
         ? frameReview.decision
         : "";
       const frameTags = Array.isArray(frameReview.tags)
@@ -250,12 +290,25 @@ function normalizeFeedback(candidate) {
 }
 
 function populateFilters() {
-  addOptions(elements.familyFilter, uniqueValues("family"));
-  addOptions(elements.classFilter, uniqueValues("generation_class"));
+  resetOptions(elements.familyFilter, "All families");
+  resetOptions(elements.classFilter, "All classes");
+  addOptions(elements.familyFilter, uniqueValues("family", categoryItems()));
+  addOptions(elements.classFilter, uniqueValues("generation_class", categoryItems()));
 }
 
-function uniqueValues(key) {
-  return [...new Set(state.catalog.items.map((item) => item[key]))].sort();
+function resetOptions(select, label) {
+  const option = document.createElement("option");
+  option.value = "all";
+  option.textContent = label;
+  select.replaceChildren(option);
+}
+
+function categoryItems() {
+  return state.catalog.items.filter((item) => item.review_category === state.category);
+}
+
+function uniqueValues(key, items = state.catalog.items) {
+  return [...new Set(items.map((item) => item[key]).filter(Boolean))].sort();
 }
 
 function addOptions(select, values) {
@@ -276,7 +329,38 @@ function updateMetrics() {
       0
     )
   );
+  elements.categoryProofsCount.textContent = String(
+    state.catalog.items.filter((item) => item.review_category === "proofs").length
+  );
+  elements.categoryStyleProcessingCount.textContent = String(
+    state.catalog.items.filter((item) => item.review_category === "style-processing").length
+  );
   updateFeedbackSummary();
+}
+
+function setCategory(category) {
+  state.category = category;
+  state.page = 1;
+  elements.searchFilter.value = "";
+  elements.decisionFilter.value = "all";
+  elements.categoryProofs.setAttribute("aria-pressed", String(category === "proofs"));
+  elements.categoryStyleProcessing.setAttribute(
+    "aria-pressed",
+    String(category === "style-processing")
+  );
+  if (category === "style-processing") {
+    elements.resultsEyebrow.textContent = "human-selected aesthetic themes";
+    elements.resultsTitle.textContent = "Style processing";
+    elements.resultsDescription.textContent =
+      "Classify dashboard thumbnails as positive, negative, held, or excluded aesthetic evidence.";
+  } else {
+    elements.resultsEyebrow.textContent = "selected izzi outputs";
+    elements.resultsTitle.textContent = "Proofs for inspection";
+    elements.resultsDescription.textContent =
+      "Inspect generated artifacts and bounded temporal previews without promoting a baseline.";
+  }
+  populateFilters();
+  renderCatalog();
 }
 
 function renderCatalog() {
@@ -284,10 +368,37 @@ function renderCatalog() {
     return;
   }
   const items = filteredItems();
-  elements.grid.replaceChildren(...items.map(renderCard));
+  const pageCount = Math.max(1, Math.ceil(items.length / state.pageSize));
+  state.page = Math.min(Math.max(state.page, 1), pageCount);
+  const firstIndex = (state.page - 1) * state.pageSize;
+  const pageItems = items.slice(firstIndex, firstIndex + state.pageSize);
+  elements.grid.dataset.category = state.category;
+  elements.grid.replaceChildren(...pageItems.map(renderCard));
   elements.emptyState.hidden = items.length !== 0;
-  elements.resultCount.textContent = `${items.length} of ${state.catalog.items.length} proofs shown`;
+  const shownStart = items.length ? firstIndex + 1 : 0;
+  const shownEnd = firstIndex + pageItems.length;
+  const categoryTotal = categoryItems().length;
+  const noun = state.category === "style-processing" ? "references" : "proofs";
+  elements.resultCount.textContent = items.length === categoryTotal
+    ? `Showing ${shownStart}–${shownEnd} of ${items.length} ${noun}`
+    : `Showing ${shownStart}–${shownEnd} of ${items.length} matching · ${categoryTotal} ${noun}`;
+  elements.pageStatus.textContent = `Page ${state.page} of ${pageCount}`;
+  elements.previousPage.disabled = state.page <= 1 || items.length === 0;
+  elements.nextPage.disabled = state.page >= pageCount || items.length === 0;
   updateFeedbackSummary();
+}
+
+function currentPageItems() {
+  const items = filteredItems();
+  const firstIndex = (state.page - 1) * state.pageSize;
+  return items.slice(firstIndex, firstIndex + state.pageSize);
+}
+
+function changePage(offset) {
+  state.page += offset;
+  renderCatalog();
+  document.getElementById("results-title").focus({ preventScroll: true });
+  document.getElementById("results-title").scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 function filteredItems() {
@@ -296,12 +407,12 @@ function filteredItems() {
   const generationClass = elements.classFilter.value;
   const decision = elements.decisionFilter.value;
 
-  return state.catalog.items.filter((item) => {
+  return categoryItems().filter((item) => {
     const review = state.feedback.reviews[item.artifact_id];
     const currentDecision = review && review.decision ? review.decision : "UNREVIEWED";
     const haystack = [
       item.title, item.description, item.family, item.generation_class,
-      item.feedback_round, item.source_path
+      item.feedback_round, item.source_group, item.source_path
     ].join(" ").toLowerCase();
     return (!search || haystack.includes(search))
       && (family === "all" || item.family === family)
@@ -316,10 +427,20 @@ function renderCard(item) {
   const review = state.feedback.reviews[item.artifact_id] || emptyReview();
   card.dataset.artifactId = item.artifact_id;
   card.dataset.decision = review.decision || "UNREVIEWED";
+  card.dataset.reviewMode = item.review_mode || "artifact";
 
   const link = card.querySelector(".artifact-image-link");
   link.href = item.published_path;
   link.setAttribute("aria-label", `Open full proof: ${item.title}`);
+  if (item.review_mode === "aesthetic") {
+    link.setAttribute("aria-label", `Classify aesthetic reference: ${item.title}`);
+    card.querySelector(".open-label").textContent = "Classify image";
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      card.classList.add("classification-active");
+      card.querySelector(".decision-options input")?.focus();
+    });
+  }
 
   const image = card.querySelector(".artifact-image");
   image.src = item.published_path;
@@ -333,7 +454,8 @@ function renderCard(item) {
   });
 
   card.querySelector(".artifact-kicker").textContent = [
-    humanize(item.family), humanize(item.generation_class), item.feedback_round
+    humanize(item.family), item.source_group ? humanize(item.source_group) : "",
+    humanize(item.generation_class), item.feedback_round
   ].filter(Boolean).join(" · ");
   card.querySelector(".artifact-title").textContent = item.title;
   card.querySelector(".artifact-description").textContent = item.description;
@@ -344,10 +466,19 @@ function renderCard(item) {
     makePill(item.review_scope, "pill-preview"),
     makePill(item.baseline_state, "")
   );
+  if (item.accessibility_state) {
+    states.append(makePill(item.accessibility_state, ""));
+  }
 
   const metadata = card.querySelector(".artifact-metadata");
   addMetadata(metadata, "Artifact ID", item.artifact_id);
   addMetadata(metadata, "Izzi source", item.source_path);
+  if (item.source_state) {
+    addMetadata(metadata, "Repository state", humanize(item.source_state));
+  }
+  if (item.source_group) {
+    addMetadata(metadata, "Source group", humanize(item.source_group));
+  }
   addMetadata(metadata, "SHA-256", item.sha256);
   addMetadata(metadata, "Dimensions", `${item.width} × ${item.height}`);
   addMetadata(metadata, "File size", `${formatBytes(item.bytes)} (${item.bytes.toLocaleString()} bytes)`);
@@ -359,6 +490,13 @@ function renderCard(item) {
     addMetadata(metadata, "Source video", `${item.source_media.width} × ${item.source_media.height}, ${item.source_media.codec}, ${item.source_media.frame_rate}`);
     addMetadata(metadata, "Source MKV published", item.source_media.published ? "Yes" : "No — preview derivatives only");
   }
+  if (item.source_image) {
+    addMetadata(metadata, "Source image SHA-256", item.source_image.sha256);
+    addMetadata(metadata, "Source image size", `${formatBytes(item.source_image.bytes)} (${item.source_image.bytes.toLocaleString()} bytes)`);
+    addMetadata(metadata, "Source dimensions", `${item.source_image.width} × ${item.source_image.height}`);
+    addMetadata(metadata, "Source format", item.source_image.format.toUpperCase());
+    addMetadata(metadata, "Source original published", item.source_image.published ? "Yes" : "No — compact review derivative only");
+  }
 
   if (item.frames && item.frames.length) {
     const frameReview = card.querySelector(".frame-review");
@@ -368,7 +506,10 @@ function renderCard(item) {
   }
 
   const decisionOptions = card.querySelector(".decision-options");
-  for (const [value, label] of DECISIONS) {
+  card.querySelector(".decision-fieldset legend").textContent = item.review_mode === "aesthetic"
+    ? "Aesthetic evidence decision"
+    : "Clip or proof decision";
+  for (const [value, label] of decisionsFor(item)) {
     decisionOptions.append(makeChoice("radio", `decision-${item.artifact_id}`, value, label, review.decision === value));
   }
 
@@ -442,7 +583,7 @@ function renderFrame(item, frame, artifactReview) {
   blank.value = "";
   blank.textContent = "No decision";
   decision.append(blank);
-  for (const [value, label] of DECISIONS) {
+  for (const [value, label] of OUTPUT_DECISIONS) {
     const option = document.createElement("option");
     option.value = value;
     option.textContent = label;
@@ -592,8 +733,8 @@ function saveFeedback(message) {
   elements.handoffStatus.textContent = message;
 }
 
-function meaningfulReviews() {
-  return state.catalog.items.flatMap((item) => {
+function meaningfulReviews(items = state.catalog.items) {
+  return items.flatMap((item) => {
     const review = state.feedback.reviews[item.artifact_id];
     const frameCount = review ? Object.keys(review.frame_reviews || {}).length : 0;
     if (!review || (!review.decision && review.tags.length === 0 && !review.note.trim() && frameCount === 0)) {
@@ -619,11 +760,14 @@ function updateFeedbackSummary() {
     : `${reviews.length} ${reviews.length === 1 ? "proof" : "proofs"} and ${frameReviews} ${frameReviews === 1 ? "frame" : "frames"} have local feedback`;
   const disabled = reviews.length === 0;
   elements.downloadFeedback.disabled = disabled;
-  elements.openIssueDialog.disabled = disabled;
+  const issueItems = state.category === "style-processing"
+    ? currentPageItems()
+    : categoryItems();
+  elements.openIssueDialog.disabled = meaningfulReviews(issueItems).length === 0;
   elements.resetFeedback.disabled = disabled && !state.feedback.reviewer;
 }
 
-function buildExport(publicAcknowledged = false) {
+function buildExport(publicAcknowledged = false, items = state.catalog.items, scope = "all") {
   return {
     schema_version: "1.0",
     portal_build: state.catalog.portal_build,
@@ -632,10 +776,13 @@ function buildExport(publicAcknowledged = false) {
     source_commit: state.catalog.source_commit,
     reviewer: state.feedback.reviewer.trim(),
     exported_at: new Date().toISOString(),
-    reviews: meaningfulReviews().map(({ item, review }) => ({
+    scope,
+    reviews: meaningfulReviews(items).map(({ item, review }) => ({
       artifact_id: item.artifact_id,
       artifact_sha256: item.sha256,
       source_media_sha256: item.source_media?.sha256 || null,
+      source_image_sha256: item.source_image?.sha256 || null,
+      review_mode: item.review_mode || "artifact",
       decision: review.decision || "OBSERVATION-ONLY",
       tags: review.tags,
       note: review.note,
@@ -660,18 +807,55 @@ function buildExport(publicAcknowledged = false) {
   };
 }
 
-function downloadFeedback() {
-  const payload = buildExport(false);
+function canonicalize(value) {
+  if (Array.isArray(value)) {
+    return value.map(canonicalize);
+  }
+  if (value && typeof value === "object") {
+    return Object.fromEntries(
+      Object.keys(value).sort().map((key) => [key, canonicalize(value[key])])
+    );
+  }
+  return value;
+}
+
+async function calculateReviewIdentifier(payload) {
+  const stable = structuredClone(payload);
+  delete stable.exported_at;
+  delete stable.review_identifier;
+  const bytes = new TextEncoder().encode(JSON.stringify(canonicalize(stable)));
+  const digest = await crypto.subtle.digest("SHA-256", bytes);
+  const hex = [...new Uint8Array(digest)]
+    .map((value) => value.toString(16).padStart(2, "0"))
+    .join("");
+  return `sha256:${hex}`;
+}
+
+async function attachReviewIdentifier(payload) {
+  payload.review_identifier = await calculateReviewIdentifier(payload);
+  return payload;
+}
+
+function downloadPayload(payload, filename) {
   const blob = new Blob([`${JSON.stringify(payload, null, 2)}\n`], { type: "application/json" });
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
   link.href = url;
-  link.download = `izzi-review-${state.catalog.portal_build}.json`;
+  link.download = filename;
   document.body.append(link);
   link.click();
   link.remove();
   URL.revokeObjectURL(url);
-  elements.handoffStatus.textContent = `Downloaded ${payload.reviews.length} review record(s).`;
+}
+
+async function downloadFeedback() {
+  try {
+    const payload = await attachReviewIdentifier(buildExport(false));
+    downloadPayload(payload, `izzi-review-${state.catalog.portal_build}.json`);
+    elements.handoffStatus.textContent = `Downloaded ${payload.reviews.length} review record(s).`;
+  } catch (error) {
+    elements.handoffStatus.textContent = `Download failed: ${error instanceof Error ? error.message : String(error)}`;
+  }
 }
 
 async function importFeedback(event) {
@@ -685,6 +869,10 @@ async function importFeedback(event) {
     if (imported.schema_version !== "1.0" || imported.portal_build !== state.catalog.portal_build) {
       throw new Error("This review package belongs to a different schema or portal build.");
     }
+    if (imported.review_identifier
+        && imported.review_identifier !== await calculateReviewIdentifier(imported)) {
+      throw new Error("The review identifier does not match the JSON package contents.");
+    }
     const converted = { reviewer: imported.reviewer || "", reviews: {} };
     for (const review of imported.reviews || []) {
       const item = state.catalog.items.find((candidate) => candidate.artifact_id === review.artifact_id);
@@ -693,6 +881,9 @@ async function importFeedback(event) {
       }
       if ((review.source_media_sha256 || null) !== (item.source_media?.sha256 || null)) {
         throw new Error(`Source media hash does not match: ${review.artifact_id}.`);
+      }
+      if ((review.source_image_sha256 || null) !== (item.source_image?.sha256 || null)) {
+        throw new Error(`Source image hash does not match: ${review.artifact_id}.`);
       }
       for (const frameReview of review.frame_reviews || []) {
         const frame = item.frames?.find((candidate) => candidate.ordinal === frameReview.ordinal);
@@ -712,51 +903,95 @@ async function importFeedback(event) {
   }
 }
 
-function openGitHubIssue() {
+function compactNote(note, maximum = 180) {
+  const compact = String(note || "").replace(/\s+/g, " ").trim();
+  return compact.length > maximum ? `${compact.slice(0, maximum - 1)}…` : compact;
+}
+
+function issueUrl(title, lines) {
+  const parameters = new URLSearchParams({ title, body: lines.join("\n") });
+  return `${ISSUE_URL}?${parameters}`;
+}
+
+async function openGitHubIssue() {
   if (!elements.publicAcknowledgement.checked) {
     return;
   }
-  const payload = buildExport(true);
-  const lines = [
-    "## Izzi artifact review",
-    "",
-    `Portal build: \`${payload.portal_build}\``,
-    `Izzi source commit: \`${payload.source_commit}\``,
-    `Reviewer label: ${payload.reviewer || "not supplied"}`,
-    "",
-    ...payload.reviews.flatMap((review) => [
+  try {
+    const issueItems = state.category === "style-processing"
+      ? currentPageItems()
+      : categoryItems();
+    const scope = state.category === "style-processing"
+      ? `style-processing-page-${state.page}`
+      : "proofs";
+    const payload = await attachReviewIdentifier(buildExport(true, issueItems, scope));
+    if (!payload.reviews.length) {
+      elements.issueDialog.close();
+      elements.handoffStatus.textContent = "Review at least one item on this page before preparing its issue.";
+      return;
+    }
+
+    const identifier = payload.review_identifier;
+    const identifierShort = identifier.slice("sha256:".length, "sha256:".length + 12);
+    const filename = `izzi-review-${identifierShort}.json`;
+    downloadPayload(payload, filename);
+    const suggestedPrompt =
+      `Process the situationshipin.space review attached to this GitHub issue, identified by ${identifier}. `
+      + `Validate portal build ${payload.portal_build} and every derivative, source-image, source-media, and frame hash before applying explicit decisions. `
+      + "For style processing, update the review records and propose the next izzi-aesthetic-brief-1; treat HOLD, EXCLUDE, and unreviewed items as non-positive. "
+      + "Do not infer baseline approval, provider-transfer authority, or permission to submit a generation job.";
+    const heading = state.category === "style-processing"
+      ? "Izzi style-processing review"
+      : "Izzi artifact review";
+    const decisionLines = payload.reviews.flatMap((review) => [
       `### ${review.artifact_id}`,
-      "",
-      `- SHA-256: \`${review.artifact_sha256}\``,
+      `- Derivative SHA-256: \`${review.artifact_sha256}\``,
+      `- Source SHA-256: \`${review.source_image_sha256 || review.source_media_sha256 || "not-applicable"}\``,
       `- Decision: **${review.decision}**`,
       `- Tags: ${review.tags.length ? review.tags.join(", ") : "none"}`,
-      `- Note: ${review.note || "none"}`,
-      "",
+      `- Note: ${compactNote(review.note) || "none"}`,
       ...review.frame_reviews.flatMap((frame) => [
-        `#### Frame ${frame.ordinal} · ${formatTimestamp(frame.time_seconds)}`,
-        "",
-        `- Frame SHA-256: \`${frame.frame_sha256}\``,
-        `- Decision: **${frame.decision}**`,
-        `- Tags: ${frame.tags.length ? frame.tags.join(", ") : "none"}`,
-        `- Note: ${frame.note || "none"}`,
-        ""
-      ])
-    ]),
-    "This issue was prepared by the static situationshipin.space review portal after an explicit public-submission acknowledgement."
-  ];
-  const parameters = new URLSearchParams({
-    title: `[Izzi review] ${payload.reviews.length} artifact decision${payload.reviews.length === 1 ? "" : "s"}`,
-    body: lines.join("\n")
-  });
-  const url = `${ISSUE_URL}?${parameters}`;
-  if (url.length > 7800) {
-    elements.handoffStatus.textContent = "The public issue draft is too long. Download JSON or shorten notes first.";
+        `  - Frame ${frame.ordinal} at ${formatTimestamp(frame.time_seconds)} · **${frame.decision}** · \`${frame.frame_sha256}\``
+      ]),
+      ""
+    ]);
+    const preamble = [
+      `## ${heading}`,
+      "",
+      `Portal build: \`${payload.portal_build}\``,
+      `Izzi source commit: \`${payload.source_commit}\``,
+      `Review scope: \`${payload.scope}\``,
+      `Review identifier: \`${identifier}\``,
+      `Reviewer label: ${payload.reviewer || "not supplied"}`,
+      "",
+      `Attach the automatically downloaded \`${filename}\` before submitting this issue; its content hashes to the identifier above.`,
+      "",
+      "## Suggested Codex handoff",
+      "",
+      `> ${suggestedPrompt}`,
+      "",
+      "## Reviewed decisions",
+      ""
+    ];
+    const footer = [
+      "",
+      "This issue was prepared by the static situationshipin.space review portal after an explicit public-submission acknowledgement. GitHub has not submitted it yet."
+    ];
+    const title = `[Izzi ${state.category === "style-processing" ? "style" : "proof"} review] ${payload.reviews.length} decision${payload.reviews.length === 1 ? "" : "s"} · ${identifierShort}`;
+    let url = issueUrl(title, [...preamble, ...decisionLines, ...footer]);
+    if (url.length > 7800) {
+      const compactLines = payload.reviews.map((review) =>
+        `- \`${review.artifact_id}\` — **${review.decision}** — ${review.frame_reviews.length} frame decision(s)`
+      );
+      url = issueUrl(title, [...preamble, ...compactLines, ...footer]);
+    }
     elements.issueDialog.close();
-    return;
+    window.open(url, "_blank", "noopener");
+    elements.handoffStatus.textContent = `Downloaded ${filename} and opened its public GitHub issue draft; attach the JSON before submitting.`;
+  } catch (error) {
+    elements.issueDialog.close();
+    elements.handoffStatus.textContent = `Issue preparation failed: ${error instanceof Error ? error.message : String(error)}`;
   }
-  elements.issueDialog.close();
-  window.open(url, "_blank", "noopener");
-  elements.handoffStatus.textContent = "Opened a public GitHub issue draft in a new tab; GitHub has not submitted it.";
 }
 
 function resetFeedback() {

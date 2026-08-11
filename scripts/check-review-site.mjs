@@ -8,7 +8,7 @@ import { fileURLToPath } from "node:url";
 const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const catalogPath = resolve(repositoryRoot, "data/review-items.json");
 const maximumFileBytes = 1024 * 1024;
-const maximumPayloadBytes = 8 * 1024 * 1024;
+const maximumPayloadBytes = 16 * 1024 * 1024;
 const allowedExtensions = new Set([".png", ".jpg", ".jpeg", ".svg", ".html", ".json"]);
 const forbiddenExtensions = new Set([".mkv", ".mp4", ".wav", ".mp3", ".mov"]);
 
@@ -69,8 +69,10 @@ async function recursiveFiles(root) {
 }
 
 let catalog;
+let catalogBytes;
 try {
-  catalog = JSON.parse(await readFile(catalogPath, "utf8"));
+  catalogBytes = await readFile(catalogPath);
+  catalog = JSON.parse(catalogBytes.toString("utf8"));
   pass("catalog JSON parses");
 } catch (error) {
   fail(`catalog cannot be parsed: ${error.message}`);
@@ -90,6 +92,23 @@ for (const item of catalog.items) {
     fail(`artifact ID is missing or duplicated: ${item.artifact_id || "(missing)"}`);
   }
   ids.add(item.artifact_id);
+
+  if (!["proofs", "style-processing"].includes(item.review_category)) {
+    fail(`${item.artifact_id} has an invalid review category`);
+  }
+
+  if (item.review_mode === "aesthetic") {
+    if (item.review_category !== "style-processing"
+        || item.generation_class !== "style-processing"
+        || item.review_scope !== "AESTHETIC-CORPUS-CANDIDATE") {
+      fail(`${item.artifact_id} has an incomplete aesthetic-review contract`);
+    }
+    if (!item.source_image || item.source_image.published !== false
+        || item.source_image.path !== item.source_path
+        || !/^[0-9a-f]{64}$/.test(item.source_image.sha256 || "")) {
+      fail(`${item.artifact_id} has incomplete source-image lineage`);
+    }
+  }
 
   const extension = extname(item.published_path).toLowerCase();
   if (!allowedExtensions.has(extension) || forbiddenExtensions.has(extension)) {
@@ -179,6 +198,19 @@ for (const item of catalog.items) {
   }
 }
 
+const proofCount = catalog.items.filter((item) => item.review_category === "proofs").length;
+const styleItems = catalog.items.filter((item) => item.review_category === "style-processing");
+const styleCounts = Object.fromEntries(
+  ["noir-vibezz", "tokyo-psychedelic", "neon-addict"]
+    .map((family) => [family, styleItems.filter((item) => item.family === family).length])
+);
+if (proofCount !== 10 || styleItems.length !== 234
+    || styleCounts["noir-vibezz"] !== 58
+    || styleCounts["tokyo-psychedelic"] !== 30
+    || styleCounts["neon-addict"] !== 146) {
+  fail(`review-category inventory differs: proofs=${proofCount}, styles=${JSON.stringify(styleCounts)}`);
+}
+
 for (const path of await recursiveFiles(resolve(repositoryRoot, "review"))) {
   if (forbiddenExtensions.has(extname(path).toLowerCase())) {
     fail(`source media was copied into the public review tree: ${path}`);
@@ -186,16 +218,73 @@ for (const path of await recursiveFiles(resolve(repositoryRoot, "review"))) {
 }
 
 if (payloadBytes > maximumPayloadBytes) {
-  fail(`artifact payload exceeds 8 MiB: ${payloadBytes} bytes`);
+  fail(`artifact payload exceeds 16 MiB: ${payloadBytes} bytes`);
 } else {
   pass(`artifact payload is bounded: ${payloadBytes} bytes`);
+}
+
+try {
+  const buildManifest = JSON.parse(
+    await readFile(resolve(repositoryRoot, "data/build-manifest.json"), "utf8")
+  );
+  const sourceImages = catalog.items.map((item) => item.source_image).filter(Boolean);
+  const sourceMedia = new Map(
+    catalog.items
+      .filter((item) => item.source_media)
+      .map((item) => [item.source_media.sha256, item.source_media])
+  );
+  const catalogHash = createHash("sha256").update(catalogBytes).digest("hex");
+  const expectedManifestFields = {
+    portal_build: catalog.portal_build,
+    izzi_source_commit: catalog.source_commit,
+    artifact_count: catalog.items.length,
+    artifact_payload_bytes: payloadBytes,
+    frame_preview_count: catalog.items.filter((item) => item.frame_manifest_path).length,
+    sampled_frame_count: catalog.items.filter((item) => item.frame_manifest_path).length * 10,
+    source_media_bytes_represented: [...sourceMedia.values()].reduce((sum, media) => sum + media.bytes, 0),
+    source_image_count: sourceImages.length,
+    source_image_bytes_represented: sourceImages.reduce((sum, image) => sum + image.bytes, 0),
+    catalog_sha256: catalogHash
+  };
+  for (const [field, expected] of Object.entries(expectedManifestFields)) {
+    if (buildManifest[field] !== expected) {
+      fail(`build manifest ${field} differs: expected ${expected}, observed ${buildManifest[field]}`);
+    }
+  }
+  if (JSON.stringify(buildManifest.aesthetic_collection_counts) !== JSON.stringify({
+    "neon-addict": 146,
+    "noir-vibezz": 58,
+    "tokyo-psychedelic": 30
+  })) {
+    fail("build manifest aesthetic collection counts differ");
+  }
+  for (const codeFile of buildManifest.code_files || []) {
+    const codePath = resolve(repositoryRoot, codeFile.path);
+    if (!withinRepository(codePath)) {
+      fail(`build manifest code path escapes repository: ${codeFile.path}`);
+      continue;
+    }
+    const observedHash = createHash("sha256").update(await readFile(codePath)).digest("hex");
+    if (observedHash !== codeFile.sha256) {
+      fail(`build manifest code hash differs: ${codeFile.path}`);
+    }
+  }
+  if ((buildManifest.code_files || []).length < 9) {
+    fail("build manifest code inventory is incomplete");
+  } else {
+    pass("build manifest measurements and code hashes match");
+  }
+} catch (error) {
+  fail(`build manifest cannot be verified: ${error.message}`);
 }
 
 const index = await readFile(resolve(repositoryRoot, "index.html"), "utf8");
 const script = await readFile(resolve(repositoryRoot, "assets/js/review.js"), "utf8");
 const requiredIds = [
   "review-catalog", "artifact-grid", "artifact-template", "filter-form",
-  "download-feedback", "import-feedback", "issue-dialog", "reset-dialog"
+  "download-feedback", "import-feedback", "issue-dialog", "reset-dialog",
+  "previous-page", "next-page", "page-status", "category-proofs",
+  "category-style-processing", "results-title", "results-description"
 ];
 for (const id of requiredIds) {
   if (!index.includes(`id="${id}"`)) {
@@ -211,6 +300,14 @@ if (/<(?:script|link)[^>]+(?:src|href)=["']https?:\/\//i.test(index)) {
 
 if (!index.includes("public GitHub issue") || !script.includes("public_submission_acknowledged")) {
   fail("public issue disclosure or acknowledgement evidence is missing");
+}
+
+if (!script.includes("pageSize: 10") || !script.includes("AESTHETIC_DECISIONS")
+    || !script.includes("source_image_sha256")
+    || !script.includes("style-processing-page-")
+    || !script.includes("Suggested Codex handoff")
+    || !script.includes("review_identifier")) {
+  fail("ten-item pagination or aesthetic-review lineage is missing");
 }
 
 const forbiddenTerms = ["SEEDANCE_KEY", "BEGIN OPENSSH PRIVATE KEY", "aws_access_key_id"];

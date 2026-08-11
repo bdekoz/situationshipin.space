@@ -1,0 +1,118 @@
+#!/usr/bin/env node
+
+import { createHash } from "node:crypto";
+import { readFile, writeFile } from "node:fs/promises";
+import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
+const catalogPath = resolve(repositoryRoot, "data/review-items.json");
+const manifestPath = resolve(repositoryRoot, "data/build-manifest.json");
+const codePaths = [
+  "index.html",
+  "assets/css/review.css",
+  "assets/js/review.js",
+  "data/review-items.json",
+  "scripts/check-review-site.mjs",
+  "scripts/update-build-manifest.mjs",
+  "README.md",
+  "_config.yml",
+  ".github/workflows/jekyll-gh-pages.yml"
+];
+
+function sha256(bytes) {
+  return createHash("sha256").update(bytes).digest("hex");
+}
+
+const catalogBytes = await readFile(catalogPath);
+const catalog = JSON.parse(catalogBytes.toString("utf8"));
+const prior = JSON.parse(await readFile(manifestPath, "utf8"));
+const sourceMedia = new Map();
+const aestheticCollectionCounts = {};
+let artifactPayloadBytes = 0;
+let framePreviewCount = 0;
+let sampledFrameCount = 0;
+
+for (const item of catalog.items) {
+  artifactPayloadBytes += item.bytes;
+  if (item.source_media) {
+    sourceMedia.set(item.source_media.sha256, item.source_media);
+  }
+  if (item.review_category === "style-processing") {
+    aestheticCollectionCounts[item.family] = (aestheticCollectionCounts[item.family] || 0) + 1;
+  }
+  if (item.frame_manifest_path) {
+    framePreviewCount += 1;
+    const frameManifest = JSON.parse(
+      await readFile(resolve(repositoryRoot, item.frame_manifest_path), "utf8")
+    );
+    sampledFrameCount += frameManifest.frames.length;
+    artifactPayloadBytes += frameManifest.frames.reduce(
+      (sum, frame) => sum + frame.bytes,
+      0
+    );
+  }
+}
+
+const sourceImages = catalog.items
+  .map((item) => item.source_image)
+  .filter(Boolean);
+const codeFiles = [];
+for (const path of codePaths) {
+  codeFiles.push({
+    path,
+    sha256: sha256(await readFile(resolve(repositoryRoot, path)))
+  });
+}
+
+const manifest = {
+  schema_version: "1.0",
+  portal_build: catalog.portal_build,
+  generated_at: new Date().toISOString(),
+  portal_repository: "bdekoz/situationshipin.space",
+  portal_source_commit: prior.portal_source_commit,
+  izzi_repository: "bdekoz/izzi",
+  izzi_source_commit: catalog.source_commit,
+  publication_state: "PUBLIC-PROTOTYPE",
+  human_review_state: "UNREVIEWED",
+  baseline_state: "NOT-PROMOTED",
+  training_conversion_transfer_state: "NOT-SHARED",
+  artifact_count: catalog.items.length,
+  artifact_payload_bytes: artifactPayloadBytes,
+  frame_preview_count: framePreviewCount,
+  sampled_frame_count: sampledFrameCount,
+  source_media_bytes_represented: [...sourceMedia.values()].reduce(
+    (sum, media) => sum + media.bytes,
+    0
+  ),
+  source_image_count: sourceImages.length,
+  source_image_bytes_represented: sourceImages.reduce(
+    (sum, image) => sum + image.bytes,
+    0
+  ),
+  aesthetic_collection_counts: Object.fromEntries(
+    Object.entries(aestheticCollectionCounts).sort(([left], [right]) => left.localeCompare(right))
+  ),
+  maximum_artifact_bytes: 1024 * 1024,
+  maximum_payload_bytes: 16 * 1024 * 1024,
+  excluded_media: ["mkv", "mp4", "mov", "wav", "mp3"],
+  code_files: codeFiles,
+  artifact_inventory: "data/review-items.json",
+  catalog_sha256: sha256(catalogBytes),
+  notes: [
+    "The catalog binds every published derivative to an Izzi source path and SHA-256.",
+    "Four source MKVs are represented by forty independently reviewable JPEG samples and four portrait filmstrips; none of the MKVs is copied.",
+    "The 234 aesthetic-reference originals remain outside the Pages tree; compact derivatives preserve source-image hashes and explicit worktree state.",
+    "No source episode media, source audio, credential, analytics code, or account token is included.",
+    "Technical publication does not imply human acceptance, aesthetic-corpus finalization, provider-transfer authority, or baseline promotion."
+  ]
+};
+
+await writeFile(manifestPath, `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
+console.log(JSON.stringify({
+  artifact_count: manifest.artifact_count,
+  artifact_payload_bytes: manifest.artifact_payload_bytes,
+  source_image_count: manifest.source_image_count,
+  aesthetic_collection_counts: manifest.aesthetic_collection_counts,
+  catalog_sha256: manifest.catalog_sha256
+}));

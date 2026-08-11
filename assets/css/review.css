@@ -325,6 +325,54 @@ input[type="radio"] {
   gap: clamp(1.2rem, 3vw, 2.4rem);
 }
 
+.category-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.category-option {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.35rem 1rem;
+  padding: 1rem;
+  color: var(--ink);
+  background: var(--panel);
+  border: 2px solid var(--line);
+  text-align: left;
+}
+
+.category-option span {
+  font-size: 1.05rem;
+  font-weight: 850;
+}
+
+.category-option strong {
+  color: var(--signal);
+  font-family: ui-monospace, "Noto Sans Mono", monospace;
+}
+
+.category-option small {
+  grid-column: 1 / -1;
+  color: var(--muted);
+}
+
+.category-option[aria-pressed="true"] {
+  border-color: var(--signal);
+  box-shadow: inset 0.35rem 0 0 var(--signal);
+}
+
+.results-description {
+  max-width: 46rem;
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+}
+
+.artifact-grid[data-category="style-processing"] {
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1rem;
+}
+
 .artifact-card {
   min-width: 0;
   overflow: hidden;
@@ -354,6 +402,44 @@ input[type="radio"] {
   object-fit: contain;
 }
 
+.artifact-card[data-review-mode="aesthetic"] .artifact-image {
+  height: 18rem;
+}
+
+.artifact-card[data-review-mode="aesthetic"] .artifact-image-link {
+  min-height: 18rem;
+  cursor: pointer;
+}
+
+.artifact-card[data-review-mode="aesthetic"] .artifact-body {
+  padding: 0.85rem;
+}
+
+.artifact-card[data-review-mode="aesthetic"] .artifact-title {
+  margin-bottom: 0.85rem;
+  font-size: 1rem;
+}
+
+.artifact-card[data-review-mode="aesthetic"] .artifact-description,
+.artifact-card[data-review-mode="aesthetic"] .state-row {
+  display: none;
+}
+
+.artifact-card[data-review-mode="aesthetic"] .decision-options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.artifact-card[data-review-mode="aesthetic"] .tag-fieldset,
+.artifact-card[data-review-mode="aesthetic"] .note-label {
+  display: none;
+}
+
+.artifact-card[data-review-mode="aesthetic"].classification-active .tag-fieldset,
+.artifact-card[data-review-mode="aesthetic"].classification-active .note-label {
+  display: block;
+}
+
 .open-label {
   position: absolute;
   right: 0.75rem;
@@ -367,6 +453,19 @@ input[type="radio"] {
 
 .artifact-body {
   padding: clamp(1rem, 3vw, 1.6rem);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0 0;
+}
+
+.pagination .result-count {
+  min-width: 8rem;
+  text-align: center;
 }
 
 .artifact-kicker {
@@ -764,6 +863,7 @@ dialog::backdrop {
   }
 
   .metrics,
+  .category-options,
   .filter-grid,
   .artifact-grid,
   .handoff-grid,

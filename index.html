@@ -21,10 +21,9 @@
       <p class="eyebrow">public canary · izzi visual review</p>
       <h1>Look closely.<br>Leave a useful trace.</h1>
       <p class="lede">
-        Ten bounded proofs from Izzi's current visual experiments: six small
-        artifacts and four ten-frame previews of larger MKVs. Review state is
-        saved only in this browser until you download it or explicitly open a
-        public GitHub issue.
+        A bounded, paginated field of Izzi experiments and human-selected
+        aesthetic references. Review state is saved only in this browser until
+        you download it or explicitly open a public GitHub issue.
       </p>
       <p class="boundary" role="note">
         <strong>Current is not accepted.</strong> These previews are candidates,
@@ -44,6 +43,27 @@
           <div><dt>Payload</dt><dd id="metric-bytes">—</dd></div>
           <div><dt>Reviewed here</dt><dd id="metric-reviewed">0</dd></div>
         </dl>
+      </section>
+
+      <section class="category-picker" aria-labelledby="category-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">choose the human task</p>
+            <h2 id="category-title">Review category</h2>
+          </div>
+        </div>
+        <div class="category-options">
+          <button id="category-proofs" class="category-option" type="button" aria-pressed="true">
+            <span>Proofs for inspection</span>
+            <strong id="category-proofs-count">—</strong>
+            <small>Generated artifacts and temporal previews</small>
+          </button>
+          <button id="category-style-processing" class="category-option" type="button" aria-pressed="false">
+            <span>Style processing</span>
+            <strong id="category-style-processing-count">—</strong>
+            <small>Noir Vibezz, Tokyo Psychedelic, and Neon Addict thumbnails</small>
+          </button>
+        </div>
       </section>
 
       <section class="controls" aria-labelledby="filter-title">
@@ -86,6 +106,10 @@
               <option value="REVISE">Revise</option>
               <option value="REJECT">Reject</option>
               <option value="DISCUSS">Discuss</option>
+              <option value="POSITIVE">Positive aesthetic evidence</option>
+              <option value="NEGATIVE">Negative aesthetic evidence</option>
+              <option value="HOLD">Hold aesthetic evidence</option>
+              <option value="EXCLUDE">Exclude from aesthetic corpus</option>
             </select>
           </label>
           <label class="checkbox-label">
@@ -99,8 +123,11 @@
       <section aria-labelledby="results-title">
         <div class="section-heading results-heading">
           <div>
-            <p class="eyebrow">selected izzi outputs</p>
-            <h2 id="results-title">Proofs for inspection</h2>
+            <p id="results-eyebrow" class="eyebrow">selected izzi outputs</p>
+            <h2 id="results-title" tabindex="-1">Proofs for inspection</h2>
+            <p id="results-description" class="results-description">
+              Inspect generated artifacts and bounded temporal previews without promoting a baseline.
+            </p>
           </div>
           <p id="result-count" class="result-count" role="status" aria-live="polite">Loading…</p>
         </div>
@@ -110,6 +137,15 @@
         <p id="empty-state" class="empty-state" hidden>
           Nothing matches those filters. Clear a filter and try again.
         </p>
+        <nav class="pagination" aria-label="Review catalog pages">
+          <button id="previous-page" class="button button-secondary" type="button">
+            Previous 10
+          </button>
+          <p id="page-status" class="result-count" aria-live="polite">Page 1 of 1</p>
+          <button id="next-page" class="button button-secondary" type="button">
+            Next 10
+          </button>
+        </nav>
       </section>
 
       <section class="handoff" aria-labelledby="handoff-title">
@@ -164,7 +200,7 @@
           <article>
             <span class="step" aria-hidden="true">02</span>
             <h3>Decide</h3>
-            <p>Keep, keep parts, ask for more, revise, reject, or mark it for discussion.</p>
+            <p>Review outputs directly, or classify reference images as positive, negative, held, or excluded evidence.</p>
           </article>
           <article>
             <span class="step" aria-hidden="true">03</span>
@@ -195,10 +231,12 @@
           <p class="eyebrow">explicit public handoff</p>
           <h2 id="issue-title">Prepare a public GitHub issue</h2>
         </div>
-        <p>
+        <p id="issue-scope-description">
           The next step opens GitHub with your reviewed artifact IDs, decisions,
-          tags, and notes in the issue body. Anyone can read a submitted issue.
-          Nothing is submitted until you review and press GitHub's final button.
+          hashes, and a suggested Codex handoff prompt. It also downloads the
+          exact hash-identified JSON package so you can attach it to the issue.
+          Anyone can read a submitted issue. Nothing is submitted until you
+          review and press GitHub's final button.
         </p>
         <label class="checkbox-label public-check">
           <input id="public-acknowledgement" type="checkbox">
