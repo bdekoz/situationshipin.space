@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "portal_build": "izzi-review-2026-08-11.7",
-  "generated_at": "2026-08-12T15:55:47.412Z",
+  "generated_at": "2026-08-12T16:09:39.515Z",
   "portal_repository": "bdekoz/situationshipin.space",
   "portal_source_commit": "219a9b7f0891998c1525c94fa15b43c490b5d79f",
   "izzi_repository": "bdekoz/izzi",
@@ -46,7 +46,7 @@
     },
     {
       "path": "data/review-items.json",
-      "sha256": "758e02181777630578dee4329d13f96bfd0b40d5e22752f2cf7f3a8654609b1a"
+      "sha256": "d5904f9c74ac1ffefdeb2b977b8263573a4dcd08064ff1ea70724d40e6b4fdc9"
     },
     {
       "path": "scripts/check-review-site.mjs",
@@ -66,7 +66,7 @@
     },
     {
       "path": "scripts/build-review-pages.mjs",
-      "sha256": "cc6352c425c3a9d2c21cc3eed10de0249dbf607078e5a82a53988b8d68ea22c3"
+      "sha256": "2d0fec573fb5886a5ea458f00d44baf4016f5952cf21c4ac0bb6ad0ef36975c9"
     },
     {
       "path": ".github/workflows/jekyll-gh-pages.yml",
@@ -74,7 +74,7 @@
     }
   ],
   "artifact_inventory": "data/review-items.json",
-  "catalog_sha256": "758e02181777630578dee4329d13f96bfd0b40d5e22752f2cf7f3a8654609b1a",
+  "catalog_sha256": "d5904f9c74ac1ffefdeb2b977b8263573a4dcd08064ff1ea70724d40e6b4fdc9",
   "notes": [
     "The catalog binds every published derivative to an Izzi source path and SHA-256.",
     "Canonical source MKVs remain outside Pages; one bounded H.264/AAC MP4 proxy is published for continuous motion and audio review with independent lineage.",
