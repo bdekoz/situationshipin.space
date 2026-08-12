@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "portal_build": "izzi-review-2026-08-11.7",
-  "generated_at": "2026-08-12T16:37:37.840Z",
+  "generated_at": "2026-08-12T16:40:21.373Z",
   "portal_repository": "bdekoz/situationshipin.space",
   "portal_source_commit": "219a9b7f0891998c1525c94fa15b43c490b5d79f",
   "izzi_repository": "bdekoz/izzi",
@@ -42,7 +42,7 @@
     },
     {
       "path": "style.html",
-      "sha256": "ab07188e8ada97ac3eaac3a78aae62a86cc65976629c5ee616f44c3bdd10e850"
+      "sha256": "025c22e92d85ae476f550a1cc3bb93ce71c2228b8e72ea7383395ce626131165"
     },
     {
       "path": "assets/css/review.css",
@@ -50,7 +50,7 @@
     },
     {
       "path": "assets/js/review.js",
-      "sha256": "6a8258c076e35fa41cb7276aa5fc9929e6394754fb2f637eb93072e9ef29191e"
+      "sha256": "d8a18c559299dd4ec0fd423374aab3d97c8abe518f4c7b060250f95aafdf4e8e"
     },
     {
       "path": "data/review-items.json",

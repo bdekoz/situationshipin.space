@@ -354,7 +354,9 @@ function setCategory(category) {
     );
   }
   if (category === "style-processing") {
-    elements.resultsEyebrow.textContent = "human-selected aesthetic themes";
+    if (elements.resultsEyebrow) {
+      elements.resultsEyebrow.textContent = "";
+    }
     elements.resultsTitle.textContent = "Style processing";
     elements.resultsDescription.textContent =
       "Classify dashboard thumbnails as positive, negative, held, or excluded aesthetic evidence.";
