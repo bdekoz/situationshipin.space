@@ -1,0 +1,62 @@
+{
+  "schema_version": "situationship-locations-1",
+  "projects": [
+    {
+      "project_id": "here-lies-trouble",
+      "display_name": "Here Lies Trouble",
+      "locations": [
+        {
+          "location_id": "frogtown",
+          "display_name": "Frogtown",
+          "slug": "frogtown",
+          "status": "SELECTED",
+          "route": {
+            "points": [
+              { "label": "start", "lat": 34.105547608596765, "lng": -118.24361721594703 },
+              { "label": "next", "lat": 34.10771761395043, "lng": -118.24676789715588 },
+              { "label": "final", "lat": 34.107936983024416, "lng": -118.25265394226766 }
+            ],
+            "distance_straight_line_m": 920,
+            "notes": "Three-point Frogtown corridor. Straight-line total 920 m (start→next 377 m, next→final 542 m). At walking pace a 165 s episode covers roughly 165–248 m, so the full three-point route reads as a multi-episode corridor rather than one episode."
+          },
+          "route_beats_ref": "examples/seedance2/here-lies-trouble-episode-01-frogtown.v2.json#location.route_beats"
+        },
+        {
+          "location_id": "dtla-central-library",
+          "display_name": "DTLA — Los Angeles Central Library",
+          "slug": "dtla",
+          "status": "PENDING-COORDINATES",
+          "route": null
+        },
+        {
+          "location_id": "moca-geffen",
+          "display_name": "MOCA Geffen Contemporary",
+          "slug": "moca-geffen",
+          "status": "PENDING-COORDINATES",
+          "route": null
+        },
+        {
+          "location_id": "hauser-wirth",
+          "display_name": "Hauser & Wirth",
+          "slug": "hauser-wirth",
+          "status": "PENDING-COORDINATES",
+          "route": null
+        },
+        {
+          "location_id": "hammer-museum",
+          "display_name": "Hammer Museum",
+          "slug": "hammer-museum",
+          "status": "PENDING-COORDINATES",
+          "route": null
+        },
+        {
+          "location_id": "sunset-scientology-pass",
+          "display_name": "Sunset Boulevard — Scientology pass",
+          "slug": "sunset-pass",
+          "status": "PENDING-COORDINATES",
+          "route": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark light">
+    <meta name="description" content="Location scouting — selected Here Lies Trouble walking paths on a map.">
+    <title>Location scouting — situationshipin.space</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="assets/css/review.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+    <style>
+      .map-frame{height:64vh;min-height:420px;border:2px solid #4d565d;background:#eef1f2;z-index:0}
+      .point-list{font-family:ui-monospace,monospace;font-size:.85rem}
+      .point-list li{margin:.2rem 0}
+      .route-note{background:#eef1f2;border-left:.45rem solid #173a55;padding:.7rem 1rem}
+    </style>
+  </head>
+  <body data-review-category="location-scouting">
+    <a class="skip-link" href="#review-catalog">Skip to review catalog</a>
+    <header class="site-header">
+      <div class="wordmark" aria-label="situationship in space">
+	<span aria-hidden="true">-[{0-0}]-</span><span>situationshipin.space</span>
+      </div>
+    </header>
+    <main id="review-catalog">
+      <section class="summary" aria-labelledby="summary-title">
+	<div><h2 id="summary-title">Status</h2></div>
+	<dl class="metrics" id="catalog-metrics">
+	  <div><dt>Completed</dt><dd id="metric-completed">—</dd></div>
+	  <div><dt>Remaining</dt><dd id="metric-remaining">—</dd></div>
+	  <div><dt>Payload</dt><dd id="metric-bytes">—</dd></div>
+	</dl>
+      </section>
+      <section class="review-section" aria-labelledby="review-title">
+	<div class="section-heading">
+	  <div><h2 id="review-title">Review</h2></div>
+	  <p id="storage-status" class="status-note" role="status" aria-live="polite">Checking local draft storage…</p>
+	</div>
+	<details class="selection-panel">
+	  <summary>Selection</summary>
+	  <form id="location-form" class="filter-grid">
+	    <label>Project
+	      <select id="project-select"><option value="here-lies-trouble">Here Lies Trouble</option></select>
+	    </label>
+	    <label>Location
+	      <select id="location-select"></select>
+	    </label>
+	    <button class="button button-secondary" type="reset">Clear saved path</button>
+	  </form>
+	</details>
+      </section>
+      <section aria-labelledby="location-title">
+	<div class="section-heading results-heading">
+	  <div>
+	    <p id="results-eyebrow" class="eyebrow">selected route</p>
+	    <h2 id="location-title" tabindex="-1">Location scouting</h2>
+	    <p id="results-description" class="results-description">
+	      Choose a location, then drag the markers to tune the walking path. Drafts stay in this browser.
+	    </p>
+	  </div>
+	</div>
+	<div id="catalog-error" class="error-panel" role="alert" hidden></div>
+	<div id="route-panel">
+	  <div class="map-frame" id="route-map" aria-label="Map of the selected route"></div>
+	  <ul class="point-list" id="point-list"></ul>
+	  <p class="route-note" id="route-note"></p>
+	</div>
+	<p id="empty-state" class="empty-state" hidden>No locations yet for this project.</p>
+      </section>
+      <section class="handoff" aria-labelledby="feedback-title">
+	<div class="section-heading">
+	  <div><h2 id="feedback-title">Human review</h2></div>
+	</div>
+	<form class="review-form" id="review-form">
+	  <label>Decision<select name="decision"><option>UNREVIEWED</option><option>KEEP</option><option>KEEP-PARTS</option><option>REVISE</option><option>REJECT</option><option>DISCUSS</option></select></label>
+	  <label>Notes<textarea name="note" rows="6" placeholder="Route suitability, points to change, keep…"></textarea></label>
+	  <div class="review-actions">
+	    <button type="submit">Save local review</button>
+	    <button type="button" id="review-download">Download review JSON</button>
+	    <button type="button" id="review-issue">Open GitHub issue draft</button>
+	    <button type="button" id="review-clear" class="secondary">Clear saved review</button>
+	  </div>
+	  <output id="review-status" role="status"></output>
+	</form>
+      </section>
+    </main>
+    <footer>
+      <p><a href="https://github.com/bdekoz/izzi">Izzi</a>. No analytics, account token, autoplay, or source episode media.</p>
+      <p><a href="data/locations.json">Locations JSON</a></p>
+    </footer>
+    <script>
+(function () {
+  const reviewKeyBase = "review:location-scouting:";
+  let catalog = null;
+  let map = null;
+  let layer = null;
+  let markers = [];
+  let current = null;
+  const projectSelect = document.getElementById("project-select");
+  const locationSelect = document.getElementById("location-select");
+  const form = document.getElementById("review-form");
+  const status = document.getElementById("review-status");
+  const storageStatus = document.getElementById("storage-status");
+  const decision = form.elements.decision;
+  const note = form.elements.note;
+  const pointList = document.getElementById("point-list");
+  const routeNote = document.getElementById("route-note");
+  const routePanel = document.getElementById("route-panel");
+
+  function metric(id, value) { document.getElementById(id).textContent = value; }
+  function reviewKey() { return reviewKeyBase + (current ? current.location_id : "none"); }
+  function savedReview() {
+    try { return JSON.parse(localStorage.getItem(reviewKey()) || "null"); } catch (e) { return null; }
+  }
+
+  async function loadCatalog() {
+    const response = await fetch("data/locations.json");
+    if (!response.ok) throw new Error("locations.json " + response.status);
+    catalog = await response.json();
+    const project = catalog.projects[0];
+    metric("metric-completed", project.locations.filter(l => l.route).length);
+    metric("metric-remaining", project.locations.filter(l => !l.route).length);
+    metric("metric-bytes", (await response.clone().text()).length);
+  }
+
+  function populateLocations() {
+    const project = catalog.projects.find(p => p.project_id === projectSelect.value);
+    locationSelect.innerHTML = "";
+    project.locations.forEach(function (location) {
+      const option = document.createElement("option");
+      option.value = location.location_id;
+      option.textContent = location.display_name + (location.route ? "" : " — pending coordinates");
+      locationSelect.appendChild(option);
+    });
+    selectLocation();
+  }
+
+  function selectLocation() {
+    const project = catalog.projects.find(p => p.project_id === projectSelect.value);
+    current = project.locations.find(l => l.location_id === locationSelect.value);
+    restoreDraft();
+    const previous = savedReview();
+    if (previous && previous.decision) decision.value = previous.decision;
+    if (previous && previous.note) note.value = previous.note;
+    storageStatus.textContent = previous ? "Restored previously saved review." : "No local draft yet.";
+    if (!current.route) {
+      routePanel.hidden = false;
+      pointList.innerHTML = "<li>Coordinates pending — add them here when scouted.</li>";
+      routeNote.textContent = "";
+      if (map) map.remove();
+      map = null;
+      return;
+    }
+    renderMap();
+  }
+
+  function renderMap() {
+    if (map) { map.remove(); map = null; }
+    map = L.map("route-map", { zoomControl: true }).setView([34.107, -118.248], 15);
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+    markers = current.route.points.map(function (point, index) {
+      const marker = L.marker([point.lat, point.lng], { draggable: true }).addTo(map)
+        .bindPopup("<strong>" + point.label + "</strong><br>" + point.lat.toFixed(7) + ", " + point.lng.toFixed(7));
+      marker.on("dragend", updateRoute);
+      return { marker: marker, label: point.label };
+    });
+    updateRoute();
+  }
+
+  function updateRoute() {
+    const latlngs = markers.map(function (entry) {
+      const position = entry.marker.getLatLng();
+      return [position.lat, position.lng];
+    });
+    if (layer) layer.remove();
+    layer = L.polyline(latlngs, { color: "#173a55", weight: 4 }).addTo(map);
+    pointList.innerHTML = "";
+    latlngs.forEach(function (position, index) {
+      const li = document.createElement("li");
+      li.textContent = markers[index].label + ": " + position[0].toFixed(7) + ", " + position[1].toFixed(7);
+      pointList.appendChild(li);
+    });
+    routeNote.textContent = current.route.notes || "";
+  }
+
+  function saveNow() {
+    const points = markers.map(function (entry) {
+      const position = entry.marker.getLatLng();
+      return { label: entry.label, lat: position.lat, lng: position.lng };
+    });
+    const record = {
+      schema_version: "izzi-web-location-review-1",
+      review_id: reviewKey(),
+      project_id: current.project_id || projectSelect.value,
+      location_id: current.location_id,
+      decision: decision.value,
+      note: note.value,
+      points: points,
+      at: new Date().toISOString()
+    };
+    localStorage.setItem(reviewKey(), JSON.stringify(record));
+    status.textContent = "Saved locally in this browser. " + new Date(record.at).toLocaleString();
+    return record;
+  }
+
+  function restoreDraft() {
+    const draft = savedReview();
+    if (draft && Array.isArray(draft.points) && draft.points.length && current.route) {
+      current.route.points = draft.points;
+    }
+  }
+
+  form.addEventListener("submit", function (event) { event.preventDefault(); saveNow(); });
+  document.getElementById("review-download").addEventListener("click", function () {
+    const record = saveNow();
+    const blob = new Blob([JSON.stringify(record, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const anchor = document.createElement("a");
+    anchor.href = url;
+    anchor.download = (record.project_id + "-" + record.location_id + ".review.json");
+    document.body.appendChild(anchor);
+    anchor.click();
+    anchor.remove();
+    URL.revokeObjectURL(url);
+  });
+  document.getElementById("review-issue").addEventListener("click", function () {
+    const record = saveNow();
+    const body = [
+      "## Location scouting review",
+      "",
+      "- **Project:** " + record.project_id,
+      "- **Location:** " + record.location_id,
+      "- **Decision:** " + record.decision,
+      "- **Points:**",
+      "",
+      (record.points || []).map(function (p) { return "- " + p.label + ": " + p.lat + ", " + p.lng; }).join("\n"),
+      "",
+      "- **Notes:**",
+      "",
+      record.note || "_no notes_"
+    ].join("\n");
+    const url = "https://github.com/bdekoz/situationshipin.space/issues/new?title=" +
+      encodeURIComponent("Location scouting: " + record.project_id + " — " + record.location_id) +
+      "&body=" + encodeURIComponent(body);
+    window.open(url, "_blank", "noopener");
+  });
+  document.getElementById("review-clear").addEventListener("click", function () {
+    localStorage.removeItem(reviewKey());
+    decision.value = "UNREVIEWED";
+    note.value = "";
+    status.textContent = "Cleared local review.";
+  });
+  document.getElementById("location-form").addEventListener("reset", function () {
+    setTimeout(function () {
+      localStorage.removeItem(reviewKey());
+      if (current.route) { current.route.points = null; locationSelect.value = "frogtown"; selectLocation(); }
+    }, 0);
+  });
+  projectSelect.addEventListener("change", populateLocations);
+  locationSelect.addEventListener("change", selectLocation);
+
+  loadCatalog().then(function () {
+    populateLocations();
+  }).catch(function (error) {
+    document.getElementById("catalog-error").textContent = String(error);
+    document.getElementById("catalog-error").hidden = false;
+  });
+})();
+</script>
+  </body>
+</html>
