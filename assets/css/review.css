@@ -119,8 +119,8 @@ footer {
 .wordmark {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+  justify-content: flex-start;
+  gap: 0;
   margin-bottom: 6rem;
   font-family: ui-monospace, "Noto Sans Mono", monospace;
   font-size: clamp(0.76rem, 2vw, 0.95rem);
