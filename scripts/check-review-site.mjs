@@ -285,13 +285,19 @@ const script = await readFile(resolve(repositoryRoot, "assets/js/review.js"), "u
 const requiredIds = [
   "review-catalog", "artifact-grid", "artifact-template", "filter-form",
   "download-feedback", "import-feedback", "issue-dialog", "reset-dialog",
-  "previous-page", "next-page", "page-status", "category-proofs",
-  "category-style-processing", "results-title", "results-description"
+  "previous-page", "next-page", "page-status", "results-title",
+  "results-description"
 ];
 for (const id of requiredIds) {
   if (!proofs.includes(`id="${id}"`) || !style.includes(`id="${id}"`)) {
     fail(`catalog pages are missing required ID ${id}`);
   }
+}
+
+if (proofs.includes("Style processing") || style.includes("Proofs for inspection")) {
+  fail("catalog sub-pages expose the other review category");
+} else {
+  pass("catalog sub-pages are isolated by category");
 }
 
 const remoteDependency = /<(?:script|link)[^>]+(?:src|href)=["']https?:\/\//i;

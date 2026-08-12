@@ -134,11 +134,15 @@ function bindGlobalEvents() {
   elements.confirmReset.addEventListener("click", resetFeedback);
   elements.previousPage.addEventListener("click", () => changePage(-1));
   elements.nextPage.addEventListener("click", () => changePage(1));
-  elements.categoryProofs.addEventListener("click", () => setCategory("proofs"));
-  elements.categoryStyleProcessing.addEventListener(
-    "click",
-    () => setCategory("style-processing")
-  );
+  if (elements.categoryProofs) {
+    elements.categoryProofs.addEventListener("click", () => setCategory("proofs"));
+  }
+  if (elements.categoryStyleProcessing) {
+    elements.categoryStyleProcessing.addEventListener(
+      "click",
+      () => setCategory("style-processing")
+    );
+  }
 }
 
 function decisionsFor(item) {
@@ -334,12 +338,16 @@ function updateMetrics() {
       0
     )
   );
-  elements.categoryProofsCount.textContent = String(
-    state.catalog.items.filter((item) => item.review_category === "proofs").length
-  );
-  elements.categoryStyleProcessingCount.textContent = String(
-    state.catalog.items.filter((item) => item.review_category === "style-processing").length
-  );
+  if (elements.categoryProofsCount) {
+    elements.categoryProofsCount.textContent = String(
+      state.catalog.items.filter((item) => item.review_category === "proofs").length
+    );
+  }
+  if (elements.categoryStyleProcessingCount) {
+    elements.categoryStyleProcessingCount.textContent = String(
+      state.catalog.items.filter((item) => item.review_category === "style-processing").length
+    );
+  }
   updateFeedbackSummary();
 }
 
@@ -348,11 +356,15 @@ function setCategory(category) {
   state.page = 1;
   elements.searchFilter.value = "";
   elements.decisionFilter.value = "all";
-  elements.categoryProofs.setAttribute("aria-pressed", String(category === "proofs"));
-  elements.categoryStyleProcessing.setAttribute(
-    "aria-pressed",
-    String(category === "style-processing")
-  );
+  if (elements.categoryProofs) {
+    elements.categoryProofs.setAttribute("aria-pressed", String(category === "proofs"));
+  }
+  if (elements.categoryStyleProcessing) {
+    elements.categoryStyleProcessing.setAttribute(
+      "aria-pressed",
+      String(category === "style-processing")
+    );
+  }
   if (category === "style-processing") {
     elements.resultsEyebrow.textContent = "human-selected aesthetic themes";
     elements.resultsTitle.textContent = "Style processing";
