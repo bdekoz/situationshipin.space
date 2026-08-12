@@ -218,8 +218,9 @@ async function hydrateFrameManifests(catalog) {
       priorTime = frame.time_seconds;
       return { ...frame, published_path: `${base}${frame.path}` };
     });
-    item.sample_method = manifest.sampling.method;
-    item.safe_end_seconds = manifest.sampling.safe_end_seconds;
+    const sampling = manifest.sampling || {};
+    item.sample_method = sampling.method || "UNSPECIFIED";
+    item.safe_end_seconds = sampling.safe_end_seconds ?? null;
   }));
 }
 
