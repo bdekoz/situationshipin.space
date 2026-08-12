@@ -10,6 +10,8 @@ const catalogPath = resolve(repositoryRoot, "data/review-items.json");
 const manifestPath = resolve(repositoryRoot, "data/build-manifest.json");
 const codePaths = [
   "index.html",
+  "proofs.html",
+  "style.html",
   "assets/css/review.css",
   "assets/js/review.js",
   "data/review-items.json",

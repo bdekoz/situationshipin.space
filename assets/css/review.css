@@ -938,3 +938,55 @@ dialog::backdrop {
     break-inside: avoid;
   }
 }
+
+.review-section .category-options {
+  margin-bottom: 0;
+}
+
+.selection-panel {
+  margin: 1.5rem 0 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.selection-panel summary {
+  padding: 0.9rem 0;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.choice-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.choice-card {
+  display: block;
+  padding: 1.25rem;
+  color: var(--ink);
+  background: var(--panel);
+  border: 2px solid var(--line);
+  text-decoration: none;
+}
+
+.choice-card h3 {
+  margin: 0 0 0.45rem;
+}
+
+.choice-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.choice-card:hover,
+.choice-card:focus-visible {
+  border-color: var(--signal);
+}
+
+@media (max-width: 62rem) {
+  .choice-grid {
+    grid-template-columns: 1fr;
+  }
+}

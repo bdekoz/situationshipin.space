@@ -279,6 +279,8 @@ try {
 }
 
 const index = await readFile(resolve(repositoryRoot, "index.html"), "utf8");
+const proofs = await readFile(resolve(repositoryRoot, "proofs.html"), "utf8");
+const style = await readFile(resolve(repositoryRoot, "style.html"), "utf8");
 const script = await readFile(resolve(repositoryRoot, "assets/js/review.js"), "utf8");
 const requiredIds = [
   "review-catalog", "artifact-grid", "artifact-template", "filter-form",
@@ -287,18 +289,20 @@ const requiredIds = [
   "category-style-processing", "results-title", "results-description"
 ];
 for (const id of requiredIds) {
-  if (!index.includes(`id="${id}"`)) {
-    fail(`index.html is missing required ID ${id}`);
+  if (!proofs.includes(`id="${id}"`) || !style.includes(`id="${id}"`)) {
+    fail(`catalog pages are missing required ID ${id}`);
   }
 }
 
-if (/<(?:script|link)[^>]+(?:src|href)=["']https?:\/\//i.test(index)) {
-  fail("index.html loads a remote script or stylesheet");
+const remoteDependency = /<(?:script|link)[^>]+(?:src|href)=["']https?:\/\//i;
+if (remoteDependency.test(index) || remoteDependency.test(proofs) || remoteDependency.test(style)) {
+  fail("a site page loads a remote script or stylesheet");
 } else {
   pass("site code has no remote script or stylesheet dependency");
 }
 
-if (!index.includes("public GitHub issue") || !script.includes("public_submission_acknowledged")) {
+if (!proofs.includes("public GitHub issue") || !style.includes("public GitHub issue")
+    || !script.includes("public_submission_acknowledged")) {
   fail("public issue disclosure or acknowledgement evidence is missing");
 }
 
@@ -312,7 +316,8 @@ if (!script.includes("pageSize: 10") || !script.includes("AESTHETIC_DECISIONS")
 
 const forbiddenTerms = ["SEEDANCE_KEY", "BEGIN OPENSSH PRIVATE KEY", "aws_access_key_id"];
 for (const term of forbiddenTerms) {
-  if (index.includes(term) || script.includes(term) || JSON.stringify(catalog).includes(term)) {
+  if (index.includes(term) || proofs.includes(term) || style.includes(term)
+      || script.includes(term) || JSON.stringify(catalog).includes(term)) {
     fail(`public site content contains forbidden credential marker ${term}`);
   }
 }

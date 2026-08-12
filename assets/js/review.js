@@ -62,7 +62,12 @@ async function initialize() {
     loadFeedback();
     populateFilters();
     updateMetrics();
-    renderCatalog();
+    const initialCategory = document.body.dataset.reviewCategory;
+    if (initialCategory === "proofs" || initialCategory === "style-processing") {
+      setCategory(initialCategory);
+    } else {
+      renderCatalog();
+    }
     elements.grid.setAttribute("aria-busy", "false");
   } catch (error) {
     elements.grid.setAttribute("aria-busy", "false");
