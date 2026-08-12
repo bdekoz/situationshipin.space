@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "hlt-episode-01-frogtown-v2-full-length-scene-30s-proxy",
+  "artifact_id": "hlt-episode-01-frogtown-v2-full-length-scene-30s-proxy",
+  "style": "randoma11y-accent",
+  "source_media": {
+    "path": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/episode-01-local-trial/full-length-scene/v2/hlt-frogtown-v2-full-length-scene-30s.mkv",
+    "sha256": "e4f049a3a75d6bc8b1649dd3460bb02c94d1e8816023726567038d0e06acc88f",
+    "bytes": 14763082,
+    "duration_seconds": 30.125,
+    "width": 496,
+    "height": 864,
+    "codec": "h264/flac",
+    "frame_rate": "24/1",
+    "published": false
+  },
+  "proxy": {
+    "path": "/review/media/here-lies-trouble/hlt-frogtown-v2-full-length-scene-30s.review.mp4",
+    "sha256": "ee6db163d47f8bc4f508e943b5e7ce6bdeb7056502f12aa8ff066f4406f8b8ec"
+  }
+}
