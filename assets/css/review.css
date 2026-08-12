@@ -109,8 +109,8 @@ footer {
 }
 
 .site-header {
-  min-height: 37rem;
-  padding: 2rem 0 4rem;
+  min-height: 6rem;
+  padding: 2rem 0;
   display: grid;
   align-content: center;
   border-bottom: 1px solid var(--line);
@@ -121,7 +121,7 @@ footer {
   align-items: center;
   justify-content: flex-start;
   gap: 0;
-  margin-bottom: 6rem;
+  margin-bottom: 0;
   font-family: ui-monospace, "Noto Sans Mono", monospace;
   font-size: clamp(0.76rem, 2vw, 0.95rem);
   letter-spacing: 0.03em;
@@ -877,11 +877,11 @@ dialog::backdrop {
 
 @media (max-width: 46rem) {
   .site-header {
-    min-height: 31rem;
+    min-height: 4rem;
   }
 
   .wordmark {
-    margin-bottom: 4rem;
+    margin-bottom: 0;
   }
 
   .metrics,
