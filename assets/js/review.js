@@ -80,7 +80,7 @@ function cacheElements() {
     "artifact-grid", "artifact-template", "catalog-error", "empty-state",
     "result-count", "filter-form", "search-filter", "family-filter",
     "class-filter", "decision-filter", "hide-images", "storage-status",
-    "metric-items", "metric-families", "metric-bytes", "metric-reviewed",
+    "metric-bytes", "metric-completed", "metric-remaining",
     "feedback-count", "reviewer-label", "download-feedback", "import-feedback",
     "open-issue-dialog", "reset-feedback", "handoff-status", "issue-dialog",
     "public-acknowledgement", "continue-to-github", "reset-dialog", "confirm-reset",
@@ -330,24 +330,12 @@ function addOptions(select, values) {
 }
 
 function updateMetrics() {
-  elements.metricItems.textContent = String(state.catalog.items.length);
-  elements.metricFamilies.textContent = String(uniqueValues("family").length);
   elements.metricBytes.textContent = formatBytes(
     state.catalog.items.reduce(
       (sum, item) => sum + item.bytes + (item.frames || []).reduce((frameSum, frame) => frameSum + frame.bytes, 0),
       0
     )
   );
-  if (elements.categoryProofsCount) {
-    elements.categoryProofsCount.textContent = String(
-      state.catalog.items.filter((item) => item.review_category === "proofs").length
-    );
-  }
-  if (elements.categoryStyleProcessingCount) {
-    elements.categoryStyleProcessingCount.textContent = String(
-      state.catalog.items.filter((item) => item.review_category === "style-processing").length
-    );
-  }
   updateFeedbackSummary();
 }
 
@@ -772,7 +760,18 @@ function updateFeedbackSummary() {
     (count, { review }) => count + Object.keys(review.frame_reviews || {}).length,
     0
   );
-  elements.metricReviewed.textContent = String(decisions);
+  const categoryReviews = meaningfulReviews(categoryItems());
+  const categoryDecisions = categoryReviews.filter(
+    ({ review }) => review.decision
+  ).length;
+  if (elements.metricCompleted) {
+    elements.metricCompleted.textContent = String(categoryDecisions);
+  }
+  if (elements.metricRemaining) {
+    elements.metricRemaining.textContent = String(
+      categoryItems().length - categoryDecisions
+    );
+  }
   elements.feedbackCount.textContent = reviews.length === 0
     ? "No feedback yet"
     : `${reviews.length} ${reviews.length === 1 ? "proof" : "proofs"} and ${frameReviews} ${frameReviews === 1 ? "frame" : "frames"} have local feedback`;
