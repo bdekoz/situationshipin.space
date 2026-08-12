@@ -430,8 +430,9 @@ function renderCard(item) {
   card.dataset.reviewMode = item.review_mode || "artifact";
 
   const link = card.querySelector(".artifact-image-link");
-  link.href = item.published_path;
-  link.setAttribute("aria-label", `Open full proof: ${item.title}`);
+  const reviewPageId = item.artifact_id.replace(/[^a-zA-Z0-9._-]+/g, "-");
+  link.href = `/review/${reviewPageId}/`;
+  link.setAttribute("aria-label", `Open exact review page: ${item.title}`);
   if (item.review_mode === "aesthetic") {
     link.setAttribute("aria-label", `Classify aesthetic reference: ${item.title}`);
     card.querySelector(".open-label").textContent = "Classify image";

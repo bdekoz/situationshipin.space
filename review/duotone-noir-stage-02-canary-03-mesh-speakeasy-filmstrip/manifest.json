@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "duotone-noir-stage-02-canary-03-mesh-speakeasy-filmstrip",
+  "artifact_id": "duotone-noir-stage-02-canary-03-mesh-speakeasy-filmstrip",
+  "style": "house-style",
+  "source_media": {
+    "sha256": "8f72ba78fade4aafbc728a46d52e1f29b7e9a38198462b22b45c43e68b6a94e8",
+    "bytes": 1282108,
+    "duration_seconds": 5.042,
+    "width": 496,
+    "height": 864,
+    "codec": "h264",
+    "frame_rate": "24/1",
+    "published": false
+  },
+  "proxy": null
+}

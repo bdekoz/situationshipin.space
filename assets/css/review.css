@@ -1,5 +1,5 @@
 :root {
-  color-scheme: dark;
+  color-scheme: light;
   --ink: #f8f6ee;
   --muted: #b9b7b0;
   --ground: #08090b;
@@ -18,6 +18,17 @@
   font-size: 100%;
   line-height: 1.55;
 }
+
+/* Devastation Pacific house-style production override: paper, ink, sash blue. */
+:root { --ink:#14171a; --muted:#4d565d; --ground:#fcfbf7; --panel:#f5f6f4; --panel-raised:#eef1f2; --line:#9da8af; --line-soft:#d4dadd; --signal:#173a55; --cyan:#173a55; --pink:#7b1e3a; --red:#8d1d2c; --green:#245c43; --focus:#b66a00; }
+body { background:var(--ground); }
+body::before { background-image:linear-gradient(90deg,transparent 0 7%,rgb(23 58 85 / 10%) 7% 7.2%,transparent 7.2% 92.8%,rgb(23 58 85 / 10%) 92.8% 93%,transparent 93%); background-size:100% 100%; }
+.site-header { border-bottom-color:var(--line); }
+.wordmark { color:var(--signal); }
+.button { color:#fff; background:var(--signal); border-color:var(--signal); }
+.button-secondary { color:var(--ink); background:transparent; border-color:var(--signal); }
+.metrics div, .artifact-card, .category-option { background:var(--panel); border-color:var(--line); }
+select,input[type="text"],input[type="search"],textarea { color:var(--ink); background:#fff; border-color:var(--muted); }
 
 * {
   box-sizing: border-box;

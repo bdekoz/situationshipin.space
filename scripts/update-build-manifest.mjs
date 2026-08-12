@@ -17,6 +17,7 @@ const codePaths = [
   "scripts/update-build-manifest.mjs",
   "README.md",
   "_config.yml",
+  "scripts/build-review-pages.mjs",
   ".github/workflows/jekyll-gh-pages.yml"
 ];
 
@@ -93,15 +94,15 @@ const manifest = {
   aesthetic_collection_counts: Object.fromEntries(
     Object.entries(aestheticCollectionCounts).sort(([left], [right]) => left.localeCompare(right))
   ),
-  maximum_artifact_bytes: 1024 * 1024,
-  maximum_payload_bytes: 16 * 1024 * 1024,
+  maximum_artifact_bytes: 16 * 1024 * 1024,
+  maximum_payload_bytes: 48 * 1024 * 1024,
   excluded_media: ["mkv", "mp4", "mov", "wav", "mp3"],
   code_files: codeFiles,
   artifact_inventory: "data/review-items.json",
   catalog_sha256: sha256(catalogBytes),
   notes: [
     "The catalog binds every published derivative to an Izzi source path and SHA-256.",
-    "Four source MKVs are represented by forty independently reviewable JPEG samples and four portrait filmstrips; none of the MKVs is copied.",
+    "Canonical source MKVs remain outside Pages; one bounded H.264/AAC MP4 proxy is published for continuous motion and audio review with independent lineage.",
     "The 234 aesthetic-reference originals remain outside the Pages tree; compact derivatives preserve source-image hashes and explicit worktree state.",
     "No source episode media, source audio, credential, analytics code, or account token is included.",
     "Technical publication does not imply human acceptance, aesthetic-corpus finalization, provider-transfer authority, or baseline promotion."

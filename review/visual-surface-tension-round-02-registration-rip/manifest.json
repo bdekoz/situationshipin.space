@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "visual-surface-tension-round-02-registration-rip",
+  "artifact_id": "visual-surface-tension-round-02-registration-rip",
+  "style": "house-style",
+  "source_media": {
+    "sha256": "237855a9ff0a522bd6de4f68fb768194e35aeb793199a7b082dc1e73a25e4a4c",
+    "bytes": 50615541,
+    "duration_seconds": 10,
+    "width": 1080,
+    "height": 1920,
+    "codec": "h264",
+    "frame_rate": "30/1",
+    "published": false
+  },
+  "proxy": null
+}

@@ -7,10 +7,10 @@ import { fileURLToPath } from "node:url";
 
 const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const catalogPath = resolve(repositoryRoot, "data/review-items.json");
-const maximumFileBytes = 1024 * 1024;
-const maximumPayloadBytes = 16 * 1024 * 1024;
-const allowedExtensions = new Set([".png", ".jpg", ".jpeg", ".svg", ".html", ".json"]);
-const forbiddenExtensions = new Set([".mkv", ".mp4", ".wav", ".mp3", ".mov"]);
+const maximumFileBytes = 16 * 1024 * 1024;
+const maximumPayloadBytes = 48 * 1024 * 1024;
+const allowedExtensions = new Set([".png", ".jpg", ".jpeg", ".svg", ".html", ".json", ".mp4"]);
+const forbiddenExtensions = new Set([".mkv", ".wav", ".mp3", ".mov"]);
 
 let failures = 0;
 
@@ -134,7 +134,7 @@ for (const item of catalog.items) {
       fail(`${item.artifact_id} byte count differs from catalog`);
     }
     if (artifactStat.size > maximumFileBytes) {
-      fail(`${item.artifact_id} exceeds the 1 MiB prototype object budget`);
+      fail(`${item.artifact_id} exceeds the bounded 16 MiB review object budget`);
     }
     if (hash !== item.sha256) {
       fail(`${item.artifact_id} SHA-256 differs from catalog`);
@@ -204,7 +204,7 @@ const styleCounts = Object.fromEntries(
   ["noir-vibezz", "tokyo-psychedelic", "neon-addict"]
     .map((family) => [family, styleItems.filter((item) => item.family === family).length])
 );
-if (proofCount !== 16 || styleItems.length !== 234
+if (proofCount !== 17 || styleItems.length !== 234
     || styleCounts["noir-vibezz"] !== 58
     || styleCounts["tokyo-psychedelic"] !== 30
     || styleCounts["neon-addict"] !== 146) {
@@ -218,7 +218,7 @@ for (const path of await recursiveFiles(resolve(repositoryRoot, "review"))) {
 }
 
 if (payloadBytes > maximumPayloadBytes) {
-  fail(`artifact payload exceeds 16 MiB: ${payloadBytes} bytes`);
+  fail(`artifact payload exceeds 48 MiB: ${payloadBytes} bytes`);
 } else {
   pass(`artifact payload is bounded: ${payloadBytes} bytes`);
 }

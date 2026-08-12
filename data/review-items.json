@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "portal_build": "izzi-review-2026-08-11.7",
-  "generated_at": "2026-08-11T10:06:08.000Z",
+  "generated_at": "2026-08-12T01:51:06.023Z",
   "source_repository": "bdekoz/izzi",
   "source_commit": "ad15056e7d8a460dd669d0b1d1620a7be33f4108",
   "publication_state": "PUBLIC-PROTOTYPE",
@@ -8616,6 +8616,47 @@
       "technical_state": "DERIVATIVE-VERIFIED",
       "title": "neon-addict-146",
       "width": 480
+    },
+    {
+      "artifact_id": "here-lies-trouble-episode-01-frogtown-v2-audio-canary-65919a746572",
+      "title": "Here Lies Trouble — Episode 1 — Frogtown v2 audio canary",
+      "description": "Full-episode local motion and cleaned stereo-audio review proxy. Review walking motion, animal conversation, Frogtown environmental texture, and the natural river ambience.",
+      "alt": "Vertical animated Frogtown episode review proxy with four animal characters exploring a river setting.",
+      "family": "here-lies-trouble",
+      "generation_class": "episode-local-trial",
+      "feedback_round": "neon-addict-stage-01-v2",
+      "media_kind": "video",
+      "review_scope": "LOCAL-FULL-EPISODE-CANARY",
+      "review_mode": "output",
+      "source_path": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/episode-01-local-trial/here-lies-trouble-episode-01-frogtown.v2.audio-canary.mkv",
+      "source_media": {
+        "path": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/episode-01-local-trial/here-lies-trouble-episode-01-frogtown.v2.audio-canary.mkv",
+        "sha256": "65919a746572475fb7b96621cbc858887da5ac9248a47f474a960ec08e000b61",
+        "bytes": 76513965,
+        "duration_seconds": 168,
+        "width": 720,
+        "height": 1280,
+        "codec": "h264/flac",
+        "frame_rate": "30/1",
+        "published": false
+      },
+      "published_path": "review/media/here-lies-trouble/here-lies-trouble-episode-01-frogtown.v2.audio-canary.review.mp4",
+      "sha256": "cdbea4863242491f25eaa00211fd221d9820403358624bbb4d84d69879647d9d",
+      "bytes": 12548002,
+      "width": 360,
+      "height": 640,
+      "duration_seconds": 168,
+      "technical_state": "BROWSER-PROXY-RENDERED-FROM-CANONICAL-MKV",
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "review_category": "proofs",
+      "style": "randoma11y-accent",
+      "style_pair": {
+        "foreground": "#581c87",
+        "background": "#faf5ff",
+        "date": "2026-08-11",
+        "contrast_ratio": 10.135063065476164
+      }
     }
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "here-lies-trouble-episode-01-frogtown-v2-audio-canary-65919a746572",
+  "artifact_id": "here-lies-trouble-episode-01-frogtown-v2-audio-canary-65919a746572",
+  "style": "randoma11y-accent",
+  "source_media": {
+    "path": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/episode-01-local-trial/here-lies-trouble-episode-01-frogtown.v2.audio-canary.mkv",
+    "sha256": "65919a746572475fb7b96621cbc858887da5ac9248a47f474a960ec08e000b61",
+    "bytes": 76513965,
+    "duration_seconds": 168,
+    "width": 720,
+    "height": 1280,
+    "codec": "h264/flac",
+    "frame_rate": "30/1",
+    "published": false
+  },
+  "proxy": {
+    "path": "/review/media/here-lies-trouble/here-lies-trouble-episode-01-frogtown.v2.audio-canary.review.mp4",
+    "sha256": "cdbea4863242491f25eaa00211fd221d9820403358624bbb4d84d69879647d9d"
+  }
+}

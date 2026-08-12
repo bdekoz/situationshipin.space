@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "visual-guilloche-round-05-wild-variation-10",
+  "artifact_id": "visual-guilloche-round-05-wild-variation-10",
+  "style": "house-style",
+  "source_media": {
+    "sha256": "0aaaad32c1f22cebf119f3773b54e3d66001c8e8698e625b6af79631a8cf48ce",
+    "bytes": 48068514,
+    "duration_seconds": 2,
+    "width": 1080,
+    "height": 1920,
+    "codec": "h264",
+    "frame_rate": "24/1",
+    "published": false
+  },
+  "proxy": null
+}
