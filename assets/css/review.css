@@ -747,14 +747,25 @@ legend {
 }
 
 .handoff-grid {
-  display: grid;
-  grid-template-columns: minmax(15rem, 1fr) minmax(20rem, 2fr);
-  gap: 1.5rem;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
   align-items: end;
   margin-top: 2rem;
 }
 
-.handoff-actions,
+.handoff-grid > label {
+  flex: 1 1 13rem;
+  min-width: 11rem;
+}
+
+.handoff-actions {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.7rem;
+  margin-left: auto;
+}
+
 .dialog-actions {
   display: flex;
   flex-wrap: wrap;
@@ -877,9 +888,13 @@ dialog::backdrop {
   .category-options,
   .filter-grid,
   .artifact-grid,
-  .handoff-grid,
   .method-grid {
     grid-template-columns: 1fr;
+  }
+
+  .handoff-grid,
+  .handoff-actions {
+    flex-wrap: wrap;
   }
 
   .artifact-description {
