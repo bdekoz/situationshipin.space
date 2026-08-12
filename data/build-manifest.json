@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "portal_build": "izzi-review-2026-08-11.7",
-  "generated_at": "2026-08-12T10:25:23.310Z",
+  "generated_at": "2026-08-12T10:45:30.982Z",
   "portal_repository": "bdekoz/situationshipin.space",
   "portal_source_commit": "219a9b7f0891998c1525c94fa15b43c490b5d79f",
   "izzi_repository": "bdekoz/izzi",
@@ -10,11 +10,11 @@
   "human_review_state": "UNREVIEWED",
   "baseline_state": "NOT-PROMOTED",
   "training_conversion_transfer_state": "NOT-SHARED",
-  "artifact_count": 251,
-  "artifact_payload_bytes": 25666194,
-  "frame_preview_count": 7,
-  "sampled_frame_count": 70,
-  "source_media_bytes_represented": 441149011,
+  "artifact_count": 257,
+  "artifact_payload_bytes": 27097951,
+  "frame_preview_count": 10,
+  "sampled_frame_count": 100,
+  "source_media_bytes_represented": 445600619,
   "source_image_count": 234,
   "source_image_bytes_represented": 243747547,
   "aesthetic_collection_counts": {
@@ -46,11 +46,11 @@
     },
     {
       "path": "data/review-items.json",
-      "sha256": "06cd38abd0061898ad3c5b6a8927533f33d6aa94717ca8109d2c2dd94313d0c1"
+      "sha256": "e380ec197d0c59a76f70e20d7a34e02baf9f9216e6c124be5ae47e8a38fb8fee"
     },
     {
       "path": "scripts/check-review-site.mjs",
-      "sha256": "6a600994ba0a5da045625975afd6ef777d7bcf12c5ccbcd4faf025dc6e3259b1"
+      "sha256": "1eb5899d9012872a4dd7e215fdc238fadaef05f3774964201066c67b8625179f"
     },
     {
       "path": "scripts/update-build-manifest.mjs",
@@ -74,7 +74,7 @@
     }
   ],
   "artifact_inventory": "data/review-items.json",
-  "catalog_sha256": "06cd38abd0061898ad3c5b6a8927533f33d6aa94717ca8109d2c2dd94313d0c1",
+  "catalog_sha256": "e380ec197d0c59a76f70e20d7a34e02baf9f9216e6c124be5ae47e8a38fb8fee",
   "notes": [
     "The catalog binds every published derivative to an Izzi source path and SHA-256.",
     "Canonical source MKVs remain outside Pages; one bounded H.264/AAC MP4 proxy is published for continuous motion and audio review with independent lineage.",

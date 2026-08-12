@@ -1,0 +1,11 @@
+{
+  "schema_version": "izzi-randoma11y-daily-pairs/1",
+  "pairs": {
+    "2026-08-12": {
+      "foreground": "#173a55",
+      "background": "#fcfbf7",
+      "date": "2026-08-12",
+      "contrast_ratio": 11.4399
+    }
+  }
+}

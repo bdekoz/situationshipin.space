@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "hlt-episode-01-frogtown-v2-motion-canary-02-proxy",
+  "artifact_id": "hlt-episode-01-frogtown-v2-motion-canary-02-proxy",
+  "style": "randoma11y-accent",
+  "source_media": {
+    "path": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/episode-01-local-trial/motion-canaries/v2/here-lies-trouble-episode-01-frogtown.v2.motion-canary-02.delivery-496x864.mkv",
+    "sha256": "9d07dd4b827d506ec4ffa15557cfaa2709ca2ea6c18d6f09dd480dccc63a687b",
+    "bytes": 940591,
+    "duration_seconds": 5.042,
+    "width": 496,
+    "height": 864,
+    "codec": "h264",
+    "frame_rate": "24/1",
+    "published": false
+  },
+  "proxy": {
+    "path": "/review/media/here-lies-trouble/hlt-episode-01-frogtown-v2-motion-canary-02.review.mp4",
+    "sha256": "519d33e963db37649c20cf0ff763055f281dfd41aed0b1b0e15f23da789da188"
+  }
+}
