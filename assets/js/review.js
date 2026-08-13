@@ -562,14 +562,7 @@ function renderCard(item) {
 
   card.addEventListener("change", () => captureCard(card));
   textarea.addEventListener("input", () => captureCard(card));
-  const collapse = item.review_category !== "proofs" || isTallVertical(item);
-  return collapse ? collapseTallCard(card) : card;
-}
-
-function isTallVertical(item) {
-  return item.media_kind === "video"
-    || (Number(item.height) && Number(item.width)
-        && Number(item.height) / Number(item.width) >= 1.5);
+  return collapseTallCard(card);
 }
 
 function collapseTallCard(card) {
