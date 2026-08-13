@@ -563,6 +563,18 @@ input[type="radio"] {
   font-size: 0.85rem;
 }
 
+.context-link {
+  margin: 0 0 0.75rem;
+  font-size: 0.9rem;
+}
+
+.context-link a {
+  color: var(--signal);
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 .pagination {
   display: flex;
   align-items: center;
