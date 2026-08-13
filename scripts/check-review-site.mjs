@@ -198,19 +198,6 @@ for (const item of catalog.items) {
   }
 }
 
-const proofCount = catalog.items.filter((item) => item.review_category === "proofs").length;
-const styleItems = catalog.items.filter((item) => item.review_category === "style-processing");
-const styleCounts = Object.fromEntries(
-  ["noir-vibezz", "tokyo-psychedelic", "neon-addict"]
-    .map((family) => [family, styleItems.filter((item) => item.family === family).length])
-);
-if (proofCount !== 26 || styleItems.length !== 234
-    || styleCounts["noir-vibezz"] !== 58
-    || styleCounts["tokyo-psychedelic"] !== 30
-    || styleCounts["neon-addict"] !== 146) {
-  fail(`review-category inventory differs: proofs=${proofCount}, styles=${JSON.stringify(styleCounts)}`);
-}
-
 for (const path of await recursiveFiles(resolve(repositoryRoot, "review"))) {
   if (forbiddenExtensions.has(extname(path).toLowerCase())) {
     fail(`source media was copied into the public review tree: ${path}`);
@@ -246,10 +233,25 @@ try {
     source_image_bytes_represented: sourceImages.reduce((sum, image) => sum + image.bytes, 0),
     catalog_sha256: catalogHash
   };
+  const proofCount = catalog.items.filter((item) => item.review_category === "proofs").length;
+  const styleProcessingCount = catalog.items.filter(
+    (item) => item.review_category === "style-processing"
+  ).length;
+  const expectedCategoryCounts = {
+    proofs: proofCount,
+    style_processing: styleProcessingCount
+  };
   for (const [field, expected] of Object.entries(expectedManifestFields)) {
     if (buildManifest[field] !== expected) {
       fail(`build manifest ${field} differs: expected ${expected}, observed ${buildManifest[field]}`);
     }
+  }
+  if (JSON.stringify(buildManifest.review_category_counts) !== JSON.stringify(expectedCategoryCounts)) {
+    fail(
+      "build manifest review-category counts differ: "
+      + `expected ${JSON.stringify(expectedCategoryCounts)}, `
+      + `observed ${JSON.stringify(buildManifest.review_category_counts)}`
+    );
   }
   if (JSON.stringify(buildManifest.aesthetic_collection_counts) !== JSON.stringify({
     "neon-addict": 146,

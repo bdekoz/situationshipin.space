@@ -39,6 +39,33 @@ node scripts/update-build-manifest.mjs
 node scripts/check-review-site.mjs
 ```
 
+## Publishing a new video proof
+
+Put a video up for review with one approval-gated command. The canonical
+source stays private; the script publishes a bounded `.mp4` proxy (site
+policy: ≤ 16 MiB, no MKVs in the Pages tree):
+
+```sh
+node scripts/publish-video-proof.mjs \
+  --approve PROJECT-APPROVED \
+  --source outputs/.../cut-v1.review.mp4 \
+  --source-path outputs/review/feedback/visual/.../cut-v1.review.mp4 \
+  --artifact-id hlt-episode-01-cut-v1 \
+  --title "Here Lies Trouble — Episode 1 — cut v1" \
+  --description "What the reviewer should look at" \
+  --family here-lies-trouble \
+  --generation-class episode-master \
+  --feedback-round neon-addict-stage-01-v2 \
+  --review-scope EPISODE-01-MASTER
+```
+
+The command validates the approval gate and proxy size, computes the SHA-256
+and dimensions, adds or updates the catalog entry, generates the exact review
+page and manifest, refreshes the build receipt, and runs the site validator.
+Use `--dry-run` to preview the plan, or pass `--render-proxy` with an `.mkv`
+source to render the 360×640 proxy with ffmpeg. After the script succeeds,
+commit and push the portal repository.
+
 ## Published payload policy
 
 Only allowlisted thumbnails, filmstrips, compact proofs, and metadata belong in

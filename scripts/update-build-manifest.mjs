@@ -20,6 +20,8 @@ const codePaths = [
   "README.md",
   "_config.yml",
   "scripts/build-review-pages.mjs",
+  "scripts/publish-video-proof.mjs",
+  "scripts/review-page.mjs",
   ".github/workflows/jekyll-gh-pages.yml"
 ];
 
@@ -32,6 +34,8 @@ const catalog = JSON.parse(catalogBytes.toString("utf8"));
 const prior = JSON.parse(await readFile(manifestPath, "utf8"));
 const sourceMedia = new Map();
 const aestheticCollectionCounts = {};
+let proofCount = 0;
+let styleProcessingCount = 0;
 let artifactPayloadBytes = 0;
 let framePreviewCount = 0;
 let sampledFrameCount = 0;
@@ -42,7 +46,11 @@ for (const item of catalog.items) {
     sourceMedia.set(item.source_media.sha256, item.source_media);
   }
   if (item.review_category === "style-processing") {
+    styleProcessingCount += 1;
     aestheticCollectionCounts[item.family] = (aestheticCollectionCounts[item.family] || 0) + 1;
+  }
+  if (item.review_category === "proofs") {
+    proofCount += 1;
   }
   if (item.frame_manifest_path) {
     framePreviewCount += 1;
@@ -81,6 +89,10 @@ const manifest = {
   baseline_state: "NOT-PROMOTED",
   training_conversion_transfer_state: "NOT-SHARED",
   artifact_count: catalog.items.length,
+  review_category_counts: {
+    proofs: proofCount,
+    style_processing: styleProcessingCount
+  },
   artifact_payload_bytes: artifactPayloadBytes,
   frame_preview_count: framePreviewCount,
   sampled_frame_count: sampledFrameCount,

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "portal_build": "izzi-review-2026-08-11.7",
-  "generated_at": "2026-08-13T04:58:31.464Z",
+  "generated_at": "2026-08-13T05:06:21.982Z",
   "portal_repository": "bdekoz/situationshipin.space",
   "portal_source_commit": "219a9b7f0891998c1525c94fa15b43c490b5d79f",
   "izzi_repository": "bdekoz/izzi",
@@ -11,6 +11,10 @@
   "baseline_state": "NOT-PROMOTED",
   "training_conversion_transfer_state": "NOT-SHARED",
   "artifact_count": 260,
+  "review_category_counts": {
+    "proofs": 26,
+    "style_processing": 234
+  },
   "artifact_payload_bytes": 45879550,
   "frame_preview_count": 11,
   "sampled_frame_count": 110,
@@ -58,15 +62,15 @@
     },
     {
       "path": "scripts/check-review-site.mjs",
-      "sha256": "aaa0736cf229197b4cf305250a2f7461c5d8d8763d5bf1911cdc6ca1b9825839"
+      "sha256": "8f0e797d11a7809e406b9d7337f6f604837d5cf0c528311af569a0f3bab1306a"
     },
     {
       "path": "scripts/update-build-manifest.mjs",
-      "sha256": "07d9e341c0d61a8dd1d26eee2dd1ab98f2f0f112120fcca97de64800ce7f3a9c"
+      "sha256": "82595f4a72dc08ba6c2ce4eb0338a12b48f1a03cd4cd585845351d8e9471f7b2"
     },
     {
       "path": "README.md",
-      "sha256": "73f73769ebe4c1614b64fd04ba84d3ea1dcec1c81bdd718122a7886045ecf71d"
+      "sha256": "539731e904dba1dc4d73a85fe13ceac537d46525cafa4500f8f359df200e58b2"
     },
     {
       "path": "_config.yml",
@@ -74,7 +78,15 @@
     },
     {
       "path": "scripts/build-review-pages.mjs",
-      "sha256": "a40b1560979822385e9148c6edc853c0ffbee983b080a28ef65e0eea67167fb0"
+      "sha256": "10cc2c18a7be6d2b126fbea5931684927321d2687ff8bdc2f2b4116995db89f6"
+    },
+    {
+      "path": "scripts/publish-video-proof.mjs",
+      "sha256": "b647499d70efc87101ce509d605785943b5a0e639b4b65e94fb4c654d3f2e37f"
+    },
+    {
+      "path": "scripts/review-page.mjs",
+      "sha256": "bdf631b6bca66a07c6b6c74e1c52834b366ba9defd7838644fb4ab66b8a454e1"
     },
     {
       "path": ".github/workflows/jekyll-gh-pages.yml",
