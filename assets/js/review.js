@@ -363,7 +363,9 @@ function setCategory(category) {
     elements.resultsDescription.textContent =
       "Classify dashboard thumbnails as positive, negative, held, or excluded aesthetic evidence.";
   } else {
-    elements.resultsEyebrow.textContent = "selected izzi outputs";
+    if (elements.resultsEyebrow) {
+      elements.resultsEyebrow.textContent = "";
+    }
     elements.resultsTitle.textContent = "Proofs for inspection";
     elements.resultsDescription.textContent =
       "Inspect generated artifacts and bounded temporal previews without promoting a baseline.";
