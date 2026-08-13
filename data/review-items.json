@@ -1,48 +1,72 @@
 {
   "baseline_state": "NOT-PROMOTED",
-  "generated_at": "2026-08-12T16:09:39.297Z",
+  "generated_at": "2026-08-13T04:57:29.667Z",
   "human_review_state": "UNREVIEWED",
   "items": [
     {
-      "added_at": "2026-08-12T16:09:39.297Z",
-      "alt": "Vertical animated Frogtown episode review proxy with four animal characters exploring a river setting.",
       "artifact_id": "here-lies-trouble-episode-01-frogtown-v2-audio-canary-65919a746572",
-      "baseline_state": "NOT-PROMOTED",
-      "bytes": 12548002,
+      "title": "Here Lies Trouble — Episode 1 — Frogtown v2 audio canary",
       "description": "Full-episode local motion and cleaned stereo-audio review proxy. Review walking motion, animal conversation, Frogtown environmental texture, and the natural river ambience.",
+      "alt": "Vertical animated Frogtown episode review proxy with four animal characters exploring a river setting.",
+      "family": "here-lies-trouble",
+      "generation_class": "episode-local-trial",
+      "feedback_round": "neon-addict-stage-01-v2",
+      "media_kind": "video",
+      "review_scope": "LOCAL-FULL-EPISODE-CANARY",
+      "review_mode": "output",
+      "source_path": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/episode-01-local-trial/here-lies-trouble-episode-01-frogtown.v2.audio-canary.mkv",
+      "source_media": {
+        "path": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/episode-01-local-trial/here-lies-trouble-episode-01-frogtown.v2.audio-canary.mkv",
+        "sha256": "65919a746572475fb7b96621cbc858887da5ac9248a47f474a960ec08e000b61",
+        "bytes": 76513965,
+        "duration_seconds": 168,
+        "width": 720,
+        "height": 1280,
+        "codec": "h264/flac",
+        "frame_rate": "30/1",
+        "published": false
+      },
+      "published_path": "review/media/here-lies-trouble/here-lies-trouble-episode-01-frogtown.v2.audio-canary.review.mp4",
+      "sha256": "cdbea4863242491f25eaa00211fd221d9820403358624bbb4d84d69879647d9d",
+      "bytes": 12548002,
+      "width": 360,
+      "height": 640,
+      "duration_seconds": 168,
+      "technical_state": "BROWSER-PROXY-RENDERED-FROM-CANONICAL-MKV",
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "review_category": "proofs",
+      "style": "randoma11y-accent",
+      "style_pair": {
+        "foreground": "#581c87",
+        "background": "#faf5ff",
+        "date": "2026-08-11",
+        "contrast_ratio": 10.135063065476164
+      },
+      "added_at": "2026-08-13T04:57:29.656Z"
+    },
+    {
+      "added_at": "2026-08-12T20:07:32-07:00",
+      "alt": "Vertical 360x640 episode-01 pilot review proxy with four animal characters exploring a river setting.",
+      "artifact_id": "hlt-episode-01-pilot",
+      "baseline_state": "NOT-PROMOTED",
+      "bytes": 15478560,
+      "description": "Episode-01 pilot review proxy: 168-second vertical scene with Higgs audio. Review motion, character staging, Frogtown environmental texture, and the audio mix.",
       "duration_seconds": 168,
       "family": "here-lies-trouble",
-      "feedback_round": "neon-addict-stage-01-v2",
-      "generation_class": "episode-local-trial",
+      "feedback_round": "neon-addict-stage-01",
+      "generation_class": "episode-pilot",
       "height": 640,
       "human_review_state": "UNREVIEWED",
       "media_kind": "video",
-      "published_path": "review/media/here-lies-trouble/here-lies-trouble-episode-01-frogtown.v2.audio-canary.review.mp4",
+      "published_path": "review/hlt-episode-01-pilot/hlt-episode-01-pilot.review.mp4",
       "review_category": "proofs",
       "review_mode": "output",
-      "review_scope": "LOCAL-FULL-EPISODE-CANARY",
-      "sha256": "cdbea4863242491f25eaa00211fd221d9820403358624bbb4d84d69879647d9d",
-      "source_media": {
-        "bytes": 76513965,
-        "codec": "h264/flac",
-        "duration_seconds": 168,
-        "frame_rate": "30/1",
-        "height": 1280,
-        "path": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/episode-01-local-trial/here-lies-trouble-episode-01-frogtown.v2.audio-canary.mkv",
-        "published": false,
-        "sha256": "65919a746572475fb7b96621cbc858887da5ac9248a47f474a960ec08e000b61",
-        "width": 720
-      },
-      "source_path": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/episode-01-local-trial/here-lies-trouble-episode-01-frogtown.v2.audio-canary.mkv",
-      "style": "randoma11y-accent",
-      "style_pair": {
-        "background": "#faf5ff",
-        "contrast_ratio": 10.135063065476164,
-        "date": "2026-08-11",
-        "foreground": "#581c87"
-      },
-      "technical_state": "BROWSER-PROXY-RENDERED-FROM-CANONICAL-MKV",
-      "title": "Here Lies Trouble \u2014 Episode 1 \u2014 Frogtown v2 audio canary",
+      "review_scope": "EPISODE-01-PILOT-CUT-V1",
+      "sha256": "d6996b7c6f8da7c18eba3072d5836e2096e1e7eaef17026fca2c6287cd547c27",
+      "source_path": "outputs/review/feedback/visual/here-lies-trouble/neon-addict-stage-01/episode-01-local-trial/pilot-review/hlt-episode-01-pilot.review.mp4",
+      "technical_state": "PROVIDER-SCENE-WITH-HIGGS-AUDIO; REVIEW-ONLY",
+      "title": "Here Lies Trouble — Episode 1 — pilot (cut v1)",
       "width": 360
     },
     {
@@ -84,7 +108,7 @@
         "foreground": "#173a55"
       },
       "technical_state": "THREE-CHAINED-PROVIDER-SEGMENTS-ASSEMBLED-WITH-AUDIO-MIX",
-      "title": "Here Lies Trouble \u2014 Frogtown v2 full-length scene filmstrip",
+      "title": "Here Lies Trouble — Frogtown v2 full-length scene filmstrip",
       "width": 1080
     },
     {
@@ -126,7 +150,7 @@
         "foreground": "#173a55"
       },
       "technical_state": "BROWSER-PROXY-RENDERED-FROM-ASSEMBLED-MKV",
-      "title": "Here Lies Trouble \u2014 Frogtown v2 full-length scene proxy",
+      "title": "Here Lies Trouble — Frogtown v2 full-length scene proxy",
       "width": 360
     },
     {
@@ -168,7 +192,7 @@
         "foreground": "#173a55"
       },
       "technical_state": "PROVIDER-DELIVERY-496X864-BELOW-720-PREVIEW",
-      "title": "Here Lies Trouble \u2014 Frogtown v2 motion canary 01 filmstrip",
+      "title": "Here Lies Trouble — Frogtown v2 motion canary 01 filmstrip",
       "width": 1080
     },
     {
@@ -210,7 +234,7 @@
         "foreground": "#173a55"
       },
       "technical_state": "BROWSER-PROXY-RENDERED-FROM-PROVIDER-DELIVERY",
-      "title": "Here Lies Trouble \u2014 Frogtown v2 motion canary 01 proxy",
+      "title": "Here Lies Trouble — Frogtown v2 motion canary 01 proxy",
       "width": 360
     },
     {
@@ -252,7 +276,7 @@
         "foreground": "#173a55"
       },
       "technical_state": "PROVIDER-DELIVERY-496X864-BELOW-720-PREVIEW",
-      "title": "Here Lies Trouble \u2014 Frogtown v2 motion canary 02 filmstrip",
+      "title": "Here Lies Trouble — Frogtown v2 motion canary 02 filmstrip",
       "width": 1080
     },
     {
@@ -294,7 +318,7 @@
         "foreground": "#173a55"
       },
       "technical_state": "BROWSER-PROXY-RENDERED-FROM-PROVIDER-DELIVERY",
-      "title": "Here Lies Trouble \u2014 Frogtown v2 motion canary 02 proxy",
+      "title": "Here Lies Trouble — Frogtown v2 motion canary 02 proxy",
       "width": 360
     },
     {
@@ -336,7 +360,7 @@
         "foreground": "#173a55"
       },
       "technical_state": "PROVIDER-DELIVERY-496X864-BELOW-720-PREVIEW",
-      "title": "Here Lies Trouble \u2014 Frogtown v2 motion canary 03 filmstrip",
+      "title": "Here Lies Trouble — Frogtown v2 motion canary 03 filmstrip",
       "width": 1080
     },
     {
@@ -378,7 +402,7 @@
         "foreground": "#173a55"
       },
       "technical_state": "BROWSER-PROXY-RENDERED-FROM-PROVIDER-DELIVERY",
-      "title": "Here Lies Trouble \u2014 Frogtown v2 motion canary 03 proxy",
+      "title": "Here Lies Trouble — Frogtown v2 motion canary 03 proxy",
       "width": 360
     },
     {
@@ -388,7 +412,7 @@
       "artifact_id": "duotone-noir-stage-02-canary-01-telephone-filmstrip",
       "baseline_state": "NOT-PROMOTED",
       "bytes": 270635,
-      "description": "Ten evenly spaced frames from the five-second photographic Noir Pro preview. The creative result completed, but the provider returned 496 \u00d7 864 after an explicit 720p request.",
+      "description": "Ten evenly spaced frames from the five-second photographic Noir Pro preview. The creative result completed, but the provider returned 496 × 864 after an explicit 720p request.",
       "family": "duotone-111",
       "feedback_round": "noir-stage-02",
       "frame_manifest_path": "review/izzi/2026-08-11/video/duotone-noir-stage-02-canary-01-telephone/manifest.json",
@@ -423,7 +447,7 @@
       "artifact_id": "duotone-noir-stage-02-canary-02-stair-threshold-filmstrip",
       "baseline_state": "NOT-PROMOTED",
       "bytes": 325336,
-      "description": "Ten evenly spaced frames from the five-second photographic Noir Pro preview. The creative result completed, but the provider returned 496 \u00d7 864 after an explicit 720p request.",
+      "description": "Ten evenly spaced frames from the five-second photographic Noir Pro preview. The creative result completed, but the provider returned 496 × 864 after an explicit 720p request.",
       "family": "duotone-111",
       "feedback_round": "noir-stage-02",
       "frame_manifest_path": "review/izzi/2026-08-11/video/duotone-noir-stage-02-canary-02-stair-threshold/manifest.json",
@@ -458,7 +482,7 @@
       "artifact_id": "duotone-noir-stage-02-canary-03-mesh-speakeasy-filmstrip",
       "baseline_state": "NOT-PROMOTED",
       "bytes": 298081,
-      "description": "Ten evenly spaced frames from the five-second photographic Noir Pro preview. The creative result completed, but the provider returned 496 \u00d7 864 after an explicit 720p request.",
+      "description": "Ten evenly spaced frames from the five-second photographic Noir Pro preview. The creative result completed, but the provider returned 496 × 864 after an explicit 720p request.",
       "family": "duotone-111",
       "feedback_round": "noir-stage-02",
       "frame_manifest_path": "review/izzi/2026-08-11/video/duotone-noir-stage-02-canary-03-mesh-speakeasy/manifest.json",
@@ -585,7 +609,7 @@
       "source_path": "resources/noir-vibezz/big-combo/vlcsnap-2026-08-09-22h03m43s197.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "big-combo \u00b7 vlcsnap-2026-08-09-22h03m43s197",
+      "title": "big-combo · vlcsnap-2026-08-09-22h03m43s197",
       "width": 480
     },
     {
@@ -621,7 +645,7 @@
       "source_path": "resources/noir-vibezz/big-combo/vlcsnap-2026-08-09-22h03m48s941.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "big-combo \u00b7 vlcsnap-2026-08-09-22h03m48s941",
+      "title": "big-combo · vlcsnap-2026-08-09-22h03m48s941",
       "width": 480
     },
     {
@@ -657,7 +681,7 @@
       "source_path": "resources/noir-vibezz/big-combo/vlcsnap-2026-08-09-22h03m55s641.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "big-combo \u00b7 vlcsnap-2026-08-09-22h03m55s641",
+      "title": "big-combo · vlcsnap-2026-08-09-22h03m55s641",
       "width": 480
     },
     {
@@ -693,7 +717,7 @@
       "source_path": "resources/noir-vibezz/big-combo/vlcsnap-2026-08-09-22h04m00s834.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "big-combo \u00b7 vlcsnap-2026-08-09-22h04m00s834",
+      "title": "big-combo · vlcsnap-2026-08-09-22h04m00s834",
       "width": 480
     },
     {
@@ -729,7 +753,7 @@
       "source_path": "resources/noir-vibezz/big-combo/vlcsnap-2026-08-09-22h04m08s507.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "big-combo \u00b7 vlcsnap-2026-08-09-22h04m08s507",
+      "title": "big-combo · vlcsnap-2026-08-09-22h04m08s507",
       "width": 480
     },
     {
@@ -765,7 +789,7 @@
       "source_path": "resources/noir-vibezz/big-combo/vlcsnap-2026-08-09-22h04m16s075.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "big-combo \u00b7 vlcsnap-2026-08-09-22h04m16s075",
+      "title": "big-combo · vlcsnap-2026-08-09-22h04m16s075",
       "width": 480
     },
     {
@@ -801,7 +825,7 @@
       "source_path": "resources/noir-vibezz/crime-wave/vlcsnap-2026-08-09-21h49m13s968.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "crime-wave \u00b7 vlcsnap-2026-08-09-21h49m13s968",
+      "title": "crime-wave · vlcsnap-2026-08-09-21h49m13s968",
       "width": 480
     },
     {
@@ -837,7 +861,7 @@
       "source_path": "resources/noir-vibezz/crime-wave/vlcsnap-2026-08-09-21h49m40s795.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "crime-wave \u00b7 vlcsnap-2026-08-09-21h49m40s795",
+      "title": "crime-wave · vlcsnap-2026-08-09-21h49m40s795",
       "width": 480
     },
     {
@@ -873,7 +897,7 @@
       "source_path": "resources/noir-vibezz/crime-wave/vlcsnap-2026-08-09-21h49m50s080.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "crime-wave \u00b7 vlcsnap-2026-08-09-21h49m50s080",
+      "title": "crime-wave · vlcsnap-2026-08-09-21h49m50s080",
       "width": 480
     },
     {
@@ -909,7 +933,7 @@
       "source_path": "resources/noir-vibezz/crime-wave/vlcsnap-2026-08-09-21h49m58s465.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "crime-wave \u00b7 vlcsnap-2026-08-09-21h49m58s465",
+      "title": "crime-wave · vlcsnap-2026-08-09-21h49m58s465",
       "width": 480
     },
     {
@@ -945,7 +969,7 @@
       "source_path": "resources/noir-vibezz/crime-wave/vlcsnap-2026-08-09-21h51m20s429.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "crime-wave \u00b7 vlcsnap-2026-08-09-21h51m20s429",
+      "title": "crime-wave · vlcsnap-2026-08-09-21h51m20s429",
       "width": 480
     },
     {
@@ -981,7 +1005,7 @@
       "source_path": "resources/noir-vibezz/crime-wave/vlcsnap-2026-08-09-21h51m27s696.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "crime-wave \u00b7 vlcsnap-2026-08-09-21h51m27s696",
+      "title": "crime-wave · vlcsnap-2026-08-09-21h51m27s696",
       "width": 480
     },
     {
@@ -1017,7 +1041,7 @@
       "source_path": "resources/noir-vibezz/crime-wave/vlcsnap-2026-08-09-21h51m43s245.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "crime-wave \u00b7 vlcsnap-2026-08-09-21h51m43s245",
+      "title": "crime-wave · vlcsnap-2026-08-09-21h51m43s245",
       "width": 480
     },
     {
@@ -1053,7 +1077,7 @@
       "source_path": "resources/noir-vibezz/crime-wave/vlcsnap-2026-08-09-21h51m49s010.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "crime-wave \u00b7 vlcsnap-2026-08-09-21h51m49s010",
+      "title": "crime-wave · vlcsnap-2026-08-09-21h51m49s010",
       "width": 480
     },
     {
@@ -1089,7 +1113,7 @@
       "source_path": "resources/noir-vibezz/la-confidential/vlcsnap-2026-08-09-21h53m54s152.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "la-confidential \u00b7 vlcsnap-2026-08-09-21h53m54s152",
+      "title": "la-confidential · vlcsnap-2026-08-09-21h53m54s152",
       "width": 480
     },
     {
@@ -1125,7 +1149,7 @@
       "source_path": "resources/noir-vibezz/la-confidential/vlcsnap-2026-08-09-21h54m01s978.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "la-confidential \u00b7 vlcsnap-2026-08-09-21h54m01s978",
+      "title": "la-confidential · vlcsnap-2026-08-09-21h54m01s978",
       "width": 480
     },
     {
@@ -1161,7 +1185,7 @@
       "source_path": "resources/noir-vibezz/la-confidential/vlcsnap-2026-08-09-21h54m39s938.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "la-confidential \u00b7 vlcsnap-2026-08-09-21h54m39s938",
+      "title": "la-confidential · vlcsnap-2026-08-09-21h54m39s938",
       "width": 480
     },
     {
@@ -1197,7 +1221,7 @@
       "source_path": "resources/noir-vibezz/la-confidential/vlcsnap-2026-08-09-21h55m16s271.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "la-confidential \u00b7 vlcsnap-2026-08-09-21h55m16s271",
+      "title": "la-confidential · vlcsnap-2026-08-09-21h55m16s271",
       "width": 480
     },
     {
@@ -1233,7 +1257,7 @@
       "source_path": "resources/noir-vibezz/rio/vlcsnap-2026-08-09-21h57m44s540.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "rio \u00b7 vlcsnap-2026-08-09-21h57m44s540",
+      "title": "rio · vlcsnap-2026-08-09-21h57m44s540",
       "width": 480
     },
     {
@@ -1269,7 +1293,7 @@
       "source_path": "resources/noir-vibezz/rio/vlcsnap-2026-08-09-21h57m55s518.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "rio \u00b7 vlcsnap-2026-08-09-21h57m55s518",
+      "title": "rio · vlcsnap-2026-08-09-21h57m55s518",
       "width": 480
     },
     {
@@ -1305,7 +1329,7 @@
       "source_path": "resources/noir-vibezz/rio/vlcsnap-2026-08-09-21h58m07s507.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "rio \u00b7 vlcsnap-2026-08-09-21h58m07s507",
+      "title": "rio · vlcsnap-2026-08-09-21h58m07s507",
       "width": 480
     },
     {
@@ -1341,7 +1365,7 @@
       "source_path": "resources/noir-vibezz/rio/vlcsnap-2026-08-09-21h58m18s915.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "rio \u00b7 vlcsnap-2026-08-09-21h58m18s915",
+      "title": "rio · vlcsnap-2026-08-09-21h58m18s915",
       "width": 480
     },
     {
@@ -1377,7 +1401,7 @@
       "source_path": "resources/noir-vibezz/rio/vlcsnap-2026-08-09-21h58m34s154.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "rio \u00b7 vlcsnap-2026-08-09-21h58m34s154",
+      "title": "rio · vlcsnap-2026-08-09-21h58m34s154",
       "width": 480
     },
     {
@@ -1413,7 +1437,7 @@
       "source_path": "resources/noir-vibezz/rio/vlcsnap-2026-08-09-21h58m40s916.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "rio \u00b7 vlcsnap-2026-08-09-21h58m40s916",
+      "title": "rio · vlcsnap-2026-08-09-21h58m40s916",
       "width": 480
     },
     {
@@ -1449,7 +1473,7 @@
       "source_path": "resources/noir-vibezz/rio/vlcsnap-2026-08-09-21h59m00s104.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "rio \u00b7 vlcsnap-2026-08-09-21h59m00s104",
+      "title": "rio · vlcsnap-2026-08-09-21h59m00s104",
       "width": 480
     },
     {
@@ -1485,7 +1509,7 @@
       "source_path": "resources/noir-vibezz/rio/vlcsnap-2026-08-09-21h59m24s270.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "rio \u00b7 vlcsnap-2026-08-09-21h59m24s270",
+      "title": "rio · vlcsnap-2026-08-09-21h59m24s270",
       "width": 480
     },
     {
@@ -1521,7 +1545,7 @@
       "source_path": "resources/noir-vibezz/rio/vlcsnap-2026-08-09-21h59m32s846.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "rio \u00b7 vlcsnap-2026-08-09-21h59m32s846",
+      "title": "rio · vlcsnap-2026-08-09-21h59m32s846",
       "width": 480
     },
     {
@@ -1557,7 +1581,7 @@
       "source_path": "resources/noir-vibezz/rio/vlcsnap-2026-08-09-21h59m37s827.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "rio \u00b7 vlcsnap-2026-08-09-21h59m37s827",
+      "title": "rio · vlcsnap-2026-08-09-21h59m37s827",
       "width": 480
     },
     {
@@ -1593,7 +1617,7 @@
       "source_path": "resources/noir-vibezz/saigon/vlcsnap-2026-08-09-22h00m44s278.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "saigon \u00b7 vlcsnap-2026-08-09-22h00m44s278",
+      "title": "saigon · vlcsnap-2026-08-09-22h00m44s278",
       "width": 480
     },
     {
@@ -1629,7 +1653,7 @@
       "source_path": "resources/noir-vibezz/saigon/vlcsnap-2026-08-09-22h01m05s775.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "saigon \u00b7 vlcsnap-2026-08-09-22h01m05s775",
+      "title": "saigon · vlcsnap-2026-08-09-22h01m05s775",
       "width": 480
     },
     {
@@ -1665,7 +1689,7 @@
       "source_path": "resources/noir-vibezz/saigon/vlcsnap-2026-08-09-22h01m14s888.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "saigon \u00b7 vlcsnap-2026-08-09-22h01m14s888",
+      "title": "saigon · vlcsnap-2026-08-09-22h01m14s888",
       "width": 480
     },
     {
@@ -1701,7 +1725,7 @@
       "source_path": "resources/noir-vibezz/saigon/vlcsnap-2026-08-09-22h01m33s340.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "saigon \u00b7 vlcsnap-2026-08-09-22h01m33s340",
+      "title": "saigon · vlcsnap-2026-08-09-22h01m33s340",
       "width": 480
     },
     {
@@ -1737,7 +1761,7 @@
       "source_path": "resources/noir-vibezz/saigon/vlcsnap-2026-08-09-22h02m07s080.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "saigon \u00b7 vlcsnap-2026-08-09-22h02m07s080",
+      "title": "saigon · vlcsnap-2026-08-09-22h02m07s080",
       "width": 480
     },
     {
@@ -1773,7 +1797,7 @@
       "source_path": "resources/noir-vibezz/saigon/vlcsnap-2026-08-09-22h02m13s054.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "saigon \u00b7 vlcsnap-2026-08-09-22h02m13s054",
+      "title": "saigon · vlcsnap-2026-08-09-22h02m13s054",
       "width": 480
     },
     {
@@ -1809,7 +1833,7 @@
       "source_path": "resources/noir-vibezz/saigon/vlcsnap-2026-08-09-22h02m29s588.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "saigon \u00b7 vlcsnap-2026-08-09-22h02m29s588",
+      "title": "saigon · vlcsnap-2026-08-09-22h02m29s588",
       "width": 480
     },
     {
@@ -1845,7 +1869,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h06m56s435.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h06m56s435",
+      "title": "spidern · vlcsnap-2026-08-09-22h06m56s435",
       "width": 480
     },
     {
@@ -1881,7 +1905,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h07m06s614.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h07m06s614",
+      "title": "spidern · vlcsnap-2026-08-09-22h07m06s614",
       "width": 480
     },
     {
@@ -1917,7 +1941,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h07m17s902.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h07m17s902",
+      "title": "spidern · vlcsnap-2026-08-09-22h07m17s902",
       "width": 480
     },
     {
@@ -1953,7 +1977,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h07m52s676.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h07m52s676",
+      "title": "spidern · vlcsnap-2026-08-09-22h07m52s676",
       "width": 480
     },
     {
@@ -1989,7 +2013,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h08m00s253.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h08m00s253",
+      "title": "spidern · vlcsnap-2026-08-09-22h08m00s253",
       "width": 480
     },
     {
@@ -2025,7 +2049,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h08m04s893.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h08m04s893",
+      "title": "spidern · vlcsnap-2026-08-09-22h08m04s893",
       "width": 480
     },
     {
@@ -2061,7 +2085,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h08m17s657.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h08m17s657",
+      "title": "spidern · vlcsnap-2026-08-09-22h08m17s657",
       "width": 480
     },
     {
@@ -2097,7 +2121,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h08m22s728.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h08m22s728",
+      "title": "spidern · vlcsnap-2026-08-09-22h08m22s728",
       "width": 480
     },
     {
@@ -2133,7 +2157,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h08m29s426.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h08m29s426",
+      "title": "spidern · vlcsnap-2026-08-09-22h08m29s426",
       "width": 480
     },
     {
@@ -2169,7 +2193,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h08m35s869.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h08m35s869",
+      "title": "spidern · vlcsnap-2026-08-09-22h08m35s869",
       "width": 480
     },
     {
@@ -2205,7 +2229,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h09m08s219.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h09m08s219",
+      "title": "spidern · vlcsnap-2026-08-09-22h09m08s219",
       "width": 480
     },
     {
@@ -2241,7 +2265,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h09m19s038.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h09m19s038",
+      "title": "spidern · vlcsnap-2026-08-09-22h09m19s038",
       "width": 480
     },
     {
@@ -2277,7 +2301,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h09m46s046.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h09m46s046",
+      "title": "spidern · vlcsnap-2026-08-09-22h09m46s046",
       "width": 480
     },
     {
@@ -2313,7 +2337,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h09m58s301.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h09m58s301",
+      "title": "spidern · vlcsnap-2026-08-09-22h09m58s301",
       "width": 480
     },
     {
@@ -2349,7 +2373,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h10m41s179.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h10m41s179",
+      "title": "spidern · vlcsnap-2026-08-09-22h10m41s179",
       "width": 480
     },
     {
@@ -2385,7 +2409,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h10m49s545.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h10m49s545",
+      "title": "spidern · vlcsnap-2026-08-09-22h10m49s545",
       "width": 480
     },
     {
@@ -2421,7 +2445,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h11m18s803.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h11m18s803",
+      "title": "spidern · vlcsnap-2026-08-09-22h11m18s803",
       "width": 480
     },
     {
@@ -2457,7 +2481,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h11m27s789.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h11m27s789",
+      "title": "spidern · vlcsnap-2026-08-09-22h11m27s789",
       "width": 480
     },
     {
@@ -2493,7 +2517,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h11m38s023.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h11m38s023",
+      "title": "spidern · vlcsnap-2026-08-09-22h11m38s023",
       "width": 480
     },
     {
@@ -2529,7 +2553,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h11m47s501.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h11m47s501",
+      "title": "spidern · vlcsnap-2026-08-09-22h11m47s501",
       "width": 480
     },
     {
@@ -2565,7 +2589,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h12m16s526.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h12m16s526",
+      "title": "spidern · vlcsnap-2026-08-09-22h12m16s526",
       "width": 480
     },
     {
@@ -2601,7 +2625,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h12m27s524.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h12m27s524",
+      "title": "spidern · vlcsnap-2026-08-09-22h12m27s524",
       "width": 480
     },
     {
@@ -2637,7 +2661,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h12m54s406.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h12m54s406",
+      "title": "spidern · vlcsnap-2026-08-09-22h12m54s406",
       "width": 480
     },
     {
@@ -3183,7 +3207,7 @@
     {
       "accessibility_state": "VISUAL-DESCRIPTION-PENDING",
       "added_at": "2026-08-10T23:41:58-07:00",
-      "alt": "Aesthetic reference from the Tokyo Psychedelic collection, source label: japan\u2019s arty pelago Naoshima and beyond Japan holidays The Guardian. Visual description remains subject to human review.",
+      "alt": "Aesthetic reference from the Tokyo Psychedelic collection, source label: japan’s arty pelago Naoshima and beyond Japan holidays The Guardian. Visual description remains subject to human review.",
       "artifact_id": "resource-tokyo-psychedelic-japan-s-arty-pelago-naoshima-and-beyond-japan-holidays-the-guardian",
       "baseline_state": "NOT-PROMOTED",
       "bytes": 22868,
@@ -3204,16 +3228,16 @@
         "bytes": 3557067,
         "format": "png",
         "height": 1173,
-        "path": "resources/tokyo-psychedelic/japan\u2019s arty-pelago Naoshima and beyond Japan holidays The Guardian.png",
+        "path": "resources/tokyo-psychedelic/japan’s arty-pelago Naoshima and beyond Japan holidays The Guardian.png",
         "published": false,
         "repository_state": "WORKTREE-UNCOMMITTED",
         "sha256": "2275a841be0d75c1ab801b6473a64913da45b8102a116fb386ff7e21a802e7d4",
         "width": 2633
       },
-      "source_path": "resources/tokyo-psychedelic/japan\u2019s arty-pelago Naoshima and beyond Japan holidays The Guardian.png",
+      "source_path": "resources/tokyo-psychedelic/japan’s arty-pelago Naoshima and beyond Japan holidays The Guardian.png",
       "source_state": "WORKTREE-UNCOMMITTED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "japan\u2019s arty-pelago Naoshima and beyond Japan holidays The Guardian",
+      "title": "japan’s arty-pelago Naoshima and beyond Japan holidays The Guardian",
       "width": 480
     },
     {
