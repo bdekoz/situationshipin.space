@@ -562,7 +562,43 @@ function renderCard(item) {
 
   card.addEventListener("change", () => captureCard(card));
   textarea.addEventListener("input", () => captureCard(card));
-  return card;
+  const collapse = item.review_category !== "proofs" || isTallVertical(item);
+  return collapse ? collapseTallCard(card) : card;
+}
+
+function isTallVertical(item) {
+  return item.media_kind === "video"
+    || (Number(item.height) && Number(item.width)
+        && Number(item.height) / Number(item.width) >= 1.5);
+}
+
+function collapseTallCard(card) {
+  const details = document.createElement("details");
+  details.className = "artifact-card artifact-detail";
+  details.dataset.artifactId = card.dataset.artifactId;
+  details.dataset.decision = card.dataset.decision;
+  details.dataset.reviewMode = card.dataset.reviewMode;
+
+  const summary = document.createElement("summary");
+  summary.className = "artifact-head";
+  summary.append(
+    card.querySelector(".artifact-kicker"),
+    card.querySelector(".artifact-title")
+  );
+
+  const body = card.querySelector(".artifact-body");
+  details.append(
+    summary,
+    card.querySelector(".artifact-image-link"),
+    body
+  );
+  card.replaceWith(details);
+  details.addEventListener("change", () => captureCard(details));
+  details.querySelector("textarea").addEventListener(
+    "input",
+    () => captureCard(details)
+  );
+  return details;
 }
 
 function makePill(text, className) {
