@@ -9,7 +9,7 @@
           "location_id": "frogtown",
           "display_name": "Frogtown",
           "slug": "frogtown",
-          "status": "SELECTED",
+          "status": "SCOUTED-KEEP",
           "route": {
             "points": [
               { "label": "start", "lat": 34.105547608596765, "lng": -118.24361721594703 },
@@ -17,7 +17,7 @@
               { "label": "final", "lat": 34.107936983024416, "lng": -118.25265394226766 }
             ],
             "distance_straight_line_m": 920,
-            "notes": "Three-point Frogtown corridor. Straight-line total 920 m (start→next 377 m, next→final 542 m). At walking pace a 165 s episode covers roughly 165–248 m, so the full three-point route reads as a multi-episode corridor rather than one episode."
+            "notes": "Three-point Frogtown corridor (GitHub issue bdekoz/situationshipin.space#10, KEEP). Straight-line total 920 m (start→next 377 m, next→final 542 m). At walking pace a 165 s episode covers roughly 165–248 m, so the full three-point route reads as a multi-episode corridor rather than one episode."
           },
           "route_beats_ref": "examples/seedance2/here-lies-trouble-episode-01-frogtown.v2.json#location.route_beats"
         },
@@ -25,36 +25,83 @@
           "location_id": "dtla-central-library",
           "display_name": "DTLA — Los Angeles Central Library",
           "slug": "dtla",
-          "status": "PENDING-COORDINATES",
-          "route": null
+          "status": "SCOUTED-KEEP",
+          "route": {
+            "points": [
+              { "label": "point-0", "lat": 34.05038773867568, "lng": -118.25540646757548 },
+              { "label": "point-1", "lat": 34.051211854821624, "lng": -118.25641572274131 },
+              { "label": "point-2", "lat": 34.05092643328663, "lng": -118.25699943830298 },
+              { "label": "point-3", "lat": 34.05137835028655, "lng": -118.2585049776472 }
+            ],
+            "distance_straight_line_m": 341,
+            "notes": "Scouted via GitHub issue bdekoz/situationshipin.space#11 (KEEP)."
+          }
         },
         {
           "location_id": "moca-geffen",
           "display_name": "MOCA Geffen Contemporary",
           "slug": "moca-geffen",
-          "status": "PENDING-COORDINATES",
-          "route": null
+          "status": "SCOUTED-KEEP",
+          "route": {
+            "points": [
+              { "label": "point-0", "lat": 34.05066860604046, "lng": -118.23775034028198 },
+              { "label": "point-1", "lat": 34.05028721093595, "lng": -118.2394734903869 },
+              { "label": "point-2", "lat": 34.0494121015412, "lng": -118.23889999203445 },
+              { "label": "point-3", "lat": 34.04882881463997, "lng": -118.23890298841859 }
+            ],
+            "distance_straight_line_m": 340,
+            "notes": "Scouted via GitHub issue bdekoz/situationshipin.space#12 (KEEP)."
+          }
         },
         {
           "location_id": "hauser-wirth",
           "display_name": "Hauser & Wirth",
           "slug": "hauser-wirth",
-          "status": "PENDING-COORDINATES",
-          "route": null
+          "status": "SCOUTED-KEEP",
+          "route": {
+            "points": [
+              { "label": "point-0", "lat": 34.04653656105128, "lng": -118.2343572323265 },
+              { "label": "point-1", "lat": 34.046207640321384, "lng": -118.23420702863389 },
+              { "label": "point-3", "lat": 34.04558535436923, "lng": -118.23571979439498 },
+              { "label": "point-4", "lat": 34.04483505555045, "lng": -118.23447948678982 }
+            ],
+            "distance_straight_line_m": 336,
+            "notes": "Coordinates from GitHub issue bdekoz/situationshipin.space#13; user confirmed scouting complete 2026-08-12."
+          }
         },
         {
           "location_id": "hammer-museum",
           "display_name": "Hammer Museum",
           "slug": "hammer-museum",
-          "status": "PENDING-COORDINATES",
-          "route": null
+          "status": "SCOUTED-KEEP",
+          "route": {
+            "points": [
+              { "label": "point-0", "lat": 34.05925499935532, "lng": -118.44287346911709 },
+              { "label": "point-1", "lat": 34.05792925283554, "lng": -118.44840168317566 },
+              { "label": "point-3", "lat": 34.06198232913751, "lng": -118.45324038815107 }
+            ],
+            "distance_straight_line_m": 1164,
+            "notes": "Scouted via GitHub issue bdekoz/situationshipin.space#14 (KEEP)."
+          }
         },
         {
-          "location_id": "sunset-scientology-pass",
-          "display_name": "Sunset Boulevard — Scientology pass",
-          "slug": "sunset-pass",
-          "status": "PENDING-COORDINATES",
-          "route": null
+          "location_id": "hiho-to-runyon-canyon",
+          "display_name": "Hi-Ho to Runyon Canyon",
+          "slug": "hiho-to-runyon-canyon",
+          "status": "SCOUTED-KEEP",
+          "route": {
+            "points": [
+              { "label": "point-0", "lat": 34.10185645528226, "lng": -118.33986031093878 },
+              { "label": "point-1", "lat": 34.1030357345097, "lng": -118.33887580552874 },
+              { "label": "point-2", "lat": 34.1036055816663, "lng": -118.34221165437259 },
+              { "label": "point-3", "lat": 34.104610719371976, "lng": -118.34273736119032 },
+              { "label": "point-4", "lat": 34.10469170062718, "lng": -118.34570186345654 },
+              { "label": "point-5", "lat": 34.104557924197785, "lng": -118.34824517490453 },
+              { "label": "point-6", "lat": 34.105282903686025, "lng": -118.34918849319965 }
+            ],
+            "distance_straight_line_m": 1221,
+            "notes": "Renamed from sunset-scientology-pass per GitHub issue bdekoz/situationshipin.space#15 comment; scouted KEEP with seven points."
+          }
         }
       ]
     }
