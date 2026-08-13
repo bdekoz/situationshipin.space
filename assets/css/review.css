@@ -332,8 +332,8 @@ input[type="radio"] {
 
 .artifact-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(1.2rem, 3vw, 2.4rem);
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 1rem;
 }
 
 .category-options {
@@ -399,7 +399,7 @@ input[type="radio"] {
 .artifact-image-link {
   position: relative;
   display: grid;
-  min-height: 17rem;
+  min-height: 12rem;
   place-items: center;
   overflow: hidden;
   color: var(--ink);
@@ -409,7 +409,7 @@ input[type="radio"] {
 .artifact-image {
   display: block;
   width: 100%;
-  height: min(72vh, 51rem);
+  height: min(52vh, 24rem);
   object-fit: contain;
 }
 
@@ -463,7 +463,55 @@ input[type="radio"] {
 }
 
 .artifact-body {
-  padding: clamp(1rem, 3vw, 1.6rem);
+  padding: 0.75rem;
+}
+
+.artifact-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.latest-review {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 1rem;
+  padding: 0.8rem;
+  background: var(--panel);
+  border: 2px solid var(--signal);
+  box-shadow: inset 0.35rem 0 0 var(--signal);
+}
+
+.latest-review img {
+  display: block;
+  max-height: 8rem;
+  width: auto;
+  border: 1px solid var(--line);
+}
+
+.latest-review h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.05rem;
+}
+
+.latest-review p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.latest-review .open-label {
+  position: static;
+  white-space: nowrap;
+}
+
+.nav-hint {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  font-size: 0.85rem;
 }
 
 .pagination {

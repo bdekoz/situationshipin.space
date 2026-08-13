@@ -80,6 +80,7 @@ function cacheElements() {
     "artifact-grid", "artifact-template", "catalog-error", "empty-state",
     "result-count", "filter-form", "search-filter", "family-filter",
     "class-filter", "decision-filter", "hide-images", "storage-status",
+    "latest-review",
     "metric-bytes", "metric-completed", "metric-remaining",
     "feedback-count", "reviewer-label", "download-feedback", "import-feedback",
     "open-issue-dialog", "reset-feedback", "handoff-status", "issue-dialog",
@@ -382,6 +383,7 @@ function renderCatalog() {
   const pageItems = items.slice(firstIndex, firstIndex + state.pageSize);
   elements.grid.dataset.category = state.category;
   elements.grid.replaceChildren(...pageItems.map(renderCard));
+  renderLatestReview(items);
   elements.emptyState.hidden = items.length !== 0;
   const shownStart = items.length ? firstIndex + 1 : 0;
   const shownEnd = firstIndex + pageItems.length;
@@ -415,18 +417,42 @@ function filteredItems() {
   const generationClass = elements.classFilter.value;
   const decision = elements.decisionFilter.value;
 
-  return categoryItems().filter((item) => {
-    const review = state.feedback.reviews[item.artifact_id];
-    const currentDecision = review && review.decision ? review.decision : "UNREVIEWED";
-    const haystack = [
-      item.title, item.description, item.family, item.generation_class,
-      item.feedback_round, item.source_group, item.source_path
-    ].join(" ").toLowerCase();
-    return (!search || haystack.includes(search))
-      && (family === "all" || item.family === family)
-      && (generationClass === "all" || item.generation_class === generationClass)
-      && (decision === "all" || currentDecision === decision);
-  });
+  return categoryItems()
+    .filter((item) => {
+      const review = state.feedback.reviews[item.artifact_id];
+      const currentDecision = review && review.decision ? review.decision : "UNREVIEWED";
+      const haystack = [
+        item.title, item.description, item.family, item.generation_class,
+        item.feedback_round, item.source_group, item.source_path
+      ].join(" ").toLowerCase();
+      return (!search || haystack.includes(search))
+        && (family === "all" || item.family === family)
+        && (generationClass === "all" || item.generation_class === generationClass)
+        && (decision === "all" || currentDecision === decision);
+    })
+    .sort((left, right) =>
+      String(right.added_at || "").localeCompare(String(left.added_at || ""))
+    );
+}
+
+function renderLatestReview(items) {
+  if (!elements.latestReview) {
+    return;
+  }
+  const latest = items[0];
+  if (!latest) {
+    elements.latestReview.hidden = true;
+    return;
+  }
+  const id = latest.artifact_id.replace(/[^a-zA-Z0-9._-]+/g, "-");
+  const media = latest.media_kind === "video" ? "▶ " : "";
+  elements.latestReview.hidden = false;
+  elements.latestReview.innerHTML =
+    `<img src="${latest.published_path}" alt="" width="120">` +
+    `<div><p class="eyebrow">latest · ${humanize(latest.generation_class)}</p>` +
+    `<h3>${latest.title}</h3><p>${latest.description}</p></div>` +
+    `<a class="open-label" href="/review/${id}/" ` +
+    `aria-label="Open latest review page: ${latest.title}">${media}Review →</a>`;
 }
 
 function renderCard(item) {

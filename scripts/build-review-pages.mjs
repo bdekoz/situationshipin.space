@@ -30,8 +30,12 @@ const hlt = {
   human_review_state: "UNREVIEWED", baseline_state: "NOT-PROMOTED", review_category: "proofs",
   style: "randoma11y-accent", style_pair: { foreground: "#581c87", background: "#faf5ff", date: "2026-08-11", contrast_ratio: 10.135063065476164 }
 };
+hlt.added_at = new Date().toISOString();
 catalog.items = catalog.items.filter(item => item.artifact_id !== hltId);
 catalog.items.push(hlt);
+catalog.items.sort((left, right) =>
+  String(right.added_at || "").localeCompare(String(left.added_at || ""))
+);
 catalog.generated_at = new Date().toISOString();
 await writeFile(catalogPath, JSON.stringify(catalog, null, 2) + "\n");
 
