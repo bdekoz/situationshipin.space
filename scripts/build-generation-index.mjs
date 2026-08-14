@@ -10,6 +10,7 @@
 //     --family izzi-generation-20260814 \
 //     --title "Izzi Generation 20260814" \
 //     --description "..." \
+//     --members-json <izzi reference-set manifest.json> \
 //     [--out review/media/<family>/<artifact>.index.html]
 
 import { mkdir, readFile, writeFile } from "node:fs/promises";
@@ -99,6 +100,65 @@ ${rows}
 `;
 }
 
+function memberDisplay(name) {
+  if (name.startsWith("guilloche-v4-") && name.endsWith("-grid")) {
+    const kind = name.slice("guilloche-v4-".length, -"-grid".length);
+    const title = `Guilloche v4 grid — ${kind}`;
+    return {
+      title,
+      description: `${title} from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/review/feedback/visual/guilloche/round-05/static/${name}.png. WebP q82 review copy flattened on black.`,
+    };
+  }
+  if (name === "moire-v1-category-grid") {
+    const title = "Moire v1 category grid";
+    return {
+      title,
+      description: `${title} from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/ad-hoc/moire.v1/${name}.png. WebP q82 review copy flattened on black.`,
+    };
+  }
+  if (name === "surface-tension-v1-category-grid") {
+    const title = "Surface tension v1 category grid";
+    return {
+      title,
+      description: `${title} from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/ad-hoc/surface-tension.v1/${name}.png. WebP q82 review copy flattened on black.`,
+    };
+  }
+  const plate = /^(moire|surface-tension)-(\d{2})-(.+)$/.exec(name);
+  if (plate) {
+    const family = plate[1] === "moire" ? "Moire" : "Surface tension";
+    const number = plate[2];
+    const human = plate[3].replace(/-/g, " ");
+    const title = `${family} v1 plate ${number} — ${human}`;
+    const source = `outputs/ad-hoc/${plate[1]}.v1/png/${name}.png`;
+    return {
+      title,
+      description: `${title} from the make-check reference image set (guilloche/moire/surface tension). Source: ${source}. WebP q82 review copy flattened on black.`,
+    };
+  }
+  return { title: name, description: "" };
+}
+
+function membersFromReferenceSet(referenceSet) {
+  const members = Array.isArray(referenceSet.members)
+    ? referenceSet.members
+    : referenceSet;
+  return members
+    .map((member) => {
+      const name = member.name || member.artifact_id;
+      const display = memberDisplay(name);
+      return {
+        artifact_id: `reference-image-${name}`,
+        title: display.title,
+        description: display.description,
+        published_path: `review/reference-images/guilloche-moire-surface/${name}.webp`,
+        generation_commit: referenceSet.generation_commit,
+      };
+    })
+    .sort((left, right) =>
+      String(left.artifact_id).localeCompare(String(right.artifact_id))
+    );
+}
+
 async function main() {
   const values = argumentsMap(process.argv.slice(2));
   const family = values.family;
@@ -110,15 +170,27 @@ async function main() {
     return;
   }
   const catalog = JSON.parse(await readFile(catalogPath, "utf8"));
-  const members = catalog.items
-    .filter((item) => item.family === family)
-    .sort((left, right) => String(left.artifact_id).localeCompare(String(right.artifact_id)));
+  let members;
+  let generationCommit = null;
+  if (values["members-json"]) {
+    const referenceSet = JSON.parse(
+      await readFile(resolve(values["members-json"]), "utf8")
+    );
+    members = membersFromReferenceSet(referenceSet);
+    generationCommit = referenceSet.generation_commit || null;
+  } else {
+    members = catalog.items
+      .filter((item) => item.family === family)
+      .sort((left, right) =>
+        String(left.artifact_id).localeCompare(String(right.artifact_id))
+      );
+    generationCommit = members[0]?.generation_commit || null;
+  }
   if (!members.length) {
     console.error(`[FAIL] no catalog items found for family ${family}`);
     process.exitCode = 1;
     return;
   }
-  const generationCommit = members[0].generation_commit || null;
   const out = values.out
     ? resolve(values.out)
     : join(repositoryRoot, "review/media", family, `${family}.index.html`);
