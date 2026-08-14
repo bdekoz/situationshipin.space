@@ -11,7 +11,9 @@ const maximumFileBytes = 16 * 1024 * 1024;
 // Raised 2026-08-14 from 48 MiB to 64 MiB to host full-motion video
 // reviews (user preference; draft-1-style playable proxies instead of
 // filmstrips).  Revisit when the catalog approaches the new bound.
-const maximumPayloadBytes = 64 * 1024 * 1024;
+// Raised 2026-08-14 from 64 MiB to 80 MiB: full-motion video reviews
+// plus the 29-voice audio bank exceed the prior bound.
+const maximumPayloadBytes = 80 * 1024 * 1024;
 // .mp3 added 2026-08-14 for audio review artifacts (Kokoro female voice bank).
 const allowedExtensions = new Set([".png", ".jpg", ".jpeg", ".svg", ".html", ".json", ".mp4", ".mp3"]);
 const forbiddenExtensions = new Set([".mkv", ".wav", ".mov"]);
