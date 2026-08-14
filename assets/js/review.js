@@ -63,7 +63,7 @@ async function initialize() {
     populateFilters();
     updateMetrics();
     const initialCategory = document.body.dataset.reviewCategory;
-    if (initialCategory === "proofs" || initialCategory === "style-processing") {
+    if (initialCategory === "proofs" || initialCategory === "style-processing" || initialCategory === "planning") {
       setCategory(initialCategory);
     } else {
       renderCatalog();
@@ -86,8 +86,8 @@ function cacheElements() {
     "open-issue-dialog", "reset-feedback", "handoff-status", "issue-dialog",
     "public-acknowledgement", "continue-to-github", "reset-dialog", "confirm-reset",
     "previous-page", "next-page", "page-status", "category-proofs",
-    "category-style-processing", "category-proofs-count",
-    "category-style-processing-count", "results-eyebrow", "results-title",
+    "category-style-processing", "category-planning", "category-proofs-count",
+    "category-style-processing-count", "category-planning-count", "results-eyebrow", "results-title",
     "results-description", "issue-scope-description"
   ];
   ids.forEach((id) => {
@@ -124,7 +124,9 @@ function bindGlobalEvents() {
     elements.continueToGithub.disabled = true;
     elements.issueScopeDescription.textContent = state.category === "style-processing"
       ? "This prepares a public issue for reviewed images on the current ten-thumbnail page. It downloads the exact hash-identified JSON package for attachment and includes a suggested Codex handoff prompt. Nothing is submitted until you review GitHub's draft and press its final button."
-      : "This prepares a public issue for the reviewed proof set. It downloads the exact hash-identified JSON package for attachment and includes a suggested Codex handoff prompt. Nothing is submitted until you review GitHub's draft and press its final button.";
+      : state.category === "planning"
+        ? "This prepares a public issue for the reviewed plan set. It downloads the exact hash-identified JSON package for attachment and includes a suggested Codex handoff prompt. Nothing is submitted until you review GitHub's draft and press its final button."
+        : "This prepares a public issue for the reviewed proof set. It downloads the exact hash-identified JSON package for attachment and includes a suggested Codex handoff prompt. Nothing is submitted until you review GitHub's draft and press its final button.";
     showDialog(elements.issueDialog);
   });
   elements.publicAcknowledgement.addEventListener("change", () => {
@@ -143,6 +145,9 @@ function bindGlobalEvents() {
       "click",
       () => setCategory("style-processing")
     );
+  }
+  if (elements.categoryPlanning) {
+    elements.categoryPlanning.addEventListener("click", () => setCategory("planning"));
   }
 }
 
@@ -178,8 +183,11 @@ function validateCatalog(catalog) {
   for (const item of catalog.items) {
     const required = [
       "artifact_id", "title", "family", "generation_class", "published_path",
-      "sha256", "bytes", "width", "height", "alt"
+      "sha256", "bytes", "alt"
     ];
+    if (item.media_kind !== "plan") {
+      required.push("width", "height");
+    }
     const missing = required.filter((key) => item[key] === undefined || item[key] === "");
     if (missing.length) {
       throw new Error(`Catalog item is missing: ${missing.join(", ")}.`);
@@ -355,6 +363,12 @@ function setCategory(category) {
       String(category === "style-processing")
     );
   }
+  if (elements.categoryPlanning) {
+    elements.categoryPlanning.setAttribute(
+      "aria-pressed",
+      String(category === "planning")
+    );
+  }
   if (category === "style-processing") {
     if (elements.resultsEyebrow) {
       elements.resultsEyebrow.textContent = "";
@@ -362,6 +376,13 @@ function setCategory(category) {
     elements.resultsTitle.textContent = "Style processing";
     elements.resultsDescription.textContent =
       "Classify dashboard thumbnails as positive, negative, held, or excluded aesthetic evidence.";
+  } else if (category === "planning") {
+    if (elements.resultsEyebrow) {
+      elements.resultsEyebrow.textContent = "";
+    }
+    elements.resultsTitle.textContent = "Plan review";
+    elements.resultsDescription.textContent =
+      "Review vertical production plans as the first reviewable artifact; a formal-stage KEEP unlocks the draft loop.";
   } else {
     if (elements.resultsEyebrow) {
       elements.resultsEyebrow.textContent = "";
@@ -390,7 +411,11 @@ function renderCatalog() {
   const shownStart = items.length ? firstIndex + 1 : 0;
   const shownEnd = firstIndex + pageItems.length;
   const categoryTotal = categoryItems().length;
-  const noun = state.category === "style-processing" ? "references" : "proofs";
+  const noun = state.category === "style-processing"
+    ? "references"
+    : state.category === "planning"
+      ? "plans"
+      : "proofs";
   elements.resultCount.textContent = items.length === categoryTotal
     ? `Showing ${shownStart}–${shownEnd} of ${items.length} ${noun}`
     : `Showing ${shownStart}–${shownEnd} of ${items.length} matching · ${categoryTotal} ${noun}`;
@@ -448,9 +473,12 @@ function renderLatestReview(items) {
   }
   const id = latest.artifact_id.replace(/[^a-zA-Z0-9._-]+/g, "-");
   const media = latest.media_kind === "video" ? "▶ " : "";
+  const mediaHtml = latest.media_kind === "plan"
+    ? `<span class="plan-affordance" aria-hidden="true">[plan]</span>`
+    : `<img src="${latest.published_path}" alt="" width="120">`;
   elements.latestReview.hidden = false;
   elements.latestReview.innerHTML =
-    `<img src="${latest.published_path}" alt="" width="120">` +
+    mediaHtml +
     `<div><p class="eyebrow">latest · ${humanize(latest.generation_class)}</p>` +
     `<h3>${latest.title}</h3><p>${latest.description}</p></div>` +
     `<a class="open-label" href="/review/${id}/" ` +
@@ -479,16 +507,29 @@ function renderCard(item) {
     });
   }
 
-  const image = card.querySelector(".artifact-image");
-  image.src = item.published_path;
-  image.alt = item.alt;
-  image.width = item.width;
-  image.height = item.height;
-  image.addEventListener("error", () => {
-    image.alt = `Image unavailable. ${item.alt}`;
-    card.classList.add("image-failed");
-    card.querySelector(".open-label").textContent = "Proof image unavailable";
-  });
+  if (item.media_kind === "plan") {
+    link.setAttribute("aria-label", `Open plan review: ${item.title}`);
+    card.querySelector(".open-label").textContent = "Open plan review";
+    const image = card.querySelector(".artifact-image");
+    if (image) {
+      image.hidden = true;
+    }
+    const planAffordance = card.querySelector(".plan-affordance");
+    if (planAffordance) {
+      planAffordance.hidden = false;
+    }
+  } else {
+    const image = card.querySelector(".artifact-image");
+    image.src = item.published_path;
+    image.alt = item.alt;
+    image.width = item.width;
+    image.height = item.height;
+    image.addEventListener("error", () => {
+      image.alt = `Image unavailable. ${item.alt}`;
+      card.classList.add("image-failed");
+      card.querySelector(".open-label").textContent = "Proof image unavailable";
+    });
+  }
 
   card.querySelector(".artifact-kicker").textContent = [
     humanize(item.family), item.source_group ? humanize(item.source_group) : "",
@@ -517,7 +558,12 @@ function renderCard(item) {
     addMetadata(metadata, "Source group", humanize(item.source_group));
   }
   addMetadata(metadata, "SHA-256", item.sha256);
-  addMetadata(metadata, "Dimensions", `${item.width} × ${item.height}`);
+  if (item.media_kind === "plan") {
+    addMetadata(metadata, "Plan stage", humanize(item.plan_stage || "PLAN-DRAFT"));
+    addMetadata(metadata, "Format", item.format ? item.format.toUpperCase() : "Markdown");
+  } else {
+    addMetadata(metadata, "Dimensions", `${item.width} × ${item.height}`);
+  }
   addMetadata(metadata, "File size", `${formatBytes(item.bytes)} (${item.bytes.toLocaleString()} bytes)`);
   addMetadata(metadata, "Source commit", state.catalog.source_commit);
   if (item.source_media) {
@@ -545,7 +591,9 @@ function renderCard(item) {
   const decisionOptions = card.querySelector(".decision-options");
   card.querySelector(".decision-fieldset legend").textContent = item.review_mode === "aesthetic"
     ? "Aesthetic evidence decision"
-    : "Clip or proof decision";
+    : item.media_kind === "plan"
+      ? "Plan decision"
+      : "Clip or proof decision";
   for (const [value, label] of decisionsFor(item)) {
     decisionOptions.append(makeChoice("radio", `decision-${item.artifact_id}`, value, label, review.decision === value));
   }
@@ -832,9 +880,14 @@ function updateFeedbackSummary() {
       categoryItems().length - categoryDecisions
     );
   }
+  const feedbackNoun = state.category === "planning"
+    ? "plan"
+    : state.category === "style-processing"
+      ? "reference"
+      : "proof";
   elements.feedbackCount.textContent = reviews.length === 0
     ? "No feedback yet"
-    : `${reviews.length} ${reviews.length === 1 ? "proof" : "proofs"} and ${frameReviews} ${frameReviews === 1 ? "frame" : "frames"} have local feedback`;
+    : `${reviews.length} ${reviews.length === 1 ? feedbackNoun : `${feedbackNoun}s`} and ${frameReviews} ${frameReviews === 1 ? "frame" : "frames"} have local feedback`;
   const disabled = reviews.length === 0;
   elements.downloadFeedback.disabled = disabled;
   const issueItems = state.category === "style-processing"
@@ -1000,7 +1053,9 @@ async function openGitHubIssue() {
       : categoryItems();
     const scope = state.category === "style-processing"
       ? `style-processing-page-${state.page}`
-      : "proofs";
+      : state.category === "planning"
+        ? "plans"
+        : "proofs";
     const payload = await attachReviewIdentifier(buildExport(true, issueItems, scope));
     if (!payload.reviews.length) {
       elements.issueDialog.close();
@@ -1016,10 +1071,13 @@ async function openGitHubIssue() {
       `Process the situationshipin.space review attached to this GitHub issue, identified by ${identifier}. `
       + `Validate portal build ${payload.portal_build} and every derivative, source-image, source-media, and frame hash before applying explicit decisions. `
       + "For style processing, update the review records and propose the next izzi-aesthetic-brief-1; treat HOLD, EXCLUDE, and unreviewed items as non-positive. "
+      + "For plan review, apply recorded decisions to the plan document and advance it only on explicit KEEP; a non-formal plan KEEP must not unlock the draft loop. "
       + "Do not infer baseline approval, provider-transfer authority, or permission to submit a generation job.";
     const heading = state.category === "style-processing"
       ? "Izzi style-processing review"
-      : "Izzi artifact review";
+      : state.category === "planning"
+        ? "Izzi plan review"
+        : "Izzi artifact review";
     const decisionLines = payload.reviews.flatMap((review) => [
       `### ${review.artifact_id}`,
       `- Derivative SHA-256: \`${review.artifact_sha256}\``,
@@ -1054,7 +1112,7 @@ async function openGitHubIssue() {
       "",
       "This issue was prepared by the static situationshipin.space review portal after an explicit public-submission acknowledgement. GitHub has not submitted it yet."
     ];
-    const title = `[Izzi ${state.category === "style-processing" ? "style" : "proof"} review] ${payload.reviews.length} decision${payload.reviews.length === 1 ? "" : "s"} · ${identifierShort}`;
+    const title = `[Izzi ${state.category === "style-processing" ? "style" : state.category === "planning" ? "plan" : "proof"} review] ${payload.reviews.length} decision${payload.reviews.length === 1 ? "" : "s"} · ${identifierShort}`;
     let url = issueUrl(title, [...preamble, ...decisionLines, ...footer]);
     if (url.length > 7800) {
       const compactLines = payload.reviews.map((review) =>

@@ -4,6 +4,90 @@
   "human_review_state": "UNREVIEWED",
   "items": [
     {
+      "artifact_id": "plan-vertical-ai-time-to-die-v2",
+      "title": "ai-time-to-die — proposed vertical v2 (formal plan)",
+      "description": "Formal production plan: 8-segment / 57 s episode template, measured estimates, pilot options, gates, and rizal/ord/eureka orchestration, with the special-topics PDF variant.",
+      "alt": "Formal production plan: 8-segment / 57 s episode template, measured estimates, pilot options, gates, and rizal/ord/eureka orchestration, with the special-topics PDF variant.",
+      "family": "ai-time-to-die",
+      "generation_class": "plan-vertical",
+      "feedback_round": "plan-v2",
+      "media_kind": "plan",
+      "review_scope": "PLAN-VERTICAL-REVIEW",
+      "review_mode": "output",
+      "source_path": "docs/development/time-to-die-ai/proposed_vertical_v2.md",
+      "source_sha256": "9539ea70b4d6c7d48544051c5fc18c4e8acf6c2f58e5a521216e430a055e9271",
+      "published_path": "review/media/ai-time-to-die/plan-vertical-ai-time-to-die-v2.md",
+      "sha256": "9539ea70b4d6c7d48544051c5fc18c4e8acf6c2f58e5a521216e430a055e9271",
+      "bytes": 5773,
+      "format": "markdown",
+      "plan_stage": "PLAN-FORMAL",
+      "plan_pdf": {
+        "path": "review/media/ai-time-to-die/plan-vertical-ai-time-to-die-v2.pdf",
+        "sha256": "9c59e5d07d0b50994879c91eec6c7a2fc2409203ddcf8b8a929ada5bbc54e903",
+        "bytes": 107501
+      },
+      "plan_contract": {
+        "schema_version": "izzi-plan-vertical-contract-v1",
+        "stage": "PLAN-FORMAL",
+        "required_content": {
+          "template": true,
+          "segments": true,
+          "estimates": true,
+          "pilot_options": true,
+          "gates": true,
+          "orchestration": true
+        },
+        "house_style_checks": {
+          "special_topics": "PASS",
+          "coda_share": "PASS"
+        },
+        "validated_at": "2026-08-14T18:11:17.613Z"
+      },
+      "technical_state": "PLAN-FORMAL-PUBLISHED",
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "review_category": "planning",
+      "added_at": "2026-08-14T18:11:17.617Z"
+    },
+    {
+      "artifact_id": "plan-vertical-ai-time-to-die-v1",
+      "title": "ai-time-to-die — plan draft v1 (exploratory)",
+      "description": "Exploratory plan draft for the ai-time-to-die vertical: project composition, first-pass transformations, and open estimates.",
+      "alt": "Exploratory plan draft for the ai-time-to-die vertical: project composition, first-pass transformations, and open estimates.",
+      "family": "ai-time-to-die",
+      "generation_class": "plan-vertical",
+      "feedback_round": "plan-v1",
+      "media_kind": "plan",
+      "review_scope": "PLAN-VERTICAL-REVIEW",
+      "review_mode": "output",
+      "source_path": "docs/development/time-to-die-ai/proposal_vertical_v1.md",
+      "source_sha256": "223bcf4fa10e9b34f68bff0c243243260b5358ce48ad28fe6b7ea0e550dd1ca1",
+      "published_path": "review/media/ai-time-to-die/plan-vertical-ai-time-to-die-v1.md",
+      "sha256": "223bcf4fa10e9b34f68bff0c243243260b5358ce48ad28fe6b7ea0e550dd1ca1",
+      "bytes": 6180,
+      "format": "markdown",
+      "plan_stage": "PLAN-DRAFT",
+      "plan_pdf": null,
+      "plan_contract": {
+        "schema_version": "izzi-plan-vertical-contract-v1",
+        "stage": "PLAN-DRAFT",
+        "required_content": {
+          "template": false,
+          "segments": true,
+          "estimates": true,
+          "pilot_options": true,
+          "gates": false,
+          "orchestration": false
+        },
+        "validated_at": "2026-08-14T18:11:08.891Z"
+      },
+      "technical_state": "PLAN-DRAFT-PUBLISHED",
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "review_category": "planning",
+      "added_at": "2026-08-14T18:11:08.895Z"
+    },
+    {
       "artifact_id": "ai-time-to-die-episode-03",
       "title": "ai-time-to-die — Episode 03",
       "description": "Complete vertical episode 03 (57 s, 1080x1920@24) from the accepted draft-9 template: zf_xiaoyi canonical voice remap, two-region bullet text, wild 50% opacity masks, T5 HLT stand-in or the new provider night-market scene, shinkansen bed with canonical/HLT audio layout. Subtitles NOT-BURNED per policy (PGS bitmap, no local burn path). Full-motion review.",

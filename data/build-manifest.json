@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "portal_build": "izzi-review-2026-08-11.7",
-  "generated_at": "2026-08-14T12:29:58.182Z",
+  "generated_at": "2026-08-14T18:11:29.333Z",
   "portal_repository": "bdekoz/situationshipin.space",
   "portal_source_commit": "219a9b7f0891998c1525c94fa15b43c490b5d79f",
   "izzi_repository": "bdekoz/izzi",
@@ -10,12 +10,13 @@
   "human_review_state": "UNREVIEWED",
   "baseline_state": "NOT-PROMOTED",
   "training_conversion_transfer_state": "NOT-SHARED",
-  "artifact_count": 313,
+  "artifact_count": 315,
   "review_category_counts": {
     "proofs": 79,
-    "style_processing": 234
+    "style_processing": 234,
+    "planning": 2
   },
-  "artifact_payload_bytes": 83380894,
+  "artifact_payload_bytes": 83500348,
   "frame_preview_count": 0,
   "sampled_frame_count": 0,
   "source_media_bytes_represented": 95728655,
@@ -38,7 +39,7 @@
   "code_files": [
     {
       "path": "index.html",
-      "sha256": "626c81f6b889881a7dedb1216ae936fc099400dc876de092e752359e79943bc3"
+      "sha256": "6253007e81869dd92cf9e7585acf45dc60202ea4693eee67a955ad9df83ac5c8"
     },
     {
       "path": "proofs.html",
@@ -49,28 +50,32 @@
       "sha256": "be6db62cc5887c1ce5b626ad160d9fefab287bfa0017fc03937608160573f96d"
     },
     {
+      "path": "plans.html",
+      "sha256": "f5d9e7e057817e2b7e13a0aecce2da20084919e08cc79492cdf82a15a155327b"
+    },
+    {
       "path": "assets/css/review.css",
-      "sha256": "f5a00429d4dfb3a064580a5ba05b1764124753f8c6d7b7fd0b876357ccdb93c8"
+      "sha256": "62a2cccdfa6faa0f58b2de3931efba08fff7e4a6eb0d2befba0724546dd011a3"
     },
     {
       "path": "assets/js/review.js",
-      "sha256": "b81825654f5f805ec44e0e6523fbb63b5aff61f54ee6e296e26317d6ef5e49b3"
+      "sha256": "1977e4bd67c963e8adbda030bc6662e0f6267de6794389a6cff3a0357effd319"
     },
     {
       "path": "data/review-items.json",
-      "sha256": "32ce1f76a71329e57442adfa09967615e915ffc39021d0008bac15b0aceccf2d"
+      "sha256": "7407955e1b1388d3f6a78faf3799e7f842a53ed3b35b939f187f1120060beaea"
     },
     {
       "path": "scripts/check-review-site.mjs",
-      "sha256": "aba23334fa0314a158d0afe06c1da0305f5cbb60367c2715c4121110346f2e5b"
+      "sha256": "5d4d22b282801e08f11d26ace770860bbb0f976334cbd8bf7a4e1af68dc2da6b"
     },
     {
       "path": "scripts/update-build-manifest.mjs",
-      "sha256": "82595f4a72dc08ba6c2ce4eb0338a12b48f1a03cd4cd585845351d8e9471f7b2"
+      "sha256": "776e4c7d1742f287f04cc9a381c9be46598316cdc37ffafbb9394004d194e2a4"
     },
     {
       "path": "README.md",
-      "sha256": "539731e904dba1dc4d73a85fe13ceac537d46525cafa4500f8f359df200e58b2"
+      "sha256": "227730b0d646a4bb04854d19aeee84fa15fa6ac5af0bdce26ef2151eea288c4d"
     },
     {
       "path": "_config.yml",
@@ -85,8 +90,12 @@
       "sha256": "a632f6632a1af9917b1f3f6581f680e4c35861e1fab426e6d0e193371e79032e"
     },
     {
+      "path": "scripts/publish-plan-proof.mjs",
+      "sha256": "cab69b60af5a01e07871ff8707b82b93e88f739be161b2df2cca82d645729fdd"
+    },
+    {
       "path": "scripts/review-page.mjs",
-      "sha256": "10d6a6bf9978ae791668592034df93b25df662ab9816d10c2218dfa36fee72cd"
+      "sha256": "26f45bb4dd3ad8211ada320912610f90cee07cc8e1e277bdfd850176e91a41f3"
     },
     {
       "path": ".github/workflows/jekyll-gh-pages.yml",
@@ -94,7 +103,7 @@
     }
   ],
   "artifact_inventory": "data/review-items.json",
-  "catalog_sha256": "32ce1f76a71329e57442adfa09967615e915ffc39021d0008bac15b0aceccf2d",
+  "catalog_sha256": "7407955e1b1388d3f6a78faf3799e7f842a53ed3b35b939f187f1120060beaea",
   "notes": [
     "The catalog binds every published derivative to an Izzi source path and SHA-256.",
     "Canonical source MKVs remain outside Pages; one bounded H.264/AAC MP4 proxy is published for continuous motion and audio review with independent lineage.",

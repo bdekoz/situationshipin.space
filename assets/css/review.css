@@ -1102,3 +1102,20 @@ dialog::backdrop {
     grid-template-columns: 1fr;
   }
 }
+
+.plan-affordance {
+  display: inline-grid;
+  place-items: center;
+  padding: 0.5rem 0.85rem;
+  color: #fff;
+  background: #173a55;
+  border: 1px solid #9da8af;
+  font-family: ui-monospace, monospace;
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.latest-review .plan-affordance {
+  max-height: 8rem;
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "plan-vertical-ai-time-to-die-v1",
+  "artifact_id": "plan-vertical-ai-time-to-die-v1",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": null,
+  "document": {
+    "path": "/review/media/ai-time-to-die/plan-vertical-ai-time-to-die-v1.md",
+    "sha256": "223bcf4fa10e9b34f68bff0c243243260b5358ce48ad28fe6b7ea0e550dd1ca1",
+    "format": "markdown",
+    "plan_stage": "PLAN-DRAFT",
+    "plan_pdf": null
+  }
+}

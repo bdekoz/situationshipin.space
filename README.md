@@ -66,11 +66,45 @@ Use `--dry-run` to preview the plan, or pass `--render-proxy` with an `.mkv`
 source to render the 360×640 proxy with ffmpeg. After the script succeeds,
 commit and push the portal repository.
 
+## Publishing a new plan review
+
+Put a vertical production plan up for review with one approval-gated
+command. Plans are reviewed as documents (markdown, plus an optional
+special-topics PDF), and validation is graduated by plan stage so the first
+draft stays cheap:
+
+- `--stage draft` — exploratory starter markdown; provenance and payload
+  bounds only.
+- `--stage vertical` — requires template, segments, estimates, pilot
+  options, and gates in the plan content.
+- `--stage formal` — adds orchestration, and a PDF variant must carry a PASS
+  special-topics house-style check recorded via `--checks`.
+
+```sh
+node scripts/publish-plan-proof.mjs \
+  --approve PROJECT-APPROVED \
+  --source docs/development/<vertical>/proposal_vertical_v2.md \
+  --source-path docs/development/<vertical>/proposal_vertical_v2.md \
+  --artifact-id plan-vertical-<slug>-v2 \
+  --title "<Vertical> — proposed vertical v2" \
+  --description "What the plan reviewer should confirm" \
+  --family <family> \
+  --feedback-round plan-v2 \
+  --stage vertical \
+  --pdf docs/development/<vertical>/proposed_vertical_v2.pdf \
+  --checks docs/development/<vertical>/plan-vertical-checks.json
+```
+
+Use `--dry-run` to preview the plan. A `KEEP` on the formal plan unlocks the
+draft loop for that vertical; a `KEEP` on an earlier stage advances the plan,
+never production.
+
 ## Published payload policy
 
-Only allowlisted thumbnails, filmstrips, compact proofs, and metadata belong in
-the Pages tree. Each artifact in `data/review-items.json` carries its Izzi
-source path, byte size, dimensions, and SHA-256. Full episode media requires a
-separate storage, cost, privacy, and publication decision.
+Only allowlisted thumbnails, filmstrips, compact proofs, bounded plan
+documents (markdown/PDF), and metadata belong in the Pages tree. Each artifact
+in `data/review-items.json` carries its Izzi source path, byte size,
+dimensions, and SHA-256. Full episode media requires a separate storage, cost,
+privacy, and publication decision.
 
 Technical publication does not imply human acceptance or baseline promotion.

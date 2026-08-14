@@ -17,7 +17,7 @@ const maximumFileBytes = 16 * 1024 * 1024;
 // ai-time-to-die vertical adds three full-motion episode masters.
 const maximumPayloadBytes = 96 * 1024 * 1024;
 // .mp3 added 2026-08-14 for audio review artifacts (Kokoro female voice bank).
-const allowedExtensions = new Set([".png", ".jpg", ".jpeg", ".svg", ".html", ".json", ".mp4", ".mp3", ".webp"]);
+const allowedExtensions = new Set([".png", ".jpg", ".jpeg", ".svg", ".html", ".json", ".mp4", ".mp3", ".webp", ".pdf", ".md"]);
 const forbiddenExtensions = new Set([".mkv", ".wav", ".mov"]);
 
 let failures = 0;
@@ -101,8 +101,42 @@ for (const item of catalog.items) {
   }
   ids.add(item.artifact_id);
 
-  if (!["proofs", "style-processing"].includes(item.review_category)) {
+  if (!["proofs", "style-processing", "planning"].includes(item.review_category)) {
     fail(`${item.artifact_id} has an invalid review category`);
+  }
+
+  if (item.review_category === "planning") {
+    if (item.media_kind !== "plan") {
+      fail(`${item.artifact_id} planning items must use media_kind plan`);
+    }
+    if (!["PLAN-DRAFT", "PLAN-VERTICAL", "PLAN-FORMAL"].includes(item.plan_stage)) {
+      fail(`${item.artifact_id} has an invalid plan stage`);
+    }
+    if (item.plan_stage !== "PLAN-DRAFT" && !item.plan_contract) {
+      fail(`${item.artifact_id} is missing the plan contract`);
+    }
+    const requiredPlanContent = item.plan_stage === "PLAN-FORMAL"
+      ? ["template", "segments", "estimates", "pilot_options", "gates", "orchestration"]
+      : item.plan_stage === "PLAN-VERTICAL"
+        ? ["template", "segments", "estimates", "pilot_options", "gates"]
+        : [];
+    for (const key of requiredPlanContent) {
+      if (item.plan_contract?.required_content?.[key] !== true) {
+        fail(`${item.artifact_id} plan contract is missing required content: ${key}`);
+      }
+    }
+    if (item.plan_pdf) {
+      if (!/^[0-9a-f]{64}$/.test(item.plan_pdf.sha256 || "")) {
+        fail(`${item.artifact_id} has an incomplete plan PDF lineage`);
+      }
+      if (item.plan_stage === "PLAN-FORMAL"
+          && item.plan_contract?.house_style_checks?.special_topics !== "PASS") {
+        fail(`${item.artifact_id} formal plan PDF lacks a PASS special-topics check`);
+      }
+    }
+    if (item.source_sha256 !== item.sha256) {
+      fail(`${item.artifact_id} plan source hash differs from the published document`);
+    }
   }
 
   if (item.review_mode === "aesthetic") {
@@ -201,6 +235,23 @@ for (const item of catalog.items) {
         }
       }
     }
+    if (item.plan_pdf) {
+      const pdfPath = resolve(repositoryRoot, item.plan_pdf.path);
+      if (!withinRepository(pdfPath)) {
+        fail(`${item.artifact_id} plan PDF escapes the repository`);
+      } else {
+        const pdfStat = await stat(pdfPath);
+        const pdfData = await readFile(pdfPath);
+        const pdfHash = createHash("sha256").update(pdfData).digest("hex");
+        payloadBytes += pdfStat.size;
+        if (pdfStat.size !== item.plan_pdf.bytes || pdfHash !== item.plan_pdf.sha256) {
+          fail(`${item.artifact_id} plan PDF bytes or hash differs`);
+        }
+        if (pdfStat.size > maximumFileBytes) {
+          fail(`${item.artifact_id} plan PDF exceeds the object budget`);
+        }
+      }
+    }
   } catch (error) {
     fail(`${item.artifact_id} cannot be inspected: ${error.message}`);
   }
@@ -213,7 +264,7 @@ for (const path of await recursiveFiles(resolve(repositoryRoot, "review"))) {
 }
 
 if (payloadBytes > maximumPayloadBytes) {
-  fail(`artifact payload exceeds 48 MiB: ${payloadBytes} bytes`);
+  fail(`artifact payload exceeds the ${maximumPayloadBytes} byte budget: ${payloadBytes} bytes`);
 } else {
   pass(`artifact payload is bounded: ${payloadBytes} bytes`);
 }
@@ -245,9 +296,11 @@ try {
   const styleProcessingCount = catalog.items.filter(
     (item) => item.review_category === "style-processing"
   ).length;
+  const planningCount = catalog.items.filter((item) => item.review_category === "planning").length;
   const expectedCategoryCounts = {
     proofs: proofCount,
-    style_processing: styleProcessingCount
+    style_processing: styleProcessingCount,
+    planning: planningCount
   };
   for (const [field, expected] of Object.entries(expectedManifestFields)) {
     if (buildManifest[field] !== expected) {
@@ -291,6 +344,7 @@ try {
 const index = await readFile(resolve(repositoryRoot, "index.html"), "utf8");
 const proofs = await readFile(resolve(repositoryRoot, "proofs.html"), "utf8");
 const style = await readFile(resolve(repositoryRoot, "style.html"), "utf8");
+const plans = await readFile(resolve(repositoryRoot, "plans.html"), "utf8");
 const script = await readFile(resolve(repositoryRoot, "assets/js/review.js"), "utf8");
 const requiredIds = [
   "review-catalog", "artifact-grid", "artifact-template", "filter-form",
@@ -299,27 +353,34 @@ const requiredIds = [
   "results-description"
 ];
 for (const id of requiredIds) {
-  if (!proofs.includes(`id="${id}"`) || !style.includes(`id="${id}"`)) {
+  if (!proofs.includes(`id="${id}"`) || !style.includes(`id="${id}"`) || !plans.includes(`id="${id}"`)) {
     fail(`catalog pages are missing required ID ${id}`);
   }
 }
 
-if (proofs.includes("Style processing") || style.includes("Proofs for inspection")) {
-  fail("catalog sub-pages expose the other review category");
+if (proofs.includes("Style processing") || proofs.includes("Plan review")
+    || style.includes("Proofs for inspection") || style.includes("Plan review")
+    || plans.includes("Style processing") || plans.includes("Proofs for inspection")) {
+  fail("catalog sub-pages expose another review category");
 } else {
   pass("catalog sub-pages are isolated by category");
 }
 
 const remoteDependency = /<(?:script|link)[^>]+(?:src|href)=["']https?:\/\//i;
-if (remoteDependency.test(index) || remoteDependency.test(proofs) || remoteDependency.test(style)) {
+if (remoteDependency.test(index) || remoteDependency.test(proofs) || remoteDependency.test(style) || remoteDependency.test(plans)) {
   fail("a site page loads a remote script or stylesheet");
 } else {
   pass("site code has no remote script or stylesheet dependency");
 }
 
 if (!proofs.includes("public GitHub issue") || !style.includes("public GitHub issue")
+    || !plans.includes("public GitHub issue")
     || !script.includes("public_submission_acknowledged")) {
   fail("public issue disclosure or acknowledgement evidence is missing");
+}
+
+if (!plans.includes('data-review-category="planning"')) {
+  fail("plans.html is missing the planning review category");
 }
 
 if (!script.includes("pageSize: 10") || !script.includes("AESTHETIC_DECISIONS")
@@ -333,7 +394,7 @@ if (!script.includes("pageSize: 10") || !script.includes("AESTHETIC_DECISIONS")
 const forbiddenTerms = ["SEEDANCE_KEY", "BEGIN OPENSSH PRIVATE KEY", "aws_access_key_id"];
 for (const term of forbiddenTerms) {
   if (index.includes(term) || proofs.includes(term) || style.includes(term)
-      || script.includes(term) || JSON.stringify(catalog).includes(term)) {
+      || plans.includes(term) || script.includes(term) || JSON.stringify(catalog).includes(term)) {
     fail(`public site content contains forbidden credential marker ${term}`);
   }
 }

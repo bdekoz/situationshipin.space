@@ -12,6 +12,7 @@ const codePaths = [
   "index.html",
   "proofs.html",
   "style.html",
+  "plans.html",
   "assets/css/review.css",
   "assets/js/review.js",
   "data/review-items.json",
@@ -21,6 +22,7 @@ const codePaths = [
   "_config.yml",
   "scripts/build-review-pages.mjs",
   "scripts/publish-video-proof.mjs",
+  "scripts/publish-plan-proof.mjs",
   "scripts/review-page.mjs",
   ".github/workflows/jekyll-gh-pages.yml"
 ];
@@ -36,12 +38,16 @@ const sourceMedia = new Map();
 const aestheticCollectionCounts = {};
 let proofCount = 0;
 let styleProcessingCount = 0;
+let planningCount = 0;
 let artifactPayloadBytes = 0;
 let framePreviewCount = 0;
 let sampledFrameCount = 0;
 
 for (const item of catalog.items) {
   artifactPayloadBytes += item.bytes;
+  if (item.plan_pdf) {
+    artifactPayloadBytes += item.plan_pdf.bytes;
+  }
   if (item.source_media) {
     sourceMedia.set(item.source_media.sha256, item.source_media);
   }
@@ -51,6 +57,9 @@ for (const item of catalog.items) {
   }
   if (item.review_category === "proofs") {
     proofCount += 1;
+  }
+  if (item.review_category === "planning") {
+    planningCount += 1;
   }
   if (item.frame_manifest_path) {
     framePreviewCount += 1;
@@ -91,7 +100,8 @@ const manifest = {
   artifact_count: catalog.items.length,
   review_category_counts: {
     proofs: proofCount,
-    style_processing: styleProcessingCount
+    style_processing: styleProcessingCount,
+    planning: planningCount
   },
   artifact_payload_bytes: artifactPayloadBytes,
   frame_preview_count: framePreviewCount,
