@@ -1,0 +1,11 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "ai-time-to-die-episode-03",
+  "artifact_id": "ai-time-to-die-episode-03",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": {
+    "path": "/review/media/ai-time-to-die/ai-time-to-die-episode-03.review.mp4",
+    "sha256": "7f75839f372fbbada1adf88f6456e85ea776057312828e756378c87c1132ffb7"
+  }
+}
