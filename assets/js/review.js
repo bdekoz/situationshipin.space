@@ -543,10 +543,19 @@ function renderCard(item) {
     });
   }
 
-  card.querySelector(".artifact-kicker").textContent = [
-    humanize(item.family), item.source_group ? humanize(item.source_group) : "",
-    humanize(item.generation_class), item.feedback_round
-  ].filter(Boolean).join(" · ");
+  // On the proofs page the family name is already carried by the card
+  // title, so the kicker starts at the generation class instead of
+  // repeating the family prefix ("Izzi Generation 20260814 · …").
+  const kickerParts = [];
+  if (state.category !== "proofs") {
+    kickerParts.push(humanize(item.family));
+  }
+  if (item.source_group) {
+    kickerParts.push(humanize(item.source_group));
+  }
+  kickerParts.push(humanize(item.generation_class), item.feedback_round);
+  card.querySelector(".artifact-kicker").textContent =
+    kickerParts.filter(Boolean).join(" · ");
   card.querySelector(".artifact-title").textContent = item.title;
   card.querySelector(".artifact-description").textContent = item.description;
 
