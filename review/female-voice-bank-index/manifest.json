@@ -1,0 +1,15 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "female-voice-bank-index",
+  "artifact_id": "female-voice-bank-index",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": null,
+  "document": {
+    "path": "/review/media/female-voice-bank-index/female-voice-bank-index.index.html",
+    "sha256": "7ce315305c3794c39404640f36a4cd4a891b52bf0d7d31490736ded77fb978a4",
+    "format": "html",
+    "plan_stage": null,
+    "plan_pdf": null
+  }
+}

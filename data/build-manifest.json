@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "portal_build": "izzi-review-2026-08-11.7",
-  "generated_at": "2026-08-14T20:31:05.985Z",
+  "generated_at": "2026-08-14T20:59:35.766Z",
   "portal_repository": "bdekoz/situationshipin.space",
   "portal_source_commit": "219a9b7f0891998c1525c94fa15b43c490b5d79f",
   "izzi_repository": "bdekoz/izzi",
@@ -10,13 +10,13 @@
   "human_review_state": "UNREVIEWED",
   "baseline_state": "NOT-PROMOTED",
   "training_conversion_transfer_state": "NOT-SHARED",
-  "artifact_count": 291,
+  "artifact_count": 263,
   "review_category_counts": {
-    "proofs": 54,
+    "proofs": 26,
     "style_processing": 234,
     "planning": 3
   },
-  "artifact_payload_bytes": 77865418,
+  "artifact_payload_bytes": 75781605,
   "frame_preview_count": 0,
   "sampled_frame_count": 0,
   "source_media_bytes_represented": 95728655,
@@ -63,7 +63,7 @@
     },
     {
       "path": "data/review-items.json",
-      "sha256": "43450ab6bd9b0440cf5250ae38a6721cbcf79b6137e45205acc31946dfaf4d00"
+      "sha256": "13cc9de4beb5e0bae5308c8fd64aa0b6aeda3727b8f2e8ba873405695f0ee6af"
     },
     {
       "path": "scripts/check-review-site.mjs",
@@ -95,11 +95,11 @@
     },
     {
       "path": "scripts/build-generation-index.mjs",
-      "sha256": "b674e1fa972ad539dfdd3269393ed47ac32fe669280aec3ac3cd66dd101db027"
+      "sha256": "76ae5508c3064bfb200ed5b1b4d8f2bc5781e2da4159e02d5858947972cf4b99"
     },
     {
       "path": "scripts/review-page.mjs",
-      "sha256": "987a1b26daeddb840addefdf2c2ee0b9ed93b72a12de392a0e5032b6470e8037"
+      "sha256": "43d0112cd4818506a04e2a5c81947f35368c16444c6a5dcb2f409a9b40430dcf"
     },
     {
       "path": ".github/workflows/jekyll-gh-pages.yml",
@@ -107,7 +107,7 @@
     }
   ],
   "artifact_inventory": "data/review-items.json",
-  "catalog_sha256": "43450ab6bd9b0440cf5250ae38a6721cbcf79b6137e45205acc31946dfaf4d00",
+  "catalog_sha256": "13cc9de4beb5e0bae5308c8fd64aa0b6aeda3727b8f2e8ba873405695f0ee6af",
   "notes": [
     "The catalog binds every published derivative to an Izzi source path and SHA-256.",
     "Canonical source MKVs remain outside Pages; one bounded H.264/AAC MP4 proxy is published for continuous motion and audio review with independent lineage.",

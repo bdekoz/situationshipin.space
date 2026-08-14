@@ -51,9 +51,12 @@ function renderIndex({ title, description, members, generationCommit }) {
       const id = item.artifact_id.replace(/[^a-zA-Z0-9._-]+/g, "-");
       const reviewUrl = `../../${id}/`;
       const thumb = `../../${item.published_path.replace(/^review\//, "")}`;
+      const media = item.media_kind === "audio"
+        ? `<audio class="thumb-audio" controls preload="none" src="${escape(thumb)}"></audio>`
+        : `<a class="thumb" href="${reviewUrl}"><img src="${escape(thumb)}" alt="" loading="lazy" decoding="async"></a>`;
       return [
         `<li class="pass">`,
-        `<a class="thumb" href="${reviewUrl}"><img src="${escape(thumb)}" alt="" loading="lazy" decoding="async"></a>`,
+        media,
         `<div class="pass-body">`,
         `<h3><a href="${reviewUrl}">${escape(item.title)}</a></h3>`,
         `<p>${escape(item.description || "")}</p>`,
@@ -79,6 +82,7 @@ function renderIndex({ title, description, members, generationCommit }) {
       ul.passes{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));gap:1rem}
       li.pass{display:grid;grid-template-columns:6rem minmax(0,1fr);gap:.8rem;align-items:start;background:#f5f6f4;border:1px solid #9da8af;padding:.8rem}
       .thumb img{display:block;width:6rem;height:auto;border:1px solid #9da8af}
+      .thumb-audio{display:block;width:6rem;height:2.2rem;border:1px solid #9da8af}
       li.pass h3{margin:0 0 .25rem;font-size:1rem}
       li.pass p{margin:0 0 .25rem;color:#4d565d;font-size:.85rem}
       .meta{font-family:ui-monospace,monospace;font-size:.72rem;overflow-wrap:anywhere}
@@ -159,6 +163,23 @@ function membersFromReferenceSet(referenceSet) {
     );
 }
 
+function membersFromCatalogIds(catalog, ids) {
+  const byId = new Map(catalog.items.map((item) => [item.artifact_id, item]));
+  return ids
+    .map((id) => byId.get(id))
+    .filter(Boolean)
+    .map((item) => ({
+      artifact_id: item.artifact_id,
+      title: item.title,
+      description: item.description,
+      media_kind: item.media_kind,
+      published_path: item.published_path,
+    }))
+    .sort((left, right) =>
+      String(left.artifact_id).localeCompare(String(right.artifact_id))
+    );
+}
+
 async function main() {
   const values = argumentsMap(process.argv.slice(2));
   const family = values.family;
@@ -178,6 +199,12 @@ async function main() {
     );
     members = membersFromReferenceSet(referenceSet);
     generationCommit = referenceSet.generation_commit || null;
+  } else if (values["members-ids"]) {
+    const ids = values["members-ids"]
+      .split(",")
+      .map((value) => value.trim())
+      .filter(Boolean);
+    members = membersFromCatalogIds(catalog, ids);
   } else {
     members = catalog.items
       .filter((item) => item.family === family)
