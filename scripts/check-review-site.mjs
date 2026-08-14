@@ -160,6 +160,14 @@ for (const item of catalog.items) {
       && !/^[0-9a-f]{40}$/.test(item.generation_commit)) {
     fail(`${item.artifact_id} has an invalid generation commit`);
   }
+  if (item.media_kind === "index") {
+    if (extname(item.published_path).toLowerCase() !== ".html") {
+      fail(`${item.artifact_id} index artifacts must publish an .html page`);
+    }
+    if (!Array.isArray(item.index_members) || !item.index_members.length) {
+      fail(`${item.artifact_id} index is missing its member list`);
+    }
+  }
 
   const extension = extname(item.published_path).toLowerCase();
   if (!allowedExtensions.has(extension) || forbiddenExtensions.has(extension)) {

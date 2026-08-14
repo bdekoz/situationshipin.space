@@ -113,14 +113,20 @@ export function renderReviewPage(item) {
         ? `<audio controls preload="metadata" src="/${escape(item.published_path)}"><p>Your browser cannot play this audio. <a href="/${escape(item.published_path)}">Download it</a>.</p></audio>`
       : item.media_kind === "plan"
         ? planMedia(item)
+      : item.media_kind === "index"
+        ? indexMedia(item)
       : `<img src="/${escape(item.published_path)}" alt="${escape(item.alt)}">`;
   const planMeta = item.media_kind === "plan"
     ? `Review ID: ${escape(item.artifact_id)}<br>Document SHA-256: ${escape(item.sha256)}<br>Plan stage: ${escape(item.plan_stage || "PLAN-DRAFT")}<br>Canonical source: ${escape(item.source_path || "not supplied")}`
-    : `Review ID: ${escape(item.artifact_id)}<br>Proxy SHA-256: ${escape(item.sha256)}<br>Canonical source SHA-256: ${escape(item.source_media?.sha256 || item.sha256)}<br>Canonical source publication: ${item.source_media?.published === false ? "local only" : "published"}`;
+    : item.media_kind === "index"
+      ? `Review ID: ${escape(item.artifact_id)}<br>Index SHA-256: ${escape(item.sha256)}<br>Index members: ${escape(String(item.index_members?.length || 0))}<br>Generation commit: ${escape(item.generation_commit || "not supplied")}`
+      : `Review ID: ${escape(item.artifact_id)}<br>Proxy SHA-256: ${escape(item.sha256)}<br>Canonical source SHA-256: ${escape(item.source_media?.sha256 || item.sha256)}<br>Canonical source publication: ${item.source_media?.published === false ? "local only" : "published"}`;
   const noteLabel = item.media_kind === "plan"
     ? "Plan notes"
-    : "Motion and audio notes";
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><meta name="description" content="${escape(item.title)} review page"><title>${escape(item.title)} — situationshipin.space</title><link rel="stylesheet" href="../../../../assets/css/review.css"><style>body{background:#fcfbf7;color:#14171a} .review-page{max-width:72rem;margin:auto;padding:2rem 1rem 5rem}.review-hero{border-left:.55rem solid #173a55;padding:1rem 1.25rem;background:#eef1f2}.review-media{margin:2rem 0;padding:1rem;background:#f5f6f4;border:1px solid #9da8af}.review-media img,.review-media video{display:block;max-width:100%;max-height:72vh;margin:auto}.review-media audio{display:block;width:100%;max-width:36rem;margin:1rem auto}.review-media object{display:block;width:100%;min-height:70vh;border:1px solid #9da8af;background:#fff}.review-media .plan-document-link{display:inline-block;font-weight:700;color:#173a55;padding:.7rem 1rem;border:2px solid #173a55;background:#fff;text-decoration:none}.review-form{display:grid;gap:1rem;max-width:48rem}.review-form textarea,.review-form select,.review-form button{min-height:3rem;padding:.7rem;font:inherit}.review-form textarea,.review-form select{border:2px solid #4d565d;background:#fff;color:#14171a}.review-form button{width:max-content;background:#173a55;color:#fff;border:0;padding:.8rem 1.2rem;font-weight:700}.review-form .review-actions{display:flex;gap:.75rem;flex-wrap:wrap}.review-form button.secondary{background:#4d565d}.eyebrow{color:#173a55}.meta{font-family:ui-monospace,monospace;font-size:.85rem;overflow-wrap:anywhere}</style></head><body><main class="review-page"><p><a href="/">← Review catalog</a></p><div class="review-hero"><p class="eyebrow">${escape(item.style || "house-style")} · ${item.media_kind === "plan" ? "plan review" : "artifact review"}</p><h1>${escape(item.title)}</h1><p>${escape(item.description)}</p></div><section class="review-media" aria-labelledby="media-title"><h2 id="media-title">Review the artifact</h2>${media}<p class="meta">${planMeta}</p></section><section aria-labelledby="feedback-title"><h2 id="feedback-title">Human review</h2><form class="review-form" id="review-form"><label>Decision<select name="decision"><option>UNREVIEWED</option><option>KEEP</option><option>KEEP-PARTS</option><option>REVISE</option><option>REJECT</option><option>DISCUSS</option></select></label><label>${noteLabel}<textarea name="note" rows="7" placeholder="What should change, or what should be kept?"></textarea></label><div class="review-actions"><button type="submit">Save local review</button><button type="button" id="review-download">Download review JSON</button><button type="button" id="review-issue">Open GitHub issue draft</button><button type="button" id="review-clear" class="secondary">Clear saved review</button></div><output id="review-status" role="status"></output></form>${reviewScript(item)}</section></main></body></html>`;
+    : item.media_kind === "index"
+      ? "Index notes"
+      : "Motion and audio notes";
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><meta name="description" content="${escape(item.title)} review page"><title>${escape(item.title)} — situationshipin.space</title><link rel="stylesheet" href="../../../../assets/css/review.css"><style>body{background:#fcfbf7;color:#14171a} .review-page{max-width:72rem;margin:auto;padding:2rem 1rem 5rem}.review-hero{border-left:.55rem solid #173a55;padding:1rem 1.25rem;background:#eef1f2}.review-media{margin:2rem 0;padding:1rem;background:#f5f6f4;border:1px solid #9da8af}.review-media img,.review-media video{display:block;max-width:100%;max-height:72vh;margin:auto}.review-media audio{display:block;width:100%;max-width:36rem;margin:1rem auto}.review-media object,.review-media iframe{display:block;width:100%;min-height:70vh;border:1px solid #9da8af;background:#fff}.review-media .plan-document-link{display:inline-block;font-weight:700;color:#173a55;padding:.7rem 1rem;border:2px solid #173a55;background:#fff;text-decoration:none}.review-form{display:grid;gap:1rem;max-width:48rem}.review-form textarea,.review-form select,.review-form button{min-height:3rem;padding:.7rem;font:inherit}.review-form textarea,.review-form select{border:2px solid #4d565d;background:#fff;color:#14171a}.review-form button{width:max-content;background:#173a55;color:#fff;border:0;padding:.8rem 1.2rem;font-weight:700}.review-form .review-actions{display:flex;gap:.75rem;flex-wrap:wrap}.review-form button.secondary{background:#4d565d}.eyebrow{color:#173a55}.meta{font-family:ui-monospace,monospace;font-size:.85rem;overflow-wrap:anywhere}</style></head><body><main class="review-page"><p><a href="/">← Review catalog</a></p><div class="review-hero"><p class="eyebrow">${escape(item.style || "house-style")} · ${item.media_kind === "plan" ? "plan review" : item.media_kind === "index" ? "generation index" : "artifact review"}</p><h1>${escape(item.title)}</h1><p>${escape(item.description)}</p></div><section class="review-media" aria-labelledby="media-title"><h2 id="media-title">Review the artifact</h2>${media}<p class="meta">${planMeta}</p></section><section aria-labelledby="feedback-title"><h2 id="feedback-title">Human review</h2><form class="review-form" id="review-form"><label>Decision<select name="decision"><option>UNREVIEWED</option><option>KEEP</option><option>KEEP-PARTS</option><option>REVISE</option><option>REJECT</option><option>DISCUSS</option></select></label><label>${noteLabel}<textarea name="note" rows="7" placeholder="What should change, or what should be kept?"></textarea></label><div class="review-actions"><button type="submit">Save local review</button><button type="button" id="review-download">Download review JSON</button><button type="button" id="review-issue">Open GitHub issue draft</button><button type="button" id="review-clear" class="secondary">Clear saved review</button></div><output id="review-status" role="status"></output></form>${reviewScript(item)}</section></main></body></html>`;
 }
 
 function planMedia(item) {
@@ -134,6 +140,14 @@ function planMedia(item) {
     ? `<object data="${href}" type="application/pdf" aria-label="Plan document preview"><p>PDF preview unavailable in this browser. Use the link above.</p></object>`
     : "";
   return `<p>${links.join(" ")}</p>${preview}`;
+}
+
+function indexMedia(item) {
+  const href = `/${escape(item.published_path)}`;
+  return [
+    `<p><a class="plan-document-link" href="${href}" target="_blank" rel="noopener">Open the generation index ↗</a></p>`,
+    `<iframe src="${href}" title="${escape(item.title)} index" aria-label="${escape(item.title)} generation index"></iframe>`,
+  ].join("");
 }
 
 export function renderReviewManifest(item) {
@@ -150,12 +164,12 @@ export function renderReviewManifest(item) {
           ? { path: "/" + item.published_path, sha256: item.sha256 }
           : null,
       document:
-        item.media_kind === "plan"
+        item.media_kind === "plan" || item.media_kind === "index"
           ? {
               path: "/" + item.published_path,
               sha256: item.sha256,
-              format: item.format || "markdown",
-              plan_stage: item.plan_stage || "PLAN-DRAFT",
+              format: item.media_kind === "index" ? "html" : item.format || "markdown",
+              plan_stage: item.plan_stage || null,
               plan_pdf: item.plan_pdf
                 ? { path: "/" + item.plan_pdf.path, sha256: item.plan_pdf.sha256, format: "pdf" }
                 : null,

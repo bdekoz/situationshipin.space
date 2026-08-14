@@ -185,7 +185,7 @@ function validateCatalog(catalog) {
       "artifact_id", "title", "family", "generation_class", "published_path",
       "sha256", "bytes", "alt"
     ];
-    if (item.media_kind !== "plan") {
+    if (item.media_kind !== "plan" && item.media_kind !== "index") {
       required.push("width", "height");
     }
     const missing = required.filter((key) => item[key] === undefined || item[key] === "");
@@ -475,6 +475,8 @@ function renderLatestReview(items) {
   const media = latest.media_kind === "video" ? "▶ " : "";
   const mediaHtml = latest.media_kind === "plan"
     ? `<span class="plan-affordance" aria-hidden="true">[plan]</span>`
+    : latest.media_kind === "index"
+      ? `<span class="plan-affordance" aria-hidden="true">[index]</span>`
     : `<img src="${latest.published_path}" alt="" width="120">`;
   elements.latestReview.hidden = false;
   elements.latestReview.innerHTML =
@@ -511,17 +513,23 @@ function renderCard(item) {
     });
   }
 
-  if (item.media_kind === "plan") {
-    link.setAttribute("aria-label", `Open plan review: ${item.title}`);
-    card.querySelector(".open-label").textContent = "Open plan review";
+  const documentCard = item.media_kind === "plan" || item.media_kind === "index";
+  if (documentCard) {
+    const action = item.media_kind === "plan" ? "Open plan review" : "Open generation index";
+    link.setAttribute("aria-label", `${action}: ${item.title}`);
+    card.querySelector(".open-label").textContent = action;
     const image = card.querySelector(".artifact-image");
     if (image) {
       image.hidden = true;
     }
-    const planAffordance = card.querySelector(".plan-affordance");
-    if (planAffordance) {
-      planAffordance.hidden = false;
+    let badge = card.querySelector(".plan-affordance");
+    if (!badge) {
+      badge = document.createElement("span");
+      badge.className = "plan-affordance";
+      badge.setAttribute("aria-hidden", "true");
+      link.insertBefore(badge, link.firstChild);
     }
+    badge.textContent = item.media_kind === "plan" ? "[plan]" : "[index]";
   } else {
     const image = card.querySelector(".artifact-image");
     image.src = item.published_path;
@@ -568,6 +576,9 @@ function renderCard(item) {
   if (item.media_kind === "plan") {
     addMetadata(metadata, "Plan stage", humanize(item.plan_stage || "PLAN-DRAFT"));
     addMetadata(metadata, "Format", item.format ? item.format.toUpperCase() : "Markdown");
+  } else if (item.media_kind === "index") {
+    addMetadata(metadata, "Index members", String(item.index_members?.length || 0));
+    addMetadata(metadata, "Generation commit", item.generation_commit || "not supplied");
   } else {
     addMetadata(metadata, "Dimensions", `${item.width} × ${item.height}`);
   }
@@ -603,6 +614,8 @@ function renderCard(item) {
     ? "Aesthetic evidence decision"
     : item.media_kind === "plan"
       ? "Plan decision"
+      : item.media_kind === "index"
+        ? "Index decision"
       : "Clip or proof decision";
   for (const [value, label] of decisionsFor(item)) {
     decisionOptions.append(makeChoice("radio", `decision-${item.artifact_id}`, value, label, review.decision === value));
