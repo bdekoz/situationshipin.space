@@ -1,8 +1,49 @@
 {
   "baseline_state": "NOT-PROMOTED",
-  "generated_at": "2026-08-14T20:58:00Z",
+  "generated_at": "2026-08-14T22:36:15.549Z",
   "human_review_state": "UNREVIEWED",
   "items": [
+    {
+      "artifact_id": "palette-20260814-index",
+      "title": "Color Palette Family 20260814",
+      "description": "One aggregated entry for the 2026-08-14 izzi color palette family: 15 deterministic swatch-grid artifacts (basic palettes, source palettes, perceptual tints, RGB↔HSV grids, band sweeps). Open the index to reach each individual review page.",
+      "alt": "Index of the 15 deterministic izzi color palette review artifacts from 2026-08-14.",
+      "family": "palette-20260814",
+      "generation_class": "palette-index",
+      "feedback_round": "palette-20260814",
+      "media_kind": "index",
+      "review_scope": "PALETTE-20260814",
+      "review_mode": "output",
+      "source_path": "izzi 57b7144c7d783b944f901c03371037c3dbe3a1b7 outputs/review/feedback/visual/color/round-01 (palette family aggregate)",
+      "published_path": "review/media/palette-20260814/palette-20260814-index.index.html",
+      "sha256": "a9cbdcdc27bdea78b0b5541380c54e2cc742c64d4b18733606e9919fab0b3250",
+      "bytes": 8403,
+      "format": "html",
+      "generation_commit": "57b7144c7d783b944f901c03371037c3dbe3a1b7",
+      "generation_state": "CURRENT",
+      "index_members": [
+        "color-palette-1",
+        "color-palette-2",
+        "color-palette-3",
+        "color-palette-4",
+        "color-palette-5",
+        "color-palette-source-ciecam02",
+        "color-palette-source-ciecam16j70",
+        "color-palette-source-colorbrewer2",
+        "color-palette-source-izzi",
+        "color-palette-source-jp",
+        "color-tint-perceptual-1",
+        "color-tint-perceptual-2",
+        "color-rgb-hsv-2",
+        "color-rgb-hsv-3",
+        "color-band-expand-to-larger"
+      ],
+      "technical_state": "PALETTE-INDEX",
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "review_category": "proofs",
+      "added_at": "2026-08-14T22:36:15.537Z"
+    },
     {
       "artifact_id": "female-voice-bank-index",
       "title": "Female Voice Bank 20260814",
@@ -9314,6 +9355,6 @@
   "portal_build": "izzi-review-2026-08-11.7",
   "publication_state": "PUBLIC-PROTOTYPE",
   "schema_version": "1.0",
-  "source_commit": "ad15056e7d8a460dd669d0b1d1620a7be33f4108",
+  "source_commit": "57b7144c7d783b944f901c03371037c3dbe3a1b7",
   "source_repository": "bdekoz/izzi"
 }
