@@ -1,0 +1,11 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "female-voice-af-sarah",
+  "artifact_id": "female-voice-af-sarah",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": {
+    "path": "/review/media/female-voices/V11-af_sarah.mp3",
+    "sha256": "9cbbc14ecbd8883a12092058f4547311c60a2ca211cfd12770d9cd5564745173"
+  }
+}

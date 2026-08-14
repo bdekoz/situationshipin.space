@@ -1,0 +1,11 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "female-voice-pf-dora",
+  "artifact_id": "female-voice-pf-dora",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": {
+    "path": "/review/media/female-voices/V25-pf_dora.mp3",
+    "sha256": "9687400707d414aa8bbc9924e7e46a134739e5415b39999aef41658e60ade234"
+  }
+}

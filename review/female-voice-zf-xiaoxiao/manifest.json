@@ -1,0 +1,11 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "female-voice-zf-xiaoxiao",
+  "artifact_id": "female-voice-zf-xiaoxiao",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": {
+    "path": "/review/media/female-voices/V28-zf_xiaoxiao.mp3",
+    "sha256": "7df32c373726b0efedd966b21f35a161bbadfb917d80a1a3fd7fd42abdbbe196"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "female-voice-jf-gongitsune",
+  "artifact_id": "female-voice-jf-gongitsune",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": {
+    "path": "/review/media/female-voices/V22-jf_gongitsune.mp3",
+    "sha256": "8593ffff0a8a946eb5c095c4784be09c836897d16207386ac6dc711b8ce8741f"
+  }
+}

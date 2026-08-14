@@ -1,0 +1,11 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "female-voice-af-heart",
+  "artifact_id": "female-voice-af-heart",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": {
+    "path": "/review/media/female-voices/V06-af_heart.mp3",
+    "sha256": "7913487b797fff1d123f7d68638e4498b6edd3877aa1788185a766f8134c71ab"
+  }
+}

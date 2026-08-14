@@ -1,0 +1,11 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "female-voice-af-river",
+  "artifact_id": "female-voice-af-river",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": {
+    "path": "/review/media/female-voices/V01-af_river.mp3",
+    "sha256": "e694166cb3f6a8ee89d763cae4f36c14359d97098855e370e178372f24be2090"
+  }
+}

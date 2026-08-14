@@ -1,0 +1,11 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "female-voice-hf-alpha",
+  "artifact_id": "female-voice-hf-alpha",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": {
+    "path": "/review/media/female-voices/V18-hf_alpha.mp3",
+    "sha256": "62cd228272d9645ac1b0a9f52a9babfc196ab1790ca28bcf4de11fee09bfd653"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "female-voice-jf-nezumi",
+  "artifact_id": "female-voice-jf-nezumi",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": {
+    "path": "/review/media/female-voices/V23-jf_nezumi.mp3",
+    "sha256": "9b9ed136bb49a6ca9340df0c22f039052e5c49a660d5e5118b644a317fe40d8b"
+  }
+}

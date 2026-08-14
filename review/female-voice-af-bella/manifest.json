@@ -1,0 +1,11 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "female-voice-af-bella",
+  "artifact_id": "female-voice-af-bella",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": {
+    "path": "/review/media/female-voices/V05-af_bella.mp3",
+    "sha256": "635bb395c7d2f08f75421c7a12e7cf131b9d41840f7b52fde3a9e7038681ff15"
+  }
+}

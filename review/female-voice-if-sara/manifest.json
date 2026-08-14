@@ -1,0 +1,11 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "female-voice-if-sara",
+  "artifact_id": "female-voice-if-sara",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": {
+    "path": "/review/media/female-voices/V20-if_sara.mp3",
+    "sha256": "847238d7f63a1a9cc1e2af12d3f14f45048cc2bc32c1b9ff297e7ff6c985f007"
+  }
+}

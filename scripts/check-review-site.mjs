@@ -12,8 +12,9 @@ const maximumFileBytes = 16 * 1024 * 1024;
 // reviews (user preference; draft-1-style playable proxies instead of
 // filmstrips).  Revisit when the catalog approaches the new bound.
 const maximumPayloadBytes = 64 * 1024 * 1024;
-const allowedExtensions = new Set([".png", ".jpg", ".jpeg", ".svg", ".html", ".json", ".mp4"]);
-const forbiddenExtensions = new Set([".mkv", ".wav", ".mp3", ".mov"]);
+// .mp3 added 2026-08-14 for audio review artifacts (Kokoro female voice bank).
+const allowedExtensions = new Set([".png", ".jpg", ".jpeg", ".svg", ".html", ".json", ".mp4", ".mp3"]);
+const forbiddenExtensions = new Set([".mkv", ".wav", ".mov"]);
 
 let failures = 0;
 

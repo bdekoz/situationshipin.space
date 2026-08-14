@@ -1,0 +1,11 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "female-voice-bf-emma",
+  "artifact_id": "female-voice-bf-emma",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": {
+    "path": "/review/media/female-voices/V03-bf_emma.mp3",
+    "sha256": "9d35b7109dda7c0369d8f173caf9321958874f2abef517d592c7c47096b0bd3d"
+  }
+}
