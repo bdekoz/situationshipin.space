@@ -152,6 +152,15 @@ for (const item of catalog.items) {
     }
   }
 
+  if (item.generation_state !== undefined
+      && !["CURRENT", "STALE", "SUPERSEDED"].includes(item.generation_state)) {
+    fail(`${item.artifact_id} has an invalid generation state`);
+  }
+  if (item.generation_commit !== undefined
+      && !/^[0-9a-f]{40}$/.test(item.generation_commit)) {
+    fail(`${item.artifact_id} has an invalid generation commit`);
+  }
+
   const extension = extname(item.published_path).toLowerCase();
   if (!allowedExtensions.has(extension) || forbiddenExtensions.has(extension)) {
     fail(`${item.artifact_id} uses disallowed media type ${extension || "(none)"}`);

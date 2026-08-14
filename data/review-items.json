@@ -164,7 +164,7 @@
       "title": "Guilloche v4 grid — number",
       "description": "Guilloche v4 grid — number from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/review/feedback/visual/guilloche/round-05/static/guilloche-v4-number-grid.png. WebP q82 review copy flattened on black.",
       "alt": "Guilloche v4 grid — number",
-      "family": "guilloche-v4",
+      "family": "izzi-generation-20260814",
       "generation_class": "check-image",
       "feedback_round": "make-check-20260814",
       "media_kind": "image",
@@ -180,14 +180,16 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-14T11:00:37.222Z"
+      "added_at": "2026-08-14T11:00:37.222Z",
+      "generation_state": "CURRENT",
+      "generation_commit": "d8cfd8b18fbee62e5a163ec40f085a47731992d7"
     },
     {
       "artifact_id": "reference-image-guilloche-v4-word-grid",
       "title": "Guilloche v4 grid — word",
       "description": "Guilloche v4 grid — word from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/review/feedback/visual/guilloche/round-05/static/guilloche-v4-word-grid.png. WebP q82 review copy flattened on black.",
       "alt": "Guilloche v4 grid — word",
-      "family": "guilloche-v4",
+      "family": "izzi-generation-20260814",
       "generation_class": "check-image",
       "feedback_round": "make-check-20260814",
       "media_kind": "image",
@@ -203,14 +205,16 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-14T11:00:37.222Z"
+      "added_at": "2026-08-14T11:00:37.222Z",
+      "generation_state": "CURRENT",
+      "generation_commit": "d8cfd8b18fbee62e5a163ec40f085a47731992d7"
     },
     {
       "artifact_id": "reference-image-guilloche-v4-all-grid",
       "title": "Guilloche v4 grid — all",
       "description": "Guilloche v4 grid — all from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/review/feedback/visual/guilloche/round-05/static/guilloche-v4-all-grid.png. WebP q82 review copy flattened on black.",
       "alt": "Guilloche v4 grid — all",
-      "family": "guilloche-v4",
+      "family": "izzi-generation-20260814",
       "generation_class": "check-image",
       "feedback_round": "make-check-20260814",
       "media_kind": "image",
@@ -226,14 +230,16 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-14T11:00:37.221Z"
+      "added_at": "2026-08-14T11:00:37.221Z",
+      "generation_state": "CURRENT",
+      "generation_commit": "d8cfd8b18fbee62e5a163ec40f085a47731992d7"
     },
     {
       "artifact_id": "reference-image-guilloche-v4-combination-grid",
       "title": "Guilloche v4 grid — combination",
       "description": "Guilloche v4 grid — combination from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/review/feedback/visual/guilloche/round-05/static/guilloche-v4-combination-grid.png. WebP q82 review copy flattened on black.",
       "alt": "Guilloche v4 grid — combination",
-      "family": "guilloche-v4",
+      "family": "izzi-generation-20260814",
       "generation_class": "check-image",
       "feedback_round": "make-check-20260814",
       "media_kind": "image",
@@ -249,14 +255,16 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-14T11:00:37.221Z"
+      "added_at": "2026-08-14T11:00:37.221Z",
+      "generation_state": "CURRENT",
+      "generation_commit": "d8cfd8b18fbee62e5a163ec40f085a47731992d7"
     },
     {
       "artifact_id": "reference-image-moire-v1-category-grid",
       "title": "Moire v1 category grid",
       "description": "Moire v1 category grid from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/ad-hoc/moire.v1/moire-v1-category-grid.png. WebP q82 review copy flattened on black.",
       "alt": "Moire v1 category grid",
-      "family": "moire-v1",
+      "family": "izzi-generation-20260814",
       "generation_class": "check-image",
       "feedback_round": "make-check-20260814",
       "media_kind": "image",
@@ -272,14 +280,16 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-14T11:00:37.220Z"
+      "added_at": "2026-08-14T11:00:37.220Z",
+      "generation_state": "CURRENT",
+      "generation_commit": "d8cfd8b18fbee62e5a163ec40f085a47731992d7"
     },
     {
       "artifact_id": "reference-image-surface-tension-v1-category-grid",
       "title": "Surface tension v1 category grid",
       "description": "Surface tension v1 category grid from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/ad-hoc/surface-tension.v1/surface-tension-v1-category-grid.png. WebP q82 review copy flattened on black.",
       "alt": "Surface tension v1 category grid",
-      "family": "surface-tension-v1",
+      "family": "izzi-generation-20260814",
       "generation_class": "check-image",
       "feedback_round": "make-check-20260814",
       "media_kind": "image",
@@ -295,14 +305,16 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-14T11:00:37.220Z"
+      "added_at": "2026-08-14T11:00:37.220Z",
+      "generation_state": "CURRENT",
+      "generation_commit": "d8cfd8b18fbee62e5a163ec40f085a47731992d7"
     },
     {
       "artifact_id": "reference-image-surface-tension-09-glitch-rupture",
       "title": "Surface tension v1 plate 09 — glitch rupture",
       "description": "Surface tension v1 plate 09 — glitch rupture from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/ad-hoc/surface-tension.v1/png/surface-tension-09-glitch-rupture.png. WebP q82 review copy flattened on black.",
       "alt": "Surface tension v1 plate 09 — glitch rupture",
-      "family": "surface-tension-v1",
+      "family": "izzi-generation-20260814",
       "generation_class": "check-image",
       "feedback_round": "make-check-20260814",
       "media_kind": "image",
@@ -318,14 +330,16 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-14T11:00:37.219Z"
+      "added_at": "2026-08-14T11:00:37.219Z",
+      "generation_state": "CURRENT",
+      "generation_commit": "d8cfd8b18fbee62e5a163ec40f085a47731992d7"
     },
     {
       "artifact_id": "reference-image-surface-tension-10-wild-surface-storm",
       "title": "Surface tension v1 plate 10 — wild surface storm",
       "description": "Surface tension v1 plate 10 — wild surface storm from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/ad-hoc/surface-tension.v1/png/surface-tension-10-wild-surface-storm.png. WebP q82 review copy flattened on black.",
       "alt": "Surface tension v1 plate 10 — wild surface storm",
-      "family": "surface-tension-v1",
+      "family": "izzi-generation-20260814",
       "generation_class": "check-image",
       "feedback_round": "make-check-20260814",
       "media_kind": "image",
@@ -341,14 +355,16 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-14T11:00:37.219Z"
+      "added_at": "2026-08-14T11:00:37.219Z",
+      "generation_state": "CURRENT",
+      "generation_commit": "d8cfd8b18fbee62e5a163ec40f085a47731992d7"
     },
     {
       "artifact_id": "reference-image-surface-tension-07-cellular-foam",
       "title": "Surface tension v1 plate 07 — cellular foam",
       "description": "Surface tension v1 plate 07 — cellular foam from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/ad-hoc/surface-tension.v1/png/surface-tension-07-cellular-foam.png. WebP q82 review copy flattened on black.",
       "alt": "Surface tension v1 plate 07 — cellular foam",
-      "family": "surface-tension-v1",
+      "family": "izzi-generation-20260814",
       "generation_class": "check-image",
       "feedback_round": "make-check-20260814",
       "media_kind": "image",
@@ -364,14 +380,16 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-14T11:00:37.218Z"
+      "added_at": "2026-08-14T11:00:37.218Z",
+      "generation_state": "CURRENT",
+      "generation_commit": "d8cfd8b18fbee62e5a163ec40f085a47731992d7"
     },
     {
       "artifact_id": "reference-image-surface-tension-08-destabilized-tide",
       "title": "Surface tension v1 plate 08 — destabilized tide",
       "description": "Surface tension v1 plate 08 — destabilized tide from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/ad-hoc/surface-tension.v1/png/surface-tension-08-destabilized-tide.png. WebP q82 review copy flattened on black.",
       "alt": "Surface tension v1 plate 08 — destabilized tide",
-      "family": "surface-tension-v1",
+      "family": "izzi-generation-20260814",
       "generation_class": "check-image",
       "feedback_round": "make-check-20260814",
       "media_kind": "image",
@@ -387,14 +405,16 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-14T11:00:37.218Z"
+      "added_at": "2026-08-14T11:00:37.218Z",
+      "generation_state": "CURRENT",
+      "generation_commit": "d8cfd8b18fbee62e5a163ec40f085a47731992d7"
     },
     {
       "artifact_id": "reference-image-surface-tension-05-orbital-droplets",
       "title": "Surface tension v1 plate 05 — orbital droplets",
       "description": "Surface tension v1 plate 05 — orbital droplets from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/ad-hoc/surface-tension.v1/png/surface-tension-05-orbital-droplets.png. WebP q82 review copy flattened on black.",
       "alt": "Surface tension v1 plate 05 — orbital droplets",
-      "family": "surface-tension-v1",
+      "family": "izzi-generation-20260814",
       "generation_class": "check-image",
       "feedback_round": "make-check-20260814",
       "media_kind": "image",
@@ -410,14 +430,16 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-14T11:00:37.217Z"
+      "added_at": "2026-08-14T11:00:37.217Z",
+      "generation_state": "CURRENT",
+      "generation_commit": "d8cfd8b18fbee62e5a163ec40f085a47731992d7"
     },
     {
       "artifact_id": "reference-image-surface-tension-06-anisotropic-petals",
       "title": "Surface tension v1 plate 06 — anisotropic petals",
       "description": "Surface tension v1 plate 06 — anisotropic petals from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/ad-hoc/surface-tension.v1/png/surface-tension-06-anisotropic-petals.png. WebP q82 review copy flattened on black.",
       "alt": "Surface tension v1 plate 06 — anisotropic petals",
-      "family": "surface-tension-v1",
+      "family": "izzi-generation-20260814",
       "generation_class": "check-image",
       "feedback_round": "make-check-20260814",
       "media_kind": "image",
@@ -433,14 +455,16 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-14T11:00:37.217Z"
+      "added_at": "2026-08-14T11:00:37.217Z",
+      "generation_state": "CURRENT",
+      "generation_commit": "d8cfd8b18fbee62e5a163ec40f085a47731992d7"
     },
     {
       "artifact_id": "reference-image-surface-tension-03-vertical-chain",
       "title": "Surface tension v1 plate 03 — vertical chain",
       "description": "Surface tension v1 plate 03 — vertical chain from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/ad-hoc/surface-tension.v1/png/surface-tension-03-vertical-chain.png. WebP q82 review copy flattened on black.",
       "alt": "Surface tension v1 plate 03 — vertical chain",
-      "family": "surface-tension-v1",
+      "family": "izzi-generation-20260814",
       "generation_class": "check-image",
       "feedback_round": "make-check-20260814",
       "media_kind": "image",
@@ -456,14 +480,16 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-14T11:00:37.216Z"
+      "added_at": "2026-08-14T11:00:37.216Z",
+      "generation_state": "CURRENT",
+      "generation_commit": "d8cfd8b18fbee62e5a163ec40f085a47731992d7"
     },
     {
       "artifact_id": "reference-image-surface-tension-04-boundary-cling",
       "title": "Surface tension v1 plate 04 — boundary cling",
       "description": "Surface tension v1 plate 04 — boundary cling from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/ad-hoc/surface-tension.v1/png/surface-tension-04-boundary-cling.png. WebP q82 review copy flattened on black.",
       "alt": "Surface tension v1 plate 04 — boundary cling",
-      "family": "surface-tension-v1",
+      "family": "izzi-generation-20260814",
       "generation_class": "check-image",
       "feedback_round": "make-check-20260814",
       "media_kind": "image",
@@ -479,14 +505,16 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-14T11:00:37.216Z"
+      "added_at": "2026-08-14T11:00:37.216Z",
+      "generation_state": "CURRENT",
+      "generation_commit": "d8cfd8b18fbee62e5a163ec40f085a47731992d7"
     },
     {
       "artifact_id": "reference-image-surface-tension-01-paired-drops",
       "title": "Surface tension v1 plate 01 — paired drops",
       "description": "Surface tension v1 plate 01 — paired drops from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/ad-hoc/surface-tension.v1/png/surface-tension-01-paired-drops.png. WebP q82 review copy flattened on black.",
       "alt": "Surface tension v1 plate 01 — paired drops",
-      "family": "surface-tension-v1",
+      "family": "izzi-generation-20260814",
       "generation_class": "check-image",
       "feedback_round": "make-check-20260814",
       "media_kind": "image",
@@ -502,14 +530,16 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-14T11:00:37.215Z"
+      "added_at": "2026-08-14T11:00:37.215Z",
+      "generation_state": "CURRENT",
+      "generation_commit": "d8cfd8b18fbee62e5a163ec40f085a47731992d7"
     },
     {
       "artifact_id": "reference-image-surface-tension-02-triad-membrane",
       "title": "Surface tension v1 plate 02 — triad membrane",
       "description": "Surface tension v1 plate 02 — triad membrane from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/ad-hoc/surface-tension.v1/png/surface-tension-02-triad-membrane.png. WebP q82 review copy flattened on black.",
       "alt": "Surface tension v1 plate 02 — triad membrane",
-      "family": "surface-tension-v1",
+      "family": "izzi-generation-20260814",
       "generation_class": "check-image",
       "feedback_round": "make-check-20260814",
       "media_kind": "image",
@@ -525,14 +555,16 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-14T11:00:37.215Z"
+      "added_at": "2026-08-14T11:00:37.215Z",
+      "generation_state": "CURRENT",
+      "generation_commit": "d8cfd8b18fbee62e5a163ec40f085a47731992d7"
     },
     {
       "artifact_id": "reference-image-moire-10-wild-collision",
       "title": "Moire v1 plate 10 — wild collision",
       "description": "Moire v1 plate 10 — wild collision from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/ad-hoc/moire.v1/png/moire-10-wild-collision.png. WebP q82 review copy flattened on black.",
       "alt": "Moire v1 plate 10 — wild collision",
-      "family": "moire-v1",
+      "family": "izzi-generation-20260814",
       "generation_class": "check-image",
       "feedback_round": "make-check-20260814",
       "media_kind": "image",
@@ -548,14 +580,16 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-14T11:00:37.214Z"
+      "added_at": "2026-08-14T11:00:37.214Z",
+      "generation_state": "CURRENT",
+      "generation_commit": "d8cfd8b18fbee62e5a163ec40f085a47731992d7"
     },
     {
       "artifact_id": "reference-image-moire-09-glitch-registration",
       "title": "Moire v1 plate 09 — glitch registration",
       "description": "Moire v1 plate 09 — glitch registration from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/ad-hoc/moire.v1/png/moire-09-glitch-registration.png. WebP q82 review copy flattened on black.",
       "alt": "Moire v1 plate 09 — glitch registration",
-      "family": "moire-v1",
+      "family": "izzi-generation-20260814",
       "generation_class": "check-image",
       "feedback_round": "make-check-20260814",
       "media_kind": "image",
@@ -571,14 +605,16 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-14T11:00:37.212Z"
+      "added_at": "2026-08-14T11:00:37.212Z",
+      "generation_state": "CURRENT",
+      "generation_commit": "d8cfd8b18fbee62e5a163ec40f085a47731992d7"
     },
     {
       "artifact_id": "reference-image-moire-07-sine-curtain",
       "title": "Moire v1 plate 07 — sine curtain",
       "description": "Moire v1 plate 07 — sine curtain from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/ad-hoc/moire.v1/png/moire-07-sine-curtain.png. WebP q82 review copy flattened on black.",
       "alt": "Moire v1 plate 07 — sine curtain",
-      "family": "moire-v1",
+      "family": "izzi-generation-20260814",
       "generation_class": "check-image",
       "feedback_round": "make-check-20260814",
       "media_kind": "image",
@@ -594,14 +630,16 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-14T11:00:37.211Z"
+      "added_at": "2026-08-14T11:00:37.211Z",
+      "generation_state": "CURRENT",
+      "generation_commit": "d8cfd8b18fbee62e5a163ec40f085a47731992d7"
     },
     {
       "artifact_id": "reference-image-moire-08-destabilized-braid",
       "title": "Moire v1 plate 08 — destabilized braid",
       "description": "Moire v1 plate 08 — destabilized braid from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/ad-hoc/moire.v1/png/moire-08-destabilized-braid.png. WebP q82 review copy flattened on black.",
       "alt": "Moire v1 plate 08 — destabilized braid",
-      "family": "moire-v1",
+      "family": "izzi-generation-20260814",
       "generation_class": "check-image",
       "feedback_round": "make-check-20260814",
       "media_kind": "image",
@@ -617,14 +655,16 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-14T11:00:37.211Z"
+      "added_at": "2026-08-14T11:00:37.211Z",
+      "generation_state": "CURRENT",
+      "generation_commit": "d8cfd8b18fbee62e5a163ec40f085a47731992d7"
     },
     {
       "artifact_id": "reference-image-moire-06-orbit-line-collision",
       "title": "Moire v1 plate 06 — orbit line collision",
       "description": "Moire v1 plate 06 — orbit line collision from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/ad-hoc/moire.v1/png/moire-06-orbit-line-collision.png. WebP q82 review copy flattened on black.",
       "alt": "Moire v1 plate 06 — orbit line collision",
-      "family": "moire-v1",
+      "family": "izzi-generation-20260814",
       "generation_class": "check-image",
       "feedback_round": "make-check-20260814",
       "media_kind": "image",
@@ -640,14 +680,16 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-14T11:00:37.210Z"
+      "added_at": "2026-08-14T11:00:37.210Z",
+      "generation_state": "CURRENT",
+      "generation_commit": "d8cfd8b18fbee62e5a163ec40f085a47731992d7"
     },
     {
       "artifact_id": "reference-image-moire-05-radial-parallax",
       "title": "Moire v1 plate 05 — radial parallax",
       "description": "Moire v1 plate 05 — radial parallax from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/ad-hoc/moire.v1/png/moire-05-radial-parallax.png. WebP q82 review copy flattened on black.",
       "alt": "Moire v1 plate 05 — radial parallax",
-      "family": "moire-v1",
+      "family": "izzi-generation-20260814",
       "generation_class": "check-image",
       "feedback_round": "make-check-20260814",
       "media_kind": "image",
@@ -663,14 +705,16 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-14T11:00:37.209Z"
+      "added_at": "2026-08-14T11:00:37.209Z",
+      "generation_state": "CURRENT",
+      "generation_commit": "d8cfd8b18fbee62e5a163ec40f085a47731992d7"
     },
     {
       "artifact_id": "reference-image-moire-04-elliptic-registration",
       "title": "Moire v1 plate 04 — elliptic registration",
       "description": "Moire v1 plate 04 — elliptic registration from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/ad-hoc/moire.v1/png/moire-04-elliptic-registration.png. WebP q82 review copy flattened on black.",
       "alt": "Moire v1 plate 04 — elliptic registration",
-      "family": "moire-v1",
+      "family": "izzi-generation-20260814",
       "generation_class": "check-image",
       "feedback_round": "make-check-20260814",
       "media_kind": "image",
@@ -686,14 +730,16 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-14T11:00:37.208Z"
+      "added_at": "2026-08-14T11:00:37.208Z",
+      "generation_state": "CURRENT",
+      "generation_commit": "d8cfd8b18fbee62e5a163ec40f085a47731992d7"
     },
     {
       "artifact_id": "reference-image-moire-03-eccentric-rings",
       "title": "Moire v1 plate 03 — eccentric rings",
       "description": "Moire v1 plate 03 — eccentric rings from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/ad-hoc/moire.v1/png/moire-03-eccentric-rings.png. WebP q82 review copy flattened on black.",
       "alt": "Moire v1 plate 03 — eccentric rings",
-      "family": "moire-v1",
+      "family": "izzi-generation-20260814",
       "generation_class": "check-image",
       "feedback_round": "make-check-20260814",
       "media_kind": "image",
@@ -709,14 +755,16 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-14T11:00:37.207Z"
+      "added_at": "2026-08-14T11:00:37.207Z",
+      "generation_state": "CURRENT",
+      "generation_commit": "d8cfd8b18fbee62e5a163ec40f085a47731992d7"
     },
     {
       "artifact_id": "reference-image-moire-02-linear-cross-current",
       "title": "Moire v1 plate 02 — linear cross current",
       "description": "Moire v1 plate 02 — linear cross current from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/ad-hoc/moire.v1/png/moire-02-linear-cross-current.png. WebP q82 review copy flattened on black.",
       "alt": "Moire v1 plate 02 — linear cross current",
-      "family": "moire-v1",
+      "family": "izzi-generation-20260814",
       "generation_class": "check-image",
       "feedback_round": "make-check-20260814",
       "media_kind": "image",
@@ -732,14 +780,16 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-14T11:00:37.206Z"
+      "added_at": "2026-08-14T11:00:37.206Z",
+      "generation_state": "CURRENT",
+      "generation_commit": "d8cfd8b18fbee62e5a163ec40f085a47731992d7"
     },
     {
       "artifact_id": "reference-image-moire-01-linear-close-beat",
       "title": "Moire v1 plate 01 — linear close beat",
       "description": "Moire v1 plate 01 — linear close beat from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/ad-hoc/moire.v1/png/moire-01-linear-close-beat.png. WebP q82 review copy flattened on black.",
       "alt": "Moire v1 plate 01 — linear close beat",
-      "family": "moire-v1",
+      "family": "izzi-generation-20260814",
       "generation_class": "check-image",
       "feedback_round": "make-check-20260814",
       "media_kind": "image",
@@ -755,7 +805,9 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-14T11:00:37.204Z"
+      "added_at": "2026-08-14T11:00:37.204Z",
+      "generation_state": "CURRENT",
+      "generation_commit": "d8cfd8b18fbee62e5a163ec40f085a47731992d7"
     },
     {
       "artifact_id": "ai-time-to-die-draft-9-attempted-render",

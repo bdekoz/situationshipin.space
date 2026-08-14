@@ -544,6 +544,9 @@ function renderCard(item) {
     makePill(item.review_scope, "pill-preview"),
     makePill(item.baseline_state, "")
   );
+  if (item.generation_state) {
+    states.append(makePill(item.generation_state, ""));
+  }
   if (item.accessibility_state) {
     states.append(makePill(item.accessibility_state, ""));
   }
@@ -566,6 +569,9 @@ function renderCard(item) {
   }
   addMetadata(metadata, "File size", `${formatBytes(item.bytes)} (${item.bytes.toLocaleString()} bytes)`);
   addMetadata(metadata, "Source commit", state.catalog.source_commit);
+  if (item.generation_commit) {
+    addMetadata(metadata, "Generation commit", item.generation_commit);
+  }
   if (item.source_media) {
     addMetadata(metadata, "Source MKV SHA-256", item.source_media.sha256);
     addMetadata(metadata, "Source MKV size", `${formatBytes(item.source_media.bytes)} (${item.source_media.bytes.toLocaleString()} bytes)`);
