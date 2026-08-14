@@ -1,8 +1,38 @@
 {
   "baseline_state": "NOT-PROMOTED",
-  "generated_at": "2026-08-14T22:36:15.549Z",
+  "generated_at": "2026-08-14T23:41:18.347Z",
   "human_review_state": "UNREVIEWED",
   "items": [
+    {
+      "artifact_id": "generation-visualization-20260814",
+      "title": "Generative Visualization 20260814",
+      "description": "One aggregated entry for the 2026-08-14 izzi generative visualization family: line graph, grid, kusama, and chord artifacts from the alpha60-results and mmrl-metadata data pipeline. Open the index to reach each individual review page.",
+      "alt": "Index of the 4 generative visualization review artifacts from 2026-08-14.",
+      "family": "generation-visualization-20260814",
+      "generation_class": "visualization-index",
+      "feedback_round": "generation-visualization-20260814",
+      "media_kind": "index",
+      "review_scope": "GENERATION-VISUALIZATION-20260814",
+      "review_mode": "output",
+      "source_path": "izzi ecff9fc4aac568eb02c0c2dc4fd4edc5e932920f outputs/review/feedback/visual/visualization (family aggregate)",
+      "published_path": "review/media/generation-visualization-20260814/generation-visualization-20260814.index.html",
+      "sha256": "aec3a0117b579361b3b7faa8d3a792a486f3a6368a9c916340fcfbf65035d3de",
+      "bytes": 3722,
+      "format": "html",
+      "generation_commit": "ecff9fc4aac568eb02c0c2dc4fd4edc5e932920f",
+      "generation_state": "CURRENT",
+      "index_members": [
+        "visualization-line",
+        "visualization-grid",
+        "visualization-kusama",
+        "visualization-chord"
+      ],
+      "technical_state": "VISUALIZATION-INDEX",
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "review_category": "proofs",
+      "added_at": "2026-08-14T23:41:18.334Z"
+    },
     {
       "artifact_id": "palette-20260814-index",
       "title": "Color Palette Family 20260814",
@@ -9355,6 +9385,6 @@
   "portal_build": "izzi-review-2026-08-11.7",
   "publication_state": "PUBLIC-PROTOTYPE",
   "schema_version": "1.0",
-  "source_commit": "57b7144c7d783b944f901c03371037c3dbe3a1b7",
+  "source_commit": "ecff9fc4aac568eb02c0c2dc4fd4edc5e932920f",
   "source_repository": "bdekoz/izzi"
 }
