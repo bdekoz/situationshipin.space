@@ -482,6 +482,7 @@ function renderLatestReview(items) {
     `<div><p class="eyebrow">latest · ${humanize(latest.generation_class)}</p>` +
     `<h3>${latest.title}</h3><p>${latest.description}</p></div>` +
     `<a class="open-label" href="/review/${id}/" ` +
+    `target="_blank" rel="noopener" title="Open in new tab" ` +
     `aria-label="Open latest review page: ${latest.title}">${media}Review →</a>`;
 }
 
@@ -496,6 +497,9 @@ function renderCard(item) {
   const link = card.querySelector(".artifact-image-link");
   const reviewPageId = item.artifact_id.replace(/[^a-zA-Z0-9._-]+/g, "-");
   link.href = `/review/${reviewPageId}/`;
+  link.target = "_blank";
+  link.rel = "noopener";
+  link.title = "Open in new tab";
   link.setAttribute("aria-label", `Open exact review page: ${item.title}`);
   if (item.review_mode === "aesthetic") {
     link.setAttribute("aria-label", `Classify aesthetic reference: ${item.title}`);
