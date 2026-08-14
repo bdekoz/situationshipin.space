@@ -22,6 +22,7 @@
 
 import { createHash } from "node:crypto";
 import { spawnSync } from "node:child_process";
+import { mkdtempSync } from "node:fs";
 import {
   copyFile,
   mkdir,
@@ -62,6 +63,9 @@ function usage() {
     "  --technical-state <state>    technical_state label",
     "  --render-proxy               render a 360x640 proxy from an .mkv via ffmpeg",
     "  --proxy-width / --proxy-height   proxy target for --render-proxy",
+    "  --filmstrip                  publish a bounded JPEG filmstrip instead of a video proxy",
+    "  --filmstrip-times <csv>      explicit frame timecodes for --filmstrip",
+    "  --filmstrip-frames <n>       evenly spaced frame count for --filmstrip (default 6)",
     "  --width / --height / --duration  override ffprobe metadata",
     "  --dry-run                    validate and print the plan without writing",
   ].join("\n");
@@ -152,6 +156,55 @@ async function renderProxy(source, destination, width, height) {
   return true;
 }
 
+async function renderFilmstrip(source, destination, width, height, times) {
+  console.log(
+    `[INFO] rendering filmstrip ${times.length} frames ${width}x${height} with ffmpeg + montage`
+  );
+  const tempDir = mkdtempSync(join(tmpdir(), "filmstrip-"));
+  const frames = [];
+  for (const [index, time] of times.entries()) {
+    const framePath = join(tempDir, `frame-${String(index).padStart(2, "0")}.jpg`);
+    const result = spawnSync(
+      "ffmpeg",
+      [
+        "-y", "-loglevel", "error",
+        "-ss", String(time),
+        "-i", source,
+        "-frames:v", "1",
+        "-vf",
+        `scale=${width}:${height}:force_original_aspect_ratio=decrease,`
+          + `pad=${width}:${height}:(ow-iw)/2:(oh-ih)/2`,
+        "-q:v", "6",
+        framePath,
+      ],
+      { encoding: "utf8" }
+    );
+    if (result.status !== 0) {
+      console.error(
+        `[FAIL] filmstrip frame render failed at ${time}s:\n${result.stderr}`
+      );
+      return false;
+    }
+    frames.push(framePath);
+  }
+  const montage = spawnSync(
+    "montage",
+    [
+      ...frames,
+      "-tile", `${times.length}x1`,
+      "-geometry", "+4+4",
+      "-background", "black",
+      destination,
+    ],
+    { encoding: "utf8" }
+  );
+  if (montage.status !== 0) {
+    console.error(`[FAIL] filmstrip montage failed:\n${montage.stderr}`);
+    return false;
+  }
+  return true;
+}
+
 function runNode(script) {
   const result = spawnSync(process.execPath, [script], {
     cwd: repositoryRoot,
@@ -215,7 +268,13 @@ async function main() {
   const extension = extname(source).toLowerCase();
   const dryRun = values["dry-run"] === true;
   const render = extension === ".mkv";
-  if (render && values["render-proxy"] !== true) {
+  const filmstrip = values["filmstrip"] === true;
+  if (filmstrip && !render && extension !== ".mp4") {
+    console.error("[FAIL] --filmstrip requires a video source (.mkv or .mp4)");
+    process.exitCode = 1;
+    return;
+  }
+  if (render && values["render-proxy"] !== true && !filmstrip) {
     console.error(
       "[FAIL] --source is an .mkv; pass --render-proxy to render a bounded proxy"
     );
@@ -233,7 +292,47 @@ async function main() {
   let height = Number(values.height || 0);
   let duration = Number(values.duration || 0);
   const metadata = render ? null : probe(source, "video");
-  if (render) {
+  let filmstripTimes = [];
+  if (filmstrip) {
+    width = Number(values["proxy-width"] || DEFAULT_PROXY_WIDTH);
+    height = Number(values["proxy-height"] || DEFAULT_PROXY_HEIGHT);
+    if (values["filmstrip-times"]) {
+      filmstripTimes = String(values["filmstrip-times"])
+        .split(",")
+        .map((entry) => Number(entry.trim()))
+        .filter(Number.isFinite);
+    }
+    if (!filmstripTimes.length) {
+      const count = Number(values["filmstrip-frames"] || 6);
+      const probed = probe(source, "duration");
+      if (!probed) {
+        console.error("[FAIL] could not probe source duration; pass --duration");
+        process.exitCode = 1;
+        return;
+      }
+      duration = probed;
+      for (let index = 0; index < count; index += 1) {
+        const time = (index * probed) / Math.max(1, count - 1);
+        filmstripTimes.push(Math.round(time * 10) / 10);
+      }
+    } else {
+      duration = probe(source, "duration") || duration;
+    }
+    if (!dryRun) {
+      proxyPath = join(tmpdir(), `${artifactId}.filmstrip.jpg`);
+      if (!(await renderFilmstrip(source, proxyPath, width, height, filmstripTimes))) {
+        return;
+      }
+      const dimensions = probe(proxyPath, "video");
+      if (dimensions) {
+        width = dimensions.width;
+        height = dimensions.height;
+      }
+    } else {
+      width = width * filmstripTimes.length + (filmstripTimes.length - 1) * 4;
+      height += 8;
+    }
+  } else if (render) {
     width = Number(values["proxy-width"] || DEFAULT_PROXY_WIDTH);
     height = Number(values["proxy-height"] || DEFAULT_PROXY_HEIGHT);
     if (!dryRun) {
@@ -275,7 +374,9 @@ async function main() {
     return;
   }
   const proxyHash = dryRun ? "" : sha256(await readFile(proxyPath));
-  const publishedPath = `review/media/${family}/${artifactId}.review.mp4`;
+  const publishedPath = filmstrip
+    ? `review/media/${family}/${artifactId}.filmstrip.jpg`
+    : `review/media/${family}/${artifactId}.review.mp4`;
   const reviewId = artifactId.replace(/[^a-zA-Z0-9._-]+/g, "-");
   const catalog = JSON.parse(await readFile(catalogPath, "utf8"));
   const existing = catalog.items.find((item) => item.artifact_id === artifactId);
@@ -288,7 +389,7 @@ async function main() {
     family,
     generation_class: generationClass,
     feedback_round: feedbackRound,
-    media_kind: "video",
+    media_kind: filmstrip ? "video-filmstrip" : "video",
     review_scope: reviewScope,
     review_mode: "output",
     source_path: sourceProvenance,
@@ -300,7 +401,9 @@ async function main() {
     duration_seconds: duration,
     technical_state:
       values["technical-state"]
-      || (render
+      || (filmstrip
+        ? "FILMSTRIP-RENDERED-FROM-CANONICAL-MKV"
+        : render
         ? "BROWSER-PROXY-RENDERED-FROM-CANONICAL-MKV"
         : "REVIEW-PROXY"),
     human_review_state: "UNREVIEWED",
@@ -323,6 +426,7 @@ async function main() {
     dimensions: `${width}x${height}`,
     duration_seconds: duration,
     review_url: reviewUrl,
+    ...(filmstrip ? { filmstrip_times: filmstripTimes } : {}),
     action: existing ? "UPDATE" : "ADD",
   };
   if (dryRun) {
