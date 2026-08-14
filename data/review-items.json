@@ -4,6 +4,52 @@
   "human_review_state": "UNREVIEWED",
   "items": [
     {
+      "artifact_id": "plan-vertical-ai-time-to-die-v3",
+      "title": "ai-time-to-die — proposed vertical v3 (production plan)",
+      "description": "Production plan at Here Lies Trouble cut-v1 detail: 8-segment / 57 s episode template, 79 s canonical corpus bound (2-3 episodes), draft-loop history, pilot options, gates, rizal/ord/eureka orchestration, and the special-topics coda-share PDF variant.",
+      "alt": "Production plan at Here Lies Trouble cut-v1 detail: 8-segment / 57 s episode template, 79 s canonical corpus bound (2-3 episodes), draft-loop history, pilot options, gates, rizal/ord/eureka orchestration, and the special-topics coda-share PDF variant.",
+      "family": "ai-time-to-die",
+      "generation_class": "plan-vertical",
+      "feedback_round": "plan-v3",
+      "media_kind": "plan",
+      "review_scope": "PLAN-VERTICAL-REVIEW",
+      "review_mode": "output",
+      "source_path": "docs/development/time-to-die-ai/proposed_vertical_v3.md",
+      "source_sha256": "5fedf2265b385350a2d535ba6d06194431b86f3ccf5d4a639017f99b7b839dba",
+      "published_path": "review/media/ai-time-to-die/plan-vertical-ai-time-to-die-v3.md",
+      "sha256": "5fedf2265b385350a2d535ba6d06194431b86f3ccf5d4a639017f99b7b839dba",
+      "bytes": 9363,
+      "format": "markdown",
+      "plan_stage": "PLAN-FORMAL",
+      "plan_pdf": {
+        "path": "review/media/ai-time-to-die/plan-vertical-ai-time-to-die-v3.pdf",
+        "sha256": "25eeeed67806872c37bf654d8ffa4ab651db253fb5fa027795d3b817bc65e03c",
+        "bytes": 88911
+      },
+      "plan_contract": {
+        "schema_version": "izzi-plan-vertical-contract-v1",
+        "stage": "PLAN-FORMAL",
+        "required_content": {
+          "template": true,
+          "segments": true,
+          "estimates": true,
+          "pilot_options": true,
+          "gates": true,
+          "orchestration": true
+        },
+        "house_style_checks": {
+          "special_topics": "PASS",
+          "coda_share": "PASS"
+        },
+        "validated_at": "2026-08-14T19:05:10.770Z"
+      },
+      "technical_state": "PLAN-FORMAL-PUBLISHED",
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "review_category": "planning",
+      "added_at": "2026-08-14T19:05:10.774Z"
+    },
+    {
       "artifact_id": "plan-vertical-ai-time-to-die-v2",
       "title": "ai-time-to-die — proposed vertical v2 (formal plan)",
       "description": "Formal production plan: 8-segment / 57 s episode template, measured estimates, pilot options, gates, and rizal/ord/eureka orchestration, with the special-topics PDF variant.",
