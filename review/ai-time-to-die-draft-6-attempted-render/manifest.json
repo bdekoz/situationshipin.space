@@ -1,0 +1,11 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "ai-time-to-die-draft-6-attempted-render",
+  "artifact_id": "ai-time-to-die-draft-6-attempted-render",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": {
+    "path": "/review/media/ai-time-to-die/ai-time-to-die-draft-6-attempted-render.review.mp4",
+    "sha256": "01594a2266f932e584b5548e1a899ffe03a1d719d7088c357a7698187b5dc57e"
+  }
+}
