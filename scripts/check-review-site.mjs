@@ -8,7 +8,10 @@ import { fileURLToPath } from "node:url";
 const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const catalogPath = resolve(repositoryRoot, "data/review-items.json");
 const maximumFileBytes = 16 * 1024 * 1024;
-const maximumPayloadBytes = 48 * 1024 * 1024;
+// Raised 2026-08-14 from 48 MiB to 64 MiB to host full-motion video
+// reviews (user preference; draft-1-style playable proxies instead of
+// filmstrips).  Revisit when the catalog approaches the new bound.
+const maximumPayloadBytes = 64 * 1024 * 1024;
 const allowedExtensions = new Set([".png", ".jpg", ".jpeg", ".svg", ".html", ".json", ".mp4"]);
 const forbiddenExtensions = new Set([".mkv", ".wav", ".mp3", ".mov"]);
 
