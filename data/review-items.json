@@ -1,12 +1,12 @@
 {
   "baseline_state": "NOT-PROMOTED",
-  "generated_at": "2026-08-15T17:05:11.915Z",
+  "generated_at": "2026-08-15T11:35:00.000Z",
   "human_review_state": "UNREVIEWED",
   "items": [
     {
       "artifact_id": "palette-20260814-index",
       "title": "Color Palette Family 20260814",
-      "description": "One aggregated entry for the 2026-08-14 izzi color palette family: 15 deterministic swatch-grid artifacts (basic palettes, source palettes, perceptual tints, RGB↔HSV grids, band sweeps). Open the index to reach each individual review page.",
+      "description": "One aggregated entry for the 2026-08-14 izzi color palette family: 15 deterministic swatch-grid artifacts (basic palettes, source palettes, perceptual tints, RGB\u2194HSV grids, band sweeps). Open the index to reach each individual review page.",
       "alt": "Index of the 15 deterministic izzi color palette review artifacts from 2026-08-14.",
       "family": "palette-20260814",
       "generation_class": "palette-index",
@@ -16,8 +16,8 @@
       "review_mode": "output",
       "source_path": "izzi 069fbc3618d677e272af27b37842e6e1340ae345 outputs/review/feedback/visual/color/round-01 (palette family aggregate)",
       "published_path": "review/media/palette-20260814/palette-20260814-index.index.html",
-      "sha256": "aacd797f2525adb10d87f46aa6a4494acf9f15c89828ed8ad7839dba8a9541ad",
-      "bytes": 8403,
+      "sha256": "0e933b086fdc0a628a5e4e4a182cb444e1585910479cbb903bcd74b71f27e772",
+      "bytes": 8163,
       "format": "html",
       "generation_commit": "069fbc3618d677e272af27b37842e6e1340ae345",
       "generation_state": "CURRENT",
@@ -98,7 +98,7 @@
     },
     {
       "artifact_id": "here-lies-trouble-episode-01-frogtown-v2-audio-canary-65919a746572",
-      "title": "Here Lies Trouble — Episode 1 — Frogtown v2 audio canary",
+      "title": "Here Lies Trouble \u2014 Episode 1 \u2014 Frogtown v2 audio canary",
       "description": "Full-episode local motion and cleaned stereo-audio review proxy. Review walking motion, animal conversation, Frogtown environmental texture, and the natural river ambience.",
       "alt": "Vertical animated Frogtown episode review proxy with four animal characters exploring a river setting.",
       "family": "here-lies-trouble",
@@ -140,7 +140,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-index",
-      "title": "Hamonshu 2 — style-processing index",
+      "title": "Hamonshu 2 \u2014 style-processing index",
       "description": "One aggregated entry for Hamonshu document 2 (28 pages) from the izzi resources, published for style-processing review. Invited reviewer: coolart@avis.ne.jp. Open the index to reach each individual review page.",
       "alt": "Index of the 28 Hamonshu document 2 pages published for style-processing review.",
       "family": "hamonshu-20260815",
@@ -151,8 +151,8 @@
       "review_mode": "output",
       "source_path": "izzi 6d1c8529ad33dfbb7199ff50bfd4b87b25b6103f resources/hamonshu/hamonshu_2.pages (document aggregate)",
       "published_path": "review/media/resource-hamonshu-20260815/hamonshu_2.index.html",
-      "sha256": "d8ffd6c25b978b58927c21ea67ee211ebba30e01f80a153d6929322d37ec6416",
-      "bytes": 18118,
+      "sha256": "8d7ad77b89f2d82636ed1cc02fa622375bae3f6be217dfed3507a0a2322f0f82",
+      "bytes": 17922,
       "format": "html",
       "generation_commit": "6d1c8529ad33dfbb7199ff50bfd4b87b25b6103f",
       "generation_state": "CURRENT",
@@ -195,7 +195,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-index",
-      "title": "Hamonshu 3 — style-processing index",
+      "title": "Hamonshu 3 \u2014 style-processing index",
       "description": "One aggregated entry for Hamonshu document 3 (29 pages) from the izzi resources, published for style-processing review. Invited reviewer: coolart@avis.ne.jp. Open the index to reach each individual review page.",
       "alt": "Index of the 29 Hamonshu document 3 pages published for style-processing review.",
       "family": "hamonshu-20260815",
@@ -206,8 +206,8 @@
       "review_mode": "output",
       "source_path": "izzi 6d1c8529ad33dfbb7199ff50bfd4b87b25b6103f resources/hamonshu/hamonshu_3.pages (document aggregate)",
       "published_path": "review/media/resource-hamonshu-20260815/hamonshu_3.index.html",
-      "sha256": "e760514966e556bf60afd4c730925fabdac56d2845652ab87d79912ed211bce5",
-      "bytes": 18695,
+      "sha256": "6e545a1ae7fd795a342dcb4612f9251f0a2ac61c1c13ab8c80fe63d95abe50fc",
+      "bytes": 18492,
       "format": "html",
       "generation_commit": "6d1c8529ad33dfbb7199ff50bfd4b87b25b6103f",
       "generation_state": "CURRENT",
@@ -251,7 +251,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-index",
-      "title": "Hamonshu 1 — style-processing index",
+      "title": "Hamonshu 1 \u2014 style-processing index",
       "description": "One aggregated entry for Hamonshu document 1 (29 pages) from the izzi resources, published for style-processing review. Invited reviewer: coolart@avis.ne.jp. Open the index to reach each individual review page.",
       "alt": "Index of the 29 Hamonshu document 1 pages published for style-processing review.",
       "family": "hamonshu-20260815",
@@ -262,8 +262,8 @@
       "review_mode": "output",
       "source_path": "izzi 6d1c8529ad33dfbb7199ff50bfd4b87b25b6103f resources/hamonshu/hamonshu_1.pages (document aggregate)",
       "published_path": "review/media/resource-hamonshu-20260815/hamonshu_1.index.html",
-      "sha256": "8dc09983de1bd3e7a9d4fea97a552a7913c841d9e2224ea880fcd5931837b6d6",
-      "bytes": 18695,
+      "sha256": "bc79905e3d8250f13ee6a65675231d22a45d66978ac428ec70fff1c810f54e34",
+      "bytes": 18492,
       "format": "html",
       "generation_commit": "6d1c8529ad33dfbb7199ff50bfd4b87b25b6103f",
       "generation_state": "CURRENT",
@@ -307,7 +307,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-029",
-      "title": "Hamonshu 3 — page 029",
+      "title": "Hamonshu 3 \u2014 page 029",
       "description": "Hamonshu document 3, page 029 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 3, page 029, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -346,7 +346,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-028",
-      "title": "Hamonshu 3 — page 028",
+      "title": "Hamonshu 3 \u2014 page 028",
       "description": "Hamonshu document 3, page 028 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 3, page 028, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -385,7 +385,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-027",
-      "title": "Hamonshu 3 — page 027",
+      "title": "Hamonshu 3 \u2014 page 027",
       "description": "Hamonshu document 3, page 027 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 3, page 027, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -424,7 +424,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-026",
-      "title": "Hamonshu 3 — page 026",
+      "title": "Hamonshu 3 \u2014 page 026",
       "description": "Hamonshu document 3, page 026 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 3, page 026, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -463,7 +463,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-025",
-      "title": "Hamonshu 3 — page 025",
+      "title": "Hamonshu 3 \u2014 page 025",
       "description": "Hamonshu document 3, page 025 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 3, page 025, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -502,7 +502,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-024",
-      "title": "Hamonshu 3 — page 024",
+      "title": "Hamonshu 3 \u2014 page 024",
       "description": "Hamonshu document 3, page 024 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 3, page 024, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -541,7 +541,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-023",
-      "title": "Hamonshu 3 — page 023",
+      "title": "Hamonshu 3 \u2014 page 023",
       "description": "Hamonshu document 3, page 023 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 3, page 023, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -580,7 +580,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-022",
-      "title": "Hamonshu 3 — page 022",
+      "title": "Hamonshu 3 \u2014 page 022",
       "description": "Hamonshu document 3, page 022 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 3, page 022, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -619,7 +619,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-021",
-      "title": "Hamonshu 3 — page 021",
+      "title": "Hamonshu 3 \u2014 page 021",
       "description": "Hamonshu document 3, page 021 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 3, page 021, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -658,7 +658,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-020",
-      "title": "Hamonshu 3 — page 020",
+      "title": "Hamonshu 3 \u2014 page 020",
       "description": "Hamonshu document 3, page 020 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 3, page 020, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -697,7 +697,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-019",
-      "title": "Hamonshu 3 — page 019",
+      "title": "Hamonshu 3 \u2014 page 019",
       "description": "Hamonshu document 3, page 019 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 3, page 019, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -736,7 +736,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-018",
-      "title": "Hamonshu 3 — page 018",
+      "title": "Hamonshu 3 \u2014 page 018",
       "description": "Hamonshu document 3, page 018 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 3, page 018, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -775,7 +775,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-017",
-      "title": "Hamonshu 3 — page 017",
+      "title": "Hamonshu 3 \u2014 page 017",
       "description": "Hamonshu document 3, page 017 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 3, page 017, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -814,7 +814,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-016",
-      "title": "Hamonshu 3 — page 016",
+      "title": "Hamonshu 3 \u2014 page 016",
       "description": "Hamonshu document 3, page 016 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 3, page 016, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -853,7 +853,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-015",
-      "title": "Hamonshu 3 — page 015",
+      "title": "Hamonshu 3 \u2014 page 015",
       "description": "Hamonshu document 3, page 015 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 3, page 015, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -892,7 +892,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-014",
-      "title": "Hamonshu 3 — page 014",
+      "title": "Hamonshu 3 \u2014 page 014",
       "description": "Hamonshu document 3, page 014 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 3, page 014, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -931,7 +931,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-013",
-      "title": "Hamonshu 3 — page 013",
+      "title": "Hamonshu 3 \u2014 page 013",
       "description": "Hamonshu document 3, page 013 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 3, page 013, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -970,7 +970,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-012",
-      "title": "Hamonshu 3 — page 012",
+      "title": "Hamonshu 3 \u2014 page 012",
       "description": "Hamonshu document 3, page 012 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 3, page 012, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -1009,7 +1009,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-011",
-      "title": "Hamonshu 3 — page 011",
+      "title": "Hamonshu 3 \u2014 page 011",
       "description": "Hamonshu document 3, page 011 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 3, page 011, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -1048,7 +1048,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-010",
-      "title": "Hamonshu 3 — page 010",
+      "title": "Hamonshu 3 \u2014 page 010",
       "description": "Hamonshu document 3, page 010 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 3, page 010, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -1087,7 +1087,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-009",
-      "title": "Hamonshu 3 — page 009",
+      "title": "Hamonshu 3 \u2014 page 009",
       "description": "Hamonshu document 3, page 009 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 3, page 009, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -1126,7 +1126,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-008",
-      "title": "Hamonshu 3 — page 008",
+      "title": "Hamonshu 3 \u2014 page 008",
       "description": "Hamonshu document 3, page 008 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 3, page 008, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -1165,7 +1165,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-007",
-      "title": "Hamonshu 3 — page 007",
+      "title": "Hamonshu 3 \u2014 page 007",
       "description": "Hamonshu document 3, page 007 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 3, page 007, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -1204,7 +1204,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-006",
-      "title": "Hamonshu 3 — page 006",
+      "title": "Hamonshu 3 \u2014 page 006",
       "description": "Hamonshu document 3, page 006 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 3, page 006, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -1243,7 +1243,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-005",
-      "title": "Hamonshu 3 — page 005",
+      "title": "Hamonshu 3 \u2014 page 005",
       "description": "Hamonshu document 3, page 005 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 3, page 005, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -1282,7 +1282,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-004",
-      "title": "Hamonshu 3 — page 004",
+      "title": "Hamonshu 3 \u2014 page 004",
       "description": "Hamonshu document 3, page 004 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 3, page 004, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -1321,7 +1321,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-003",
-      "title": "Hamonshu 3 — page 003",
+      "title": "Hamonshu 3 \u2014 page 003",
       "description": "Hamonshu document 3, page 003 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 3, page 003, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -1360,7 +1360,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-002",
-      "title": "Hamonshu 3 — page 002",
+      "title": "Hamonshu 3 \u2014 page 002",
       "description": "Hamonshu document 3, page 002 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 3, page 002, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -1399,7 +1399,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-3-001",
-      "title": "Hamonshu 3 — page 001",
+      "title": "Hamonshu 3 \u2014 page 001",
       "description": "Hamonshu document 3, page 001 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 3, page 001, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -1438,7 +1438,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-028",
-      "title": "Hamonshu 2 — page 028",
+      "title": "Hamonshu 2 \u2014 page 028",
       "description": "Hamonshu document 2, page 028 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 2, page 028, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -1477,7 +1477,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-027",
-      "title": "Hamonshu 2 — page 027",
+      "title": "Hamonshu 2 \u2014 page 027",
       "description": "Hamonshu document 2, page 027 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 2, page 027, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -1516,7 +1516,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-026",
-      "title": "Hamonshu 2 — page 026",
+      "title": "Hamonshu 2 \u2014 page 026",
       "description": "Hamonshu document 2, page 026 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 2, page 026, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -1555,7 +1555,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-025",
-      "title": "Hamonshu 2 — page 025",
+      "title": "Hamonshu 2 \u2014 page 025",
       "description": "Hamonshu document 2, page 025 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 2, page 025, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -1594,7 +1594,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-024",
-      "title": "Hamonshu 2 — page 024",
+      "title": "Hamonshu 2 \u2014 page 024",
       "description": "Hamonshu document 2, page 024 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 2, page 024, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -1633,7 +1633,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-023",
-      "title": "Hamonshu 2 — page 023",
+      "title": "Hamonshu 2 \u2014 page 023",
       "description": "Hamonshu document 2, page 023 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 2, page 023, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -1672,7 +1672,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-022",
-      "title": "Hamonshu 2 — page 022",
+      "title": "Hamonshu 2 \u2014 page 022",
       "description": "Hamonshu document 2, page 022 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 2, page 022, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -1711,7 +1711,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-021",
-      "title": "Hamonshu 2 — page 021",
+      "title": "Hamonshu 2 \u2014 page 021",
       "description": "Hamonshu document 2, page 021 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 2, page 021, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -1750,7 +1750,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-020",
-      "title": "Hamonshu 2 — page 020",
+      "title": "Hamonshu 2 \u2014 page 020",
       "description": "Hamonshu document 2, page 020 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 2, page 020, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -1789,7 +1789,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-019",
-      "title": "Hamonshu 2 — page 019",
+      "title": "Hamonshu 2 \u2014 page 019",
       "description": "Hamonshu document 2, page 019 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 2, page 019, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -1828,7 +1828,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-018",
-      "title": "Hamonshu 2 — page 018",
+      "title": "Hamonshu 2 \u2014 page 018",
       "description": "Hamonshu document 2, page 018 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 2, page 018, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -1867,7 +1867,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-017",
-      "title": "Hamonshu 2 — page 017",
+      "title": "Hamonshu 2 \u2014 page 017",
       "description": "Hamonshu document 2, page 017 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 2, page 017, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -1906,7 +1906,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-016",
-      "title": "Hamonshu 2 — page 016",
+      "title": "Hamonshu 2 \u2014 page 016",
       "description": "Hamonshu document 2, page 016 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 2, page 016, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -1945,7 +1945,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-015",
-      "title": "Hamonshu 2 — page 015",
+      "title": "Hamonshu 2 \u2014 page 015",
       "description": "Hamonshu document 2, page 015 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 2, page 015, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -1984,7 +1984,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-014",
-      "title": "Hamonshu 2 — page 014",
+      "title": "Hamonshu 2 \u2014 page 014",
       "description": "Hamonshu document 2, page 014 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 2, page 014, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -2023,7 +2023,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-013",
-      "title": "Hamonshu 2 — page 013",
+      "title": "Hamonshu 2 \u2014 page 013",
       "description": "Hamonshu document 2, page 013 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 2, page 013, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -2062,7 +2062,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-012",
-      "title": "Hamonshu 2 — page 012",
+      "title": "Hamonshu 2 \u2014 page 012",
       "description": "Hamonshu document 2, page 012 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 2, page 012, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -2101,7 +2101,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-011",
-      "title": "Hamonshu 2 — page 011",
+      "title": "Hamonshu 2 \u2014 page 011",
       "description": "Hamonshu document 2, page 011 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 2, page 011, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -2140,7 +2140,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-010",
-      "title": "Hamonshu 2 — page 010",
+      "title": "Hamonshu 2 \u2014 page 010",
       "description": "Hamonshu document 2, page 010 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 2, page 010, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -2179,7 +2179,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-009",
-      "title": "Hamonshu 2 — page 009",
+      "title": "Hamonshu 2 \u2014 page 009",
       "description": "Hamonshu document 2, page 009 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 2, page 009, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -2218,7 +2218,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-008",
-      "title": "Hamonshu 2 — page 008",
+      "title": "Hamonshu 2 \u2014 page 008",
       "description": "Hamonshu document 2, page 008 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 2, page 008, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -2257,7 +2257,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-007",
-      "title": "Hamonshu 2 — page 007",
+      "title": "Hamonshu 2 \u2014 page 007",
       "description": "Hamonshu document 2, page 007 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 2, page 007, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -2296,7 +2296,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-006",
-      "title": "Hamonshu 2 — page 006",
+      "title": "Hamonshu 2 \u2014 page 006",
       "description": "Hamonshu document 2, page 006 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 2, page 006, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -2335,7 +2335,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-005",
-      "title": "Hamonshu 2 — page 005",
+      "title": "Hamonshu 2 \u2014 page 005",
       "description": "Hamonshu document 2, page 005 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 2, page 005, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -2374,7 +2374,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-004",
-      "title": "Hamonshu 2 — page 004",
+      "title": "Hamonshu 2 \u2014 page 004",
       "description": "Hamonshu document 2, page 004 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 2, page 004, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -2413,7 +2413,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-003",
-      "title": "Hamonshu 2 — page 003",
+      "title": "Hamonshu 2 \u2014 page 003",
       "description": "Hamonshu document 2, page 003 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 2, page 003, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -2452,7 +2452,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-002",
-      "title": "Hamonshu 2 — page 002",
+      "title": "Hamonshu 2 \u2014 page 002",
       "description": "Hamonshu document 2, page 002 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 2, page 002, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -2491,7 +2491,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-001",
-      "title": "Hamonshu 2 — page 001",
+      "title": "Hamonshu 2 \u2014 page 001",
       "description": "Hamonshu document 2, page 001 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 2, page 001, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -2530,7 +2530,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-029",
-      "title": "Hamonshu 1 — page 029",
+      "title": "Hamonshu 1 \u2014 page 029",
       "description": "Hamonshu document 1, page 029 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 1, page 029, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -2569,7 +2569,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-028",
-      "title": "Hamonshu 1 — page 028",
+      "title": "Hamonshu 1 \u2014 page 028",
       "description": "Hamonshu document 1, page 028 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 1, page 028, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -2608,7 +2608,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-027",
-      "title": "Hamonshu 1 — page 027",
+      "title": "Hamonshu 1 \u2014 page 027",
       "description": "Hamonshu document 1, page 027 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 1, page 027, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -2647,7 +2647,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-026",
-      "title": "Hamonshu 1 — page 026",
+      "title": "Hamonshu 1 \u2014 page 026",
       "description": "Hamonshu document 1, page 026 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 1, page 026, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -2686,7 +2686,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-025",
-      "title": "Hamonshu 1 — page 025",
+      "title": "Hamonshu 1 \u2014 page 025",
       "description": "Hamonshu document 1, page 025 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 1, page 025, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -2725,7 +2725,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-024",
-      "title": "Hamonshu 1 — page 024",
+      "title": "Hamonshu 1 \u2014 page 024",
       "description": "Hamonshu document 1, page 024 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 1, page 024, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -2764,7 +2764,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-023",
-      "title": "Hamonshu 1 — page 023",
+      "title": "Hamonshu 1 \u2014 page 023",
       "description": "Hamonshu document 1, page 023 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 1, page 023, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -2803,7 +2803,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-022",
-      "title": "Hamonshu 1 — page 022",
+      "title": "Hamonshu 1 \u2014 page 022",
       "description": "Hamonshu document 1, page 022 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 1, page 022, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -2842,7 +2842,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-021",
-      "title": "Hamonshu 1 — page 021",
+      "title": "Hamonshu 1 \u2014 page 021",
       "description": "Hamonshu document 1, page 021 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 1, page 021, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -2881,7 +2881,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-020",
-      "title": "Hamonshu 1 — page 020",
+      "title": "Hamonshu 1 \u2014 page 020",
       "description": "Hamonshu document 1, page 020 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 1, page 020, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -2920,7 +2920,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-019",
-      "title": "Hamonshu 1 — page 019",
+      "title": "Hamonshu 1 \u2014 page 019",
       "description": "Hamonshu document 1, page 019 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 1, page 019, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -2959,7 +2959,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-018",
-      "title": "Hamonshu 1 — page 018",
+      "title": "Hamonshu 1 \u2014 page 018",
       "description": "Hamonshu document 1, page 018 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 1, page 018, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -2998,7 +2998,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-017",
-      "title": "Hamonshu 1 — page 017",
+      "title": "Hamonshu 1 \u2014 page 017",
       "description": "Hamonshu document 1, page 017 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 1, page 017, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -3037,7 +3037,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-016",
-      "title": "Hamonshu 1 — page 016",
+      "title": "Hamonshu 1 \u2014 page 016",
       "description": "Hamonshu document 1, page 016 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 1, page 016, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -3076,7 +3076,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-015",
-      "title": "Hamonshu 1 — page 015",
+      "title": "Hamonshu 1 \u2014 page 015",
       "description": "Hamonshu document 1, page 015 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 1, page 015, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -3115,7 +3115,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-014",
-      "title": "Hamonshu 1 — page 014",
+      "title": "Hamonshu 1 \u2014 page 014",
       "description": "Hamonshu document 1, page 014 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 1, page 014, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -3154,7 +3154,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-013",
-      "title": "Hamonshu 1 — page 013",
+      "title": "Hamonshu 1 \u2014 page 013",
       "description": "Hamonshu document 1, page 013 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 1, page 013, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -3193,7 +3193,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-012",
-      "title": "Hamonshu 1 — page 012",
+      "title": "Hamonshu 1 \u2014 page 012",
       "description": "Hamonshu document 1, page 012 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 1, page 012, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -3232,7 +3232,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-011",
-      "title": "Hamonshu 1 — page 011",
+      "title": "Hamonshu 1 \u2014 page 011",
       "description": "Hamonshu document 1, page 011 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 1, page 011, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -3271,7 +3271,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-010",
-      "title": "Hamonshu 1 — page 010",
+      "title": "Hamonshu 1 \u2014 page 010",
       "description": "Hamonshu document 1, page 010 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 1, page 010, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -3310,7 +3310,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-009",
-      "title": "Hamonshu 1 — page 009",
+      "title": "Hamonshu 1 \u2014 page 009",
       "description": "Hamonshu document 1, page 009 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 1, page 009, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -3349,7 +3349,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-008",
-      "title": "Hamonshu 1 — page 008",
+      "title": "Hamonshu 1 \u2014 page 008",
       "description": "Hamonshu document 1, page 008 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 1, page 008, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -3388,7 +3388,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-007",
-      "title": "Hamonshu 1 — page 007",
+      "title": "Hamonshu 1 \u2014 page 007",
       "description": "Hamonshu document 1, page 007 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 1, page 007, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -3427,7 +3427,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-006",
-      "title": "Hamonshu 1 — page 006",
+      "title": "Hamonshu 1 \u2014 page 006",
       "description": "Hamonshu document 1, page 006 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 1, page 006, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -3466,7 +3466,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-005",
-      "title": "Hamonshu 1 — page 005",
+      "title": "Hamonshu 1 \u2014 page 005",
       "description": "Hamonshu document 1, page 005 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 1, page 005, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -3505,7 +3505,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-004",
-      "title": "Hamonshu 1 — page 004",
+      "title": "Hamonshu 1 \u2014 page 004",
       "description": "Hamonshu document 1, page 004 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 1, page 004, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -3544,7 +3544,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-003",
-      "title": "Hamonshu 1 — page 003",
+      "title": "Hamonshu 1 \u2014 page 003",
       "description": "Hamonshu document 1, page 003 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 1, page 003, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -3583,7 +3583,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-002",
-      "title": "Hamonshu 1 — page 002",
+      "title": "Hamonshu 1 \u2014 page 002",
       "description": "Hamonshu document 1, page 002 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 1, page 002, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -3622,7 +3622,7 @@
     },
     {
       "artifact_id": "resource-hamonshu-20260815-1-001",
-      "title": "Hamonshu 1 — page 001",
+      "title": "Hamonshu 1 \u2014 page 001",
       "description": "Hamonshu document 1, page 001 from the izzi resources (style-processing review). Full-resolution source stays local; this is the compact review proxy. Invited reviewer: coolart@avis.ne.jp.",
       "alt": "Hamonshu document 1, page 001, rendered at review proxy size.",
       "family": "hamonshu-20260815",
@@ -3672,8 +3672,8 @@
       "review_mode": "output",
       "source_path": "izzi d62562635e494236da8f1a3fe44276319d5c0f5a outputs/review/feedback/visual/movement (family aggregate)",
       "published_path": "review/media/generation-movement-20260814/generation-movement-20260814.index.html",
-      "sha256": "7a585fb6cf85381c4fc858650aa72b17d1f5ea380812498f22c6720888705af2",
-      "bytes": 2919,
+      "sha256": "941e7aaf7f32ce83fab0ffe1946f0b56d3655042f93d7d80c7837869be357851",
+      "bytes": 2887,
       "format": "html",
       "generation_commit": "d62562635e494236da8f1a3fe44276319d5c0f5a",
       "generation_state": "CURRENT",
@@ -3700,8 +3700,8 @@
       "review_mode": "output",
       "source_path": "izzi ecff9fc4aac568eb02c0c2dc4fd4edc5e932920f outputs/review/feedback/visual/visualization (family aggregate)",
       "published_path": "review/media/generation-visualization-20260814/generation-visualization-20260814.index.html",
-      "sha256": "aec3a0117b579361b3b7faa8d3a792a486f3a6368a9c916340fcfbf65035d3de",
-      "bytes": 3722,
+      "sha256": "ffaae5feabb8df7ce9b7d923651341c2ed47c4034b6a386580f6ba9c588b5a2d",
+      "bytes": 3658,
       "format": "html",
       "generation_commit": "ecff9fc4aac568eb02c0c2dc4fd4edc5e932920f",
       "generation_state": "CURRENT",
@@ -3772,7 +3772,7 @@
     },
     {
       "artifact_id": "plan-vertical-ai-time-to-die-v3",
-      "title": "ai-time-to-die — proposed vertical v3 (production plan)",
+      "title": "ai-time-to-die \u2014 proposed vertical v3 (production plan)",
       "description": "Production plan at Here Lies Trouble cut-v1 detail: 8-segment / 57 s episode template, 79 s canonical corpus bound (2-3 episodes), draft-loop history, pilot options, gates, rizal/ord/eureka orchestration, and the special-topics coda-share PDF variant.",
       "alt": "Production plan at Here Lies Trouble cut-v1 detail: 8-segment / 57 s episode template, 79 s canonical corpus bound (2-3 episodes), draft-loop history, pilot options, gates, rizal/ord/eureka orchestration, and the special-topics coda-share PDF variant.",
       "family": "ai-time-to-die",
@@ -3818,7 +3818,7 @@
     },
     {
       "artifact_id": "plan-vertical-ai-time-to-die-v2",
-      "title": "ai-time-to-die — proposed vertical v2 (formal plan)",
+      "title": "ai-time-to-die \u2014 proposed vertical v2 (formal plan)",
       "description": "Formal production plan: 8-segment / 57 s episode template, measured estimates, pilot options, gates, and rizal/ord/eureka orchestration, with the special-topics PDF variant.",
       "alt": "Formal production plan: 8-segment / 57 s episode template, measured estimates, pilot options, gates, and rizal/ord/eureka orchestration, with the special-topics PDF variant.",
       "family": "ai-time-to-die",
@@ -3864,7 +3864,7 @@
     },
     {
       "artifact_id": "plan-vertical-ai-time-to-die-v1",
-      "title": "ai-time-to-die — plan draft v1 (exploratory)",
+      "title": "ai-time-to-die \u2014 plan draft v1 (exploratory)",
       "description": "Exploratory plan draft for the ai-time-to-die vertical: project composition, first-pass transformations, and open estimates.",
       "alt": "Exploratory plan draft for the ai-time-to-die vertical: project composition, first-pass transformations, and open estimates.",
       "family": "ai-time-to-die",
@@ -3902,7 +3902,7 @@
     },
     {
       "artifact_id": "ai-time-to-die-episode-03",
-      "title": "ai-time-to-die — Episode 03",
+      "title": "ai-time-to-die \u2014 Episode 03",
       "description": "Complete vertical episode 03 (57 s, 1080x1920@24) from the accepted draft-9 template: zf_xiaoyi canonical voice remap, two-region bullet text, wild 50% opacity masks, T5 HLT stand-in or the new provider night-market scene, shinkansen bed with canonical/HLT audio layout. Subtitles NOT-BURNED per policy (PGS bitmap, no local burn path). Full-motion review.",
       "alt": "Full-motion review of ai-time-to-die episode 03.",
       "family": "ai-time-to-die",
@@ -3926,7 +3926,7 @@
     },
     {
       "artifact_id": "ai-time-to-die-episode-02",
-      "title": "ai-time-to-die — Episode 02",
+      "title": "ai-time-to-die \u2014 Episode 02",
       "description": "Complete vertical episode 02 (57 s, 1080x1920@24) from the accepted draft-9 template: zf_xiaoyi canonical voice remap, two-region bullet text, wild 50% opacity masks, T5 HLT stand-in, shinkansen bed with canonical/HLT audio layout. Subtitles NOT-BURNED per policy (PGS bitmap, no local burn path). Full-motion review.",
       "alt": "Full-motion review of ai-time-to-die episode 02.",
       "family": "ai-time-to-die",
@@ -3950,7 +3950,7 @@
     },
     {
       "artifact_id": "ai-time-to-die-episode-01",
-      "title": "ai-time-to-die — Episode 01",
+      "title": "ai-time-to-die \u2014 Episode 01",
       "description": "Complete vertical episode 01 (57 s, 1080x1920@24) from the accepted draft-9 template: zf_xiaoyi canonical voice remap, two-region bullet text, wild 50% opacity masks, T5 HLT stand-in, shinkansen bed with canonical/HLT audio layout. Subtitles NOT-BURNED per policy (PGS bitmap, no local burn path). Full-motion review.",
       "alt": "Full-motion review of ai-time-to-die episode 01.",
       "family": "ai-time-to-die",
@@ -3974,7 +3974,7 @@
     },
     {
       "artifact_id": "ai-time-to-die-draft-9-attempted-render",
-      "title": "ai-time-to-die — Draft 9 — attempted render",
+      "title": "ai-time-to-die \u2014 Draft 9 \u2014 attempted render",
       "description": "57-second vertical draft-9 attempted render: the canonical-source dialogue is voice-remapped to zf_xiaoyi (V29, Mandarin female, KEEP per review issue #27) via MeanVC2; canonical segments (T1a/T1b) carry the transformed voice, HLT T5 keeps its original audio, shinkansen bed elsewhere (issue #26). Video is byte-identical to draft-8 except the DRAFT 9 title. Full-motion review.",
       "alt": "Full-motion review video of the 57-second ai-time-to-die draft-9 attempted render.",
       "family": "ai-time-to-die",
@@ -3998,7 +3998,7 @@
     },
     {
       "artifact_id": "ai-time-to-die-draft-8-attempted-render",
-      "title": "ai-time-to-die — Draft 8 — attempted render",
+      "title": "ai-time-to-die \u2014 Draft 8 \u2014 attempted render",
       "description": "57-second vertical draft-8 attempted render per review issue #25 + #26: two-region danmaku (BOC blocks pages 38/33) top and bottom halves; original source audio during canonical segments AND the here-lies-trouble T5 segment, shinkansen bed elsewhere; wild masks, audit usage, draft-1 HLT T5, full-motion review.",
       "alt": "Full-motion review video of the 57-second ai-time-to-die draft-8 attempted render.",
       "family": "ai-time-to-die",
@@ -4022,7 +4022,7 @@
     },
     {
       "artifact_id": "ai-time-to-die-draft-7-attempted-render",
-      "title": "ai-time-to-die — Draft 7 — attempted render",
+      "title": "ai-time-to-die \u2014 Draft 7 \u2014 attempted render",
       "description": "57-second vertical draft-7 attempted render per review issue #24: bullet text orientation fixed (izzi overlay y-flip; OCR-verified upright), lanes span the full 1920px height, T2 snapshot backgrounds vertically fitted; red-on-white 20pt bullets from the BOC CANONICAL-MARKER PDF block; masks + audit kept from draft-6; T5 returns to the draft-1 here-lies-trouble pilot stand-in. Full-motion video review.",
       "alt": "Full-motion review video of the 57-second ai-time-to-die draft-7 attempted render.",
       "family": "ai-time-to-die",
@@ -4046,7 +4046,7 @@
     },
     {
       "artifact_id": "ai-time-to-die-draft-6-attempted-render",
-      "title": "ai-time-to-die — Draft 6 — attempted render",
+      "title": "ai-time-to-die \u2014 Draft 6 \u2014 attempted render",
       "description": "57-second vertical draft-6 attempted render per review issue #23 KEEP-PARTS: bullet text now OCRs a BOC-???? CANONICAL-MARKER block from the snapshot-dyads PDF (seeded page 38), rendered as red-on-white 20pt izzi scrolling bullets; face mask + audit usage kept from draft-5; T5 is a single DTLA provider frame (1280x720, new authorized 10s render) centered on pure black, no tiling. Full-motion video review.",
       "alt": "Full-motion review video of the 57-second ai-time-to-die draft-6 attempted render.",
       "family": "ai-time-to-die",
@@ -4070,7 +4070,7 @@
     },
     {
       "artifact_id": "ai-time-to-die-draft-5-attempted-render",
-      "title": "ai-time-to-die — Draft 5 — attempted render",
+      "title": "ai-time-to-die \u2014 Draft 5 \u2014 attempted render",
       "description": "57-second vertical draft-5 attempted render per review issue #22: red-on-white 20pt izzi bullet text with constant scroll motion (W3C scroll/reverse lanes); T1 masks landmarked on the original frame and mapped through the exact vertical transform, textured with wild moire/surface-tension/guilloche linework at 50% opacity; T5 is one scene rendered as two split frames (top/bottom partials) forming one continuous 1080x1440 frame letterboxed in 1080x1920. Full-motion video review (like draft-1); no filmstrip.",
       "alt": "Full-motion review video of the 57-second ai-time-to-die draft-5 attempted render.",
       "family": "ai-time-to-die",
@@ -4094,7 +4094,7 @@
     },
     {
       "artifact_id": "ai-time-to-die-draft-1-attempted-render",
-      "title": "ai-time-to-die — Draft 1 — attempted render",
+      "title": "ai-time-to-die \u2014 Draft 1 \u2014 attempted render",
       "description": "57-second vertical draft-1 attempted render: Blade Runner camera-track conversion with guilloche face masks, codex death/rebirth interstitials, danmaku text, chronological audit-report glitch interjections, and a here-lies-trouble composite stand-in.",
       "alt": "57-second vertical draft-1 attempted render: Blade Runner camera-track conversion with guilloche face masks, codex death/rebirth interstitials, danmaku text, chronological audit-report glitch interjections, and a here-lies-trouble composite stand-in.",
       "family": "ai-time-to-die",
@@ -4118,7 +4118,7 @@
     },
     {
       "artifact_id": "hlt-episode-01-cut-v1",
-      "title": "Here Lies Trouble — Episode 1 — cut v1",
+      "title": "Here Lies Trouble \u2014 Episode 1 \u2014 cut v1",
       "description": "Episode-01 cut-v1 pilot master review proxy: 168-second vertical scene with Higgs audio. Review motion, character staging, Frogtown environmental texture, and the audio mix.",
       "alt": "Vertical 360x640 episode-01 cut-v1 review proxy with four animal characters exploring a river setting.",
       "family": "here-lies-trouble",
@@ -4179,7 +4179,7 @@
         "foreground": "#173a55"
       },
       "technical_state": "BROWSER-PROXY-RENDERED-FROM-ASSEMBLED-MKV",
-      "title": "Here Lies Trouble — Frogtown v2 full-length scene proxy",
+      "title": "Here Lies Trouble \u2014 Frogtown v2 full-length scene proxy",
       "width": 360
     },
     {
@@ -4221,7 +4221,7 @@
         "foreground": "#173a55"
       },
       "technical_state": "BROWSER-PROXY-RENDERED-FROM-PROVIDER-DELIVERY",
-      "title": "Here Lies Trouble — Frogtown v2 motion canary 03 proxy",
+      "title": "Here Lies Trouble \u2014 Frogtown v2 motion canary 03 proxy",
       "width": 360
     },
     {
@@ -4263,7 +4263,7 @@
         "foreground": "#173a55"
       },
       "technical_state": "BROWSER-PROXY-RENDERED-FROM-PROVIDER-DELIVERY",
-      "title": "Here Lies Trouble — Frogtown v2 motion canary 02 proxy",
+      "title": "Here Lies Trouble \u2014 Frogtown v2 motion canary 02 proxy",
       "width": 360
     },
     {
@@ -4305,7 +4305,7 @@
         "foreground": "#173a55"
       },
       "technical_state": "BROWSER-PROXY-RENDERED-FROM-PROVIDER-DELIVERY",
-      "title": "Here Lies Trouble — Frogtown v2 motion canary 01 proxy",
+      "title": "Here Lies Trouble \u2014 Frogtown v2 motion canary 01 proxy",
       "width": 360
     },
     {
@@ -10137,7 +10137,7 @@
     {
       "accessibility_state": "VISUAL-DESCRIPTION-PENDING",
       "added_at": "2026-08-10T23:41:58-07:00",
-      "alt": "Aesthetic reference from the Tokyo Psychedelic collection, source label: japan’s arty pelago Naoshima and beyond Japan holidays The Guardian. Visual description remains subject to human review.",
+      "alt": "Aesthetic reference from the Tokyo Psychedelic collection, source label: japan\u2019s arty pelago Naoshima and beyond Japan holidays The Guardian. Visual description remains subject to human review.",
       "artifact_id": "resource-tokyo-psychedelic-japan-s-arty-pelago-naoshima-and-beyond-japan-holidays-the-guardian",
       "baseline_state": "NOT-PROMOTED",
       "bytes": 22868,
@@ -10158,16 +10158,16 @@
         "bytes": 3557067,
         "format": "png",
         "height": 1173,
-        "path": "resources/tokyo-psychedelic/japan’s arty-pelago Naoshima and beyond Japan holidays The Guardian.png",
+        "path": "resources/tokyo-psychedelic/japan\u2019s arty-pelago Naoshima and beyond Japan holidays The Guardian.png",
         "published": false,
         "repository_state": "WORKTREE-UNCOMMITTED",
         "sha256": "2275a841be0d75c1ab801b6473a64913da45b8102a116fb386ff7e21a802e7d4",
         "width": 2633
       },
-      "source_path": "resources/tokyo-psychedelic/japan’s arty-pelago Naoshima and beyond Japan holidays The Guardian.png",
+      "source_path": "resources/tokyo-psychedelic/japan\u2019s arty-pelago Naoshima and beyond Japan holidays The Guardian.png",
       "source_state": "WORKTREE-UNCOMMITTED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "japan’s arty-pelago Naoshima and beyond Japan holidays The Guardian",
+      "title": "japan\u2019s arty-pelago Naoshima and beyond Japan holidays The Guardian",
       "width": 480
     },
     {
@@ -10743,7 +10743,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h12m54s406.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern · vlcsnap-2026-08-09-22h12m54s406",
+      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h12m54s406",
       "width": 480
     },
     {
@@ -10779,7 +10779,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h12m27s524.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern · vlcsnap-2026-08-09-22h12m27s524",
+      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h12m27s524",
       "width": 480
     },
     {
@@ -10815,7 +10815,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h12m16s526.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern · vlcsnap-2026-08-09-22h12m16s526",
+      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h12m16s526",
       "width": 480
     },
     {
@@ -10851,7 +10851,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h11m47s501.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern · vlcsnap-2026-08-09-22h11m47s501",
+      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h11m47s501",
       "width": 480
     },
     {
@@ -10887,7 +10887,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h11m38s023.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern · vlcsnap-2026-08-09-22h11m38s023",
+      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h11m38s023",
       "width": 480
     },
     {
@@ -10923,7 +10923,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h11m27s789.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern · vlcsnap-2026-08-09-22h11m27s789",
+      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h11m27s789",
       "width": 480
     },
     {
@@ -10959,7 +10959,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h11m18s803.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern · vlcsnap-2026-08-09-22h11m18s803",
+      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h11m18s803",
       "width": 480
     },
     {
@@ -10995,7 +10995,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h10m49s545.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern · vlcsnap-2026-08-09-22h10m49s545",
+      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h10m49s545",
       "width": 480
     },
     {
@@ -11031,7 +11031,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h10m41s179.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern · vlcsnap-2026-08-09-22h10m41s179",
+      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h10m41s179",
       "width": 480
     },
     {
@@ -11067,7 +11067,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h09m58s301.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern · vlcsnap-2026-08-09-22h09m58s301",
+      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h09m58s301",
       "width": 480
     },
     {
@@ -11103,7 +11103,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h09m46s046.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern · vlcsnap-2026-08-09-22h09m46s046",
+      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h09m46s046",
       "width": 480
     },
     {
@@ -11139,7 +11139,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h09m19s038.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern · vlcsnap-2026-08-09-22h09m19s038",
+      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h09m19s038",
       "width": 480
     },
     {
@@ -11175,7 +11175,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h09m08s219.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern · vlcsnap-2026-08-09-22h09m08s219",
+      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h09m08s219",
       "width": 480
     },
     {
@@ -11211,7 +11211,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h08m35s869.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern · vlcsnap-2026-08-09-22h08m35s869",
+      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h08m35s869",
       "width": 480
     },
     {
@@ -11247,7 +11247,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h08m29s426.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern · vlcsnap-2026-08-09-22h08m29s426",
+      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h08m29s426",
       "width": 480
     },
     {
@@ -11283,7 +11283,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h08m22s728.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern · vlcsnap-2026-08-09-22h08m22s728",
+      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h08m22s728",
       "width": 480
     },
     {
@@ -11319,7 +11319,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h08m17s657.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern · vlcsnap-2026-08-09-22h08m17s657",
+      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h08m17s657",
       "width": 480
     },
     {
@@ -11355,7 +11355,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h08m04s893.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern · vlcsnap-2026-08-09-22h08m04s893",
+      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h08m04s893",
       "width": 480
     },
     {
@@ -11391,7 +11391,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h08m00s253.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern · vlcsnap-2026-08-09-22h08m00s253",
+      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h08m00s253",
       "width": 480
     },
     {
@@ -11427,7 +11427,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h07m52s676.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern · vlcsnap-2026-08-09-22h07m52s676",
+      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h07m52s676",
       "width": 480
     },
     {
@@ -11463,7 +11463,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h07m17s902.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern · vlcsnap-2026-08-09-22h07m17s902",
+      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h07m17s902",
       "width": 480
     },
     {
@@ -11499,7 +11499,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h07m06s614.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern · vlcsnap-2026-08-09-22h07m06s614",
+      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h07m06s614",
       "width": 480
     },
     {
@@ -11535,7 +11535,7 @@
       "source_path": "resources/noir-vibezz/spidern/vlcsnap-2026-08-09-22h06m56s435.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "spidern · vlcsnap-2026-08-09-22h06m56s435",
+      "title": "spidern \u00b7 vlcsnap-2026-08-09-22h06m56s435",
       "width": 480
     },
     {
@@ -11571,7 +11571,7 @@
       "source_path": "resources/noir-vibezz/saigon/vlcsnap-2026-08-09-22h02m29s588.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "saigon · vlcsnap-2026-08-09-22h02m29s588",
+      "title": "saigon \u00b7 vlcsnap-2026-08-09-22h02m29s588",
       "width": 480
     },
     {
@@ -11607,7 +11607,7 @@
       "source_path": "resources/noir-vibezz/saigon/vlcsnap-2026-08-09-22h02m13s054.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "saigon · vlcsnap-2026-08-09-22h02m13s054",
+      "title": "saigon \u00b7 vlcsnap-2026-08-09-22h02m13s054",
       "width": 480
     },
     {
@@ -11643,7 +11643,7 @@
       "source_path": "resources/noir-vibezz/saigon/vlcsnap-2026-08-09-22h02m07s080.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "saigon · vlcsnap-2026-08-09-22h02m07s080",
+      "title": "saigon \u00b7 vlcsnap-2026-08-09-22h02m07s080",
       "width": 480
     },
     {
@@ -11679,7 +11679,7 @@
       "source_path": "resources/noir-vibezz/saigon/vlcsnap-2026-08-09-22h01m33s340.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "saigon · vlcsnap-2026-08-09-22h01m33s340",
+      "title": "saigon \u00b7 vlcsnap-2026-08-09-22h01m33s340",
       "width": 480
     },
     {
@@ -11715,7 +11715,7 @@
       "source_path": "resources/noir-vibezz/saigon/vlcsnap-2026-08-09-22h01m14s888.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "saigon · vlcsnap-2026-08-09-22h01m14s888",
+      "title": "saigon \u00b7 vlcsnap-2026-08-09-22h01m14s888",
       "width": 480
     },
     {
@@ -11751,7 +11751,7 @@
       "source_path": "resources/noir-vibezz/saigon/vlcsnap-2026-08-09-22h01m05s775.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "saigon · vlcsnap-2026-08-09-22h01m05s775",
+      "title": "saigon \u00b7 vlcsnap-2026-08-09-22h01m05s775",
       "width": 480
     },
     {
@@ -11787,7 +11787,7 @@
       "source_path": "resources/noir-vibezz/saigon/vlcsnap-2026-08-09-22h00m44s278.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "saigon · vlcsnap-2026-08-09-22h00m44s278",
+      "title": "saigon \u00b7 vlcsnap-2026-08-09-22h00m44s278",
       "width": 480
     },
     {
@@ -11823,7 +11823,7 @@
       "source_path": "resources/noir-vibezz/rio/vlcsnap-2026-08-09-21h59m37s827.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "rio · vlcsnap-2026-08-09-21h59m37s827",
+      "title": "rio \u00b7 vlcsnap-2026-08-09-21h59m37s827",
       "width": 480
     },
     {
@@ -11859,7 +11859,7 @@
       "source_path": "resources/noir-vibezz/rio/vlcsnap-2026-08-09-21h59m32s846.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "rio · vlcsnap-2026-08-09-21h59m32s846",
+      "title": "rio \u00b7 vlcsnap-2026-08-09-21h59m32s846",
       "width": 480
     },
     {
@@ -11895,7 +11895,7 @@
       "source_path": "resources/noir-vibezz/rio/vlcsnap-2026-08-09-21h59m24s270.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "rio · vlcsnap-2026-08-09-21h59m24s270",
+      "title": "rio \u00b7 vlcsnap-2026-08-09-21h59m24s270",
       "width": 480
     },
     {
@@ -11931,7 +11931,7 @@
       "source_path": "resources/noir-vibezz/rio/vlcsnap-2026-08-09-21h59m00s104.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "rio · vlcsnap-2026-08-09-21h59m00s104",
+      "title": "rio \u00b7 vlcsnap-2026-08-09-21h59m00s104",
       "width": 480
     },
     {
@@ -11967,7 +11967,7 @@
       "source_path": "resources/noir-vibezz/rio/vlcsnap-2026-08-09-21h58m40s916.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "rio · vlcsnap-2026-08-09-21h58m40s916",
+      "title": "rio \u00b7 vlcsnap-2026-08-09-21h58m40s916",
       "width": 480
     },
     {
@@ -12003,7 +12003,7 @@
       "source_path": "resources/noir-vibezz/rio/vlcsnap-2026-08-09-21h58m34s154.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "rio · vlcsnap-2026-08-09-21h58m34s154",
+      "title": "rio \u00b7 vlcsnap-2026-08-09-21h58m34s154",
       "width": 480
     },
     {
@@ -12039,7 +12039,7 @@
       "source_path": "resources/noir-vibezz/rio/vlcsnap-2026-08-09-21h58m18s915.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "rio · vlcsnap-2026-08-09-21h58m18s915",
+      "title": "rio \u00b7 vlcsnap-2026-08-09-21h58m18s915",
       "width": 480
     },
     {
@@ -12075,7 +12075,7 @@
       "source_path": "resources/noir-vibezz/rio/vlcsnap-2026-08-09-21h58m07s507.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "rio · vlcsnap-2026-08-09-21h58m07s507",
+      "title": "rio \u00b7 vlcsnap-2026-08-09-21h58m07s507",
       "width": 480
     },
     {
@@ -12111,7 +12111,7 @@
       "source_path": "resources/noir-vibezz/rio/vlcsnap-2026-08-09-21h57m55s518.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "rio · vlcsnap-2026-08-09-21h57m55s518",
+      "title": "rio \u00b7 vlcsnap-2026-08-09-21h57m55s518",
       "width": 480
     },
     {
@@ -12147,7 +12147,7 @@
       "source_path": "resources/noir-vibezz/rio/vlcsnap-2026-08-09-21h57m44s540.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "rio · vlcsnap-2026-08-09-21h57m44s540",
+      "title": "rio \u00b7 vlcsnap-2026-08-09-21h57m44s540",
       "width": 480
     },
     {
@@ -12183,7 +12183,7 @@
       "source_path": "resources/noir-vibezz/la-confidential/vlcsnap-2026-08-09-21h55m16s271.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "la-confidential · vlcsnap-2026-08-09-21h55m16s271",
+      "title": "la-confidential \u00b7 vlcsnap-2026-08-09-21h55m16s271",
       "width": 480
     },
     {
@@ -12219,7 +12219,7 @@
       "source_path": "resources/noir-vibezz/la-confidential/vlcsnap-2026-08-09-21h54m39s938.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "la-confidential · vlcsnap-2026-08-09-21h54m39s938",
+      "title": "la-confidential \u00b7 vlcsnap-2026-08-09-21h54m39s938",
       "width": 480
     },
     {
@@ -12255,7 +12255,7 @@
       "source_path": "resources/noir-vibezz/la-confidential/vlcsnap-2026-08-09-21h54m01s978.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "la-confidential · vlcsnap-2026-08-09-21h54m01s978",
+      "title": "la-confidential \u00b7 vlcsnap-2026-08-09-21h54m01s978",
       "width": 480
     },
     {
@@ -12291,7 +12291,7 @@
       "source_path": "resources/noir-vibezz/la-confidential/vlcsnap-2026-08-09-21h53m54s152.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "la-confidential · vlcsnap-2026-08-09-21h53m54s152",
+      "title": "la-confidential \u00b7 vlcsnap-2026-08-09-21h53m54s152",
       "width": 480
     },
     {
@@ -12327,7 +12327,7 @@
       "source_path": "resources/noir-vibezz/crime-wave/vlcsnap-2026-08-09-21h51m49s010.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "crime-wave · vlcsnap-2026-08-09-21h51m49s010",
+      "title": "crime-wave \u00b7 vlcsnap-2026-08-09-21h51m49s010",
       "width": 480
     },
     {
@@ -12363,7 +12363,7 @@
       "source_path": "resources/noir-vibezz/crime-wave/vlcsnap-2026-08-09-21h51m43s245.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "crime-wave · vlcsnap-2026-08-09-21h51m43s245",
+      "title": "crime-wave \u00b7 vlcsnap-2026-08-09-21h51m43s245",
       "width": 480
     },
     {
@@ -12399,7 +12399,7 @@
       "source_path": "resources/noir-vibezz/crime-wave/vlcsnap-2026-08-09-21h51m27s696.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "crime-wave · vlcsnap-2026-08-09-21h51m27s696",
+      "title": "crime-wave \u00b7 vlcsnap-2026-08-09-21h51m27s696",
       "width": 480
     },
     {
@@ -12435,7 +12435,7 @@
       "source_path": "resources/noir-vibezz/crime-wave/vlcsnap-2026-08-09-21h51m20s429.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "crime-wave · vlcsnap-2026-08-09-21h51m20s429",
+      "title": "crime-wave \u00b7 vlcsnap-2026-08-09-21h51m20s429",
       "width": 480
     },
     {
@@ -12471,7 +12471,7 @@
       "source_path": "resources/noir-vibezz/crime-wave/vlcsnap-2026-08-09-21h49m58s465.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "crime-wave · vlcsnap-2026-08-09-21h49m58s465",
+      "title": "crime-wave \u00b7 vlcsnap-2026-08-09-21h49m58s465",
       "width": 480
     },
     {
@@ -12507,7 +12507,7 @@
       "source_path": "resources/noir-vibezz/crime-wave/vlcsnap-2026-08-09-21h49m50s080.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "crime-wave · vlcsnap-2026-08-09-21h49m50s080",
+      "title": "crime-wave \u00b7 vlcsnap-2026-08-09-21h49m50s080",
       "width": 480
     },
     {
@@ -12543,7 +12543,7 @@
       "source_path": "resources/noir-vibezz/crime-wave/vlcsnap-2026-08-09-21h49m40s795.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "crime-wave · vlcsnap-2026-08-09-21h49m40s795",
+      "title": "crime-wave \u00b7 vlcsnap-2026-08-09-21h49m40s795",
       "width": 480
     },
     {
@@ -12579,7 +12579,7 @@
       "source_path": "resources/noir-vibezz/crime-wave/vlcsnap-2026-08-09-21h49m13s968.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "crime-wave · vlcsnap-2026-08-09-21h49m13s968",
+      "title": "crime-wave \u00b7 vlcsnap-2026-08-09-21h49m13s968",
       "width": 480
     },
     {
@@ -12615,7 +12615,7 @@
       "source_path": "resources/noir-vibezz/big-combo/vlcsnap-2026-08-09-22h04m16s075.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "big-combo · vlcsnap-2026-08-09-22h04m16s075",
+      "title": "big-combo \u00b7 vlcsnap-2026-08-09-22h04m16s075",
       "width": 480
     },
     {
@@ -12651,7 +12651,7 @@
       "source_path": "resources/noir-vibezz/big-combo/vlcsnap-2026-08-09-22h04m08s507.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "big-combo · vlcsnap-2026-08-09-22h04m08s507",
+      "title": "big-combo \u00b7 vlcsnap-2026-08-09-22h04m08s507",
       "width": 480
     },
     {
@@ -12687,7 +12687,7 @@
       "source_path": "resources/noir-vibezz/big-combo/vlcsnap-2026-08-09-22h04m00s834.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "big-combo · vlcsnap-2026-08-09-22h04m00s834",
+      "title": "big-combo \u00b7 vlcsnap-2026-08-09-22h04m00s834",
       "width": 480
     },
     {
@@ -12723,7 +12723,7 @@
       "source_path": "resources/noir-vibezz/big-combo/vlcsnap-2026-08-09-22h03m55s641.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "big-combo · vlcsnap-2026-08-09-22h03m55s641",
+      "title": "big-combo \u00b7 vlcsnap-2026-08-09-22h03m55s641",
       "width": 480
     },
     {
@@ -12759,7 +12759,7 @@
       "source_path": "resources/noir-vibezz/big-combo/vlcsnap-2026-08-09-22h03m48s941.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "big-combo · vlcsnap-2026-08-09-22h03m48s941",
+      "title": "big-combo \u00b7 vlcsnap-2026-08-09-22h03m48s941",
       "width": 480
     },
     {
@@ -12795,30 +12795,8 @@
       "source_path": "resources/noir-vibezz/big-combo/vlcsnap-2026-08-09-22h03m43s197.png",
       "source_state": "TRACKED",
       "technical_state": "DERIVATIVE-VERIFIED",
-      "title": "big-combo · vlcsnap-2026-08-09-22h03m43s197",
+      "title": "big-combo \u00b7 vlcsnap-2026-08-09-22h03m43s197",
       "width": 480
-    },
-    {
-      "added_at": "2026-08-10T20:34:39-07:00",
-      "alt": "Portrait dual-view graph proof with two related data visualizations using orbital and guilloche line structures.",
-      "artifact_id": "visual-graph-synthesis-round-01-dual-view",
-      "baseline_state": "NOT-PROMOTED",
-      "bytes": 133673,
-      "description": "A paired graph proof exploring the orbit and guilloche visual language while keeping scientific relationships inspectable.",
-      "family": "graph-synthesis",
-      "feedback_round": "round-01",
-      "generation_class": "graph-synthesis",
-      "height": 1920,
-      "human_review_state": "UNREVIEWED",
-      "media_kind": "image",
-      "published_path": "review/izzi/2026-08-10/graph-synthesis-round-01-dual-view.png",
-      "review_category": "proofs",
-      "review_scope": "STATIC-PROOF",
-      "sha256": "6c2e8fdf901b4fe7df1b28db807e2ab74cc4b97333d033903006981e661ed0be",
-      "source_path": "outputs/review/feedback/visual/graph-synthesis/round-01/graph-guilloche-dual-view.png",
-      "technical_state": "VERIFIED",
-      "title": "Graph synthesis: dual view",
-      "width": 1080
     },
     {
       "added_at": "2026-08-15T17:05:11.914Z",
@@ -12843,94 +12821,6 @@
       "width": 1080,
       "generation_commit": "069fbc3618d677e272af27b37842e6e1340ae345",
       "generation_state": "CURRENT"
-    },
-    {
-      "added_at": "2026-08-10T20:34:39-07:00",
-      "alt": "Portrait filmstrip showing selected frames from multiple flowing surface-tension wild-motion experiments.",
-      "artifact_id": "visual-surface-tension-round-02-wild-motion",
-      "baseline_state": "NOT-PROMOTED",
-      "bytes": 483207,
-      "description": "A decoded filmstrip for the expanded surface-tension field, emphasizing curved line movement and compositional range.",
-      "family": "surface-tension",
-      "feedback_round": "round-02",
-      "generation_class": "wild-motion",
-      "height": 1920,
-      "human_review_state": "UNREVIEWED",
-      "media_kind": "filmstrip",
-      "published_path": "review/izzi/2026-08-10/surface-tension-round-02-wild-motion-filmstrip.png",
-      "review_category": "proofs",
-      "review_scope": "PREVIEW-ONLY",
-      "sha256": "8cb7c5e00b9bf6ccb3fcf57859ec011eccd604af174fb3fa3c2271b15513ea43",
-      "source_path": "outputs/review/feedback/visual/surface-tension/round-02/surface-tension-wild-motion-filmstrip.png",
-      "technical_state": "VERIFIED",
-      "title": "Surface-tension wild-motion filmstrip",
-      "width": 1080
-    },
-    {
-      "added_at": "2026-08-10T20:34:39-07:00",
-      "alt": "Portrait filmstrip showing selected frames from multiple dark, high-contrast moire wild-motion experiments.",
-      "artifact_id": "visual-moire-round-02-wild-motion",
-      "baseline_state": "NOT-PROMOTED",
-      "bytes": 516873,
-      "description": "A decoded filmstrip for the expanded moire motion field. It supports composition review but not full temporal acceptance.",
-      "family": "moire",
-      "feedback_round": "round-02",
-      "generation_class": "wild-motion",
-      "height": 1920,
-      "human_review_state": "UNREVIEWED",
-      "media_kind": "filmstrip",
-      "published_path": "review/izzi/2026-08-10/moire-round-02-wild-motion-filmstrip.png",
-      "review_category": "proofs",
-      "review_scope": "PREVIEW-ONLY",
-      "sha256": "0229796c0684c9e3e710f99b3e22669c336fe1e3f99031abd35bf0c2ad74b10f",
-      "source_path": "outputs/review/feedback/visual/moire/round-02/moire-wild-motion-filmstrip.png",
-      "technical_state": "VERIFIED",
-      "title": "Moire wild-motion filmstrip",
-      "width": 1080
-    },
-    {
-      "added_at": "2026-08-10T20:34:39-07:00",
-      "alt": "Portrait contact sheet of the current guilloche round, combining small static and motion-preview panels.",
-      "artifact_id": "visual-guilloche-round-05-index",
-      "baseline_state": "NOT-PROMOTED",
-      "bytes": 241695,
-      "description": "The current guilloche field: static type, transitions, wild motion, and synthesis classes assembled for comparison.",
-      "family": "guilloche",
-      "feedback_round": "round-05",
-      "generation_class": "review-index",
-      "height": 1920,
-      "human_review_state": "UNREVIEWED",
-      "media_kind": "image",
-      "published_path": "review/izzi/2026-08-10/guilloche-round-05-review-index.png",
-      "review_category": "proofs",
-      "review_scope": "PREVIEW-ONLY",
-      "sha256": "711faa98364ab9962ac97be8fbaf95b74d543f2dd8f175c9d01f1fda1f7332f8",
-      "source_path": "outputs/review/feedback/visual/guilloche/round-05/guilloche-v4-review-index.png",
-      "technical_state": "VERIFIED",
-      "title": "Guilloche round 05 review index",
-      "width": 1080
-    },
-    {
-      "added_at": "2026-08-10T20:34:39-07:00",
-      "alt": "Portrait contact sheet summarizing the current Izzi visual review packages; individual details should be opened at full size.",
-      "artifact_id": "visual-current-review-index",
-      "baseline_state": "NOT-PROMOTED",
-      "bytes": 258351,
-      "description": "A portrait overview of the visual packages currently staged for human inspection in Izzi.",
-      "family": "review-overview",
-      "feedback_round": "current",
-      "generation_class": "review-index",
-      "height": 1920,
-      "human_review_state": "UNREVIEWED",
-      "media_kind": "image",
-      "published_path": "review/izzi/2026-08-10/current-review-index.png",
-      "review_category": "proofs",
-      "review_scope": "PREVIEW-ONLY",
-      "sha256": "accce3224d89cc77df19b62061709269e3676f27304675c100fb237118528a68",
-      "source_path": "outputs/review/current-review-index.png",
-      "technical_state": "VERIFIED",
-      "title": "Current visual review index",
-      "width": 1080
     }
   ],
   "portal_build": "izzi-review-2026-08-11.7",
