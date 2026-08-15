@@ -1,8 +1,36 @@
 {
   "baseline_state": "NOT-PROMOTED",
-  "generated_at": "2026-08-14T23:41:18.347Z",
+  "generated_at": "2026-08-15T00:13:41.583Z",
   "human_review_state": "UNREVIEWED",
   "items": [
+    {
+      "artifact_id": "generation-movement-20260814",
+      "title": "Generative Movement 20260814",
+      "description": "One aggregated entry for the 2026-08-14 izzi generative movement family: the asama-01-roji camera track example and the Blade Runner cut-5 extracted camera movement. Open the index to reach each individual review page.",
+      "alt": "Index of the 2 generative movement review artifacts from 2026-08-14.",
+      "family": "generation-movement-20260814",
+      "generation_class": "movement-index",
+      "feedback_round": "generation-movement-20260814",
+      "media_kind": "index",
+      "review_scope": "GENERATION-MOVEMENT-20260814",
+      "review_mode": "output",
+      "source_path": "izzi d62562635e494236da8f1a3fe44276319d5c0f5a outputs/review/feedback/visual/movement (family aggregate)",
+      "published_path": "review/media/generation-movement-20260814/generation-movement-20260814.index.html",
+      "sha256": "7a585fb6cf85381c4fc858650aa72b17d1f5ea380812498f22c6720888705af2",
+      "bytes": 2919,
+      "format": "html",
+      "generation_commit": "d62562635e494236da8f1a3fe44276319d5c0f5a",
+      "generation_state": "CURRENT",
+      "index_members": [
+        "movement-asama-loops",
+        "movement-camera-blade-runner"
+      ],
+      "technical_state": "MOVEMENT-INDEX",
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "review_category": "proofs",
+      "added_at": "2026-08-15T00:13:41.571Z"
+    },
     {
       "artifact_id": "generation-visualization-20260814",
       "title": "Generative Visualization 20260814",
@@ -9385,6 +9413,6 @@
   "portal_build": "izzi-review-2026-08-11.7",
   "publication_state": "PUBLIC-PROTOTYPE",
   "schema_version": "1.0",
-  "source_commit": "ecff9fc4aac568eb02c0c2dc4fd4edc5e932920f",
+  "source_commit": "d62562635e494236da8f1a3fe44276319d5c0f5a",
   "source_repository": "bdekoz/izzi"
 }
