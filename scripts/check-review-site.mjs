@@ -331,11 +331,16 @@ try {
       + `observed ${JSON.stringify(buildManifest.review_category_counts)}`
     );
   }
-  if (JSON.stringify(buildManifest.aesthetic_collection_counts) !== JSON.stringify({
-    "neon-addict": 146,
-    "noir-vibezz": 58,
-    "tokyo-psychedelic": 30
-  })) {
+  const expectedAestheticCounts = {};
+  for (const item of catalog.items) {
+    if (item.review_category === "style-processing") {
+      expectedAestheticCounts[item.family] = (expectedAestheticCounts[item.family] || 0) + 1;
+    }
+  }
+  const sortedExpectedAestheticCounts = Object.fromEntries(
+    Object.entries(expectedAestheticCounts).sort(([left], [right]) => left.localeCompare(right))
+  );
+  if (JSON.stringify(buildManifest.aesthetic_collection_counts) !== JSON.stringify(sortedExpectedAestheticCounts)) {
     fail("build manifest aesthetic collection counts differ");
   }
   for (const codeFile of buildManifest.code_files || []) {

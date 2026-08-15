@@ -1,0 +1,15 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "generation-visualization-20260814",
+  "artifact_id": "generation-visualization-20260814",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": null,
+  "document": {
+    "path": "/review/media/generation-visualization-20260814/generation-visualization-20260814.index.html",
+    "sha256": "aec3a0117b579361b3b7faa8d3a792a486f3a6368a9c916340fcfbf65035d3de",
+    "format": "html",
+    "plan_stage": null,
+    "plan_pdf": null
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "resource-hamonshu-20260815-3-index",
+  "artifact_id": "resource-hamonshu-20260815-3-index",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": null,
+  "document": {
+    "path": "/review/media/resource-hamonshu-20260815/hamonshu_3.index.html",
+    "sha256": "e760514966e556bf60afd4c730925fabdac56d2845652ab87d79912ed211bce5",
+    "format": "html",
+    "plan_stage": null,
+    "plan_pdf": null
+  }
+}

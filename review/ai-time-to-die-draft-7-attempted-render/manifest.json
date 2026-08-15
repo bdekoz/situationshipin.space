@@ -7,5 +7,6 @@
   "proxy": {
     "path": "/review/media/ai-time-to-die/ai-time-to-die-draft-7-attempted-render.review.mp4",
     "sha256": "05e4cc65ebb703976585dfd11723b88ea0fd7d7826be43c7a52a5ea93ebe0381"
-  }
+  },
+  "document": null
 }

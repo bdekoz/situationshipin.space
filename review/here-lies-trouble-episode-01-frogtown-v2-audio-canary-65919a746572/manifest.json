@@ -17,5 +17,6 @@
   "proxy": {
     "path": "/review/media/here-lies-trouble/here-lies-trouble-episode-01-frogtown.v2.audio-canary.review.mp4",
     "sha256": "cdbea4863242491f25eaa00211fd221d9820403358624bbb4d84d69879647d9d"
-  }
+  },
+  "document": null
 }

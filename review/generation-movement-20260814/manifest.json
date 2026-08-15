@@ -1,0 +1,15 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "generation-movement-20260814",
+  "artifact_id": "generation-movement-20260814",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": null,
+  "document": {
+    "path": "/review/media/generation-movement-20260814/generation-movement-20260814.index.html",
+    "sha256": "7a585fb6cf85381c4fc858650aa72b17d1f5ea380812498f22c6720888705af2",
+    "format": "html",
+    "plan_stage": null,
+    "plan_pdf": null
+  }
+}

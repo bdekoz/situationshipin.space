@@ -26,6 +26,7 @@ const codePaths = [
   "scripts/publish-palette-index.mjs",
   "scripts/publish-visualization-index.mjs",
   "scripts/publish-movement-index.mjs",
+  "scripts/publish-hamonshu-style-index.mjs",
   "scripts/build-generation-index.mjs",
   "scripts/review-page.mjs",
   ".github/workflows/jekyll-gh-pages.yml"

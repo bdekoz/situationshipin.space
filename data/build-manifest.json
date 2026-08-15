@@ -1,28 +1,29 @@
 {
   "schema_version": "1.0",
   "portal_build": "izzi-review-2026-08-11.7",
-  "generated_at": "2026-08-15T00:13:41.744Z",
+  "generated_at": "2026-08-15T07:33:18.375Z",
   "portal_repository": "bdekoz/situationshipin.space",
   "portal_source_commit": "219a9b7f0891998c1525c94fa15b43c490b5d79f",
   "izzi_repository": "bdekoz/izzi",
-  "izzi_source_commit": "d62562635e494236da8f1a3fe44276319d5c0f5a",
+  "izzi_source_commit": "6d1c8529ad33dfbb7199ff50bfd4b87b25b6103f",
   "publication_state": "PUBLIC-PROTOTYPE",
   "human_review_state": "UNREVIEWED",
   "baseline_state": "NOT-PROMOTED",
   "training_conversion_transfer_state": "NOT-SHARED",
-  "artifact_count": 266,
+  "artifact_count": 355,
   "review_category_counts": {
     "proofs": 29,
-    "style_processing": 234,
+    "style_processing": 323,
     "planning": 3
   },
-  "artifact_payload_bytes": 75796649,
+  "artifact_payload_bytes": 93139092,
   "frame_preview_count": 0,
   "sampled_frame_count": 0,
   "source_media_bytes_represented": 95728655,
-  "source_image_count": 234,
-  "source_image_bytes_represented": 243747547,
+  "source_image_count": 320,
+  "source_image_bytes_represented": 654665308,
   "aesthetic_collection_counts": {
+    "hamonshu-20260815": 89,
     "neon-addict": 146,
     "noir-vibezz": 58,
     "tokyo-psychedelic": 30
@@ -63,15 +64,15 @@
     },
     {
       "path": "data/review-items.json",
-      "sha256": "28b9e080a5bfbcf94b044217b003169e41b5450c31d62740bec0700d14c8e39c"
+      "sha256": "0d33cefa64cbc96f1e574b83b198ec19972986bfce588adcdfcc0879c1d2b47c"
     },
     {
       "path": "scripts/check-review-site.mjs",
-      "sha256": "4688588cb26e7af293e0385fded8d3d80f88e9c95c7ad2dc26b8e47a82732689"
+      "sha256": "3cac76f354875099bc45460f1933d326167a490b05f731a9ab30ee54e1bc2210"
     },
     {
       "path": "scripts/update-build-manifest.mjs",
-      "sha256": "a17e8bd1c54ea91cac3db1d8c628e504fdac52cc676afc9bc203428df4920972"
+      "sha256": "08ce2c9cbf9d98550a69c0a368214cf91a43c0052cc4cb314059bef514bda65c"
     },
     {
       "path": "README.md",
@@ -106,6 +107,10 @@
       "sha256": "ce0830873880a511e0d3e3f003e76220a787cac15eaf4d6a6d6dd1af8fea8eac"
     },
     {
+      "path": "scripts/publish-hamonshu-style-index.mjs",
+      "sha256": "1c49577eef54344d57d885ee83962a1f2168786b2086916b8ce8e2a19646cbea"
+    },
+    {
       "path": "scripts/build-generation-index.mjs",
       "sha256": "76ae5508c3064bfb200ed5b1b4d8f2bc5781e2da4159e02d5858947972cf4b99"
     },
@@ -119,7 +124,7 @@
     }
   ],
   "artifact_inventory": "data/review-items.json",
-  "catalog_sha256": "28b9e080a5bfbcf94b044217b003169e41b5450c31d62740bec0700d14c8e39c",
+  "catalog_sha256": "0d33cefa64cbc96f1e574b83b198ec19972986bfce588adcdfcc0879c1d2b47c",
   "notes": [
     "The catalog binds every published derivative to an Izzi source path and SHA-256.",
     "Canonical source MKVs remain outside Pages; one bounded H.264/AAC MP4 proxy is published for continuous motion and audio review with independent lineage.",
