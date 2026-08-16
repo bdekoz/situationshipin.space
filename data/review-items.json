@@ -1,6 +1,6 @@
 {
   "baseline_state": "NOT-PROMOTED",
-  "generated_at": "2026-08-16T08:23:37.858Z",
+  "generated_at": "2026-08-16T09:23:50.869Z",
   "human_review_state": "UNREVIEWED",
   "items": [
     {
@@ -14,25 +14,31 @@
       "media_kind": "index",
       "review_scope": "GENERATION-VISUALIZATION-20260814",
       "review_mode": "output",
-      "source_path": "izzi dcef0dc4bde07a927dfebd99210a685cf1fbf572 outputs/review/feedback/visual/visualization (family aggregate)",
+      "source_path": "izzi 26f763dfa6dd8b4508904cafcbd6aa68916e968d outputs/review/feedback/visual/visualization (family aggregate)",
       "published_path": "review/media/generation-visualization-20260814/generation-visualization-20260814.index.html",
-      "sha256": "c64935d2c1fb0aa4e7cc54a923242b2c6dbb148cd4e253e4525ecddd96962c84",
-      "bytes": 4076,
+      "sha256": "ab281da1ccc5001acbd29ede2caeac1c1b980f8b3b6dd650ac8c1fa26e10a245",
+      "bytes": 6454,
       "format": "html",
-      "generation_commit": "dcef0dc4bde07a927dfebd99210a685cf1fbf572",
+      "generation_commit": "26f763dfa6dd8b4508904cafcbd6aa68916e968d",
       "generation_state": "CURRENT",
       "index_members": [
         "visualization-line",
+        "visualization-line-2",
+        "visualization-line-3",
+        "visualization-line-4",
         "visualization-grid",
         "visualization-grid-1x8",
         "visualization-kusama",
+        "visualization-kusama-2",
+        "visualization-kusama-3",
+        "visualization-kusama-4",
         "visualization-chord"
       ],
       "technical_state": "VISUALIZATION-INDEX",
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-16T08:23:37.845Z"
+      "added_at": "2026-08-16T09:23:50.857Z"
     },
     {
       "artifact_id": "generation-guilloche-20260816-index",
@@ -12961,6 +12967,6 @@
   "portal_build": "izzi-review-2026-08-11.7",
   "publication_state": "PUBLIC-PROTOTYPE",
   "schema_version": "1.0",
-  "source_commit": "dcef0dc4bde07a927dfebd99210a685cf1fbf572",
+  "source_commit": "26f763dfa6dd8b4508904cafcbd6aa68916e968d",
   "source_repository": "bdekoz/izzi"
 }
