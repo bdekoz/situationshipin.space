@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "portal_build": "izzi-review-2026-08-11.7",
-  "generated_at": "2026-08-16T09:55:33.374Z",
+  "generated_at": "2026-08-16T09:56:45.374Z",
   "portal_repository": "bdekoz/situationshipin.space",
   "portal_source_commit": "219a9b7f0891998c1525c94fa15b43c490b5d79f",
   "izzi_repository": "bdekoz/izzi",
@@ -64,7 +64,7 @@
     },
     {
       "path": "data/review-items.json",
-      "sha256": "d100b2719d0605f4e97e83c8a726fbafebce87848b8b0be917e0d21d4e25492e"
+      "sha256": "570481592861a76b1f9e9a3cb8abdf17ab1c00a4d0058884855a3f5a37a06fc6"
     },
     {
       "path": "scripts/check-review-site.mjs",
@@ -124,7 +124,7 @@
     }
   ],
   "artifact_inventory": "data/review-items.json",
-  "catalog_sha256": "d100b2719d0605f4e97e83c8a726fbafebce87848b8b0be917e0d21d4e25492e",
+  "catalog_sha256": "570481592861a76b1f9e9a3cb8abdf17ab1c00a4d0058884855a3f5a37a06fc6",
   "notes": [
     "The catalog binds every published derivative to an Izzi source path and SHA-256.",
     "Canonical source MKVs remain outside Pages; one bounded H.264/AAC MP4 proxy is published for continuous motion and audio review with independent lineage.",
