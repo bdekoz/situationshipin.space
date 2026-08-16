@@ -1,6 +1,6 @@
 {
   "baseline_state": "NOT-PROMOTED",
-  "generated_at": "2026-08-16T05:10:40.037Z",
+  "generated_at": "2026-08-16T07:39:28.655Z",
   "human_review_state": "UNREVIEWED",
   "items": [
     {
@@ -54,7 +54,7 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-16T05:10:40.024Z"
+      "added_at": "2026-08-16T07:39:28.642Z"
     },
     {
       "artifact_id": "generation-visualization-20260814",

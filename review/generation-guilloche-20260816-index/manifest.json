@@ -1,0 +1,15 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "generation-guilloche-20260816-index",
+  "artifact_id": "generation-guilloche-20260816-index",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": null,
+  "document": {
+    "path": "/review/media/generation-guilloche-20260816/generation-guilloche-20260816-index.index.html",
+    "sha256": "48a6866b0c6f4a30cb78a51017f5c9e0582ea3e100ef65e628cc420b947d0730",
+    "format": "html",
+    "plan_stage": null,
+    "plan_pdf": null
+  }
+}

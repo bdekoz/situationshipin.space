@@ -198,6 +198,11 @@ async function main() {
     added_at: new Date().toISOString(),
   };
 
+  const entryPageDir = join(repositoryRoot, "review", ARTIFACT_ID);
+  await mkdir(entryPageDir, { recursive: true });
+  await writeFile(join(entryPageDir, "index.html"), renderReviewPage(entry));
+  await writeFile(join(entryPageDir, "manifest.json"), renderReviewManifest(entry));
+
   catalog.items = catalog.items.filter((item) => item.artifact_id !== ARTIFACT_ID);
   catalog.items.push(entry);
   catalog.items.sort((left, right) =>
