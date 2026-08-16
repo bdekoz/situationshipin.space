@@ -1,8 +1,39 @@
 {
   "baseline_state": "NOT-PROMOTED",
-  "generated_at": "2026-08-16T07:58:00.386Z",
+  "generated_at": "2026-08-16T08:23:37.858Z",
   "human_review_state": "UNREVIEWED",
   "items": [
+    {
+      "artifact_id": "generation-visualization-20260814",
+      "title": "Generative Visualization 20260814",
+      "description": "One aggregated entry for the 2026-08-14 izzi generative visualization family: line graph, grid, kusama, and chord artifacts from the alpha60-results and mmrl-metadata data pipeline. Open the index to reach each individual review page.",
+      "alt": "Index of the 4 generative visualization review artifacts from 2026-08-14.",
+      "family": "generation-visualization-20260814",
+      "generation_class": "visualization-index",
+      "feedback_round": "generation-visualization-20260814",
+      "media_kind": "index",
+      "review_scope": "GENERATION-VISUALIZATION-20260814",
+      "review_mode": "output",
+      "source_path": "izzi dcef0dc4bde07a927dfebd99210a685cf1fbf572 outputs/review/feedback/visual/visualization (family aggregate)",
+      "published_path": "review/media/generation-visualization-20260814/generation-visualization-20260814.index.html",
+      "sha256": "c64935d2c1fb0aa4e7cc54a923242b2c6dbb148cd4e253e4525ecddd96962c84",
+      "bytes": 4076,
+      "format": "html",
+      "generation_commit": "dcef0dc4bde07a927dfebd99210a685cf1fbf572",
+      "generation_state": "CURRENT",
+      "index_members": [
+        "visualization-line",
+        "visualization-grid",
+        "visualization-grid-1x8",
+        "visualization-kusama",
+        "visualization-chord"
+      ],
+      "technical_state": "VISUALIZATION-INDEX",
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "review_category": "proofs",
+      "added_at": "2026-08-16T08:23:37.845Z"
+    },
     {
       "artifact_id": "generation-guilloche-20260816-index",
       "title": "Guilloche Capability 20260816",
@@ -136,36 +167,6 @@
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
       "added_at": "2026-08-16T07:58:00.374Z"
-    },
-    {
-      "artifact_id": "generation-visualization-20260814",
-      "title": "Generative Visualization 20260814",
-      "description": "One aggregated entry for the 2026-08-14 izzi generative visualization family: line graph, grid, kusama, and chord artifacts from the alpha60-results and mmrl-metadata data pipeline. Open the index to reach each individual review page.",
-      "alt": "Index of the 4 generative visualization review artifacts from 2026-08-14.",
-      "family": "generation-visualization-20260814",
-      "generation_class": "visualization-index",
-      "feedback_round": "generation-visualization-20260814",
-      "media_kind": "index",
-      "review_scope": "GENERATION-VISUALIZATION-20260814",
-      "review_mode": "output",
-      "source_path": "izzi c74d0dba4d198229950a439b43f319dba2de3e4c outputs/review/feedback/visual/visualization (family aggregate)",
-      "published_path": "review/media/generation-visualization-20260814/generation-visualization-20260814.index.html",
-      "sha256": "31352155c4b8609b4a26eae12a29e60cfb1a16dc0905976e2c031a7b8e49f68c",
-      "bytes": 3658,
-      "format": "html",
-      "generation_commit": "c74d0dba4d198229950a439b43f319dba2de3e4c",
-      "generation_state": "CURRENT",
-      "index_members": [
-        "visualization-line",
-        "visualization-grid",
-        "visualization-kusama",
-        "visualization-chord"
-      ],
-      "technical_state": "VISUALIZATION-INDEX",
-      "human_review_state": "UNREVIEWED",
-      "baseline_state": "NOT-PROMOTED",
-      "review_category": "proofs",
-      "added_at": "2026-08-16T02:11:14.826Z"
     },
     {
       "artifact_id": "generation-movement-20260814",
@@ -12960,6 +12961,6 @@
   "portal_build": "izzi-review-2026-08-11.7",
   "publication_state": "PUBLIC-PROTOTYPE",
   "schema_version": "1.0",
-  "source_commit": "aeaefa657273406a4d9a0b0709867c30595092e2",
+  "source_commit": "dcef0dc4bde07a927dfebd99210a685cf1fbf572",
   "source_repository": "bdekoz/izzi"
 }

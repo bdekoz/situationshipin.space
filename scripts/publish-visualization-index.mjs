@@ -21,6 +21,7 @@ const MEDIA_DIR = "review/media/visualization";
 const MEMBERS = [
   { name: "visualization-line", title: "Visualization — line graph", description: "Line graph re-created from the alpha60-results week series (make_line_graph pipeline, accessibility contract).", alt: "Line graph of a weekly downloads series." },
   { name: "visualization-grid", title: "Visualization — grid", description: "Deterministic grid of cumulative unique-BTIHA entries from the alpha60-results data.", alt: "Grid of cumulative collection entries." },
+  { name: "visualization-grid-1x8", title: "Visualization — grid 1×8", description: "Single-row eight-column grid variant from the alpha60-results cumulative data.", alt: "Single-row eight-column cumulative grid." },
   { name: "visualization-kusama", title: "Visualization — kusama", description: "Radial kusama view of mmrl cast-lead attribute values (kusama_ids_orbit_low).", alt: "Radial kusama attribute visualization." },
   { name: "visualization-chord", title: "Visualization — chord", description: "First-pass bipartite chord layout of media-object to attribute pairs from mmrl metadata.", alt: "Bipartite chord visualization." },
 ];
