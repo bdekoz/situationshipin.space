@@ -4,6 +4,9 @@
   "artifact_id": "movement-camera-blade-runner",
   "style": "house-style",
   "source_media": null,
-  "proxy": null,
+  "proxy": {
+    "path": "/review/media/movement/movement-camera-blade-runner.mp4",
+    "sha256": "c5812c4cf695b0caa6892e5c0a64b7881ce3973eccc0daa29897a7f25dcf5d0f"
+  },
   "document": null
 }

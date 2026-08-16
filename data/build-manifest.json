@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
   "portal_build": "izzi-review-2026-08-11.7",
-  "generated_at": "2026-08-16T09:23:51.040Z",
+  "generated_at": "2026-08-16T09:25:04.097Z",
   "portal_repository": "bdekoz/situationshipin.space",
   "portal_source_commit": "219a9b7f0891998c1525c94fa15b43c490b5d79f",
   "izzi_repository": "bdekoz/izzi",
-  "izzi_source_commit": "26f763dfa6dd8b4508904cafcbd6aa68916e968d",
+  "izzi_source_commit": "217fe7e0d5fae82537dbe1c01ed9ec8e343b980e",
   "publication_state": "PUBLIC-PROTOTYPE",
   "human_review_state": "UNREVIEWED",
   "baseline_state": "NOT-PROMOTED",
@@ -64,7 +64,7 @@
     },
     {
       "path": "data/review-items.json",
-      "sha256": "71b76529510b57003a3fbdf621fac17d233692361de66d6ca6a5bfe801793f37"
+      "sha256": "3524df2d0dd7cedda12ad086b117987229b1d42ef74ce65f471c652547ebddf5"
     },
     {
       "path": "scripts/check-review-site.mjs",
@@ -104,7 +104,7 @@
     },
     {
       "path": "scripts/publish-movement-index.mjs",
-      "sha256": "a7dc5d2ea8dcab5828030d38c4a208598ec1e4cdd8e32f75d14a3e5f98a295ba"
+      "sha256": "79d55f3b40f942a1583c671a9453f619052a2deb8148e237efe9dbd49302c439"
     },
     {
       "path": "scripts/publish-hamonshu-style-index.mjs",
@@ -124,7 +124,7 @@
     }
   ],
   "artifact_inventory": "data/review-items.json",
-  "catalog_sha256": "71b76529510b57003a3fbdf621fac17d233692361de66d6ca6a5bfe801793f37",
+  "catalog_sha256": "3524df2d0dd7cedda12ad086b117987229b1d42ef74ce65f471c652547ebddf5",
   "notes": [
     "The catalog binds every published derivative to an Izzi source path and SHA-256.",
     "Canonical source MKVs remain outside Pages; one bounded H.264/AAC MP4 proxy is published for continuous motion and audio review with independent lineage.",

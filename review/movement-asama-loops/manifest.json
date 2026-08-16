@@ -4,6 +4,9 @@
   "artifact_id": "movement-asama-loops",
   "style": "house-style",
   "source_media": null,
-  "proxy": null,
+  "proxy": {
+    "path": "/review/media/movement/movement-asama-loops.mp4",
+    "sha256": "db88f8608f4ab6bd915e41ed3a6f91a607cf2a4353a0856a89c273575579bdc5"
+  },
   "document": null
 }

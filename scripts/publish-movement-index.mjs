@@ -106,9 +106,12 @@ async function main() {
   const members = [];
   for (const spec of MEMBERS) {
     const pngPath = `${MEDIA_DIR}/${spec.name}.png`;
+    const mp4Path = `${MEDIA_DIR}/${spec.name}.mp4`;
     await mkdir(join(repositoryRoot, MEDIA_DIR), { recursive: true });
     await copyFile(join(artifactsDir, `${spec.name}.png`), join(repositoryRoot, pngPath));
+    await copyFile(join(artifactsDir, `${spec.name}.mp4`), join(repositoryRoot, mp4Path));
     const pngBytes = await readFile(join(repositoryRoot, pngPath));
+    const mp4Bytes = await readFile(join(repositoryRoot, mp4Path));
     const { width, height } = pngDimensions(pngBytes);
     const item = {
       artifact_id: spec.name,
@@ -118,15 +121,15 @@ async function main() {
       family: FAMILY,
       generation_class: "movement",
       feedback_round: FAMILY,
-      media_kind: "image",
+      media_kind: "video",
       review_scope: "GENERATION-MOVEMENT-20260814",
       review_mode: "output",
-      source_path: `izzi ${izziCommit} outputs/review/feedback/visual/movement/${spec.name}.svg`,
-      published_path: pngPath,
-      sha256: sha256(pngBytes),
-      bytes: pngBytes.length,
+      source_path: `izzi ${izziCommit} outputs/review/feedback/visual/movement/round-01/${spec.name}.mp4`,
+      published_path: mp4Path,
+      sha256: sha256(mp4Bytes),
+      bytes: mp4Bytes.length,
       width, height,
-      format: "png",
+      format: "mp4",
       technical_state: "VERIFIED",
       human_review_state: "UNREVIEWED",
       baseline_state: "NOT-PROMOTED",

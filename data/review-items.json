@@ -1,8 +1,36 @@
 {
   "baseline_state": "NOT-PROMOTED",
-  "generated_at": "2026-08-16T09:23:50.869Z",
+  "generated_at": "2026-08-16T09:25:03.926Z",
   "human_review_state": "UNREVIEWED",
   "items": [
+    {
+      "artifact_id": "generation-movement-20260814",
+      "title": "Generative Movement 20260814",
+      "description": "One aggregated entry for the 2026-08-14 izzi generative movement family: the asama-01-roji camera track example and the Blade Runner cut-5 extracted camera movement. Open the index to reach each individual review page.",
+      "alt": "Index of the 2 generative movement review artifacts from 2026-08-14.",
+      "family": "generation-movement-20260814",
+      "generation_class": "movement-index",
+      "feedback_round": "generation-movement-20260814",
+      "media_kind": "index",
+      "review_scope": "GENERATION-MOVEMENT-20260814",
+      "review_mode": "output",
+      "source_path": "izzi 217fe7e0d5fae82537dbe1c01ed9ec8e343b980e outputs/review/feedback/visual/movement (family aggregate)",
+      "published_path": "review/media/generation-movement-20260814/generation-movement-20260814.index.html",
+      "sha256": "2f531da12d4dea756085353fab1904592038c11ce981a52d1fe7f07bd407c17b",
+      "bytes": 2887,
+      "format": "html",
+      "generation_commit": "217fe7e0d5fae82537dbe1c01ed9ec8e343b980e",
+      "generation_state": "CURRENT",
+      "index_members": [
+        "movement-asama-loops",
+        "movement-camera-blade-runner"
+      ],
+      "technical_state": "MOVEMENT-INDEX",
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "review_category": "proofs",
+      "added_at": "2026-08-16T09:25:03.914Z"
+    },
     {
       "artifact_id": "generation-visualization-20260814",
       "title": "Generative Visualization 20260814",
@@ -173,34 +201,6 @@
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
       "added_at": "2026-08-16T07:58:00.374Z"
-    },
-    {
-      "artifact_id": "generation-movement-20260814",
-      "title": "Generative Movement 20260814",
-      "description": "One aggregated entry for the 2026-08-14 izzi generative movement family: the asama-01-roji camera track example and the Blade Runner cut-5 extracted camera movement. Open the index to reach each individual review page.",
-      "alt": "Index of the 2 generative movement review artifacts from 2026-08-14.",
-      "family": "generation-movement-20260814",
-      "generation_class": "movement-index",
-      "feedback_round": "generation-movement-20260814",
-      "media_kind": "index",
-      "review_scope": "GENERATION-MOVEMENT-20260814",
-      "review_mode": "output",
-      "source_path": "izzi c74d0dba4d198229950a439b43f319dba2de3e4c outputs/review/feedback/visual/movement (family aggregate)",
-      "published_path": "review/media/generation-movement-20260814/generation-movement-20260814.index.html",
-      "sha256": "3da17539cc789a33fc93b62f707813f0eac78b2d6019d66e16c9ce88cce6fc1f",
-      "bytes": 2887,
-      "format": "html",
-      "generation_commit": "c74d0dba4d198229950a439b43f319dba2de3e4c",
-      "generation_state": "CURRENT",
-      "index_members": [
-        "movement-asama-loops",
-        "movement-camera-blade-runner"
-      ],
-      "technical_state": "MOVEMENT-INDEX",
-      "human_review_state": "UNREVIEWED",
-      "baseline_state": "NOT-PROMOTED",
-      "review_category": "proofs",
-      "added_at": "2026-08-16T02:11:08.751Z"
     },
     {
       "added_at": "2026-08-15T17:05:11.914Z",
@@ -12967,6 +12967,6 @@
   "portal_build": "izzi-review-2026-08-11.7",
   "publication_state": "PUBLIC-PROTOTYPE",
   "schema_version": "1.0",
-  "source_commit": "26f763dfa6dd8b4508904cafcbd6aa68916e968d",
+  "source_commit": "217fe7e0d5fae82537dbe1c01ed9ec8e343b980e",
   "source_repository": "bdekoz/izzi"
 }
