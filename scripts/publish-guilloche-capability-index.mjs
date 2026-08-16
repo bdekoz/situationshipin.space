@@ -38,14 +38,12 @@ const SERIES = [
 ];
 
 const MEMBERS = CATEGORIES.flatMap((category) =>
-  SERIES.flatMap((series) =>
-    [1, 2, 3].map((variation) => ({
-      name: `capability-${category.slug}-${series.slug}-${String(variation).padStart(2, "0")}`,
-      title: `${category.title} — ${series.title} variation ${variation}`,
-      description: `${category.description}. ${series.description} Variation ${variation} of 3.`,
-      alt: `${category.title}, ${series.slug} variation ${variation}.`,
-    }))
-  )
+  SERIES.map((series) => ({
+    name: `capability-${category.slug}-${series.slug}`,
+    title: `${category.title} — ${series.title} variations`,
+    description: `${category.description}. ${series.description} Combined as a 1x3 grid of three variations.`,
+    alt: `${category.title}, ${series.slug} 1x3 grid of three variations.`,
+  }))
 );
 
 function sha256(buffer) {
@@ -135,14 +133,15 @@ async function main() {
   const catalog = JSON.parse(await readFile(catalogPath, "utf8"));
   const members = [];
   for (const category of CATEGORIES)
-    for (let variation = 1; variation <= 3; variation += 1)
-      {
-        const oldName = `capability-${category.slug}-${String(variation).padStart(2, "0")}`;
-        await rm(join(repositoryRoot, "review", oldName), { recursive: true, force: true });
-        await rm(join(repositoryRoot, MEDIA_DIR, `${oldName}.png`), { force: true });
-      }
+    for (const series of SERIES)
+      for (let variation = 1; variation <= 3; variation += 1)
+        {
+          const oldName = `capability-${category.slug}-${series.slug}-${String(variation).padStart(2, "0")}`;
+          await rm(join(repositoryRoot, "review", oldName), { recursive: true, force: true });
+          await rm(join(repositoryRoot, MEDIA_DIR, `${oldName}.png`), { force: true });
+        }
   catalog.items = catalog.items.filter((item) =>
-    !/^capability-[a-z0-9-]+-\d{2}$/.test(item.artifact_id || ""));
+    !/^capability-[a-z0-9-]+-[a-z]+-\d{2}$/.test(item.artifact_id || ""));
   for (const spec of MEMBERS) {
     const pngPath = `${MEDIA_DIR}/${spec.name}.png`;
     await mkdir(join(repositoryRoot, MEDIA_DIR), { recursive: true });
@@ -181,7 +180,7 @@ async function main() {
   }
 
   const title = "Guilloche Capability 20260816";
-  const description = "Parameter-space review of the expanded izzi guilloche vocabulary: nine categories, four per-axis series of three variations each (symmetry, density, scale, phase).";
+  const description = "Parameter-space review of the expanded izzi guilloche vocabulary: nine categories, four per-axis series each consolidated into one 1x3 variation grid (symmetry, density, scale, phase).";
   const indexHtml = renderIndexHtml({
     title, description, members, commit: izziCommit,
     indexDir: join("review", "media", FAMILY),
@@ -194,7 +193,7 @@ async function main() {
   const entry = {
     artifact_id: ARTIFACT_ID,
     title, description,
-    alt: "Index of the 108 expanded izzi guilloche capability review artifacts from 2026-08-16.",
+    alt: "Index of the 36 consolidated izzi guilloche capability review plates from 2026-08-16.",
     family: FAMILY,
     generation_class: "guilloche-index",
     feedback_round: FAMILY,
