@@ -7,7 +7,7 @@
 //     --izzi-commit <40-hex> --artifacts-dir <dir with capability-*.png>
 
 import { createHash } from "node:crypto";
-import { mkdir, readFile, writeFile, copyFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile, copyFile, rm } from "node:fs/promises";
 import { dirname, join, relative, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { renderReviewPage, renderReviewManifest } from "./review-page.mjs";
@@ -30,13 +30,22 @@ const CATEGORIES = [
   { slug: "rosette-control", title: "Rosette control", description: "Existing rose-orbit vocabulary control" },
 ];
 
+const SERIES = [
+  { slug: "symmetry", title: "Symmetry", description: "Symmetry varies while density stays fixed." },
+  { slug: "density", title: "Density", description: "Density varies while symmetry stays fixed." },
+  { slug: "scale", title: "Scale", description: "Scale varies while phase stays fixed." },
+  { slug: "phase", title: "Phase", description: "Phase varies while scale stays fixed." },
+];
+
 const MEMBERS = CATEGORIES.flatMap((category) =>
-  [1, 2, 3].map((variation) => ({
-    name: `capability-${category.slug}-${String(variation).padStart(2, "0")}`,
-    title: `${category.title} variation ${variation}`,
-    description: `${category.description} parameter-space sweep, variation ${variation} of 3 (option 1 symmetry/density, option 2 scale/phase).`,
-    alt: `${category.title} parameter-space variation ${variation}.`,
-  }))
+  SERIES.flatMap((series) =>
+    [1, 2, 3].map((variation) => ({
+      name: `capability-${category.slug}-${series.slug}-${String(variation).padStart(2, "0")}`,
+      title: `${category.title} — ${series.title} variation ${variation}`,
+      description: `${category.description}. ${series.description} Variation ${variation} of 3.`,
+      alt: `${category.title}, ${series.slug} variation ${variation}.`,
+    }))
+  )
 );
 
 function sha256(buffer) {
@@ -125,6 +134,15 @@ async function main() {
 
   const catalog = JSON.parse(await readFile(catalogPath, "utf8"));
   const members = [];
+  for (const category of CATEGORIES)
+    for (let variation = 1; variation <= 3; variation += 1)
+      {
+        const oldName = `capability-${category.slug}-${String(variation).padStart(2, "0")}`;
+        await rm(join(repositoryRoot, "review", oldName), { recursive: true, force: true });
+        await rm(join(repositoryRoot, MEDIA_DIR, `${oldName}.png`), { force: true });
+      }
+  catalog.items = catalog.items.filter((item) =>
+    !/^capability-[a-z0-9-]+-\d{2}$/.test(item.artifact_id || ""));
   for (const spec of MEMBERS) {
     const pngPath = `${MEDIA_DIR}/${spec.name}.png`;
     await mkdir(join(repositoryRoot, MEDIA_DIR), { recursive: true });
@@ -163,7 +181,7 @@ async function main() {
   }
 
   const title = "Guilloche Capability 20260816";
-  const description = "Parameter-space review of the expanded izzi guilloche vocabulary: nine categories, three variations each (option 1 symmetry/density, option 2 scale/phase).";
+  const description = "Parameter-space review of the expanded izzi guilloche vocabulary: nine categories, four per-axis series of three variations each (symmetry, density, scale, phase).";
   const indexHtml = renderIndexHtml({
     title, description, members, commit: izziCommit,
     indexDir: join("review", "media", FAMILY),
@@ -176,7 +194,7 @@ async function main() {
   const entry = {
     artifact_id: ARTIFACT_ID,
     title, description,
-    alt: "Index of the 27 expanded izzi guilloche capability review artifacts from 2026-08-16.",
+    alt: "Index of the 108 expanded izzi guilloche capability review artifacts from 2026-08-16.",
     family: FAMILY,
     generation_class: "guilloche-index",
     feedback_round: FAMILY,
