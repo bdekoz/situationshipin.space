@@ -1,6 +1,6 @@
 {
   "baseline_state": "NOT-PROMOTED",
-  "generated_at": "2026-08-16T09:43:32.140Z",
+  "generated_at": "2026-08-16T09:47:36.375Z",
   "human_review_state": "UNREVIEWED",
   "items": [
     {
@@ -280,10 +280,10 @@
       "review_mode": "output",
       "source_path": "outputs/review/feedback/visual/guilloche/round-05/static + outputs/ad-hoc/moire.v1 + outputs/ad-hoc/surface-tension.v1 (make-check 2026-08-14 aggregate)",
       "published_path": "review/media/izzi-generation-20260814/izzi-generation-20260814.index.html",
-      "sha256": "a5015c4f5aaa3c72b15d2a153e62df41e96ea32b6cfa19eb3980508cc87a9750",
+      "sha256": "0b019230468b02dfc7512e7bfdf3bfe3341396cd15e4d451504c58b3efc2b44f",
       "bytes": 20609,
       "format": "html",
-      "generation_commit": "3fd808924d4b185a67e8e161a9d461bf76aea103",
+      "generation_commit": "cd1919781daede1a8783a7707af365aedad87be1",
       "generation_state": "CURRENT",
       "index_members": [
         "reference-image-danmaku-v1-category-grid",
@@ -318,7 +318,7 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-16T09:43:32.140Z"
+      "added_at": "2026-08-16T09:47:36.375Z"
     },
     {
       "artifact_id": "resource-hamonshu-20260815-2-index",
