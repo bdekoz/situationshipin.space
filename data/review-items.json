@@ -1,6 +1,6 @@
 {
   "baseline_state": "NOT-PROMOTED",
-  "generated_at": "2026-08-16T09:25:03.926Z",
+  "generated_at": "2026-08-16T09:32:49.970Z",
   "human_review_state": "UNREVIEWED",
   "items": [
     {
@@ -280,12 +280,13 @@
       "review_mode": "output",
       "source_path": "outputs/review/feedback/visual/guilloche/round-05/static + outputs/ad-hoc/moire.v1 + outputs/ad-hoc/surface-tension.v1 (make-check 2026-08-14 aggregate)",
       "published_path": "review/media/izzi-generation-20260814/izzi-generation-20260814.index.html",
-      "sha256": "40c4f339497cc2dcad2c13f70126d22cb33c67fe7944f2e6641a3233258c89f6",
-      "bytes": 19994,
+      "sha256": "4be3a3433cc793667abd0d38a20a061e1dc2529eeaf1e0d3bc4a7cb6ad542a55",
+      "bytes": 20609,
       "format": "html",
-      "generation_commit": "069fbc3618d677e272af27b37842e6e1340ae345",
+      "generation_commit": "3fd808924d4b185a67e8e161a9d461bf76aea103",
       "generation_state": "CURRENT",
       "index_members": [
+        "reference-image-danmaku-v1-category-grid",
         "reference-image-guilloche-v4-all-grid",
         "reference-image-guilloche-v4-combination-grid",
         "reference-image-guilloche-v4-number-grid",
@@ -317,7 +318,7 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-15T17:05:06.317Z"
+      "added_at": "2026-08-16T09:32:49.969Z"
     },
     {
       "artifact_id": "here-lies-trouble-episode-01-frogtown-v2-audio-canary-65919a746572",

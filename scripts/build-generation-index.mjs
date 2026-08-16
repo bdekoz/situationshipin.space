@@ -127,6 +127,13 @@ function memberDisplay(name) {
       description: `${title} from the make-check reference image set (guilloche/moire/surface tension). Source: outputs/ad-hoc/surface-tension.v1/${name}.png. WebP q82 review copy flattened on black.`,
     };
   }
+  if (name === "danmaku-v1-category-grid") {
+    const title = "Danmaku v1 category grid";
+    return {
+      title,
+      description: `${title} from the make-check reference image set (danmaku text overlay). Source: outputs/ad-hoc/danmu.v1/${name}.png. WebP q82 review copy flattened on black.`,
+    };
+  }
   const plate = /^(moire|surface-tension)-(\d{2})-(.+)$/.exec(name);
   if (plate) {
     const family = plate[1] === "moire" ? "Moire" : "Surface tension";

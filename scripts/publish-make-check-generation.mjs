@@ -91,8 +91,8 @@ async function main() {
     width: member.width,
     height: member.height,
   }));
-  if (members.length !== 26) {
-    console.error(`[FAIL] expected 26 reference members, observed ${members.length}`);
+  if (members.length !== 27) {
+    console.error(`[FAIL] expected 27 reference members, observed ${members.length}`);
     process.exitCode = 1;
     return;
   }
