@@ -2,7 +2,7 @@
 
 import { createHash } from "node:crypto";
 import { readdir, readFile, stat } from "node:fs/promises";
-import { dirname, extname, resolve, sep } from "node:path";
+import { dirname, extname, posix, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -74,6 +74,48 @@ async function recursiveFiles(root) {
     else if (entry.isFile()) result.push(path);
   }
   return result;
+}
+
+function repositoryRelative(path) {
+  return posix.relative(repositoryRoot, path);
+}
+
+function resolveReviewReference(baseDirectory, url) {
+  const cleaned = url.replace(/[?#].*$/, "");
+  if (cleaned.startsWith("/review/")) {
+    return posix.normalize(cleaned.slice(1));
+  }
+  if (cleaned.startsWith("/") || cleaned.startsWith("//")) {
+    return null;
+  }
+  return posix.normalize(posix.join(baseDirectory, cleaned));
+}
+
+async function collectReviewReferences() {
+  const referenced = new Set();
+  const reviewRoot = resolve(repositoryRoot, "review");
+  for (const path of await recursiveFiles(reviewRoot)) {
+    if (extname(path).toLowerCase() !== ".html") continue;
+    const htmlRelative = repositoryRelative(path);
+    const html = await readFile(path, "utf8");
+    const pattern = /(?:src|href)=["']([^"']+)["']/g;
+    for (const match of html.matchAll(pattern)) {
+      const url = match[1];
+      if (!url || /^(?:data:|mailto:|tel:|https?:|#)/i.test(url)) continue;
+      const target = resolveReviewReference(posix.dirname(htmlRelative), url);
+      if (!target || !target.startsWith("review/")) continue;
+      const targetFile = target.endsWith("/") ? `${target}index.html` : target;
+      const absoluteTarget = resolve(repositoryRoot, targetFile);
+      if (!withinRepository(absoluteTarget)) continue;
+      referenced.add(targetFile);
+      try {
+        await stat(absoluteTarget);
+      } catch {
+        fail(`HTML reference is broken: ${htmlRelative} -> ${targetFile}`);
+      }
+    }
+  }
+  return referenced;
 }
 
 let catalog;
@@ -278,6 +320,34 @@ for (const path of await recursiveFiles(resolve(repositoryRoot, "review"))) {
   if (forbiddenExtensions.has(extname(path).toLowerCase())) {
     fail(`source media was copied into the public review tree: ${path}`);
   }
+}
+
+const htmlReferences = await collectReviewReferences();
+const referencedReviewFiles = new Set(htmlReferences);
+const addReviewCompanions = (id) => {
+  if (!id) return;
+  referencedReviewFiles.add(`review/${id}/index.html`);
+  referencedReviewFiles.add(`review/${id}/manifest.json`);
+};
+for (const item of catalog.items) {
+  addReviewCompanions(item.artifact_id);
+  for (const memberId of item.index_members || []) addReviewCompanions(memberId);
+  if (item.published_path) referencedReviewFiles.add(posix.normalize(item.published_path));
+  if (item.plan_pdf?.path) referencedReviewFiles.add(posix.normalize(item.plan_pdf.path));
+  if (item.frame_manifest_path) referencedReviewFiles.add(posix.normalize(item.frame_manifest_path));
+}
+
+const staleReviewFiles = [];
+for (const path of await recursiveFiles(resolve(repositoryRoot, "review"))) {
+  const rel = repositoryRelative(path);
+  if (!referencedReviewFiles.has(rel)) staleReviewFiles.push(rel);
+}
+if (staleReviewFiles.length) {
+  for (const rel of staleReviewFiles) {
+    fail(`stale review file is not referenced by the catalog or any HTML page: ${rel}`);
+  }
+} else {
+  pass(`review tree has no stale files (${referencedReviewFiles.size} referenced paths)`);
 }
 
 if (payloadBytes > maximumPayloadBytes) {

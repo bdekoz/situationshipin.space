@@ -18,7 +18,7 @@
 
 import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile, stat, readdir } from "node:fs/promises";
-import { dirname, join, resolve, basename, extname } from "node:path";
+import { dirname, join, relative, resolve, sep, basename, extname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { renderReviewPage, renderReviewManifest } from "./review-page.mjs";
 
@@ -73,15 +73,16 @@ function readJpegDimensions(buffer) {
   return null;
 }
 
-function renderIndexHtml({ title, description, members, commit }) {
+function renderIndexHtml({ title, description, members, commit, indexDir }) {
   const escape = (value) =>
     String(value ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const rows = members
     .map((member) => {
       const id = member.artifact_id;
+      const thumbSrc = relative(indexDir, member.mediaPath).split(sep).join("/");
       return [
         `<li class="pass">`,
-        `<a class="thumb" href="../../${id}/"><img src="../../${member.mediaPath}" alt="" loading="lazy" decoding="async"></a>`,
+        `<a class="thumb" href="../../${id}/"><img src="${thumbSrc}" alt="" loading="lazy" decoding="async"></a>`,
         `<div class="pass-body">`,
         `<h3><a href="../../${id}/">${escape(member.title)}</a></h3>`,
         `<p>${escape(member.description)}</p>`,
@@ -225,6 +226,7 @@ async function main() {
       description,
       members: docMembers,
       commit: izziCommit,
+      indexDir: INDEX_DIR,
     });
     const indexPath = join(repositoryRoot, INDEX_DIR, `hamonshu_${document}.index.html`);
     if (!dryRun) {

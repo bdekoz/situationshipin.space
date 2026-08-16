@@ -8,7 +8,7 @@
 
 import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile, copyFile } from "node:fs/promises";
-import { dirname, join, resolve } from "node:path";
+import { dirname, join, relative, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { renderReviewPage, renderReviewManifest } from "./review-page.mjs";
 
@@ -41,19 +41,22 @@ function argumentsMap(argv) {
 function pngDimensions(bytes) {
   return { width: bytes.readUInt32BE(16), height: bytes.readUInt32BE(20) };
 }
-function renderIndexHtml({ title, description, members, commit }) {
+function renderIndexHtml({ title, description, members, commit, indexDir }) {
   const escape = (value) => String(value ?? "").replace(/[&<>"]/g,
     (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-  const rows = members.map((member) => [
+  const rows = members.map((member) => {
+    const thumbSrc = relative(indexDir, member.mediaPath).split(sep).join("/");
+    return [
     `<li class="pass">`,
-    `<a class="thumb" href="../../${member.artifact_id}/"><img src="../../${member.mediaPath}" alt="" loading="lazy" decoding="async"></a>`,
+    `<a class="thumb" href="../../${member.artifact_id}/"><img src="${thumbSrc}" alt="" loading="lazy" decoding="async"></a>`,
     `<div class="pass-body">`,
     `<h3><a href="../../${member.artifact_id}/">${escape(member.title)}</a></h3>`,
     `<p>${escape(member.description)}</p>`,
     `<p class="meta">${escape(member.artifact_id)}</p>`,
     `</div>`,
     `</li>`,
-  ].join("\n")).join("\n");
+  ].join("\n");
+  }).join("\n");
   return `<!doctype html>
 <html lang="en">
   <head>
@@ -105,10 +108,8 @@ async function main() {
   const members = [];
   for (const spec of MEMBERS) {
     const pngPath = `${MEDIA_DIR}/${spec.name}.png`;
-    const svgPath = `${MEDIA_DIR}/${spec.name}.svg`;
     await mkdir(join(repositoryRoot, MEDIA_DIR), { recursive: true });
     await copyFile(join(artifactsDir, `${spec.name}.png`), join(repositoryRoot, pngPath));
-    await copyFile(join(artifactsDir, `${spec.name}.svg`), join(repositoryRoot, svgPath));
     const pngBytes = await readFile(join(repositoryRoot, pngPath));
     const { width, height } = pngDimensions(pngBytes);
     const item = {
@@ -144,7 +145,10 @@ async function main() {
 
   const title = "Generative Visualization 20260814";
   const description = "One aggregated entry for the 2026-08-14 izzi generative visualization family: line graph, grid, kusama, and chord artifacts from the alpha60-results and mmrl-metadata data pipeline. Open the index to reach each individual review page.";
-  const indexHtml = renderIndexHtml({ title, description, members, commit: izziCommit });
+  const indexHtml = renderIndexHtml({
+    title, description, members, commit: izziCommit,
+    indexDir: join("review", "media", FAMILY),
+  });
   const indexPath = join(repositoryRoot, "review/media", FAMILY, `${ARTIFACT_ID}.index.html`);
   await mkdir(dirname(indexPath), { recursive: true });
   await writeFile(indexPath, indexHtml);

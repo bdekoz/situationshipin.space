@@ -14,7 +14,7 @@
 
 import { createHash } from "node:crypto";
 import { mkdir, readFile, writeFile, copyFile, stat } from "node:fs/promises";
-import { dirname, join, resolve } from "node:path";
+import { dirname, join, relative, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
@@ -70,15 +70,16 @@ function pngDimensions(bytes) {
   };
 }
 
-function renderIndexHtml({ title, description, members, commit }) {
+function renderIndexHtml({ title, description, members, commit, indexDir }) {
   const escape = (value) =>
     String(value ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
   const rows = members
     .map((member) => {
       const id = member.artifact_id;
+      const thumbSrc = relative(indexDir, member.mediaPath).split(sep).join("/");
       return [
         `<li class="pass">`,
-        `<a class="thumb" href="../../${id}/"><img src="../../${member.mediaPath}" alt="" loading="lazy" decoding="async"></a>`,
+        `<a class="thumb" href="../../${id}/"><img src="${thumbSrc}" alt="" loading="lazy" decoding="async"></a>`,
         `<div class="pass-body">`,
         `<h3><a href="../../${id}/">${escape(member.title)}</a></h3>`,
         `<p>${escape(member.description)}</p>`,
@@ -194,7 +195,10 @@ async function main() {
   const title = "Color Palette Family 20260814";
   const description =
     "One aggregated entry for the 2026-08-14 izzi color palette family: 15 deterministic swatch-grid artifacts (basic palettes, source palettes, perceptual tints, RGB\u2194HSV grids, band sweeps). Open the index to reach each individual review page.";
-  const indexHtml = renderIndexHtml({ title, description, members, commit: izziCommit });
+  const indexHtml = renderIndexHtml({
+    title, description, members, commit: izziCommit,
+    indexDir: join("review", "media", FAMILY),
+  });
   const indexPath = join(repositoryRoot, "review/media", FAMILY, `${ARTIFACT_ID}.index.html`);
   if (!dryRun) {
     await mkdir(dirname(indexPath), { recursive: true });
