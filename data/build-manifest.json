@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "portal_build": "izzi-review-2026-08-11.7",
-  "generated_at": "2026-08-16T09:59:51.204Z",
+  "generated_at": "2026-08-17T05:04:38.036Z",
   "portal_repository": "bdekoz/situationshipin.space",
   "portal_source_commit": "219a9b7f0891998c1525c94fa15b43c490b5d79f",
   "izzi_repository": "bdekoz/izzi",
@@ -52,15 +52,15 @@
     },
     {
       "path": "plans.html",
-      "sha256": "f5d9e7e057817e2b7e13a0aecce2da20084919e08cc79492cdf82a15a155327b"
+      "sha256": "fa1da7d64f6734111040d31e81ed141fe242607859f604bac47089556f5ae2bc"
     },
     {
       "path": "assets/css/review.css",
-      "sha256": "62a2cccdfa6faa0f58b2de3931efba08fff7e4a6eb0d2befba0724546dd011a3"
+      "sha256": "9a91980c75e2d154a289e54dc11ef69f038116e00ac5a8445366f7668b99b8bd"
     },
     {
       "path": "assets/js/review.js",
-      "sha256": "33ef3733aac4d36088db3a4abcea0292939dd9cd7fa065c8b48767894d7593af"
+      "sha256": "60e32460f120c636ad49ddb54e0d4e152a9e564548734036f095a42efc9f7db0"
     },
     {
       "path": "data/review-items.json",
@@ -68,7 +68,7 @@
     },
     {
       "path": "scripts/check-review-site.mjs",
-      "sha256": "7a93a807222e89bebe5c552e797830367bd2ab71e923008dd0bd20892d078097"
+      "sha256": "09b5471249892f5a0e07954c48401919ad68d104972df23a567bfecb6f081f94"
     },
     {
       "path": "scripts/update-build-manifest.mjs",

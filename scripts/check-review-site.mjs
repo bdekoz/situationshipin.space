@@ -475,6 +475,10 @@ if (!plans.includes('data-review-category="planning"')) {
   fail("plans.html is missing the planning review category");
 }
 
+if (!plans.includes('id="new-title"')) {
+  fail("plans.html is missing the New plan-creation section");
+}
+
 if (!script.includes("pageSize: 10") || !script.includes("AESTHETIC_DECISIONS")
     || !script.includes("source_image_sha256")
     || !script.includes("style-processing-page-")

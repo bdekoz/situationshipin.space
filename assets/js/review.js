@@ -1213,3 +1213,75 @@ function formatDate(value) {
   const date = new Date(value);
   return Number.isNaN(date.valueOf()) ? value : date.toLocaleString([], { dateStyle: "medium", timeStyle: "short" });
 }
+
+(function initializePlanCommandBuilder() {
+  if (document.body.dataset.reviewCategory !== "planning") {
+    return;
+  }
+  const form = document.getElementById("plan-command-form");
+  const output = document.getElementById("plan-command-output");
+  const copyButton = document.getElementById("copy-plan-command");
+  const status = document.getElementById("plan-command-status");
+  if (!form || !output || !copyButton || !status) {
+    return;
+  }
+
+  const read = (id) => document.getElementById(id).value.trim();
+  const escapeShell = (value) =>
+    value.replace(/[\\"]/g, (character) => `\\${character}`);
+
+  function buildCommand() {
+    const vertical = read("pc-vertical") || "<vertical>";
+    const slug = vertical
+      .toLowerCase()
+      .replace(/[^a-z0-9._-]+/g, "-")
+      .replace(/^-+|-+$/g, "") || "my-vertical";
+    const title = read("pc-title") || "My vertical — proposed vertical v2";
+    const description =
+      read("pc-description") || "What the plan reviewer should confirm";
+    const family = read("pc-family") || "<family>";
+    const round = read("pc-round") || "plan-v2";
+    const stage = read("pc-stage") || "vertical";
+    const dryRun = document.getElementById("pc-dry-run").checked;
+    return [
+      "node scripts/publish-plan-proof.mjs \\",
+      "  --approve PROJECT-APPROVED \\",
+      `  --source docs/development/${vertical}/proposal_vertical_v2.md \\`,
+      `  --source-path docs/development/${vertical}/proposal_vertical_v2.md \\`,
+      `  --artifact-id plan-vertical-${slug}-v2 \\`,
+      `  --title "${escapeShell(title)}" \\`,
+      `  --description "${escapeShell(description)}" \\`,
+      `  --family ${family} \\`,
+      `  --feedback-round ${round} \\`,
+      `  --stage ${stage}`,
+      ...(dryRun ? ["  --dry-run"] : [])
+    ].join("\n");
+  }
+
+  function render() {
+    output.textContent = buildCommand();
+    output.hidden = false;
+  }
+
+  form.addEventListener("input", render);
+  form.addEventListener("change", render);
+  copyButton.addEventListener("click", async () => {
+    const command = buildCommand();
+    try {
+      await navigator.clipboard.writeText(command);
+      status.textContent = "Command copied to clipboard.";
+    } catch {
+      const helper = document.createElement("textarea");
+      helper.value = command;
+      helper.setAttribute("readonly", "");
+      helper.style.position = "fixed";
+      helper.style.opacity = "0";
+      document.body.appendChild(helper);
+      helper.select();
+      document.execCommand("copy");
+      helper.remove();
+      status.textContent = "Command copied to clipboard.";
+    }
+  });
+  render();
+})();
