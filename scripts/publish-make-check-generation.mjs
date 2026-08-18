@@ -59,7 +59,11 @@ function refreshMemberHashes(html, webpSha256) {
     .replace(
       /Canonical source SHA-256: [0-9a-f]{64}/,
       `Canonical source SHA-256: ${webpSha256}`
-    );
+    )
+    // The embedded review script carries its own hash copies; without these
+    // replacements the GitHub issue draft exports zero placeholders (issue #47).
+    .replace(/proxySha = "[0-9a-f]{64}"/, `proxySha = "${webpSha256}"`)
+    .replace(/sourceSha = "[0-9a-f]{64}"/, `sourceSha = "${webpSha256}"`);
 }
 
 async function main() {

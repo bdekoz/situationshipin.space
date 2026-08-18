@@ -1,6 +1,6 @@
 {
   "baseline_state": "NOT-PROMOTED",
-  "generated_at": "2026-08-18T19:13:10.032Z",
+  "generated_at": "2026-08-18T19:32:12.507Z",
   "human_review_state": "UNREVIEWED",
   "items": [
     {
@@ -363,7 +363,7 @@
       "sha256": "4ba3f7e3fd69ce0d1fe928cdfc888a800f0e80ca43bd4b823fc78425a343ef07",
       "bytes": 20609,
       "format": "html",
-      "generation_commit": "73378899fa9ac03666ef7e50bcd01327d43bfdd0",
+      "generation_commit": "3ad0af28639be32ddf161ee9019e903141b186c3",
       "generation_state": "CURRENT",
       "index_members": [
         "reference-image-danmaku-v1-category-grid",
@@ -398,7 +398,7 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-16T09:56:45.210Z"
+      "added_at": "2026-08-18T19:32:12.224Z"
     },
     {
       "artifact_id": "generation-movement-20260814",
@@ -12598,6 +12598,6 @@
   "portal_build": "izzi-review-2026-08-11.7",
   "publication_state": "PUBLIC-PROTOTYPE",
   "schema_version": "1.0",
-  "source_commit": "12e0e5060162daab99538b46e061e971b655f434",
+  "source_commit": "3ad0af28639be32ddf161ee9019e903141b186c3",
   "source_repository": "bdekoz/izzi"
 }

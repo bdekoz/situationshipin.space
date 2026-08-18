@@ -13,14 +13,33 @@
   function saved() {
     try { return JSON.parse(localStorage.getItem(key) || "null"); } catch (error) { return null; }
   }
+  function gridReview() {
+    try {
+      for (let index = 0; index < localStorage.length; index += 1) {
+        const name = localStorage.key(index);
+        if (!name || !name.startsWith("situationship-review:")) continue;
+        const parsed = JSON.parse(localStorage.getItem(name) || "null");
+        const review = parsed && parsed.reviews ? parsed.reviews[reviewId] : null;
+        if (review) return review;
+      }
+    } catch (error) { /* ignore unreadable stores */ }
+    return null;
+  }
+  const pageDecisions = ["KEEP", "KEEP-PARTS", "REVISE", "REJECT", "DISCUSS"];
   function packageReview() {
     const previous = saved() || {};
+    const grid = gridReview() || {};
+    const gridNote = typeof grid.note === "string" ? grid.note : "";
+    const mergedNote = note.value.trim() ? note.value : gridNote;
+    const mergedDecision = decision.value !== "UNREVIEWED"
+      ? decision.value
+      : (pageDecisions.includes(grid.decision) ? grid.decision : decision.value);
     return {
       schema_version: "izzi-web-review-1",
       review_id: reviewId,
       review_url: reviewUrl,
-      decision: decision.value,
-      note: note.value,
+      decision: mergedDecision,
+      note: mergedNote,
       proxy_sha256: proxySha,
       source_sha256: sourceSha,
       saved_at: previous.saved_at || null,
@@ -85,6 +104,14 @@
     if (previous.decision) decision.value = previous.decision;
     if (previous.note) note.value = previous.note;
     status.textContent = "Restored previously saved review.";
+  } else {
+    const grid = gridReview() || {};
+    const gridNote = typeof grid.note === "string" ? grid.note : "";
+    if (pageDecisions.includes(grid.decision)) decision.value = grid.decision;
+    if (gridNote) note.value = gridNote;
+    if (grid.decision || gridNote) {
+      status.textContent = "Restored review comments from the situationshipin.space catalog grid.";
+    }
   }
 })();
 </script></section></main></body></html>
