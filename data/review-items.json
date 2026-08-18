@@ -1,8 +1,42 @@
 {
   "baseline_state": "NOT-PROMOTED",
-  "generated_at": "2026-08-18T06:38:21.553Z",
+  "generated_at": "2026-08-18T14:24:00.403Z",
   "human_review_state": "UNREVIEWED",
   "items": [
+    {
+      "artifact_id": "generation-surface-tension-20260817-v2-index",
+      "title": "Surface Tension Capability 20260817 v2",
+      "description": "Additive S1-S2 tuning and extension of the izzi surface-tension vocabulary: eight deterministic plates covering tuned membranes and pattern, object, and surface-field source compositions.",
+      "alt": "Index of the 8 additive izzi surface-tension review plates from 2026-08-17.",
+      "family": "generation-surface-tension-20260817-v2",
+      "generation_class": "surface-tension-index",
+      "feedback_round": "generation-surface-tension-20260817-v2",
+      "media_kind": "index",
+      "review_scope": "GENERATION-SURFACE-TENSION-20260817-V2",
+      "review_mode": "output",
+      "source_path": "izzi fde09ecd96622b263cf1c4530a7fc5fd90331204 outputs/ad-hoc/surface-tension.v1 (S1-S2 additive plates)",
+      "published_path": "review/media/generation-surface-tension-20260817-v2/generation-surface-tension-20260817-v2-index.index.html",
+      "sha256": "79734e7894b74990a9426efaf7e1ebc205e0cb18d03d02702a06a18b8377855f",
+      "bytes": 5438,
+      "format": "html",
+      "generation_commit": "fde09ecd96622b263cf1c4530a7fc5fd90331204",
+      "generation_state": "CURRENT",
+      "index_members": [
+        "surface-tension-s1-01-crossed-folds",
+        "surface-tension-s1-02-tilted-chain",
+        "surface-tension-s1-03-boundary-veil",
+        "surface-tension-s2-01-pattern-ring",
+        "surface-tension-s2-02-pattern-lattice",
+        "surface-tension-s2-03-pattern-rotating-array",
+        "surface-tension-s2-04-object-clusters",
+        "surface-tension-s2-05-surface-field"
+      ],
+      "technical_state": "SURFACE-TENSION-INDEX",
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "review_category": "proofs",
+      "added_at": "2026-08-18T14:24:00.390Z"
+    },
     {
       "artifact_id": "generation-moire-20260817-v2-index",
       "title": "Moire Capability 20260817 v2",
@@ -12426,6 +12460,6 @@
   "portal_build": "izzi-review-2026-08-11.7",
   "publication_state": "PUBLIC-PROTOTYPE",
   "schema_version": "1.0",
-  "source_commit": "085941fd605aedbaae6277a0eb4ff03ac20508a4",
+  "source_commit": "fde09ecd96622b263cf1c4530a7fc5fd90331204",
   "source_repository": "bdekoz/izzi"
 }

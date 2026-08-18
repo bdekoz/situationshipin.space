@@ -1,0 +1,15 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "generation-surface-tension-20260817-v2-index",
+  "artifact_id": "generation-surface-tension-20260817-v2-index",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": null,
+  "document": {
+    "path": "/review/media/generation-surface-tension-20260817-v2/generation-surface-tension-20260817-v2-index.index.html",
+    "sha256": "79734e7894b74990a9426efaf7e1ebc205e0cb18d03d02702a06a18b8377855f",
+    "format": "html",
+    "plan_stage": null,
+    "plan_pdf": null
+  }
+}
