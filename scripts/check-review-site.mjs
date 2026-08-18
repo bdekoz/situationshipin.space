@@ -479,6 +479,21 @@ if (!plans.includes('id="new-title"')) {
   fail("plans.html is missing the New plan-creation section");
 }
 
+const locationPage = await readFile(resolve(repositoryRoot, "location.html"), "utf8");
+const locationRequiredIds = [
+  "route-map", "point-list", "route-note", "location-form", "new-path-button"
+];
+let locationIdsOk = true;
+for (const id of locationRequiredIds) {
+  if (!locationPage.includes(`id="${id}"`)) {
+    fail(`location.html is missing required ID ${id}`);
+    locationIdsOk = false;
+  }
+}
+if (locationIdsOk) {
+  pass("location.html authoring surface and route-view contract present");
+}
+
 if (!script.includes("pageSize: 10") || !script.includes("AESTHETIC_DECISIONS")
     || !script.includes("source_image_sha256")
     || !script.includes("style-processing-page-")

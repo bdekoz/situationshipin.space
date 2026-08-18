@@ -15,6 +15,7 @@
       .point-list{font-family:ui-monospace,monospace;font-size:.85rem}
       .point-list li{margin:.2rem 0}
       .route-note{background:#eef1f2;border-left:.45rem solid #173a55;padding:.7rem 1rem}
+      .path-actions{display:flex;flex-wrap:wrap;gap:.65rem;align-items:end}
     </style>
   </head>
   <body data-review-category="location-scouting">
@@ -47,7 +48,15 @@
 	    <label>Location
 	      <select id="location-select"></select>
 	    </label>
-	    <button class="button button-secondary" type="reset">Clear saved path</button>
+	    <label id="new-path-name-label" hidden>Path name
+	      <input type="text" id="new-path-name" placeholder="e.g. Sunset pass" maxlength="80" autocomplete="off">
+	    </label>
+	    <div class="path-actions">
+	      <button class="button" type="button" id="new-path-button">New path</button>
+	      <button class="button" type="button" id="save-path-button" hidden>Save path</button>
+	      <button class="button button-secondary" type="button" id="cancel-path-button" hidden>Cancel</button>
+	      <button class="button button-secondary" type="reset">Clear saved path</button>
+	    </div>
 	  </form>
 	</details>
       </section>
@@ -93,13 +102,25 @@
     <script>
 (function () {
   const reviewKeyBase = "review:location-scouting:";
+  const draftKeyBase = reviewKeyBase + "new-draft:";
+  const unsavedOptionValue = "__new__";
   let catalog = null;
   let map = null;
   let layer = null;
   let markers = [];
   let current = null;
+  let currentDraft = null;
+  let authoring = false;
+  let unsaved = false;
+  let lastDragEndAt = 0;
   const projectSelect = document.getElementById("project-select");
   const locationSelect = document.getElementById("location-select");
+  const locationForm = document.getElementById("location-form");
+  const newPathButton = document.getElementById("new-path-button");
+  const savePathButton = document.getElementById("save-path-button");
+  const cancelPathButton = document.getElementById("cancel-path-button");
+  const nameLabel = document.getElementById("new-path-name-label");
+  const nameInput = document.getElementById("new-path-name");
   const form = document.getElementById("review-form");
   const status = document.getElementById("review-status");
   const storageStatus = document.getElementById("storage-status");
@@ -108,11 +129,168 @@
   const pointList = document.getElementById("point-list");
   const routeNote = document.getElementById("route-note");
   const routePanel = document.getElementById("route-panel");
+  const resultsDescription = document.getElementById("results-description");
 
   function metric(id, value) { document.getElementById(id).textContent = value; }
-  function reviewKey() { return reviewKeyBase + (current ? current.location_id : "none"); }
+
+  function activeKey() {
+    if (currentDraft) return draftKeyBase + currentDraft.location_id;
+    if (current) return reviewKeyBase + current.location_id;
+    return reviewKeyBase + "none";
+  }
+
   function savedReview() {
-    try { return JSON.parse(localStorage.getItem(reviewKey()) || "null"); } catch (e) { return null; }
+    try { return JSON.parse(localStorage.getItem(activeKey()) || "null"); } catch (e) { return null; }
+  }
+
+  function slugify(name) {
+    const base = String(name || "").trim().toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") || "new-path";
+    let slug = base;
+    let suffix = 2;
+    while (localStorage.getItem(draftKeyBase + slug)) { slug = base + "-" + suffix; suffix += 1; }
+    return slug;
+  }
+
+  function listDrafts() {
+    const drafts = [];
+    for (let index = 0; index < localStorage.length; index += 1) {
+      const key = localStorage.key(index);
+      if (!key || key.indexOf(draftKeyBase) !== 0) continue;
+      try {
+        const record = JSON.parse(localStorage.getItem(key));
+        if (record && record.location_id) drafts.push(record);
+      } catch (e) { /* skip unreadable keys */ }
+    }
+    drafts.sort(function (left, right) {
+      return String(left.display_name || left.location_id)
+        .localeCompare(String(right.display_name || right.location_id));
+    });
+    return drafts;
+  }
+
+  function refreshLocationOptions() {
+    const project = catalog.projects.find(p => p.project_id === projectSelect.value);
+    locationSelect.innerHTML = "";
+    const catalogGroup = document.createElement("optgroup");
+    catalogGroup.label = "Catalog";
+    project.locations.forEach(function (location) {
+      const option = document.createElement("option");
+      option.value = location.location_id;
+      option.textContent = location.display_name + (location.route ? "" : " — pending coordinates");
+      catalogGroup.appendChild(option);
+    });
+    locationSelect.appendChild(catalogGroup);
+    const drafts = listDrafts();
+    if (drafts.length) {
+      const draftGroup = document.createElement("optgroup");
+      draftGroup.label = "Local drafts";
+      drafts.forEach(function (draft) {
+        const option = document.createElement("option");
+        option.value = draft.location_id;
+        option.textContent = (draft.display_name || draft.location_id) + " (draft)";
+        draftGroup.appendChild(option);
+      });
+      locationSelect.appendChild(draftGroup);
+    }
+    if (unsaved) {
+      const option = document.createElement("option");
+      option.value = unsavedOptionValue;
+      option.textContent = "— new path (unsaved) —";
+      locationSelect.appendChild(option);
+    }
+  }
+
+  function restoreForm(record) {
+    decision.value = (record && record.decision) ? record.decision : "UNREVIEWED";
+    note.value = (record && record.note) ? record.note : "";
+  }
+
+  function renderMap(points) {
+    if (map) { map.remove(); map = null; }
+    layer = null;
+    map = L.map("route-map", { zoomControl: true }).setView([34.05, -118.25], 11);
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+    map.on("click", function (event) {
+      if (!authoring) return;
+      if (Date.now() - lastDragEndAt < 400) return;
+      const target = event.originalEvent && event.originalEvent.target;
+      if (target && target.closest &&
+          target.closest(".leaflet-marker-icon, .leaflet-marker-shadow, .leaflet-popup, .leaflet-control")) {
+        return;
+      }
+      addPoint(event.latlng.lat, event.latlng.lng);
+    });
+    markers = (points || []).map(function (point) {
+      const marker = L.marker([point.lat, point.lng], { draggable: true }).addTo(map)
+        .bindPopup("<strong>" + point.label + "</strong><br>" + point.lat.toFixed(7) + ", " + point.lng.toFixed(7));
+      marker.on("dragend", markerDragEnd);
+      return { marker: marker, label: point.label };
+    });
+    updateRoute();
+    fitRoute();
+  }
+
+  function fitRoute() {
+    if (!map) return;
+    if (!markers.length) { map.setView([34.05, -118.25], 11); return; }
+    if (markers.length === 1) { map.setView(markers[0].marker.getLatLng(), 17); return; }
+    const bounds = L.latLngBounds(markers.map(function (entry) {
+      return entry.marker.getLatLng();
+    }));
+    map.fitBounds(bounds.pad(0.25), { maxZoom: 17 });
+  }
+
+  function updateRoute() {
+    const latlngs = markers.map(function (entry) {
+      const position = entry.marker.getLatLng();
+      return [position.lat, position.lng];
+    });
+    if (layer) { layer.remove(); layer = null; }
+    if (latlngs.length) {
+      layer = L.polyline(latlngs, { color: "#173a55", weight: 4 }).addTo(map);
+    }
+    pointList.innerHTML = "";
+    if (!latlngs.length) {
+      const li = document.createElement("li");
+      li.textContent = authoring
+        ? "No waypoints yet — click the map to add the first point."
+        : "No route points.";
+      pointList.appendChild(li);
+    }
+    latlngs.forEach(function (position, index) {
+      const li = document.createElement("li");
+      li.textContent = markers[index].label + ": " + position[0].toFixed(7) + ", " + position[1].toFixed(7);
+      pointList.appendChild(li);
+    });
+    routeNote.textContent = authoring
+      ? "Local draft — click the map to add waypoints, drag to adjust. Save path keeps it in this browser."
+      : ((current && current.route && current.route.notes) || "");
+  }
+
+  function addPoint(lat, lng) {
+    const label = "point-" + markers.length;
+    const marker = L.marker([lat, lng], { draggable: true }).addTo(map)
+      .bindPopup("<strong>" + label + "</strong><br>" + lat.toFixed(7) + ", " + lng.toFixed(7));
+    marker.on("dragend", markerDragEnd);
+    markers.push({ marker: marker, label: label });
+    updateRoute();
+    fitRoute();
+  }
+
+  function markerDragEnd() {
+    lastDragEndAt = Date.now();
+    updateRoute();
+  }
+
+  function currentPoints() {
+    return markers.map(function (entry) {
+      const position = entry.marker.getLatLng();
+      return { label: entry.label, lat: position.lat, lng: position.lng };
+    });
   }
 
   async function loadCatalog() {
@@ -127,103 +305,178 @@
   }
 
   function populateLocations() {
-    const project = catalog.projects.find(p => p.project_id === projectSelect.value);
-    locationSelect.innerHTML = "";
-    project.locations.forEach(function (location) {
-      const option = document.createElement("option");
-      option.value = location.location_id;
-      option.textContent = location.display_name + (location.route ? "" : " — pending coordinates");
-      locationSelect.appendChild(option);
-    });
-    selectLocation();
+    current = null;
+    currentDraft = null;
+    unsaved = false;
+    authoring = false;
+    nameInput.value = "";
+    nameLabel.hidden = true;
+    savePathButton.hidden = true;
+    cancelPathButton.hidden = true;
+    newPathButton.disabled = false;
+    refreshLocationOptions();
+    selectActive();
   }
 
-  function selectLocation() {
+  function selectActive() {
     const project = catalog.projects.find(p => p.project_id === projectSelect.value);
-    current = project.locations.find(l => l.location_id === locationSelect.value);
-    restoreDraft();
-    const previous = savedReview();
-    if (previous && previous.decision) decision.value = previous.decision;
-    if (previous && previous.note) note.value = previous.note;
-    storageStatus.textContent = previous ? "Restored previously saved review." : "No local draft yet.";
-    if (!current.route) {
+    const value = locationSelect.value;
+    current = project.locations.find(l => l.location_id === value) || null;
+    currentDraft = current ? null : listDrafts().find(d => d.location_id === value) || null;
+    unsaved = !current && !currentDraft;
+    authoring = Boolean(currentDraft) || unsaved;
+    const phantom = locationSelect.querySelector("option[value=\"" + unsavedOptionValue + "\"]");
+    if (phantom && !unsaved) phantom.remove();
+    nameLabel.hidden = !authoring;
+    nameInput.value = currentDraft ? (currentDraft.display_name || "") : "";
+    savePathButton.hidden = !authoring;
+    cancelPathButton.hidden = !unsaved;
+    newPathButton.disabled = unsaved;
+    resultsDescription.textContent = authoring
+      ? "Name the path, then click the map to add waypoints; drag markers to adjust. Saved paths stay in this browser."
+      : "Choose a location, then drag the markers to tune the walking path. Drafts stay in this browser.";
+
+    if (current && !current.route) {
+      restoreForm(savedReview());
       routePanel.hidden = false;
       pointList.innerHTML = "<li>Coordinates pending — add them here when scouted.</li>";
       routeNote.textContent = "";
       if (map) map.remove();
       map = null;
+      storageStatus.textContent = "No route coordinates in the catalog yet.";
       return;
     }
-    renderMap();
+
+    if (current) {
+      const previous = savedReview();
+      const points = (previous && Array.isArray(previous.points) && previous.points.length)
+        ? previous.points
+        : current.route.points;
+      renderMap(points);
+      restoreForm(previous);
+      storageStatus.textContent = previous ? "Restored previously saved review." : "No local draft yet.";
+      return;
+    }
+
+    if (currentDraft) {
+      renderMap(currentDraft.points || []);
+      restoreForm(currentDraft);
+      storageStatus.textContent = "Editing local draft \"" + (currentDraft.display_name || currentDraft.location_id) + "\" — click the map to add waypoints.";
+      return;
+    }
+
+    renderMap([]);
+    restoreForm(null);
+    storageStatus.textContent = "Authoring a new path — name it, click the map to add waypoints, then Save path.";
   }
 
-  function renderMap() {
-    if (map) { map.remove(); map = null; }
-    map = L.map("route-map", { zoomControl: true }).setView([34.107, -118.248], 15);
-    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      maxZoom: 19,
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    }).addTo(map);
-    markers = current.route.points.map(function (point, index) {
-      const marker = L.marker([point.lat, point.lng], { draggable: true }).addTo(map)
-        .bindPopup("<strong>" + point.label + "</strong><br>" + point.lat.toFixed(7) + ", " + point.lng.toFixed(7));
-      marker.on("dragend", updateRoute);
-      return { marker: marker, label: point.label };
-    });
-    updateRoute();
+  function savePath() {
+    const name = nameInput.value.trim();
+    if (!name) {
+      storageStatus.textContent = "Name the path before saving.";
+      nameInput.focus();
+      return;
+    }
+    if (markers.length < 2) {
+      storageStatus.textContent = "Add at least two waypoints before saving.";
+      return;
+    }
+    const slug = (currentDraft && currentDraft.location_id) ? currentDraft.location_id : slugify(name);
+    const record = {
+      schema_version: "izzi-web-location-review-1",
+      review_id: draftKeyBase + slug,
+      project_id: projectSelect.value,
+      location_id: slug,
+      origin: "new-draft",
+      display_name: name,
+      decision: decision.value,
+      note: note.value,
+      points: currentPoints(),
+      at: new Date().toISOString()
+    };
+    localStorage.setItem(draftKeyBase + slug, JSON.stringify(record));
+    current = null;
+    currentDraft = record;
+    unsaved = false;
+    authoring = true;
+    refreshLocationOptions();
+    locationSelect.value = slug;
+    restoreForm(record);
+    storageStatus.textContent = "Saved \"" + name + "\" locally in this browser. " + new Date(record.at).toLocaleString();
+    status.textContent = "Path saved locally. Hand off with Download JSON or Open GitHub issue draft.";
   }
 
-  function updateRoute() {
-    const latlngs = markers.map(function (entry) {
-      const position = entry.marker.getLatLng();
-      return [position.lat, position.lng];
-    });
-    if (layer) layer.remove();
-    layer = L.polyline(latlngs, { color: "#173a55", weight: 4 }).addTo(map);
-    pointList.innerHTML = "";
-    latlngs.forEach(function (position, index) {
-      const li = document.createElement("li");
-      li.textContent = markers[index].label + ": " + position[0].toFixed(7) + ", " + position[1].toFixed(7);
-      pointList.appendChild(li);
-    });
-    routeNote.textContent = current.route.notes || "";
+  function startNewPath() {
+    current = null;
+    currentDraft = null;
+    unsaved = true;
+    authoring = true;
+    nameInput.value = "";
+    nameLabel.hidden = false;
+    savePathButton.hidden = false;
+    cancelPathButton.hidden = false;
+    newPathButton.disabled = true;
+    decision.value = "UNREVIEWED";
+    note.value = "";
+    status.textContent = "";
+    refreshLocationOptions();
+    locationSelect.value = unsavedOptionValue;
+    renderMap([]);
+    storageStatus.textContent = "Authoring a new path — add at least two waypoints, then Save path.";
+  }
+
+  function cancelNewPath() {
+    unsaved = false;
+    authoring = false;
+    current = null;
+    currentDraft = null;
+    nameInput.value = "";
+    nameLabel.hidden = true;
+    savePathButton.hidden = true;
+    cancelPathButton.hidden = true;
+    newPathButton.disabled = false;
+    refreshLocationOptions();
+    const project = catalog.projects.find(p => p.project_id === projectSelect.value);
+    locationSelect.value = (project && project.locations.length) ? project.locations[0].location_id : "";
+    selectActive();
   }
 
   function saveNow() {
-    const points = markers.map(function (entry) {
-      const position = entry.marker.getLatLng();
-      return { label: entry.label, lat: position.lat, lng: position.lng };
-    });
+    if (unsaved) {
+      status.textContent = "Name and save the new path first.";
+      return null;
+    }
     const record = {
       schema_version: "izzi-web-location-review-1",
-      review_id: reviewKey(),
-      project_id: current.project_id || projectSelect.value,
-      location_id: current.location_id,
+      review_id: activeKey(),
+      project_id: currentDraft ? currentDraft.project_id : (current ? (current.project_id || projectSelect.value) : projectSelect.value),
+      location_id: currentDraft ? currentDraft.location_id : current.location_id,
       decision: decision.value,
       note: note.value,
-      points: points,
+      points: currentPoints(),
       at: new Date().toISOString()
     };
-    localStorage.setItem(reviewKey(), JSON.stringify(record));
+    if (currentDraft) {
+      record.origin = "new-draft";
+      record.display_name = currentDraft.display_name;
+    }
+    localStorage.setItem(activeKey(), JSON.stringify(record));
     status.textContent = "Saved locally in this browser. " + new Date(record.at).toLocaleString();
     return record;
   }
 
-  function restoreDraft() {
-    const draft = savedReview();
-    if (draft && Array.isArray(draft.points) && draft.points.length && current.route) {
-      current.route.points = draft.points;
-    }
-  }
-
   form.addEventListener("submit", function (event) { event.preventDefault(); saveNow(); });
+  newPathButton.addEventListener("click", startNewPath);
+  savePathButton.addEventListener("click", savePath);
+  cancelPathButton.addEventListener("click", cancelNewPath);
   document.getElementById("review-download").addEventListener("click", function () {
     const record = saveNow();
+    if (!record) return;
     const blob = new Blob([JSON.stringify(record, null, 2)], { type: "application/json" });
     const url = URL.createObjectURL(blob);
     const anchor = document.createElement("a");
     anchor.href = url;
-    anchor.download = (record.project_id + "-" + record.location_id + ".review.json");
+    anchor.download = (record.project_id + (record.origin === "new-draft" ? "-new-" : "-") + record.location_id + ".review.json");
     document.body.appendChild(anchor);
     anchor.click();
     anchor.remove();
@@ -231,11 +484,13 @@
   });
   document.getElementById("review-issue").addEventListener("click", function () {
     const record = saveNow();
-    const body = [
-      "## Location scouting review",
+    if (!record) return;
+    const isDraft = record.origin === "new-draft";
+    const bodyLines = [
+      isDraft ? "## New location proposal" : "## Location scouting review",
       "",
       "- **Project:** " + record.project_id,
-      "- **Location:** " + record.location_id,
+      isDraft ? ("- **Display name:** " + (record.display_name || record.location_id)) : ("- **Location:** " + record.location_id),
       "- **Decision:** " + record.decision,
       "- **Points:**",
       "",
@@ -244,26 +499,52 @@
       "- **Notes:**",
       "",
       record.note || "_no notes_"
-    ].join("\n");
+    ];
+    if (isDraft) {
+      bodyLines.push("", "> Local browser draft. Fold the accepted route into data/locations.json in a follow-up commit.");
+    }
     const url = "https://github.com/bdekoz/situationshipin.space/issues/new?title=" +
-      encodeURIComponent("Location scouting: " + record.project_id + " — " + record.location_id) +
-      "&body=" + encodeURIComponent(body);
+      encodeURIComponent(isDraft
+        ? "New location proposal: " + (record.display_name || record.location_id)
+        : "Location scouting: " + record.project_id + " — " + record.location_id) +
+      "&body=" + encodeURIComponent(bodyLines.join("\n"));
     window.open(url, "_blank", "noopener");
   });
   document.getElementById("review-clear").addEventListener("click", function () {
-    localStorage.removeItem(reviewKey());
+    if (!currentDraft) {
+      localStorage.removeItem(activeKey());
+    }
     decision.value = "UNREVIEWED";
     note.value = "";
-    status.textContent = "Cleared local review.";
+    status.textContent = currentDraft ? "Cleared local review. Save path to persist." : "Cleared local review.";
   });
-  document.getElementById("location-form").addEventListener("reset", function () {
+  locationForm.addEventListener("reset", function () {
     setTimeout(function () {
-      localStorage.removeItem(reviewKey());
-      if (current.route) { current.route.points = null; locationSelect.value = "frogtown"; selectLocation(); }
+      if (currentDraft) {
+        localStorage.removeItem(draftKeyBase + currentDraft.location_id);
+      } else if (current) {
+        localStorage.removeItem(reviewKeyBase + current.location_id);
+      }
+      current = null;
+      currentDraft = null;
+      unsaved = false;
+      authoring = false;
+      nameInput.value = "";
+      nameLabel.hidden = true;
+      savePathButton.hidden = true;
+      cancelPathButton.hidden = true;
+      newPathButton.disabled = false;
+      decision.value = "UNREVIEWED";
+      note.value = "";
+      status.textContent = "Cleared saved path.";
+      const project = catalog.projects.find(p => p.project_id === projectSelect.value);
+      refreshLocationOptions();
+      locationSelect.value = (project && project.locations.length) ? project.locations[0].location_id : "";
+      selectActive();
     }, 0);
   });
   projectSelect.addEventListener("change", populateLocations);
-  locationSelect.addEventListener("change", selectLocation);
+  locationSelect.addEventListener("change", selectActive);
 
   loadCatalog().then(function () {
     populateLocations();
