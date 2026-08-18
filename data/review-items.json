@@ -1,8 +1,42 @@
 {
   "baseline_state": "NOT-PROMOTED",
-  "generated_at": "2026-08-18T14:24:00.403Z",
+  "generated_at": "2026-08-18T15:27:29.613Z",
   "human_review_state": "UNREVIEWED",
   "items": [
+    {
+      "artifact_id": "generation-keyframes-20260818-v2-index",
+      "title": "Keyframes Capability 20260818 v2",
+      "description": "Deterministic per-location neon keyframes for the fal.ai video path: eight independently authored stills framed from the here-lies-trouble routes.",
+      "alt": "Index of the 8 deterministic izzi keyframe review plates from 2026-08-18.",
+      "family": "generation-keyframes-20260818-v2",
+      "generation_class": "keyframes-index",
+      "feedback_round": "generation-keyframes-20260818-v2",
+      "media_kind": "index",
+      "review_scope": "GENERATION-KEYFRAMES-20260818-V2",
+      "review_mode": "output",
+      "source_path": "izzi 0d5db4217c93e606c9cb99dbe8741e11392037f2 outputs/ad-hoc/keyframes.v1 (per-location stills)",
+      "published_path": "review/media/generation-keyframes-20260818-v2/generation-keyframes-20260818-v2-index.index.html",
+      "sha256": "15af4218a2f19c1777d411c29fbed615c9ca561955a644a2d0cc1adef9348d8e",
+      "bytes": 5142,
+      "format": "html",
+      "generation_commit": "0d5db4217c93e606c9cb99dbe8741e11392037f2",
+      "generation_state": "CURRENT",
+      "index_members": [
+        "keyframe-frogtown",
+        "keyframe-dtla-central-library",
+        "keyframe-moca-geffen",
+        "keyframe-hauser-wirth",
+        "keyframe-hammer-museum",
+        "keyframe-hiho-to-runyon-canyon",
+        "keyframe-runyon-mulholland-drive",
+        "keyframe-runyon-to-inspiration-point"
+      ],
+      "technical_state": "KEYFRAMES-INDEX",
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "review_category": "proofs",
+      "added_at": "2026-08-18T15:27:29.599Z"
+    },
     {
       "artifact_id": "generation-surface-tension-20260817-v2-index",
       "title": "Surface Tension Capability 20260817 v2",
@@ -12460,6 +12494,6 @@
   "portal_build": "izzi-review-2026-08-11.7",
   "publication_state": "PUBLIC-PROTOTYPE",
   "schema_version": "1.0",
-  "source_commit": "fde09ecd96622b263cf1c4530a7fc5fd90331204",
+  "source_commit": "0d5db4217c93e606c9cb99dbe8741e11392037f2",
   "source_repository": "bdekoz/izzi"
 }

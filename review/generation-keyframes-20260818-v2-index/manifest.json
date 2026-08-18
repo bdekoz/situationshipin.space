@@ -1,0 +1,15 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "generation-keyframes-20260818-v2-index",
+  "artifact_id": "generation-keyframes-20260818-v2-index",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": null,
+  "document": {
+    "path": "/review/media/generation-keyframes-20260818-v2/generation-keyframes-20260818-v2-index.index.html",
+    "sha256": "15af4218a2f19c1777d411c29fbed615c9ca561955a644a2d0cc1adef9348d8e",
+    "format": "html",
+    "plan_stage": null,
+    "plan_pdf": null
+  }
+}
