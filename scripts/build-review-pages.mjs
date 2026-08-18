@@ -45,7 +45,10 @@ for (const item of catalog.items) {
   const id = item.artifact_id.replace(/[^a-zA-Z0-9._-]+/g, "-");
   const dir = join(root, "review", id);
   await mkdir(dir, { recursive: true });
-  await writeFile(join(dir, "index.html"), renderReviewPage(item));
+  await writeFile(
+    join(dir, "index.html"),
+    renderReviewPage(item, catalog.source_repository_local_root)
+  );
   await writeFile(join(dir, "manifest.json"), renderReviewManifest(item));
 }
 console.log(JSON.stringify({ artifact_count: catalog.items.length, hlt_review_url: `https://situationshipin.space/review/${hltId}/`, proxy_sha256: proxyHash }));

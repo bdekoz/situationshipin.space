@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "portal_build": "izzi-review-2026-08-11.7",
-  "generated_at": "2026-08-18T19:32:31.132Z",
+  "generated_at": "2026-08-18T19:39:27.156Z",
   "portal_repository": "bdekoz/situationshipin.space",
   "portal_source_commit": "219a9b7f0891998c1525c94fa15b43c490b5d79f",
   "izzi_repository": "bdekoz/izzi",
@@ -64,11 +64,11 @@
     },
     {
       "path": "assets/js/review.js",
-      "sha256": "60e32460f120c636ad49ddb54e0d4e152a9e564548734036f095a42efc9f7db0"
+      "sha256": "5a6f3bc3cc665f5d1f43007903f0bc5e786c6274e67ba9a036e564187881cb50"
     },
     {
       "path": "data/review-items.json",
-      "sha256": "220193ecf2c606652d2c3b14ba05ebcf43b280fa4b84ea765c4bf5f0c34cc6a8"
+      "sha256": "cbc4ec878d1d4500b70beaea0cf51b828fbf17c83f19019437e12ff5b42291a8"
     },
     {
       "path": "scripts/check-review-site.mjs",
@@ -88,7 +88,7 @@
     },
     {
       "path": "scripts/build-review-pages.mjs",
-      "sha256": "10cc2c18a7be6d2b126fbea5931684927321d2687ff8bdc2f2b4116995db89f6"
+      "sha256": "33c83d2bd9155ba0910d9711ef85322851d30f33743d19a8d6de4d870622ab23"
     },
     {
       "path": "scripts/build-generation-index.mjs",
@@ -104,11 +104,11 @@
     },
     {
       "path": "scripts/rebuild-review-pages.mjs",
-      "sha256": "75adeadbc1c60f00f80b93da5de09a42effe021bb40011889fdc9fe5856f0546"
+      "sha256": "2397fb2558213c8d772c4745466e8354588cf17cdff26fc6766f12f6cb583191"
     },
     {
       "path": "scripts/publish-video-proof.mjs",
-      "sha256": "a632f6632a1af9917b1f3f6581f680e4c35861e1fab426e6d0e193371e79032e"
+      "sha256": "bde80cfcd4933d60760d1921976379840517c6328bef031f70c34531e60db01b"
     },
     {
       "path": "scripts/publish-plan-proof.mjs",
@@ -136,7 +136,7 @@
     },
     {
       "path": "scripts/review-page.mjs",
-      "sha256": "de59ebeeccf3114dbfabcb1d07bc97c8aecfe19cd87702366eea2268d9b81ec3"
+      "sha256": "abbfb56800b65267cf3ed0e0d8464a38860ee891d6aa8c1be3437a5950c25957"
     },
     {
       "path": ".github/workflows/jekyll-gh-pages.yml",
@@ -144,7 +144,7 @@
     }
   ],
   "artifact_inventory": "data/review-items.json",
-  "catalog_sha256": "220193ecf2c606652d2c3b14ba05ebcf43b280fa4b84ea765c4bf5f0c34cc6a8",
+  "catalog_sha256": "cbc4ec878d1d4500b70beaea0cf51b828fbf17c83f19019437e12ff5b42291a8",
   "notes": [
     "The catalog binds every published derivative to an Izzi source path and SHA-256.",
     "Canonical source MKVs remain outside Pages; one bounded H.264/AAC MP4 proxy is published for continuous motion and audio review with independent lineage.",

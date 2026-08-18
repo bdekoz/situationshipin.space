@@ -603,6 +603,16 @@ function renderCard(item) {
     addMetadata(metadata, "Source video", `${item.source_media.width} × ${item.source_media.height}, ${item.source_media.codec}, ${item.source_media.frame_rate}`);
     addMetadata(metadata, "Source MKV published", item.source_media.published ? "Yes" : "No — preview derivatives only");
   }
+  const fullResolutionHref = localFileHrefFor(item);
+  if (fullResolutionHref) {
+    const fullResolutionLink = document.createElement("a");
+    fullResolutionLink.className = "local-full-res-link";
+    fullResolutionLink.href = fullResolutionHref;
+    fullResolutionLink.target = "_blank";
+    fullResolutionLink.rel = "noopener";
+    fullResolutionLink.textContent = "Open full-resolution local file";
+    metadata.append(fullResolutionLink);
+  }
   if (item.source_image) {
     addMetadata(metadata, "Source image SHA-256", item.source_image.sha256);
     addMetadata(metadata, "Source image size", `${formatBytes(item.source_image.bytes)} (${item.source_image.bytes.toLocaleString()} bytes)`);
@@ -1063,6 +1073,23 @@ async function importFeedback(event) {
   } catch (error) {
     elements.handoffStatus.textContent = `Import failed: ${error instanceof Error ? error.message : String(error)}`;
   }
+}
+
+function localFileHrefFor(item) {
+  if (item.media_kind !== "video" && item.media_kind !== "video-filmstrip") {
+    return null;
+  }
+  const raw = item.source_media?.path || item.source_path || "";
+  if (!raw) return null;
+  let path = raw;
+  const prefixed = /^izzi [0-9a-f]{7,40} (.+)$/.exec(path);
+  if (prefixed) path = prefixed[1];
+  if (path.startsWith("/")) return encodeURI(`file://${path}`);
+  const root = state.catalog?.source_repository_local_root;
+  if (!root) return null;
+  return encodeURI(
+    `file://${String(root).replace(/\/+$/, "")}/${path.replace(/^\/+/, "")}`
+  );
 }
 
 function compactNote(note, maximum = 180) {

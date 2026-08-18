@@ -12599,5 +12599,6 @@
   "publication_state": "PUBLIC-PROTOTYPE",
   "schema_version": "1.0",
   "source_commit": "3ad0af28639be32ddf161ee9019e903141b186c3",
-  "source_repository": "bdekoz/izzi"
+  "source_repository": "bdekoz/izzi",
+  "source_repository_local_root": "/home/bkoz/src/izzi"
 }

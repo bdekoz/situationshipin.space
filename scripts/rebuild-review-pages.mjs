@@ -34,10 +34,10 @@ function argumentsMap(argv) {
   return values;
 }
 
-async function writeReviewSurfaces(item) {
+async function writeReviewSurfaces(item, localRoot) {
   const pageDir = join(repositoryRoot, "review", item.artifact_id);
   await mkdir(pageDir, { recursive: true });
-  await writeFile(join(pageDir, "index.html"), renderReviewPage(item));
+  await writeFile(join(pageDir, "index.html"), renderReviewPage(item, localRoot));
   await writeFile(join(pageDir, "manifest.json"), renderReviewManifest(item));
 }
 
@@ -86,7 +86,7 @@ async function main() {
   const catalog = JSON.parse(await readFile(catalogPath, "utf8"));
   let catalogPages = 0;
   for (const item of catalog.items) {
-    await writeReviewSurfaces(item);
+    await writeReviewSurfaces(item, catalog.source_repository_local_root);
     catalogPages += 1;
   }
 
@@ -94,7 +94,10 @@ async function main() {
   let memberPages = 0;
   for (const member of meta) {
     const display = memberDisplay(member.name);
-    await writeReviewSurfaces(memberItem(member.name, member, display, izziCommit));
+    await writeReviewSurfaces(
+      memberItem(member.name, member, display, izziCommit),
+      catalog.source_repository_local_root
+    );
     memberPages += 1;
   }
 

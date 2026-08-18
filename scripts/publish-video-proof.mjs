@@ -451,7 +451,11 @@ async function main() {
 
   const reviewDirectory = join(repositoryRoot, "review", reviewId);
   await mkdir(reviewDirectory, { recursive: true });
-  await writeFile(join(reviewDirectory, "index.html"), renderReviewPage(item), "utf8");
+  await writeFile(
+    join(reviewDirectory, "index.html"),
+    renderReviewPage(item, catalog.source_repository_local_root),
+    "utf8"
+  );
   await writeFile(join(reviewDirectory, "manifest.json"), renderReviewManifest(item), "utf8");
 
   console.log("[INFO] refreshing build receipt and running the validator");
