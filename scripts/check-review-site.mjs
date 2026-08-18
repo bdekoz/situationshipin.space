@@ -17,7 +17,8 @@ const maximumFileBytes = 16 * 1024 * 1024;
 // ai-time-to-die vertical adds three full-motion episode masters.
 const maximumPayloadBytes = 96 * 1024 * 1024;
 // .mp3 added 2026-08-14 for audio review artifacts (Kokoro female voice bank).
-const allowedExtensions = new Set([".png", ".jpg", ".jpeg", ".svg", ".html", ".json", ".mp4", ".mp3", ".webp", ".pdf", ".md"]);
+// .txt added 2026-08-18 for the W3 canonical transcript review container.
+const allowedExtensions = new Set([".png", ".jpg", ".jpeg", ".svg", ".html", ".json", ".mp4", ".mp3", ".webp", ".pdf", ".md", ".txt"]);
 const forbiddenExtensions = new Set([".mkv", ".wav", ".mov"]);
 
 let failures = 0;

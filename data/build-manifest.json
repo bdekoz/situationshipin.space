@@ -1,22 +1,22 @@
 {
   "schema_version": "1.0",
   "portal_build": "izzi-review-2026-08-11.7",
-  "generated_at": "2026-08-18T18:58:55.242Z",
+  "generated_at": "2026-08-18T19:04:08.976Z",
   "portal_repository": "bdekoz/situationshipin.space",
   "portal_source_commit": "219a9b7f0891998c1525c94fa15b43c490b5d79f",
   "izzi_repository": "bdekoz/izzi",
-  "izzi_source_commit": "0d5db4217c93e606c9cb99dbe8741e11392037f2",
+  "izzi_source_commit": "3746630338b43de50d3c28647bbcb5b58ce6f794",
   "publication_state": "PUBLIC-PROTOTYPE",
   "human_review_state": "UNREVIEWED",
   "baseline_state": "NOT-PROMOTED",
   "training_conversion_transfer_state": "NOT-SHARED",
-  "artifact_count": 337,
+  "artifact_count": 338,
   "review_category_counts": {
     "proofs": 14,
     "style_processing": 323,
-    "planning": 0
+    "planning": 1
   },
-  "artifact_payload_bytes": 25476697,
+  "artifact_payload_bytes": 25528585,
   "frame_preview_count": 0,
   "sampled_frame_count": 0,
   "source_media_bytes_represented": 0,
@@ -68,11 +68,11 @@
     },
     {
       "path": "data/review-items.json",
-      "sha256": "c11522565d2d03b035d7748c9eef45f92aebb380eb70e23fe0ecee6f0b21e260"
+      "sha256": "7f382e9d15fae615356079ef118eeeb9f1a8221ec6481f81544f489ef66c3045"
     },
     {
       "path": "scripts/check-review-site.mjs",
-      "sha256": "cd496e76319c2efd489e052e42c63e5e8139f89e7dc2aaa3cade89662259750b"
+      "sha256": "d3155beb3abc1c1b48ee147ee143c1f680dbaf7259e662722e445a3f1094b77c"
     },
     {
       "path": "scripts/update-build-manifest.mjs",
@@ -128,7 +128,7 @@
     }
   ],
   "artifact_inventory": "data/review-items.json",
-  "catalog_sha256": "c11522565d2d03b035d7748c9eef45f92aebb380eb70e23fe0ecee6f0b21e260",
+  "catalog_sha256": "7f382e9d15fae615356079ef118eeeb9f1a8221ec6481f81544f489ef66c3045",
   "notes": [
     "The catalog binds every published derivative to an Izzi source path and SHA-256.",
     "Canonical source MKVs remain outside Pages; one bounded H.264/AAC MP4 proxy is published for continuous motion and audio review with independent lineage.",

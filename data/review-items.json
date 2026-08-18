@@ -1,8 +1,32 @@
 {
   "baseline_state": "NOT-PROMOTED",
-  "generated_at": "2026-08-18T15:27:29.613Z",
+  "generated_at": "2026-08-18T19:03:34.551Z",
   "human_review_state": "UNREVIEWED",
   "items": [
+    {
+      "artifact_id": "here-lies-trouble-canonical-source-transcript",
+      "title": "Here Lies Trouble — canonical source transcript",
+      "description": "Canonical source transcript of the two seed recordings, presented for audio-plan review. Approval on the portal makes this text the canonical source edited that gates modified-voice production.",
+      "alt": "Transcript review document for the here-lies-trouble audio track.",
+      "family": "here-lies-trouble-audio",
+      "generation_class": "audio-transcript",
+      "feedback_round": "workflow-v2-audio-plan",
+      "media_kind": "plan",
+      "plan_stage": "PLAN-DRAFT",
+      "review_scope": "WORKFLOW-V2-TRANSCRIPT",
+      "review_mode": "output",
+      "source_path": "izzi 3746630338b43de50d3c28647bbcb5b58ce6f794 resources.static/here-lies-trouble/seed-audio-corpus/here-lies-trouble-{1,2}.20260415.txt",
+      "source_sha256": "38415dbe4de0e5f3335023033d340aaf8d17ae4c128ef38a5d10764cb375df31",
+      "published_path": "review/media/audio-transcript/here-lies-trouble-canonical-source-transcript.20260818.txt",
+      "sha256": "38415dbe4de0e5f3335023033d340aaf8d17ae4c128ef38a5d10764cb375df31",
+      "bytes": 51888,
+      "format": "txt",
+      "technical_state": "VERBATIM-CONTAINER-FROM-CANONICAL-TRANSCRIPTS",
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "review_category": "planning",
+      "added_at": "2026-08-18T19:03:34.531Z"
+    },
     {
       "artifact_id": "generation-keyframes-20260818-v2-index",
       "title": "Keyframes Capability 20260818 v2",
@@ -12494,6 +12518,6 @@
   "portal_build": "izzi-review-2026-08-11.7",
   "publication_state": "PUBLIC-PROTOTYPE",
   "schema_version": "1.0",
-  "source_commit": "0d5db4217c93e606c9cb99dbe8741e11392037f2",
+  "source_commit": "3746630338b43de50d3c28647bbcb5b58ce6f794",
   "source_repository": "bdekoz/izzi"
 }
