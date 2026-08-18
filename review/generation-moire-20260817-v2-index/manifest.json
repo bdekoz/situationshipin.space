@@ -1,0 +1,15 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "generation-moire-20260817-v2-index",
+  "artifact_id": "generation-moire-20260817-v2-index",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": null,
+  "document": {
+    "path": "/review/media/generation-moire-20260817-v2/generation-moire-20260817-v2-index.index.html",
+    "sha256": "23861bb012ccd992aaca37030c7c4cec184a4f68ce9b6f81eb563503778284ab",
+    "format": "html",
+    "plan_stage": null,
+    "plan_pdf": null
+  }
+}
