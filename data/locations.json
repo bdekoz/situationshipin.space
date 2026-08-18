@@ -102,6 +102,65 @@
             "distance_straight_line_m": 1221,
             "notes": "Renamed from sunset-scientology-pass per GitHub issue bdekoz/situationshipin.space#15 comment; scouted KEEP with seven points."
           }
+        },
+        {
+          "location_id": "runyon-mulholland-drive",
+          "display_name": "Runyon Canyon Mulholland Drive",
+          "slug": "runyon-mulholland-drive",
+          "status": "SCOUTED-KEEP",
+          "route": {
+            "points": [
+              { "label": "point-0", "lat": 34.119490999969784, "lng": -118.35297203021914 },
+              { "label": "point-1", "lat": 34.119070496309405, "lng": -118.35334754059673 },
+              { "label": "point-2", "lat": 34.11857324329622, "lng": -118.35380888052 },
+              { "label": "point-3", "lat": 34.11845922673401, "lng": -118.35372948649832 },
+              { "label": "point-4", "lat": 34.11804355635757, "lng": -118.35323202622887 },
+              { "label": "point-5", "lat": 34.118070083958266, "lng": -118.35313010236342 },
+              { "label": "point-6", "lat": 34.11831037963411, "lng": -118.35318231588448 },
+              { "label": "point-7", "lat": 34.118310671924945, "lng": -118.35311526038416 },
+              { "label": "point-8", "lat": 34.11796864479512, "lng": -118.35295164584728 },
+              { "label": "point-9", "lat": 34.117857555056524, "lng": -118.35286045096694 },
+              { "label": "point-10", "lat": 34.11779325074892, "lng": -118.35268610762837 },
+              { "label": "point-11", "lat": 34.1171520776434, "lng": -118.35275173193868 },
+              { "label": "point-12", "lat": 34.116407021850776, "lng": -118.35311150829385 },
+              { "label": "point-13", "lat": 34.11639949382145, "lng": -118.35297310380513 },
+              { "label": "point-14", "lat": 34.116402698904665, "lng": -118.3527438648409 },
+              { "label": "point-15", "lat": 34.116167426967735, "lng": -118.3525700600641 },
+              { "label": "point-16", "lat": 34.11432503629666, "lng": -118.35232830212605 },
+              { "label": "point-17", "lat": 34.11199822212714, "lng": -118.35162592276792 },
+              { "label": "point-18", "lat": 34.111130201623965, "lng": -118.35032845251719 },
+              { "label": "point-19", "lat": 34.110029941505864, "lng": -118.35097217863002 },
+              { "label": "point-20", "lat": 34.10907075500488, "lng": -118.34985637978893 },
+              { "label": "point-21", "lat": 34.10510653514975, "lng": -118.3490824699843 }
+            ],
+            "distance_straight_line_m": 1906,
+            "notes": "Scouted via GitHub issue bdekoz/situationshipin.space#42 (KEEP). Straight-line total 1906 m."
+          }
+        },
+        {
+          "location_id": "runyon-to-inspiration-point",
+          "display_name": "Runyon Canyon to Inspiration Point",
+          "slug": "runyon-to-inspiration-point",
+          "status": "SCOUTED-KEEP",
+          "route": {
+            "points": [
+              { "label": "point-0", "lat": 34.105313176387746, "lng": -118.34897804300881 },
+              { "label": "point-1", "lat": 34.10553636722761, "lng": -118.34928131181937 },
+              { "label": "point-2", "lat": 34.10627806352479, "lng": -118.34961390563647 },
+              { "label": "point-3", "lat": 34.10730822297633, "lng": -118.34960317681826 },
+              { "label": "point-4", "lat": 34.10828516565535, "lng": -118.3497426516734 },
+              { "label": "point-5", "lat": 34.10901347239309, "lng": -118.34986066886584 },
+              { "label": "point-6", "lat": 34.10898939096939, "lng": -118.34950661751934 },
+              { "label": "point-7", "lat": 34.1084641644102, "lng": -118.34922766768 },
+              { "label": "point-8", "lat": 34.10839283932517, "lng": -118.34905850917644 },
+              { "label": "point-9", "lat": 34.10805307774014, "lng": -118.34902954286109 },
+              { "label": "point-10", "lat": 34.10792877238655, "lng": -118.34917974655121 },
+              { "label": "point-11", "lat": 34.10730724287892, "lng": -118.34887933917092 },
+              { "label": "point-12", "lat": 34.10672213463482, "lng": -118.34879350814244 }
+            ],
+            "distance_straight_line_m": 742,
+            "notes": "Scouted via GitHub issue bdekoz/situationshipin.space#43 (KEEP). Straight-line total 742 m."
+          }
         }
       ]
     }
