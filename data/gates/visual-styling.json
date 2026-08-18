@@ -1,0 +1,17 @@
+{
+  "schema_version": "izzi-workflow-gate-1",
+  "gate": "visual-styling",
+  "decision": "PENDING",
+  "decided_at": null,
+  "decided_by": null,
+  "recorded_at": "2026-08-18 America/Los_Angeles",
+  "unlocks": ["video-production"],
+  "combined_with": ["audio"],
+  "evidence": {
+    "workflow": "izzi docs/workflows.md (W1)",
+    "proposal": "izzi docs/development/sessions/explore_futures.20260818.workflow_v2_proposal.md",
+    "review_surface": "https://situationshipin.space/review/generation-keyframes-20260818-v2-index/",
+    "candidate_grammars": ["neon-addict", "noir-thriller", "duotone-111"],
+    "gate_rule": "video-production entries must not appear in the review catalog until visual-styling and audio both carry decision KEEP"
+  }
+}

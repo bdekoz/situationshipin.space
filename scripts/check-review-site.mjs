@@ -316,6 +316,54 @@ for (const item of catalog.items) {
   }
 }
 
+// ---------------------------------------------------------------------------
+// Workflow-v2 gates (visual-styling + audio). Video-production entries must
+// not appear in the catalog until both gates carry decision KEEP.
+// ---------------------------------------------------------------------------
+const workflowGateDir = resolve(repositoryRoot, "data/gates");
+const workflowGates = new Map();
+for (const gateName of ["visual-styling", "audio"]) {
+  const gatePath = resolve(workflowGateDir, `${gateName}.json`);
+  try {
+    const gate = JSON.parse(await readFile(gatePath, "utf8"));
+    const decision = gate?.decision;
+    if (gate?.schema_version !== "izzi-workflow-gate-1"
+        || !["PENDING", "KEEP", "REVISE"].includes(decision)) {
+      workflowGates.set(gateName, "PENDING");
+      console.warn(`[WARN] workflow gate ${gateName} is unreadable; treated as PENDING`);
+    } else {
+      workflowGates.set(gateName, decision);
+      pass(`workflow gate ${gateName}: ${decision}`);
+    }
+  } catch {
+    // The audio gate lands in W5; a missing gate file is treated as PENDING
+    // rather than a standalone failure.
+    workflowGates.set(gateName, "PENDING");
+  }
+}
+
+const videoProductionItems = catalog.items.filter(
+  (item) => item.media_kind === "video" || item.media_kind === "video-filmstrip"
+);
+if (videoProductionItems.length > 0) {
+  for (const item of videoProductionItems) {
+    if (workflowGates.get("visual-styling") !== "KEEP") {
+      fail(
+        `${item.artifact_id} is a video-production entry but the visual-styling gate is `
+        + `${workflowGates.get("visual-styling")}`
+      );
+    }
+    if (workflowGates.get("audio") !== "KEEP") {
+      fail(
+        `${item.artifact_id} is a video-production entry but the audio gate is `
+        + `${workflowGates.get("audio")}`
+      );
+    }
+  }
+} else {
+  pass("workflow gates idle: no video-production entries are published");
+}
+
 for (const path of await recursiveFiles(resolve(repositoryRoot, "review"))) {
   if (forbiddenExtensions.has(extname(path).toLowerCase())) {
     fail(`source media was copied into the public review tree: ${path}`);
