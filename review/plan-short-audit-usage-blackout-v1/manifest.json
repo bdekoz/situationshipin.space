@@ -1,0 +1,15 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "plan-short-audit-usage-blackout-v1",
+  "artifact_id": "plan-short-audit-usage-blackout-v1",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": null,
+  "document": {
+    "path": "/review/media/audit-usage-blackout/plan-short-audit-usage-blackout-v1.md",
+    "sha256": "024c0e81e69b5a7b08deaf401f7062385039ba4b5c302e4dca48b4ecc30b9b0d",
+    "format": "markdown",
+    "plan_stage": "PLAN-DRAFT",
+    "plan_pdf": null
+  }
+}

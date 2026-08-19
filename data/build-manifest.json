@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "portal_build": "izzi-review-2026-08-11.7",
-  "generated_at": "2026-08-19T02:24:24.055Z",
+  "generated_at": "2026-08-19T03:32:05.886Z",
   "portal_repository": "bdekoz/situationshipin.space",
   "portal_source_commit": "219a9b7f0891998c1525c94fa15b43c490b5d79f",
   "izzi_repository": "bdekoz/izzi",
@@ -10,13 +10,13 @@
   "human_review_state": "UNREVIEWED",
   "baseline_state": "NOT-PROMOTED",
   "training_conversion_transfer_state": "NOT-SHARED",
-  "artifact_count": 341,
+  "artifact_count": 342,
   "review_category_counts": {
     "proofs": 17,
     "style_processing": 323,
-    "planning": 1
+    "planning": 2
   },
-  "artifact_payload_bytes": 25578250,
+  "artifact_payload_bytes": 25582006,
   "frame_preview_count": 0,
   "sampled_frame_count": 0,
   "source_media_bytes_represented": 0,
@@ -68,7 +68,7 @@
     },
     {
       "path": "data/review-items.json",
-      "sha256": "cbc4ec878d1d4500b70beaea0cf51b828fbf17c83f19019437e12ff5b42291a8"
+      "sha256": "1ae1363e69471ff6c21c30808a47ba1d37779891631553145a2303e2118f2bf2"
     },
     {
       "path": "scripts/check-review-site.mjs",
@@ -144,7 +144,7 @@
     }
   ],
   "artifact_inventory": "data/review-items.json",
-  "catalog_sha256": "cbc4ec878d1d4500b70beaea0cf51b828fbf17c83f19019437e12ff5b42291a8",
+  "catalog_sha256": "1ae1363e69471ff6c21c30808a47ba1d37779891631553145a2303e2118f2bf2",
   "notes": [
     "The catalog binds every published derivative to an Izzi source path and SHA-256.",
     "Canonical source MKVs remain outside Pages; one bounded H.264/AAC MP4 proxy is published for continuous motion and audio review with independent lineage.",
