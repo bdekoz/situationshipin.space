@@ -1,0 +1,12 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "audit-usage-blackout-draft-3",
+  "artifact_id": "audit-usage-blackout-draft-3",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": {
+    "path": "/review/media/audit-usage-blackout/audit-usage-blackout-draft-3.review.mp4",
+    "sha256": "847e1fd4ad8fe129a7954aa10fec3da2460d372c8ae78895869ec2bb2f19d0b2"
+  },
+  "document": null
+}
