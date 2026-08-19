@@ -36,9 +36,11 @@
 	  <div>
 	    <h2 id="new-title">New</h2>
 	    <p class="results-description">
-	      Plans are written in the izzi repository and published here with
-	      one approval-gated command. This page never creates or submits
-	      anything itself.
+	      Propose a new project from this page: choose a product type,
+	      then fill in slug, title, and description. Submit opens a
+	      prefilled GitHub issue; approval there creates the izzi project
+	      directory and starts the plan-v1 draft. This page never creates
+	      or publishes anything itself.
 	    </p>
 	  </div>
 	</div>
@@ -46,142 +48,111 @@
 	<div class="new-ladder">
 	  <article>
 	    <span class="step" aria-hidden="true">01</span>
-	    <h3>Scaffold</h3>
+	    <h3>Propose</h3>
 	    <p>
-	      One command in izzi turns a name and a one-line concept into a
-	      starter plan draft.
+	      Choose vertical-project or short, then fill in the slug, title,
+	      and description below. Submitting opens a prefilled GitHub
+	      issue.
 	    </p>
 	  </article>
 	  <article>
 	    <span class="step" aria-hidden="true">02</span>
-	    <h3>Write to the stage</h3>
+	    <h3>Approve on GitHub</h3>
 	    <p>
-	      Start cheap as a draft; add template, segments, estimates, pilot
-	      options, gates, then orchestration as formality grows.
+	      Approving the issue creates the izzi project directory
+	      (docs/development/&lt;slug&gt;/) and starts planning with a
+	      plan-v1 draft.
 	    </p>
 	  </article>
 	  <article>
 	    <span class="step" aria-hidden="true">03</span>
-	    <h3>Publish</h3>
+	    <h3>Review</h3>
 	    <p>
-	      Run the approval-gated publisher from the situationshipin.space
-	      repository, then commit and push. The plan appears here
-	      newest-first.
+	      The plan-v1 draft publishes here newest-first. A KEEP advances
+	      it; a KEEP on the formal plan unlocks production.
 	    </p>
 	  </article>
 	</div>
 
 	<details class="selection-panel">
-	  <summary>Stage requirements</summary>
-	  <table class="stage-table">
-	    <thead>
-	      <tr>
-		<th>Stage</th>
-		<th>Required before publishing</th>
-	      </tr>
-	    </thead>
-	    <tbody>
-	      <tr>
-		<td><code>draft</code></td>
-		<td>
-		  Provenance and a bounded document only — no required sections,
-		  no PDF, no house-style checks.
-		</td>
-	      </tr>
-	      <tr>
-		<td><code>vertical</code></td>
-		<td>
-		  Template, segments, estimates, pilot options, and gates in the
-		  plan content.
-		</td>
-	      </tr>
-	      <tr>
-		<td><code>formal</code></td>
-		<td>
-		  Adds orchestration; a PDF variant must carry a PASS
-		  special-topics check supplied with <code>--checks</code>.
-		</td>
-	      </tr>
-	    </tbody>
-	  </table>
+	  <summary>Product types</summary>
+	  <div class="choice-grid">
+	    <article class="choice-card">
+	      <h3>vertical-project</h3>
+	      <ul>
+		<li>1080p vertical video</li>
+		<li>[1–n] episodes</li>
+		<li>each episode [1–3] minutes</li>
+		<li>each series [60–100] episodes</li>
+		<li>series runtime (60–150) minutes</li>
+	      </ul>
+	    </article>
+	    <article class="choice-card">
+	      <h3>short</h3>
+	      <ul>
+		<li>1080p or 4k</li>
+		<li>1 channel: landscape or portrait</li>
+		<li>2 channel: side-by-side vertical, horizontal grid, or
+		  vertical grid</li>
+		<li>exactly one video file</li>
+	      </ul>
+	    </article>
+	  </div>
 	  <p class="fine-print">
-	    A KEEP on an earlier stage advances the plan; a KEEP on the formal
-	    plan unlocks that vertical's draft loop.
+	    Put the details that matter for review — for a short, resolution,
+	    channels, and arrangement — in the Description box below.
 	  </p>
 	</details>
 
-	<details class="selection-panel">
-	  <summary>Publish command</summary>
-	  <pre class="command-block" id="plan-command-template">node scripts/publish-plan-proof.mjs \
-  --approve PROJECT-APPROVED \
-  --source docs/development/&lt;vertical&gt;/proposal_vertical_v2.md \
-  --source-path docs/development/&lt;vertical&gt;/proposal_vertical_v2.md \
-  --artifact-id plan-vertical-&lt;slug&gt;-v2 \
-  --title "&lt;Vertical&gt; — proposed vertical v2" \
-  --description "What the plan reviewer should confirm" \
-  --family &lt;family&gt; \
-  --feedback-round plan-v2 \
-  --stage vertical</pre>
-	  <p class="fine-print">
-	    Run with <code>--dry-run</code> first to preview without writing.
-	    <code>--approve PROJECT-APPROVED</code> is the explicit project
-	    approval gate; without it the publisher refuses. Plan documents
-	    are capped at 16 MiB.
-	  </p>
-	</details>
-
-	<details class="selection-panel">
-	  <summary>Build the command</summary>
-	  <form id="plan-command-form" class="command-grid" autocomplete="off">
-	    <label>
-	      Vertical slug
-	      <input id="pc-vertical" type="text" value="my-vertical">
-	    </label>
-	    <label>
-	      Title
-	      <input id="pc-title" type="text"
-		placeholder="My vertical — proposed vertical v2">
-	    </label>
+	<details class="selection-panel" open>
+	  <summary>New project proposal</summary>
+	  <form id="plan-proposal-form" autocomplete="off">
+	    <fieldset>
+	      <legend>Product type</legend>
+	      <div class="choice-grid">
+		<label class="checkbox-label">
+		  <input id="proposal-type-vertical" type="radio"
+		    name="product-type" value="vertical-project" checked>
+		  vertical-project
+		</label>
+		<label class="checkbox-label">
+		  <input id="proposal-type-short" type="radio" name="product-type"
+		    value="short">
+		  short
+		</label>
+	      </div>
+	    </fieldset>
+	    <div class="command-grid">
+	      <label>
+		Vertical slug
+		<input id="proposal-slug" type="text" placeholder="my-vertical">
+	      </label>
+	      <label>
+		Title
+		<input id="proposal-title" type="text" placeholder="My project">
+	      </label>
+	    </div>
 	    <label>
 	      Description
-	      <input id="pc-description" type="text"
-		placeholder="What the plan reviewer should confirm">
+	      <textarea id="proposal-description" rows="12"
+		placeholder="Preliminary planning information to copy into the GitHub issue for review…"></textarea>
 	    </label>
-	    <label>
-	      Family
-	      <input id="pc-family" type="text" placeholder="my-family">
-	    </label>
-	    <label>
-	      Feedback round
-	      <input id="pc-round" type="text" value="plan-v2">
-	    </label>
-	    <label>
-	      Stage
-	      <select id="pc-stage">
-		<option value="draft">draft</option>
-		<option value="vertical" selected>vertical</option>
-		<option value="formal">formal</option>
-	      </select>
-	    </label>
-	    <label class="checkbox-label">
-	      <input id="pc-dry-run" type="checkbox" checked>
-	      Include <code>--dry-run</code>
-	    </label>
+	    <div class="command-actions">
+	      <button id="submit-plan-proposal" class="button" type="button"
+		disabled>
+		Submit proposal on GitHub
+	      </button>
+	      <p id="plan-proposal-status" class="status-note" role="status"
+		aria-live="polite"></p>
+	    </div>
+	    <p class="fine-print">
+	      Webform plans are always plan-v1 at the draft stage; feedback
+	      round, stage, and the dry-run preview are decided repo-side, not
+	      in this form. Submitting opens a public GitHub issue in
+	      bdekoz/izzi — nothing is sent until you press GitHub's final
+	      button.
+	    </p>
 	  </form>
-	  <div class="command-actions">
-	    <button id="copy-plan-command" class="button" type="button">
-	      Copy command
-	    </button>
-	    <p id="plan-command-status" class="status-note" role="status"
-	      aria-live="polite"></p>
-	  </div>
-	  <pre class="command-block" id="plan-command-output" hidden></pre>
-	  <p class="fine-print">
-	    The copied command previews first while <code>--dry-run</code> is
-	    checked. Remove it for the real publication. Drafts and this form
-	    stay in this browser; no file leaves the page until you run the
-	    command yourself.
-	  </p>
 	</details>
       </section>
 

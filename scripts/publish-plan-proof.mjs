@@ -30,6 +30,16 @@ const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const catalogPath = join(repositoryRoot, "data/review-items.json");
 const MAXIMUM_DOCUMENT_BYTES = 16 * 1024 * 1024;
 const APPROVAL_TOKEN = "PROJECT-APPROVED";
+const PRODUCT_TYPES = {
+  "vertical-project": {
+    generation_class: "plan-vertical",
+    review_scope: "PLAN-VERTICAL-REVIEW"
+  },
+  short: {
+    generation_class: "plan-short",
+    review_scope: "PLAN-SHORT-REVIEW"
+  }
+};
 const STAGES = {
   draft: "PLAN-DRAFT",
   vertical: "PLAN-VERTICAL",
@@ -61,6 +71,7 @@ function usage() {
     "  --description <text>         what to review",
     "  --family <family>            vertical family slug",
     "  --feedback-round <round>     plan iteration label",
+    "  --product-type <type>        vertical-project | short (default vertical-project)",
     "",
     "optional:",
     "  --source-path <izzi path>    canonical source for provenance",
@@ -165,8 +176,15 @@ async function main() {
     process.exitCode = 1;
     return;
   }
-  const generationClass = values["generation-class"] || "plan-vertical";
-  const reviewScope = values["review-scope"] || "PLAN-VERTICAL-REVIEW";
+  const productTypeValue = String(values["product-type"] || "vertical-project").toLowerCase();
+  const productType = PRODUCT_TYPES[productTypeValue];
+  if (!productType) {
+    console.error(`[FAIL] --product-type must be one of: ${Object.keys(PRODUCT_TYPES).join(", ")}`);
+    process.exitCode = 1;
+    return;
+  }
+  const generationClass = values["generation-class"] || productType.generation_class;
+  const reviewScope = values["review-scope"] || productType.review_scope;
   const dryRun = values["dry-run"] === true;
 
   const source = resolve(sourcePath);
@@ -277,6 +295,7 @@ async function main() {
     alt: values.alt || description,
     family,
     generation_class: generationClass,
+    product_type: productTypeValue,
     feedback_round: feedbackRound,
     media_kind: "plan",
     review_scope: reviewScope,
@@ -305,6 +324,7 @@ async function main() {
     title,
     family,
     generation_class: generationClass,
+    product_type: productTypeValue,
     review_scope: reviewScope,
     plan_stage: stage,
     source: sourceProvenance,

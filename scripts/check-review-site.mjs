@@ -152,6 +152,22 @@ for (const item of catalog.items) {
     if (item.media_kind !== "plan") {
       fail(`${item.artifact_id} planning items must use media_kind plan`);
     }
+    const planClassProductTypes = {
+      "plan-vertical": "vertical-project",
+      "plan-short": "short"
+    };
+    if (planClassProductTypes[item.generation_class]) {
+      if (item.product_type !== planClassProductTypes[item.generation_class]) {
+        fail(
+          `${item.artifact_id} ${item.generation_class} items must carry ` +
+          `product_type ${planClassProductTypes[item.generation_class]}`
+        );
+      }
+      if (item.generation_class === "plan-short"
+          && item.review_scope !== "PLAN-SHORT-REVIEW") {
+        fail(`${item.artifact_id} plan-short items must use review_scope PLAN-SHORT-REVIEW`);
+      }
+    }
     if (!["PLAN-DRAFT", "PLAN-VERTICAL", "PLAN-FORMAL"].includes(item.plan_stage)) {
       fail(`${item.artifact_id} has an invalid plan stage`);
     }
@@ -526,6 +542,19 @@ if (!plans.includes('data-review-category="planning"')) {
 
 if (!plans.includes('id="new-title"')) {
   fail("plans.html is missing the New plan-creation section");
+}
+
+for (const id of ["plan-proposal-form", "submit-plan-proposal",
+  "proposal-type-vertical", "proposal-type-short", "proposal-slug",
+  "proposal-title", "proposal-description"]) {
+  if (!plans.includes(`id="${id}"`)) {
+    fail(`plans.html is missing the proposal form ID ${id}`);
+  }
+}
+for (const removed of ['id="plan-command-form"', 'id="copy-plan-command"', "--dry-run"]) {
+  if (plans.includes(removed)) {
+    fail(`plans.html still exposes the removed command builder: ${removed}`);
+  }
 }
 
 const locationPage = await readFile(resolve(repositoryRoot, "location.html"), "utf8");

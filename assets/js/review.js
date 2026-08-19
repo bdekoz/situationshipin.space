@@ -1241,74 +1241,87 @@ function formatDate(value) {
   return Number.isNaN(date.valueOf()) ? value : date.toLocaleString([], { dateStyle: "medium", timeStyle: "short" });
 }
 
-(function initializePlanCommandBuilder() {
+(function initializePlanProposalForm() {
   if (document.body.dataset.reviewCategory !== "planning") {
     return;
   }
-  const form = document.getElementById("plan-command-form");
-  const output = document.getElementById("plan-command-output");
-  const copyButton = document.getElementById("copy-plan-command");
-  const status = document.getElementById("plan-command-status");
-  if (!form || !output || !copyButton || !status) {
+  const form = document.getElementById("plan-proposal-form");
+  const submitButton = document.getElementById("submit-plan-proposal");
+  const status = document.getElementById("plan-proposal-status");
+  const slugInput = document.getElementById("proposal-slug");
+  const titleInput = document.getElementById("proposal-title");
+  const descriptionInput = document.getElementById("proposal-description");
+  if (!form || !submitButton || !status || !slugInput || !titleInput || !descriptionInput) {
     return;
   }
 
-  const read = (id) => document.getElementById(id).value.trim();
-  const escapeShell = (value) =>
-    value.replace(/[\\"]/g, (character) => `\\${character}`);
+  function readProductType() {
+    const checked = form.querySelector('input[name="product-type"]:checked');
+    return checked ? checked.value : "vertical-project";
+  }
 
-  function buildCommand() {
-    const vertical = read("pc-vertical") || "<vertical>";
-    const slug = vertical
+  function slugify(value) {
+    return value
       .toLowerCase()
       .replace(/[^a-z0-9._-]+/g, "-")
-      .replace(/^-+|-+$/g, "") || "my-vertical";
-    const title = read("pc-title") || "My vertical — proposed vertical v2";
-    const description =
-      read("pc-description") || "What the plan reviewer should confirm";
-    const family = read("pc-family") || "<family>";
-    const round = read("pc-round") || "plan-v2";
-    const stage = read("pc-stage") || "vertical";
-    const dryRun = document.getElementById("pc-dry-run").checked;
-    return [
-      "node scripts/publish-plan-proof.mjs \\",
-      "  --approve PROJECT-APPROVED \\",
-      `  --source docs/development/${vertical}/proposal_vertical_v2.md \\`,
-      `  --source-path docs/development/${vertical}/proposal_vertical_v2.md \\`,
-      `  --artifact-id plan-vertical-${slug}-v2 \\`,
-      `  --title "${escapeShell(title)}" \\`,
-      `  --description "${escapeShell(description)}" \\`,
-      `  --family ${family} \\`,
-      `  --feedback-round ${round} \\`,
-      `  --stage ${stage}`,
-      ...(dryRun ? ["  --dry-run"] : [])
-    ].join("\n");
+      .replace(/^-+|-+$/g, "");
   }
 
-  function render() {
-    output.textContent = buildCommand();
-    output.hidden = false;
+  function proposalComplete() {
+    return Boolean(
+      slugify(slugInput.value) &&
+      titleInput.value.trim() &&
+      descriptionInput.value.trim()
+    );
   }
 
-  form.addEventListener("input", render);
-  form.addEventListener("change", render);
-  copyButton.addEventListener("click", async () => {
-    const command = buildCommand();
-    try {
-      await navigator.clipboard.writeText(command);
-      status.textContent = "Command copied to clipboard.";
-    } catch {
-      const helper = document.createElement("textarea");
-      helper.value = command;
-      helper.setAttribute("readonly", "");
-      helper.style.position = "fixed";
-      helper.style.opacity = "0";
-      document.body.appendChild(helper);
-      helper.select();
-      document.execCommand("copy");
-      helper.remove();
-      status.textContent = "Command copied to clipboard.";
+  function refresh() {
+    const complete = proposalComplete();
+    submitButton.disabled = !complete;
+    status.textContent = complete
+      ? "Ready to submit a public GitHub issue."
+      : "Fill in vertical slug, title, and description first.";
+  }
+
+  function submitProposal() {
+    const productType = readProductType();
+    const slug = slugify(slugInput.value.trim());
+    const title = titleInput.value.trim();
+    const description = descriptionInput.value.trim();
+    if (!slug || !title || !description) {
+      refresh();
+      return;
     }
-  });
-  render();
+    const body = [
+      "## New plan proposal",
+      "",
+      "- **Product type:** " + productType,
+      "- **Slug:** " + slug,
+      "- **Title:** " + title,
+      "- **Round:** plan-v1",
+      "- **Stage:** draft",
+      "",
+      "## Description",
+      "",
+      description,
+      "",
+      "---",
+      "",
+      "Submitted from situationshipin.space plans.html. Approving this issue",
+      "authorizes creating docs/development/" + slug + "/ and scaffolding the",
+      "plan-draft-v1.md, then publishing it for review on plans.html."
+    ].join("\n");
+    const url =
+      "https://github.com/bdekoz/izzi/issues/new?title=" +
+      encodeURIComponent("New plan proposal: " + title) +
+      "&body=" + encodeURIComponent(body);
+    window.open(url, "_blank", "noopener");
+    status.textContent =
+      "Opened a prefilled GitHub issue. Nothing is submitted until you press GitHub's final button.";
+  }
+
+  form.addEventListener("input", refresh);
+  form.addEventListener("change", refresh);
+  submitButton.addEventListener("click", submitProposal);
+  refresh();
 })();
