@@ -1,0 +1,15 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "izzi-generation-20260818",
+  "artifact_id": "izzi-generation-20260818",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": null,
+  "document": {
+    "path": "/review/media/izzi-generation-20260818/izzi-generation-20260818.index.html",
+    "sha256": "4ba3f7e3fd69ce0d1fe928cdfc888a800f0e80ca43bd4b823fc78425a343ef07",
+    "format": "html",
+    "plan_stage": null,
+    "plan_pdf": null
+  }
+}
