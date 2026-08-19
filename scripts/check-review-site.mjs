@@ -102,7 +102,7 @@ async function collectReviewReferences() {
     const pattern = /(?:src|href)=["']([^"']+)["']/g;
     for (const match of html.matchAll(pattern)) {
       const url = match[1];
-      if (!url || /^(?:data:|mailto:|tel:|https?:|#)/i.test(url)) continue;
+      if (!url || /^(?:data:|mailto:|tel:|https?:|file:|#)/i.test(url)) continue;
       const target = resolveReviewReference(posix.dirname(htmlRelative), url);
       if (!target || !target.startsWith("review/")) continue;
       const targetFile = target.endsWith("/") ? `${target}index.html` : target;
@@ -346,39 +346,51 @@ for (const gateName of ["visual-styling", "audio"]) {
     const decision = gate?.decision;
     if (gate?.schema_version !== "izzi-workflow-gate-1"
         || !["PENDING", "KEEP", "REVISE"].includes(decision)) {
-      workflowGates.set(gateName, "PENDING");
+      workflowGates.set(gateName, { decision: "PENDING", families: [] });
       console.warn(`[WARN] workflow gate ${gateName} is unreadable; treated as PENDING`);
     } else {
-      workflowGates.set(gateName, decision);
+      workflowGates.set(gateName, {
+        decision,
+        families: Array.isArray(gate.families) ? gate.families : []
+      });
       pass(`workflow gate ${gateName}: ${decision}`);
     }
   } catch {
     // The audio gate lands in W5; a missing gate file is treated as PENDING
     // rather than a standalone failure.
-    workflowGates.set(gateName, "PENDING");
+    workflowGates.set(gateName, { decision: "PENDING", families: [] });
   }
 }
 
 const videoProductionItems = catalog.items.filter(
   (item) => item.media_kind === "video" || item.media_kind === "video-filmstrip"
 );
-if (videoProductionItems.length > 0) {
-  for (const item of videoProductionItems) {
-    if (workflowGates.get("visual-styling") !== "KEEP") {
+const gateFamilies = new Set([
+  ...(workflowGates.get("visual-styling")?.families || []),
+  ...(workflowGates.get("audio")?.families || [])
+]);
+const gatedVideoItems = videoProductionItems.filter(
+  (item) => gateFamilies.size === 0 || gateFamilies.has(item.family)
+);
+if (gatedVideoItems.length > 0) {
+  for (const item of gatedVideoItems) {
+    const visualDecision = workflowGates.get("visual-styling")?.decision || "PENDING";
+    const audioDecision = workflowGates.get("audio")?.decision || "PENDING";
+    if (visualDecision !== "KEEP") {
       fail(
         `${item.artifact_id} is a video-production entry but the visual-styling gate is `
-        + `${workflowGates.get("visual-styling")}`
+        + `${visualDecision}`
       );
     }
-    if (workflowGates.get("audio") !== "KEEP") {
+    if (audioDecision !== "KEEP") {
       fail(
         `${item.artifact_id} is a video-production entry but the audio gate is `
-        + `${workflowGates.get("audio")}`
+        + `${audioDecision}`
       );
     }
   }
 } else {
-  pass("workflow gates idle: no video-production entries are published");
+  pass("workflow gates idle: no in-scope video-production entries are published");
 }
 
 for (const path of await recursiveFiles(resolve(repositoryRoot, "review"))) {

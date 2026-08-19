@@ -1,6 +1,7 @@
 {
   "schema_version": "izzi-workflow-gate-1",
   "gate": "audio",
+  "families": ["here-lies-trouble"],
   "decision": "PENDING",
   "decided_at": null,
   "decided_by": null,
