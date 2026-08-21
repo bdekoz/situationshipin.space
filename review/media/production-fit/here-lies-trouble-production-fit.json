@@ -1,0 +1,465 @@
+{
+  "schema_version": "izzi-production-fit-1",
+  "generated_at": "2026-08-20 America/Los_Angeles",
+  "subject": {
+    "project_id": "here-lies-trouble",
+    "artifact": "Final Draft 13 enrichment of the canonical source transcript (291 verbatim turns)",
+    "attributes": {
+      "format": "Television screenplay, dialogue-driven table conversation",
+      "premise": "Friends at a dinner deconstruct a theater production in which the characters are trapped reliving a story told about them; the conversation surfaces the meta-premise that the characters eventually rip up the script and write their own story.",
+      "themes": [
+        "Reclaiming one's own narrative",
+        "Representation and authenticity",
+        "Identity and belonging",
+        "Theater/performance meta-fiction"
+      ],
+      "context_notes": [
+        "Conversation recorded at Manuela in Los Angeles",
+        "References Mark Taper and Broadway; a cabaret drag-queen character",
+        "Subject is Filipino performers and their friends"
+      ],
+      "characters": [
+        "SPEAKER 1",
+        "SPEAKER 2",
+        "SPEAKER 3",
+        "SPEAKER 4",
+        "SPEAKER 5",
+        "SPEAKER 6",
+        "UNKNOWN SPEAKER"
+      ],
+      "audience": "Adult, voice-driven drama audience; underrepresented-voice audience; possible Gen Z/younger demo",
+      "comps": [
+        "BEEF (voice-driven)",
+        "MAID (voice-driven)",
+        "Big Little Lies (cul-de-sac ensemble)"
+      ]
+    },
+    "evidence_quotes": [
+      "Filipino performers deserve so much better. They deserve a lot more.",
+      "It's about like trying to reclaim your story and what possibly that looks like.",
+      "We need to stop this. We can tell other stories. We can tell our own story.",
+      "I guess we write our own story."
+    ]
+  },
+  "needs_source_sha256": "ed33fbb419cd034a3be88df778f6cb89a9c5c3b0402578ea44f84d94b96057ce",
+  "verdicts": [
+    {
+      "house_id": "onyx-collective",
+      "fit": "STRONG",
+      "matched": [
+        "underrepresented voices",
+        "voice-driven character drama",
+        "soaps"
+      ],
+      "rationale": "Direct brand fit: underrepresented voices, character-driven one-hour drama, soap/romance/thriller appetite; the 'reclaim your own story' premise is squarely in Onyx territory.",
+      "conflicts": [],
+      "house_name": "Onyx Collective",
+      "platform": "streaming",
+      "brand_identity": "Content brand for creators of color and underrepresented voices.",
+      "house_green": [
+        "High-concept one-hour dramas that brand Onyx",
+        "Underrepresented voices (not always race)",
+        "Soaps a la Six Feet Under; romance; grounded sci-fi/genre",
+        "Psychological/erotic thrillers with a romantic element (YOU); cults",
+        "Heist/mystery (Lupin, Ocean's Eleven); espionage",
+        "Cul-de-sac dramas (Big Little Lies but ongoing)",
+        "Ongoing genre horror (Last of Us, Haunting of Hill House); female-led"
+      ],
+      "house_red": []
+    },
+    {
+      "house_id": "netflix",
+      "fit": "MODERATE",
+      "matched": [
+        "voice-driven character dramas (BEEF, MAID)",
+        "coming-of-age/Gen Z"
+      ],
+      "rationale": "Strong voice-driven bucket fit, but the subject is an inside-theater/industry conversation, which lands on Netflix's Inside Hollywood/Showbiz no-fly list.",
+      "conflicts": [
+        "Inside Hollywood/Showbiz no-fly"
+      ],
+      "house_name": "Netflix",
+      "platform": "streaming",
+      "brand_identity": "Reaching the widest audience by means of premium, commercial and global fare.",
+      "house_green": [
+        "Voice-driven character dramas (BEEF, MAID); prestige ongoing; iconic IP; limited acclaim",
+        "Mystery/thrillers: close-ended, pulse-pounding rides, conspiracy, ongoing crime with character hooks",
+        "Soap/YA: Gen Z, workplace/new adult, family dramas, YA Bonnie & Clyde, YA genre soaps, heightened soaps",
+        "Romance: contemporary, steamy erotic thriller, unconventional, epic, adult genre romance",
+        "Faith-forward dramas; muscular/action/bro-soap; genre (character sci-fi, mystery box, elevated, psychological horror, grounded genre); procedurals"
+      ],
+      "house_red": [
+        "Anthologies",
+        "Biopics",
+        "Musicals",
+        "Inside Hollywood/Showbiz",
+        "Imposed US/Western POVs",
+        "Dry historical/period dramas",
+        "Westerns (full)",
+        "Politics"
+      ]
+    },
+    {
+      "house_id": "fx",
+      "fit": "MODERATE",
+      "matched": [
+        "writer/voice driven",
+        "distinctive POV",
+        "Gen Z demo"
+      ],
+      "rationale": "FX wants different yet commercial voices and younger demos; the unfictionalized dinner-conversation format is distinctive, though not in a named bucket.",
+      "conflicts": [],
+      "house_name": "FX",
+      "platform": "streaming",
+      "brand_identity": "Elevated adult fare with a distinctive POV.",
+      "house_green": [
+        "Gen Z male voices/IP/worlds; genre and live sports demo",
+        "Muscular/feel-gritty crime a la BEEF, INDUSTRY; competitive legal space",
+        "LatinX family drama and family crime drama",
+        "Action thriller that pulls younger demo; military but apolitical",
+        "Firefighters who travel to fight extreme fires; erotic thriller; horror; corporate espionage; mystery thriller"
+      ],
+      "house_red": [
+        "Too broad",
+        "Too young",
+        "Things that don't go deep enough"
+      ]
+    },
+    {
+      "house_id": "hbo",
+      "fit": "MODERATE",
+      "matched": [
+        "interesting voices"
+      ],
+      "rationale": "HBO's 'interesting voices' bucket fits; adult ongoing drama fits their shelf, but the subject is not a world-building engine.",
+      "conflicts": [
+        "no clear engine"
+      ],
+      "house_name": "HBO",
+      "platform": "streaming",
+      "brand_identity": "Premium and elevated content, through and through.",
+      "house_green": [
+        "Adult family drama a la Succession/Sopranos in a new world, with an engine",
+        "Distinctive crime/thriller a la Task",
+        "Interesting voices",
+        "Genre set in our world with a twist; open to worldbuilding (Baldur's Gate)"
+      ],
+      "house_red": [
+        "Limiteds (non-starter)",
+        "Period (harder)"
+      ]
+    },
+    {
+      "house_id": "hulu",
+      "fit": "MODERATE",
+      "matched": [
+        "female-driven",
+        "ongoing with a meta engine"
+      ],
+      "rationale": "The 'reclaim your story' meta-premise could carry a thriller/soap engine; female-led conversation material; no horror/period conflicts.",
+      "conflicts": [],
+      "house_name": "Hulu",
+      "platform": "streaming",
+      "brand_identity": "Both reflects and pierces popular culture.",
+      "house_green": [
+        "Female-driven soaps with a thriller/mystery engine (Little Fires Everywhere, Handmaid's Tale)",
+        "Ripped-from-the-headlines, narrative nonfiction, psychological true crime",
+        "Sophisticated YA (Tell Me Lies, Cruel Summer, Euphoria)",
+        "Propulsive joy that doesn't depend on murder; action-forward for women",
+        "Ongoing family drama with a twist (This Is Us timeline, Ozark)"
+      ],
+      "house_red": [
+        "Period before the era of cars",
+        "Horror/haunted house shows"
+      ]
+    },
+    {
+      "house_id": "peacock",
+      "fit": "MODERATE",
+      "matched": [
+        "water cooler",
+        "soapy"
+      ],
+      "rationale": "Water-cooler/soapy fit is plausible, but the priority is African American audience drama, which this subject does not center.",
+      "conflicts": [
+        "African American audience priority"
+      ],
+      "house_name": "Peacock",
+      "platform": "streaming",
+      "brand_identity": "Elevated content that's entertaining or commercial.",
+      "house_green": [
+        "Drama that attracts an African American audience (post Best Man/Bel-Air)",
+        "Erotic thrillers; soapy dramas; true crime + mystery",
+        "Water cooler shows; Yellowstone-vein (already have one in that bucket)"
+      ],
+      "house_red": [
+        "YA (college and up only; adult in tone)"
+      ]
+    },
+    {
+      "house_id": "starz",
+      "fit": "WEAK-MODERATE",
+      "matched": [
+        "premium female focus",
+        "ensemble"
+      ],
+      "rationale": "Female-focused premium and ensemble conversation partially fit, but the subject lacks the thriller/romance engine Starz programs.",
+      "conflicts": [
+        "no romance or crime engine"
+      ],
+      "house_name": "Starz",
+      "platform": "streaming",
+      "brand_identity": "Premium content with a female focus.",
+      "house_green": [
+        "Ensemble/family dramas a la BMF, Power, P-Valley; Shakespearean with sex & violence",
+        "Crime but less drugs: con artists, heists, white-collar",
+        "Mystery/murder/thriller; true crime; action that appeals to women",
+        "Soapy/erotic thriller (Presumed Innocent but soapier)",
+        "A little genre (True Blood, Interview with a Vampire)",
+        "Burning epic romance for the Outlander audience, contemporary or period"
+      ],
+      "house_red": []
+    },
+    {
+      "house_id": "apple",
+      "fit": "WEAK",
+      "matched": [],
+      "rationale": "Apple wants aspirational, star-attractable, escapist popcorn with a big hook; a meta-theater dinner conversation does not fit the mandate.",
+      "conflicts": [
+        "no big hook"
+      ],
+      "house_name": "Apple",
+      "platform": "streaming",
+      "brand_identity": "Sophisticated popcorn with a big hook.",
+      "house_green": [
+        "Aspirational, escapist, star-attractable material",
+        "Ongoing contemporary adult romance (29-35)",
+        "Elevated low-concept shows with a strong throughline and big engine",
+        "Grounded genre: sci-fi, horror, magical realism, supernatural, soapy dramas",
+        "Female-driven content; treasure hunt stories; filmmaker-friendly grounded sci-fi; romance"
+      ],
+      "house_red": [
+        "Spy/espionage shows",
+        "YA shows",
+        "Romantasy (unless major property)"
+      ]
+    },
+    {
+      "house_id": "amazon",
+      "fit": "WEAK",
+      "matched": [],
+      "rationale": "Amazon wants big, loud, commercial global tentpoles/IP; the subject is intimate and voice-driven rather than event TV.",
+      "conflicts": [
+        "not tentpole/IP"
+      ],
+      "house_name": "Amazon",
+      "platform": "streaming",
+      "brand_identity": "Big tentpoles with global appeal.",
+      "house_green": [
+        "Global, accessible, populist tentpoles; event TV that attracts Men 18-34",
+        "YA/new adult with multigenerational reach, especially thrillers and YA Men stories",
+        "Female journeys: twisty thrillers, true crime, soapy family, true adult romance",
+        "Genre: big IP, female-forward a la Outlander, sexy/soapy a la Vampire Diaries, supernatural investigation, four-quad Percy Jackson, space soap, hard sci-fi/mystery"
+      ],
+      "house_red": [
+        "Multiverse; overly complicated worldbuilding"
+      ]
+    },
+    {
+      "house_id": "disney-plus",
+      "fit": "CONFLICT",
+      "matched": [],
+      "rationale": "Disney+ wants four-quad family co-viewing with life-and-death stakes and rejects straight character drama; the adult dinner conversation conflicts with the brand.",
+      "conflicts": [
+        "straight character drama no-fly",
+        "anything dark",
+        "social stakes"
+      ],
+      "house_name": "Disney+",
+      "platform": "streaming",
+      "brand_identity": "Heart, humor and wish fulfillment while entertaining a wide audience.",
+      "house_green": [
+        "Four-quadrant/co-viewing hero fare (Percy Jackson, Pirates, National Treasure)",
+        "YA genre/mystery (Goosebumps, Buffy, Roswell, Wednesday, Stranger Things)"
+      ],
+      "house_red": [
+        "Straight soap or character drama",
+        "Anything dark",
+        "Stories that rely solely on social stakes (need life-and-death stakes)"
+      ]
+    },
+    {
+      "house_id": "paramount-plus",
+      "fit": "WEAK",
+      "matched": [
+        "female-forward soap (partial)"
+      ],
+      "rationale": "Female-forward soap is the only partial match; Paramount wants broad premium commercial with an engine and is focused on space/video-game IP.",
+      "conflicts": [
+        "no commercial engine"
+      ],
+      "house_name": "Paramount+",
+      "platform": "streaming",
+      "brand_identity": "Premium, broad, commercial appeal post-Skydance merger.",
+      "house_green": [
+        "Female-forward soap, soapy/frothy (Big Little Lies)",
+        "In-space worldbuilding/genre (Gunpowder, Altered Carbon)",
+        "Grounded genre (Manifest, Lost); video game adaptations (God of War)",
+        "David Ellison high-octane drama; YA soaps; kids & family 14+; true crime"
+      ],
+      "house_red": [
+        "Procedurals",
+        "Big conspiracy shows",
+        "Anything apocalyptic",
+        "Spy (harder - already have one)"
+      ]
+    },
+    {
+      "house_id": "hbo-max",
+      "fit": "WEAK",
+      "matched": [],
+      "rationale": "HBO Max wants action/procedurals/feel-good soap; the subject is not in-camera action or a procedural.",
+      "conflicts": [],
+      "house_name": "HBO Max",
+      "platform": "streaming",
+      "brand_identity": "More popcorn in tone than HBO proper but with a premium lens.",
+      "house_green": [
+        "In-camera action show (their Reacher); espionage",
+        "Procedurals: ensemble legal workplace drama, PI procedural",
+        "Feel-good/weepy elevated cozy soap"
+      ],
+      "house_red": [
+        "YA",
+        "Period",
+        "Original genre (DC library exists)",
+        "Limiteds unless IP"
+      ]
+    },
+    {
+      "house_id": "mgm-plus",
+      "fit": "WEAK",
+      "matched": [],
+      "rationale": "MGM+ wants smart comfort food, action-adventure romance, and palace intrigue; no bucket matches.",
+      "conflicts": [],
+      "house_name": "MGM+",
+      "platform": "streaming",
+      "brand_identity": "Legacy studio with rich, traditional Hollywood fare.",
+      "house_green": [
+        "Smart comfort food a la West Wing; escapist, poppy, hopeful, elevated",
+        "Action-adventure with romance that invites women without isolating men",
+        "Palace intrigue and political machinations (GoT-style politics)"
+      ],
+      "house_red": [
+        "Period",
+        "YA",
+        "Mystery/detective/PI/espionage/horror/westerns (full up)"
+      ]
+    },
+    {
+      "house_id": "paramount-showtime",
+      "fit": "N/A",
+      "matched": [],
+      "rationale": "Showtime is folded into the studio and not buying new content.",
+      "conflicts": [],
+      "house_name": "Paramount+ with Showtime",
+      "platform": "streaming",
+      "brand_identity": "Studio executives covering the Showtime slate only.",
+      "house_green": [],
+      "house_red": [
+        "Not buying anything new for Showtime right now"
+      ]
+    },
+    {
+      "house_id": "abc",
+      "fit": "WEAK",
+      "matched": [],
+      "rationale": "ABC wants soap-cedural procedurals with closed arcs; the subject is straight serialized conversation material.",
+      "conflicts": [
+        "straight serialized soaps no-fly"
+      ],
+      "house_name": "ABC",
+      "platform": "broadcast",
+      "brand_identity": "Elevated procedurals with iconic characters and strong story engines.",
+      "house_green": [
+        "Soap-cedural: procedurals with big soap, female-forward specificity, 22-episode sustainability",
+        "Closed-ended arcs each episode; separate territory from on-air shows"
+      ],
+      "house_red": [
+        "Straight serialized soaps",
+        "Genre (hard - X-Files order)"
+      ]
+    },
+    {
+      "house_id": "cbs",
+      "fit": "WEAK",
+      "matched": [],
+      "rationale": "CBS wants franchise procedurals and rejects straight serialization.",
+      "conflicts": [
+        "straight serialization no-fly"
+      ],
+      "house_name": "CBS",
+      "platform": "broadcast",
+      "brand_identity": "Big, commercial, relatable hits with mass appeal and zeitgeist relevance.",
+      "house_green": [
+        "Franchise procedurals with mystery case-closure of the week (Blue Skies/USA model, big fun teams, life-or-death stakes)",
+        "Non-traditional procedurals a la Tracker; case-of-the-week grounded sci-fi (Amy loves space)"
+      ],
+      "house_red": [
+        "Straight serialization",
+        "Medical (unsure)",
+        "Legal (tough)"
+      ]
+    },
+    {
+      "house_id": "fox",
+      "fit": "WEAK",
+      "matched": [
+        "signature character (partial)"
+      ],
+      "rationale": "Fox wants signature-character franchises and must-returning series; the subject has no procedural engine.",
+      "conflicts": [
+        "must be returning with engine"
+      ],
+      "house_name": "FOX",
+      "platform": "broadcast",
+      "brand_identity": "Signature characters at the center of launchable franchises.",
+      "house_green": [
+        "Signature character-driven shows (House, 24, Ally McBeal)",
+        "911 replacements; disaster and rescue; big IP (Baywatch)",
+        "Propulsive muscular action (24, Reacher, Hijack); military; espionage; gritty cop",
+        "Genre procedurals (X-Files, vampires); genre soap (True Blood); genre romance (Outlander)",
+        "High-concept episodic (Lost, Manifest); international co-pros; wholesome Ted Lasso bucket"
+      ],
+      "house_red": [
+        "Hard horror",
+        "YA",
+        "Too dark",
+        "PI",
+        "Limiteds (must be returning)",
+        "Soap unless engine-anchored"
+      ]
+    },
+    {
+      "house_id": "nbc",
+      "fit": "WEAK",
+      "matched": [],
+      "rationale": "NBC wants workplace/star-vehicle procedurals and mystery-box ideas; the subject does not fit.",
+      "conflicts": [],
+      "house_name": "NBC",
+      "platform": "broadcast",
+      "brand_identity": "Traditional buying cycle with open-minded commercial taste.",
+      "house_green": [
+        "Family with a strong hook (This Is Us)",
+        "Workplace procedurals on star vehicles; underdog outside law enforcement (Matlock, Tracker, High Potential)",
+        "Higher concept (Blindspot); mystery box/big idea (Lost, Manifest, La Brea)"
+      ],
+      "house_red": [
+        "Police and medical (harder given current slate)"
+      ]
+    }
+  ],
+  "analysis_notes": [
+    "v1-deepseek text pass; the subject attributes were derived only from the transcript's stated content, and every verdict cites the house's green (wants) and red (rejects) lists from 2026-05-production-needs.json.",
+    "An optional v2-sora image pass on network_needs_202605.pdf is available if the human wants a second read of the source tables; the text extraction was clean and no section required it."
+  ]
+}

@@ -1,8 +1,90 @@
 {
   "baseline_state": "NOT-PROMOTED",
-  "generated_at": "2026-08-19T07:01:59.833Z",
+  "generated_at": "2026-08-21T01:59:20.651Z",
   "human_review_state": "UNREVIEWED",
   "items": [
+    {
+      "artifact_id": "here-lies-trouble-production-fit",
+      "title": "Here Lies Trouble — production fit assessment",
+      "description": "May 2026 network needs vs the enriched transcript: per-house fit verdicts, matched categories, and no-fly conflicts.",
+      "alt": "Production-fit assessment for the here-lies-trouble enriched transcript.",
+      "family": "production-fit",
+      "generation_class": "production-fit",
+      "feedback_round": "transcription-enrichment-e2",
+      "media_kind": "plan",
+      "plan_stage": "PLAN-DRAFT",
+      "review_scope": "TRANSCRIPTION-ENRICHMENT-E2",
+      "review_mode": "output",
+      "source_path": "izzi 7ef87399a59767cdfe9cf7a134d7addd0dc5bcd2 resources.rizal/final-draft/network_needs_202605.pdf",
+      "source_sha256": "608c4f1a5efc44d0fc20d5a1b92ee1aa727752af779ad13f805bb670f9b55864",
+      "source_derivation": {
+        "path": "network_needs_202605.pdf",
+        "sha256": "ed33fbb419cd034a3be88df778f6cb89a9c5c3b0402578ea44f84d94b96057ce",
+        "relation": "needs data-form source PDF"
+      },
+      "published_path": "review/media/production-fit/here-lies-trouble-production-fit.md",
+      "sha256": "608c4f1a5efc44d0fc20d5a1b92ee1aa727752af779ad13f805bb670f9b55864",
+      "bytes": 4986,
+      "format": "markdown",
+      "plan_links": [
+        {
+          "label": "Open fit JSON",
+          "path": "review/media/production-fit/here-lies-trouble-production-fit.json"
+        },
+        {
+          "label": "Open needs data form",
+          "path": "review/media/production-fit/2026-05-production-needs.json"
+        }
+      ],
+      "technical_state": "V1-DEEPSEEK-FIT-ASSESSMENT",
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "review_category": "planning",
+      "added_at": "2026-08-21T01:59:20.630Z"
+    },
+    {
+      "artifact_id": "here-lies-trouble-final-draft-enrichment",
+      "title": "Here Lies Trouble — Final Draft 13 enrichment",
+      "description": "Format-only enrichment of the canonical source transcript into a Final Draft 13 screenplay: SPEAKER 1-6 dialogue, verbatim text, two candidate styles — interpolated FDX (rendered Courier PDF) and Fountain open screenplay markup — plus a provenance sidecar. Reviewers pick the preferred style.",
+      "alt": "Final Draft 13 screenplay enrichment of the here-lies-trouble canonical transcript.",
+      "family": "here-lies-trouble-final-draft",
+      "generation_class": "transcript-enrichment",
+      "feedback_round": "transcription-enrichment-e1",
+      "media_kind": "plan",
+      "plan_stage": "PLAN-DRAFT",
+      "review_scope": "TRANSCRIPTION-ENRICHMENT-E1",
+      "review_mode": "output",
+      "source_path": "izzi 7ef87399a59767cdfe9cf7a134d7addd0dc5bcd2 review/media/audio-transcript/here-lies-trouble-canonical-source-transcript.20260818.txt",
+      "source_sha256": "b58612d740fed3542e059c9b5b812340dd18a6f63b7a821abf239e1acb737021",
+      "source_derivation": {
+        "path": "here-lies-trouble-canonical-source-transcript.20260818.txt",
+        "sha256": "38415dbe4de0e5f3335023033d340aaf8d17ae4c128ef38a5d10764cb375df31",
+        "relation": "verbatim input transcript"
+      },
+      "published_path": "review/media/transcription-enrichment/here-lies-trouble-final-draft/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pdf",
+      "sha256": "b58612d740fed3542e059c9b5b812340dd18a6f63b7a821abf239e1acb737021",
+      "bytes": 64765,
+      "format": "pdf",
+      "plan_links": [
+        {
+          "label": "Open FDX — interpolated style",
+          "path": "review/media/transcription-enrichment/here-lies-trouble-final-draft/here-lies-trouble-canonical-source-transcript.20260818.final-draft.fdx"
+        },
+        {
+          "label": "Open Fountain — open screenplay markup",
+          "path": "review/media/transcription-enrichment/here-lies-trouble-final-draft/here-lies-trouble-canonical-source-transcript.20260818.final-draft.fountain"
+        },
+        {
+          "label": "Open provenance JSON",
+          "path": "review/media/transcription-enrichment/here-lies-trouble-final-draft/here-lies-trouble-canonical-source-transcript.20260818.final-draft.provenance.json"
+        }
+      ],
+      "technical_state": "FDX-SUBSET-V1-FROM-CANONICAL-TRANSCRIPT",
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "review_category": "planning",
+      "added_at": "2026-08-21T01:59:20.629Z"
+    },
     {
       "artifact_id": "izzi-generation-20260818",
       "title": "Izzi Generation 20260818",
@@ -12714,7 +12796,7 @@
   "portal_build": "izzi-review-2026-08-11.7",
   "publication_state": "PUBLIC-PROTOTYPE",
   "schema_version": "1.0",
-  "source_commit": "3ad0af28639be32ddf161ee9019e903141b186c3",
+  "source_commit": "7ef87399a59767cdfe9cf7a134d7addd0dc5bcd2",
   "source_repository": "bdekoz/izzi",
   "source_repository_local_root": "/home/bkoz/src/izzi"
 }

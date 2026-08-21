@@ -181,6 +181,9 @@ function planMedia(item) {
   if (pdf) {
     links.push(`<a class="plan-document-link" href="${pdf}" target="_blank" rel="noopener">Open the special-topics PDF ↗</a>`);
   }
+  for (const link of item.plan_links || []) {
+    links.push(`<a class="plan-document-link" href="/${escape(link.path)}" target="_blank" rel="noopener">${escape(link.label)} ↗</a>`);
+  }
   const preview = /\.pdf$/i.test(item.published_path)
     ? `<object data="${href}" type="application/pdf" aria-label="Plan document preview"><p>PDF preview unavailable in this browser. Use the link above.</p></object>`
     : "";

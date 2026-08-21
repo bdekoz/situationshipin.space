@@ -1,0 +1,15 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "here-lies-trouble-production-fit",
+  "artifact_id": "here-lies-trouble-production-fit",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": null,
+  "document": {
+    "path": "/review/media/production-fit/here-lies-trouble-production-fit.md",
+    "sha256": "608c4f1a5efc44d0fc20d5a1b92ee1aa727752af779ad13f805bb670f9b55864",
+    "format": "markdown",
+    "plan_stage": "PLAN-DRAFT",
+    "plan_pdf": null
+  }
+}

@@ -1,0 +1,313 @@
+{
+  "schema_version": "izzi-production-needs-2",
+  "generated_at": "2026-08-20 America/Los_Angeles",
+  "source": "resources.rizal/final-draft/network_needs_202605.pdf",
+  "source_sha256": "ed33fbb419cd034a3be88df778f6cb89a9c5c3b0402578ea44f84d94b96057ce",
+  "as_of": "2026-05-08",
+  "extraction": "v1-deepseek text pass over pdftotext -layout output; no image reading required",
+  "houses": [
+    {
+      "house_id": "amazon",
+      "name": "Amazon",
+      "platform": "streaming",
+      "contacts": [
+        {"name": "Laura Lancaster", "title": "Head, US SVOD TV Co-Productions Development and Series"}
+      ],
+      "brand_identity": "Big tentpoles with global appeal.",
+      "green": [
+        "Global, accessible, populist tentpoles; event TV that attracts Men 18-34",
+        "YA/new adult with multigenerational reach, especially thrillers and YA Men stories",
+        "Female journeys: twisty thrillers, true crime, soapy family, true adult romance",
+        "Genre: big IP, female-forward a la Outlander, sexy/soapy a la Vampire Diaries, supernatural investigation, four-quad Percy Jackson, space soap, hard sci-fi/mystery"
+      ],
+      "red": ["Multiverse; overly complicated worldbuilding"],
+      "note": "Open to ongoing or limited series."
+    },
+    {
+      "house_id": "apple",
+      "name": "Apple",
+      "platform": "streaming",
+      "contacts": [
+        {"name": "Matt Cherniss", "title": "Head of Programming"}
+      ],
+      "brand_identity": "Sophisticated popcorn with a big hook.",
+      "green": [
+        "Aspirational, escapist, star-attractable material",
+        "Ongoing contemporary adult romance (29-35)",
+        "Elevated low-concept shows with a strong throughline and big engine",
+        "Grounded genre: sci-fi, horror, magical realism, supernatural, soapy dramas",
+        "Female-driven content; treasure hunt stories; filmmaker-friendly grounded sci-fi; romance"
+      ],
+      "red": ["Spy/espionage shows", "YA shows", "Romantasy (unless major property)"],
+      "note": "Pretty full on crime but still open; bar is really high."
+    },
+    {
+      "house_id": "disney-plus",
+      "name": "Disney+",
+      "platform": "streaming",
+      "contacts": [
+        {"name": "Charlie Andrews", "title": "EVP, Live Action and Alternative"}
+      ],
+      "brand_identity": "Heart, humor and wish fulfillment while entertaining a wide audience.",
+      "green": [
+        "Four-quadrant/co-viewing hero fare (Percy Jackson, Pirates, National Treasure)",
+        "YA genre/mystery (Goosebumps, Buffy, Roswell, Wednesday, Stranger Things)"
+      ],
+      "red": ["Straight soap or character drama", "Anything dark", "Stories that rely solely on social stakes (need life-and-death stakes)"],
+      "note": "Big, buzzy, IP-driven content aligned with the Disney brand."
+    },
+    {
+      "house_id": "fx",
+      "name": "FX",
+      "platform": "streaming",
+      "contacts": [
+        {"name": "Gina Balian", "title": "Co-President"},
+        {"name": "Nick Grad", "title": "Co-President"}
+      ],
+      "brand_identity": "Elevated adult fare with a distinctive POV.",
+      "green": [
+        "Gen Z male voices/IP/worlds; genre and live sports demo",
+        "Muscular/feel-gritty crime a la BEEF, INDUSTRY; competitive legal space",
+        "LatinX family drama and family crime drama",
+        "Action thriller that pulls younger demo; military but apolitical",
+        "Firefighters who travel to fight extreme fires; erotic thriller; horror; corporate espionage; mystery thriller"
+      ],
+      "red": ["Too broad", "Too young", "Things that don't go deep enough"],
+      "note": "Writer/voice driven; ideas different yet commercial."
+    },
+    {
+      "house_id": "hbo",
+      "name": "HBO",
+      "platform": "streaming",
+      "contacts": [
+        {"name": "Casey Bloys", "title": "Chairman and CEO, HBO and Max Content"}
+      ],
+      "brand_identity": "Premium and elevated content, through and through.",
+      "green": [
+        "Adult family drama a la Succession/Sopranos in a new world, with an engine",
+        "Distinctive crime/thriller a la Task",
+        "Interesting voices",
+        "Genre set in our world with a twist; open to worldbuilding (Baldur's Gate)"
+      ],
+      "red": ["Limiteds (non-starter)", "Period (harder)"],
+      "note": "Limited shelf space; looking for contemporary ongoing series."
+    },
+    {
+      "house_id": "hbo-max",
+      "name": "HBO Max",
+      "platform": "streaming",
+      "contacts": [
+        {"name": "Sarah Aubrey", "title": "Head of Originals"}
+      ],
+      "brand_identity": "More popcorn in tone than HBO proper but with a premium lens.",
+      "green": [
+        "In-camera action show (their Reacher); espionage",
+        "Procedurals: ensemble legal workplace drama, PI procedural",
+        "Feel-good/weepy elevated cozy soap"
+      ],
+      "red": ["YA", "Period", "Original genre (DC library exists)", "Limiteds unless IP"],
+      "note": "Wants shows that continue into ongoing franchises."
+    },
+    {
+      "house_id": "hulu",
+      "name": "Hulu",
+      "platform": "streaming",
+      "contacts": [
+        {"name": "Simran Sethi", "title": "President, Scripted Programming, Hulu & ABC"},
+        {"name": "Jordan Helman", "title": "EVP, Head of Drama, Hulu & ABC"}
+      ],
+      "brand_identity": "Both reflects and pierces popular culture.",
+      "green": [
+        "Female-driven soaps with a thriller/mystery engine (Little Fires Everywhere, Handmaid's Tale)",
+        "Ripped-from-the-headlines, narrative nonfiction, psychological true crime",
+        "Sophisticated YA (Tell Me Lies, Cruel Summer, Euphoria)",
+        "Propulsive joy that doesn't depend on murder; action-forward for women",
+        "Ongoing family drama with a twist (This Is Us timeline, Ozark)"
+      ],
+      "red": ["Period before the era of cars", "Horror/haunted house shows"],
+      "note": "Genre less of a priority now but open within the female-led/soapy audience."
+    },
+    {
+      "house_id": "mgm-plus",
+      "name": "MGM+",
+      "platform": "streaming",
+      "contacts": [
+        {"name": "Michael Wright", "title": "President"}
+      ],
+      "brand_identity": "Legacy studio with rich, traditional Hollywood fare.",
+      "green": [
+        "Smart comfort food a la West Wing; escapist, poppy, hopeful, elevated",
+        "Action-adventure with romance that invites women without isolating men",
+        "Palace intrigue and political machinations (GoT-style politics)"
+      ],
+      "red": ["Period", "YA", "Mystery/detective/PI/espionage/horror/westerns (full up)"],
+      "note": "No major needs right now; wants more economical producibility."
+    },
+    {
+      "house_id": "netflix",
+      "name": "Netflix",
+      "platform": "streaming",
+      "contacts": [
+        {"name": "Jinny Howe", "title": "Head of UCAN Scripted Series"}
+      ],
+      "brand_identity": "Reaching the widest audience by means of premium, commercial and global fare.",
+      "green": [
+        "Voice-driven character dramas (BEEF, MAID); prestige ongoing; iconic IP; limited acclaim",
+        "Mystery/thrillers: close-ended, pulse-pounding rides, conspiracy, ongoing crime with character hooks",
+        "Soap/YA: Gen Z, workplace/new adult, family dramas, YA Bonnie & Clyde, YA genre soaps, heightened soaps",
+        "Romance: contemporary, steamy erotic thriller, unconventional, epic, adult genre romance",
+        "Faith-forward dramas; muscular/action/bro-soap; genre (character sci-fi, mystery box, elevated, psychological horror, grounded genre); procedurals"
+      ],
+      "red": ["Anthologies", "Biopics", "Musicals", "Inside Hollywood/Showbiz", "Imposed US/Western POVs", "Dry historical/period dramas", "Westerns (full)", "Politics"],
+      "note": "Wants best-in-class variety for every audience."
+    },
+    {
+      "house_id": "onyx-collective",
+      "name": "Onyx Collective",
+      "platform": "streaming",
+      "contacts": [
+        {"name": "Tara Duncan", "title": "President"}
+      ],
+      "brand_identity": "Content brand for creators of color and underrepresented voices.",
+      "green": [
+        "High-concept one-hour dramas that brand Onyx",
+        "Underrepresented voices (not always race)",
+        "Soaps a la Six Feet Under; romance; grounded sci-fi/genre",
+        "Psychological/erotic thrillers with a romantic element (YOU); cults",
+        "Heist/mystery (Lupin, Ocean's Eleven); espionage",
+        "Cul-de-sac dramas (Big Little Lies but ongoing)",
+        "Ongoing genre horror (Last of Us, Haunting of Hill House); female-led"
+      ],
+      "red": [],
+      "note": "Focused on African American audiences but underrepresented is broader."
+    },
+    {
+      "house_id": "paramount-plus",
+      "name": "Paramount+",
+      "platform": "streaming",
+      "contacts": [
+        {"name": "Jane Wiseman", "title": "Originals Team"}
+      ],
+      "brand_identity": "Premium, broad, commercial appeal post-Skydance merger.",
+      "green": [
+        "Female-forward soap, soapy/frothy (Big Little Lies)",
+        "In-space worldbuilding/genre (Gunpowder, Altered Carbon)",
+        "Grounded genre (Manifest, Lost); video game adaptations (God of War)",
+        "David Ellison high-octane drama; YA soaps; kids & family 14+; true crime"
+      ],
+      "red": ["Procedurals", "Big conspiracy shows", "Anything apocalyptic", "Spy (harder - already have one)"],
+      "note": "New team ready to buy; tonally lighter with a real engine."
+    },
+    {
+      "house_id": "paramount-showtime",
+      "name": "Paramount+ with Showtime",
+      "platform": "streaming",
+      "contacts": [
+        {"name": "Urooj Sharif", "title": "Drama Team"}
+      ],
+      "brand_identity": "Studio executives covering the Showtime slate only.",
+      "green": [],
+      "red": ["Not buying anything new for Showtime right now"],
+      "note": "Folded into Paramount Television Studio team."
+    },
+    {
+      "house_id": "peacock",
+      "name": "Peacock",
+      "platform": "streaming",
+      "contacts": [
+        {"name": "Lisa Katz", "title": "President of Scripted Content"}
+      ],
+      "brand_identity": "Elevated content that's entertaining or commercial.",
+      "green": [
+        "Drama that attracts an African American audience (post Best Man/Bel-Air)",
+        "Erotic thrillers; soapy dramas; true crime + mystery",
+        "Water cooler shows; Yellowstone-vein (already have one in that bucket)"
+      ],
+      "red": ["YA (college and up only; adult in tone)"],
+      "note": "Biggest priority is the African American audience drama."
+    },
+    {
+      "house_id": "starz",
+      "name": "Starz",
+      "platform": "streaming",
+      "contacts": [
+        {"name": "Kathryn Busby", "title": "President, Original Programming"}
+      ],
+      "brand_identity": "Premium content with a female focus.",
+      "green": [
+        "Ensemble/family dramas a la BMF, Power, P-Valley; Shakespearean with sex & violence",
+        "Crime but less drugs: con artists, heists, white-collar",
+        "Mystery/murder/thriller; true crime; action that appeals to women",
+        "Soapy/erotic thriller (Presumed Innocent but soapier)",
+        "A little genre (True Blood, Interview with a Vampire)",
+        "Burning epic romance for the Outlander audience, contemporary or period"
+      ],
+      "red": [],
+      "note": "Thrilling, edgy, provocative, morally gray, dangerous, sexy, soapy, firmly adult."
+    },
+    {
+      "house_id": "abc",
+      "name": "ABC",
+      "platform": "broadcast",
+      "contacts": [
+        {"name": "Simran Sethi", "title": "President, Scripted Programming, Hulu & ABC"}
+      ],
+      "brand_identity": "Elevated procedurals with iconic characters and strong story engines.",
+      "green": [
+        "Soap-cedural: procedurals with big soap, female-forward specificity, 22-episode sustainability",
+        "Closed-ended arcs each episode; separate territory from on-air shows"
+      ],
+      "red": ["Straight serialized soaps", "Genre (hard - X-Files order)"],
+      "note": "Medical hard; investigative/quirky lead full; hearing a lot of legal."
+    },
+    {
+      "house_id": "cbs",
+      "name": "CBS",
+      "platform": "broadcast",
+      "contacts": [
+        {"name": "Amy Reisenbach", "title": "President, CBS Entertainment"}
+      ],
+      "brand_identity": "Big, commercial, relatable hits with mass appeal and zeitgeist relevance.",
+      "green": [
+        "Franchise procedurals with mystery case-closure of the week (Blue Skies/USA model, big fun teams, life-or-death stakes)",
+        "Non-traditional procedurals a la Tracker; case-of-the-week grounded sci-fi (Amy loves space)"
+      ],
+      "red": ["Straight serialization", "Medical (unsure)", "Legal (tough)"],
+      "note": "Year-round development with non-traditional cycles."
+    },
+    {
+      "house_id": "fox",
+      "name": "FOX",
+      "platform": "broadcast",
+      "contacts": [
+        {"name": "Michael Thorn", "title": "President, FOX Entertainment"}
+      ],
+      "brand_identity": "Signature characters at the center of launchable franchises.",
+      "green": [
+        "Signature character-driven shows (House, 24, Ally McBeal)",
+        "911 replacements; disaster and rescue; big IP (Baywatch)",
+        "Propulsive muscular action (24, Reacher, Hijack); military; espionage; gritty cop",
+        "Genre procedurals (X-Files, vampires); genre soap (True Blood); genre romance (Outlander)",
+        "High-concept episodic (Lost, Manifest); international co-pros; wholesome Ted Lasso bucket"
+      ],
+      "red": ["Hard horror", "YA", "Too dark", "PI", "Limiteds (must be returning)", "Soap unless engine-anchored"],
+      "note": "Older demo; wants formats and signature characters."
+    },
+    {
+      "house_id": "nbc",
+      "name": "NBC",
+      "platform": "broadcast",
+      "contacts": [
+        {"name": "Lisa Katz", "title": "President of Scripted Content"}
+      ],
+      "brand_identity": "Traditional buying cycle with open-minded commercial taste.",
+      "green": [
+        "Family with a strong hook (This Is Us)",
+        "Workplace procedurals on star vehicles; underdog outside law enforcement (Matlock, Tracker, High Potential)",
+        "Higher concept (Blindspot); mystery box/big idea (Lost, Manifest, La Brea)"
+      ],
+      "red": ["Police and medical (harder given current slate)"],
+      "note": "Doesn't want to step on Dick Wolf."
+    }
+  ]
+}
