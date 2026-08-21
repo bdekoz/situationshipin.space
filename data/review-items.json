@@ -4,6 +4,45 @@
   "human_review_state": "UNREVIEWED",
   "items": [
     {
+      "artifact_id": "plan-vertical-duotone-111-01-v1",
+      "title": "duotone-111-01 — plan draft v1",
+      "description": "Vertical project duotone-111-01: canonical source transcribed locally (whisper.cpp large-v3-turbo + Silero VAD), production fit assessed against the May 2026 network needs.",
+      "alt": "Vertical project duotone-111-01: canonical source transcribed locally (whisper.cpp large-v3-turbo + Silero VAD), production fit assessed against the May 2026 network needs.",
+      "family": "duotone-111-01",
+      "generation_class": "plan-vertical",
+      "product_type": "vertical-project",
+      "feedback_round": "plan-v1",
+      "media_kind": "plan",
+      "review_scope": "PLAN-VERTICAL-REVIEW",
+      "review_mode": "output",
+      "source_path": "docs/development/duotone-111-01-m337-cu73/plan-draft-v1.md",
+      "source_sha256": "0b8c935b2e779b463ac960a574ce4b0982a28c35806ad1125b9b090c0040e562",
+      "published_path": "review/media/duotone-111-01/plan-vertical-duotone-111-01-v1.md",
+      "sha256": "0b8c935b2e779b463ac960a574ce4b0982a28c35806ad1125b9b090c0040e562",
+      "bytes": 4811,
+      "format": "markdown",
+      "plan_stage": "PLAN-DRAFT",
+      "plan_pdf": null,
+      "plan_contract": {
+        "schema_version": "izzi-plan-vertical-contract-v1",
+        "stage": "PLAN-DRAFT",
+        "required_content": {
+          "template": true,
+          "segments": true,
+          "estimates": true,
+          "pilot_options": true,
+          "gates": true,
+          "orchestration": true
+        },
+        "validated_at": "2026-08-21T13:43:38.120Z"
+      },
+      "technical_state": "PLAN-DRAFT-PUBLISHED",
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "review_category": "planning",
+      "added_at": "2026-08-21T13:43:38.127Z"
+    },
+    {
       "artifact_id": "here-lies-trouble-production-fit-20260820",
       "title": "Here Lies Trouble — production fit assessment",
       "description": "Regenerated: May 2026 network needs vs the enriched unified transcript: per-house fit verdicts, matched categories, and no-fly conflicts.",

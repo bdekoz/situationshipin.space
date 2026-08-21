@@ -1,0 +1,15 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "plan-vertical-duotone-111-01-v1",
+  "artifact_id": "plan-vertical-duotone-111-01-v1",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": null,
+  "document": {
+    "path": "/review/media/duotone-111-01/plan-vertical-duotone-111-01-v1.md",
+    "sha256": "0b8c935b2e779b463ac960a574ce4b0982a28c35806ad1125b9b090c0040e562",
+    "format": "markdown",
+    "plan_stage": "PLAN-DRAFT",
+    "plan_pdf": null
+  }
+}
