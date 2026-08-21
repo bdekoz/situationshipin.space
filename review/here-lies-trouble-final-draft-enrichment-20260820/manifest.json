@@ -1,0 +1,15 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "here-lies-trouble-final-draft-enrichment-20260820",
+  "artifact_id": "here-lies-trouble-final-draft-enrichment-20260820",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": null,
+  "document": {
+    "path": "/review/media/transcription-enrichment/here-lies-trouble-final-draft/here-lies-trouble.20260415.final-draft.pdf",
+    "sha256": "5904bcde3b999f723414c581ebfc1de2edb5f6a9282315e7ad37156851aae33f",
+    "format": "pdf",
+    "plan_stage": "PLAN-DRAFT",
+    "plan_pdf": null
+  }
+}
