@@ -16,6 +16,7 @@
       .point-list li{margin:.2rem 0}
       .route-note{background:#eef1f2;border-left:.45rem solid #173a55;padding:.7rem 1rem}
       .path-actions{display:flex;flex-wrap:wrap;gap:.65rem;align-items:end}
+      .save-handoff{display:flex;flex-wrap:wrap;gap:.65rem;align-items:center;margin-top:.65rem}
     </style>
   </head>
   <body data-review-category="location-scouting">
@@ -52,10 +53,16 @@
 	      <input type="text" id="new-path-name" placeholder="e.g. Sunset pass" maxlength="80" autocomplete="off">
 	    </label>
 	    <div class="path-actions">
-	      <button class="button" type="button" id="new-path-button">New path</button>
-	      <button class="button" type="button" id="save-path-button" hidden>Save path</button>
+	      <button class="button button-path-action" type="button" id="new-path-button">New path</button>
+	      <button class="button button-secondary" type="button" id="clear-path-button">Clear path</button>
+	      <button class="button button-path-action" type="button" id="revise-path-button">Revise path</button>
+	      <button class="button button-path-action" type="button" id="save-path-button" hidden>Save path</button>
 	      <button class="button button-secondary" type="button" id="cancel-path-button" hidden>Cancel</button>
-	      <button class="button button-secondary" type="reset">Clear saved path</button>
+	    </div>
+	    <div class="save-handoff" id="save-handoff" hidden>
+	      <span>Path saved. Hand off now?</span>
+	      <button class="button button-path-action" type="button" id="handoff-download">Download JSON</button>
+	      <button class="button button-path-action" type="button" id="handoff-issue">Open GitHub issue draft</button>
 	    </div>
 	  </form>
 	</details>
@@ -113,12 +120,19 @@
   let authoring = false;
   let unsaved = false;
   let lastDragEndAt = 0;
+  let pointSerial = 0;
+  let lastSavedRecord = null;
   const projectSelect = document.getElementById("project-select");
   const locationSelect = document.getElementById("location-select");
   const locationForm = document.getElementById("location-form");
   const newPathButton = document.getElementById("new-path-button");
   const savePathButton = document.getElementById("save-path-button");
   const cancelPathButton = document.getElementById("cancel-path-button");
+  const clearPathButton = document.getElementById("clear-path-button");
+  const revisePathButton = document.getElementById("revise-path-button");
+  const saveHandoff = document.getElementById("save-handoff");
+  const handoffDownload = document.getElementById("handoff-download");
+  const handoffIssue = document.getElementById("handoff-issue");
   const nameLabel = document.getElementById("new-path-name-label");
   const nameInput = document.getElementById("new-path-name");
   const form = document.getElementById("review-form");
@@ -215,7 +229,7 @@
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
     map.on("click", function (event) {
-      if (!authoring) return;
+      if (!authoring && !(current && current.route)) return;
       if (Date.now() - lastDragEndAt < 400) return;
       const target = event.originalEvent && event.originalEvent.target;
       if (target && target.closest &&
@@ -268,15 +282,34 @@
     });
     routeNote.textContent = authoring
       ? "Local draft — click the map to add waypoints, drag to adjust. Save path keeps it in this browser."
-      : ((current && current.route && current.route.notes) || "");
+      : ((current && current.route && current.route.notes) || "") + " Click the map to add waypoints between route points.";
+  }
+
+  function nearestSegmentIndex(lat, lng) {
+    if (markers.length < 2) return markers.length;
+    const point = map.project(L.latLng(lat, lng));
+    let best = markers.length;
+    let bestDistance = Infinity;
+    for (let index = 0; index < markers.length - 1; index += 1) {
+      const a = map.project(markers[index].marker.getLatLng());
+      const b = map.project(markers[index + 1].marker.getLatLng());
+      const distance = L.LineUtil.pointToSegmentDistance(point, a, b);
+      if (distance < bestDistance) {
+        bestDistance = distance;
+        best = index + 1;
+      }
+    }
+    return best;
   }
 
   function addPoint(lat, lng) {
-    const label = "point-" + markers.length;
+    const insertIndex = nearestSegmentIndex(lat, lng);
+    const label = "point-" + pointSerial;
+    pointSerial += 1;
     const marker = L.marker([lat, lng], { draggable: true }).addTo(map)
       .bindPopup("<strong>" + label + "</strong><br>" + lat.toFixed(7) + ", " + lng.toFixed(7));
     marker.on("dragend", markerDragEnd);
-    markers.push({ marker: marker, label: label });
+    markers.splice(insertIndex, 0, { marker: marker, label: label });
     updateRoute();
     fitRoute();
   }
@@ -314,11 +347,13 @@
     savePathButton.hidden = true;
     cancelPathButton.hidden = true;
     newPathButton.disabled = false;
+    saveHandoff.hidden = true;
     refreshLocationOptions();
     selectActive();
   }
 
   function selectActive() {
+    saveHandoff.hidden = true;
     const project = catalog.projects.find(p => p.project_id === projectSelect.value);
     const value = locationSelect.value;
     current = project.locations.find(l => l.location_id === value) || null;
@@ -334,7 +369,7 @@
     newPathButton.disabled = unsaved;
     resultsDescription.textContent = authoring
       ? "Name the path, then click the map to add waypoints; drag markers to adjust. Saved paths stay in this browser."
-      : "Choose a location, then drag the markers to tune the walking path. Drafts stay in this browser.";
+      : "Choose a location, then drag markers or click the map to add waypoints. Revise path records changes with a REVISE decision.";
 
     if (current && !current.route) {
       restoreForm(savedReview());
@@ -403,7 +438,13 @@
     locationSelect.value = slug;
     restoreForm(record);
     storageStatus.textContent = "Saved \"" + name + "\" locally in this browser. " + new Date(record.at).toLocaleString();
-    status.textContent = "Path saved locally. Hand off with Download JSON or Open GitHub issue draft.";
+    showSaveHandoff(record);
+  }
+
+  function showSaveHandoff(record) {
+    lastSavedRecord = record;
+    saveHandoff.hidden = false;
+    status.textContent = "Path saved. Hand off with Download JSON or Open GitHub issue draft.";
   }
 
   function startNewPath() {
@@ -441,6 +482,58 @@
     selectActive();
   }
 
+  function clearPath() {
+    if (unsaved) {
+      status.textContent = "Nothing saved at this location to clear.";
+      return;
+    }
+    localStorage.removeItem(activeKey());
+    if (currentDraft) {
+      currentDraft = null;
+      unsaved = false;
+      authoring = false;
+      nameInput.value = "";
+      nameLabel.hidden = true;
+      savePathButton.hidden = true;
+      cancelPathButton.hidden = true;
+      newPathButton.disabled = false;
+      refreshLocationOptions();
+      const project = catalog.projects.find(p => p.project_id === projectSelect.value);
+      locationSelect.value = (project && project.locations.length) ? project.locations[0].location_id : "";
+    }
+    selectActive();
+    decision.value = "REVISE";
+    status.textContent = "Cleared saved path; decision set to REVISE.";
+  }
+
+  function revisePath() {
+    if (unsaved) {
+      status.textContent = "Name and save the new path first.";
+      return;
+    }
+    if (markers.length < 2) {
+      status.textContent = "Add at least two waypoints before revising.";
+      return;
+    }
+    const record = {
+      schema_version: "izzi-web-location-review-1",
+      review_id: activeKey(),
+      project_id: currentDraft ? currentDraft.project_id : (current ? (current.project_id || projectSelect.value) : projectSelect.value),
+      location_id: currentDraft ? currentDraft.location_id : current.location_id,
+      decision: "REVISE",
+      note: note.value,
+      points: currentPoints(),
+      at: new Date().toISOString()
+    };
+    if (currentDraft) {
+      record.origin = "new-draft";
+      record.display_name = currentDraft.display_name;
+    }
+    localStorage.setItem(activeKey(), JSON.stringify(record));
+    decision.value = "REVISE";
+    status.textContent = "Path updated with viewbox waypoints; decision set to REVISE. " + new Date(record.at).toLocaleString();
+  }
+
   function saveNow() {
     if (unsaved) {
       status.textContent = "Name and save the new path first.";
@@ -465,13 +558,7 @@
     return record;
   }
 
-  form.addEventListener("submit", function (event) { event.preventDefault(); saveNow(); });
-  newPathButton.addEventListener("click", startNewPath);
-  savePathButton.addEventListener("click", savePath);
-  cancelPathButton.addEventListener("click", cancelNewPath);
-  document.getElementById("review-download").addEventListener("click", function () {
-    const record = saveNow();
-    if (!record) return;
+  function downloadReviewFile(record) {
     const blob = new Blob([JSON.stringify(record, null, 2)], { type: "application/json" });
     const url = URL.createObjectURL(blob);
     const anchor = document.createElement("a");
@@ -481,10 +568,9 @@
     anchor.click();
     anchor.remove();
     URL.revokeObjectURL(url);
-  });
-  document.getElementById("review-issue").addEventListener("click", function () {
-    const record = saveNow();
-    if (!record) return;
+  }
+
+  function openIssueDraft(record) {
     const isDraft = record.origin === "new-draft";
     const bodyLines = [
       isDraft ? "## New location proposal" : "## Location scouting review",
@@ -509,6 +595,31 @@
         : "Location scouting: " + record.project_id + " — " + record.location_id) +
       "&body=" + encodeURIComponent(bodyLines.join("\n"));
     window.open(url, "_blank", "noopener");
+  }
+
+  form.addEventListener("submit", function (event) { event.preventDefault(); saveNow(); });
+  newPathButton.addEventListener("click", startNewPath);
+  savePathButton.addEventListener("click", savePath);
+  cancelPathButton.addEventListener("click", cancelNewPath);
+  clearPathButton.addEventListener("click", clearPath);
+  revisePathButton.addEventListener("click", revisePath);
+  handoffDownload.addEventListener("click", function () {
+    if (!lastSavedRecord) return;
+    downloadReviewFile(lastSavedRecord);
+  });
+  handoffIssue.addEventListener("click", function () {
+    if (!lastSavedRecord) return;
+    openIssueDraft(lastSavedRecord);
+  });
+  document.getElementById("review-download").addEventListener("click", function () {
+    const record = saveNow();
+    if (!record) return;
+    downloadReviewFile(record);
+  });
+  document.getElementById("review-issue").addEventListener("click", function () {
+    const record = saveNow();
+    if (!record) return;
+    openIssueDraft(record);
   });
   document.getElementById("review-clear").addEventListener("click", function () {
     if (!currentDraft) {
@@ -517,31 +628,6 @@
     decision.value = "UNREVIEWED";
     note.value = "";
     status.textContent = currentDraft ? "Cleared local review. Save path to persist." : "Cleared local review.";
-  });
-  locationForm.addEventListener("reset", function () {
-    setTimeout(function () {
-      if (currentDraft) {
-        localStorage.removeItem(draftKeyBase + currentDraft.location_id);
-      } else if (current) {
-        localStorage.removeItem(reviewKeyBase + current.location_id);
-      }
-      current = null;
-      currentDraft = null;
-      unsaved = false;
-      authoring = false;
-      nameInput.value = "";
-      nameLabel.hidden = true;
-      savePathButton.hidden = true;
-      cancelPathButton.hidden = true;
-      newPathButton.disabled = false;
-      decision.value = "UNREVIEWED";
-      note.value = "";
-      status.textContent = "Cleared saved path.";
-      const project = catalog.projects.find(p => p.project_id === projectSelect.value);
-      refreshLocationOptions();
-      locationSelect.value = (project && project.locations.length) ? project.locations[0].location_id : "";
-      selectActive();
-    }, 0);
   });
   projectSelect.addEventListener("change", populateLocations);
   locationSelect.addEventListener("change", selectActive);

@@ -303,6 +303,18 @@ input[type="radio"] {
   border-color: var(--line);
 }
 
+.button-path-action {
+  color: var(--ink);
+  background: transparent;
+  border-color: var(--line);
+}
+
+.button-path-action:hover:not(:disabled),
+.button-path-action:focus-visible {
+  background: var(--focus);
+  border-color: var(--focus);
+}
+
 .button-danger {
   color: var(--ink);
   background: transparent;

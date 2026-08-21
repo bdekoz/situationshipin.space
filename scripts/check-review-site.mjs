@@ -571,7 +571,8 @@ for (const removed of ['id="plan-command-form"', 'id="copy-plan-command"', "--dr
 
 const locationPage = await readFile(resolve(repositoryRoot, "location.html"), "utf8");
 const locationRequiredIds = [
-  "route-map", "point-list", "route-note", "location-form", "new-path-button"
+  "route-map", "point-list", "route-note", "location-form", "new-path-button",
+  "clear-path-button", "revise-path-button", "save-handoff"
 ];
 let locationIdsOk = true;
 for (const id of locationRequiredIds) {
