@@ -1,8 +1,32 @@
 {
   "baseline_state": "NOT-PROMOTED",
-  "generated_at": "2026-08-21T01:59:20.651Z",
+  "generated_at": "2026-08-21T03:42:56.830Z",
   "human_review_state": "UNREVIEWED",
   "items": [
+    {
+      "artifact_id": "here-lies-trouble-canonical-source-transcript",
+      "title": "Here Lies Trouble — canonical source transcript",
+      "description": "Unified canonical source transcript: the two seed recordings appended verbatim into one file for audio-plan review. Approval on the portal makes this text the canonical source edited that gates modified-voice production.",
+      "alt": "Transcript review document for the here-lies-trouble audio track.",
+      "family": "here-lies-trouble-audio",
+      "generation_class": "audio-transcript",
+      "feedback_round": "workflow-v2-audio-plan",
+      "media_kind": "plan",
+      "plan_stage": "PLAN-DRAFT",
+      "review_scope": "WORKFLOW-V2-TRANSCRIPT",
+      "review_mode": "output",
+      "source_path": "izzi 6681ef24af6fe1931af1937a1a7149de201352e2 resources.static/here-lies-trouble/seed-audio-corpus/here-lies-trouble.20260415.txt",
+      "source_sha256": "1dda95a363dd6d9f929bc90e6e652271a86aa3b06d15146dfeb16a14b64d1200",
+      "published_path": "review/media/audio-transcript/here-lies-trouble.20260415.txt",
+      "sha256": "1dda95a363dd6d9f929bc90e6e652271a86aa3b06d15146dfeb16a14b64d1200",
+      "bytes": 51748,
+      "format": "txt",
+      "technical_state": "UNIFIED-VERBATIM-APPEND-FROM-CANONICAL-TRANSCRIPTS",
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "review_category": "planning",
+      "added_at": "2026-08-21T03:42:56.808Z"
+    },
     {
       "artifact_id": "here-lies-trouble-production-fit",
       "title": "Here Lies Trouble — production fit assessment",
@@ -333,30 +357,6 @@
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
       "added_at": "2026-08-18T19:13:10.012Z"
-    },
-    {
-      "artifact_id": "here-lies-trouble-canonical-source-transcript",
-      "title": "Here Lies Trouble — canonical source transcript",
-      "description": "Canonical source transcript of the two seed recordings, presented for audio-plan review. Approval on the portal makes this text the canonical source edited that gates modified-voice production.",
-      "alt": "Transcript review document for the here-lies-trouble audio track.",
-      "family": "here-lies-trouble-audio",
-      "generation_class": "audio-transcript",
-      "feedback_round": "workflow-v2-audio-plan",
-      "media_kind": "plan",
-      "plan_stage": "PLAN-DRAFT",
-      "review_scope": "WORKFLOW-V2-TRANSCRIPT",
-      "review_mode": "output",
-      "source_path": "izzi 3746630338b43de50d3c28647bbcb5b58ce6f794 resources.static/here-lies-trouble/seed-audio-corpus/here-lies-trouble-{1,2}.20260415.txt",
-      "source_sha256": "38415dbe4de0e5f3335023033d340aaf8d17ae4c128ef38a5d10764cb375df31",
-      "published_path": "review/media/audio-transcript/here-lies-trouble-canonical-source-transcript.20260818.txt",
-      "sha256": "38415dbe4de0e5f3335023033d340aaf8d17ae4c128ef38a5d10764cb375df31",
-      "bytes": 51888,
-      "format": "txt",
-      "technical_state": "VERBATIM-CONTAINER-FROM-CANONICAL-TRANSCRIPTS",
-      "human_review_state": "UNREVIEWED",
-      "baseline_state": "NOT-PROMOTED",
-      "review_category": "planning",
-      "added_at": "2026-08-18T19:03:34.531Z"
     },
     {
       "artifact_id": "generation-keyframes-20260818-v2-index",
@@ -12796,7 +12796,7 @@
   "portal_build": "izzi-review-2026-08-11.7",
   "publication_state": "PUBLIC-PROTOTYPE",
   "schema_version": "1.0",
-  "source_commit": "7ef87399a59767cdfe9cf7a134d7addd0dc5bcd2",
+  "source_commit": "6681ef24af6fe1931af1937a1a7149de201352e2",
   "source_repository": "bdekoz/izzi",
   "source_repository_local_root": "/home/bkoz/src/izzi"
 }

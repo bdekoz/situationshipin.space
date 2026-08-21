@@ -23,6 +23,9 @@ const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const catalogPath = join(repositoryRoot, "data/review-items.json");
 const E1_DIR = "review/media/transcription-enrichment/here-lies-trouble-final-draft";
 const E2_DIR = "review/media/production-fit";
+const REGENERATED_SUFFIX = "-20260820";
+const LEGACY_E1_ID = "here-lies-trouble-final-draft-enrichment";
+const LEGACY_E2_ID = "here-lies-trouble-production-fit";
 
 function sha256(buffer) {
   return createHash("sha256").update(buffer).digest("hex");
@@ -75,7 +78,7 @@ async function main() {
   const transcriptBuffer = await readFile(transcriptPath);
   const transcriptHash = sha256(transcriptBuffer);
 
-  const stem = "here-lies-trouble-canonical-source-transcript.20260818.final-draft";
+  const stem = "here-lies-trouble.20260415.final-draft";
   const e1Files = await Promise.all([
     copyInto(join(e1Dir, stem + ".pdf"), E1_DIR, stem + ".pdf"),
     copyInto(join(e1Dir, stem + ".fdx"), E1_DIR, stem + ".fdx"),
@@ -96,10 +99,11 @@ async function main() {
   const fitBuffer = await readFile(join(e2Dir, "here-lies-trouble-production-fit.md"));
 
   const e1Item = {
-    artifact_id: "here-lies-trouble-final-draft-enrichment",
+    artifact_id: LEGACY_E1_ID + REGENERATED_SUFFIX,
     title: "Here Lies Trouble — Final Draft 13 enrichment",
     description:
-      "Format-only enrichment of the canonical source transcript into a "
+      "Regenerated format-only enrichment of the unified canonical source "
+      + "transcript into a "
       + "Final Draft 13 screenplay: SPEAKER 1-6 dialogue, verbatim text, "
       + "two candidate styles — interpolated FDX (rendered Courier PDF) and "
       + "Fountain open screenplay markup — plus a provenance sidecar. "
@@ -113,13 +117,13 @@ async function main() {
     review_scope: "TRANSCRIPTION-ENRICHMENT-E1",
     review_mode: "output",
     source_path:
-      `izzi ${izziCommit} review/media/audio-transcript/`
-      + "here-lies-trouble-canonical-source-transcript.20260818.txt",
+      `izzi ${izziCommit} resources.static/here-lies-trouble/seed-audio-corpus/`
+      + "here-lies-trouble.20260415.txt",
     source_sha256: sha256(e1Pdf),
     source_derivation: {
-      path: "here-lies-trouble-canonical-source-transcript.20260818.txt",
+      path: "here-lies-trouble.20260415.txt",
       sha256: transcriptHash,
-      relation: "verbatim input transcript",
+      relation: "unified verbatim input transcript",
     },
     published_path: e1Files[0],
     sha256: sha256(e1Pdf),
@@ -130,7 +134,8 @@ async function main() {
       { label: "Open Fountain — open screenplay markup", path: e1Files[2] },
       { label: "Open provenance JSON", path: e1Files[3] },
     ],
-    technical_state: "FDX-SUBSET-V1-FROM-CANONICAL-TRANSCRIPT",
+    technical_state: "FDX-SUBSET-V1-REGENERATED-FROM-UNIFIED-TRANSCRIPT",
+    generation_state: "CURRENT",
     human_review_state: "UNREVIEWED",
     baseline_state: "NOT-PROMOTED",
     review_category: "planning",
@@ -138,10 +143,10 @@ async function main() {
   };
 
   const e2Item = {
-    artifact_id: "here-lies-trouble-production-fit",
+    artifact_id: LEGACY_E2_ID + REGENERATED_SUFFIX,
     title: "Here Lies Trouble — production fit assessment",
     description:
-      "May 2026 network needs vs the enriched transcript: per-house fit "
+      "Regenerated: May 2026 network needs vs the enriched unified transcript: per-house fit "
       + "verdicts, matched categories, and no-fly conflicts.",
     alt: "Production-fit assessment for the here-lies-trouble enriched transcript.",
     family: "production-fit",
@@ -167,7 +172,8 @@ async function main() {
       { label: "Open fit JSON", path: fitJson },
       { label: "Open needs data form", path: needsJson },
     ],
-    technical_state: "V1-DEEPSEEK-FIT-ASSESSMENT",
+    technical_state: "V1-DEEPSEEK-FIT-ASSESSMENT-REGENERATED-FROM-UNIFIED-TRANSCRIPT",
+    generation_state: "CURRENT",
     human_review_state: "UNREVIEWED",
     baseline_state: "NOT-PROMOTED",
     review_category: "planning",
@@ -180,6 +186,12 @@ async function main() {
   const catalog = JSON.parse(await readFile(catalogPath, "utf8"));
   const ids = new Set([e1Item.artifact_id, e2Item.artifact_id]);
   catalog.items = catalog.items.filter((entry) => !ids.has(entry.artifact_id));
+  for (const entry of catalog.items) {
+    if (entry.artifact_id === LEGACY_E1_ID || entry.artifact_id === LEGACY_E2_ID) {
+      entry.generation_state = "STALE";
+      entry.human_review_state = "REVISE";
+    }
+  }
   catalog.items.push(e1Item, e2Item);
   catalog.items.sort((left, right) =>
     String(right.added_at || "").localeCompare(String(left.added_at || "")));

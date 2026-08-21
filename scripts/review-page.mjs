@@ -3,11 +3,146 @@
 // manifests. Used by build-review-pages.mjs and publish-video-proof.mjs so
 // every review surface stays byte-identical in structure.
 
+import { readFileSync } from "node:fs";
+import { dirname, join, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
+
 const escape = (value) =>
   String(value ?? "").replace(
     /[&<>"]/g,
     (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])
   );
+
+function emphasisMarkdown(text) {
+  const codes = [];
+  let out = String(text).replace(/`([^`]+)`/g, (match, code) => {
+    codes.push(code);
+    return `\u0000${codes.length - 1}\u0000`;
+  });
+  out = out
+    .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+    .replace(/(^|[^*])\*([^*\s][^*\n]*[^*\s])\*(?!\*)/g, "$1<em>$2</em>")
+    .replace(/~~([^~]+)~~/g, "<del>$1</del>");
+  return out.replace(
+    /\u0000(\d+)\u0000/g,
+    (match, index) => `<code>${codes[Number(index)]}</code>`
+  );
+}
+
+function inlineMarkdown(text) {
+  let out = escape(text);
+  out = out.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (match, label, url) => {
+    const allowed = /^(https?:|mailto:|#|\/)/i.test(url);
+    if (!allowed) return label;
+    const external = /^https?:/i.test(url);
+    return `<a href="${escape(url)}"${external ? ' target="_blank" rel="noopener"' : ""}>${emphasisMarkdown(label)}</a>`;
+  });
+  return emphasisMarkdown(out);
+}
+
+function renderMarkdown(markdown) {
+  const lines = String(markdown).replace(/\r\n?/g, "\n").split("\n");
+  const html = [];
+  const separatorPattern = /^\s*\|?[\s:|-]+\|[\s:|-]*\|?$/;
+
+  const parseList = (start, indent) => {
+    const items = [];
+    let index = start;
+    const markerPattern = new RegExp(`^ {${indent}}([-+*]|\\d+\\.)\\s+(.*)$`);
+    while (index < lines.length) {
+      const match = markerPattern.exec(lines[index]);
+      if (!match) break;
+      index += 1;
+      let nested = "";
+      const deeper = /^(\s+)([-+*]|\d+\.)\s+/.exec(lines[index] || "");
+      if (deeper && deeper[1].length > indent) {
+        const parsed = parseList(index, deeper[1].length);
+        nested = parsed.html;
+        index = parsed.next;
+      }
+      items.push(`<li>${inlineMarkdown(match[2])}${nested}</li>`);
+      while (index < lines.length && lines[index].trim() === "") index += 1;
+    }
+    return { html: `<ul>${items.join("")}</ul>`, next: index };
+  };
+
+  let index = 0;
+  while (index < lines.length) {
+    const line = lines[index];
+    const trimmed = line.trim();
+    if (!trimmed) {
+      index += 1;
+      continue;
+    }
+    if (/^```/.test(trimmed)) {
+      const block = [];
+      index += 1;
+      while (index < lines.length && !/^```/.test(lines[index].trim())) {
+        block.push(lines[index]);
+        index += 1;
+      }
+      if (index < lines.length) index += 1;
+      html.push(`<pre><code>${escape(block.join("\n"))}</code></pre>`);
+      continue;
+    }
+    const heading = /^(#{1,6})\s+(.+)$/.exec(trimmed);
+    if (heading) {
+      const level = heading[1].length;
+      html.push(`<h${level}>${inlineMarkdown(heading[2])}</h${level}>`);
+      index += 1;
+      continue;
+    }
+    if (/^(-{3,}|\*{3,})$/.test(trimmed)) {
+      html.push("<hr>");
+      index += 1;
+      continue;
+    }
+    const nextTrimmed = index + 1 < lines.length ? lines[index + 1].trim() : "";
+    if (trimmed.includes("|") && separatorPattern.test(nextTrimmed) && nextTrimmed.includes("-")) {
+      const splitRow = (row) => row
+        .replace(/^\s*\|/, "")
+        .replace(/\|\s*$/, "")
+        .split("|")
+        .map((cell) => cell.trim());
+      const headerCells = splitRow(trimmed)
+        .map((cell) => `<th>${inlineMarkdown(cell)}</th>`)
+        .join("");
+      const bodyRows = [];
+      index += 2;
+      while (index < lines.length && lines[index].trim().includes("|")) {
+        bodyRows.push(
+          `<tr>${splitRow(lines[index].trim()).map((cell) => `<td>${inlineMarkdown(cell)}</td>`).join("")}</tr>`
+        );
+        index += 1;
+      }
+      html.push(`<table><thead><tr>${headerCells}</tr></thead><tbody>${bodyRows.join("")}</tbody></table>`);
+      continue;
+    }
+    if (/^\s*([-+*]|\d+\.)\s+/.test(line)) {
+      const parsed = parseList(index, line.match(/^(\s*)/)[1].length);
+      html.push(parsed.html);
+      index = parsed.next;
+      continue;
+    }
+    const paragraph = [line];
+    index += 1;
+    while (index < lines.length && lines[index].trim() !== ""
+        && !/^(#{1,6})\s/.test(lines[index].trim())
+        && !/^\s*([-+*]|\d+\.)\s+/.test(lines[index])
+        && !/^```/.test(lines[index].trim())
+        && !/^(-{3,}|\*{3,})$/.test(lines[index].trim())
+        && !(lines[index].trim().includes("|")
+          && index + 1 < lines.length
+          && separatorPattern.test(lines[index + 1].trim()))) {
+      paragraph.push(lines[index]);
+      index += 1;
+    }
+    html.push(`<p>${inlineMarkdown(paragraph.join(" "))}</p>`);
+  }
+  return html.join("");
+}
 
 function reviewScript(item) {
   const reviewId = JSON.stringify(item.artifact_id);
@@ -171,7 +306,7 @@ export function renderReviewPage(item, localRoot = "") {
     : item.media_kind === "index"
       ? "Index notes"
       : "Motion and audio notes";
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><meta name="description" content="${escape(item.title)} review page"><title>${escape(item.title)} — situationshipin.space</title><link rel="stylesheet" href="../../../../assets/css/review.css"><style>body{background:#fcfbf7;color:#14171a} .review-page{max-width:72rem;margin:auto;padding:2rem 1rem 5rem}.review-hero{border-left:.55rem solid #173a55;padding:1rem 1.25rem;background:#eef1f2}.review-media{margin:2rem 0;padding:1rem;background:#f5f6f4;border:1px solid #9da8af}.review-media img,.review-media video{display:block;max-width:100%;max-height:72vh;margin:auto}.review-media audio{display:block;width:100%;max-width:36rem;margin:1rem auto}.review-media object,.review-media iframe{display:block;width:100%;min-height:70vh;border:1px solid #9da8af;background:#fff}.review-media .plan-document-link{display:inline-block;font-weight:700;color:#173a55;padding:.7rem 1rem;border:2px solid #173a55;background:#fff;text-decoration:none}.review-form{display:grid;gap:1rem;max-width:48rem}.review-form textarea,.review-form select,.review-form button{min-height:3rem;padding:.7rem;font:inherit}.review-form textarea,.review-form select{border:2px solid #4d565d;background:#fff;color:#14171a}.review-form button{width:max-content;background:#173a55;color:#fff;border:0;padding:.8rem 1.2rem;font-weight:700}.review-form .review-actions{display:flex;gap:.75rem;flex-wrap:wrap}.review-form button.secondary{background:#4d565d}.eyebrow{color:#173a55}.meta{font-family:ui-monospace,monospace;font-size:.85rem;overflow-wrap:anywhere}</style></head><body><main class="review-page"><p><a href="/">← Review catalog</a></p><div class="review-hero"><p class="eyebrow">${escape(item.style || "house-style")} · ${item.media_kind === "plan" ? "plan review" : item.media_kind === "index" ? (item.generation_class === "voice-bank-index" ? "voice bank index" : "generation index") : "artifact review"}</p><h1>${escape(item.title)}</h1><p>${escape(item.description)}</p></div><section class="review-media" aria-labelledby="media-title"><h2 id="media-title">Review the artifact</h2>${media}<p class="meta">${planMeta}${fullResMeta}</p></section><section aria-labelledby="feedback-title"><h2 id="feedback-title">Human review</h2><form class="review-form" id="review-form"><label>Decision<select name="decision"><option>UNREVIEWED</option><option>KEEP</option><option>KEEP-PARTS</option><option>REVISE</option><option>REJECT</option><option>DISCUSS</option></select></label><label>${noteLabel}<textarea name="note" rows="7" placeholder="What should change, or what should be kept?"></textarea></label><div class="review-actions"><button type="submit">Save local review</button><button type="button" id="review-download">Download review JSON</button><button type="button" id="review-issue">Open GitHub issue draft</button><button type="button" id="review-clear" class="secondary">Clear saved review</button></div><output id="review-status" role="status"></output></form>${reviewScript(item)}</section></main></body></html>`;
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><meta name="description" content="${escape(item.title)} review page"><title>${escape(item.title)} — situationshipin.space</title><link rel="stylesheet" href="../../../../assets/css/review.css"><style>body{background:#fcfbf7;color:#14171a} .review-page{max-width:72rem;margin:auto;padding:2rem 1rem 5rem}.review-hero{border-left:.55rem solid #173a55;padding:1rem 1.25rem;background:#eef1f2}.review-media{margin:2rem 0;padding:1rem;background:#f5f6f4;border:1px solid #9da8af}.review-media img,.review-media video{display:block;max-width:100%;max-height:72vh;margin:auto}.review-media audio{display:block;width:100%;max-width:36rem;margin:1rem auto}.review-media object,.review-media iframe{display:block;width:100%;min-height:70vh;border:1px solid #9da8af;background:#fff}.review-media .plan-document-link{display:inline-block;font-weight:700;color:#173a55;padding:.7rem 1rem;border:2px solid #173a55;background:#fff;text-decoration:none}.review-media .plan-document-body{margin:1.25rem 0 0;padding:1rem 1.25rem;background:#fff;border:1px solid #9da8af;max-height:70vh;overflow:auto;font-family:ui-serif,Georgia,serif;line-height:1.55}.review-media .plan-document-body h1{font-size:1.35rem;margin:.25rem 0 1rem}.review-media .plan-document-body h2{font-size:1.15rem;margin:1.25rem 0 .5rem}.review-media .plan-document-body h3{font-size:1.05rem;margin:1rem 0 .5rem}.review-media .plan-document-body p{margin:.65rem 0}.review-media .plan-document-body ul,.review-media .plan-document-body ol{margin:.65rem 0;padding-left:1.5rem}.review-media .plan-document-body table{border-collapse:collapse;width:100%;margin:1rem 0}.review-media .plan-document-body th,.review-media .plan-document-body td{border:1px solid #9da8af;padding:.35rem .6rem;text-align:left}.review-media .plan-document-body th{background:#eef1f2}.review-media .plan-document-body pre{overflow:auto;background:#f5f6f4;padding:.75rem;border:1px solid #9da8af}.review-media .plan-document-body code{font-family:ui-monospace,monospace;font-size:.9em}.review-form{display:grid;gap:1rem;max-width:48rem}.review-form textarea,.review-form select,.review-form button{min-height:3rem;padding:.7rem;font:inherit}.review-form textarea,.review-form select{border:2px solid #4d565d;background:#fff;color:#14171a}.review-form button{width:max-content;background:#173a55;color:#fff;border:0;padding:.8rem 1.2rem;font-weight:700}.review-form .review-actions{display:flex;gap:.75rem;flex-wrap:wrap}.review-form button.secondary{background:#4d565d}.eyebrow{color:#173a55}.meta{font-family:ui-monospace,monospace;font-size:.85rem;overflow-wrap:anywhere}</style></head><body><main class="review-page"><p><a href="/">← Review catalog</a></p><div class="review-hero"><p class="eyebrow">${escape(item.style || "house-style")} · ${item.media_kind === "plan" ? "plan review" : item.media_kind === "index" ? (item.generation_class === "voice-bank-index" ? "voice bank index" : "generation index") : "artifact review"}</p><h1>${escape(item.title)}</h1><p>${escape(item.description)}</p></div><section class="review-media" aria-labelledby="media-title"><h2 id="media-title">Review the artifact</h2>${media}<p class="meta">${planMeta}${fullResMeta}</p></section><section aria-labelledby="feedback-title"><h2 id="feedback-title">Human review</h2><form class="review-form" id="review-form"><label>Decision<select name="decision"><option>UNREVIEWED</option><option>KEEP</option><option>KEEP-PARTS</option><option>REVISE</option><option>REJECT</option><option>DISCUSS</option></select></label><label>${noteLabel}<textarea name="note" rows="7" placeholder="What should change, or what should be kept?"></textarea></label><div class="review-actions"><button type="submit">Save local review</button><button type="button" id="review-download">Download review JSON</button><button type="button" id="review-issue">Open GitHub issue draft</button><button type="button" id="review-clear" class="secondary">Clear saved review</button></div><output id="review-status" role="status"></output></form>${reviewScript(item)}</section></main></body></html>`;
 }
 
 function planMedia(item) {
@@ -184,9 +319,17 @@ function planMedia(item) {
   for (const link of item.plan_links || []) {
     links.push(`<a class="plan-document-link" href="/${escape(link.path)}" target="_blank" rel="noopener">${escape(link.label)} ↗</a>`);
   }
-  const preview = /\.pdf$/i.test(item.published_path)
-    ? `<object data="${href}" type="application/pdf" aria-label="Plan document preview"><p>PDF preview unavailable in this browser. Use the link above.</p></object>`
-    : "";
+  let preview = "";
+  if (/\.pdf$/i.test(item.published_path)) {
+    preview = `<object data="${href}" type="application/pdf" aria-label="Plan document preview"><p>PDF preview unavailable in this browser. Use the link above.</p></object>`;
+  } else if (item.format === "markdown" || /\.md$/i.test(item.published_path || "")) {
+    try {
+      const source = readFileSync(join(repositoryRoot, item.published_path), "utf8");
+      preview = `<div class="plan-document-body">${renderMarkdown(source)}</div>`;
+    } catch (error) {
+      preview = `<p class="meta">Inline preview unavailable (${escape(error.code || "file not found")}). Use the link above.</p>`;
+    }
+  }
   return `<p>${links.join(" ")}</p>${preview}`;
 }
 
