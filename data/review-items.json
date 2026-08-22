@@ -1,12 +1,12 @@
 {
   "baseline_state": "NOT-PROMOTED",
-  "generated_at": "2026-08-22T20:58:37.024Z",
+  "generated_at": "2026-08-22T21:01:36.429Z",
   "human_review_state": "UNREVIEWED",
   "items": [
     {
       "artifact_id": "palette-20260822-index",
       "title": "Color Palette Family 20260822",
-      "description": "Regenerated 2026-08-22 izzi color palette family: one individual page per palette object behind the palette_kind selection tag in src/izzi-svg-color-palette.h (izzi, izzi hue, Japanese, ColorBrewer 3/7/9-class, CIECAM02, CIECAM16, CIECAM16 J=70, ESRI shallow/mid bathymetry) plus the band, tint, and RGB↔HSV parameter-space exercises. Prior round: palette-20260814-index (STALE).",
+      "description": "Regenerated 2026-08-22 izzi color palette family: one individual page per palette object behind the palette_kind selection tag in src/izzi-svg-color-palette.h (izzi, izzi hue, Japanese, ColorBrewer 3/7/9-class, CIECAM02, CIECAM16, CIECAM16 J=70, ESRI shallow/mid bathymetry) plus the band, tint, and RGB↔HSV parameter-space exercises. Prior round: palette-20260814-index (removed).",
       "alt": "Index of the 16 regenerated izzi color palette review artifacts from 2026-08-22.",
       "family": "palette-20260822",
       "generation_class": "palette-index",
@@ -16,8 +16,8 @@
       "review_mode": "output",
       "source_path": "izzi 7328a622e963229d2be5dd1a2e94d1d1d7a34265 outputs/review/feedback/visual/color/round-01 (palette family aggregate)",
       "published_path": "review/media/palette-20260822/palette-20260822-index.index.html",
-      "sha256": "8fc32a6dd563a07656ca161425f8d100267c480556d25baa281775e30547af1e",
-      "bytes": 8649,
+      "sha256": "4c2143cf302b2f7f34ef2b657bfd85b605365332b8f4f462b18240f93943a4ae",
+      "bytes": 8653,
       "format": "html",
       "generation_commit": "7328a622e963229d2be5dd1a2e94d1d1d7a34265",
       "generation_state": "CURRENT",
@@ -43,7 +43,7 @@
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-08-22T20:58:37.012Z"
+      "added_at": "2026-08-22T21:01:36.418Z"
     },
     {
       "artifact_id": "color-rgb-hsv-3",
@@ -68,7 +68,7 @@
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
       "style": "house-style",
-      "added_at": "2026-08-22T20:58:37.010Z"
+      "added_at": "2026-08-22T21:01:36.416Z"
     },
     {
       "artifact_id": "color-rgb-hsv-2",
@@ -93,7 +93,7 @@
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
       "style": "house-style",
-      "added_at": "2026-08-22T20:58:36.654Z"
+      "added_at": "2026-08-22T21:01:36.054Z"
     },
     {
       "artifact_id": "color-tint-perceptual-2",
@@ -118,7 +118,7 @@
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
       "style": "house-style",
-      "added_at": "2026-08-22T20:58:36.362Z"
+      "added_at": "2026-08-22T21:01:35.761Z"
     },
     {
       "artifact_id": "color-tint-perceptual-1",
@@ -143,7 +143,7 @@
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
       "style": "house-style",
-      "added_at": "2026-08-22T20:58:36.076Z"
+      "added_at": "2026-08-22T21:01:35.464Z"
     },
     {
       "artifact_id": "color-band-expand-to-larger",
@@ -168,7 +168,7 @@
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
       "style": "house-style",
-      "added_at": "2026-08-22T20:58:35.809Z"
+      "added_at": "2026-08-22T21:01:35.194Z"
     },
     {
       "artifact_id": "palette-esri-m-bathymetry",
@@ -193,7 +193,7 @@
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
       "style": "house-style",
-      "added_at": "2026-08-22T20:58:35.576Z"
+      "added_at": "2026-08-22T21:01:34.953Z"
     },
     {
       "artifact_id": "palette-esri-s-bathymetry",
@@ -218,7 +218,7 @@
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
       "style": "house-style",
-      "added_at": "2026-08-22T20:58:35.351Z"
+      "added_at": "2026-08-22T21:01:34.723Z"
     },
     {
       "artifact_id": "palette-ciecam16j70",
@@ -243,7 +243,7 @@
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
       "style": "house-style",
-      "added_at": "2026-08-22T20:58:35.126Z"
+      "added_at": "2026-08-22T21:01:34.496Z"
     },
     {
       "artifact_id": "palette-ciecam16",
@@ -268,7 +268,7 @@
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
       "style": "house-style",
-      "added_at": "2026-08-22T20:58:34.869Z"
+      "added_at": "2026-08-22T21:01:34.227Z"
     },
     {
       "artifact_id": "palette-ciecam02",
@@ -293,7 +293,7 @@
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
       "style": "house-style",
-      "added_at": "2026-08-22T20:58:34.620Z"
+      "added_at": "2026-08-22T21:01:33.976Z"
     },
     {
       "artifact_id": "palette-colorbrewer2s9s",
@@ -318,7 +318,7 @@
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
       "style": "house-style",
-      "added_at": "2026-08-22T20:58:34.367Z"
+      "added_at": "2026-08-22T21:01:33.716Z"
     },
     {
       "artifact_id": "palette-colorbrewer2s7s",
@@ -343,7 +343,7 @@
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
       "style": "house-style",
-      "added_at": "2026-08-22T20:58:34.126Z"
+      "added_at": "2026-08-22T21:01:33.464Z"
     },
     {
       "artifact_id": "palette-colorbrewer2s3s",
@@ -368,7 +368,7 @@
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
       "style": "house-style",
-      "added_at": "2026-08-22T20:58:33.885Z"
+      "added_at": "2026-08-22T21:01:33.215Z"
     },
     {
       "artifact_id": "palette-jp",
@@ -393,7 +393,7 @@
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
       "style": "house-style",
-      "added_at": "2026-08-22T20:58:33.652Z"
+      "added_at": "2026-08-22T21:01:32.967Z"
     },
     {
       "artifact_id": "palette-izzi-hue",
@@ -418,7 +418,7 @@
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
       "style": "house-style",
-      "added_at": "2026-08-22T20:58:33.381Z"
+      "added_at": "2026-08-22T21:01:32.684Z"
     },
     {
       "artifact_id": "palette-izzi",
@@ -443,7 +443,7 @@
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
       "style": "house-style",
-      "added_at": "2026-08-22T20:58:33.104Z"
+      "added_at": "2026-08-22T21:01:32.394Z"
     },
     {
       "artifact_id": "stage5-plate-gx4g2-grid-motion",

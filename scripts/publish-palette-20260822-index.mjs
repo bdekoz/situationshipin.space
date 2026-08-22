@@ -3,9 +3,8 @@
 // index on situationshipin.space (palette-20260822-index), with one
 // individual palette page per palette object behind the palette_kind
 // selection tag in src/izzi-svg-color-palette.h. The superseded
-// palette-20260814 family is marked STALE and stays in the catalog so its
-// pages and media remain referenced; the proofs-for-inspection surface hides
-// STALE proofs.
+// palette-20260814 family is removed from the portal; its catalog entry,
+// pages, and media no longer remain referenced.
 //
 // Usage:
 //   node scripts/publish-palette-20260822-index.mjs \
@@ -145,8 +144,8 @@ async function main() {
   const catalog = JSON.parse(await readFile(catalogPath, "utf8"));
   const memberIds = new Set(MEMBERS.map((spec) => spec.name));
 
-  // Mark the superseded 20260814 family STALE. No human review decision
-  // exists for it, so its human_review_state is left untouched.
+  // Belt-and-braces: any leftover 20260814 family entries are marked STALE.
+  // The family has already been removed, so this is normally a no-op.
   let staleCount = 0;
   for (const item of catalog.items) {
     if (item.family === SUPERSEDED_FAMILY) {
@@ -211,7 +210,7 @@ async function main() {
 
   const title = "Color Palette Family 20260822";
   const description =
-    "Regenerated 2026-08-22 izzi color palette family: one individual page per palette object behind the palette_kind selection tag in src/izzi-svg-color-palette.h (izzi, izzi hue, Japanese, ColorBrewer 3/7/9-class, CIECAM02, CIECAM16, CIECAM16 J=70, ESRI shallow/mid bathymetry) plus the band, tint, and RGB↔HSV parameter-space exercises. Prior round: palette-20260814-index (STALE).";
+    "Regenerated 2026-08-22 izzi color palette family: one individual page per palette object behind the palette_kind selection tag in src/izzi-svg-color-palette.h (izzi, izzi hue, Japanese, ColorBrewer 3/7/9-class, CIECAM02, CIECAM16, CIECAM16 J=70, ESRI shallow/mid bathymetry) plus the band, tint, and RGB↔HSV parameter-space exercises. Prior round: palette-20260814-index (removed).";
   const indexHtml = renderIndexHtml({
     title, description, members, commit: izziCommit,
     indexDir: join("review", "media", FAMILY),
