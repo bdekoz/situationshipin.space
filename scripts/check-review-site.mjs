@@ -593,6 +593,10 @@ if (!script.includes("pageSize: 10") || !script.includes("AESTHETIC_DECISIONS")
   fail("ten-item pagination or aesthetic-review lineage is missing");
 }
 
+if (!script.includes('item.generation_state === "STALE"')) {
+  fail("proofs-for-inspection surface does not exclude STALE proofs");
+}
+
 const forbiddenTerms = ["SEEDANCE_KEY", "BEGIN OPENSSH PRIVATE KEY", "aws_access_key_id"];
 for (const term of forbiddenTerms) {
   if (index.includes(term) || proofs.includes(term) || style.includes(term)

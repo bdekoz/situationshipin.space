@@ -268,7 +268,11 @@ function reviewScript(item) {
 }
 
 function localFullResolutionPath(item, localRoot) {
-  if (item.media_kind !== "video" && item.media_kind !== "video-filmstrip") {
+  const localVideo = item.media_kind === "video"
+    || item.media_kind === "video-filmstrip";
+  const localSvg = item.media_kind === "image"
+    && /\.svg$/i.test(String(item.source_path || ""));
+  if (!localVideo && !localSvg) {
     return null;
   }
   const raw = item.source_media?.path || item.source_path || "";
@@ -298,8 +302,11 @@ export function renderReviewPage(item, localRoot = "") {
       ? `Review ID: ${escape(item.artifact_id)}<br>Index SHA-256: ${escape(item.sha256)}<br>Index members: ${escape(String(item.index_members?.length || 0))}<br>Generation commit: ${escape(item.generation_commit || "not supplied")}`
       : `Review ID: ${escape(item.artifact_id)}<br>Proxy SHA-256: ${escape(item.sha256)}<br>Canonical source SHA-256: ${escape(item.source_media?.sha256 || item.sha256)}<br>Canonical source publication: ${item.source_media?.published === false ? "local only" : "published"}`;
   const fullResPath = localFullResolutionPath(item, localRoot);
+  const fullResLabel = item.media_kind === "image"
+    ? "Local SVG file"
+    : "Full-resolution local file";
   const fullResMeta = fullResPath
-    ? `<br>Full-resolution local file: <a href="${encodeURI(`file://${fullResPath}`)}">${escape(fullResPath)}</a>`
+    ? `<br>${fullResLabel}: <a href="${encodeURI(`file://${fullResPath}`)}">${escape(fullResPath)}</a>`
     : "";
   const noteLabel = item.media_kind === "plan"
     ? "Plan notes"

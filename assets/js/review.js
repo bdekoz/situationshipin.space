@@ -323,7 +323,10 @@ function resetOptions(select, label) {
 }
 
 function categoryItems() {
-  return state.catalog.items.filter((item) => item.review_category === state.category);
+  return state.catalog.items.filter((item) =>
+    item.review_category === state.category
+    && !(state.category === "proofs" && item.generation_state === "STALE")
+  );
 }
 
 function uniqueValues(key, items = state.catalog.items) {
