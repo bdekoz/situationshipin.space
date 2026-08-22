@@ -1,0 +1,15 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "generation-guilloche-20260821-stage5-index",
+  "artifact_id": "generation-guilloche-20260821-stage5-index",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": null,
+  "document": {
+    "path": "/review/media/generation-guilloche-20260821-stage5/generation-guilloche-20260821-stage5-index.index.html",
+    "sha256": "ec907eddd2ff55cb6ca5a5fd1d0dc6f14481cad33f8fa7728526486b7d4ef850",
+    "format": "html",
+    "plan_stage": null,
+    "plan_pdf": null
+  }
+}
