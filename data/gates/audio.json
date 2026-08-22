@@ -10,7 +10,7 @@
   "combined_with": ["visual-styling"],
   "evidence": {
     "workflow": "izzi docs/workflows.md (W1)",
-    "proposal": "izzi docs/development/sessions/explore_futures.20260818.workflow_v2_proposal.md",
+    "proposal": "izzi docs/development/sessions/20260818.workflow_v2_proposal.md",
     "transcript_review": "https://situationshipin.space/review/here-lies-trouble-canonical-source-transcript/",
     "annotation_schema": "izzi docs/audio_workflow/annotation_schema.json (W4)",
     "voice_review_surface": "https://situationshipin.space/review/female-voice-bank-index/",
