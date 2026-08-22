@@ -1,0 +1,15 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "palette-20260822-index",
+  "artifact_id": "palette-20260822-index",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": null,
+  "document": {
+    "path": "/review/media/palette-20260822/palette-20260822-index.index.html",
+    "sha256": "8fc32a6dd563a07656ca161425f8d100267c480556d25baa281775e30547af1e",
+    "format": "html",
+    "plan_stage": null,
+    "plan_pdf": null
+  }
+}

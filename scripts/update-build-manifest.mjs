@@ -29,6 +29,7 @@ const codePaths = [
   "scripts/publish-video-proof.mjs",
   "scripts/publish-plan-proof.mjs",
   "scripts/publish-palette-index.mjs",
+  "scripts/publish-palette-20260822-index.mjs",
   "scripts/publish-visualization-index.mjs",
   "scripts/publish-movement-index.mjs",
   "scripts/publish-hamonshu-style-index.mjs",

@@ -1,22 +1,22 @@
 {
   "schema_version": "1.0",
   "portal_build": "izzi-review-2026-08-11.7",
-  "generated_at": "2026-08-22T05:15:07.809Z",
+  "generated_at": "2026-08-22T20:58:37.165Z",
   "portal_repository": "bdekoz/situationshipin.space",
   "portal_source_commit": "219a9b7f0891998c1525c94fa15b43c490b5d79f",
   "izzi_repository": "bdekoz/izzi",
-  "izzi_source_commit": "351d632364534c7c28863681eec4739ec06c3ae9",
+  "izzi_source_commit": "7328a622e963229d2be5dd1a2e94d1d1d7a34265",
   "publication_state": "PUBLIC-PROTOTYPE",
   "human_review_state": "UNREVIEWED",
   "baseline_state": "NOT-PROMOTED",
   "training_conversion_transfer_state": "NOT-SHARED",
-  "artifact_count": 359,
+  "artifact_count": 375,
   "review_category_counts": {
-    "proofs": 29,
+    "proofs": 45,
     "style_processing": 323,
     "planning": 7
   },
-  "artifact_payload_bytes": 45874864,
+  "artifact_payload_bytes": 48595478,
   "frame_preview_count": 0,
   "sampled_frame_count": 0,
   "source_media_bytes_represented": 0,
@@ -68,7 +68,7 @@
     },
     {
       "path": "data/review-items.json",
-      "sha256": "c1bdfec6cf676bd3599a6c29d214e23782190a7a4924d68b3f05a7fedb0a8b00"
+      "sha256": "4fec0a79f6813d55a98ac6ffa5d131b7696cd6028a656bc0f6a68b5ec33f728d"
     },
     {
       "path": "scripts/check-review-site.mjs",
@@ -76,7 +76,7 @@
     },
     {
       "path": "scripts/update-build-manifest.mjs",
-      "sha256": "c46f88405dddeea3208f16cb72d0f586875788f8e141098f45878c0827b87ac4"
+      "sha256": "a1b5360c8f6c017574982c4df94724eeb669e74edb6448e50a947b4e2714f9ea"
     },
     {
       "path": "README.md",
@@ -119,6 +119,10 @@
       "sha256": "e42a45e201622d9177bbc778f8d573d75b807e7c480ae7c7ee3a13f074305927"
     },
     {
+      "path": "scripts/publish-palette-20260822-index.mjs",
+      "sha256": "1b020f531593bcbc2abd852687b97173b97dce0c61acf1c6733402e96338a25d"
+    },
+    {
       "path": "scripts/publish-visualization-index.mjs",
       "sha256": "040af76d7f6af492edd8f7aa24e40d24b05d76cd9ba2259b9d19d62d767e4222"
     },
@@ -148,7 +152,7 @@
     }
   ],
   "artifact_inventory": "data/review-items.json",
-  "catalog_sha256": "c1bdfec6cf676bd3599a6c29d214e23782190a7a4924d68b3f05a7fedb0a8b00",
+  "catalog_sha256": "4fec0a79f6813d55a98ac6ffa5d131b7696cd6028a656bc0f6a68b5ec33f728d",
   "notes": [
     "The catalog binds every published derivative to an Izzi source path and SHA-256.",
     "Canonical source MKVs remain outside Pages; one bounded H.264/AAC MP4 proxy is published for continuous motion and audio review with independent lineage.",
