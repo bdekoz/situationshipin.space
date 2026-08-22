@@ -1,22 +1,22 @@
 {
   "schema_version": "1.0",
   "portal_build": "izzi-review-2026-08-11.7",
-  "generated_at": "2026-08-22T21:01:36.574Z",
+  "generated_at": "2026-08-22T21:54:41.104Z",
   "portal_repository": "bdekoz/situationshipin.space",
   "portal_source_commit": "219a9b7f0891998c1525c94fa15b43c490b5d79f",
   "izzi_repository": "bdekoz/izzi",
-  "izzi_source_commit": "7328a622e963229d2be5dd1a2e94d1d1d7a34265",
+  "izzi_source_commit": "16fa6e07a93cb57d5af816c0a08c1afee114b566",
   "publication_state": "PUBLIC-PROTOTYPE",
   "human_review_state": "UNREVIEWED",
   "baseline_state": "NOT-PROMOTED",
   "training_conversion_transfer_state": "NOT-SHARED",
-  "artifact_count": 375,
+  "artifact_count": 376,
   "review_category_counts": {
-    "proofs": 45,
+    "proofs": 46,
     "style_processing": 323,
     "planning": 7
   },
-  "artifact_payload_bytes": 48595482,
+  "artifact_payload_bytes": 48659048,
   "frame_preview_count": 0,
   "sampled_frame_count": 0,
   "source_media_bytes_represented": 0,
@@ -68,7 +68,7 @@
     },
     {
       "path": "data/review-items.json",
-      "sha256": "168c7d2bc5972fad118eeb627682bc04a6fab4f87910fddf522c757caac26430"
+      "sha256": "722b75e79f05ae62391cbfd81007dedd1a6907eaffc59178cfe34fbeeef7045c"
     },
     {
       "path": "scripts/check-review-site.mjs",
@@ -120,7 +120,7 @@
     },
     {
       "path": "scripts/publish-palette-20260822-index.mjs",
-      "sha256": "8f78e971afe478683ca329a047ea38b831dbffa8e3c6526a76e7f1555d5a5752"
+      "sha256": "dfab289a788de97592a9110ecdc4c8c18f89c648c1562af35fcd45286995c718"
     },
     {
       "path": "scripts/publish-visualization-index.mjs",
@@ -152,7 +152,7 @@
     }
   ],
   "artifact_inventory": "data/review-items.json",
-  "catalog_sha256": "168c7d2bc5972fad118eeb627682bc04a6fab4f87910fddf522c757caac26430",
+  "catalog_sha256": "722b75e79f05ae62391cbfd81007dedd1a6907eaffc59178cfe34fbeeef7045c",
   "notes": [
     "The catalog binds every published derivative to an Izzi source path and SHA-256.",
     "Canonical source MKVs remain outside Pages; one bounded H.264/AAC MP4 proxy is published for continuous motion and audio review with independent lineage.",

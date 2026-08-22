@@ -43,7 +43,7 @@ const MEMBERS = [
   { name: "palette-esri-s-bathymetry", primary: "palette-esri-s-bathymetry.svg", title: "Color palette — ESRI shallow bathymetry (7)", description: "ESRI shallow-water bathymetry ramp (7 swatches).", alt: "7-swatch ESRI shallow bathymetry grid." },
   { name: "palette-esri-m-bathymetry", primary: "palette-esri-m-bathymetry.svg", title: "Color palette — ESRI mid bathymetry (11)", description: "ESRI mid-water bathymetry ramp (11 swatches).", alt: "11-swatch ESRI mid bathymetry grid." },
   // Carried-forward parameter-space exercises, refreshed at the same commit.
-  { name: "color-band-expand-to-larger", primary: "color-band-expand-to-larger-p.svg", title: "Color band — expand to larger (100)", description: "Three 100-swatch band sweeps (orange/purple/red) in the RGB model, deterministic seeded generation (M0-DETERMINISM-001 closed).", alt: "Three 100-swatch color band sweeps." },
+  { name: "color-band-expand-to-larger-v2", sourceDir: "band-expand-to-larger", primary: "color-band-expand-to-larger-b.svg", title: "Color band — expand to larger v2 (HSV-sorted)", description: "Four 100-swatch band sweeps (blue, orange, purple, red), each generated with the seeded band model and sorted by HSV (issue #70).", alt: "Four 100-swatch HSV-sorted color band sweeps." },
   { name: "color-tint-perceptual-1", primary: "color-tint-perceptual-1.svg", title: "Color tint — perceptual 1 (35)", description: "35-swatch perceptual tint exercise (ciecam16j70-derived interpolation).", alt: "35-swatch perceptual tint grid." },
   { name: "color-tint-perceptual-2", primary: "color-tint-perceptual-2.svg", title: "Color tint — perceptual 2 (84)", description: "84-swatch perceptual tint exercise from the izzi color family.", alt: "84-swatch perceptual tint grid." },
   { name: "color-rgb-hsv-2", primary: "color-rgb-hsv-2.svg", title: "RGB↔HSV grid 2 (42)", description: "42-swatch RGB↔HSV quantization grid from the izzi color family.", alt: "42-swatch RGB to HSV grid." },
@@ -154,11 +154,22 @@ async function main() {
     }
   }
 
+  // Issue #70 REVISE: the superseded band artifact stays in the catalog so
+  // its review page and media remain referenced, but is hidden from the
+  // proofs-for-inspection surface.
+  for (const item of catalog.items) {
+    if (item.artifact_id === "color-band-expand-to-larger") {
+      item.generation_state = "STALE";
+      item.human_review_state = "REVISE";
+      staleCount += 1;
+    }
+  }
+
   const members = [];
   for (const spec of MEMBERS) {
-    const sourceName = spec.name.startsWith("color-")
+    const sourceName = spec.sourceDir || (spec.name.startsWith("color-")
       ? spec.name.slice("color-".length)
-      : spec.name;
+      : spec.name);
     const svgPath = join(reviewDir, sourceName, spec.primary);
     const mediaPath = `${MEDIA_DIR}/${spec.name}.png`;
     const mediaAbs = join(repositoryRoot, mediaPath);
@@ -210,7 +221,7 @@ async function main() {
 
   const title = "Color Palette Family 20260822";
   const description =
-    "Regenerated 2026-08-22 izzi color palette family: one individual page per palette object behind the palette_kind selection tag in src/izzi-svg-color-palette.h (izzi, izzi hue, Japanese, ColorBrewer 3/7/9-class, CIECAM02, CIECAM16, CIECAM16 J=70, ESRI shallow/mid bathymetry) plus the band, tint, and RGB↔HSV parameter-space exercises. Prior round: palette-20260814-index (removed).";
+    "Regenerated 2026-08-22 izzi color palette family: one individual page per palette object behind the palette_kind selection tag in src/izzi-svg-color-palette.h (izzi, izzi hue, Japanese, ColorBrewer 3/7/9-class, CIECAM02, CIECAM16, CIECAM16 J=70, ESRI shallow/mid bathymetry) plus the HSV-sorted band (revised per issue #70), tint, and RGB↔HSV parameter-space exercises. Prior round: palette-20260814-index (removed).";
   const indexHtml = renderIndexHtml({
     title, description, members, commit: izziCommit,
     indexDir: join("review", "media", FAMILY),
