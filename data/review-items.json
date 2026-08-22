@@ -1,8 +1,35 @@
 {
   "baseline_state": "NOT-PROMOTED",
-  "generated_at": "2026-08-22T02:41:10.065Z",
+  "generated_at": "2026-08-22T03:15:51.840Z",
   "human_review_state": "UNREVIEWED",
   "items": [
+    {
+      "artifact_id": "generation-guilloche-20260821-dutch-v3-index",
+      "title": "Guilloche Dutch Lighthouse Radiate 20260821 v3",
+      "description": "Stage-4 Dutch guilloche review, revision 3 (issue #61): the sol-5.6 reference-guided two-layer lighthouse radiate as one 2x 3x5 plate - row 1 black/white reference, row 2 independent per-layer rays/radii, row 3 wave overlay, triangle form, hexagon multi-polygon, and per-color opacity 0.2-1.0 - across stroke widths 0.5, 1, 2, 4, and 8. Per-cell plates are not generated. Prior round: generation-guilloche-20260821-dutch-v2-index (STALE).",
+      "alt": "Index of the single third-revision izzi Dutch lighthouse radiate review plate from 2026-08-21 (issue #61).",
+      "family": "generation-guilloche-20260821-dutch-v3",
+      "generation_class": "guilloche-index",
+      "feedback_round": "generation-guilloche-20260821-dutch-v3",
+      "media_kind": "index",
+      "review_scope": "GENERATION-GUILLOCHE-20260821-DUTCH-V3",
+      "review_mode": "output",
+      "source_path": "izzi d587019f08a09a2c5d2b7f05f5a39a0ee30dbf0d outputs/ad-hoc/guilloche.dutch/svg/dutch-plate-grid-3x5.svg (third-revision 3x5 plate)",
+      "published_path": "review/media/generation-guilloche-20260821-dutch-v3/generation-guilloche-20260821-dutch-v3-index.index.html",
+      "sha256": "b032eb6aef4d5dc821e1191d888c387c350efa5f1f2954dbabc50183d1e2d0bf",
+      "bytes": 3258,
+      "format": "html",
+      "generation_commit": "d587019f08a09a2c5d2b7f05f5a39a0ee30dbf0d",
+      "generation_state": "CURRENT",
+      "index_members": [
+        "dutch-plate-grid-3x5-v3"
+      ],
+      "technical_state": "GUILLOCHE-DUTCH-V3-INDEX",
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "review_category": "proofs",
+      "added_at": "2026-08-22T03:15:51.829Z"
+    },
     {
       "artifact_id": "generation-guilloche-20260821-dutch-v2-index",
       "title": "Guilloche Dutch Lighthouse Radiate 20260821 v2",
@@ -20,12 +47,12 @@
       "bytes": 2994,
       "format": "html",
       "generation_commit": "3d0a91287e8dc2918e34c14c7a4aeb0f83ee1d8a",
-      "generation_state": "CURRENT",
+      "generation_state": "STALE",
       "index_members": [
         "dutch-plate-grid-3x5-v2"
       ],
       "technical_state": "GUILLOCHE-DUTCH-V2-INDEX",
-      "human_review_state": "UNREVIEWED",
+      "human_review_state": "REVISE",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
       "added_at": "2026-08-22T02:41:10.053Z"
@@ -12990,7 +13017,7 @@
   "portal_build": "izzi-review-2026-08-11.7",
   "publication_state": "PUBLIC-PROTOTYPE",
   "schema_version": "1.0",
-  "source_commit": "3d0a91287e8dc2918e34c14c7a4aeb0f83ee1d8a",
+  "source_commit": "d587019f08a09a2c5d2b7f05f5a39a0ee30dbf0d",
   "source_repository": "bdekoz/izzi",
   "source_repository_local_root": "/home/bkoz/src/izzi"
 }
