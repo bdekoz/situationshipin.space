@@ -1,0 +1,12 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "stage5-plate-gx4g2-grid-motion",
+  "artifact_id": "stage5-plate-gx4g2-grid-motion",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": {
+    "path": "/review/media/generation-guilloche-20260821-stage5/stage5-plate-gx4g2-grid-motion.review.mp4",
+    "sha256": "206c481a15b9f685ae2fcef0a82743b6c53319436b393f049bdc8fee2f49f533"
+  },
+  "document": null
+}
