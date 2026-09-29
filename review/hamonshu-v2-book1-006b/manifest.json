@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-006b",
+  "scan": 6,
+  "note": "Lower left panel.",
+  "box_pixels": [
+    337,
+    2667,
+    2856,
+    4608
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2519,
+    1941
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "9e61b60da046e1849909559115388285c7be17a3b8d054d06809ad0ef143a969",
+  "sha256": "5417233669b752e57bb1e82012349873cc12fe9dcdd633d658ff86ee234394c3",
+  "source_scan_sha256": "198c53a90ff3855174cf81f4c1213e8ba0a389f4d9ed9145790a00ea35f14894",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-006b.jpg",
+    "bytes": 354502,
+    "sha256": "586e4ef8969745fb69f9feb5aa36ba30b915cad616eb3b62ee8de50112ec1ef1",
+    "width": 1600,
+    "height": 1233,
+    "format": "jpg"
+  }
+}

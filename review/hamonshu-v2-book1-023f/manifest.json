@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-023f",
+  "scan": 23,
+  "note": "Right page, bottom-right motif; neighboring motif partly visible in crop corner.",
+  "box_pixels": [
+    3524,
+    3409,
+    5529,
+    4562
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2005,
+    1153
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "7469a596bc193a954939fc5d7972d69b16881d9f8e76b99eea87954ab72155e4",
+  "sha256": "a87a7448f54bec4b1ca0fd501c5566e7c7069dec087ebd44ea525a47ce462d26",
+  "source_scan_sha256": "c432afdcd9901dedc53552f11af66968d69d67284b57a6c441d425c8f4537cf6",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-023f.jpg",
+    "bytes": 110805,
+    "sha256": "1f104a3a4a845359447557aee89962f2e6b5d00769dce1f8eabb206c4354fd9c",
+    "width": 1600,
+    "height": 920,
+    "format": "jpg"
+  }
+}

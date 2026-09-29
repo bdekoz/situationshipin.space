@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-025i",
+  "scan": 25,
+  "note": "Right page, lower-right group; nearby arch edge remains at top left.",
+  "box_pixels": [
+    4102,
+    3804,
+    5541,
+    4426
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1439,
+    622
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "c992b9672bcea09a0736ed24fc18800fc2604eeb256d58ede47d9298a82bfd3e",
+  "sha256": "4364b5c662f0b71718e461d7eabe96c1dc6dd09aea827e1c1d2150d6143b8160",
+  "source_scan_sha256": "849f1a467e68782c59a4d41e61573fb5f425ee445a53c8c0be3c56eec0add27d",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-025i.jpg",
+    "bytes": 102360,
+    "sha256": "3a9faa2f34028868504ae27e6f9e82a939338b4cd299a039b42a79b2c18842cc",
+    "width": 1439,
+    "height": 622,
+    "format": "jpg"
+  }
+}

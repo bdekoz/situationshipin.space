@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-025h",
+  "scan": 25,
+  "note": "Right page, lower-left motif; a neighboring stroke remains at lower right.",
+  "box_pixels": [
+    3136,
+    3359,
+    4729,
+    3930
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1593,
+    571
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "02ad481741b6f0ec745bc65a015d9bbec383d90380646f486c5dafccc62c54e8",
+  "sha256": "a5336c76a742c7f4270caf9cc708a63c0d5fa2aa67519cd577749ab6813b23d4",
+  "source_scan_sha256": "849f1a467e68782c59a4d41e61573fb5f425ee445a53c8c0be3c56eec0add27d",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-025h.jpg",
+    "bytes": 78539,
+    "sha256": "e385d7a0fd41e578697c63337b899aaf45b90209efc1d68bb1de687974ef456b",
+    "width": 1593,
+    "height": 571,
+    "format": "jpg"
+  }
+}

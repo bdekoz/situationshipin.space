@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-027a",
+  "scan": 27,
+  "note": "Left page, fan-shaped panel; adjoining circular panel partly visible at lower left.",
+  "box_pixels": [
+    555,
+    1305,
+    2695,
+    3101
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2140,
+    1796
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "e6ef0c99ac3beb12d4d0c20ccada94bc6c8ea3d1f5c8e162605f77f42463690a",
+  "sha256": "0c065c076b49fd3157cff336ac4db21ae838078eebe8f18067046f3e1ddb1e20",
+  "source_scan_sha256": "8f822e1a948cffc38f5b9986bd3f6319b08d47ddf9a8797d06301df88963810d",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-027a.jpg",
+    "bytes": 208515,
+    "sha256": "6497327cdb8ab087a109400c83446554ae6b470544db0f82714ccd8af879e35d",
+    "width": 1600,
+    "height": 1343,
+    "format": "jpg"
+  }
+}

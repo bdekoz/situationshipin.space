@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-025f",
+  "scan": 25,
+  "note": "Right page, second band.",
+  "box_pixels": [
+    3130,
+    1765,
+    5652,
+    2392
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2522,
+    627
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "098d30cc2159f56dee40d0c81b1d8715962961955bab93054184fb2efb9baa71",
+  "sha256": "c27efe88a662321c1400fc1704fba267d1a59d09acb576c756c7a7823acc3d59",
+  "source_scan_sha256": "849f1a467e68782c59a4d41e61573fb5f425ee445a53c8c0be3c56eec0add27d",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-025f.jpg",
+    "bytes": 129355,
+    "sha256": "8082fa3f6c05e389b82bc6150528596fe8fc22a46d6004e7571bfd0516269dfd",
+    "width": 1600,
+    "height": 398,
+    "format": "jpg"
+  }
+}

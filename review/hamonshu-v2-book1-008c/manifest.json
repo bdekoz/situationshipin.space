@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-008c",
+  "scan": 8,
+  "note": "Left page, lower circular emblem.",
+  "box_pixels": [
+    580,
+    3353,
+    1603,
+    4326
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1023,
+    973
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "24c611e326df34120b82665f3b44ff55a90c5b31791ad2fa9eb665b60d725263",
+  "sha256": "fa7eb0f4337a14e533a8b58ac96f97b7ffc77d1152db797165699c7790958aff",
+  "source_scan_sha256": "4a5bc4648f8463bb738e264c4cdbada7b4c6a2c1fa22d2e2954596e64b5b68cd",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-008c.jpg",
+    "bytes": 115534,
+    "sha256": "33b77ec8a5679f9a415e50e798d9695993bf2659c49928096008dfb3b49f210e",
+    "width": 1023,
+    "height": 973,
+    "format": "jpg"
+  }
+}

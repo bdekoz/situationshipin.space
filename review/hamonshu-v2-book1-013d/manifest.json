@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-013d",
+  "scan": 13,
+  "note": "Connected central medallion across gutter; neighboring emblems appear in rectangular corners.",
+  "box_pixels": [
+    2134,
+    1797,
+    4268,
+    3730
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2134,
+    1933
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "1b87a77433d56978f4dfc6312530e668a03ce8859576981dd735f50db6b71fd6",
+  "sha256": "4d3ec8bbb6db4aa514959247a3762a92e9a17d471b015683bbbe2e660981becd",
+  "source_scan_sha256": "d5b64ca8ace2f5b082da2c72e409a3e11be624554985a86077f99f4e58d6f8f0",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-013d.jpg",
+    "bytes": 321129,
+    "sha256": "f9ba9f39f6a9df5be4501ef78a9b8689ca58bc783bccaa496f957c83f7d4d375",
+    "width": 1600,
+    "height": 1449,
+    "format": "jpg"
+  }
+}

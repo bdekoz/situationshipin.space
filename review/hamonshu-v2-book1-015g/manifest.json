@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-015g",
+  "scan": 15,
+  "note": "Right page, top cluster.",
+  "box_pixels": [
+    4095,
+    1189,
+    5600,
+    1791
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1505,
+    602
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "2fd21cf5989904fd188a93ba875b7a9d51b2cd4fcefdb5113f65921ac04c2a27",
+  "sha256": "0bf993d0b8989eb6b2a3f029fb3633e741aaba2bf754b9aace4d58cd50245396",
+  "source_scan_sha256": "9c942f000df17484689068a0e22a86fe9cd6558dfd33943dec207d69c201db52",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-015g.jpg",
+    "bytes": 141790,
+    "sha256": "72c2334e38d09aef1c871fa44ce871bae25b56dd73d59f2346885bc97097fbe9",
+    "width": 1505,
+    "height": 602,
+    "format": "jpg"
+  }
+}

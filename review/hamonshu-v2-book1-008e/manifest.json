@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-008e",
+  "scan": 8,
+  "note": "Right page, middle circular emblem.",
+  "box_pixels": [
+    4853,
+    2254,
+    5544,
+    2965
+  ],
+  "polygon_normalized": null,
+  "size": [
+    691,
+    711
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "0272c562ec753f028d23da4c523744a9543bcd517c59deb61a083f3129a9c8aa",
+  "sha256": "10d867d91a0a280016a22d0ff1ee3b2fcbd5f40110819f956403704cae48e7b2",
+  "source_scan_sha256": "4a5bc4648f8463bb738e264c4cdbada7b4c6a2c1fa22d2e2954596e64b5b68cd",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-008e.jpg",
+    "bytes": 122630,
+    "sha256": "0e7c3e8f7955f8d3c6bf116d76ee6c140e2121e09c711640146365c431e7825b",
+    "width": 691,
+    "height": 711,
+    "format": "jpg"
+  }
+}

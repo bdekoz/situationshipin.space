@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-007g",
+  "scan": 7,
+  "note": "Right page, vertical connected ornament; neighboring circular edges remain on the left.",
+  "box_pixels": [
+    4582,
+    1944,
+    5584,
+    4613
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1002,
+    2669
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "ff72cfe0b3a8d3152645f9a84e50c3af3655548964c8069b17f7dfaaaa3ddb8b",
+  "sha256": "d5483e2fceab33ffe3aed37aa421975478e77bd833e42d2ebc7cb9eb700c098c",
+  "source_scan_sha256": "70c592d6341b40dd50a8bc1369664605ef34daa641aab0bdd16fc59903114cd7",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-007g.jpg",
+    "bytes": 135585,
+    "sha256": "f379989a2ef7f59be902f12b5d5931c227d4c67d07fc1565ac3f5c8eda0d2416",
+    "width": 601,
+    "height": 1600,
+    "format": "jpg"
+  }
+}

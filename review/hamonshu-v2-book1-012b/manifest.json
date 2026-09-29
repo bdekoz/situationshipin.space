@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-012b",
+  "scan": 12,
+  "note": "Left page, middle motif.",
+  "box_pixels": [
+    455,
+    2028,
+    2878,
+    3015
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2423,
+    987
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "d41fa3d9044eac46adf7d7dd3788ce87b52cf58410df0b7084ce954c5020cffe",
+  "sha256": "f9e794f3cb15bb606679e464926fe3e59ce32bcf14c3ecadaa764dd77ee6acfd",
+  "source_scan_sha256": "b3449d766d4042b1e17fca558c6611aabe8025f3b643f3f1cb5d5279ab2f6442",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-012b.jpg",
+    "bytes": 115969,
+    "sha256": "82dca1e02b8bcc050ba92419eaab9f69d2fafcf1413320db79f64ca098176feb",
+    "width": 1600,
+    "height": 652,
+    "format": "jpg"
+  }
+}

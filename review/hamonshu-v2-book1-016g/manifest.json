@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-016g",
+  "scan": 16,
+  "note": "Right page, middle-left group; a neighboring tip remains at lower right.",
+  "box_pixels": [
+    3213,
+    2000,
+    4687,
+    2598
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1474,
+    598
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "2afb3cd825bba4968867b5042d475d1bdc31c1b295aac5df731372fa79bcacc6",
+  "sha256": "bbf329fe2f29fbc1b6363444aeee53dd188aa1db448b2585507bbfa50fd96e41",
+  "source_scan_sha256": "b332351e2497a7d8b6f9db3d26d05c88d2e2b728ba0b450ae591b74ee3d3ab95",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-016g.jpg",
+    "bytes": 141293,
+    "sha256": "2d5162b8e17693db0eba65f50bd50def6a52bcf687fedbcbcb69dbbfe140fb63",
+    "width": 1474,
+    "height": 598,
+    "format": "jpg"
+  }
+}

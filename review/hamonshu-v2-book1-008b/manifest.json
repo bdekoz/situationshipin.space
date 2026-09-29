@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-008b",
+  "scan": 8,
+  "note": "Connected central composition spanning the gutter; adjacent circular emblems partly visible in rectangular corners.",
+  "box_pixels": [
+    1110,
+    1245,
+    4551,
+    4185
+  ],
+  "polygon_normalized": null,
+  "size": [
+    3441,
+    2940
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "e4b51c960ff41e3d6aac29d7325d35d231d6d8207820747d0fd9f86c1959c242",
+  "sha256": "62114dfe2587587d4b22a53d6660f0ebb4b459fdb73e8ea88dd6e864f65c40af",
+  "source_scan_sha256": "4a5bc4648f8463bb738e264c4cdbada7b4c6a2c1fa22d2e2954596e64b5b68cd",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-008b.jpg",
+    "bytes": 368003,
+    "sha256": "0656fc3576fe504e533beb97fa3997b2d332a898cb9d05e81448b6ab583173e8",
+    "width": 1600,
+    "height": 1367,
+    "format": "jpg"
+  }
+}

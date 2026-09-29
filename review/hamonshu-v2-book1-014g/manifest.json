@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-014g",
+  "scan": 14,
+  "note": "Right page, lowest small medallion.",
+  "box_pixels": [
+    4742,
+    3832,
+    5246,
+    4304
+  ],
+  "polygon_normalized": null,
+  "size": [
+    504,
+    472
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "c988c209d2dc97387b68b16534212725079303a7346d383cfa5fc822e2386cfa",
+  "sha256": "7fe49a6fd5eb43f4457fb93075cd0f4dcaa7c4891c61b37c99b8533e1e493a6a",
+  "source_scan_sha256": "123b073cfd2471e6826e765aea636525fc6d7863daadbb2ee278f21edc4560fc",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-014g.jpg",
+    "bytes": 49160,
+    "sha256": "238f5e1b090d06c14271093af2bb3ae9eed39b5b3df6fb7f833111ed9bda2929",
+    "width": 504,
+    "height": 472,
+    "format": "jpg"
+  }
+}

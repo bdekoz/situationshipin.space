@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-027b",
+  "scan": 27,
+  "note": "Left page, circular panel; adjoining fan edge remains at upper right.",
+  "box_pixels": [
+    549,
+    2610,
+    2109,
+    4122
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1560,
+    1512
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "eb91e8ee8e9036dbc9f3f305efc74678fa4e0141e1d08ec3513a737185f34ed7",
+  "sha256": "71770c1156f563d1542a18739b834d1da9e8f898f225652a7edfa07816931ebe",
+  "source_scan_sha256": "8f822e1a948cffc38f5b9986bd3f6319b08d47ddf9a8797d06301df88963810d",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-027b.jpg",
+    "bytes": 197607,
+    "sha256": "8429487e6948578822fb30bd876ec01a916ee4b28c3b6d17f043695074f56f37",
+    "width": 1560,
+    "height": 1512,
+    "format": "jpg"
+  }
+}

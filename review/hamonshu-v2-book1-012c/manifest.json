@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-012c",
+  "scan": 12,
+  "note": "Left page, lower motif, including detached droplets.",
+  "box_pixels": [
+    394,
+    3040,
+    2872,
+    4411
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2478,
+    1371
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "cc1f80d9a176b8af2079b8d4f13b47686c81779c4ae783d363b89b6206efce1a",
+  "sha256": "14e3150eed68a607f30a61ec64d8e353d4ddb83de6a324989d874dac35a66b4f",
+  "source_scan_sha256": "b3449d766d4042b1e17fca558c6611aabe8025f3b643f3f1cb5d5279ab2f6442",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-012c.jpg",
+    "bytes": 146235,
+    "sha256": "8abaa1624883ffde5d71cc2d986e190029b0b1913476d58bdfbe446e91924f23",
+    "width": 1600,
+    "height": 885,
+    "format": "jpg"
+  }
+}

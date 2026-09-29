@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-016e",
+  "scan": 16,
+  "note": "Left page, five bottom motifs.",
+  "box_pixels": [
+    1024,
+    3819,
+    2744,
+    4558
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1720,
+    739
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "6bdbc54cb1c110a2548d3d5ba7e6ea465f457216bcdcc4f415d1f6eaf26d6e50",
+  "sha256": "ec32203d6c80bd23e41b07a39f425d7c6fa978639b8ae6bc48d5a16508cfb19d",
+  "source_scan_sha256": "b332351e2497a7d8b6f9db3d26d05c88d2e2b728ba0b450ae591b74ee3d3ab95",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-016e.jpg",
+    "bytes": 69956,
+    "sha256": "8a7163b2048851498233c67cca4de648056f5fc4e0583dbf34c4a5e87cae867a",
+    "width": 1600,
+    "height": 687,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-012d",
+  "scan": 12,
+  "note": "Right page, upper composition.",
+  "box_pixels": [
+    3167,
+    976,
+    5695,
+    2372
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2528,
+    1396
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "0b623055184d5d82d32bfbb0200338285a1dcf359acc7f9cc261d75c2bff42d0",
+  "sha256": "16bfcf545b9a93ba36a747b7e6cd62a3f17843e27319998270def16e9bcae139",
+  "source_scan_sha256": "b3449d766d4042b1e17fca558c6611aabe8025f3b643f3f1cb5d5279ab2f6442",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-012d.jpg",
+    "bytes": 152822,
+    "sha256": "ef6fedee52a6d451bf2c00849efb6060354f78c87f8f5a821b3eb56c866f20a9",
+    "width": 1600,
+    "height": 884,
+    "format": "jpg"
+  }
+}

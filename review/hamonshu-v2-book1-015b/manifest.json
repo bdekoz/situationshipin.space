@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-015b",
+  "scan": 15,
+  "note": "Left page, paired upright motifs.",
+  "box_pixels": [
+    2109,
+    2200,
+    2713,
+    2903
+  ],
+  "polygon_normalized": null,
+  "size": [
+    604,
+    703
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "43691a5e05818f1b4033d8384dc0c70825f58ebf450124139a6b35dfd06761f7",
+  "sha256": "93e65289bc95c1903e2fc7ea311a55108be27c9cd845d3edec23e8fbf4b8b3c4",
+  "source_scan_sha256": "9c942f000df17484689068a0e22a86fe9cd6558dfd33943dec207d69c201db52",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-015b.jpg",
+    "bytes": 64438,
+    "sha256": "778be135751b0eb017b60882e386de677269041e0e51b0c285fcac4bcb61b04d",
+    "width": 604,
+    "height": 703,
+    "format": "jpg"
+  }
+}

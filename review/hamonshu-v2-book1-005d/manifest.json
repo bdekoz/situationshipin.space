@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-005d",
+  "scan": 5,
+  "note": "Left page, lower middle; a small neighboring stroke remains at upper left.",
+  "box_pixels": [
+    1456,
+    2663,
+    2716,
+    3240
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1260,
+    577
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "f0b5b19b063874d70774f851924be0f550a2c5102bad77de05407fc11944ba60",
+  "sha256": "c21d20c82309176ef521ef90fe31d06d274f0a9ac0f336f96a39fd1c1d02ee8a",
+  "source_scan_sha256": "4739c9b803c4fa8816b35445094043482adc643694c36d8decf5a205c01e505c",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-005d.jpg",
+    "bytes": 103352,
+    "sha256": "71ef6ce54b4413826b404045a2b4cd80fe3bdae45b159b532e7554e0c1078082",
+    "width": 1260,
+    "height": 577,
+    "format": "jpg"
+  }
+}

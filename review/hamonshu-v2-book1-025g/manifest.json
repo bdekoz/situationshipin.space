@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-025g",
+  "scan": 25,
+  "note": "Right page, middle-right composition; a neighboring stroke remains at lower left.",
+  "box_pixels": [
+    4120,
+    2645,
+    5652,
+    3525
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1532,
+    880
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "4da5a3600a4de7b035256a53005926d11a99b9ac3e142fa87c3dbc524244ad21",
+  "sha256": "56363e2f2d974d53fa8e7a00b5857656e9f4c229d57f26aae6b069bac2e11529",
+  "source_scan_sha256": "849f1a467e68782c59a4d41e61573fb5f425ee445a53c8c0be3c56eec0add27d",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-025g.jpg",
+    "bytes": 143275,
+    "sha256": "8c59df2351d511f53b617d625372a944b5f70ca4b477541ec95e844a49aeb331",
+    "width": 1532,
+    "height": 880,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-015a",
+  "scan": 15,
+  "note": "Left page, top field; tips of the upright motif remain at lower right.",
+  "box_pixels": [
+    802,
+    1108,
+    2565,
+    2428
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1763,
+    1320
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "7f78b7187ac51b9882dc8c5adbb6248132719d986632cf2aef35b92763d7b606",
+  "sha256": "55583c8c6e106f67e19cf50ccc00c10b542f739b8553a41fa659753f1a7e8bf1",
+  "source_scan_sha256": "9c942f000df17484689068a0e22a86fe9cd6558dfd33943dec207d69c201db52",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-015a.jpg",
+    "bytes": 370795,
+    "sha256": "366d8e04b28f3a6c2cfe605ffc72cc3f6a90285335c7a3d3ee8861c31184d41d",
+    "width": 1600,
+    "height": 1198,
+    "format": "jpg"
+  }
+}

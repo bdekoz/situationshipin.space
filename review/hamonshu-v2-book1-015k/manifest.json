@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-015k",
+  "scan": 15,
+  "note": "Right page, bottom cluster; a neighboring arc remains at upper left.",
+  "box_pixels": [
+    3904,
+    3455,
+    5618,
+    4451
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1714,
+    996
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "a8dec0b652857b31b54c114911597d7d791b4f59dc2811585eb635d69dcd22a3",
+  "sha256": "2d8a2a9f08ad05fd0dcb37c544359848427fb5099437234919f428ca526024cb",
+  "source_scan_sha256": "9c942f000df17484689068a0e22a86fe9cd6558dfd33943dec207d69c201db52",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-015k.jpg",
+    "bytes": 218436,
+    "sha256": "870b680c9b8d39ad3f25eb9541b9832cd2f596f61a0358bf9305943bb8a40602",
+    "width": 1600,
+    "height": 930,
+    "format": "jpg"
+  }
+}

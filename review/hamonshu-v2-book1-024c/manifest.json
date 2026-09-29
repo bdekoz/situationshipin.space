@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-024c",
+  "scan": 24,
+  "note": "Left page, central motif; a neighboring small band remains at upper left.",
+  "box_pixels": [
+    1033,
+    1882,
+    2743,
+    2949
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1710,
+    1067
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "30a5e48c6960f48d961bb45cda1836acec4c7e691d44d4263adab5e4ec45eb04",
+  "sha256": "9cbd908de43385a20a50d7134827da779b8edf0cb907dd7cbf0ce9914fe9c9b9",
+  "source_scan_sha256": "5986b08e1914e13bdaa97c4f4dfd11ea89fdafdf2361395d449a12273283b5fa",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-024c.jpg",
+    "bytes": 112394,
+    "sha256": "f26f53d0ad43bff1aec90d6275e5155c7dbe1fdfcb291f97262eb4d6bc95c6ad",
+    "width": 1600,
+    "height": 998,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-021d",
+  "scan": 21,
+  "note": "Right page, left vertical group; a neighboring fine stem remains at lower right.",
+  "box_pixels": [
+    3299,
+    1462,
+    4243,
+    3267
+  ],
+  "polygon_normalized": null,
+  "size": [
+    944,
+    1805
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "32da2951014c8554f5ad5a5936760b59cc0373e01500a983d083829ec8e8dfe3",
+  "sha256": "c1dcc288fe739b0f1351bf3fd8e77a83d2795c6929e20e8c07983ffe0a33720c",
+  "source_scan_sha256": "5f097cb69413588093e4654ec5fb6a694106b5fc63ab8979d4eaf5ce3fb5447d",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-021d.jpg",
+    "bytes": 126833,
+    "sha256": "0a2c583d8b5a7c761c44b8528700b33d7c1805f90da65287ef04c36957705c87",
+    "width": 837,
+    "height": 1600,
+    "format": "jpg"
+  }
+}

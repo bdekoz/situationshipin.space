@@ -1,0 +1,53 @@
+{
+  "id": "hamonshu_1-001a",
+  "scan": 1,
+  "note": "Upper front-cover ornament. Transparent cutout excludes the pasted title; the source already hides part of the ornament.",
+  "box_pixels": [
+    821,
+    445,
+    3044,
+    3010
+  ],
+  "polygon_normalized": [
+    [
+      236,
+      178
+    ],
+    [
+      710,
+      178
+    ],
+    [
+      710,
+      88
+    ],
+    [
+      875,
+      88
+    ],
+    [
+      875,
+      595
+    ],
+    [
+      236,
+      595
+    ]
+  ],
+  "size": [
+    2223,
+    2565
+  ],
+  "mode": "RGBA",
+  "pixel_sha256": "4f0b9ef3a0d011ad54c7cd6fc91cd939a86e6030dfafcb72c971c10752c56102",
+  "sha256": "02bbb266e2f77264bcd27b3ae40f088f2889cedfb67ae9ff2e3fb220ba2a8dc4",
+  "source_scan_sha256": "4345c2e9fc9e3f9ff1975d81f66e971bf3f9a3b6e211ae689e765ac85ac6f15d",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-001a.jpg",
+    "bytes": 393651,
+    "sha256": "57e835c05c8a7f8fac35b4028d699aaaad4b0f2a664693260c0d302cae3891bd",
+    "width": 1387,
+    "height": 1600,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-016a",
+  "scan": 16,
+  "note": "Left page, top crossing group; a neighboring motif remains at lower left.",
+  "box_pixels": [
+    1227,
+    1126,
+    2683,
+    2251
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1456,
+    1125
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "1fcdeb285c2889afd61399bfaad7af86e5c14fff142f7ec678fab5f683315eae",
+  "sha256": "27fb84a03405f9c4868a1c9e6c91dea308e49d50ab85efc0c8d27bdacc072b01",
+  "source_scan_sha256": "b332351e2497a7d8b6f9db3d26d05c88d2e2b728ba0b450ae591b74ee3d3ab95",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-016a.jpg",
+    "bytes": 166781,
+    "sha256": "06ffcf368e73a9ac102eddd1628a36a807adc0a438154c30b5f86bb4d67f9494",
+    "width": 1456,
+    "height": 1125,
+    "format": "jpg"
+  }
+}

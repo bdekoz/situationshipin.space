@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-008f",
+  "scan": 8,
+  "note": "Right page, lower ring of five motifs.",
+  "box_pixels": [
+    4224,
+    3146,
+    5519,
+    4351
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1295,
+    1205
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "81f440f2d3ce80b0a7a51470166485c1205195538ca23dd92ad01f5e07a5fb93",
+  "sha256": "1e3eb6f6149c3b74939905370260868175e6398c1858f51fde82d122451424da",
+  "source_scan_sha256": "4a5bc4648f8463bb738e264c4cdbada7b4c6a2c1fa22d2e2954596e64b5b68cd",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-008f.jpg",
+    "bytes": 144390,
+    "sha256": "b8ee85af12029ec99438d3710fdecd3021a9851768e23bc7492df45e4e228c02",
+    "width": 1295,
+    "height": 1205,
+    "format": "jpg"
+  }
+}

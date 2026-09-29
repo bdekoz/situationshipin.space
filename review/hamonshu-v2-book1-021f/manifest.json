@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-021f",
+  "scan": 21,
+  "note": "Right page, fine middle group.",
+  "box_pixels": [
+    4052,
+    2843,
+    4539,
+    3879
+  ],
+  "polygon_normalized": null,
+  "size": [
+    487,
+    1036
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "c65519af4e8a6272463d771fc5b9c304e346cd04cfa987d07bff64ea5bb6c636",
+  "sha256": "216d9b06e571ba1aa55198c6e9f495496691d3b8cc49820fee1568129c133c51",
+  "source_scan_sha256": "5f097cb69413588093e4654ec5fb6a694106b5fc63ab8979d4eaf5ce3fb5447d",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-021f.jpg",
+    "bytes": 42812,
+    "sha256": "6942311f2f73abb7b7ce8ea6883c828ebf22c6181c92fb6ac0cc0e20bf065265",
+    "width": 487,
+    "height": 1036,
+    "format": "jpg"
+  }
+}

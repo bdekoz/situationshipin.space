@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-029b",
+  "scan": 29,
+  "note": "Back cover, isolated middle motif.",
+  "box_pixels": [
+    1121,
+    2067,
+    1820,
+    2697
+  ],
+  "polygon_normalized": null,
+  "size": [
+    699,
+    630
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "5937258bedc0f642047a63bfede29709a4dd9efd080fa5dfbaf725e7772fe73c",
+  "sha256": "bc095cf4fce34f5dd8a35ff91045635c0937b5cb54ed13506c042b77ea7f76ed",
+  "source_scan_sha256": "30e3d65dd909a750868f05477d28c622620b9cd0730cd0b87e8d5d809bdd3420",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-029b.jpg",
+    "bytes": 74553,
+    "sha256": "ad3697b1cc2cf27491dc4e84aa2698b051de45be08806aa4db2c7aba908a4333",
+    "width": 699,
+    "height": 630,
+    "format": "jpg"
+  }
+}

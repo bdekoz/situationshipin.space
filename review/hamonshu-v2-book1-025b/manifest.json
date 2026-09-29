@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-025b",
+  "scan": 25,
+  "note": "Left page, paired small motifs.",
+  "box_pixels": [
+    849,
+    2428,
+    1414,
+    3303
+  ],
+  "polygon_normalized": null,
+  "size": [
+    565,
+    875
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "62ca8929fa6d843eacc01d9a5c9397885c6115577dc43169bdbd321f25ec045e",
+  "sha256": "17b28dd93f81277ce7a9ef9aabbc8610cc9c3b84ac2bb778b06b63597e0b1352",
+  "source_scan_sha256": "849f1a467e68782c59a4d41e61573fb5f425ee445a53c8c0be3c56eec0add27d",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-025b.jpg",
+    "bytes": 63236,
+    "sha256": "e73d52a4053dd4ad84b65257cfdd46591751d68a50da5e020552a6d2141fbeff",
+    "width": 565,
+    "height": 875,
+    "format": "jpg"
+  }
+}

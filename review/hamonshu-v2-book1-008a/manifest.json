@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-008a",
+  "scan": 8,
+  "note": "Left page, upper circular emblem; a neighboring curl remains at lower right.",
+  "box_pixels": [
+    580,
+    1044,
+    1647,
+    2072
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1067,
+    1028
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "cc5acfde2aee7e1d9f61d6729dad56f98cc1007b7d58a2ab45befee567c98b6a",
+  "sha256": "a481494de5748140694460ed3c5a02963be0d37a2d1833c5051e6b86453091ad",
+  "source_scan_sha256": "4a5bc4648f8463bb738e264c4cdbada7b4c6a2c1fa22d2e2954596e64b5b68cd",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-008a.jpg",
+    "bytes": 136886,
+    "sha256": "5893a9fd1b93716c3cc9ad56f6d4c40d12c3a579300b6bf4e4b9e6fb2391c89a",
+    "width": 1067,
+    "height": 1028,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-007c",
+  "scan": 7,
+  "note": "Left page, lower medallion; a neighboring arc remains at upper right.",
+  "box_pixels": [
+    640,
+    3410,
+    1648,
+    4375
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1008,
+    965
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "708eed36b81527710e3a6aa38f8f5a6753a0a7384e711eb349337cc5a9e7561d",
+  "sha256": "dc7be7c53ffc91d56eeb0acface000795c45514f90d0c4fb401fc270b4bb9cc8",
+  "source_scan_sha256": "70c592d6341b40dd50a8bc1369664605ef34daa641aab0bdd16fc59903114cd7",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-007c.jpg",
+    "bytes": 130668,
+    "sha256": "c3ebfad2ed61b4ee128e88bf021d273a8857140e1f37f8e59860e2980820b01e",
+    "width": 1008,
+    "height": 965,
+    "format": "jpg"
+  }
+}

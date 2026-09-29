@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-027d",
+  "scan": 27,
+  "note": "Right page, middle group.",
+  "box_pixels": [
+    4027,
+    2746,
+    5550,
+    3485
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1523,
+    739
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "a9d1335dbd648a56694e99c89b8419c919f63e7a56190bcaa15cfc52e50ae3e6",
+  "sha256": "a91396510708334b9898955ee7d3ed1345e3e4ea2d3ed9acc42629916292d55c",
+  "source_scan_sha256": "8f822e1a948cffc38f5b9986bd3f6319b08d47ddf9a8797d06301df88963810d",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-027d.jpg",
+    "bytes": 193330,
+    "sha256": "b5deaa98aac6a76a401f0aebaa7f28925908f557458f39b3bc36615ac8f638f2",
+    "width": 1523,
+    "height": 739,
+    "format": "jpg"
+  }
+}

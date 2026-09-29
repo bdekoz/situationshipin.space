@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-011b",
+  "scan": 11,
+  "note": "Left page, lower connected composition.",
+  "box_pixels": [
+    444,
+    3060,
+    2874,
+    4466
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2430,
+    1406
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "bb8a5ac34072c001aecf2762339b9c0ad470928c65f7ce5039382ef3ee5a9f7d",
+  "sha256": "2ffaebd2d7c34109b2d5ffcdf0ffbda153ef95a90cecec4bc0ac5a43b17586a3",
+  "source_scan_sha256": "d049f4fa164167a86f2648fa447459864208127ed4e2e1a73243077f4ea8b085",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-011b.jpg",
+    "bytes": 219233,
+    "sha256": "e84fbc1a275f6420de33b9a80d8af225bf92577e041c14a309f2d7772ecda7bd",
+    "width": 1600,
+    "height": 926,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-014c",
+  "scan": 14,
+  "note": "Right page, upper detailed medallion; adjoining small medallion visible at lower left.",
+  "box_pixels": [
+    4041,
+    1106,
+    5443,
+    2553
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1402,
+    1447
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "6ae4c9895f6f3199d3f38bd352f1f960f4ae4aa5e20041dde996ce9e4f94d5fc",
+  "sha256": "0cfafe73292bf7972c5e4aaacd5534678fecb827ef1b3636e487591404bd28eb",
+  "source_scan_sha256": "123b073cfd2471e6826e765aea636525fc6d7863daadbb2ee278f21edc4560fc",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-014c.jpg",
+    "bytes": 335661,
+    "sha256": "141d73e8dcdcb492cef4742f04a3a449f95ae05f0d894fd35b524e3ee81819c2",
+    "width": 1402,
+    "height": 1447,
+    "format": "jpg"
+  }
+}

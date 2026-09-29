@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-007b",
+  "scan": 7,
+  "note": "Left page, middle medallion; adjoining upper medallion remains at top left.",
+  "box_pixels": [
+    1470,
+    2517,
+    2804,
+    3827
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1334,
+    1310
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "a62f958617eea5c4e2f4be82b59f1469a1019eb56d74081d6f1aab7155ba40c6",
+  "sha256": "c218c2c0eb765908ca9bc2cef9f746c72d2fee66bffa94150033a2d8181bf61c",
+  "source_scan_sha256": "70c592d6341b40dd50a8bc1369664605ef34daa641aab0bdd16fc59903114cd7",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-007b.jpg",
+    "bytes": 210640,
+    "sha256": "d61209fb553e36e12b8b653ea2c8cb1a6ff5805eefaf8a46bfed9792974872d3",
+    "width": 1334,
+    "height": 1310,
+    "format": "jpg"
+  }
+}

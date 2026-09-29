@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-011c",
+  "scan": 11,
+  "note": "Right page, complete continuous field.",
+  "box_pixels": [
+    3201,
+    1224,
+    5717,
+    4471
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2516,
+    3247
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "74211f47c6a7742f0f636597b38dfb49f639d80ea8c92277446ef6c55a4c071f",
+  "sha256": "ddc9c942327a7168fb4d6a6edc46057a1447076e5ab5e37b16c8e4a60ed432b5",
+  "source_scan_sha256": "d049f4fa164167a86f2648fa447459864208127ed4e2e1a73243077f4ea8b085",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-011c.jpg",
+    "bytes": 189245,
+    "sha256": "12afb666290fdac228a611cbdf46ced5fc0f6c4930491240ae16842078a67893",
+    "width": 1240,
+    "height": 1600,
+    "format": "jpg"
+  }
+}

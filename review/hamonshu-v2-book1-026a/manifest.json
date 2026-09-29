@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-026a",
+  "scan": 26,
+  "note": "Left page, upper crossing group; adjacent middle group appears at lower left.",
+  "box_pixels": [
+    870,
+    1047,
+    2701,
+    2827
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1831,
+    1780
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "abfb2db3944b9911834547ad8f0a31ec572d42cdc4cbcad640c4758d165a36b2",
+  "sha256": "92429e1a4b68c1a7d45ed1617d877f5eb17a5f0b497a2a979d1c15bb3fcbeee1",
+  "source_scan_sha256": "f5f71729c245909af69b9fca1243be1cc8511e499ab8c45a26dec19226b95f2e",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-026a.jpg",
+    "bytes": 181978,
+    "sha256": "ac6254d94ac4edcdfdf1ce941a5c2d289f7590b2751c59a6029b1bf21946a7e5",
+    "width": 1600,
+    "height": 1555,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-007e",
+  "scan": 7,
+  "note": "Right page, upper circular emblem.",
+  "box_pixels": [
+    3684,
+    2091,
+    4576,
+    2949
+  ],
+  "polygon_normalized": null,
+  "size": [
+    892,
+    858
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "e3bf9bc653800c8961f8711e9f1595feca32a3e3a592186b040fac1880ed3ff6",
+  "sha256": "fdf39bf63fd393039876503b84d6cf10e880ef6f86a3b097aacd0edd8cd1f599",
+  "source_scan_sha256": "70c592d6341b40dd50a8bc1369664605ef34daa641aab0bdd16fc59903114cd7",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-007e.jpg",
+    "bytes": 65276,
+    "sha256": "f95dbabd761514e2fb3bb47c51e65e2ffdc45f6ac7efc77cb30c7e77230cedf8",
+    "width": 892,
+    "height": 858,
+    "format": "jpg"
+  }
+}

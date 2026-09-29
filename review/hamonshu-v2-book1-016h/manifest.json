@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-016h",
+  "scan": 16,
+  "note": "Right page, large central group; a neighboring field edge remains at upper left.",
+  "box_pixels": [
+    3318,
+    2442,
+    5575,
+    3744
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2257,
+    1302
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "65d8674ef7e83a9c395a3744e7986c3b3119b8f9c43838f198563ce0f3b68f69",
+  "sha256": "1e5127cf520816f1266543198d943d7787c45ede958b8f9f02882af16826d4e1",
+  "source_scan_sha256": "b332351e2497a7d8b6f9db3d26d05c88d2e2b728ba0b450ae591b74ee3d3ab95",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-016h.jpg",
+    "bytes": 216054,
+    "sha256": "a373e00accab6219092f755ecd01cc441f880782187973d9673da34393a3391d",
+    "width": 1600,
+    "height": 923,
+    "format": "jpg"
+  }
+}

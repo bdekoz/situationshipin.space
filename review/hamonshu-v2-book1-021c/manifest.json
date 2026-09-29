@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-021c",
+  "scan": 21,
+  "note": "Left page, five-arm composition; a neighboring diamond edge remains at top.",
+  "box_pixels": [
+    327,
+    2286,
+    2615,
+    4588
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2288,
+    2302
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "e46259179d3a13fc8d7f9791ab4358ff640bdf5ed2e16593f4e930ef89694ba8",
+  "sha256": "20ed264de6e165c6f9d0b02d64f0fc47e6d95c814a7b5341c63b618c03071f51",
+  "source_scan_sha256": "5f097cb69413588093e4654ec5fb6a694106b5fc63ab8979d4eaf5ce3fb5447d",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-021c.jpg",
+    "bytes": 225362,
+    "sha256": "a6fda952add8e1363be7e06ff3c3d8ac845c3ae7518b4458809fa62ee118148a",
+    "width": 1590,
+    "height": 1600,
+    "format": "jpg"
+  }
+}

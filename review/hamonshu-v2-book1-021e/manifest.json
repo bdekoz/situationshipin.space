@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-021e",
+  "scan": 21,
+  "note": "Right page, large vertical motif; neighboring fine stems remain at lower left.",
+  "box_pixels": [
+    4329,
+    1047,
+    5439,
+    3505
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1110,
+    2458
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "4a7f0433ff018ce8095783e2b016911510d18e83fe6dc0f8d818b01c3352f230",
+  "sha256": "60636d31699d57d10f2e7dc72e3e0e1ad8a26a08a426aee66051872ffe57b7be",
+  "source_scan_sha256": "5f097cb69413588093e4654ec5fb6a694106b5fc63ab8979d4eaf5ce3fb5447d",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-021e.jpg",
+    "bytes": 124669,
+    "sha256": "4c476d220475060cb23c36a5ad0da9942a339b1eb9a947e82b086eea334082d4",
+    "width": 723,
+    "height": 1600,
+    "format": "jpg"
+  }
+}

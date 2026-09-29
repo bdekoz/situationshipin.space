@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-029c",
+  "scan": 29,
+  "note": "Back cover, lower connected cluster.",
+  "box_pixels": [
+    1145,
+    2677,
+    3098,
+    4260
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1953,
+    1583
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "24bab59c049b86367b33eb595d20db6eb149eb6242d82ceffa6a2e5c79c1ddb6",
+  "sha256": "62cfdd31a83e5f7b9097c8cafb25ef40cff4e14900f5d5c0c26e9f6596fd0191",
+  "source_scan_sha256": "30e3d65dd909a750868f05477d28c622620b9cd0730cd0b87e8d5d809bdd3420",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-029c.jpg",
+    "bytes": 294128,
+    "sha256": "46f73c370e820133bc88f9219d0ae90a6bdaf5d6f39a700e009c5fb9ab0181d4",
+    "width": 1600,
+    "height": 1297,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-014d",
+  "scan": 14,
+  "note": "Right page, middle-left medallion; upper detailed medallion overlaps it.",
+  "box_pixels": [
+    3389,
+    1827,
+    4391,
+    2832
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1002,
+    1005
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "1f3a5316aec1187d753b518e70f76324c90d59722f17ac986246a3b9d78654ed",
+  "sha256": "ab6e0a401e99a94097362285b21140f06512bc4c9f9fa8d675acb8b679168192",
+  "source_scan_sha256": "123b073cfd2471e6826e765aea636525fc6d7863daadbb2ee278f21edc4560fc",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-014d.jpg",
+    "bytes": 137948,
+    "sha256": "be14f14dfeb6ea0ad453430a795e625f17fe5218b82cc7dbe7332d05f14aafbf",
+    "width": 1002,
+    "height": 1005,
+    "format": "jpg"
+  }
+}

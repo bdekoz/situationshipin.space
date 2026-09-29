@@ -1,0 +1,57 @@
+{
+  "id": "hamonshu_1-020c",
+  "scan": 20,
+  "note": "Left page, lower field; a polygon excludes the separate middle group.",
+  "box_pixels": [
+    345,
+    2607,
+    2874,
+    4583
+  ],
+  "polygon_normalized": [
+    [
+      56,
+      517
+    ],
+    [
+      167,
+      517
+    ],
+    [
+      210,
+      596
+    ],
+    [
+      270,
+      637
+    ],
+    [
+      466,
+      715
+    ],
+    [
+      466,
+      909
+    ],
+    [
+      56,
+      909
+    ]
+  ],
+  "size": [
+    2529,
+    1976
+  ],
+  "mode": "RGBA",
+  "pixel_sha256": "4e979a56285f3424c437ae542798bb3da2f1245e7a54e8251e5acb5fd5a940aa",
+  "sha256": "782aa7c229b0217bf698257785e3c0593959c33328facac168f505e55c8d8f3e",
+  "source_scan_sha256": "970aa566fde00b9ee1117da8549980ef50e7b6691e4c946750c601866c9444e0",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-020c.jpg",
+    "bytes": 281062,
+    "sha256": "588035a8d0fd073abf84c402da2801c9f13571aa38f01c90c4c0490635f2d9e6",
+    "width": 1600,
+    "height": 1250,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-014a",
+  "scan": 14,
+  "note": "Left page, large medallion; foreground medallion occludes the lower right.",
+  "box_pixels": [
+    517,
+    1309,
+    2657,
+    3481
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2140,
+    2172
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "d84f3eb65c5b600669e4b25f635edf1de1a617554e3e512ef65817ef360d967c",
+  "sha256": "d762eb8d92124b931eafc90b41b663285ea064cfd86616675e2a316952e1fe12",
+  "source_scan_sha256": "123b073cfd2471e6826e765aea636525fc6d7863daadbb2ee278f21edc4560fc",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-014a.jpg",
+    "bytes": 501128,
+    "sha256": "c2d9fdb911875afa7a2bb3c204e2f1cc1fd44a11a0358b5bf15fe191da814aa1",
+    "width": 1576,
+    "height": 1600,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-003a",
+  "scan": 3,
+  "note": "Left framed water composition; exclude calligraphy on the right and marginal writing.",
+  "box_pixels": [
+    349,
+    897,
+    2905,
+    4608
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2556,
+    3711
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "fc2b716a78bc284cd1d5b0997a93756e6383778603d3d2fdff5286f244db7deb",
+  "sha256": "3c4cc00909b542d66d8268337136581fb5d151df76bd80acee46941ebde3211e",
+  "source_scan_sha256": "55afd18d5af3e4d628ad58c544a939c743298df8e4cefb531cd33b73809ff157",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-003a.jpg",
+    "bytes": 544276,
+    "sha256": "b61661b019fbda7c485c552b965f4c3b751952eae1b0710f49162e57a7d0cada",
+    "width": 1102,
+    "height": 1600,
+    "format": "jpg"
+  }
+}

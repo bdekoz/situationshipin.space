@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-007a",
+  "scan": 7,
+  "note": "Left page, upper medallion; a small part of the neighboring medallion remains in this rectangular crop.",
+  "box_pixels": [
+    554,
+    1086,
+    2392,
+    2908
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1838,
+    1822
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "d7f5337fd641b2300a751972d6f969099d3ce516696e82a9bea3cc2c9b6983b4",
+  "sha256": "fc1009abee9f5050e47fdaad085a48e9f19aee09b3fee93f357a593de8d0e869",
+  "source_scan_sha256": "70c592d6341b40dd50a8bc1369664605ef34daa641aab0bdd16fc59903114cd7",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-007a.jpg",
+    "bytes": 574101,
+    "sha256": "a8aa5d1e91b8ea9e7d4818c689accb7bed81b6f6beadda95fbb406ca68138d06",
+    "width": 1600,
+    "height": 1586,
+    "format": "jpg"
+  }
+}

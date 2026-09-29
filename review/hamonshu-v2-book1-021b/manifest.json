@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-021b",
+  "scan": 21,
+  "note": "Left page, diamond motif; adjacent band edge remains at top.",
+  "box_pixels": [
+    1640,
+    1816,
+    2744,
+    2458
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1104,
+    642
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "3e8e31d13139c3df3378a2486774c67a5133f1931fd9a2890c7b3f387860c754",
+  "sha256": "eb5279c4358f165d44d23b25e4f9f0127fb08559114f9e1f8a5d3c049b2ee9ee",
+  "source_scan_sha256": "5f097cb69413588093e4654ec5fb6a694106b5fc63ab8979d4eaf5ce3fb5447d",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-021b.jpg",
+    "bytes": 88575,
+    "sha256": "cdb2d4db32400911db8bdd744bb33f8019932df289a47832ee1287e5ba9628ec",
+    "width": 1104,
+    "height": 642,
+    "format": "jpg"
+  }
+}

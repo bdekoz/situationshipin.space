@@ -39,6 +39,34 @@ node scripts/update-build-manifest.mjs
 node scripts/check-review-site.mjs
 ```
 
+## Hamonshū V2 Book 1 categories
+
+[Open the crop review](https://situationshipin.space/review/hamonshu-v2-book1/).
+The 165 graphic water forms have neutral scan/segment filenames and no assigned
+categories. Reviewers name their own groups, add notes, and download a single
+JSON file. Drafts stay in that browser; loading a review replaces its current
+draft. Return the file to Benjamin for applying the categories in Izzi.
+
+The packet includes 1600-pixel review JPEGs, 28 source-location overlays, and
+seven contact sheets. Scan 002 is excluded as writing/blank. Full-resolution
+PNG crops remain local in Izzi. The crop plan, source hashes, masks, and preview
+hashes travel with the packet; categories are tied to that exact crop plan.
+
+Rebuild from a verified Izzi crop packet (Python and Pillow required):
+
+```sh
+python3 scripts/publish-hamonshu-crops.py \
+  --izzi-root /home/bkoz/src/izzi --izzi-commit <40-hex-source-commit>
+node scripts/update-build-manifest.mjs
+node scripts/check-review-site.mjs
+```
+
+The publisher writes this checkout; commit and push to deploy. Supporting
+assets are included in the same 96 MiB site payload limit as catalog images.
+In Izzi, `scripts/apply-hamonshu-categories.py` validates returned JSON and
+previews folder moves; `--apply` performs the explicitly selected review.
+Different reviewers' files are reviewed separately before choosing categories.
+
 ## Publishing a new video proof
 
 Put a video up for review with one approval-gated command. The canonical

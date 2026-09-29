@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-028a",
+  "scan": 28,
+  "note": "Right page only; exclude the left colophon and marginal writing.",
+  "box_pixels": [
+    3096,
+    915,
+    5661,
+    4658
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2565,
+    3743
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "f937094a350fc56108e16a3810f4857ab141b009e85802eab4890e9bd6276041",
+  "sha256": "7f319a069732c61c24d95ddf4cae0c2ab60e6ada9b305928a2fe9bd305a46ca1",
+  "source_scan_sha256": "daaa033053567ca8709f9b3ea357e22084cc3ea0ac2056bbbf625de37410a7a4",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-028a.jpg",
+    "bytes": 511559,
+    "sha256": "8f6c8c26278f1694a1c3dcd2b35961dbe5ee63025f95d93d4804bb3903ae61ac",
+    "width": 1096,
+    "height": 1600,
+    "format": "jpg"
+  }
+}

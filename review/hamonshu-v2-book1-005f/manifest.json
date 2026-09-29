@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-005f",
+  "scan": 5,
+  "note": "Right page, upper pair; a small neighboring crest remains at lower left.",
+  "box_pixels": [
+    4111,
+    1256,
+    5658,
+    2207
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1547,
+    951
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "c52e5a03b11f6f53f8c8e4f42a4932462ce5edd1a48a264f17fb9c01e3b91dcd",
+  "sha256": "2d18acfb6df5b36c3b7dfd636a73341187fa68f7125e2497d0a6cf03a2c808e5",
+  "source_scan_sha256": "4739c9b803c4fa8816b35445094043482adc643694c36d8decf5a205c01e505c",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-005f.jpg",
+    "bytes": 257264,
+    "sha256": "85a88604cc64b5670098b5d8c517ec1c7f35224c977737d6db771bac27db7d14",
+    "width": 1547,
+    "height": 951,
+    "format": "jpg"
+  }
+}

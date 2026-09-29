@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-023c",
+  "scan": 23,
+  "note": "Right page, upper interlaced composition.",
+  "box_pixels": [
+    3106,
+    905,
+    5621,
+    1983
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2515,
+    1078
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "be0ae5e3f8e77b87518842e3c7c6bc43e690d815da593b438dda333bed9a09d5",
+  "sha256": "883cfdaff226152af7823a6ef47afc3c1bc8841d84a2aab22287d44dfb211a3a",
+  "source_scan_sha256": "c432afdcd9901dedc53552f11af66968d69d67284b57a6c441d425c8f4537cf6",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-023c.jpg",
+    "bytes": 165424,
+    "sha256": "b66d03feabf0603daf43b6d94114e1f6cab58046c8a0a1505a9d6ed1ffaebf00",
+    "width": 1600,
+    "height": 686,
+    "format": "jpg"
+  }
+}

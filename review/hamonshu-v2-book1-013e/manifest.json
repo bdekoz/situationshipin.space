@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-013e",
+  "scan": 13,
+  "note": "Right page, upper medallion.",
+  "box_pixels": [
+    3996,
+    1142,
+    5470,
+    2492
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1474,
+    1350
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "ad234d4cffee6131899f02cbc98c4e376834fa044212366d8b73bc63f7374581",
+  "sha256": "0d34851d6ebbf87a89e4fcdc87e2fd1cfd5c321b21dcba12ff09f03eff3ca01f",
+  "source_scan_sha256": "d5b64ca8ace2f5b082da2c72e409a3e11be624554985a86077f99f4e58d6f8f0",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-013e.jpg",
+    "bytes": 184054,
+    "sha256": "d3e276965e348c3a2e8527d34b18188b5f3ccbcfe7307b2d04d94c7738fb7d3c",
+    "width": 1474,
+    "height": 1350,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-015f",
+  "scan": 15,
+  "note": "Left page, bottom connected field; neighboring nested arcs remain at upper left.",
+  "box_pixels": [
+    1375,
+    3510,
+    2886,
+    4598
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1511,
+    1088
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "62a5fd5afed4f294d35d8327d29fc12a0bddfbb2f38dcabe3888d8e8dcc14a52",
+  "sha256": "f618887b0174ac62316d3a666ebf08794d3b56b928e8ddccb48f16228004f209",
+  "source_scan_sha256": "9c942f000df17484689068a0e22a86fe9cd6558dfd33943dec207d69c201db52",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-015f.jpg",
+    "bytes": 180654,
+    "sha256": "617a0e1df152cd13d719aa1270d5aaedf08b059452ddd698b1867050ac556d7d",
+    "width": 1511,
+    "height": 1088,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-008d",
+  "scan": 8,
+  "note": "Right page, upper flower-shaped emblem; a neighboring edge remains at lower left.",
+  "box_pixels": [
+    4046,
+    1039,
+    5186,
+    2108
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1140,
+    1069
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "b0279d09a1c8ea5c50d77b24b827f37b9dab09bb00cb41172a0dba87a2dc22a6",
+  "sha256": "d94ef78e7be70d4ab2b33c9dc24e2340822d3e14cbb8dfeb74d8afb07272f0ec",
+  "source_scan_sha256": "4a5bc4648f8463bb738e264c4cdbada7b4c6a2c1fa22d2e2954596e64b5b68cd",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-008d.jpg",
+    "bytes": 140509,
+    "sha256": "2459a77572193e8de2bcd953922b68df73e95334a42980cde7af369e5edf1565",
+    "width": 1140,
+    "height": 1069,
+    "format": "jpg"
+  }
+}

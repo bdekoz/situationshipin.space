@@ -1,0 +1,45 @@
+{
+  "id": "hamonshu_1-009c",
+  "scan": 9,
+  "note": "Upper diagonal panel; transparent outside its original diagonal boundary.",
+  "box_pixels": [
+    3173,
+    928,
+    5701,
+    3413
+  ],
+  "polygon_normalized": [
+    [
+      516,
+      184
+    ],
+    [
+      927,
+      184
+    ],
+    [
+      927,
+      677
+    ],
+    [
+      516,
+      260
+    ]
+  ],
+  "size": [
+    2528,
+    2485
+  ],
+  "mode": "RGBA",
+  "pixel_sha256": "c8356102a7fc2d8d49f009e37017d1266f40ff9c0b82a3603af91b051cb0051d",
+  "sha256": "b2a557504420c053480398619cad9fa2964772ee44398ef5c2a401126f468798",
+  "source_scan_sha256": "a54ef86b72f88c09a22956b8c5d2485ecf5df4daaf82747b3c9bd3e966211bea",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-009c.jpg",
+    "bytes": 370984,
+    "sha256": "fa2e0b796a4a51703f3de5cf00f754768d50898de0b36f2572ad995f774e9488",
+    "width": 1600,
+    "height": 1573,
+    "format": "jpg"
+  }
+}

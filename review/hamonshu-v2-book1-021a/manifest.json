@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-021a",
+  "scan": 21,
+  "note": "Left page, upper connected band; a little of the diamond below remains in the crop.",
+  "box_pixels": [
+    419,
+    1052,
+    2794,
+    1963
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2375,
+    911
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "28187f534914601fcf5f1bae8952f2394cabe78513fb55d0500fab09a4be0fa0",
+  "sha256": "aec340ce41a42774ed4af7770c11cae655c55557d9efbcdb277b2966bc40cd9f",
+  "source_scan_sha256": "5f097cb69413588093e4654ec5fb6a694106b5fc63ab8979d4eaf5ce3fb5447d",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-021a.jpg",
+    "bytes": 142248,
+    "sha256": "12da24747d2b728e97fa196f47381c9144b1a85af19f378531333e47f0946106",
+    "width": 1600,
+    "height": 614,
+    "format": "jpg"
+  }
+}

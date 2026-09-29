@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-015e",
+  "scan": 15,
+  "note": "Left page, lower horizontal band; neighboring band edge remains.",
+  "box_pixels": [
+    364,
+    3465,
+    1782,
+    3844
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1418,
+    379
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "d65303ed629a79e79ede4ee3efb4170c4796d949dff7215d8292fb53a6b23173",
+  "sha256": "9c9394596a6a178cce6aae0be0aa977e3dd78aef6158ffa1d66adcda45d18b71",
+  "source_scan_sha256": "9c942f000df17484689068a0e22a86fe9cd6558dfd33943dec207d69c201db52",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-015e.jpg",
+    "bytes": 122554,
+    "sha256": "32fda94dd2cd879e23fa57b0dfea4744f18c515dc13b314ce288ae125b4e5c00",
+    "width": 1418,
+    "height": 379,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-012a",
+  "scan": 12,
+  "note": "Left page, upper motif.",
+  "box_pixels": [
+    1168,
+    1350,
+    2890,
+    1902
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1722,
+    552
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "086cc68e8e7a2ee32dd638f44aedbae64ed70cdd7861d7e5bfb8b5878921aef3",
+  "sha256": "60f19909128b98fff90fdbc387b62538e03314b39f0f9b990f554576b0d9923e",
+  "source_scan_sha256": "b3449d766d4042b1e17fca558c6611aabe8025f3b643f3f1cb5d5279ab2f6442",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-012a.jpg",
+    "bytes": 75524,
+    "sha256": "063b4dbc5f84c346f88227cd612073094c0f74214d0a3b8d4bbc864a34ffe042",
+    "width": 1600,
+    "height": 513,
+    "format": "jpg"
+  }
+}

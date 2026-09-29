@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-018b",
+  "scan": 18,
+  "note": "Left page, small repeated groups; edge of adjacent diagonal field remains at lower right.",
+  "box_pixels": [
+    695,
+    2080,
+    2005,
+    2889
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1310,
+    809
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "6b228223cfd8ae2e3eb14e38ab98958aa109a13b642b9af9ec00502dcbed145e",
+  "sha256": "3ceaecd38b4b43c838ed95f8f31752a002de536a42a2e79d920d93c84ec5e16f",
+  "source_scan_sha256": "ccae38362c7e23d0590535f27222e2e288861ca600d84965a812e24d216df9fc",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-018b.jpg",
+    "bytes": 102468,
+    "sha256": "865f0ea38c35f31c99caf564c09ca1ae287fac77c7ad40b8246313c16f0a9679",
+    "width": 1310,
+    "height": 809,
+    "format": "jpg"
+  }
+}

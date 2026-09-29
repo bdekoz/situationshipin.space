@@ -1,0 +1,1664 @@
+{
+  "schema": "izzi.hamonshu-crop-plan/1",
+  "volume": 1,
+  "source_directory": "resources.rizal/hamonshu/hamonshu_1.pages",
+  "default_output": "resources.rizal/hamonshu/hamonshu_1.crops",
+  "coordinate_system": "Normalized integers 0–1000 relative to full source image; boxes are left, top, right, bottom. Pixel boundaries are rounded. Optional polygons select original pixels inside that box; other pixels become transparent.",
+  "reviewed": "2026-09-29",
+  "status": "Prepared for human review; category names are not assigned.",
+  "segmentation": "One distinct bounded design or coherent repeated group per crop. Connected compositions spanning the gutter are kept together. Touching or occluded designs can leave neighboring fragments in rectangular crops; these are explicitly noted. Original linework, color and full resolution are preserved.",
+  "scans": [
+    {
+      "scan": 1,
+      "boxes": [
+        [
+          236,
+          88,
+          875,
+          595
+        ],
+        [
+          62,
+          655,
+          604,
+          965
+        ]
+      ],
+      "polygons": {
+        "0": [
+          [
+            236,
+            178
+          ],
+          [
+            710,
+            178
+          ],
+          [
+            710,
+            88
+          ],
+          [
+            875,
+            88
+          ],
+          [
+            875,
+            595
+          ],
+          [
+            236,
+            595
+          ]
+        ],
+        "1": [
+          [
+            237,
+            655
+          ],
+          [
+            604,
+            655
+          ],
+          [
+            604,
+            965
+          ],
+          [
+            62,
+            965
+          ],
+          [
+            62,
+            697
+          ],
+          [
+            237,
+            697
+          ]
+        ]
+      },
+      "notes": [
+        "Upper front-cover ornament. Transparent cutout excludes the pasted title; the source already hides part of the ornament.",
+        "Lower front-cover ornament. Transparent cutout excludes the vertical title label; the source already hides part of the ornament."
+      ],
+      "source_sha256": "4345c2e9fc9e3f9ff1975d81f66e971bf3f9a3b6e211ae689e765ac85ac6f15d",
+      "size": [
+        3479,
+        5058
+      ]
+    },
+    {
+      "scan": 2,
+      "exclude": "Calligraphy on the left and blank right page; no water drawing.",
+      "source_sha256": "ecc5fd830b149d5419b8a6032ec62eb19ee89dffd350b15ac25c723df26d2243",
+      "size": [
+        6113,
+        5058
+      ]
+    },
+    {
+      "scan": 3,
+      "boxes": [
+        [
+          57,
+          178,
+          474,
+          914
+        ]
+      ],
+      "notes": [
+        "Left framed water composition; exclude calligraphy on the right and marginal writing."
+      ],
+      "source_sha256": "55afd18d5af3e4d628ad58c544a939c743298df8e4cefb531cd33b73809ff157",
+      "size": [
+        6129,
+        5042
+      ]
+    },
+    {
+      "scan": 4,
+      "boxes": [
+        [
+          59,
+          184,
+          471,
+          518
+        ],
+        [
+          54,
+          519,
+          467,
+          913
+        ],
+        [
+          525,
+          188,
+          942,
+          512
+        ],
+        [
+          525,
+          513,
+          942,
+          918
+        ]
+      ],
+      "notes": [
+        "Upper left panel.",
+        "Lower left panel.",
+        "Upper right panel.",
+        "Lower right panel."
+      ],
+      "source_sha256": "46e382258cd1fc8ad829593ede51e095dd90397a998f1cef5aa44c1728c744a4",
+      "size": [
+        6113,
+        5025
+      ]
+    },
+    {
+      "scan": 5,
+      "boxes": [
+        [
+          216,
+          258,
+          418,
+          375
+        ],
+        [
+          74,
+          381,
+          271,
+          545
+        ],
+        [
+          330,
+          445,
+          453,
+          507
+        ],
+        [
+          238,
+          526,
+          444,
+          640
+        ],
+        [
+          64,
+          659,
+          397,
+          875
+        ],
+        [
+          672,
+          248,
+          925,
+          436
+        ],
+        [
+          532,
+          392,
+          759,
+          554
+        ],
+        [
+          744,
+          520,
+          902,
+          665
+        ],
+        [
+          549,
+          587,
+          752,
+          744
+        ],
+        [
+          648,
+          727,
+          940,
+          915
+        ]
+      ],
+      "notes": [
+        "Left page, top.",
+        "Left page, middle left, two related groups.",
+        "Left page, middle right, paired small motifs.",
+        "Left page, lower middle; a small neighboring stroke remains at upper left.",
+        "Left page, bottom.",
+        "Right page, upper pair; a small neighboring crest remains at lower left.",
+        "Right page, middle left.",
+        "Right page, five small related motifs; a neighboring stroke remains at lower left.",
+        "Right page, lower left.",
+        "Right page, bottom right."
+      ],
+      "source_sha256": "4739c9b803c4fa8816b35445094043482adc643694c36d8decf5a205c01e505c",
+      "size": [
+        6117,
+        5063
+      ]
+    },
+    {
+      "scan": 6,
+      "boxes": [
+        [
+          58,
+          185,
+          472,
+          528
+        ],
+        [
+          55,
+          529,
+          466,
+          914
+        ],
+        [
+          518,
+          195,
+          932,
+          524
+        ],
+        [
+          520,
+          526,
+          933,
+          916
+        ]
+      ],
+      "notes": [
+        "Upper left panel.",
+        "Lower left panel.",
+        "Upper right panel.",
+        "Lower right panel."
+      ],
+      "source_sha256": "198c53a90ff3855174cf81f4c1213e8ba0a389f4d9ed9145790a00ea35f14894",
+      "size": [
+        6129,
+        5042
+      ]
+    },
+    {
+      "scan": 7,
+      "boxes": [
+        [
+          90,
+          214,
+          389,
+          573
+        ],
+        [
+          239,
+          496,
+          456,
+          754
+        ],
+        [
+          104,
+          672,
+          268,
+          862
+        ],
+        [
+          529,
+          231,
+          943,
+          351
+        ],
+        [
+          599,
+          412,
+          744,
+          581
+        ],
+        [
+          552,
+          637,
+          769,
+          889
+        ],
+        [
+          745,
+          383,
+          908,
+          909
+        ]
+      ],
+      "notes": [
+        "Left page, upper medallion; a small part of the neighboring medallion remains in this rectangular crop.",
+        "Left page, middle medallion; adjoining upper medallion remains at top left.",
+        "Left page, lower medallion; a neighboring arc remains at upper right.",
+        "Right page, top border.",
+        "Right page, upper circular emblem.",
+        "Right page, lower circular emblem; a neighboring curl remains at upper right.",
+        "Right page, vertical connected ornament; neighboring circular edges remain on the left."
+      ],
+      "source_sha256": "70c592d6341b40dd50a8bc1369664605ef34daa641aab0bdd16fc59903114cd7",
+      "size": [
+        6150,
+        5075
+      ]
+    },
+    {
+      "scan": 8,
+      "boxes": [
+        [
+          94,
+          207,
+          267,
+          411
+        ],
+        [
+          180,
+          247,
+          738,
+          830
+        ],
+        [
+          94,
+          665,
+          260,
+          858
+        ],
+        [
+          656,
+          206,
+          841,
+          418
+        ],
+        [
+          787,
+          447,
+          899,
+          588
+        ],
+        [
+          685,
+          624,
+          895,
+          863
+        ]
+      ],
+      "notes": [
+        "Left page, upper circular emblem; a neighboring curl remains at lower right.",
+        "Connected central composition spanning the gutter; adjacent circular emblems partly visible in rectangular corners.",
+        "Left page, lower circular emblem.",
+        "Right page, upper flower-shaped emblem; a neighboring edge remains at lower left.",
+        "Right page, middle circular emblem.",
+        "Right page, lower ring of five motifs."
+      ],
+      "source_sha256": "4a5bc4648f8463bb738e264c4cdbada7b4c6a2c1fa22d2e2954596e64b5b68cd",
+      "size": [
+        6167,
+        5042
+      ]
+    },
+    {
+      "scan": 9,
+      "boxes": [
+        [
+          58,
+          245,
+          470,
+          517
+        ],
+        [
+          57,
+          521,
+          468,
+          911
+        ],
+        [
+          516,
+          184,
+          927,
+          677
+        ],
+        [
+          517,
+          260,
+          927,
+          915
+        ]
+      ],
+      "polygons": {
+        "2": [
+          [
+            516,
+            184
+          ],
+          [
+            927,
+            184
+          ],
+          [
+            927,
+            677
+          ],
+          [
+            516,
+            260
+          ]
+        ],
+        "3": [
+          [
+            517,
+            260
+          ],
+          [
+            927,
+            677
+          ],
+          [
+            927,
+            915
+          ],
+          [
+            517,
+            915
+          ]
+        ]
+      },
+      "notes": [
+        "Upper left panel.",
+        "Lower left panel.",
+        "Upper diagonal panel; transparent outside its original diagonal boundary.",
+        "Lower diagonal panel; transparent outside its original diagonal boundary."
+      ],
+      "source_sha256": "a54ef86b72f88c09a22956b8c5d2485ecf5df4daaf82747b3c9bd3e966211bea",
+      "size": [
+        6150,
+        5042
+      ]
+    },
+    {
+      "scan": 10,
+      "boxes": [
+        [
+          59,
+          186,
+          470,
+          450
+        ],
+        [
+          57,
+          451,
+          468,
+          912
+        ],
+        [
+          514,
+          190,
+          925,
+          393
+        ],
+        [
+          514,
+          394,
+          925,
+          915
+        ]
+      ],
+      "notes": [
+        "Upper left panel.",
+        "Lower left panel.",
+        "Upper right panel.",
+        "Lower right panel."
+      ],
+      "source_sha256": "bfce2dcc5edbdee9ad10d4c6dec42f3fc5c57c69640bba83318cc38bfb094c46",
+      "size": [
+        6150,
+        5042
+      ]
+    },
+    {
+      "scan": 11,
+      "boxes": [
+        [
+          60,
+          184,
+          467,
+          604
+        ],
+        [
+          72,
+          605,
+          466,
+          883
+        ],
+        [
+          519,
+          242,
+          927,
+          884
+        ]
+      ],
+      "notes": [
+        "Left page, upper connected composition.",
+        "Left page, lower connected composition.",
+        "Right page, complete continuous field."
+      ],
+      "source_sha256": "d049f4fa164167a86f2648fa447459864208127ed4e2e1a73243077f4ea8b085",
+      "size": [
+        6167,
+        5058
+      ]
+    },
+    {
+      "scan": 12,
+      "boxes": [
+        [
+          190,
+          267,
+          470,
+          376
+        ],
+        [
+          74,
+          401,
+          468,
+          596
+        ],
+        [
+          64,
+          601,
+          467,
+          872
+        ],
+        [
+          515,
+          193,
+          926,
+          469
+        ],
+        [
+          515,
+          495,
+          927,
+          616
+        ],
+        [
+          515,
+          645,
+          841,
+          884
+        ]
+      ],
+      "notes": [
+        "Left page, upper motif.",
+        "Left page, middle motif.",
+        "Left page, lower motif, including detached droplets.",
+        "Right page, upper composition.",
+        "Right page, middle band.",
+        "Right page, lower motif, including detached droplets."
+      ],
+      "source_sha256": "b3449d766d4042b1e17fca558c6611aabe8025f3b643f3f1cb5d5279ab2f6442",
+      "size": [
+        6150,
+        5058
+      ]
+    },
+    {
+      "scan": 13,
+      "boxes": [
+        [
+          102,
+          193,
+          359,
+          504
+        ],
+        [
+          106,
+          548,
+          277,
+          742
+        ],
+        [
+          290,
+          711,
+          399,
+          840
+        ],
+        [
+          346,
+          354,
+          692,
+          735
+        ],
+        [
+          648,
+          225,
+          887,
+          491
+        ],
+        [
+          657,
+          600,
+          892,
+          881
+        ]
+      ],
+      "notes": [
+        "Left page, upper ring.",
+        "Left page, lower larger medallion.",
+        "Left page, bottom small medallion.",
+        "Connected central medallion across gutter; neighboring emblems appear in rectangular corners.",
+        "Right page, upper medallion.",
+        "Right page, lower medallion."
+      ],
+      "source_sha256": "d5b64ca8ace2f5b082da2c72e409a3e11be624554985a86077f99f4e58d6f8f0",
+      "size": [
+        6167,
+        5075
+      ]
+    },
+    {
+      "scan": 14,
+      "boxes": [
+        [
+          84,
+          258,
+          432,
+          686
+        ],
+        [
+          234,
+          604,
+          432,
+          849
+        ],
+        [
+          657,
+          218,
+          885,
+          503
+        ],
+        [
+          551,
+          360,
+          714,
+          558
+        ],
+        [
+          775,
+          516,
+          877,
+          641
+        ],
+        [
+          529,
+          576,
+          777,
+          815
+        ],
+        [
+          771,
+          755,
+          853,
+          848
+        ]
+      ],
+      "notes": [
+        "Left page, large medallion; foreground medallion occludes the lower right.",
+        "Left page, lower medallion; adjoining large medallion visible in corners.",
+        "Right page, upper detailed medallion; adjoining small medallion visible at lower left.",
+        "Right page, middle-left medallion; upper detailed medallion overlaps it.",
+        "Right page, small middle-right medallion.",
+        "Right page, lower large medallion.",
+        "Right page, lowest small medallion."
+      ],
+      "source_sha256": "123b073cfd2471e6826e765aea636525fc6d7863daadbb2ee278f21edc4560fc",
+      "size": [
+        6150,
+        5075
+      ]
+    },
+    {
+      "scan": 15,
+      "boxes": [
+        [
+          130,
+          219,
+          416,
+          480
+        ],
+        [
+          342,
+          435,
+          440,
+          574
+        ],
+        [
+          60,
+          520,
+          342,
+          611
+        ],
+        [
+          59,
+          605,
+          272,
+          699
+        ],
+        [
+          59,
+          685,
+          289,
+          760
+        ],
+        [
+          223,
+          694,
+          468,
+          909
+        ],
+        [
+          664,
+          235,
+          908,
+          354
+        ],
+        [
+          547,
+          367,
+          802,
+          462
+        ],
+        [
+          527,
+          530,
+          678,
+          749
+        ],
+        [
+          735,
+          516,
+          872,
+          613
+        ],
+        [
+          633,
+          683,
+          911,
+          880
+        ]
+      ],
+      "notes": [
+        "Left page, top field; tips of the upright motif remain at lower right.",
+        "Left page, paired upright motifs.",
+        "Left page, upper horizontal band.",
+        "Left page, middle horizontal band; neighboring band edges remain.",
+        "Left page, lower horizontal band; neighboring band edge remains.",
+        "Left page, bottom connected field; neighboring nested arcs remain at upper left.",
+        "Right page, top cluster.",
+        "Right page, upper-middle cluster.",
+        "Right page, vertical cluster.",
+        "Right page, small middle-right cluster.",
+        "Right page, bottom cluster; a neighboring arc remains at upper left."
+      ],
+      "source_sha256": "9c942f000df17484689068a0e22a86fe9cd6558dfd33943dec207d69c201db52",
+      "size": [
+        6167,
+        5058
+      ]
+    },
+    {
+      "scan": 16,
+      "boxes": [
+        [
+          199,
+          224,
+          435,
+          448
+        ],
+        [
+          91,
+          386,
+          292,
+          561
+        ],
+        [
+          256,
+          522,
+          453,
+          680
+        ],
+        [
+          109,
+          631,
+          246,
+          723
+        ],
+        [
+          166,
+          760,
+          445,
+          907
+        ],
+        [
+          632,
+          245,
+          883,
+          406
+        ],
+        [
+          521,
+          398,
+          760,
+          517
+        ],
+        [
+          538,
+          486,
+          904,
+          745
+        ],
+        [
+          531,
+          754,
+          809,
+          862
+        ]
+      ],
+      "notes": [
+        "Left page, top crossing group; a neighboring motif remains at lower left.",
+        "Left page, middle-left arrangement; a neighboring tip remains at upper right.",
+        "Left page, middle-right arrangement.",
+        "Left page, small lower-left group.",
+        "Left page, five bottom motifs.",
+        "Right page, top group.",
+        "Right page, middle-left group; a neighboring tip remains at lower right.",
+        "Right page, large central group; a neighboring field edge remains at upper left.",
+        "Right page, bottom motif."
+      ],
+      "source_sha256": "b332351e2497a7d8b6f9db3d26d05c88d2e2b728ba0b450ae591b74ee3d3ab95",
+      "size": [
+        6167,
+        5025
+      ]
+    },
+    {
+      "scan": 17,
+      "boxes": [
+        [
+          55,
+          178,
+          398,
+          373
+        ],
+        [
+          57,
+          408,
+          462,
+          535
+        ],
+        [
+          58,
+          605,
+          445,
+          694
+        ],
+        [
+          52,
+          748,
+          423,
+          840
+        ],
+        [
+          541,
+          239,
+          828,
+          332
+        ],
+        [
+          637,
+          375,
+          924,
+          435
+        ],
+        [
+          553,
+          458,
+          711,
+          600
+        ],
+        [
+          650,
+          536,
+          887,
+          693
+        ],
+        [
+          583,
+          733,
+          849,
+          891
+        ]
+      ],
+      "notes": [
+        "Left page, first field.",
+        "Left page, second field.",
+        "Left page, third field.",
+        "Left page, fourth field.",
+        "Right page, first field.",
+        "Right page, second field.",
+        "Right page, middle-left field.",
+        "Right page, middle-right field.",
+        "Right page, bottom field."
+      ],
+      "source_sha256": "753d754647a3a2f5f24e3443f2abc2b9bf5a2ecd0e7d8824fe318587a8981d14",
+      "size": [
+        6150,
+        5042
+      ]
+    },
+    {
+      "scan": 18,
+      "boxes": [
+        [
+          61,
+          266,
+          461,
+          368
+        ],
+        [
+          113,
+          414,
+          326,
+          575
+        ],
+        [
+          160,
+          499,
+          449,
+          686
+        ],
+        [
+          112,
+          735,
+          424,
+          856
+        ],
+        [
+          513,
+          182,
+          920,
+          344
+        ],
+        [
+          511,
+          368,
+          921,
+          477
+        ],
+        [
+          511,
+          523,
+          867,
+          652
+        ],
+        [
+          513,
+          705,
+          920,
+          836
+        ]
+      ],
+      "notes": [
+        "Left page, upper field.",
+        "Left page, small repeated groups; edge of adjacent diagonal field remains at lower right.",
+        "Left page, diagonal field; neighboring small groups remain at upper left.",
+        "Left page, bottom group.",
+        "Right page, first field.",
+        "Right page, second field.",
+        "Right page, third field.",
+        "Right page, fourth field."
+      ],
+      "source_sha256": "ccae38362c7e23d0590535f27222e2e288861ca600d84965a812e24d216df9fc",
+      "size": [
+        6150,
+        5025
+      ]
+    },
+    {
+      "scan": 19,
+      "boxes": [
+        [
+          59,
+          232,
+          466,
+          433
+        ],
+        [
+          70,
+          493,
+          466,
+          680
+        ],
+        [
+          56,
+          716,
+          465,
+          850
+        ],
+        [
+          513,
+          249,
+          920,
+          451
+        ],
+        [
+          524,
+          519,
+          889,
+          652
+        ],
+        [
+          512,
+          685,
+          905,
+          869
+        ]
+      ],
+      "notes": [
+        "Left page, upper composition.",
+        "Left page, middle composition.",
+        "Left page, lower composition.",
+        "Right page, upper composition.",
+        "Right page, middle composition.",
+        "Right page, lower composition."
+      ],
+      "source_sha256": "c1f4accb3c93457c6a7969622ab11bf3c1cd8a9d92cd243136d6488afef298d4",
+      "size": [
+        6150,
+        5042
+      ]
+    },
+    {
+      "scan": 20,
+      "boxes": [
+        [
+          115,
+          185,
+          465,
+          451
+        ],
+        [
+          205,
+          476,
+          465,
+          606
+        ],
+        [
+          56,
+          517,
+          466,
+          909
+        ],
+        [
+          510,
+          213,
+          853,
+          380
+        ],
+        [
+          565,
+          408,
+          913,
+          591
+        ],
+        [
+          510,
+          610,
+          888,
+          874
+        ]
+      ],
+      "polygons": {
+        "2": [
+          [
+            56,
+            517
+          ],
+          [
+            167,
+            517
+          ],
+          [
+            210,
+            596
+          ],
+          [
+            270,
+            637
+          ],
+          [
+            466,
+            715
+          ],
+          [
+            466,
+            909
+          ],
+          [
+            56,
+            909
+          ]
+        ]
+      },
+      "notes": [
+        "Left page, upper group.",
+        "Left page, middle group.",
+        "Left page, lower field; a polygon excludes the separate middle group.",
+        "Right page, upper group.",
+        "Right page, middle group.",
+        "Right page, lower group."
+      ],
+      "source_sha256": "970aa566fde00b9ee1117da8549980ef50e7b6691e4c946750c601866c9444e0",
+      "size": [
+        6167,
+        5042
+      ]
+    },
+    {
+      "scan": 21,
+      "boxes": [
+        [
+          68,
+          208,
+          453,
+          388
+        ],
+        [
+          266,
+          359,
+          445,
+          486
+        ],
+        [
+          53,
+          452,
+          424,
+          907
+        ],
+        [
+          535,
+          289,
+          688,
+          646
+        ],
+        [
+          702,
+          207,
+          882,
+          693
+        ],
+        [
+          657,
+          562,
+          736,
+          767
+        ],
+        [
+          549,
+          756,
+          675,
+          846
+        ],
+        [
+          741,
+          779,
+          875,
+          845
+        ]
+      ],
+      "notes": [
+        "Left page, upper connected band; a little of the diamond below remains in the crop.",
+        "Left page, diamond motif; adjacent band edge remains at top.",
+        "Left page, five-arm composition; a neighboring diamond edge remains at top.",
+        "Right page, left vertical group; a neighboring fine stem remains at lower right.",
+        "Right page, large vertical motif; neighboring fine stems remain at lower left.",
+        "Right page, fine middle group.",
+        "Right page, bottom-left border.",
+        "Right page, bottom-right border."
+      ],
+      "source_sha256": "5f097cb69413588093e4654ec5fb6a694106b5fc63ab8979d4eaf5ce3fb5447d",
+      "size": [
+        6167,
+        5058
+      ]
+    },
+    {
+      "scan": 22,
+      "boxes": [
+        [
+          57,
+          174,
+          467,
+          432
+        ],
+        [
+          247,
+          512,
+          451,
+          570
+        ],
+        [
+          54,
+          566,
+          265,
+          702
+        ],
+        [
+          197,
+          702,
+          464,
+          846
+        ],
+        [
+          513,
+          183,
+          923,
+          454
+        ],
+        [
+          513,
+          483,
+          923,
+          908
+        ]
+      ],
+      "notes": [
+        "Left page, upper panel.",
+        "Left page, small upper row.",
+        "Left page, middle-left group.",
+        "Left page, lower group.",
+        "Right page, upper panel.",
+        "Right page, lower panel."
+      ],
+      "source_sha256": "92f4665145e13c27fcaa47259381aa1ec94ba193971e054bfcc82effe095bebd",
+      "size": [
+        6150,
+        5042
+      ]
+    },
+    {
+      "scan": 23,
+      "boxes": [
+        [
+          51,
+          214,
+          461,
+          600
+        ],
+        [
+          51,
+          631,
+          461,
+          901
+        ],
+        [
+          505,
+          179,
+          914,
+          392
+        ],
+        [
+          505,
+          405,
+          910,
+          600
+        ],
+        [
+          518,
+          601,
+          721,
+          761
+        ],
+        [
+          573,
+          674,
+          899,
+          902
+        ]
+      ],
+      "notes": [
+        "Left page, upper panel.",
+        "Left page, lower panel.",
+        "Right page, upper interlaced composition.",
+        "Right page, middle composition.",
+        "Right page, lower-left motif; neighboring lower motif partly visible in crop corner.",
+        "Right page, bottom-right motif; neighboring motif partly visible in crop corner."
+      ],
+      "source_sha256": "c432afdcd9901dedc53552f11af66968d69d67284b57a6c441d425c8f4537cf6",
+      "size": [
+        6150,
+        5058
+      ]
+    },
+    {
+      "scan": 24,
+      "boxes": [
+        [
+          61,
+          215,
+          453,
+          338
+        ],
+        [
+          82,
+          400,
+          245,
+          434
+        ],
+        [
+          168,
+          372,
+          446,
+          583
+        ],
+        [
+          70,
+          631,
+          463,
+          834
+        ],
+        [
+          533,
+          266,
+          900,
+          361
+        ],
+        [
+          540,
+          377,
+          897,
+          486
+        ],
+        [
+          510,
+          528,
+          908,
+          734
+        ],
+        [
+          522,
+          760,
+          893,
+          868
+        ]
+      ],
+      "notes": [
+        "Left page, top group.",
+        "Left page, small middle-left motif.",
+        "Left page, central motif; a neighboring small band remains at upper left.",
+        "Left page, bottom motif.",
+        "Right page, top group.",
+        "Right page, middle bands.",
+        "Right page, lower composition.",
+        "Right page, bottom band."
+      ],
+      "source_sha256": "5986b08e1914e13bdaa97c4f4dfd11ea89fdafdf2361395d449a12273283b5fa",
+      "size": [
+        6150,
+        5058
+      ]
+    },
+    {
+      "scan": 25,
+      "boxes": [
+        [
+          123,
+          234,
+          427,
+          474
+        ],
+        [
+          138,
+          480,
+          230,
+          653
+        ],
+        [
+          51,
+          683,
+          258,
+          891
+        ],
+        [
+          279,
+          537,
+          449,
+          802
+        ],
+        [
+          511,
+          244,
+          918,
+          299
+        ],
+        [
+          509,
+          349,
+          919,
+          473
+        ],
+        [
+          670,
+          523,
+          919,
+          697
+        ],
+        [
+          510,
+          664,
+          769,
+          777
+        ],
+        [
+          667,
+          752,
+          901,
+          875
+        ]
+      ],
+      "notes": [
+        "Left page, upper connected composition.",
+        "Left page, paired small motifs.",
+        "Left page, lower-left motif.",
+        "Left page, lower-right motif.",
+        "Right page, top band.",
+        "Right page, second band.",
+        "Right page, middle-right composition; a neighboring stroke remains at lower left.",
+        "Right page, lower-left motif; a neighboring stroke remains at lower right.",
+        "Right page, lower-right group; nearby arch edge remains at top left."
+      ],
+      "source_sha256": "849f1a467e68782c59a4d41e61573fb5f425ee445a53c8c0be3c56eec0add27d",
+      "size": [
+        6150,
+        5058
+      ]
+    },
+    {
+      "scan": 26,
+      "boxes": [
+        [
+          141,
+          207,
+          438,
+          559
+        ],
+        [
+          48,
+          438,
+          281,
+          657
+        ],
+        [
+          46,
+          661,
+          453,
+          896
+        ],
+        [
+          505,
+          232,
+          919,
+          511
+        ],
+        [
+          503,
+          589,
+          917,
+          743
+        ],
+        [
+          504,
+          778,
+          896,
+          887
+        ]
+      ],
+      "notes": [
+        "Left page, upper crossing group; adjacent middle group appears at lower left.",
+        "Left page, middle group.",
+        "Left page, bottom field.",
+        "Right page, upper panel.",
+        "Right page, middle band.",
+        "Right page, bottom band."
+      ],
+      "source_sha256": "f5f71729c245909af69b9fca1243be1cc8511e499ab8c45a26dec19226b95f2e",
+      "size": [
+        6167,
+        5058
+      ]
+    },
+    {
+      "scan": 27,
+      "boxes": [
+        [
+          90,
+          258,
+          437,
+          613
+        ],
+        [
+          89,
+          516,
+          342,
+          815
+        ],
+        [
+          508,
+          187,
+          918,
+          523
+        ],
+        [
+          653,
+          543,
+          900,
+          689
+        ],
+        [
+          507,
+          624,
+          860,
+          863
+        ]
+      ],
+      "polygons": {
+        "4": [
+          [
+            507,
+            624
+          ],
+          [
+            619,
+            624
+          ],
+          [
+            697,
+            697
+          ],
+          [
+            860,
+            709
+          ],
+          [
+            860,
+            863
+          ],
+          [
+            507,
+            863
+          ]
+        ]
+      },
+      "notes": [
+        "Left page, fan-shaped panel; adjoining circular panel partly visible at lower left.",
+        "Left page, circular panel; adjoining fan edge remains at upper right.",
+        "Right page, upper panel.",
+        "Right page, middle group.",
+        "Right page, lower field; polygon excludes separate middle group."
+      ],
+      "source_sha256": "8f822e1a948cffc38f5b9986bd3f6319b08d47ddf9a8797d06301df88963810d",
+      "size": [
+        6167,
+        5058
+      ]
+    },
+    {
+      "scan": 28,
+      "boxes": [
+        [
+          502,
+          181,
+          918,
+          921
+        ]
+      ],
+      "notes": [
+        "Right page only; exclude the left colophon and marginal writing."
+      ],
+      "source_sha256": "daaa033053567ca8709f9b3ea357e22084cc3ea0ac2056bbbf625de37410a7a4",
+      "size": [
+        6167,
+        5058
+      ]
+    },
+    {
+      "scan": 29,
+      "boxes": [
+        [
+          103,
+          132,
+          481,
+          395
+        ],
+        [
+          319,
+          410,
+          518,
+          535
+        ],
+        [
+          326,
+          531,
+          882,
+          845
+        ]
+      ],
+      "notes": [
+        "Back cover, upper connected cluster.",
+        "Back cover, isolated middle motif.",
+        "Back cover, lower connected cluster."
+      ],
+      "source_sha256": "30e3d65dd909a750868f05477d28c622620b9cd0730cd0b87e8d5d809bdd3420",
+      "size": [
+        3513,
+        5042
+      ]
+    }
+  ]
+}

@@ -270,6 +270,27 @@ for (const item of catalog.items) {
       }
     }
 
+    for (const asset of item.review_assets || []) {
+      const assetPath = resolve(repositoryRoot, asset.path || "");
+      if (!asset.path?.startsWith("review/") || !withinRepository(assetPath)
+          || !allowedExtensions.has(extname(assetPath).toLowerCase())) {
+        fail(`${item.artifact_id} has an invalid supporting asset path`);
+        continue;
+      }
+      const assetBytes = await readFile(assetPath);
+      payloadBytes += assetBytes.length;
+      if (assetBytes.length !== asset.bytes || assetBytes.length > maximumFileBytes
+          || createHash("sha256").update(assetBytes).digest("hex") !== asset.sha256) {
+        fail(`${item.artifact_id} supporting asset size or hash differs: ${asset.path}`);
+      }
+      if (/\.jpe?g$/i.test(asset.path)) {
+        const dimensions = readJpegDimensions(assetBytes);
+        if (!dimensions || dimensions.width !== asset.width || dimensions.height !== asset.height) {
+          fail(`${item.artifact_id} supporting JPEG dimensions differ: ${asset.path}`);
+        }
+      }
+    }
+
     if (item.frame_manifest_path) {
       const manifestPath = resolve(repositoryRoot, item.frame_manifest_path);
       const manifest = JSON.parse(await readFile(manifestPath, "utf8"));
@@ -412,6 +433,7 @@ for (const item of catalog.items) {
   if (item.published_path) referencedReviewFiles.add(posix.normalize(item.published_path));
   if (item.plan_pdf?.path) referencedReviewFiles.add(posix.normalize(item.plan_pdf.path));
   if (item.frame_manifest_path) referencedReviewFiles.add(posix.normalize(item.frame_manifest_path));
+  for (const asset of item.review_assets || []) referencedReviewFiles.add(posix.normalize(asset.path));
 }
 
 const staleReviewFiles = [];
@@ -445,6 +467,8 @@ try {
   );
   const catalogHash = createHash("sha256").update(catalogBytes).digest("hex");
   const expectedManifestFields = {
+    maximum_artifact_bytes: maximumFileBytes,
+    maximum_payload_bytes: maximumPayloadBytes,
     portal_build: catalog.portal_build,
     izzi_source_commit: catalog.source_commit,
     artifact_count: catalog.items.length,

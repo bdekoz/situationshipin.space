@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-013b",
+  "scan": 13,
+  "note": "Left page, lower larger medallion.",
+  "box_pixels": [
+    654,
+    2781,
+    1708,
+    3766
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1054,
+    985
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "73cf0f3580e5bafe35a48faed5987818aaf94561e225d93761e3ee3133b1dd83",
+  "sha256": "5144da6b2fd24a42a14ba7e6b4db1976a91885e6969c4fa3cc843ea4499dc734",
+  "source_scan_sha256": "d5b64ca8ace2f5b082da2c72e409a3e11be624554985a86077f99f4e58d6f8f0",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-013b.jpg",
+    "bytes": 118131,
+    "sha256": "1a646c073d6be2a489c1d6ee70f606d8631e751cbe2ac18514846b842a0f0354",
+    "width": 1054,
+    "height": 985,
+    "format": "jpg"
+  }
+}

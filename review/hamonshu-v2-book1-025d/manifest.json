@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-025d",
+  "scan": 25,
+  "note": "Left page, lower-right motif.",
+  "box_pixels": [
+    1716,
+    2716,
+    2761,
+    4057
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1045,
+    1341
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "b7759a5a23baa768c97f6721b731be9522e870f2b21253b66885a8acf5b12177",
+  "sha256": "45698d0f76adbda105c3c9e2045b6df3f0bbbef7abaaf83972d6044e0c37298b",
+  "source_scan_sha256": "849f1a467e68782c59a4d41e61573fb5f425ee445a53c8c0be3c56eec0add27d",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-025d.jpg",
+    "bytes": 255964,
+    "sha256": "1d395383c08434104b60405bed8e9d8a373d628700b73e1780b3eca8bc8183f5",
+    "width": 1045,
+    "height": 1341,
+    "format": "jpg"
+  }
+}

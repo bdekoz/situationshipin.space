@@ -16,6 +16,9 @@ const codePaths = [
   "plans.html",
   "assets/css/review.css",
   "assets/js/review.js",
+  "assets/css/hamonshu-crops.css",
+  "assets/js/hamonshu-crops.js",
+  "scripts/publish-hamonshu-crops.py",
   "data/review-items.json",
   "scripts/check-review-site.mjs",
   "scripts/update-build-manifest.mjs",
@@ -57,6 +60,7 @@ let sampledFrameCount = 0;
 
 for (const item of catalog.items) {
   artifactPayloadBytes += item.bytes;
+  artifactPayloadBytes += (item.review_assets || []).reduce((sum, asset) => sum + asset.bytes, 0);
   if (item.plan_pdf) {
     artifactPayloadBytes += item.plan_pdf.bytes;
   }
@@ -131,7 +135,7 @@ const manifest = {
     Object.entries(aestheticCollectionCounts).sort(([left], [right]) => left.localeCompare(right))
   ),
   maximum_artifact_bytes: 16 * 1024 * 1024,
-  maximum_payload_bytes: 48 * 1024 * 1024,
+  maximum_payload_bytes: 96 * 1024 * 1024,
   excluded_media: ["mkv", "mp4", "mov", "wav", "mp3"],
   code_files: codeFiles,
   artifact_inventory: "data/review-items.json",

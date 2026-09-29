@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-015j",
+  "scan": 15,
+  "note": "Right page, small middle-right cluster.",
+  "box_pixels": [
+    4533,
+    2610,
+    5378,
+    3101
+  ],
+  "polygon_normalized": null,
+  "size": [
+    845,
+    491
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "bbdca8b5e1773e5b864ed33e3f3114472cd7b8ce3f414511326a8dba68b23b9e",
+  "sha256": "7b5e9af797a4b12f33a334664ee36d79c3927a787a8b096c1915a23776387950",
+  "source_scan_sha256": "9c942f000df17484689068a0e22a86fe9cd6558dfd33943dec207d69c201db52",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-015j.jpg",
+    "bytes": 70118,
+    "sha256": "3a2a84a66810312cc80379ebb41dda162a750d3eb407a5e9aefc772c0342cd06",
+    "width": 845,
+    "height": 491,
+    "format": "jpg"
+  }
+}

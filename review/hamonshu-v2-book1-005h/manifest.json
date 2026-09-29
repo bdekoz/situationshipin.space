@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_1-005h",
+  "scan": 5,
+  "note": "Right page, five small related motifs; a neighboring stroke remains at lower left.",
+  "box_pixels": [
+    4551,
+    2633,
+    5518,
+    3367
+  ],
+  "polygon_normalized": null,
+  "size": [
+    967,
+    734
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "2b9bd78623c4df29cb4ec20c62a58a809379cd17b34bdedf484b3390dc28ed42",
+  "sha256": "006fc85941ff14fbaca1f2fd212533040381121b8b51d3356390019defb51b07",
+  "source_scan_sha256": "4739c9b803c4fa8816b35445094043482adc643694c36d8decf5a205c01e505c",
+  "proxy": {
+    "path": "review/hamonshu-v2-book1/images/hamonshu_1-005h.jpg",
+    "bytes": 48580,
+    "sha256": "57cdb38bb2c2dab3e3be5ad258a1e1f087fd6b1f7ec11ef036b8b01bbd14b140",
+    "width": 967,
+    "height": 734,
+    "format": "jpg"
+  }
+}
