@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-015e",
+  "scan": 15,
+  "note": "Lower left pointed wave group.",
+  "box_pixels": [
+    466,
+    3615,
+    2243,
+    4059
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1777,
+    444
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "28c64045ae35564334f9faf656f802e2efc59b5fd0efc460996ccf1628a8828e",
+  "sha256": "6a5c70d77fa609175c2839f59ad844930f8d357337152024a7c510ee99259579",
+  "source_scan_sha256": "a32f3012966f0111139d4e9c7300b0f837b85506feaa73fa015e8842bf1b3ed5",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-015e.jpg",
+    "bytes": 108447,
+    "sha256": "b382d3b681eaa99fe9d39bdc6419460bcce28dac408dd5a96bbf53b876250a0a",
+    "width": 1600,
+    "height": 400,
+    "format": "jpg"
+  }
+}

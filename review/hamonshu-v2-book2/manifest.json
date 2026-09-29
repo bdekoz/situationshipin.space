@@ -1,0 +1,4687 @@
+{
+  "schema": "izzi.hamonshu-public-review/1",
+  "volume": 2,
+  "plan_sha256": "d342ef6878cb5259c085df5ac8944d82bd621932c3cccbe49d5d0784dfb783ea",
+  "source_commit": "eb659a3648b5a5d35e858bfdbf7fcf73f9264c66",
+  "plan": "crop-plan.json",
+  "categories_assigned": false,
+  "proxy_description": "JPEG, at most 1600 pixels per edge, quality 90. Transparent crop regions are shown on neutral paper color.",
+  "crops": [
+    {
+      "id": "hamonshu_2-001a",
+      "scan": 1,
+      "note": "Upper cover ornament; title labels are masked. The source already hides some linework.",
+      "box_pixels": [
+        825,
+        479,
+        3027,
+        3000
+      ],
+      "polygon_normalized": [
+        [
+          237,
+          175
+        ],
+        [
+          720,
+          175
+        ],
+        [
+          720,
+          95
+        ],
+        [
+          870,
+          95
+        ],
+        [
+          870,
+          595
+        ],
+        [
+          237,
+          595
+        ]
+      ],
+      "size": [
+        2202,
+        2521
+      ],
+      "mode": "RGBA",
+      "pixel_sha256": "fdb76546e83f9aefa4205ac640a4d43314907a15c55b80eba14e1fdec356182c",
+      "sha256": "fc5710367d6f632a9e56afd2bd34f495f37faeaabf1b93d43b2f01a7396884e0",
+      "source_scan_sha256": "333628aabe25006f8dbf3e888dbf87b55e3048d15fcbc27d4972f611f54613b8",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-001a.jpg",
+        "bytes": 376843,
+        "sha256": "6cca626e1fc79838e13397302521cd3a1cf44d078a0d3c68e6e28360b0004619",
+        "width": 1398,
+        "height": 1600,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-001b",
+      "scan": 1,
+      "note": "Lower cover ornament; the vertical title is masked. Occluded lines are not reconstructed.",
+      "box_pixels": [
+        191,
+        3277,
+        2084,
+        4871
+      ],
+      "polygon_normalized": [
+        [
+          230,
+          650
+        ],
+        [
+          599,
+          650
+        ],
+        [
+          599,
+          966
+        ],
+        [
+          55,
+          966
+        ],
+        [
+          55,
+          690
+        ],
+        [
+          230,
+          690
+        ]
+      ],
+      "size": [
+        1893,
+        1594
+      ],
+      "mode": "RGBA",
+      "pixel_sha256": "2e06ad9f757a289de2a0dee1125d7ade2adab92f7e6ea62c80e76c747b49a4e2",
+      "sha256": "ce7762d56f99a859837f5c46e109675e5f0022b81a401fb1e77fb2dd091d926d",
+      "source_scan_sha256": "333628aabe25006f8dbf3e888dbf87b55e3048d15fcbc27d4972f611f54613b8",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-001b.jpg",
+        "bytes": 306715,
+        "sha256": "9a23793f1d35f031eef4dc3da2066111f43491355bcce37c7d838b23195ae2b9",
+        "width": 1600,
+        "height": 1347,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-002a",
+      "scan": 2,
+      "note": "Left framed water composition; marginal writing and the blank facing page are excluded.",
+      "box_pixels": [
+        389,
+        1382,
+        2766,
+        4160
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2377,
+        2778
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "0b2dce002e201cff04101095e91d89078865a5777c15598837de9ec04b407eca",
+      "sha256": "2450946e01ad419145c816de0ce60a53fc2b843d95248580125236c7c9134f63",
+      "source_scan_sha256": "ae113148728a8fbe851bca1921c1e214bd87af93d38096098fbd4be1a4bc3090",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-002a.jpg",
+        "bytes": 375053,
+        "sha256": "3dd4f33b8a305e1c2d97fbea2f333aeb8ef43bab4e8dca9e4ef9e1a149d0fd23",
+        "width": 1369,
+        "height": 1600,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-003a",
+      "scan": 3,
+      "note": "Upper left current field.",
+      "box_pixels": [
+        317,
+        948,
+        2810,
+        2511
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2493,
+        1563
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "205cc4efdd80969651c1e25c910169ae3a47bb219da7890d7a412b953ea4d525",
+      "sha256": "6956225114683b100d5e81d911c6c1c478b737467b855864182e765e25073055",
+      "source_scan_sha256": "bfb6749030b6bb17556eb24d8e6040f860b1e51d10b7dcc9b4051df759669e0c",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-003a.jpg",
+        "bytes": 532050,
+        "sha256": "4f37bd971f2e8cf112e5325c5b547f319ad238a6732ded784239ea8c2b134f5a",
+        "width": 1600,
+        "height": 1003,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-003b",
+      "scan": 3,
+      "note": "Lower left breaking-wave composition.",
+      "box_pixels": [
+        317,
+        2763,
+        2810,
+        4508
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2493,
+        1745
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "7aff264f757c9509f006a9019817e7d59022343f3da6c066d68b74219cf2ff12",
+      "sha256": "70e43b8605fef7a76281a0f1b9fa6748a79ba8ec8b72c3c9cb82428c9520d2a8",
+      "source_scan_sha256": "bfb6749030b6bb17556eb24d8e6040f860b1e51d10b7dcc9b4051df759669e0c",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-003b.jpg",
+        "bytes": 384954,
+        "sha256": "4deefbaca48fa625b23fce81619ae3122b9ca948dab208b947aa8195e22fea79",
+        "width": 1600,
+        "height": 1120,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-003c",
+      "scan": 3,
+      "note": "Upper right outline crest group.",
+      "box_pixels": [
+        3597,
+        1145,
+        5736,
+        2037
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2139,
+        892
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "d93ce2602ccb40b72bea1343569ea8be6bf14d7269fc90672a7908c05013d045",
+      "sha256": "5935086d021fca2092f935f4c348a94410ab41bd1161d7f590eef496d76491ba",
+      "source_scan_sha256": "bfb6749030b6bb17556eb24d8e6040f860b1e51d10b7dcc9b4051df759669e0c",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-003c.jpg",
+        "bytes": 84760,
+        "sha256": "4c0e324c9e94463af01534d2d329523735608331765651f830acffdcf1d1bba5",
+        "width": 1600,
+        "height": 667,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-003d",
+      "scan": 3,
+      "note": "Middle right fine-line water field.",
+      "box_pixels": [
+        3255,
+        2334,
+        5499,
+        2904
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2244,
+        570
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "592ae248bbe72ac7b6bdc06f54b1c5e01995901ebc6ad6e041ac642770eecd46",
+      "sha256": "92f5facd430d0ec9f2c472647035b26d18439b480d94eecc89a0395802de5ea6",
+      "source_scan_sha256": "bfb6749030b6bb17556eb24d8e6040f860b1e51d10b7dcc9b4051df759669e0c",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-003d.jpg",
+        "bytes": 136708,
+        "sha256": "2e016fd447b307c60dde10020a4f83993c5c2f26ffe7f1fe0e8425c0acc77f27",
+        "width": 1600,
+        "height": 406,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-003e",
+      "scan": 3,
+      "note": "Lower right connected and repeated wave composition, kept within its panel.",
+      "box_pixels": [
+        3274,
+        2965,
+        5803,
+        4603
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2529,
+        1638
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "b8bbaeef2e739598e3b6ac15a95c86f61cb4c06d03e2c74dfdc48d5f2253e39e",
+      "sha256": "f61e5e7a77aa752877fdd7c035b58d56b208472d437536546612656c80d9e116",
+      "source_scan_sha256": "bfb6749030b6bb17556eb24d8e6040f860b1e51d10b7dcc9b4051df759669e0c",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-003e.jpg",
+        "bytes": 295962,
+        "sha256": "0bf98856e1e173a4b2f777909be62dea617f95d64dc317e89ecfe246e76f363a",
+        "width": 1600,
+        "height": 1036,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-004a",
+      "scan": 4,
+      "note": "Upper left framed curls and drops.",
+      "box_pixels": [
+        1158,
+        1246,
+        2560,
+        3020
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1402,
+        1774
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "6552188222cba5af6545aea2189dc71e8c00c5840e329ed7eb3df388c351b488",
+      "sha256": "7d097c75a366ea0dc7c33555d1d8bca9174107a8edc1dd5a47f8e6808b5672b4",
+      "source_scan_sha256": "4433d20dfefe8dff701469ed20550e407b46e01908cf749e6ecd25e42a8cbb95",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-004a.jpg",
+        "bytes": 229880,
+        "sha256": "b06e79e6728aed3a5109cd593b48a40fefca7cc913d485a6a9540cfa0392316c",
+        "width": 1264,
+        "height": 1600,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-004b",
+      "scan": 4,
+      "note": "Left diagonal-line panel; mask removes the overlapping upper panel. Its hidden corner remains absent.",
+      "box_pixels": [
+        573,
+        2523,
+        1512,
+        3643
+      ],
+      "polygon_normalized": [
+        [
+          94,
+          502
+        ],
+        [
+          192,
+          502
+        ],
+        [
+          192,
+          602
+        ],
+        [
+          248,
+          602
+        ],
+        [
+          248,
+          725
+        ],
+        [
+          94,
+          725
+        ]
+      ],
+      "size": [
+        939,
+        1120
+      ],
+      "mode": "RGBA",
+      "pixel_sha256": "51fedc17eee847322c90ae02dd0a4a183e78248fd2fc405bce6942e7fdd8f1e7",
+      "sha256": "5e9e111abbcf1fcda90b38386596fb5a231eb78aa8ae386710181bad7c434230",
+      "source_scan_sha256": "4433d20dfefe8dff701469ed20550e407b46e01908cf749e6ecd25e42a8cbb95",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-004b.jpg",
+        "bytes": 291175,
+        "sha256": "4e0cc9f6ceda6d6aa035125cbcbb08e9d812b7918493bd6bdabaa588c92b5f1b",
+        "width": 939,
+        "height": 1120,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-004c",
+      "scan": 4,
+      "note": "Lower left flowing-water composition; mask separates the adjacent framed designs.",
+      "box_pixels": [
+        280,
+        2784,
+        2816,
+        4593
+      ],
+      "polygon_normalized": [
+        [
+          396,
+          554
+        ],
+        [
+          462,
+          554
+        ],
+        [
+          462,
+          914
+        ],
+        [
+          46,
+          914
+        ],
+        [
+          46,
+          744
+        ],
+        [
+          310,
+          744
+        ],
+        [
+          310,
+          732
+        ],
+        [
+          384,
+          732
+        ],
+        [
+          384,
+          604
+        ],
+        [
+          396,
+          604
+        ]
+      ],
+      "size": [
+        2536,
+        1809
+      ],
+      "mode": "RGBA",
+      "pixel_sha256": "ac82fd7d58378278be7c9dd4678f0128ec1e4f47a33927faa937235eaf192852",
+      "sha256": "1cd69beafe0eb10170aaadea56113520f5fc8740e151476ba91ec0da8e34f7f9",
+      "source_scan_sha256": "4433d20dfefe8dff701469ed20550e407b46e01908cf749e6ecd25e42a8cbb95",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-004c.jpg",
+        "bytes": 283746,
+        "sha256": "c530ed1012ddb0fb74237b161a703470df090def9663812ae9d7ae5f97bfd162",
+        "width": 1600,
+        "height": 1141,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-004d",
+      "scan": 4,
+      "note": "Upper right vertical repeat, kept as one graphic pattern.",
+      "box_pixels": [
+        3170,
+        1126,
+        5742,
+        3548
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2572,
+        2422
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "c898cffde755d373ef45e602f71240d92f5adcd9fed5d8195daaa5dddc1ffff9",
+      "sha256": "2e8e0afad95a2f5ced9e81f7b08923567b0523f0b0ffeae08f44741d033fc14a",
+      "source_scan_sha256": "4433d20dfefe8dff701469ed20550e407b46e01908cf749e6ecd25e42a8cbb95",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-004d.jpg",
+        "bytes": 316451,
+        "sha256": "08d902821315bde666b19c521d19a1e5469e96d455bcfa75af822e804be8d046",
+        "width": 1600,
+        "height": 1507,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-004e",
+      "scan": 4,
+      "note": "Lower right breaking-wave band.",
+      "box_pixels": [
+        3200,
+        3769,
+        5736,
+        4588
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2536,
+        819
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "8c83136113d6a76054b2fd3476de35da5f8a863b4e90d6e4d6ac42b85ad4f6e3",
+      "sha256": "ee446d7b55063fd58d887ba705b7f552f89cf86da6cfca5692f51e73564520ca",
+      "source_scan_sha256": "4433d20dfefe8dff701469ed20550e407b46e01908cf749e6ecd25e42a8cbb95",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-004e.jpg",
+        "bytes": 206020,
+        "sha256": "f6d22a6daa7b9ea3da36c9a3adf6e008a68b8e6fe4433bf09f1728a054cd4bda",
+        "width": 1600,
+        "height": 517,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-005a",
+      "scan": 5,
+      "note": "Upper left wave ribbon, preserving the printed panel boundaries.",
+      "box_pixels": [
+        312,
+        889,
+        2824,
+        1698
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2512,
+        809
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "4a4d3540e2584ac13516b7fe3e95382e18c89a852495cab84ac7fbdb741f5479",
+      "sha256": "9747b14b0fb2b4e02f6dfafa540089fe6c1e93df472563016b3b76ee1d7e8994",
+      "source_scan_sha256": "3d9b42f385d8a6710556fa79c8c25e1f1e9d22d19c6796af0c29257d8c641012",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-005a.jpg",
+        "bytes": 110005,
+        "sha256": "25a191d2f17a483a7bbb733d2088625b1cfdfe32fce34203e1c4c8727089a79f",
+        "width": 1600,
+        "height": 515,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-005b",
+      "scan": 5,
+      "note": "Second left ribbon.",
+      "box_pixels": [
+        312,
+        1769,
+        2824,
+        2447
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2512,
+        678
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "3642913b7852d491d6cf1a058e12c205fefe1cb2518d7e872b08b7a3f62ae686",
+      "sha256": "0398359de519784bfa01d84a2ea73e752f7f2f86e8eed3551c7926a081c66e3a",
+      "source_scan_sha256": "3d9b42f385d8a6710556fa79c8c25e1f1e9d22d19c6796af0c29257d8c641012",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-005b.jpg",
+        "bytes": 88862,
+        "sha256": "dc9ae36b26fb0dea58e2ddce59cbc59d5e064985188d04d157b4bddf38ce8bfc",
+        "width": 1600,
+        "height": 432,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-005c",
+      "scan": 5,
+      "note": "Upper right ribbon.",
+      "box_pixels": [
+        3154,
+        899,
+        5716,
+        1698
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2562,
+        799
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "90ff871837d9e4784b26c1d46210c2d74f7fd44a3520affcc4e0260e6372de31",
+      "sha256": "cccead385446e1e800108d280b0f19afef1ccaa67a5012fd74fe727200b18687",
+      "source_scan_sha256": "3d9b42f385d8a6710556fa79c8c25e1f1e9d22d19c6796af0c29257d8c641012",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-005c.jpg",
+        "bytes": 77869,
+        "sha256": "dbe4cefea6d51089ae3ca5158c84fdb0dd86b0a21cc5ff94a6681747232400c9",
+        "width": 1600,
+        "height": 499,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-005d",
+      "scan": 5,
+      "note": "Second right ribbon.",
+      "box_pixels": [
+        3154,
+        1769,
+        5716,
+        2447
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2562,
+        678
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "32801f2531b5c7e4f893a977888387edd94e1f0b5e825b77fca6833db12ed6ea",
+      "sha256": "1c350b67bf226a4666959f3226e4d7ef3d727f52fa08642b9ba3d13853270ebc",
+      "source_scan_sha256": "3d9b42f385d8a6710556fa79c8c25e1f1e9d22d19c6796af0c29257d8c641012",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-005d.jpg",
+        "bytes": 103655,
+        "sha256": "42bcd3c54951f15a9d3935ef1e6af3a818d6210a07b1379f056cace2c28db0af",
+        "width": 1600,
+        "height": 423,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-005e",
+      "scan": 5,
+      "note": "Lower left dense water band; the surrounding blank layout is omitted.",
+      "box_pixels": [
+        306,
+        3950,
+        2824,
+        4603
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2518,
+        653
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "6944751b19509bd04698b91c2e8f1d12dfa0615690cd5f1b9a1fd5caeb90dd52",
+      "sha256": "c80841259ff37732f93b702f124f6023e212983518d3a5482e8574462f2d1677",
+      "source_scan_sha256": "3d9b42f385d8a6710556fa79c8c25e1f1e9d22d19c6796af0c29257d8c641012",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-005e.jpg",
+        "bytes": 146177,
+        "sha256": "13b549605c027453293219a231e2300b9a764f98655bc39fa2679429667ca2d6",
+        "width": 1600,
+        "height": 415,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-005f",
+      "scan": 5,
+      "note": "Lower right dense water field; the vertical line belongs to the original layout.",
+      "box_pixels": [
+        3154,
+        3583,
+        5703,
+        4603
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2549,
+        1020
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "776e40431e0f9d103353ad44fcf436ff0f06186cc383a29c23c85fcc86666d1f",
+      "sha256": "ae832322b1f7ee0ed41f5511494a861230ebe173727be24040699f591525d78b",
+      "source_scan_sha256": "3d9b42f385d8a6710556fa79c8c25e1f1e9d22d19c6796af0c29257d8c641012",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-005f.jpg",
+        "bytes": 333377,
+        "sha256": "498ba222308188da131ebc911bb2081eb3a27e818999a49626e2c0bb88d601fb",
+        "width": 1600,
+        "height": 640,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-006a",
+      "scan": 6,
+      "note": "Upper left curl-and-drop composition.",
+      "box_pixels": [
+        311,
+        899,
+        2835,
+        2518
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2524,
+        1619
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "355e9ba369ffddc92f6c72ab85c9b2dd692a44844973df5e5e1e028ec979451f",
+      "sha256": "17e1bcaef1384e85cc6d9ce68d892988e5adf4b469d4aab58e83f63614dbafc5",
+      "source_scan_sha256": "ddc3930133c6ab70c809e5fd7be048872aa932dc06136399cb2ca750d9ca2a07",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-006a.jpg",
+        "bytes": 205703,
+        "sha256": "3d8ce427f52a5b35473e8ef5d992a884827d83edea60415b0f23d9183be588f6",
+        "width": 1600,
+        "height": 1026,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-006b",
+      "scan": 6,
+      "note": "Lower left foam field, kept as a coherent composition.",
+      "box_pixels": [
+        311,
+        2507,
+        2829,
+        4603
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2518,
+        2096
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "12625f8ca9129c2eb4fd9db7e246abfeb5f6b40bbe5fa5a8cb89b23b63d7b43a",
+      "sha256": "108b9ec6c860ee4ee5210657cf78a2e413761348ffaa26d24d0259967f1f553c",
+      "source_scan_sha256": "ddc3930133c6ab70c809e5fd7be048872aa932dc06136399cb2ca750d9ca2a07",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-006b.jpg",
+        "bytes": 286449,
+        "sha256": "63d8f19889782b65a7ff89e70af0a34369c19322609e2e863280a48024590d3f",
+        "width": 1600,
+        "height": 1332,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-006c",
+      "scan": 6,
+      "note": "Upper right sparse line group.",
+      "box_pixels": [
+        3146,
+        1191,
+        5669,
+        1613
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2523,
+        422
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "1906b0ad8b9169cd7d3a8921e38edc5859e35b1be68a7504ae65d8f046704627",
+      "sha256": "34fa10c76bc0f1d28504eb603a44fbea6fcef3d906c5e0bbfec165a7e4dfe2c0",
+      "source_scan_sha256": "ddc3930133c6ab70c809e5fd7be048872aa932dc06136399cb2ca750d9ca2a07",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-006c.jpg",
+        "bytes": 59058,
+        "sha256": "b1d49bcba9bd18f4d92fbab3ec53ae0604223c45361577721d9a27e1aafec227",
+        "width": 1600,
+        "height": 268,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-006d",
+      "scan": 6,
+      "note": "Second right sparse line group.",
+      "box_pixels": [
+        3146,
+        1754,
+        5706,
+        2327
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2560,
+        573
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "0b224fd7010af4392e1595cc0eff1894a8697ee1f3e246ebb8e19cad41e1a6d3",
+      "sha256": "370c29bc2897eb708373e2cc42b5be1f56cb9de8517b3d589d88fba641ebb8b5",
+      "source_scan_sha256": "ddc3930133c6ab70c809e5fd7be048872aa932dc06136399cb2ca750d9ca2a07",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-006d.jpg",
+        "bytes": 75069,
+        "sha256": "6d4aad0cb252111301548b2a0d5bbe511fbaca04aa28daa81f0e4cccc9f98cff",
+        "width": 1600,
+        "height": 358,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-006e",
+      "scan": 6,
+      "note": "Middle right repeated short strokes.",
+      "box_pixels": [
+        3170,
+        2608,
+        5572,
+        3744
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2402,
+        1136
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "f7a8320bf6109c41cf2a737f2d5c8324a0c56f36bf9111c61dff64c2ea0cf5e1",
+      "sha256": "2d30f0d36f00ed70ac694db0c5d1b961de6d3e4c58b46c5d1479474958458acb",
+      "source_scan_sha256": "ddc3930133c6ab70c809e5fd7be048872aa932dc06136399cb2ca750d9ca2a07",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-006e.jpg",
+        "bytes": 203405,
+        "sha256": "4d2c40a794cbc2b712b909836b33b311638b134233ef394d85d5dee65ce55b2f",
+        "width": 1600,
+        "height": 757,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-006f",
+      "scan": 6,
+      "note": "Lower right interlaced band.",
+      "box_pixels": [
+        3402,
+        3874,
+        5590,
+        4266
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2188,
+        392
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "25f5a87049d0ae75e6ade35426f433b4fb0aac9543e633df9218905510b6e69e",
+      "sha256": "47ca00a628a7c039c05c3f7617189f113273531c453056713dc252581bd4257d",
+      "source_scan_sha256": "ddc3930133c6ab70c809e5fd7be048872aa932dc06136399cb2ca750d9ca2a07",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-006f.jpg",
+        "bytes": 74305,
+        "sha256": "26fbc4c7c6a70ae8f7ce277c8281bc0e5f19a344b89727914e72f267e11f9477",
+        "width": 1600,
+        "height": 287,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-007a",
+      "scan": 7,
+      "note": "Upper left layered strokes.",
+      "box_pixels": [
+        373,
+        1165,
+        2751,
+        1593
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2378,
+        428
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "d6dc0e60115a955f2256002c14381f37e0dd378447f00944e4e00f6f96d5a57e",
+      "sha256": "9960ddaf6ec1cc41fa1a232c856a5e0fcb856c4cc0be269ca329b293a411178c",
+      "source_scan_sha256": "2f5903f4ca9a2b1689e8884e02d0e2963b91475cd964cd88cb30fde5f3d43897",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-007a.jpg",
+        "bytes": 102804,
+        "sha256": "df6a6174794bba8ed0ac83843774a2c630a071cf862cd5623cc7972d4ed4a3f6",
+        "width": 1600,
+        "height": 288,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-007b",
+      "scan": 7,
+      "note": "Middle left connected scalloped band.",
+      "box_pixels": [
+        1125,
+        1956,
+        2775,
+        2395
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1650,
+        439
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "e331c7907e2ac52a0aa9860a7e3f375711a87794d3cd77ef8ace9af00b5e2a78",
+      "sha256": "214eb59c6f64868635796758d6952565405aa4b9d955c08194e4c9cb41258078",
+      "source_scan_sha256": "2f5903f4ca9a2b1689e8884e02d0e2963b91475cd964cd88cb30fde5f3d43897",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-007b.jpg",
+        "bytes": 195485,
+        "sha256": "bb53ddd9c93bbad2e13e98a47abd174e2c7fd1df4a4081d9629eff9981155a41",
+        "width": 1600,
+        "height": 426,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-007c",
+      "scan": 7,
+      "note": "Paired left crest lines, kept together as one example.",
+      "box_pixels": [
+        379,
+        2697,
+        2598,
+        3227
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2219,
+        530
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "3ac39ff810b81b4ec753c20e0612305d4a054a9387158d8b2b7f3c0dfb2f18c1",
+      "sha256": "aa982a5b375c5f0838b9db507374a0a4ad466dda042d5787b938582461db837b",
+      "source_scan_sha256": "2f5903f4ca9a2b1689e8884e02d0e2963b91475cd964cd88cb30fde5f3d43897",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-007c.jpg",
+        "bytes": 76467,
+        "sha256": "81b2aae94ac6f79b25ed2b38dabd69164544b9ca743c5606bbfca4f3ea350e4f",
+        "width": 1600,
+        "height": 382,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-007d",
+      "scan": 7,
+      "note": "Lower left rows of small crests.",
+      "box_pixels": [
+        428,
+        3434,
+        2335,
+        4104
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1907,
+        670
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "d6ff885433fcb4be986d203b3f5261236232fd5a127175ef8153d35223a9679b",
+      "sha256": "f792ef852e67ddad5565a371788f9e76a4490504b5c7e7f6cb2657052d32217a",
+      "source_scan_sha256": "2f5903f4ca9a2b1689e8884e02d0e2963b91475cd964cd88cb30fde5f3d43897",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-007d.jpg",
+        "bytes": 99696,
+        "sha256": "0221f96795da8dae6f40dc4e50d48ff64f3c33dc64ceec63628f16f57e155a70",
+        "width": 1600,
+        "height": 562,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-007e",
+      "scan": 7,
+      "note": "Upper right overlapping arc field.",
+      "box_pixels": [
+        3154,
+        1397,
+        5239,
+        1931
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2085,
+        534
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "07a6f14e5afff23a982bccf2d1701a8d72ae398b62ec6a37b5413d0b8cff9ba8",
+      "sha256": "e65010d61b2c04dfc362df1751f97cfea058f2b26499d4a48ded27e031ccc9ff",
+      "source_scan_sha256": "2f5903f4ca9a2b1689e8884e02d0e2963b91475cd964cd88cb30fde5f3d43897",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-007e.jpg",
+        "bytes": 87812,
+        "sha256": "51c7eb6c1dffb9c6efd6dc303ce28cf1cdec6313b851cdaab5a00adf9a23dde4",
+        "width": 1600,
+        "height": 410,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-007f",
+      "scan": 7,
+      "note": "Small right row of solid crests.",
+      "box_pixels": [
+        4462,
+        2143,
+        5575,
+        2420
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1113,
+        277
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "622c4b35fc6c93dbbcfdc21283b03184828def1b06d931aae6ee008817209ffa",
+      "sha256": "c761362d3cb0476e0e85d5ed4860264d2411ebb6a7a68364e50f6be950d969f2",
+      "source_scan_sha256": "2f5903f4ca9a2b1689e8884e02d0e2963b91475cd964cd88cb30fde5f3d43897",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-007f.jpg",
+        "bytes": 44532,
+        "sha256": "2ca4d31fef91dbb9eb7845e1632902bb61dfc7cc8a475118086f5c75db93371f",
+        "width": 1113,
+        "height": 277,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-007g",
+      "scan": 7,
+      "note": "Larger right row of solid crests.",
+      "box_pixels": [
+        3313,
+        2501,
+        5245,
+        2854
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1932,
+        353
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "1660b3c3a5a1db03df39969757727f3f313b556ac46041c796313bc68391e4d2",
+      "sha256": "ebc80c05fc7e700cd6fcc0b7024fe3c362345fa4f8c69828862b6a4703208c20",
+      "source_scan_sha256": "2f5903f4ca9a2b1689e8884e02d0e2963b91475cd964cd88cb30fde5f3d43897",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-007g.jpg",
+        "bytes": 66762,
+        "sha256": "32e39187ece5a78150b25dbe11253f511d6bc26e19574e5a0af5c5386bcbf4c4",
+        "width": 1600,
+        "height": 292,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-007h",
+      "scan": 7,
+      "note": "Lower right short-stroke field.",
+      "box_pixels": [
+        3234,
+        3439,
+        5422,
+        4175
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2188,
+        736
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "cca798de60aa72f057804fea9720d1938685bd3eb1bd8df549fcc7c1f24b9567",
+      "sha256": "d8f56a8a30627f2bdafc593fc754d0d59f9ee046d3be74e384827c17844e6a37",
+      "source_scan_sha256": "2f5903f4ca9a2b1689e8884e02d0e2963b91475cd964cd88cb30fde5f3d43897",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-007h.jpg",
+        "bytes": 102900,
+        "sha256": "0ec63a7e6b2aff680d1855e6312fb653b22dcefd00ee46ff32f48a0a24f538b7",
+        "width": 1600,
+        "height": 538,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-008a",
+      "scan": 8,
+      "note": "Upper left framed strip.",
+      "box_pixels": [
+        660,
+        1289,
+        2396,
+        1604
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1736,
+        315
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "749f2c48996dfc92f3afe26f5203eeb0087d97968af4bceec9aa8a18b84bb2ac",
+      "sha256": "cdc7286a7e810b30c5652733fcf9bdbca3a53f35835752b2bb87de536e263756",
+      "source_scan_sha256": "3766cad12bf43c9d25352f7282ee0e09cb3387bcae3637aec9e9222e0e97b17b",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-008a.jpg",
+        "bytes": 125885,
+        "sha256": "94b88d5afb79feda37628bf5091ffaf75ba53c6a191bd4e9ccf53372a1504299",
+        "width": 1600,
+        "height": 290,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-008b",
+      "scan": 8,
+      "note": "Second left framed strip.",
+      "box_pixels": [
+        373,
+        1776,
+        2127,
+        1989
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1754,
+        213
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "31834c5fc564b70502311ceaad9ca1b5e3cca86cfdd51d8a391d85f08bfb7752",
+      "sha256": "2badf60a2c65e0303679a04882ce1b671aa873dd2565925f83bbb5760b2ed6af",
+      "source_scan_sha256": "3766cad12bf43c9d25352f7282ee0e09cb3387bcae3637aec9e9222e0e97b17b",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-008b.jpg",
+        "bytes": 85267,
+        "sha256": "17e3dc73cda1008325da045ae5486e11bf6fe72a7f00ef298db0918e685afb0b",
+        "width": 1600,
+        "height": 194,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-008c",
+      "scan": 8,
+      "note": "Third left framed strip.",
+      "box_pixels": [
+        428,
+        2548,
+        1706,
+        2857
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1278,
+        309
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "38b3298ab7ab0558bd24a911bf528c856863c41830aab5ce9ae2f3e06a8a9ced",
+      "sha256": "b043a0e37a12d361ccc71e9da4dc9bb9f788d5ff1ad711705796c5ae3e860a41",
+      "source_scan_sha256": "3766cad12bf43c9d25352f7282ee0e09cb3387bcae3637aec9e9222e0e97b17b",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-008c.jpg",
+        "bytes": 124227,
+        "sha256": "23dfa40b5f88bc684daa6a9896c8d55dc31221d198e7aca29ff81e31da36f16a",
+        "width": 1278,
+        "height": 309,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-008d",
+      "scan": 8,
+      "note": "Small left circular foam form.",
+      "box_pixels": [
+        1846,
+        2197,
+        2531,
+        2867
+      ],
+      "polygon_normalized": null,
+      "size": [
+        685,
+        670
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "c7c702b499a277df8cc3c1e0637fb34ef5e728abd0d7b067f8e1c42dc34b9a10",
+      "sha256": "6ebac25cf3c18675799c0340f6fbda1a76279216a8179d807e21cdbaadb3fde6",
+      "source_scan_sha256": "3766cad12bf43c9d25352f7282ee0e09cb3387bcae3637aec9e9222e0e97b17b",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-008d.jpg",
+        "bytes": 71938,
+        "sha256": "f2641e4f9bb647049385712bee470319b2ad26545af44ae6cefbbb9555e99264",
+        "width": 685,
+        "height": 670,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-008e",
+      "scan": 8,
+      "note": "Lower left symmetric scroll composition.",
+      "box_pixels": [
+        379,
+        3075,
+        2763,
+        4273
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2384,
+        1198
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "c710c951aeef45bd755b6a04421ae82165a68a57096d360545f26fd89a9151f5",
+      "sha256": "29463ddbc786ebace23199a1707ed931ac1ef232936bf2be70dfb896d88a1362",
+      "source_scan_sha256": "3766cad12bf43c9d25352f7282ee0e09cb3387bcae3637aec9e9222e0e97b17b",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-008e.jpg",
+        "bytes": 150129,
+        "sha256": "136545494023d9467156250a0c804f0ed92baf6119662b1e92b5a3ace2798a05",
+        "width": 1600,
+        "height": 804,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-008f",
+      "scan": 8,
+      "note": "Upper right open-center ring.",
+      "box_pixels": [
+        3307,
+        1604,
+        4536,
+        2913
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1229,
+        1309
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "d5c18a75bdce5bcb91791ac3531b93f9c74c99aa17092c9e53fd91ae49fa2805",
+      "sha256": "60a5507cc06b427fb886c201dcc820d978c84d0e78c1ec3a5f710e899e81d97c",
+      "source_scan_sha256": "3766cad12bf43c9d25352f7282ee0e09cb3387bcae3637aec9e9222e0e97b17b",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-008f.jpg",
+        "bytes": 178100,
+        "sha256": "94a8b260bbef3e290af0f292b9c97c3cca781ccd02da0414df416695837c50d8",
+        "width": 1229,
+        "height": 1309,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-008g",
+      "scan": 8,
+      "note": "Upper right filled disk.",
+      "box_pixels": [
+        4554,
+        1259,
+        5447,
+        2101
+      ],
+      "polygon_normalized": null,
+      "size": [
+        893,
+        842
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "ba528ce873761af171351e25406d97b5e8ec03d625dcb8e81f2bff6e98580bbf",
+      "sha256": "ec6a5a60dbdf4cf2f656abd9f973bf0266348620c1a0a6b927e3acaeb202d570",
+      "source_scan_sha256": "3766cad12bf43c9d25352f7282ee0e09cb3387bcae3637aec9e9222e0e97b17b",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-008g.jpg",
+        "bytes": 174998,
+        "sha256": "e943c1ae5706de567964169338d10f8e6608443b831170f874376d7dd6830ff2",
+        "width": 893,
+        "height": 842,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-008h",
+      "scan": 8,
+      "note": "Small middle right isolated curl group.",
+      "box_pixels": [
+        3399,
+        3050,
+        3925,
+        3532
+      ],
+      "polygon_normalized": null,
+      "size": [
+        526,
+        482
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "1b6299fcc359619144633e8f35fcc8d2171653767dfc040f82609df4390b710e",
+      "sha256": "ddc574a8ef79237f329562b2487962a9d74e6e4c548a93832a28efdbf262ecf9",
+      "source_scan_sha256": "3766cad12bf43c9d25352f7282ee0e09cb3387bcae3637aec9e9222e0e97b17b",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-008h.jpg",
+        "bytes": 52349,
+        "sha256": "e48a786d284c32e65037c81dcd845d1dc09e14f8cdf69bc7163962d6847a06dd",
+        "width": 526,
+        "height": 482,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-008i",
+      "scan": 8,
+      "note": "Two overlapping lower-right water medallions; kept together because one occludes the other.",
+      "box_pixels": [
+        3906,
+        2984,
+        5471,
+        4278
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1565,
+        1294
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "e0011cb51ae95efcba627ebf0a7193a9c410c205c292f717efb5bc223aecfb16",
+      "sha256": "0a3b8ab4b02f93d38f51a27b28e1091338737f12cdb221df6dca13d849eecf2b",
+      "source_scan_sha256": "3766cad12bf43c9d25352f7282ee0e09cb3387bcae3637aec9e9222e0e97b17b",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-008i.jpg",
+        "bytes": 350536,
+        "sha256": "4170a4724589d47ef74a9a281621365d27a9739ce4878742cb3d67b90738fc6d",
+        "width": 1565,
+        "height": 1294,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-009a",
+      "scan": 9,
+      "note": "Upper left current field.",
+      "box_pixels": [
+        318,
+        1040,
+        2830,
+        2206
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2512,
+        1166
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "b45669a5ddcc0962b73100d8c7bf1cf85506bc345efe76bffa4c25856d7f040c",
+      "sha256": "9de20a9f0881cb8cb0e30cc1d938c07f50f8cdad68ffa8b115649058cb4b3468",
+      "source_scan_sha256": "132faefe88c56645a8c401b7fe13863c7f38ec44282f7b15c23b75c7b80a7dcc",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-009a.jpg",
+        "bytes": 339085,
+        "sha256": "aca1e5aa23a779c4c6726f020fa7543f8df432c60ddf12d08e144a11deef6d2c",
+        "width": 1600,
+        "height": 743,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-009b",
+      "scan": 9,
+      "note": "Lower left breaking-wave composition.",
+      "box_pixels": [
+        312,
+        2286,
+        2830,
+        4573
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2518,
+        2287
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "d30d484350e9e1b1479f3e3246cf93d49b3e30f18e7fe68de541c6fa10598d1f",
+      "sha256": "ee249b008a65ad3b2892f1da8532f7f32df39747d97048dc2e3a6790c4867416",
+      "source_scan_sha256": "132faefe88c56645a8c401b7fe13863c7f38ec44282f7b15c23b75c7b80a7dcc",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-009b.jpg",
+        "bytes": 415855,
+        "sha256": "75796af20bf90f5c31878da8202d35785d31b1e7dbbc5cd36265989926d49af7",
+        "width": 1600,
+        "height": 1453,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-009c",
+      "scan": 9,
+      "note": "Upper right outlined wave field.",
+      "box_pixels": [
+        3118,
+        1060,
+        5636,
+        2618
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2518,
+        1558
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "98510ad403ca011d002d83e1aff00743cde1017b9e55e8e2e7fd9dc7331b0ec5",
+      "sha256": "04f3a3eda1d44ba869dea7f93527a9f5e7a628a5752a8a2863e7bd8c41d5783f",
+      "source_scan_sha256": "132faefe88c56645a8c401b7fe13863c7f38ec44282f7b15c23b75c7b80a7dcc",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-009c.jpg",
+        "bytes": 211798,
+        "sha256": "ef3f72eed8101dd5146d8403abdcc593024500cd9577bc75173e7d7bb54198e7",
+        "width": 1600,
+        "height": 990,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-009d",
+      "scan": 9,
+      "note": "Lower right sweeping current composition.",
+      "box_pixels": [
+        3118,
+        2618,
+        5636,
+        4623
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2518,
+        2005
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "b783914f15612c0e84f21703302fa60097b4f01d6b343292a18bc593abe54677",
+      "sha256": "95d377137901980e7e4ac6b9ec3356930e807b7a538041b26cef3bb82dd2b16f",
+      "source_scan_sha256": "132faefe88c56645a8c401b7fe13863c7f38ec44282f7b15c23b75c7b80a7dcc",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-009d.jpg",
+        "bytes": 222289,
+        "sha256": "c39d98e2d47d1b5c937cacb5eda5a6fdca4e1b2aafd2f8438c61a63740a4cc36",
+        "width": 1600,
+        "height": 1274,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-010a",
+      "scan": 10,
+      "note": "Upper left fine-line wave band.",
+      "box_pixels": [
+        312,
+        1327,
+        2818,
+        1869
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2506,
+        542
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "844f37d5f79e4f673324b46cc973a931e701f11290fc269687094ad85db8bcf9",
+      "sha256": "45b96876f79787550ccd16a64f7c13cb0d522e40bea5fdb3fa11da2c9d0a7a21",
+      "source_scan_sha256": "2764d161b0cf9cc1bfeddda95e6bc15628268d1405eefd305931216c4d5d3294",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-010a.jpg",
+        "bytes": 97263,
+        "sha256": "b7a0305bd4c45e224ba3cc1aee330840a8dd7c08ebd23a4d7170ba0d82b8590d",
+        "width": 1600,
+        "height": 346,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-010b",
+      "scan": 10,
+      "note": "Middle left rolling-wave group.",
+      "box_pixels": [
+        367,
+        2151,
+        2818,
+        3090
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2451,
+        939
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "ee990f78fbb642a765341596312ecbd91156dd627a1c33861f8a4a42b420f077",
+      "sha256": "310ee0cd5d6236795d3e257e38659419797c5ec325ba7394e69ca93a4e31ac80",
+      "source_scan_sha256": "2764d161b0cf9cc1bfeddda95e6bc15628268d1405eefd305931216c4d5d3294",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-010b.jpg",
+        "bytes": 110016,
+        "sha256": "27831e9301d7e8c7722a98e4cf9a0d6adae6d14aba491e794af353cd4bf8317a",
+        "width": 1600,
+        "height": 613,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-010c",
+      "scan": 10,
+      "note": "Lower left coiled current.",
+      "box_pixels": [
+        312,
+        3105,
+        2818,
+        4110
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2506,
+        1005
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "0a1636d0c2edf92debc0c5c48ed5770fba87917c28ca3941c12b9f56aaf67644",
+      "sha256": "c6fe730818d19c71251b841d6a021b6bdac36ece716606306cc5b2544fb85513",
+      "source_scan_sha256": "2764d161b0cf9cc1bfeddda95e6bc15628268d1405eefd305931216c4d5d3294",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-010c.jpg",
+        "bytes": 143678,
+        "sha256": "17cc8545cdffa514d0bb55ae3ba106009550fb0c19a61142e84152096d4740fa",
+        "width": 1600,
+        "height": 642,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-010d",
+      "scan": 10,
+      "note": "Upper right fine-line wave band.",
+      "box_pixels": [
+        3154,
+        1256,
+        5697,
+        1653
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2543,
+        397
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "d80cddec0a4f9a3a65dd86294507bfe67964f622c495fa476d3b80a24f759054",
+      "sha256": "a5381bd56077365ce70511b1c748954caa3c22c416fa897c4d491394321582a1",
+      "source_scan_sha256": "2764d161b0cf9cc1bfeddda95e6bc15628268d1405eefd305931216c4d5d3294",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-010d.jpg",
+        "bytes": 57872,
+        "sha256": "f8251225c1b4e62401d664786395af96cee7ddd629ac7b98daa92e77c0e6bd76",
+        "width": 1600,
+        "height": 250,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-010e",
+      "scan": 10,
+      "note": "Middle right rolling lines, kept as one field.",
+      "box_pixels": [
+        3154,
+        2236,
+        5697,
+        3397
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2543,
+        1161
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "1b3da7f9a16d73b5e55bf2d11c4274389593e708c2f64e745cc7fbc2bf783bc5",
+      "sha256": "b05aad0bbad8425614747f9b3d4d50d394e2db847812030c3a61c24a96593866",
+      "source_scan_sha256": "2764d161b0cf9cc1bfeddda95e6bc15628268d1405eefd305931216c4d5d3294",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-010e.jpg",
+        "bytes": 143107,
+        "sha256": "34305c5776f07d75b4ce2b53aa3e136ff61b0aea10554a0fede33c13d4dc4a4a",
+        "width": 1600,
+        "height": 730,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-010f",
+      "scan": 10,
+      "note": "Lower right long current ribbon.",
+      "box_pixels": [
+        3148,
+        3482,
+        5697,
+        4271
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2549,
+        789
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "943018cf074f5c80f981ca4f854a8a5437ad61f4bbcc0b23e0000723b2a94b4d",
+      "sha256": "22391f710175f57e3dec65c7a946cb19e115080a142ed293d8e1c03c9cbf569b",
+      "source_scan_sha256": "2764d161b0cf9cc1bfeddda95e6bc15628268d1405eefd305931216c4d5d3294",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-010f.jpg",
+        "bytes": 92611,
+        "sha256": "0c2bbbc03866c03c645c83401d4f1be059a15695180a0be0ea80ae16c46f9b3d",
+        "width": 1600,
+        "height": 495,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-011a",
+      "scan": 11,
+      "note": "Upper left open-center disk.",
+      "box_pixels": [
+        1492,
+        1311,
+        2457,
+        2274
+      ],
+      "polygon_normalized": null,
+      "size": [
+        965,
+        963
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "6a5fe583118d298f6d805bb993502e2c724ee60f101fc908142f9761b76c0027",
+      "sha256": "de829bd83cea4b5f790336258eb7406aa59485bb45a56d71626ca1bbe89d995c",
+      "source_scan_sha256": "3a2c623bc8f12c65ee252b48827261e60984a3963e065773067496f1d570142e",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-011a.jpg",
+        "bytes": 125235,
+        "sha256": "3737aae735012abe3d955a4a6b68eb3561e9dc1b1fc954e00d2dba69b05e85ed",
+        "width": 965,
+        "height": 963,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-011b",
+      "scan": 11,
+      "note": "Middle left arc-filled disk.",
+      "box_pixels": [
+        538,
+        1961,
+        1443,
+        2859
+      ],
+      "polygon_normalized": null,
+      "size": [
+        905,
+        898
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "b8d817004b2fd82dfe88bb0a480f0efc14dca67ff3331553086c00a9509e2887",
+      "sha256": "333f58204443c1c541098079b1ae304b2ca900dfc16760a675b42ed5f22aba6e",
+      "source_scan_sha256": "3a2c623bc8f12c65ee252b48827261e60984a3963e065773067496f1d570142e",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-011b.jpg",
+        "bytes": 141630,
+        "sha256": "603717f576f61022bf17e4a1b493b37f9b1001d6f0df1220e668c0e79ca2945e",
+        "width": 905,
+        "height": 898,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-011c",
+      "scan": 11,
+      "note": "Small left open-center disk.",
+      "box_pixels": [
+        1797,
+        2818,
+        2280,
+        3277
+      ],
+      "polygon_normalized": null,
+      "size": [
+        483,
+        459
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "3ef0bd8625f0c601d66e7125c33201e95a2d568af4aa757310d5264d291aa0ec",
+      "sha256": "3627c5886539f3684202a4ff976020542333e2099b17eb089fe42a0554b9dbdc",
+      "source_scan_sha256": "3a2c623bc8f12c65ee252b48827261e60984a3963e065773067496f1d570142e",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-011c.jpg",
+        "bytes": 48294,
+        "sha256": "03047603956cce9622abf0d3ff80b2e2a0afa351a9a714798cd35c2644bfa388",
+        "width": 483,
+        "height": 459,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-011d",
+      "scan": 11,
+      "note": "First left rectangular strip.",
+      "box_pixels": [
+        685,
+        3237,
+        1479,
+        3434
+      ],
+      "polygon_normalized": null,
+      "size": [
+        794,
+        197
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "51855156187334a6e96eb0ebbc308e459b4b31e643e7aebd12d756e143d1cd69",
+      "sha256": "cdbde63783f7c78b206191990f0e54a4a67cd4338deda34162b7ad43f1234030",
+      "source_scan_sha256": "3a2c623bc8f12c65ee252b48827261e60984a3963e065773067496f1d570142e",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-011d.jpg",
+        "bytes": 45945,
+        "sha256": "97f8ca86073465c6cb1396a62363d8e4b5cb68b7bbc4506c7ad0e67664ddf716",
+        "width": 794,
+        "height": 197,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-011e",
+      "scan": 11,
+      "note": "Second left rectangular strip.",
+      "box_pixels": [
+        1265,
+        3585,
+        2091,
+        3787
+      ],
+      "polygon_normalized": null,
+      "size": [
+        826,
+        202
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "97d8dc6c78f183a8cc33443b06b0ed766b86a33a1db1d5c4a4616fb572c6d5d0",
+      "sha256": "f354b622b7f3617555553a973cb415d25333dd5e2c2592ea271ffc26f042d69d",
+      "source_scan_sha256": "3a2c623bc8f12c65ee252b48827261e60984a3963e065773067496f1d570142e",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-011e.jpg",
+        "bytes": 46737,
+        "sha256": "21d6edce28b52a8b3049e0ee56a3772f6cbdb47f839fca15813fc9825588836a",
+        "width": 826,
+        "height": 202,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-011f",
+      "scan": 11,
+      "note": "Lower left isolated current line.",
+      "box_pixels": [
+        416,
+        4003,
+        2519,
+        4271
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2103,
+        268
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "9aa89c08578348d384f34806b420c2a26fb5ed86d6f68e52f322597920c24a98",
+      "sha256": "786513030fd82e06e94531013ad53f8dcfc61504728ef1ff861fad525e37a3ff",
+      "source_scan_sha256": "3a2c623bc8f12c65ee252b48827261e60984a3963e065773067496f1d570142e",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-011f.jpg",
+        "bytes": 44178,
+        "sha256": "fc2a7e8ebe4232da90ccbe64e17dc7a6eb0c7989e59101ffff5218d70acc710e",
+        "width": 1600,
+        "height": 204,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-011g",
+      "scan": 11,
+      "note": "Two touching upper-right small curl disks, retained together.",
+      "box_pixels": [
+        3295,
+        1371,
+        3821,
+        1845
+      ],
+      "polygon_normalized": null,
+      "size": [
+        526,
+        474
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "e36ddaf155826953d4531be318e29711ac7299d7d027fce914ac34f2abd9a2b5",
+      "sha256": "feec42e2ab75f46a175a3ad3957bfc905835d0a4435e58be14eca686d5179348",
+      "source_scan_sha256": "3a2c623bc8f12c65ee252b48827261e60984a3963e065773067496f1d570142e",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-011g.jpg",
+        "bytes": 43603,
+        "sha256": "4104b9dd5e5719f379ad050d7380e4c236d94b9d05ca5d3eda5900c87c9ca1f8",
+        "width": 526,
+        "height": 474,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-011h",
+      "scan": 11,
+      "note": "Upper right bold spiral disk.",
+      "box_pixels": [
+        4175,
+        1235,
+        5349,
+        2385
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1174,
+        1150
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "55e133a38c43452d74b873e30efc1defb0cc3b24c5db18f72eedcf0848827f50",
+      "sha256": "37037a1b903e5b920db1beaf5dbd513c16634f45919331b3139928b456026592",
+      "source_scan_sha256": "3a2c623bc8f12c65ee252b48827261e60984a3963e065773067496f1d570142e",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-011h.jpg",
+        "bytes": 275472,
+        "sha256": "4edbce39875299afd209278b97cc34909574b6fc3e566febb12b47b59141e2db",
+        "width": 1174,
+        "height": 1150,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-011i",
+      "scan": 11,
+      "note": "Middle right repeated-arch disk.",
+      "box_pixels": [
+        3387,
+        2183,
+        4163,
+        2909
+      ],
+      "polygon_normalized": null,
+      "size": [
+        776,
+        726
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "e164085b975efd2a2f42bea11a512d459ab57ce8b76f04eff4de3517916e5e2f",
+      "sha256": "5588f910f2a3788f0511bfdbb58e77ca7ff6c35bd9cb04562543b33e305a5e45",
+      "source_scan_sha256": "3a2c623bc8f12c65ee252b48827261e60984a3963e065773067496f1d570142e",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-011i.jpg",
+        "bytes": 108264,
+        "sha256": "5a4b35f9a40022b686fc27b8274a86d0a2ab0238466bc1fd9bc912b615a31b20",
+        "width": 776,
+        "height": 726,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-011j",
+      "scan": 11,
+      "note": "Lower right breaking-wave disk.",
+      "box_pixels": [
+        4511,
+        2798,
+        5343,
+        3585
+      ],
+      "polygon_normalized": null,
+      "size": [
+        832,
+        787
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "104faa4f6030bb697e573e2c9837cde8ae07d00b3fe4f6eaf4d8ca4b1ec75e08",
+      "sha256": "258f337c848dcaf443820bac3715d35abf642bea211cadc40386f1227692dbd5",
+      "source_scan_sha256": "3a2c623bc8f12c65ee252b48827261e60984a3963e065773067496f1d570142e",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-011j.jpg",
+        "bytes": 127468,
+        "sha256": "d027ca8bd0db4a937b69cc2013311c2a9d2cd6fecdde3ff4d20095f5ae15f2ea",
+        "width": 832,
+        "height": 787,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-011k",
+      "scan": 11,
+      "note": "Small three-lobed curl form.",
+      "box_pixels": [
+        3821,
+        3192,
+        4249,
+        3590
+      ],
+      "polygon_normalized": null,
+      "size": [
+        428,
+        398
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "b9ee62d7c1488bdc4229aeaeb62bd31af3812bad637000737613999cbdcc2abe",
+      "sha256": "ee3dcc675b247aa2cc65f8fb61121480b43dc48a28b322fd2d8e5e2f68d627f1",
+      "source_scan_sha256": "3a2c623bc8f12c65ee252b48827261e60984a3963e065773067496f1d570142e",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-011k.jpg",
+        "bytes": 32753,
+        "sha256": "40af4547aff4b426b9e4eb5730d231a4dae935545d8f38b2b19070420e9d28e5",
+        "width": 428,
+        "height": 398,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-011l",
+      "scan": 11,
+      "note": "Small isolated circular curl.",
+      "box_pixels": [
+        3576,
+        3539,
+        3808,
+        3776
+      ],
+      "polygon_normalized": null,
+      "size": [
+        232,
+        237
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "08b433d426798ecee6b3eff7d79bf153515aa881034594c3b7d7ddda4bd2bb07",
+      "sha256": "95c045b04f09e8562c979982286f29ed44eb1ad771ce5fe3add6b5ade7d0eee8",
+      "source_scan_sha256": "3a2c623bc8f12c65ee252b48827261e60984a3963e065773067496f1d570142e",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-011l.jpg",
+        "bytes": 9065,
+        "sha256": "513863e31202782f093ade4244a13f86dc51bb630de72ab178e12d3e33f32c2e",
+        "width": 232,
+        "height": 237,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-011m",
+      "scan": 11,
+      "note": "Lower right group of flowing curls.",
+      "box_pixels": [
+        3686,
+        3761,
+        4915,
+        4286
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1229,
+        525
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "ca838ac627d2eb00339f474ca2f022f8bd0030127374b40621cb873aba87e840",
+      "sha256": "b23dfdd9156a319bc30d2b51f93afcc227a722f03e871cef5cffa5a735e5aed1",
+      "source_scan_sha256": "3a2c623bc8f12c65ee252b48827261e60984a3963e065773067496f1d570142e",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-011m.jpg",
+        "bytes": 61817,
+        "sha256": "a88feb995982367112b6969496bd28945ef32283d91a96c5efe42177cf32c835",
+        "width": 1229,
+        "height": 525,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-012a",
+      "scan": 12,
+      "note": "Upper left foam-and-curl disk.",
+      "box_pixels": [
+        721,
+        1158,
+        2109,
+        2549
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1388,
+        1391
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "6f1987e9b35ffade47449504f18bbb9dffe9fe76f31a00aa98e4ee70364e79fa",
+      "sha256": "99efe298d76a7fc2f493daab62cb3cb1335189b1f7823ec75a2a702e0a06ce2b",
+      "source_scan_sha256": "a36a2a9254c02fe0f0bf3588c19e7adc54d751b5deedd7925f2fba6e1f27a812",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-012a.jpg",
+        "bytes": 261239,
+        "sha256": "71b8a4c14f37faf462fa27c0cd636b7ee21c527d5f1549426b4c2e6b5f56ab70",
+        "width": 1388,
+        "height": 1391,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-012b",
+      "scan": 12,
+      "note": "Middle left rimmed curl disk.",
+      "box_pixels": [
+        660,
+        2757,
+        1571,
+        3642
+      ],
+      "polygon_normalized": null,
+      "size": [
+        911,
+        885
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "bd2523719e4c6c35264855730df5119ef4e883d95815e82343aa23d9d2ba3628",
+      "sha256": "650e94034ae61c915157e40303eed3c94a2c264e49ecb057a4a4b1d3fefd8035",
+      "source_scan_sha256": "a36a2a9254c02fe0f0bf3588c19e7adc54d751b5deedd7925f2fba6e1f27a812",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-012b.jpg",
+        "bytes": 113204,
+        "sha256": "4d9c3fe3997988de9e9b71708952a97dd7d88a8dc2aa73a683d0c32b88b0e0e4",
+        "width": 911,
+        "height": 885,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-012c",
+      "scan": 12,
+      "note": "Lower left spiral-and-drop disk.",
+      "box_pixels": [
+        1675,
+        3455,
+        2543,
+        4309
+      ],
+      "polygon_normalized": null,
+      "size": [
+        868,
+        854
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "8960549de9a52607753572b62edbcb0388b537c8578693b43a62e0bdcb252c25",
+      "sha256": "608f80e7b1d075296c4e97796c625094726063aa6328ffc0078666412dee71dc",
+      "source_scan_sha256": "a36a2a9254c02fe0f0bf3588c19e7adc54d751b5deedd7925f2fba6e1f27a812",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-012c.jpg",
+        "bytes": 107368,
+        "sha256": "a026bb89b44303a1476d24d41bc8d38f29b12247fb6bd464c459d1a5e813f0d9",
+        "width": 868,
+        "height": 854,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-012d",
+      "scan": 12,
+      "note": "Central foam medallion crosses the gutter; its two visible halves are kept together.",
+      "box_pixels": [
+        2103,
+        2281,
+        3338,
+        3252
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1235,
+        971
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "bbead3fd1dcbcc8a54af15ad37e16ced3f23459c0382689a895ac46bfcfcb4ba",
+      "sha256": "ad0cd23a4acb04c4bc91a5646c2d88e919f0a7678ced1a31467b08f690aabb8f",
+      "source_scan_sha256": "a36a2a9254c02fe0f0bf3588c19e7adc54d751b5deedd7925f2fba6e1f27a812",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-012d.jpg",
+        "bytes": 135010,
+        "sha256": "88f5028c75170b592daf9497a6df926632613731ad20f59cf4465b5666acfe72",
+        "width": 1235,
+        "height": 971,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-012e",
+      "scan": 12,
+      "note": "Large upper right wave-filled disk.",
+      "box_pixels": [
+        3539,
+        1224,
+        5355,
+        3025
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1816,
+        1801
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "cea40dbedd08d241bba914caaeaf755d714c6b300e470f5282b6c343023327e9",
+      "sha256": "20973adae6782e879f8a24f1d3177e31fba178bb02158544d4d1cf5ceed4abc3",
+      "source_scan_sha256": "a36a2a9254c02fe0f0bf3588c19e7adc54d751b5deedd7925f2fba6e1f27a812",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-012e.jpg",
+        "bytes": 772853,
+        "sha256": "c371860e29fe386001ed03b713c223d406b828667d2d0bdd42a40da135e43695",
+        "width": 1600,
+        "height": 1587,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-012f",
+      "scan": 12,
+      "note": "Lower right interlaced-arc disk.",
+      "box_pixels": [
+        3264,
+        3146,
+        4230,
+        4112
+      ],
+      "polygon_normalized": null,
+      "size": [
+        966,
+        966
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "904e884011fdeb99b6302ed7687027d55a5d771b9095294ffa8f4d564ff10a95",
+      "sha256": "31e2efb55f428545c899d24c99ddae833f07cc91d67a789f7d78631591ea8be1",
+      "source_scan_sha256": "a36a2a9254c02fe0f0bf3588c19e7adc54d751b5deedd7925f2fba6e1f27a812",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-012f.jpg",
+        "bytes": 207730,
+        "sha256": "9c19139f42a60df4768cec0fa690dd1b10258202ad6ce309b69d5c4bb70f0411",
+        "width": 966,
+        "height": 966,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-012g",
+      "scan": 12,
+      "note": "Small lower right open-center disk.",
+      "box_pixels": [
+        4585,
+        3692,
+        5129,
+        4234
+      ],
+      "polygon_normalized": null,
+      "size": [
+        544,
+        542
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "7041062153f7c51c4b85e4770e25ec62792f9790a0bc8848a77b78dea74c93ee",
+      "sha256": "e7d0eb91c6db971f6576f0b9112c5c7363bb02afbcec6c6cb93c13fbeca956ca",
+      "source_scan_sha256": "a36a2a9254c02fe0f0bf3588c19e7adc54d751b5deedd7925f2fba6e1f27a812",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-012g.jpg",
+        "bytes": 45334,
+        "sha256": "f4acb8d9ff679a0cf8acd000509da8bde6155ec52c2c0299c4f61a4d365a3c6d",
+        "width": 544,
+        "height": 542,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-013a",
+      "scan": 13,
+      "note": "Upper left foam disk.",
+      "box_pixels": [
+        956,
+        1190,
+        2145,
+        2365
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1189,
+        1175
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "4fcc20228bccd10b6be5cf1c0c34ab18fc4f6108c0e45dffeec380cfd5ecc3bf",
+      "sha256": "14b41cc67e15ab9308a0cef819096fbcb8e48110748a1f88494761c1f39dd7ff",
+      "source_scan_sha256": "2f9959042177f7ced6089e77c09e4aff476db642a810bc2cb94ac9e909bb2976",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-013a.jpg",
+        "bytes": 204798,
+        "sha256": "298c734fde1e4e6737cec90f89805a1b9fe4c60b359abf3413307e92a98edcbb",
+        "width": 1189,
+        "height": 1175,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-013b",
+      "scan": 13,
+      "note": "Upper right rimmed foam disk.",
+      "box_pixels": [
+        4235,
+        1291,
+        5253,
+        2284
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1018,
+        993
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "7cf1db7c229d850dde05bed29caa0badaee80eb5aa033fd31a1f0ecae3d4f83f",
+      "sha256": "0afdff102708831fa7879488eb0aff00a6979e0dfd38417201ca9be000c3db5e",
+      "source_scan_sha256": "2f9959042177f7ced6089e77c09e4aff476db642a810bc2cb94ac9e909bb2976",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-013b.jpg",
+        "bytes": 131722,
+        "sha256": "6f1bab8ffa73ec49a4123ac317261ae50ce16a658d827063b8aa0d59fae59e67",
+        "width": 1018,
+        "height": 993,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-013c",
+      "scan": 13,
+      "note": "Middle left broken-arc repeat.",
+      "box_pixels": [
+        662,
+        2617,
+        1520,
+        3247
+      ],
+      "polygon_normalized": null,
+      "size": [
+        858,
+        630
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "6b83b26997e9426e0ec1bdbd786303629ee75650b8b90eae4e09e816bafc81b9",
+      "sha256": "63605842d36a2e24845ba8bbc0d5783685bae09f01650810d4203ef9dea6810c",
+      "source_scan_sha256": "2f9959042177f7ced6089e77c09e4aff476db642a810bc2cb94ac9e909bb2976",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-013c.jpg",
+        "bytes": 77261,
+        "sha256": "f20a396477824b1a2725202ef2cdf2afc975d180dfb563f28be5e07e79ba33f7",
+        "width": 858,
+        "height": 630,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-013d",
+      "scan": 13,
+      "note": "Central scroll composition crosses the gutter; mask excludes nearby disks. Fold-hidden linework is not reconstructed.",
+      "box_pixels": [
+        1759,
+        2037,
+        4401,
+        3358
+      ],
+      "polygon_normalized": [
+        [
+          429,
+          404
+        ],
+        [
+          562,
+          404
+        ],
+        [
+          562,
+          445
+        ],
+        [
+          674,
+          445
+        ],
+        [
+          674,
+          486
+        ],
+        [
+          718,
+          486
+        ],
+        [
+          718,
+          666
+        ],
+        [
+          287,
+          666
+        ],
+        [
+          287,
+          507
+        ],
+        [
+          365,
+          507
+        ],
+        [
+          365,
+          446
+        ],
+        [
+          429,
+          446
+        ]
+      ],
+      "size": [
+        2642,
+        1321
+      ],
+      "mode": "RGBA",
+      "pixel_sha256": "4a3c2e87fcd90a860e743e60a98cbaae513c5017ad8388d807b85bf2ebf5b920",
+      "sha256": "96f664b8c915bd441cb5f2fbb68a08d5b876733be14708c1cbaea8776e3aaad6",
+      "source_scan_sha256": "2f9959042177f7ced6089e77c09e4aff476db642a810bc2cb94ac9e909bb2976",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-013d.jpg",
+        "bytes": 142533,
+        "sha256": "df94f3f1885806ecd16209efbc36d6d5bc7a5cc19cbbd7c4e390bb31b7586ec4",
+        "width": 1600,
+        "height": 800,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-013e",
+      "scan": 13,
+      "note": "Lower left crest composition.",
+      "box_pixels": [
+        484,
+        3499,
+        2488,
+        4145
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2004,
+        646
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "858637cf1f06d14e3a7529e776e58ac64c6a2ede8ed2bec08396fa82f705ef23",
+      "sha256": "a7a0957c901a5ee0c4e38093a7d73e6fd94fe0af45b89317b9bcf31c8095728f",
+      "source_scan_sha256": "2f9959042177f7ced6089e77c09e4aff476db642a810bc2cb94ac9e909bb2976",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-013e.jpg",
+        "bytes": 108302,
+        "sha256": "9e9f47b778a3a8be76eef509ea65a3454fd8a76f63fe02c1a5246a2839c25262",
+        "width": 1600,
+        "height": 516,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-013f",
+      "scan": 13,
+      "note": "Middle right isolated ripple group.",
+      "box_pixels": [
+        4431,
+        2914,
+        5522,
+        3449
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1091,
+        535
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "0c2695b0275e34ad19ff556f2c599bef141e6c560fd32e61503bc2b3e8759ae4",
+      "sha256": "c138773a58c1b38a29f0981f4a78ab8b8863896a7028c95e84da1c3498b0b681",
+      "source_scan_sha256": "2f9959042177f7ced6089e77c09e4aff476db642a810bc2cb94ac9e909bb2976",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-013f.jpg",
+        "bytes": 92757,
+        "sha256": "e57beadc49023b9eaf78a00475ddf37efda850a464fe50016383bf35838958ca",
+        "width": 1091,
+        "height": 535,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-013g",
+      "scan": 13,
+      "note": "Lower right open double-line curl.",
+      "box_pixels": [
+        3371,
+        3474,
+        4725,
+        4195
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1354,
+        721
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "788ad188ccffeee1b83f1e480edd399911f1c89f35db2326b63301ac8db24293",
+      "sha256": "03cdc0bd67fbc6818936cf6f5466ebad6977188d6ed5a221c41a7e34b823d973",
+      "source_scan_sha256": "2f9959042177f7ced6089e77c09e4aff476db642a810bc2cb94ac9e909bb2976",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-013g.jpg",
+        "bytes": 83292,
+        "sha256": "4b26bbf1c148e96fa7d7c31eac4bcd010ff1b7b481bd9b0eafcd8b37e781c1f5",
+        "width": 1354,
+        "height": 721,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-014a",
+      "scan": 14,
+      "note": "Left framed field of irregular foam and spray; the repeated composition is kept together.",
+      "box_pixels": [
+        313,
+        955,
+        2825,
+        4603
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2512,
+        3648
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "603563129b2fcb7088b25abb436ff90781e1841806835b6a7e06e8f6e5317118",
+      "sha256": "3fd94da343fabeca44fcbbfcd36e5e7c61f61f9e68f96fb0710ac1e0830d8d63",
+      "source_scan_sha256": "9c6de48e5d8b4eda50b75ab50b8e18d8f24aff8f7c4c108fd89cc96212d8022f",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-014a.jpg",
+        "bytes": 188656,
+        "sha256": "88b4e4569954893af1c11ceb22b5cff497eb1251703aca6b70395912722ceaca",
+        "width": 1102,
+        "height": 1600,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-014b",
+      "scan": 14,
+      "note": "Right framed field of irregular foam and spray; the repeated composition is kept together.",
+      "box_pixels": [
+        3089,
+        955,
+        5608,
+        4603
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2519,
+        3648
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "144747e8ef489d1ed9c75c746f47c6a74cca9c628b8d7715aa71e8714e3d2876",
+      "sha256": "a6847eb887f7c3a7983a9576946b4e67921ea9179058e40d0a9b844eb321332d",
+      "source_scan_sha256": "9c6de48e5d8b4eda50b75ab50b8e18d8f24aff8f7c4c108fd89cc96212d8022f",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-014b.jpg",
+        "bytes": 220087,
+        "sha256": "714fc504674ba0e759ce457fb9bfafe599bb0cea0a7f542ef02db7f8287b3ecc",
+        "width": 1105,
+        "height": 1600,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-015a",
+      "scan": 15,
+      "note": "Upper pointed repeat crosses the gutter; both visible portions are retained.",
+      "box_pixels": [
+        2292,
+        1477,
+        4149,
+        1770
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1857,
+        293
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "52d8310ba4d16f68a67e9c5bc5d3ea9cc0bc6828421dadc4ee017e0af869b1a3",
+      "sha256": "b79ffe7038fd518cc6905646901f62126e002637efb99e269448179e08dc1959",
+      "source_scan_sha256": "a32f3012966f0111139d4e9c7300b0f837b85506feaa73fa015e8842bf1b3ed5",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-015a.jpg",
+        "bytes": 88639,
+        "sha256": "bb1ee32b7d9426c46928f8a11caf22c7a3ad88d65ff396500c7869462d0ac92c",
+        "width": 1600,
+        "height": 252,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-015b",
+      "scan": 15,
+      "note": "Second arched repeat crosses the gutter; both visible portions are retained.",
+      "box_pixels": [
+        1967,
+        1966,
+        3469,
+        2269
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1502,
+        303
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "b711bcb09f8be89e5a4baecd1068010ae3444a348a80ad6cff1244f693ffc8c0",
+      "sha256": "a5290446cc1c07b81ed35572758fc9f67c2e2862db0466ec9f7941d60cfbcb7e",
+      "source_scan_sha256": "a32f3012966f0111139d4e9c7300b0f837b85506feaa73fa015e8842bf1b3ed5",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-015b.jpg",
+        "bytes": 88956,
+        "sha256": "717a225cf180019901d501e24d655151478a1bf685058051e6ef214c262dc73d",
+        "width": 1502,
+        "height": 303,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-015c",
+      "scan": 15,
+      "note": "Upper left rising-water emblem.",
+      "box_pixels": [
+        674,
+        1745,
+        1643,
+        2239
+      ],
+      "polygon_normalized": null,
+      "size": [
+        969,
+        494
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "630368fc4e68fa559791b4ee4bb45806570ccd868043a374229dcff5a1a1e53c",
+      "sha256": "a5fadaab5c8fd5d77e5ec7664093d262bb6d09146891600bdb5bfc697fff2e77",
+      "source_scan_sha256": "a32f3012966f0111139d4e9c7300b0f837b85506feaa73fa015e8842bf1b3ed5",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-015c.jpg",
+        "bytes": 100832,
+        "sha256": "2321d2849bd60f8af709b419862d6dcdf1e1d793d41b65dee69ecdbc08baa91d",
+        "width": 969,
+        "height": 494,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-015d",
+      "scan": 15,
+      "note": "Middle left fountain-and-drop emblem.",
+      "box_pixels": [
+        1073,
+        2687,
+        2685,
+        3237
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1612,
+        550
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "7c883b136d5099c3f02ab67154b1b262dd77d1ae91e42fc152342a90a0bca3c3",
+      "sha256": "d3a695f4bd27dc3cd8189f63f8b47ac2a2822139d321d411ce1bfeb5c45e80c5",
+      "source_scan_sha256": "a32f3012966f0111139d4e9c7300b0f837b85506feaa73fa015e8842bf1b3ed5",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-015d.jpg",
+        "bytes": 133937,
+        "sha256": "c724bc0187f5dbfa9f218e946e6c5c5c07182e205af8c8001ac9d88742d0af46",
+        "width": 1600,
+        "height": 546,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-015e",
+      "scan": 15,
+      "note": "Lower left pointed wave group.",
+      "box_pixels": [
+        466,
+        3615,
+        2243,
+        4059
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1777,
+        444
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "28c64045ae35564334f9faf656f802e2efc59b5fd0efc460996ccf1628a8828e",
+      "sha256": "6a5c70d77fa609175c2839f59ad844930f8d357337152024a7c510ee99259579",
+      "source_scan_sha256": "a32f3012966f0111139d4e9c7300b0f837b85506feaa73fa015e8842bf1b3ed5",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-015e.jpg",
+        "bytes": 108447,
+        "sha256": "b382d3b681eaa99fe9d39bdc6419460bcce28dac408dd5a96bbf53b876250a0a",
+        "width": 1600,
+        "height": 400,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-015f",
+      "scan": 15,
+      "note": "Upper right pointed crest emblem.",
+      "box_pixels": [
+        4278,
+        1689,
+        5308,
+        2279
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1030,
+        590
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "c7415c8a9412ede8e6f91399f2dff22cc4760b1b1ba37cedeb2585ecefa84395",
+      "sha256": "48b76402f3cbab0f033af45fa71a2b6769909beebfec9c812c8bee7defb1cd06",
+      "source_scan_sha256": "a32f3012966f0111139d4e9c7300b0f837b85506feaa73fa015e8842bf1b3ed5",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-015f.jpg",
+        "bytes": 93754,
+        "sha256": "740e10e6d015ffd1917310bb12f16516990866bfd16b667867de39614253e352",
+        "width": 1030,
+        "height": 590,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-015g",
+      "scan": 15,
+      "note": "Middle right rising-water scroll.",
+      "box_pixels": [
+        3175,
+        2627,
+        4799,
+        3277
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1624,
+        650
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "7f0f86c501f749d4a5548416e76b9b1880b0a848125d2696a54d8325812e9089",
+      "sha256": "b0e692bd282eaa4fb6faafe37c8e9674a53ae68ae581810e1fc5d00911d4189d",
+      "source_scan_sha256": "a32f3012966f0111139d4e9c7300b0f837b85506feaa73fa015e8842bf1b3ed5",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-015g.jpg",
+        "bytes": 162125,
+        "sha256": "4db0f8a894970b917b691209bceeb250ae7d8ab80ad3b42e41006f2752ff8318",
+        "width": 1600,
+        "height": 640,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-015h",
+      "scan": 15,
+      "note": "Lower right fountain-and-drop emblem.",
+      "box_pixels": [
+        3794,
+        3681,
+        5259,
+        4104
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1465,
+        423
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "53092e39a76f564ee3eed91a0b38b0e79db2f861705b60a9bef771fb298db734",
+      "sha256": "75ed47bf5c3afb584bacf8d625c3c9eebf46622235cbe808ce2d6c12f69c6949",
+      "source_scan_sha256": "a32f3012966f0111139d4e9c7300b0f837b85506feaa73fa015e8842bf1b3ed5",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-015h.jpg",
+        "bytes": 104042,
+        "sha256": "dd9000612c40acd4ef4ce9d16ce761a33d87f5515f892082f0de55a19075f7ce",
+        "width": 1465,
+        "height": 423,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-016a",
+      "scan": 16,
+      "note": "Upper left current loop.",
+      "box_pixels": [
+        472,
+        1370,
+        1912,
+        2086
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1440,
+        716
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "f66b22e9ff7d5bb338b191d35080c82566938deec0fef610e4d351eb24f875ce",
+      "sha256": "4351a21a29ed9c2f5e73192042d160df0c0718c47a22a4878193aa461cca4c50",
+      "source_scan_sha256": "76a1b68d8e8a72cd475a95a72d07c11fa6cdc588d8da54fe179c7556de44d63f",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-016a.jpg",
+        "bytes": 124941,
+        "sha256": "c20f00658ea94f46a0ed1f595b957c357a38676b427186dd1f7e223cfaba76e8",
+        "width": 1440,
+        "height": 716,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-016b",
+      "scan": 16,
+      "note": "Small detailed left crest.",
+      "box_pixels": [
+        1833,
+        2258,
+        2537,
+        2522
+      ],
+      "polygon_normalized": null,
+      "size": [
+        704,
+        264
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "06736a654c6fb5ec0505312ece2240058fe0021dbc0177ea743e23dfddb1c92c",
+      "sha256": "f5bea469945d982d6e8e170f65b08f33391e918dd0c4b625051ac3cf43ce94e7",
+      "source_scan_sha256": "76a1b68d8e8a72cd475a95a72d07c11fa6cdc588d8da54fe179c7556de44d63f",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-016b.jpg",
+        "bytes": 50963,
+        "sha256": "fda14a97f51140c1f1999afc9ff9540869e637470aa4e86a8cc0cd5a9e7c0bbe",
+        "width": 704,
+        "height": 264,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-016c",
+      "scan": 16,
+      "note": "First middle left scroll strip.",
+      "box_pixels": [
+        466,
+        2634,
+        1710,
+        2913
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1244,
+        279
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "df12be397135fb8470981342a1f8b75abd0b24e19986dab71d9a8611daccf944",
+      "sha256": "c118f901a6d708e1d14d8a58a3e88a33c551db2cedfd7784386c0ca177c401de",
+      "source_scan_sha256": "76a1b68d8e8a72cd475a95a72d07c11fa6cdc588d8da54fe179c7556de44d63f",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-016c.jpg",
+        "bytes": 69469,
+        "sha256": "9b41b9e12b192ec2871a344718ac5b8d02d0e6f8e38cf6035efba17f1e66cdfd",
+        "width": 1244,
+        "height": 279,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-016d",
+      "scan": 16,
+      "note": "Second middle left scroll strip.",
+      "box_pixels": [
+        1214,
+        2969,
+        2599,
+        3405
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1385,
+        436
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "b8cd7c9f4983c92464cdb047589587bd4e878df65d215cd2e04bb6129f98de30",
+      "sha256": "c1a2ebbd829b8cd8091070c1b4284870568b4e40a043dbabe4f72cbac9c7016f",
+      "source_scan_sha256": "76a1b68d8e8a72cd475a95a72d07c11fa6cdc588d8da54fe179c7556de44d63f",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-016d.jpg",
+        "bytes": 77853,
+        "sha256": "192a77b976c2031c765f2949bb3988e76d209820b9cf4585ea166fd25af1257f",
+        "width": 1385,
+        "height": 436,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-016e",
+      "scan": 16,
+      "note": "Lower left long scroll strip.",
+      "box_pixels": [
+        423,
+        3497,
+        1814,
+        3842
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1391,
+        345
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "d8ab1f257b5bb08b660b8b1f6e3b03c38c4a5bda9d456122cc512cc4295490a7",
+      "sha256": "7f9529b16a9e4c3991db413ae8829484f1c882fc66e1b59c5e8cef9037860574",
+      "source_scan_sha256": "76a1b68d8e8a72cd475a95a72d07c11fa6cdc588d8da54fe179c7556de44d63f",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-016e.jpg",
+        "bytes": 82942,
+        "sha256": "68ec80f367f460ce7d6d91d18084daca845f0a949949fe2d49f4d34e4af44595",
+        "width": 1391,
+        "height": 345,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-016f",
+      "scan": 16,
+      "note": "Small lower left curl group.",
+      "box_pixels": [
+        1728,
+        3837,
+        2495,
+        4136
+      ],
+      "polygon_normalized": null,
+      "size": [
+        767,
+        299
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "912452767cab1f25de324aba6d86249a6e610ee32e23e624bd9531ac715a517e",
+      "sha256": "151c84e4a3c43f9ea6f97fb6e6d587fecbcbe6130bd221ee9e949e6a57040fbf",
+      "source_scan_sha256": "76a1b68d8e8a72cd475a95a72d07c11fa6cdc588d8da54fe179c7556de44d63f",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-016f.jpg",
+        "bytes": 42338,
+        "sha256": "d5f523d300a751e8a1a84ebaa81036392397fba17a79cfe4b5dd79f159b71482",
+        "width": 767,
+        "height": 299,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-016g",
+      "scan": 16,
+      "note": "Upper right connected ripple field.",
+      "box_pixels": [
+        3169,
+        1096,
+        5553,
+        2522
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2384,
+        1426
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "818d5cd8ee2ba253ccd6c901f624373721eb5a82617b499b583f4b263affcb74",
+      "sha256": "4a0284bf39eae41a439223a65bb14fda9c8281f8aba2315df1484fa2284dd2d3",
+      "source_scan_sha256": "76a1b68d8e8a72cd475a95a72d07c11fa6cdc588d8da54fe179c7556de44d63f",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-016g.jpg",
+        "bytes": 273310,
+        "sha256": "a01bb26ab4cf72990dedcd4195eb8cac59510ccab9a965ba17745ddb15ff6fe4",
+        "width": 1600,
+        "height": 957,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-016h",
+      "scan": 16,
+      "note": "Lower right paired flowing-water ribbons, retained as one arrangement.",
+      "box_pixels": [
+        3169,
+        2603,
+        5424,
+        4415
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2255,
+        1812
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "5e3ed51f93b79daa99ae032e63469387e2a32158e6f46a9f8f61e6224e07e0a9",
+      "sha256": "9a2649322e708d49625919dfdad52fd78f136c6d41359cc1280292ce8d69084b",
+      "source_scan_sha256": "76a1b68d8e8a72cd475a95a72d07c11fa6cdc588d8da54fe179c7556de44d63f",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-016h.jpg",
+        "bytes": 227199,
+        "sha256": "2407357315cb3df886659512d7e28daeb1f2cdc7c76feebb33c4951d10e18c29",
+        "width": 1600,
+        "height": 1286,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-017a",
+      "scan": 17,
+      "note": "Upper left framed repeat with foam rings and arc borders.",
+      "box_pixels": [
+        281,
+        940,
+        2788,
+        2558
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2507,
+        1618
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "83c8a8ff0a784cacbcd31ee2d6c6ae48ff01e2766a4722f67aff465daca61771",
+      "sha256": "838e26640cde13954479513ada17648d18f61d01ed0c29ac1927cf3f1a296803",
+      "source_scan_sha256": "6ae0fd2f350d71e104c85ebc250325299a602811b4c20eba416ca61a932ac605",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-017a.jpg",
+        "bytes": 300432,
+        "sha256": "1a1d0946090a61b4923618e039d162a0363b8584c9e38fd4abccc27b0e007f97",
+        "width": 1600,
+        "height": 1033,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-017b",
+      "scan": 17,
+      "note": "Middle left woven water band.",
+      "box_pixels": [
+        935,
+        2638,
+        2745,
+        3176
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1810,
+        538
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "c983d8463408373d46cf5158248be1f3a6806cfbeede2ac24d932e993ba68cc5",
+      "sha256": "61e886437dec070bdd7629a66b0c6324cb6c277f7b94a1e789294f753def2c88",
+      "source_scan_sha256": "6ae0fd2f350d71e104c85ebc250325299a602811b4c20eba416ca61a932ac605",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-017b.jpg",
+        "bytes": 141800,
+        "sha256": "5b07272c52339290f69a790e108acbae39f4ca998f24ffa93d893ce6d57eca66",
+        "width": 1600,
+        "height": 476,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-017c",
+      "scan": 17,
+      "note": "Lower left flowing band.",
+      "box_pixels": [
+        281,
+        3216,
+        2696,
+        4397
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2415,
+        1181
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "8d26240bd9ef71fe3a71a70da5010cbafcd382832646aa995a1ae98fafd3d5d6",
+      "sha256": "7f06ef1a6b2a7466239f28bbfaa34e808c22184169aaff2269c592c27a8e8959",
+      "source_scan_sha256": "6ae0fd2f350d71e104c85ebc250325299a602811b4c20eba416ca61a932ac605",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-017c.jpg",
+        "bytes": 247720,
+        "sha256": "55b66a576f2500bafc257c4e0989780f18c78cffb4bc48e435bd2ccf7591b21d",
+        "width": 1600,
+        "height": 782,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-017d",
+      "scan": 17,
+      "note": "Upper right rows of narrow crests.",
+      "box_pixels": [
+        3387,
+        1357,
+        5355,
+        2482
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1968,
+        1125
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "78411ce4884064162e8d371040ce27247e7d36221a0a7c407dcc220a71f966ab",
+      "sha256": "6f3c2030bfa3704787b0f1904ac2e12ef0f8e02da8a2a74457e53d2abdf2e444",
+      "source_scan_sha256": "6ae0fd2f350d71e104c85ebc250325299a602811b4c20eba416ca61a932ac605",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-017d.jpg",
+        "bytes": 306703,
+        "sha256": "b63171517ef2ba65d2c3d6a4e6be2c74c6cddc398d137b33725dffc4e50b4441",
+        "width": 1600,
+        "height": 915,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-017e",
+      "scan": 17,
+      "note": "Middle right sparse crest group.",
+      "box_pixels": [
+        3160,
+        2477,
+        5123,
+        2995
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1963,
+        518
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "559c6a9e73baed24b6b6855efb2e24af74bfc42284cefd029ae2136b65f9db9f",
+      "sha256": "20b2864dbb45861b659db12c35fcbb2072f914e40306b0f74e2be62a0a5dfa3e",
+      "source_scan_sha256": "6ae0fd2f350d71e104c85ebc250325299a602811b4c20eba416ca61a932ac605",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-017e.jpg",
+        "bytes": 93279,
+        "sha256": "379a407bcad94462abdbd87d4d24ca9e2f7b4debc7de0332d04a6dd8adc6623b",
+        "width": 1600,
+        "height": 422,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-017f",
+      "scan": 17,
+      "note": "Lower right connected irregular ripple group.",
+      "box_pixels": [
+        3264,
+        3161,
+        5508,
+        4347
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2244,
+        1186
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "2607ceb871fa28ad47585b2bf62d3a3b99fb5f01f71095e7ca3c2458ccc981a6",
+      "sha256": "c140ae9c8e43c5a2428af21791148ad8c380712af3073f0828e07520708d0fce",
+      "source_scan_sha256": "6ae0fd2f350d71e104c85ebc250325299a602811b4c20eba416ca61a932ac605",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-017f.jpg",
+        "bytes": 161404,
+        "sha256": "74a65a02a75b455ed5d2bb7759e8215beb51694e91b1264c76fe9be08585d8bc",
+        "width": 1600,
+        "height": 846,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-018a",
+      "scan": 18,
+      "note": "Upper left broken-stroke water field.",
+      "box_pixels": [
+        342,
+        1013,
+        2769,
+        1845
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2427,
+        832
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "f76847ac418796b5749f6151eeb2a8ccd19a30893eb1a014ef42985807aab0c5",
+      "sha256": "64f4229e4e87a69c8a9e67aa529513483963503058ae7bff2417d5dd5a12380f",
+      "source_scan_sha256": "fc480ac314e798a5d97a3eb9956cdb4afb2a232221c79ea3f003d0d5151475c6",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-018a.jpg",
+        "bytes": 220787,
+        "sha256": "e3ccf245b3833d04d885d3ca613df34243d4d8c4e0d6ecb14d91cd1785a6227c",
+        "width": 1600,
+        "height": 548,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-018b",
+      "scan": 18,
+      "note": "Middle left small crest lines.",
+      "box_pixels": [
+        416,
+        1916,
+        2745,
+        2627
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2329,
+        711
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "0a4cbbb298b72bd150d6bcd40e49fe4378c76262994f9a9d11d04852638916a8",
+      "sha256": "d6586a8b52102921f7e6155b99e1c38b1da468687ca9af93b9931a75f82c5af0",
+      "source_scan_sha256": "fc480ac314e798a5d97a3eb9956cdb4afb2a232221c79ea3f003d0d5151475c6",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-018b.jpg",
+        "bytes": 83729,
+        "sha256": "bbd794e0b0583a653ff53cf48df5ab3a2697c35f7a44d3c18dee817cb90dc211",
+        "width": 1600,
+        "height": 488,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-018c",
+      "scan": 18,
+      "note": "Lower left broad foam cells.",
+      "box_pixels": [
+        281,
+        2839,
+        2794,
+        4644
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2513,
+        1805
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "f8e7f3d15dba151af919e23de6bd9cf513512733e9fae839d46f80662eadb679",
+      "sha256": "632f51e6c13de5b8540b460996d3391a93afbbd4f06f1f0f090632163e04e3e8",
+      "source_scan_sha256": "fc480ac314e798a5d97a3eb9956cdb4afb2a232221c79ea3f003d0d5151475c6",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-018c.jpg",
+        "bytes": 164865,
+        "sha256": "40c975a0e0dcd8874c1654d858503c18e1757425b15db86be259205ae7833720",
+        "width": 1600,
+        "height": 1149,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-018d",
+      "scan": 18,
+      "note": "Upper right diagonal wave field.",
+      "box_pixels": [
+        3136,
+        1064,
+        5648,
+        3217
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2512,
+        2153
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "18edb67cf027b6f443e9ac902044d21d7bfbd6d926413dc4a3550541f85a5ca9",
+      "sha256": "3b45efcc7ddc2d640320214d8c1710f74e2da6e5b3d5b874c6d63c2edced14da",
+      "source_scan_sha256": "fc480ac314e798a5d97a3eb9956cdb4afb2a232221c79ea3f003d0d5151475c6",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-018d.jpg",
+        "bytes": 483779,
+        "sha256": "fdb9ba59b08c844feb72a0ccaae298dfbcee0492affc62c29ca342a28e25e916",
+        "width": 1600,
+        "height": 1371,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-018e",
+      "scan": 18,
+      "note": "Lower right solid foam silhouette.",
+      "box_pixels": [
+        3136,
+        3212,
+        5648,
+        4649
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2512,
+        1437
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "b107dd440820ff89ff1835154a7516fcb1771e431c5a71b83bc6d73c20a430c9",
+      "sha256": "e32f870559d2f18a6eb3e4fcac9c15e87a2b879a66def3e0dc735388d86bc2c4",
+      "source_scan_sha256": "fc480ac314e798a5d97a3eb9956cdb4afb2a232221c79ea3f003d0d5151475c6",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-018e.jpg",
+        "bytes": 256691,
+        "sha256": "e39f0f54804ec71a854d86bf35af363279d88ee3a429b9677d027c6666610557",
+        "width": 1600,
+        "height": 915,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-019a",
+      "scan": 19,
+      "note": "Upper left fine-line crest field.",
+      "box_pixels": [
+        281,
+        877,
+        2788,
+        2309
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2507,
+        1432
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "b29244c8754ccd977b221559c1318bd22c28d31421e7d35d018f70b5da2246a5",
+      "sha256": "0d4e77594be6558b16de0601ee9f435961c5a1d227f8766a9d25c305b2032611",
+      "source_scan_sha256": "1b9898a958e7c3feae03c653967646611e8985911ca738bd03b2e0b1e2c160be",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-019a.jpg",
+        "bytes": 337835,
+        "sha256": "738cc3332c0dfb12dd2c2deaa8e1b14d467ab3f5d7b21760bf4f0a93ce116bd1",
+        "width": 1600,
+        "height": 914,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-019b",
+      "scan": 19,
+      "note": "Lower left layered wave field.",
+      "box_pixels": [
+        281,
+        2566,
+        2788,
+        4452
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2507,
+        1886
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "d1043d1fa6f0e591fd44b4e26ad13992dd286d1ee8d044574d61df89087b0b28",
+      "sha256": "b2a74c9a04dabaf2826ebf5923fe97e31bad5bf8654dc97b7f5dc3aeefba2d86",
+      "source_scan_sha256": "1b9898a958e7c3feae03c653967646611e8985911ca738bd03b2e0b1e2c160be",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-019b.jpg",
+        "bytes": 434088,
+        "sha256": "5af389bd8f034b1dcff10acea28700d98ecf0773b80d5b891f5b4f2d10147b15",
+        "width": 1600,
+        "height": 1204,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-019c",
+      "scan": 19,
+      "note": "Upper right connected ripple field.",
+      "box_pixels": [
+        3124,
+        1225,
+        5624,
+        2294
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2500,
+        1069
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "584bfa11824ebdbf672e5eb15c9dc8b83d5abcbe0333d0b895e073bd44db352b",
+      "sha256": "5b7dd2a45812d004ea4175bc3416c107add3eb2e55cea06ed798b87d763630e8",
+      "source_scan_sha256": "1b9898a958e7c3feae03c653967646611e8985911ca738bd03b2e0b1e2c160be",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-019c.jpg",
+        "bytes": 229517,
+        "sha256": "8e90e25ef837b98d49a2429b55130cdd16c5eaa1e0fe26b4ae74575762d28bdd",
+        "width": 1600,
+        "height": 684,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-019d",
+      "scan": 19,
+      "note": "Lower right breaking-wave composition with spray.",
+      "box_pixels": [
+        3112,
+        2592,
+        5648,
+        4613
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2536,
+        2021
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "07de1e421d103eb3c7b5e03fe6c8c4d8ab746b7a6c6c3c89669c48068d308621",
+      "sha256": "8e6e98ca0ed3af6d0240c23f6e23387e51612a71c2012ca9670e097003d1d691",
+      "source_scan_sha256": "1b9898a958e7c3feae03c653967646611e8985911ca738bd03b2e0b1e2c160be",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-019d.jpg",
+        "bytes": 400455,
+        "sha256": "4a3c2613fffd76aa607222da33824f742a339fdd73cf79dd5d71fa386cd67772",
+        "width": 1600,
+        "height": 1275,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-020a",
+      "scan": 20,
+      "note": "Upper left decorated wave composition.",
+      "box_pixels": [
+        301,
+        933,
+        2811,
+        2965
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2510,
+        2032
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "e0d3830ff01c900d459c15ef82d87941030b86317db1e94f93e47b111106f50f",
+      "sha256": "172af1be2fa70768b3801c5f0c90630a6ce65c160a96026a69b651a6bbb109ec",
+      "source_scan_sha256": "64bb9859b661c8df2bb8f4849cd62aca687f948c987a9628423bfd7c728420d7",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-020a.jpg",
+        "bytes": 407962,
+        "sha256": "15950a11bc1399abe4d505e01b02dc93b9efa9601df3d86560863418479a8a5a",
+        "width": 1600,
+        "height": 1295,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-020b",
+      "scan": 20,
+      "note": "Lower left dense flowing lines.",
+      "box_pixels": [
+        283,
+        3171,
+        2804,
+        4588
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2521,
+        1417
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "f8af4ceafed54c6200d56913ff1b999a813279f170e021d2b8bf50c40da2e092",
+      "sha256": "266cd7b6476f46aa822f2939f49408ea8d89b1c4218dad7a5b5483f0b5e86062",
+      "source_scan_sha256": "64bb9859b661c8df2bb8f4849cd62aca687f948c987a9628423bfd7c728420d7",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-020b.jpg",
+        "bytes": 342704,
+        "sha256": "c2e4d79c7550e2185e565dada029309d76fcbd6d8d7b3a0a3f75699acfc48dbb",
+        "width": 1600,
+        "height": 899,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-020c",
+      "scan": 20,
+      "note": "Upper right diagonal crest.",
+      "box_pixels": [
+        3087,
+        897,
+        5596,
+        2042
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2509,
+        1145
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "a3026d3a23fe699731204af50ce5ea3c82a1ac59e3fba51c7502f0f4b57cc7a1",
+      "sha256": "c7f35db5db06d9e481459fb900030d472053ff0e39562c782d50096afd2446cb",
+      "source_scan_sha256": "64bb9859b661c8df2bb8f4849cd62aca687f948c987a9628423bfd7c728420d7",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-020c.jpg",
+        "bytes": 172765,
+        "sha256": "a8a88b6b0bd0bc1dbcc047437ec015ae2b84b33bf059c7b6967105e06d13fa8e",
+        "width": 1600,
+        "height": 730,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-020d",
+      "scan": 20,
+      "note": "Middle right diagonal crest.",
+      "box_pixels": [
+        3087,
+        2057,
+        5596,
+        3267
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2509,
+        1210
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "594f1c2a63711a45ca0c9d2da370a3516ff865147fd4a8f6f855df94fa2da14f",
+      "sha256": "31b9ac92887ebd51b54cb6e82489c5d2115d8ff5a9a51a87ad25355cc5701957",
+      "source_scan_sha256": "64bb9859b661c8df2bb8f4849cd62aca687f948c987a9628423bfd7c728420d7",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-020d.jpg",
+        "bytes": 163835,
+        "sha256": "e3cd043f0c2fb66f88408cfe1b26818147aa020f895b173fb15c4c0a4d3cee3d",
+        "width": 1600,
+        "height": 772,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-020e",
+      "scan": 20,
+      "note": "First lower right group of overlapping crests.",
+      "box_pixels": [
+        3100,
+        3303,
+        5596,
+        3782
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2496,
+        479
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "3f08c142d96c5db7f528b19aeda1b1fc506268327742b639e2e53dc77fed33ca",
+      "sha256": "da26b8cb59e10284c4e46a287b34a430d3fb7314fc5f11f282afaf5f233e392c",
+      "source_scan_sha256": "64bb9859b661c8df2bb8f4849cd62aca687f948c987a9628423bfd7c728420d7",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-020e.jpg",
+        "bytes": 70801,
+        "sha256": "0e736fb26d948356e87a0d03bf0eb75fb51225f75d4c20421fb6abb3db604fa6",
+        "width": 1600,
+        "height": 307,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-020f",
+      "scan": 20,
+      "note": "Bottom right layered arc field.",
+      "box_pixels": [
+        3536,
+        3812,
+        5566,
+        4618
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2030,
+        806
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "8c57c6e30ff854e70573992a03f71e6155e68ccae5dbda4358145756dc63deda",
+      "sha256": "f65341d272bb5d617a665d8f8f4bea473db7fc61704c01c5a0d63e1d564ce891",
+      "source_scan_sha256": "64bb9859b661c8df2bb8f4849cd62aca687f948c987a9628423bfd7c728420d7",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-020f.jpg",
+        "bytes": 133734,
+        "sha256": "ebbd23748145ad5260c4718d481a685b8c39f47311f770c3ca388f70f0b6c9c1",
+        "width": 1600,
+        "height": 635,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-021a",
+      "scan": 21,
+      "note": "Upper left large-curl panel.",
+      "box_pixels": [
+        275,
+        953,
+        1510,
+        2597
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1235,
+        1644
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "17504cdf33871115d776b4eb0075b00e316bce98e95c0495556cb3cd39f24c93",
+      "sha256": "a2ca963bf0916878f7bffbdb0aafda7fdf5dcc13432760ffb2bde9b65ef2e8ce",
+      "source_scan_sha256": "2e7575e9aefebeaf4178ed15014bc7967e945fc2d6b8264c4513552539027347",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-021a.jpg",
+        "bytes": 478268,
+        "sha256": "f83719bfee9118822eabfe2760ea0158c1d5defeec49b3337bf454c7aab5ec05",
+        "width": 1202,
+        "height": 1600,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-021b",
+      "scan": 21,
+      "note": "Neighboring upper left dense-curl panel.",
+      "box_pixels": [
+        1510,
+        953,
+        2788,
+        2597
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1278,
+        1644
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "9f48dd55dd798ee2f92512832ebb855f23dc139848ffc794690ad69815da328d",
+      "sha256": "1b6b7bf454c5743764d8a337af270e8695cb90d0abde93302d40877cb5919275",
+      "source_scan_sha256": "2e7575e9aefebeaf4178ed15014bc7967e945fc2d6b8264c4513552539027347",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-021b.jpg",
+        "bytes": 627911,
+        "sha256": "a3c148c7b2d042878146c8dc47f2cc81f9e672831542ebfbaf6b22c4c6011226",
+        "width": 1244,
+        "height": 1600,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-021c",
+      "scan": 21,
+      "note": "Lower left fine-line crest field.",
+      "box_pixels": [
+        275,
+        2783,
+        2781,
+        4639
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2506,
+        1856
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "74c2a417c2fe8a15785ca9d260739f949bff42be9d9ee6d542a575d2a6facf44",
+      "sha256": "684a80bd1a5a92ca93eefef5388904944a65ca8041442d9dd495ba0d7559e9b3",
+      "source_scan_sha256": "2e7575e9aefebeaf4178ed15014bc7967e945fc2d6b8264c4513552539027347",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-021c.jpg",
+        "bytes": 496554,
+        "sha256": "0e7dfddf4ecf10a9e803c36deadcee2e753f518a98c26cade5d389bd4b111a38",
+        "width": 1600,
+        "height": 1185,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-021d",
+      "scan": 21,
+      "note": "Upper right repeated foam streaks.",
+      "box_pixels": [
+        3056,
+        943,
+        5581,
+        2728
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2525,
+        1785
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "364b807834224394cb41cf3964a2eecba061cd2772af4e70855cbf8104f85165",
+      "sha256": "0d724c743c3d8acef6489076396d62f568af97992edc36eb1d7c3128a86e6f3b",
+      "source_scan_sha256": "2e7575e9aefebeaf4178ed15014bc7967e945fc2d6b8264c4513552539027347",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-021d.jpg",
+        "bytes": 258242,
+        "sha256": "446295fab865edecf4cce8690af0c1fccdd1f7e54a5fe4f72d102a2d6c72a6ac",
+        "width": 1600,
+        "height": 1131,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-021e",
+      "scan": 21,
+      "note": "Lower right paired curl-and-drop waves.",
+      "box_pixels": [
+        3069,
+        2793,
+        5581,
+        4387
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2512,
+        1594
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "ab0641f742069256477516bf4af7626fed04ec91d2c35013f62a7802eeaed6f7",
+      "sha256": "7d312be1d58cc9ca86f00936d4092b6879ab8a902ca8bff452ffa4c5002065d0",
+      "source_scan_sha256": "2e7575e9aefebeaf4178ed15014bc7967e945fc2d6b8264c4513552539027347",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-021e.jpg",
+        "bytes": 201310,
+        "sha256": "79217f7116703938a85a2a9d9162a913ee897ad3a7e6fde63de7517b598f64d1",
+        "width": 1600,
+        "height": 1015,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-022a",
+      "scan": 22,
+      "note": "Upper left dense ripple field.",
+      "box_pixels": [
+        313,
+        965,
+        2819,
+        2251
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2506,
+        1286
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "6ff2edf81d93b5ccf39b0e331bf1750f35789620f42464ab3d51a3f027533c50",
+      "sha256": "7b5e0ac43270fe922abf2a51d896d3866be4fe398abe8259dbe1c666359239f1",
+      "source_scan_sha256": "719714e884422604695564c74e27f2e7863d52bb29a9eec76582fe30097655ca",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-022a.jpg",
+        "bytes": 385494,
+        "sha256": "e12318be6e9aae9e37ec5e7c73920cb7f4f75366a21e9200cb2ed767bf648d6e",
+        "width": 1600,
+        "height": 821,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-022b",
+      "scan": 22,
+      "note": "Middle left rows of fine crests.",
+      "box_pixels": [
+        515,
+        2317,
+        2819,
+        3397
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2304,
+        1080
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "89cc3a0b6dfcad611efecc46bfa4ea8ca4736151872812ca404455577b15d7d2",
+      "sha256": "bde8dac2a64a9911557a9de9ea92d47919fbec550b84166f0b7a6bfc11a0e4df",
+      "source_scan_sha256": "719714e884422604695564c74e27f2e7863d52bb29a9eec76582fe30097655ca",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-022b.jpg",
+        "bytes": 250836,
+        "sha256": "18754914654efc9e25b3f2685035100061e2ddc4fb31e7c8e56b588aa9b76b6e",
+        "width": 1600,
+        "height": 750,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-022c",
+      "scan": 22,
+      "note": "Lower left small crest bands.",
+      "box_pixels": [
+        368,
+        3573,
+        2396,
+        4206
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2028,
+        633
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "166ec7de3501ca95ac77fc99c0351b95df8b1e20d903c4dd89df9852f76ebd50",
+      "sha256": "2a261882fe0b8265e7edde9a173954e54ecd56f9bbc90a51c73d9f9d494c09de",
+      "source_scan_sha256": "719714e884422604695564c74e27f2e7863d52bb29a9eec76582fe30097655ca",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-022c.jpg",
+        "bytes": 165701,
+        "sha256": "98f636034224f802f142330a5a48d67039c07be5c0ceb92cbd89b84820758076",
+        "width": 1600,
+        "height": 499,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-022d",
+      "scan": 22,
+      "note": "Upper right outlined breaking waves.",
+      "box_pixels": [
+        3095,
+        925,
+        5602,
+        2206
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2507,
+        1281
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "35994e5d69bda0cf7db328cf189d2e7999ed49fc08cf695079eae52457a4c549",
+      "sha256": "7e5e8eac9d152a0ef17b22612ddd941872ddd5c8df4703d698b069fcbd7f2c4d",
+      "source_scan_sha256": "719714e884422604695564c74e27f2e7863d52bb29a9eec76582fe30097655ca",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-022d.jpg",
+        "bytes": 196118,
+        "sha256": "2e31dcda28bae57538d7149555827ba607cdb7638e9767c51ebfe8bc06c29178",
+        "width": 1600,
+        "height": 818,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-022e",
+      "scan": 22,
+      "note": "Middle right linked current ribbon.",
+      "box_pixels": [
+        3095,
+        2206,
+        5602,
+        3316
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2507,
+        1110
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "5486ca7a0d784941aa694c24788bb061b430c59b0889b2bea2051770da117ebd",
+      "sha256": "a55ba1a278c542ed61365b8b6bd3a8fc7f361805ebcb13edc6d718ba0a484263",
+      "source_scan_sha256": "719714e884422604695564c74e27f2e7863d52bb29a9eec76582fe30097655ca",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-022e.jpg",
+        "bytes": 214128,
+        "sha256": "decbb2cfefbfa72f56ba1521f4cdee01513a58004a25cc0278091d955863fb0b",
+        "width": 1600,
+        "height": 708,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-022f",
+      "scan": 22,
+      "note": "Lower right foam-and-spray field.",
+      "box_pixels": [
+        3095,
+        3322,
+        5602,
+        4598
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2507,
+        1276
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "748a4c1c95fbefafbdaaebf3a7809dd3a80dc5cdce897a1d3959d150985699d0",
+      "sha256": "191ebec669d27f2feb700df7368b692114875688f01be4a1c363ea6176f105dc",
+      "source_scan_sha256": "719714e884422604695564c74e27f2e7863d52bb29a9eec76582fe30097655ca",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-022f.jpg",
+        "bytes": 202279,
+        "sha256": "fafc061ce0cb62ce39527ae5705ba74958fa871848bd2f4f8767b2456ad4c0ec",
+        "width": 1600,
+        "height": 814,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-023a",
+      "scan": 23,
+      "note": "Left connected sweeping-water composition.",
+      "box_pixels": [
+        276,
+        892,
+        2783,
+        4442
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2507,
+        3550
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "9b8ece58bba87c9cfbdfee3e5cf4c8aedf9ac1fcbd551f7f73caf6b1e773383a",
+      "sha256": "da6bf32946e36c25ae82d309b78fb485cfc93bff1d6580cda29c5c6db502ce86",
+      "source_scan_sha256": "fcaabc1c988edd7df308284a9bb682a266e62ed65b4023b141ecead740b016c1",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-023a.jpg",
+        "bytes": 358688,
+        "sha256": "63c4bf173ace49a43c53b516e88d80d3b9afb38d75ae78b9bc1613cd21873cdf",
+        "width": 1130,
+        "height": 1600,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-023b",
+      "scan": 23,
+      "note": "Upper right sweeping ribbon.",
+      "box_pixels": [
+        3077,
+        1134,
+        5602,
+        2481
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2525,
+        1347
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "cd3e1f085ac5ab2316b7d17b363b68b1fc88b6e3fce67f5cde8fae75a941b148",
+      "sha256": "d256c48b820838078f09c8f8e3460d38efb769f6603e1f196504e73ae80fbae2",
+      "source_scan_sha256": "fcaabc1c988edd7df308284a9bb682a266e62ed65b4023b141ecead740b016c1",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-023b.jpg",
+        "bytes": 193150,
+        "sha256": "be9d27263e428177d881e02c3942ae68fa554dda44ef8782295ac4f1d38acf08",
+        "width": 1600,
+        "height": 854,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-023c",
+      "scan": 23,
+      "note": "Lower right narrow current field along the inner page edge.",
+      "box_pixels": [
+        3077,
+        3166,
+        4070,
+        4523
+      ],
+      "polygon_normalized": null,
+      "size": [
+        993,
+        1357
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "db4df9ef7e7e735a7029f7c2261820ef368bd0264ed6580696c4e69abbe91038",
+      "sha256": "389a57ad66d503fdbcaa6f2a304564e44ae7ad8da500b8190b16c4e7fabf5a97",
+      "source_scan_sha256": "fcaabc1c988edd7df308284a9bb682a266e62ed65b4023b141ecead740b016c1",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-023c.jpg",
+        "bytes": 255042,
+        "sha256": "f201ea968d09764020b12c129e732a125694d14200b2dcd9f42a8ffe2d8e22ca",
+        "width": 993,
+        "height": 1357,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-023d",
+      "scan": 23,
+      "note": "Lower right scattered crest group; mask separates the adjacent dense current.",
+      "box_pixels": [
+        3114,
+        2697,
+        5590,
+        4190
+      ],
+      "polygon_normalized": [
+        [
+          508,
+          535
+        ],
+        [
+          912,
+          535
+        ],
+        [
+          912,
+          831
+        ],
+        [
+          668,
+          831
+        ],
+        [
+          668,
+          657
+        ],
+        [
+          638,
+          640
+        ],
+        [
+          617,
+          628
+        ],
+        [
+          508,
+          628
+        ]
+      ],
+      "size": [
+        2476,
+        1493
+      ],
+      "mode": "RGBA",
+      "pixel_sha256": "02a0de4a892d1fea34f3b5a997ec48b16fc55d7d347f4ea6710991611d58e558",
+      "sha256": "46cfbd9e7a5e7f8e55d2f3736d7f5c68e2079cdb2aa392ca8dd74906abf45105",
+      "source_scan_sha256": "fcaabc1c988edd7df308284a9bb682a266e62ed65b4023b141ecead740b016c1",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-023d.jpg",
+        "bytes": 185632,
+        "sha256": "829761232cf0e5d47f3ea60ad0fca62bf4c21d98886897a1348bb0e193cb0161",
+        "width": 1600,
+        "height": 965,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-024a",
+      "scan": 24,
+      "note": "Upper left solid foam silhouette and drops.",
+      "box_pixels": [
+        277,
+        923,
+        2780,
+        2566
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2503,
+        1643
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "1bbae626fc52fc6c386f6d41d0d8270a66d8c857752a3d6173963d6ab8ce0159",
+      "sha256": "11bcec9dc222ff1d3605bf549749e7caa5aa43160d5730800b56032bdbfbedd4",
+      "source_scan_sha256": "8351d4cbd98ec14a5bb16158b3e4726434748ed0d59cc0ed694e1e80c1a522f2",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-024a.jpg",
+        "bytes": 468773,
+        "sha256": "c041b0b421cdb8505b3101e7cb3cb384e590ae6b4f5ac9d4df836b1cb236a9b0",
+        "width": 1600,
+        "height": 1050,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-024b",
+      "scan": 24,
+      "note": "Lower left graphic wave-and-foam field.",
+      "box_pixels": [
+        277,
+        2773,
+        2786,
+        4618
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2509,
+        1845
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "78da013ba4475a4280699d04a50c2bf1acb11af9a5aaf8d18b0cbc462e7e385e",
+      "sha256": "eb5783bf3fae4c42cb63a31082c9cb5df9894e39f991efd6180b5a38cddf4e85",
+      "source_scan_sha256": "8351d4cbd98ec14a5bb16158b3e4726434748ed0d59cc0ed694e1e80c1a522f2",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-024b.jpg",
+        "bytes": 289533,
+        "sha256": "c2d7d604077fd749c533d0b9048babfc07e1ecd38cbf2705f949b9a20eaaf8cd",
+        "width": 1600,
+        "height": 1177,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-024c",
+      "scan": 24,
+      "note": "Upper right water composition around a rock; the rock is retained as part of the scene.",
+      "box_pixels": [
+        3075,
+        1336,
+        5615,
+        2072
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2540,
+        736
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "8cd03fd86b9451ba2fc0ed90ca9fd7c7233d3cf198d5f3a44afa2ded2c099ee6",
+      "sha256": "bbe91cbbda8e478794248dcaeccd7878326683251347ebe76422b54f4500aaee",
+      "source_scan_sha256": "8351d4cbd98ec14a5bb16158b3e4726434748ed0d59cc0ed694e1e80c1a522f2",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-024c.jpg",
+        "bytes": 170024,
+        "sha256": "35814d53e3277c07905c0ee008d188c5cb6ccf7f54be23b0b0cd27673b99b858",
+        "width": 1600,
+        "height": 464,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-024d",
+      "scan": 24,
+      "note": "Middle right coiled wave group.",
+      "box_pixels": [
+        3192,
+        2466,
+        5615,
+        3136
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2423,
+        670
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "3b1534c7125ba0ffee296789ef851675d0f279dd1a21291ef4cd5ac73f9ebc11",
+      "sha256": "20f9620ad33c6baba891aab11cb18b8a5dd2bbfd578cdb84c6d436e3fdfc05a3",
+      "source_scan_sha256": "8351d4cbd98ec14a5bb16158b3e4726434748ed0d59cc0ed694e1e80c1a522f2",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-024d.jpg",
+        "bytes": 151840,
+        "sha256": "a3fd48f1fb548b38a2dd59c937393ffd4ad8a6bf466df20cebb3100ab489154f",
+        "width": 1600,
+        "height": 442,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-024e",
+      "scan": 24,
+      "note": "Lower right breaking-wave group and spray.",
+      "box_pixels": [
+        3100,
+        3308,
+        5141,
+        4286
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2041,
+        978
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "cf17aeaa845acaf2ec3b4d78d03fe236795d7cb03e35317770a35b091a5be497",
+      "sha256": "7b5a9e93d3ca990abd6628e2323f9699cc919c7491ffc97ea66c08c342b951b8",
+      "source_scan_sha256": "8351d4cbd98ec14a5bb16158b3e4726434748ed0d59cc0ed694e1e80c1a522f2",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-024e.jpg",
+        "bytes": 189497,
+        "sha256": "46fc44ae9ba11ed14f945b492245ccd22b0c4c8ae014ce8ec73d2a1779b83d17",
+        "width": 1600,
+        "height": 767,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-025a",
+      "scan": 25,
+      "note": "Upper outline-current composition spans both pages; mask excludes the lower pattern.",
+      "box_pixels": [
+        368,
+        1052,
+        5547,
+        3202
+      ],
+      "polygon_normalized": [
+        [
+          60,
+          208
+        ],
+        [
+          905,
+          208
+        ],
+        [
+          905,
+          633
+        ],
+        [
+          506,
+          633
+        ],
+        [
+          506,
+          592
+        ],
+        [
+          60,
+          592
+        ]
+      ],
+      "size": [
+        5179,
+        2150
+      ],
+      "mode": "RGBA",
+      "pixel_sha256": "e57c99f96c793a2faaac49d206f6a483af1dcd96cc5ea51d2b1bf17528ddcb5a",
+      "sha256": "fc4f545ceecb51f3cf930868b436000e842e572657b2b87886910afc97e88d98",
+      "source_scan_sha256": "e35c11896828169b88a56210fe851de9ecfc38d4d08b14de026f091fd21682eb",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-025a.jpg",
+        "bytes": 125729,
+        "sha256": "c88fe567416d961024ea9df2351f2384aba668ef1161ef91d7b8b2275228cdc4",
+        "width": 1600,
+        "height": 664,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-025b",
+      "scan": 25,
+      "note": "Lower broad current ribbon crosses the gutter; mask excludes the upper pattern.",
+      "box_pixels": [
+        392,
+        3050,
+        5596,
+        4249
+      ],
+      "polygon_normalized": [
+        [
+          64,
+          603
+        ],
+        [
+          449,
+          603
+        ],
+        [
+          449,
+          659
+        ],
+        [
+          539,
+          659
+        ],
+        [
+          539,
+          714
+        ],
+        [
+          913,
+          714
+        ],
+        [
+          913,
+          840
+        ],
+        [
+          64,
+          840
+        ]
+      ],
+      "size": [
+        5204,
+        1199
+      ],
+      "mode": "RGBA",
+      "pixel_sha256": "0146c91b677350faa11e69a8d8412372a7d6c1e93ebdb9812f1f0bd3900cc52a",
+      "sha256": "400231d27af4dead6241a8517707760f631f588b5a73f69fcd0f18b3ed9116b0",
+      "source_scan_sha256": "e35c11896828169b88a56210fe851de9ecfc38d4d08b14de026f091fd21682eb",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-025b.jpg",
+        "bytes": 83419,
+        "sha256": "84b1a2bbb6d61d1b66e0e36ca32d05b5412d29074e273b9d2050f1ce255ba4ad",
+        "width": 1600,
+        "height": 369,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-026a",
+      "scan": 26,
+      "note": "Upper left outlined current group.",
+      "box_pixels": [
+        264,
+        1059,
+        2795,
+        2496
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2531,
+        1437
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "1fa29f5c91890a7dedea60235706c38e5a8e73035594272b40d1a2fc3b62436f",
+      "sha256": "2ea41e98da1602900f0ea9896b119c456d903c50ec78117ffe9c69be5921e4f8",
+      "source_scan_sha256": "89155d5707b105bacd2a7d73bdf0609c7afeabcc39b3bb522daefbbe359cfc63",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-026a.jpg",
+        "bytes": 159167,
+        "sha256": "6f5682f13fd2ed2f3da7ae8b068326697afb13de6c35a5f182cb48c79001af24",
+        "width": 1600,
+        "height": 908,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-026b",
+      "scan": 26,
+      "note": "Large lower left scroll; mask excludes the separate small curl at its right.",
+      "box_pixels": [
+        478,
+        2496,
+        2550,
+        4427
+      ],
+      "polygon_normalized": [
+        [
+          78,
+          495
+        ],
+        [
+          416,
+          495
+        ],
+        [
+          416,
+          690
+        ],
+        [
+          316,
+          690
+        ],
+        [
+          316,
+          878
+        ],
+        [
+          78,
+          878
+        ]
+      ],
+      "size": [
+        2072,
+        1931
+      ],
+      "mode": "RGBA",
+      "pixel_sha256": "4cad0df42fb30ea67de789b818264c5d716fe93ef0899d15b5ff93d0ee59c357",
+      "sha256": "dc0128272415d8cb3a862d20673686e496b9c9b8b409da8162ca8b6f94f6465e",
+      "source_scan_sha256": "89155d5707b105bacd2a7d73bdf0609c7afeabcc39b3bb522daefbbe359cfc63",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-026b.jpg",
+        "bytes": 202766,
+        "sha256": "b9dae5857318172a41685f55e9475da4898246f07bcf5f3ca1b58d1e55c70cd9",
+        "width": 1600,
+        "height": 1491,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-026c",
+      "scan": 26,
+      "note": "Small lower left S-shaped curl.",
+      "box_pixels": [
+        1931,
+        3504,
+        2635,
+        4230
+      ],
+      "polygon_normalized": null,
+      "size": [
+        704,
+        726
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "9fed691bd821ace54f1ee902cacdd74045b91a8a67b9b78589c425b4ada80605",
+      "sha256": "8cadbba21c9947e1c36f5c7bd6cd150b7fbc480c1eb4238a6cd503b94491dd71",
+      "source_scan_sha256": "89155d5707b105bacd2a7d73bdf0609c7afeabcc39b3bb522daefbbe359cfc63",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-026c.jpg",
+        "bytes": 59984,
+        "sha256": "7a866f186e146fd8c10826aa967ffcc2064944679d4aa7afbfa7c7f171430240",
+        "width": 704,
+        "height": 726,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-026d",
+      "scan": 26,
+      "note": "Upper right interlaced-arc field.",
+      "box_pixels": [
+        3003,
+        918,
+        5498,
+        2602
+      ],
+      "polygon_normalized": null,
+      "size": [
+        2495,
+        1684
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "48c03e22e36d452c41c0f9527408f4c4f835360665ce7aad9a5ea98e01d8f05c",
+      "sha256": "c3117b148ea9ae22d1706c69dfdef8e359d66d4be31ad16f54143a1cc19bd6eb",
+      "source_scan_sha256": "89155d5707b105bacd2a7d73bdf0609c7afeabcc39b3bb522daefbbe359cfc63",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-026d.jpg",
+        "bytes": 303434,
+        "sha256": "cfb5026324070bc21e19e54470cbab8252fc8e3ae3f51f83ae171c37d63e5b60",
+        "width": 1600,
+        "height": 1080,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-026e",
+      "scan": 26,
+      "note": "Middle right open oval lattice.",
+      "box_pixels": [
+        3015,
+        2849,
+        4873,
+        3580
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1858,
+        731
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "9d90ff45d4a634c53e2687769f7e3a95c741d2fcb4aa2711808ae2f1e7f9a2f2",
+      "sha256": "9e190114dae67f185af3d75b5242febdc4db1b5a5db858be2eb544f5f12f9801",
+      "source_scan_sha256": "89155d5707b105bacd2a7d73bdf0609c7afeabcc39b3bb522daefbbe359cfc63",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-026e.jpg",
+        "bytes": 176819,
+        "sha256": "f3cee2943e78a15a775c8c5bff1406b5a1ed9670ddc8a1c0d8ad503344f40c7a",
+        "width": 1600,
+        "height": 629,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-026f",
+      "scan": 26,
+      "note": "Lower right flowing ripple field.",
+      "box_pixels": [
+        3518,
+        3741,
+        5498,
+        4457
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1980,
+        716
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "116400a839230ea25affadbee00d11492a4de88d2fb40c1156daba6714b7973e",
+      "sha256": "adcd8eb149f32660686aeec0dbbadc802ea0a63639fdc1405e8030b1a6c9a0be",
+      "source_scan_sha256": "89155d5707b105bacd2a7d73bdf0609c7afeabcc39b3bb522daefbbe359cfc63",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-026f.jpg",
+        "bytes": 178903,
+        "sha256": "37a9d1390a67ea82085193e22999bb6371bd307c5267fd925b8b3a714f71b15c",
+        "width": 1600,
+        "height": 579,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-027a",
+      "scan": 27,
+      "note": "Upper right foreground panel of dense curls and foam. The facing text page is excluded.",
+      "box_pixels": [
+        3802,
+        1205,
+        5141,
+        2582
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1339,
+        1377
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "61de225750e395167e8faad982127e7a6b19fe0860e4d7bc6634401af8379ecb",
+      "sha256": "087fa0a6f88b9a1558ea6992135d4546a21b7a072ad1cd954128fbc224cf9b14",
+      "source_scan_sha256": "8c79a4ca1a5d86f30eca9b3e17992d461be81e2bcf4527880d7c46ce4b765629",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-027a.jpg",
+        "bytes": 516365,
+        "sha256": "1f62e34fcac28fe1d05d1d02d6e41a174d0a20ee005f54b1bb298d52a6156098",
+        "width": 1339,
+        "height": 1377,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-027b",
+      "scan": 27,
+      "note": "Partly hidden arc panel; mask retains its visible L-shaped portion.",
+      "box_pixels": [
+        3313,
+        1618,
+        3961,
+        2829
+      ],
+      "polygon_normalized": [
+        [
+          542,
+          321
+        ],
+        [
+          621,
+          321
+        ],
+        [
+          621,
+          512
+        ],
+        [
+          648,
+          512
+        ],
+        [
+          648,
+          561
+        ],
+        [
+          542,
+          561
+        ]
+      ],
+      "size": [
+        648,
+        1211
+      ],
+      "mode": "RGBA",
+      "pixel_sha256": "f221dbf01f7d7020565f83755f1caadd3ffa802fb670becaf3887b7cbbd8117a",
+      "sha256": "04776c12107463f23fdeff2de0156fb78b84a93e3f49f996ed19063790774b7d",
+      "source_scan_sha256": "8c79a4ca1a5d86f30eca9b3e17992d461be81e2bcf4527880d7c46ce4b765629",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-027b.jpg",
+        "bytes": 133623,
+        "sha256": "340e488015c76db2b601005139110f0f8f41bb0e6a3c9bc2b3b4d1fc44e6d5da",
+        "width": 648,
+        "height": 1211,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-027c",
+      "scan": 27,
+      "note": "Partly hidden zigzag-wave panel; mask excludes the overlapping foreground panels.",
+      "box_pixels": [
+        3949,
+        2158,
+        5276,
+        3494
+      ],
+      "polygon_normalized": [
+        [
+          841,
+          428
+        ],
+        [
+          863,
+          428
+        ],
+        [
+          863,
+          693
+        ],
+        [
+          751,
+          693
+        ],
+        [
+          751,
+          561
+        ],
+        [
+          646,
+          561
+        ],
+        [
+          646,
+          512
+        ],
+        [
+          841,
+          512
+        ]
+      ],
+      "size": [
+        1327,
+        1336
+      ],
+      "mode": "RGBA",
+      "pixel_sha256": "a5bc14728df334d57b6c0c25591df0441479374156c7c937c4464b3c94cf8a38",
+      "sha256": "dc006e9a3b822eb4c89155be524108f229567804c62710f4d390badb813a61af",
+      "source_scan_sha256": "8c79a4ca1a5d86f30eca9b3e17992d461be81e2bcf4527880d7c46ce4b765629",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-027c.jpg",
+        "bytes": 222252,
+        "sha256": "156e081302a7c99b8445a0014008ed58644ce18bb0eac5ed14ecd9fa8c3dc760",
+        "width": 1327,
+        "height": 1336,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-027d",
+      "scan": 27,
+      "note": "Lower right foreground crest panel.",
+      "box_pixels": [
+        3264,
+        2818,
+        4597,
+        4170
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1333,
+        1352
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "c535ea747c11a6b497cb86df6b967fefb3727f94947dab9d5ce241e430a45c64",
+      "sha256": "2061ad184fb207dbca1d3dad35d1437ae47fc4e77ec531d81e1f4d933aad188a",
+      "source_scan_sha256": "8c79a4ca1a5d86f30eca9b3e17992d461be81e2bcf4527880d7c46ce4b765629",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-027d.jpg",
+        "bytes": 240306,
+        "sha256": "e5e761b0d2099023503b1a2ca9007c726e0df67580a445443fc578fbf1ffa8d7",
+        "width": 1333,
+        "height": 1352,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-027e",
+      "scan": 27,
+      "note": "Partly hidden radial-water panel; mask retains its exposed lower and right edges.",
+      "box_pixels": [
+        3668,
+        3479,
+        5025,
+        4306
+      ],
+      "polygon_normalized": [
+        [
+          752,
+          690
+        ],
+        [
+          822,
+          690
+        ],
+        [
+          822,
+          854
+        ],
+        [
+          600,
+          854
+        ],
+        [
+          600,
+          827
+        ],
+        [
+          752,
+          827
+        ]
+      ],
+      "size": [
+        1357,
+        827
+      ],
+      "mode": "RGBA",
+      "pixel_sha256": "c5af07c47825062331e158e6fc69b78ae123319f42dffccd2554a29dab059f67",
+      "sha256": "90721ba15c204affe2dc405f227b40a27c95e3b18d287d147f143837d58630cf",
+      "source_scan_sha256": "8c79a4ca1a5d86f30eca9b3e17992d461be81e2bcf4527880d7c46ce4b765629",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-027e.jpg",
+        "bytes": 172051,
+        "sha256": "183c99b87e1bce7d6b884f7c96bd36600dc91a84d8dd34111d483350f1a4100f",
+        "width": 1357,
+        "height": 827,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-028a",
+      "scan": 28,
+      "note": "Upper back-cover group of overlapping spirals.",
+      "box_pixels": [
+        306,
+        819,
+        1588,
+        2146
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1282,
+        1327
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "05ec84360c98956523382c635ae04aaf772f00b210f8d0b68d89aff249a3386e",
+      "sha256": "406c0a62677e4f99ce01d0385315f79890fca48df4adfde5f0c0137f9c691ed7",
+      "source_scan_sha256": "33779f4493535c366def4093da7f4a8f69a5b73f58143c668d15df7b705d00bb",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-028a.jpg",
+        "bytes": 256703,
+        "sha256": "685f6896cebca124f94491afbfdfd27623bb2233d7435286f7212b27cb121a79",
+        "width": 1282,
+        "height": 1327,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-028b",
+      "scan": 28,
+      "note": "Middle back-cover isolated spiral.",
+      "box_pixels": [
+        1061,
+        2206,
+        1728,
+        2829
+      ],
+      "polygon_normalized": null,
+      "size": [
+        667,
+        623
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "62075258e676d4af7da448b727cb5188996a158b8cd79da2f8104c9b0bb70d57",
+      "sha256": "8065d3f2c4e0edd0b7923d65ffa82df4e88ed52a4101e3d0999169c64e45fbfe",
+      "source_scan_sha256": "33779f4493535c366def4093da7f4a8f69a5b73f58143c668d15df7b705d00bb",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-028b.jpg",
+        "bytes": 67907,
+        "sha256": "e6323c67bd25929a608beea87041e63e0117079197033184ce7e9418d734775f",
+        "width": 667,
+        "height": 623,
+        "format": "jpg"
+      }
+    },
+    {
+      "id": "hamonshu_2-028c",
+      "scan": 28,
+      "note": "Lower back-cover group of overlapping spirals.",
+      "box_pixels": [
+        1064,
+        2829,
+        3025,
+        4417
+      ],
+      "polygon_normalized": null,
+      "size": [
+        1961,
+        1588
+      ],
+      "mode": "RGB",
+      "pixel_sha256": "97e333a8899b070d53c5428bcda779e972500159dc09ebc86695368eeda7be55",
+      "sha256": "42d2f27e5c6f210d049f0c765851dacf8ccacbd8d9f85299994aedf186706cf0",
+      "source_scan_sha256": "33779f4493535c366def4093da7f4a8f69a5b73f58143c668d15df7b705d00bb",
+      "proxy": {
+        "path": "review/hamonshu-v2-book2/images/hamonshu_2-028c.jpg",
+        "bytes": 300077,
+        "sha256": "f17d8d974064e0c31562d0812b475b2cadae75a0e59ea2f63efda37a33a13426",
+        "width": 1600,
+        "height": 1296,
+        "format": "jpg"
+      }
+    }
+  ]
+}

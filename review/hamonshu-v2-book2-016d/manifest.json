@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-016d",
+  "scan": 16,
+  "note": "Second middle left scroll strip.",
+  "box_pixels": [
+    1214,
+    2969,
+    2599,
+    3405
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1385,
+    436
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "b8cd7c9f4983c92464cdb047589587bd4e878df65d215cd2e04bb6129f98de30",
+  "sha256": "c1a2ebbd829b8cd8091070c1b4284870568b4e40a043dbabe4f72cbac9c7016f",
+  "source_scan_sha256": "76a1b68d8e8a72cd475a95a72d07c11fa6cdc588d8da54fe179c7556de44d63f",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-016d.jpg",
+    "bytes": 77853,
+    "sha256": "192a77b976c2031c765f2949bb3988e76d209820b9cf4585ea166fd25af1257f",
+    "width": 1385,
+    "height": 436,
+    "format": "jpg"
+  }
+}

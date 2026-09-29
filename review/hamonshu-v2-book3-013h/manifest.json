@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-013h",
+  "scan": 13,
+  "note": "Tall enclosed field of small crests.",
+  "box_pixels": [
+    4148,
+    2226,
+    5185,
+    3673
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1037,
+    1447
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "b040c4746386806e379fe341837bfba1bc24ab3e4907f479f3e3c959a8feb7fd",
+  "sha256": "a280b79576931f1f5f42a496b9f8e37a4959158eed3522d759e5c129ed29647a",
+  "source_scan_sha256": "1e0a8b07cde573dc1f5d61f6f07e83ada42f4d4138151fabd9a37d2ce68f0ae3",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-013h.jpg",
+    "bytes": 176828,
+    "sha256": "ca34854476f078449ab2d186fe9b496a2a1a8627bafda3dad63bdecc112d07c2",
+    "width": 1037,
+    "height": 1447,
+    "format": "jpg"
+  }
+}

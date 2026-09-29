@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-004d",
+  "scan": 4,
+  "note": "Lower left cascading arc field.",
+  "box_pixels": [
+    385,
+    2804,
+    2736,
+    4603
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2351,
+    1799
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "066e930bf1fc8bd58855c36ef2e621234afcd9df0102063d380b77866b8780c3",
+  "sha256": "f0e609b010451c2da2ab569a5a301aa9453da647e493d273819cda0b45b7dee3",
+  "source_scan_sha256": "e282b7329c467bcca024dd8b5c9240449ffaf218e8d8ea8435b9c7bf377a6043",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-004d.jpg",
+    "bytes": 244243,
+    "sha256": "612ac3bbbf3fc46206d1fe938d2b87196c196d4d614622e0e2ddf9912dd3d27f",
+    "width": 1600,
+    "height": 1224,
+    "format": "jpg"
+  }
+}

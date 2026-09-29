@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-026a",
+  "scan": 26,
+  "note": "Upper left outlined current group.",
+  "box_pixels": [
+    264,
+    1059,
+    2795,
+    2496
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2531,
+    1437
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "1fa29f5c91890a7dedea60235706c38e5a8e73035594272b40d1a2fc3b62436f",
+  "sha256": "2ea41e98da1602900f0ea9896b119c456d903c50ec78117ffe9c69be5921e4f8",
+  "source_scan_sha256": "89155d5707b105bacd2a7d73bdf0609c7afeabcc39b3bb522daefbbe359cfc63",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-026a.jpg",
+    "bytes": 159167,
+    "sha256": "6f5682f13fd2ed2f3da7ae8b068326697afb13de6c35a5f182cb48c79001af24",
+    "width": 1600,
+    "height": 908,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "hamonshu_3-013i",
+  "scan": 13,
+  "note": "Lower right branching spiral current. Neighboring forms are masked out.",
+  "box_pixels": [
+    3250,
+    3075,
+    4196,
+    3960
+  ],
+  "polygon_normalized": [
+    [
+      539,
+      612
+    ],
+    [
+      675,
+      612
+    ],
+    [
+      675,
+      678
+    ],
+    [
+      696,
+      678
+    ],
+    [
+      696,
+      788
+    ],
+    [
+      539,
+      788
+    ]
+  ],
+  "size": [
+    946,
+    885
+  ],
+  "mode": "RGBA",
+  "pixel_sha256": "e58b499603fdbc6745cc0f2ada34fbbcf1a4d455030b45556335a29f777d3103",
+  "sha256": "d97f944a1c10e418531937f35d4a752a15b750862193b607a03eeb7cd3142b91",
+  "source_scan_sha256": "1e0a8b07cde573dc1f5d61f6f07e83ada42f4d4138151fabd9a37d2ce68f0ae3",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-013i.jpg",
+    "bytes": 86378,
+    "sha256": "2d4afc7ecead19e7b80af01004717ef2ed8038c1b20cf73fdfafd1937c1884ed",
+    "width": 946,
+    "height": 885,
+    "format": "jpg"
+  }
+}

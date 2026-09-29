@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-012d",
+  "scan": 12,
+  "note": "First upper right narrow crest band.",
+  "box_pixels": [
+    3061,
+    1301,
+    4618,
+    1563
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1557,
+    262
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "acb5bee01c8503cf185914d56f97b296b146129e9f4316ed64554932e7330b3c",
+  "sha256": "7dc6911cbe6adabd429b9749874cb94a38a20762cd386245cc3a6c5c4f2f03b2",
+  "source_scan_sha256": "10490cc85c429c795b9f40ba627531cc7b72cf06c97b897f8535ad8ac3aba4ec",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-012d.jpg",
+    "bytes": 48200,
+    "sha256": "820cf5c9e76b8f233b3660c0b8320cfe9b3472914da90b87ac7203df92202ea2",
+    "width": 1557,
+    "height": 262,
+    "format": "jpg"
+  }
+}

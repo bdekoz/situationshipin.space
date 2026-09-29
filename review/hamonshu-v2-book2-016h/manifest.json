@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-016h",
+  "scan": 16,
+  "note": "Lower right paired flowing-water ribbons, retained as one arrangement.",
+  "box_pixels": [
+    3169,
+    2603,
+    5424,
+    4415
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2255,
+    1812
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "5e3ed51f93b79daa99ae032e63469387e2a32158e6f46a9f8f61e6224e07e0a9",
+  "sha256": "9a2649322e708d49625919dfdad52fd78f136c6d41359cc1280292ce8d69084b",
+  "source_scan_sha256": "76a1b68d8e8a72cd475a95a72d07c11fa6cdc588d8da54fe179c7556de44d63f",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-016h.jpg",
+    "bytes": 227199,
+    "sha256": "2407357315cb3df886659512d7e28daeb1f2cdc7c76feebb33c4951d10e18c29",
+    "width": 1600,
+    "height": 1286,
+    "format": "jpg"
+  }
+}

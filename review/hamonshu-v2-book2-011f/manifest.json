@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-011f",
+  "scan": 11,
+  "note": "Lower left isolated current line.",
+  "box_pixels": [
+    416,
+    4003,
+    2519,
+    4271
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2103,
+    268
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "9aa89c08578348d384f34806b420c2a26fb5ed86d6f68e52f322597920c24a98",
+  "sha256": "786513030fd82e06e94531013ad53f8dcfc61504728ef1ff861fad525e37a3ff",
+  "source_scan_sha256": "3a2c623bc8f12c65ee252b48827261e60984a3963e065773067496f1d570142e",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-011f.jpg",
+    "bytes": 44178,
+    "sha256": "fc2a7e8ebe4232da90ccbe64e17dc7a6eb0c7989e59101ffff5218d70acc710e",
+    "width": 1600,
+    "height": 204,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-011b",
+  "scan": 11,
+  "note": "Middle left arc-filled disk.",
+  "box_pixels": [
+    538,
+    1961,
+    1443,
+    2859
+  ],
+  "polygon_normalized": null,
+  "size": [
+    905,
+    898
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "b8d817004b2fd82dfe88bb0a480f0efc14dca67ff3331553086c00a9509e2887",
+  "sha256": "333f58204443c1c541098079b1ae304b2ca900dfc16760a675b42ed5f22aba6e",
+  "source_scan_sha256": "3a2c623bc8f12c65ee252b48827261e60984a3963e065773067496f1d570142e",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-011b.jpg",
+    "bytes": 141630,
+    "sha256": "603717f576f61022bf17e4a1b493b37f9b1001d6f0df1220e668c0e79ca2945e",
+    "width": 905,
+    "height": 898,
+    "format": "jpg"
+  }
+}

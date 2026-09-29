@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-026c",
+  "scan": 26,
+  "note": "Lower right broad folded water-pattern ribbon.",
+  "box_pixels": [
+    2974,
+    2629,
+    5450,
+    4593
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2476,
+    1964
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "56dc5de393138d76072e3a87bf30781551bd55327b56c2007f8b8fa77474d30e",
+  "sha256": "3b3f2a7bbff8af99f7c9ea8aa1f54f304b2f700f1df35658d94414ce415b49c8",
+  "source_scan_sha256": "d6623bcd6d3ff165ea302e34ce524bd41c2f9119c2d5f52039f88521c5ae308d",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-026c.jpg",
+    "bytes": 430017,
+    "sha256": "c58d5848beea0d0725ac4c2dc3529cb5117ab0f5677638dc62b5e69e153dbe92",
+    "width": 1600,
+    "height": 1269,
+    "format": "jpg"
+  }
+}

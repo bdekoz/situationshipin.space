@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-013g",
+  "scan": 13,
+  "note": "Small horizontal current below it.",
+  "box_pixels": [
+    3316,
+    1960,
+    4263,
+    2412
+  ],
+  "polygon_normalized": null,
+  "size": [
+    947,
+    452
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "55a0d9f8ee128f3d1fd0f30298470fd4e662615821ffdffbb175dcd8e18e23c3",
+  "sha256": "8076d5caabcea83257689f477792137e78e6d45ce2a24dd81a84d38899f48b05",
+  "source_scan_sha256": "1e0a8b07cde573dc1f5d61f6f07e83ada42f4d4138151fabd9a37d2ce68f0ae3",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-013g.jpg",
+    "bytes": 64293,
+    "sha256": "71e0b57c43c9b6af93910d0b1768cb69db37eda12c5f1875a120cd847afb764e",
+    "width": 947,
+    "height": 452,
+    "format": "jpg"
+  }
+}

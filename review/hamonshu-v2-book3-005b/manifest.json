@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-005b",
+  "scan": 5,
+  "note": "Right continuous fine-line wave field.",
+  "box_pixels": [
+    3115,
+    1694,
+    5652,
+    4664
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2537,
+    2970
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "6be6b8e2609f0455466c61e9bcf55968f9f946cc9942c6e42a2890ba2c6b0bc2",
+  "sha256": "ee72949feed3f0be6061af2ed215a824982268bef2cf7347576e76366de6aa33",
+  "source_scan_sha256": "7351354d6b4e80bf396b0b81c0fe6056b45fd099069ade29d8b46cca4d281e72",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-005b.jpg",
+    "bytes": 531110,
+    "sha256": "bd752cf207d3719bde2acce3524d885ba480bc788ff6aec98fd83f60c8bda22f",
+    "width": 1367,
+    "height": 1600,
+    "format": "jpg"
+  }
+}

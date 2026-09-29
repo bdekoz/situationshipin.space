@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-012g",
+  "scan": 12,
+  "note": "Lower right repeated narrow wave bands.",
+  "box_pixels": [
+    3115,
+    3464,
+    5544,
+    4195
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2429,
+    731
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "1f99f27d125be4333a935242da588e3d899cb239676af18fc3af7a49cdddbb01",
+  "sha256": "fdbbe14345111996ceee0ee53b31b86a146eecf3966a356fec61068912dd7a6c",
+  "source_scan_sha256": "10490cc85c429c795b9f40ba627531cc7b72cf06c97b897f8535ad8ac3aba4ec",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-012g.jpg",
+    "bytes": 99939,
+    "sha256": "8bbe7a945b3f4af12fb45af55a2ae956332e798c4c22363a5dc76894e2794fe0",
+    "width": 1600,
+    "height": 482,
+    "format": "jpg"
+  }
+}

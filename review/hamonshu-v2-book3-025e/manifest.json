@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-025e",
+  "scan": 25,
+  "note": "Upper right crest group, clipped at the original panel edge.",
+  "box_pixels": [
+    2980,
+    910,
+    4761,
+    1306
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1781,
+    396
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "ca85b04e226b005e4680f9538b76386439c5bc5288e67eaac2be44a44b30ae3e",
+  "sha256": "82a6f2fb179631382fea9be973c488c9f361b736b4947e91a87e4dbbd095ff13",
+  "source_scan_sha256": "41ab90ecb89c757f53c93f3ff85d5d90e6e440fa8a35b7b77cbeda6058a81b12",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-025e.jpg",
+    "bytes": 111507,
+    "sha256": "aafd4051cdd405d72cbc51e95e5b075269ad8e9f5bcb3ae6da782e7a8261d413",
+    "width": 1600,
+    "height": 356,
+    "format": "jpg"
+  }
+}

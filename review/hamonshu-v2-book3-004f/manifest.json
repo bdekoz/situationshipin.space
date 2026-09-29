@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-004f",
+  "scan": 4,
+  "note": "Lower right concentric water composition.",
+  "box_pixels": [
+    3193,
+    3141,
+    5688,
+    4623
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2495,
+    1482
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "40cd09641150e5fa21e842b1fc606eae156c4665affbec6604f7f7fd2be01c75",
+  "sha256": "8879c16d051b51ed49024db04c0abb466b93c2b8e1e2e8541ea26cf7e24816e5",
+  "source_scan_sha256": "e282b7329c467bcca024dd8b5c9240449ffaf218e8d8ea8435b9c7bf377a6043",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-004f.jpg",
+    "bytes": 333874,
+    "sha256": "4bdc4cc5fd9dcac1d62047d0765d70f59e1b11727151a5b362f90d2526d3bf6d",
+    "width": 1600,
+    "height": 950,
+    "format": "jpg"
+  }
+}

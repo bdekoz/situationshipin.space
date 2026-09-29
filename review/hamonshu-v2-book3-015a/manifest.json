@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-015a",
+  "scan": 15,
+  "note": "Upper left elongated ripple medallion.",
+  "box_pixels": [
+    1227,
+    1462,
+    2382,
+    2059
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1155,
+    597
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "0c6e10586137876d744fb09eee7aff6008ab43b7e6bd0c05f757efddbd4df6c6",
+  "sha256": "9fb837c018e5fe91cab1e01f504c13b8ff42deae7be9fb48cf180fb62995ab7d",
+  "source_scan_sha256": "e73e94dc79bc8470b42b385c9cebcb9084be955d5551f6ca8c76c65031d4be20",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-015a.jpg",
+    "bytes": 175800,
+    "sha256": "566e838cd67eabd6b24bf0cefbf8918a663b7c1df571a9f5ba8ad67cc4246a6d",
+    "width": 1155,
+    "height": 597,
+    "format": "jpg"
+  }
+}

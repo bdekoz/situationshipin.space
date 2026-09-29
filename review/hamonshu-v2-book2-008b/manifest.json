@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-008b",
+  "scan": 8,
+  "note": "Second left framed strip.",
+  "box_pixels": [
+    373,
+    1776,
+    2127,
+    1989
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1754,
+    213
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "31834c5fc564b70502311ceaad9ca1b5e3cca86cfdd51d8a391d85f08bfb7752",
+  "sha256": "2badf60a2c65e0303679a04882ce1b671aa873dd2565925f83bbb5760b2ed6af",
+  "source_scan_sha256": "3766cad12bf43c9d25352f7282ee0e09cb3387bcae3637aec9e9222e0e97b17b",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-008b.jpg",
+    "bytes": 85267,
+    "sha256": "17e3dc73cda1008325da045ae5486e11bf6fe72a7f00ef298db0918e685afb0b",
+    "width": 1600,
+    "height": 194,
+    "format": "jpg"
+  }
+}

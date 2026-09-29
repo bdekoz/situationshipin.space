@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-023c",
+  "scan": 23,
+  "note": "Lower right narrow current field along the inner page edge.",
+  "box_pixels": [
+    3077,
+    3166,
+    4070,
+    4523
+  ],
+  "polygon_normalized": null,
+  "size": [
+    993,
+    1357
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "db4df9ef7e7e735a7029f7c2261820ef368bd0264ed6580696c4e69abbe91038",
+  "sha256": "389a57ad66d503fdbcaa6f2a304564e44ae7ad8da500b8190b16c4e7fabf5a97",
+  "source_scan_sha256": "fcaabc1c988edd7df308284a9bb682a266e62ed65b4023b141ecead740b016c1",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-023c.jpg",
+    "bytes": 255042,
+    "sha256": "f201ea968d09764020b12c129e732a125694d14200b2dcd9f42a8ffe2d8e22ca",
+    "width": 993,
+    "height": 1357,
+    "format": "jpg"
+  }
+}

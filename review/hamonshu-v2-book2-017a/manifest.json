@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-017a",
+  "scan": 17,
+  "note": "Upper left framed repeat with foam rings and arc borders.",
+  "box_pixels": [
+    281,
+    940,
+    2788,
+    2558
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2507,
+    1618
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "83c8a8ff0a784cacbcd31ee2d6c6ae48ff01e2766a4722f67aff465daca61771",
+  "sha256": "838e26640cde13954479513ada17648d18f61d01ed0c29ac1927cf3f1a296803",
+  "source_scan_sha256": "6ae0fd2f350d71e104c85ebc250325299a602811b4c20eba416ca61a932ac605",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-017a.jpg",
+    "bytes": 300432,
+    "sha256": "1a1d0946090a61b4923618e039d162a0363b8584c9e38fd4abccc27b0e007f97",
+    "width": 1600,
+    "height": 1033,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-003e",
+  "scan": 3,
+  "note": "Lower right connected and repeated wave composition, kept within its panel.",
+  "box_pixels": [
+    3274,
+    2965,
+    5803,
+    4603
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2529,
+    1638
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "b8bbaeef2e739598e3b6ac15a95c86f61cb4c06d03e2c74dfdc48d5f2253e39e",
+  "sha256": "f61e5e7a77aa752877fdd7c035b58d56b208472d437536546612656c80d9e116",
+  "source_scan_sha256": "bfb6749030b6bb17556eb24d8e6040f860b1e51d10b7dcc9b4051df759669e0c",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-003e.jpg",
+    "bytes": 295962,
+    "sha256": "0bf98856e1e173a4b2f777909be62dea617f95d64dc317e89ecfe246e76f363a",
+    "width": 1600,
+    "height": 1036,
+    "format": "jpg"
+  }
+}

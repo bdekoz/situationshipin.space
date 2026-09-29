@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-008f",
+  "scan": 8,
+  "note": "Upper right open-center ring.",
+  "box_pixels": [
+    3307,
+    1604,
+    4536,
+    2913
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1229,
+    1309
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "d5c18a75bdce5bcb91791ac3531b93f9c74c99aa17092c9e53fd91ae49fa2805",
+  "sha256": "60a5507cc06b427fb886c201dcc820d978c84d0e78c1ec3a5f710e899e81d97c",
+  "source_scan_sha256": "3766cad12bf43c9d25352f7282ee0e09cb3387bcae3637aec9e9222e0e97b17b",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-008f.jpg",
+    "bytes": 178100,
+    "sha256": "94a8b260bbef3e290af0f292b9c97c3cca781ccd02da0414df416695837c50d8",
+    "width": 1229,
+    "height": 1309,
+    "format": "jpg"
+  }
+}

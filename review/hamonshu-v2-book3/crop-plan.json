@@ -1,0 +1,1852 @@
+{
+  "schema": "izzi.hamonshu-crop-plan/1",
+  "volume": 3,
+  "source_directory": "resources.rizal/hamonshu/hamonshu_3.pages",
+  "default_output": "resources.rizal/hamonshu/hamonshu_3.crops",
+  "coordinate_system": "Normalized integers 0–1000 relative to full source image; boxes are left, top, right, bottom. Pixel boundaries are rounded. Optional polygons select original pixels inside that box; other pixels become transparent.",
+  "reviewed": "2026-09-29",
+  "status": "Prepared for human review; category names are not assigned.",
+  "segmentation": "One distinct bounded design or coherent repeated group per crop. Connected compositions spanning the gutter are kept together. Touching or occluded designs can leave neighboring fragments in rectangular crops; these are explicitly noted. Original linework, color and full resolution are preserved.",
+  "scans": [
+    {
+      "scan": 1,
+      "boxes": [
+        [
+          235,
+          75,
+          880,
+          586
+        ],
+        [
+          50,
+          632,
+          598,
+          954
+        ]
+      ],
+      "polygons": {
+        "1": [
+          [
+            235,
+            632
+          ],
+          [
+            598,
+            632
+          ],
+          [
+            598,
+            954
+          ],
+          [
+            50,
+            954
+          ],
+          [
+            50,
+            695
+          ],
+          [
+            235,
+            695
+          ]
+        ]
+      },
+      "notes": [
+        "Upper cover ornament; the title label already obscures its left edge.",
+        "Lower cover ornament; the title label is masked and occluded lines are not reconstructed."
+      ],
+      "source_sha256": "7ab037cf5182a7b330db760b66ffe6c4a85c9c8de6f7be007e6543d4463ce71e",
+      "size": [
+        3496,
+        4992
+      ]
+    },
+    {
+      "scan": 2,
+      "boxes": [
+        [
+          55,
+          275,
+          451,
+          837
+        ]
+      ],
+      "notes": [
+        "Framed circular water composition with its surrounding spiral field; writing and the blank facing page are excluded."
+      ],
+      "source_sha256": "6acdf745198990d4e21915f0213abdd3825b0744955c5bb568836699715bd400",
+      "size": [
+        6046,
+        5042
+      ]
+    },
+    {
+      "scan": 3,
+      "boxes": [
+        [
+          46,
+          267,
+          460,
+          573
+        ],
+        [
+          275,
+          595,
+          460,
+          722
+        ],
+        [
+          45,
+          658,
+          460,
+          918
+        ],
+        [
+          554,
+          245,
+          901,
+          350
+        ],
+        [
+          535,
+          388,
+          953,
+          517
+        ],
+        [
+          535,
+          527,
+          953,
+          919
+        ]
+      ],
+      "notes": [
+        "Upper left overlapping-wave field.",
+        "Small upper current in the lower left panel.",
+        "Two touching lower crests are retained as one connected composition. Neighboring forms are masked out.",
+        "Upper right outline crest band.",
+        "Middle right shaded crests with spray.",
+        "Lower right dotted wave composition."
+      ],
+      "source_sha256": "978c2c3dab2a4919ed911cb734a326e492798778f51d2dccd25498bd74747627",
+      "size": [
+        6013,
+        5042
+      ],
+      "polygons": {
+        "2": [
+          [
+            45,
+            658
+          ],
+          [
+            240,
+            658
+          ],
+          [
+            240,
+            736
+          ],
+          [
+            460,
+            736
+          ],
+          [
+            460,
+            918
+          ],
+          [
+            45,
+            918
+          ]
+        ]
+      }
+    },
+    {
+      "scan": 4,
+      "boxes": [
+        [
+          56,
+          296,
+          442,
+          370
+        ],
+        [
+          94,
+          382,
+          439,
+          451
+        ],
+        [
+          151,
+          462,
+          453,
+          520
+        ],
+        [
+          64,
+          558,
+          455,
+          916
+        ],
+        [
+          540,
+          222,
+          946,
+          595
+        ],
+        [
+          531,
+          625,
+          946,
+          920
+        ]
+      ],
+      "notes": [
+        "First thin water band.",
+        "Second thin water band.",
+        "Third thin water band.",
+        "Lower left cascading arc field.",
+        "Upper right outlined water composition with bubbles.",
+        "Lower right concentric water composition."
+      ],
+      "source_sha256": "e282b7329c467bcca024dd8b5c9240449ffaf218e8d8ea8435b9c7bf377a6043",
+      "size": [
+        6013,
+        5025
+      ]
+    },
+    {
+      "scan": 5,
+      "boxes": [
+        [
+          44,
+          352,
+          462,
+          925
+        ],
+        [
+          518,
+          336,
+          940,
+          925
+        ]
+      ],
+      "notes": [
+        "Left continuous fine-line wave field.",
+        "Right continuous fine-line wave field."
+      ],
+      "source_sha256": "7351354d6b4e80bf396b0b81c0fe6056b45fd099069ade29d8b46cca4d281e72",
+      "size": [
+        6013,
+        5042
+      ]
+    },
+    {
+      "scan": 6,
+      "boxes": [
+        [
+          48,
+          218,
+          460,
+          474
+        ],
+        [
+          47,
+          473,
+          317,
+          923
+        ],
+        [
+          317,
+          535,
+          460,
+          866
+        ],
+        [
+          522,
+          279,
+          940,
+          558
+        ],
+        [
+          521,
+          616,
+          940,
+          907
+        ]
+      ],
+      "notes": [
+        "Upper left sparse crest field.",
+        "Lower left repeated round-lobed water field.",
+        "Small outline motifs in the narrow lower panel, retained as a repeated group.",
+        "Upper right scattered current strokes.",
+        "Lower right dark-tipped crest field."
+      ],
+      "source_sha256": "ce469dbfccb54e7ec4b121925b73ed0c7d01d787085b688a2c313e0b73a9faf8",
+      "size": [
+        6013,
+        5025
+      ]
+    },
+    {
+      "scan": 7,
+      "boxes": [
+        [
+          129,
+          289,
+          419,
+          416
+        ],
+        [
+          81,
+          480,
+          435,
+          581
+        ],
+        [
+          55,
+          669,
+          437,
+          886
+        ],
+        [
+          525,
+          277,
+          890,
+          333
+        ],
+        [
+          535,
+          354,
+          922,
+          410
+        ],
+        [
+          590,
+          475,
+          909,
+          601
+        ],
+        [
+          526,
+          726,
+          898,
+          844
+        ]
+      ],
+      "notes": [
+        "Upper left enclosed crest ornament.",
+        "Middle left upright curling forms.",
+        "Lower left long connected current.",
+        "First upper right narrow current.",
+        "Second upper right narrow current.",
+        "Middle right interleaved dark crest bands.",
+        "Lower right rippling pool group."
+      ],
+      "source_sha256": "5fc2694d8dd62736fd42d388515f47269ffa71c5b6dd4df2d7e81eed4ce2525e",
+      "size": [
+        6029,
+        5042
+      ]
+    },
+    {
+      "scan": 8,
+      "boxes": [
+        [
+          45,
+          226,
+          447,
+          541
+        ],
+        [
+          45,
+          590,
+          460,
+          699
+        ],
+        [
+          45,
+          708,
+          460,
+          815
+        ],
+        [
+          45,
+          816,
+          460,
+          916
+        ],
+        [
+          516,
+          195,
+          941,
+          759
+        ],
+        [
+          515,
+          667,
+          937,
+          900
+        ]
+      ],
+      "polygons": {
+        "4": [
+          [
+            516,
+            195
+          ],
+          [
+            941,
+            195
+          ],
+          [
+            941,
+            585
+          ],
+          [
+            712,
+            585
+          ],
+          [
+            712,
+            665
+          ],
+          [
+            665,
+            665
+          ],
+          [
+            665,
+            759
+          ],
+          [
+            516,
+            759
+          ]
+        ],
+        "5": [
+          [
+            729,
+            667
+          ],
+          [
+            937,
+            667
+          ],
+          [
+            937,
+            900
+          ],
+          [
+            515,
+            900
+          ],
+          [
+            515,
+            763
+          ],
+          [
+            665,
+            763
+          ],
+          [
+            665,
+            736
+          ],
+          [
+            729,
+            736
+          ]
+        ]
+      },
+      "notes": [
+        "Upper left meandering current and island group.",
+        "First lower left dark spiral band.",
+        "Second lower left outline spiral band.",
+        "Third lower left dark spiral band.",
+        "Right branching current with bubbles; the separate lower crest is masked out.",
+        "Lower right broad crests; neighboring branches are masked out."
+      ],
+      "source_sha256": "fc9f980b7da52452ea85c46618aa64a39a01c844e4d0e5cfee58f26033e303ea",
+      "size": [
+        5996,
+        5042
+      ]
+    },
+    {
+      "scan": 9,
+      "boxes": [
+        [
+          47,
+          226,
+          461,
+          537
+        ],
+        [
+          46,
+          551,
+          461,
+          927
+        ],
+        [
+          513,
+          191,
+          927,
+          541
+        ],
+        [
+          515,
+          620,
+          927,
+          928
+        ]
+      ],
+      "notes": [
+        "Upper left closely spaced breaking-wave field.",
+        "Lower left large curling wave and spray.",
+        "Upper right crossed ripple outlines and bubbles.",
+        "Lower right breaking waves and spray."
+      ],
+      "source_sha256": "ee869b167fbfbd7cd565af24b9b1cc45fc0f4f120b3c737f3fd9da523687de53",
+      "size": [
+        6046,
+        5042
+      ]
+    },
+    {
+      "scan": 10,
+      "boxes": [
+        [
+          46,
+          196,
+          461,
+          889
+        ],
+        [
+          507,
+          182,
+          924,
+          642
+        ],
+        [
+          508,
+          641,
+          924,
+          923
+        ]
+      ],
+      "notes": [
+        "Left continuous spiral-filled current with linked open curls below.",
+        "Upper right interlocking crests over an arc field.",
+        "Lower right winding shoreline and ripple composition."
+      ],
+      "source_sha256": "f6e19bfacf2b714516bd20cdf1aea2cf11a3a24da39c96d0a23b48fc204ab50f",
+      "size": [
+        6046,
+        5025
+      ]
+    },
+    {
+      "scan": 11,
+      "boxes": [
+        [
+          49,
+          196,
+          463,
+          463
+        ],
+        [
+          265,
+          357,
+          463,
+          485
+        ],
+        [
+          46,
+          548,
+          217,
+          924
+        ],
+        [
+          218,
+          532,
+          463,
+          924
+        ],
+        [
+          508,
+          196,
+          925,
+          284
+        ],
+        [
+          508,
+          287,
+          925,
+          634
+        ],
+        [
+          508,
+          634,
+          925,
+          928
+        ]
+      ],
+      "polygons": {
+        "0": [
+          [
+            49,
+            196
+          ],
+          [
+            463,
+            196
+          ],
+          [
+            463,
+            355
+          ],
+          [
+            306,
+            355
+          ],
+          [
+            259,
+            395
+          ],
+          [
+            259,
+            463
+          ],
+          [
+            49,
+            463
+          ]
+        ]
+      },
+      "notes": [
+        "Upper left long current; the separate smaller current is masked out.",
+        "Smaller current at the lower right of the upper left panel.",
+        "Narrow lower left foam-and-wave field.",
+        "Adjacent lower left concentric crest field.",
+        "Top right strip of the spiral current field.",
+        "Middle right broad sweeping crests.",
+        "Lower right spiral and angular-current field."
+      ],
+      "source_sha256": "1a7d038ecb225341874705462421d42279971be1e269a0cb2cb32e931f4b53d7",
+      "size": [
+        6029,
+        5025
+      ]
+    },
+    {
+      "scan": 12,
+      "boxes": [
+        [
+          49,
+          242,
+          367,
+          412
+        ],
+        [
+          159,
+          469,
+          446,
+          553
+        ],
+        [
+          44,
+          605,
+          458,
+          845
+        ],
+        [
+          509,
+          258,
+          768,
+          310
+        ],
+        [
+          563,
+          320,
+          851,
+          374
+        ],
+        [
+          610,
+          421,
+          923,
+          629
+        ],
+        [
+          518,
+          687,
+          922,
+          832
+        ]
+      ],
+      "notes": [
+        "Upper left scattered small crest group.",
+        "Middle left intertwined wave band with bubbles.",
+        "Lower left broad crest composition.",
+        "First upper right narrow crest band.",
+        "Second upper right narrow crest band.",
+        "Middle right dense crest field.",
+        "Lower right repeated narrow wave bands."
+      ],
+      "source_sha256": "10490cc85c429c795b9f40ba627531cc7b72cf06c97b897f8535ad8ac3aba4ec",
+      "size": [
+        6013,
+        5042
+      ]
+    },
+    {
+      "scan": 13,
+      "boxes": [
+        [
+          255,
+          292,
+          408,
+          353
+        ],
+        [
+          113,
+          336,
+          224,
+          451
+        ],
+        [
+          218,
+          475,
+          437,
+          521
+        ],
+        [
+          79,
+          609,
+          296,
+          779
+        ],
+        [
+          236,
+          777,
+          427,
+          848
+        ],
+        [
+          698,
+          250,
+          884,
+          387
+        ],
+        [
+          550,
+          390,
+          707,
+          480
+        ],
+        [
+          688,
+          443,
+          860,
+          731
+        ],
+        [
+          539,
+          612,
+          696,
+          788
+        ],
+        [
+          677,
+          757,
+          867,
+          874
+        ]
+      ],
+      "notes": [
+        "Upper left three rounded crest marks.",
+        "Left four angular crest marks.",
+        "Middle left crest-mark row.",
+        "Lower left three tall wave forms.",
+        "Bottom left interwoven current.",
+        "Upper right enclosed water form.",
+        "Small horizontal current below it.",
+        "Tall enclosed field of small crests.",
+        "Lower right branching spiral current. Neighboring forms are masked out.",
+        "Bottom right small wave-and-bubble group."
+      ],
+      "source_sha256": "1e0a8b07cde573dc1f5d61f6f07e83ada42f4d4138151fabd9a37d2ce68f0ae3",
+      "size": [
+        6029,
+        5025
+      ],
+      "polygons": {
+        "8": [
+          [
+            539,
+            612
+          ],
+          [
+            675,
+            612
+          ],
+          [
+            675,
+            678
+          ],
+          [
+            696,
+            678
+          ],
+          [
+            696,
+            788
+          ],
+          [
+            539,
+            788
+          ]
+        ]
+      }
+    },
+    {
+      "scan": 14,
+      "boxes": [
+        [
+          80,
+          282,
+          205,
+          433
+        ],
+        [
+          279,
+          242,
+          433,
+          430
+        ],
+        [
+          128,
+          465,
+          329,
+          697
+        ],
+        [
+          106,
+          754,
+          199,
+          869
+        ],
+        [
+          309,
+          709,
+          422,
+          849
+        ],
+        [
+          661,
+          250,
+          852,
+          477
+        ],
+        [
+          528,
+          398,
+          649,
+          545
+        ],
+        [
+          630,
+          519,
+          795,
+          716
+        ],
+        [
+          517,
+          691,
+          654,
+          868
+        ],
+        [
+          772,
+          697,
+          866,
+          810
+        ]
+      ],
+      "notes": [
+        "Upper left spiral-filled disk.",
+        "Upper middle dense crest disk.",
+        "Large left radial water medallion.",
+        "Small lower left paired-crest ornament.",
+        "Lower left open-crest disk.",
+        "Upper right ring of inward crests.",
+        "Small right threefold spiral disk.",
+        "Middle right overlapping-crest disk. Neighboring forms are masked out.",
+        "Lower right split current disk with bubbles.",
+        "Small lower right dense crest disk."
+      ],
+      "source_sha256": "316b10a37cb8a2c8affae6496f1bf391dcfb8a42daef23ac9637abf414154e61",
+      "size": [
+        6046,
+        5042
+      ],
+      "polygons": {
+        "7": [
+          [
+            630,
+            519
+          ],
+          [
+            795,
+            519
+          ],
+          [
+            795,
+            695
+          ],
+          [
+            776,
+            716
+          ],
+          [
+            655,
+            716
+          ],
+          [
+            630,
+            689
+          ]
+        ]
+      }
+    },
+    {
+      "scan": 15,
+      "boxes": [
+        [
+          203,
+          289,
+          394,
+          407
+        ],
+        [
+          67,
+          449,
+          401,
+          669
+        ],
+        [
+          121,
+          744,
+          176,
+          803
+        ],
+        [
+          260,
+          725,
+          420,
+          804
+        ],
+        [
+          541,
+          359,
+          622,
+          447
+        ],
+        [
+          671,
+          246,
+          872,
+          477
+        ],
+        [
+          529,
+          598,
+          620,
+          697
+        ],
+        [
+          610,
+          555,
+          681,
+          631
+        ],
+        [
+          615,
+          637,
+          900,
+          893
+        ]
+      ],
+      "notes": [
+        "Upper left elongated ripple medallion.",
+        "Middle left open field of small breaking crests.",
+        "Small lower left spiral disk.",
+        "Lower left paired ripple medallion.",
+        "Small upper right curled ring and bubbles.",
+        "Large upper right dense wave disk.",
+        "Larger middle right dark spiral disk. Neighboring forms are masked out.",
+        "Smaller middle right dark spiral disk. Neighboring forms are masked out.",
+        "Lower right broad winding current with two bubbles."
+      ],
+      "source_sha256": "e73e94dc79bc8470b42b385c9cebcb9084be955d5551f6ca8c76c65031d4be20",
+      "size": [
+        6046,
+        5058
+      ],
+      "polygons": {
+        "6": [
+          [
+            529,
+            598
+          ],
+          [
+            604,
+            598
+          ],
+          [
+            620,
+            626
+          ],
+          [
+            620,
+            697
+          ],
+          [
+            529,
+            697
+          ]
+        ],
+        "7": [
+          [
+            610,
+            555
+          ],
+          [
+            681,
+            555
+          ],
+          [
+            681,
+            631
+          ],
+          [
+            626,
+            631
+          ],
+          [
+            610,
+            608
+          ]
+        ]
+      }
+    },
+    {
+      "scan": 16,
+      "boxes": [
+        [
+          93,
+          322,
+          221,
+          474
+        ],
+        [
+          271,
+          274,
+          400,
+          424
+        ],
+        [
+          183,
+          494,
+          445,
+          639
+        ],
+        [
+          92,
+          610,
+          180,
+          707
+        ],
+        [
+          76,
+          717,
+          445,
+          872
+        ],
+        [
+          501,
+          198,
+          917,
+          499
+        ],
+        [
+          501,
+          498,
+          917,
+          925
+        ]
+      ],
+      "notes": [
+        "Upper left inward-crest medallion.",
+        "Upper middle spiral crest medallion.",
+        "Middle left repeated scalloped wave field.",
+        "Small lower left spiral medallion.",
+        "Bottom left layered crest field.",
+        "Upper right continuous dark spiral band.",
+        "Lower right outlined foam field with bubbles and small arcs."
+      ],
+      "source_sha256": "552a7f6c709af404b6debd9adab5affd447c786253463e2aad02cbee20a25127",
+      "size": [
+        6046,
+        5042
+      ]
+    },
+    {
+      "scan": 17,
+      "boxes": [
+        [
+          44,
+          235,
+          460,
+          377
+        ],
+        [
+          194,
+          451,
+          429,
+          543
+        ],
+        [
+          53,
+          551,
+          374,
+          708
+        ],
+        [
+          194,
+          737,
+          442,
+          841
+        ],
+        [
+          498,
+          216,
+          915,
+          402
+        ],
+        [
+          668,
+          415,
+          903,
+          548
+        ],
+        [
+          411,
+          532,
+          741,
+          662
+        ],
+        [
+          540,
+          704,
+          872,
+          875
+        ]
+      ],
+      "notes": [
+        "Upper left open current with bubbles.",
+        "Small middle left layered arc field.",
+        "Large middle left layered arc field.",
+        "Lower left pointed crests.",
+        "Upper right spiral current with bubbles.",
+        "Upper group of fine crests in the lower right panel. Neighboring forms are masked out.",
+        "Angular crest field with its clipped continuation on the facing page; the gutter is retained.",
+        "Lower right curling crest field."
+      ],
+      "source_sha256": "032cd565a1df68d1d5c8b9cfed52534edf596f6277ae2428652ff81eb2e4b85f",
+      "size": [
+        6013,
+        5025
+      ],
+      "polygons": {
+        "5": [
+          [
+            668,
+            415
+          ],
+          [
+            903,
+            415
+          ],
+          [
+            903,
+            548
+          ],
+          [
+            743,
+            548
+          ],
+          [
+            743,
+            521
+          ],
+          [
+            668,
+            521
+          ]
+        ]
+      }
+    },
+    {
+      "scan": 18,
+      "boxes": [
+        [
+          117,
+          241,
+          444,
+          311
+        ],
+        [
+          101,
+          321,
+          382,
+          407
+        ],
+        [
+          67,
+          467,
+          444,
+          612
+        ],
+        [
+          56,
+          710,
+          456,
+          839
+        ],
+        [
+          503,
+          230,
+          907,
+          466
+        ],
+        [
+          507,
+          526,
+          830,
+          637
+        ],
+        [
+          545,
+          686,
+          868,
+          840
+        ]
+      ],
+      "notes": [
+        "Upper left narrow current with a small breaking crest.",
+        "Second left narrow current.",
+        "Middle left long rippling current.",
+        "Lower left paired crests over a low wave.",
+        "Upper right dense current and foam field.",
+        "Middle right sharply turning current.",
+        "Lower right dark curling current group."
+      ],
+      "source_sha256": "cb8172307dec2b6a9718bdffe752710e9e232dc791f6e536adcfd12db311b079",
+      "size": [
+        6013,
+        5058
+      ]
+    },
+    {
+      "scan": 19,
+      "boxes": [
+        [
+          190,
+          249,
+          395,
+          486
+        ],
+        [
+          77,
+          486,
+          267,
+          620
+        ],
+        [
+          66,
+          716,
+          263,
+          851
+        ],
+        [
+          262,
+          598,
+          426,
+          784
+        ],
+        [
+          579,
+          276,
+          894,
+          420
+        ],
+        [
+          514,
+          389,
+          817,
+          516
+        ],
+        [
+          510,
+          545,
+          896,
+          846
+        ]
+      ],
+      "notes": [
+        "Upper left ring of wave forms.",
+        "Middle left diamond-shaped water ornament.",
+        "Lower left repeated curled arcs and bubbles.",
+        "Lower middle stacked pointed wave forms.",
+        "Upper right repeated crests with spiral centers.",
+        "Middle right three long curling crests. Neighboring forms are masked out.",
+        "Lower right large meandering spiral current."
+      ],
+      "source_sha256": "3005580cde005ab7ad426eb02f07bf6d20e4916210eafe589911509446bdcd03",
+      "size": [
+        5996,
+        5096
+      ],
+      "polygons": {
+        "5": [
+          [
+            514,
+            389
+          ],
+          [
+            577,
+            389
+          ],
+          [
+            577,
+            420
+          ],
+          [
+            640,
+            420
+          ],
+          [
+            640,
+            439
+          ],
+          [
+            817,
+            439
+          ],
+          [
+            817,
+            516
+          ],
+          [
+            514,
+            516
+          ]
+        ]
+      }
+    },
+    {
+      "scan": 20,
+      "boxes": [
+        [
+          40,
+          193,
+          457,
+          505
+        ],
+        [
+          39,
+          529,
+          457,
+          927
+        ],
+        [
+          491,
+          190,
+          905,
+          563
+        ],
+        [
+          492,
+          562,
+          905,
+          923
+        ]
+      ],
+      "notes": [
+        "Upper left detailed breaking-wave field.",
+        "Lower left broad crests and bubbles.",
+        "Upper right strong parallel wave curves.",
+        "Lower right repeated diagonal wave strips."
+      ],
+      "source_sha256": "c91f2dac6421e75c3fdbd5fae6e29bbb78f5a6093ca3994e91f483b1f30c7ced",
+      "size": [
+        6013,
+        5042
+      ]
+    },
+    {
+      "scan": 21,
+      "boxes": [
+        [
+          40,
+          213,
+          457,
+          602
+        ],
+        [
+          39,
+          663,
+          456,
+          698
+        ],
+        [
+          39,
+          731,
+          456,
+          789
+        ],
+        [
+          39,
+          828,
+          455,
+          857
+        ],
+        [
+          491,
+          225,
+          906,
+          329
+        ],
+        [
+          492,
+          376,
+          906,
+          596
+        ],
+        [
+          493,
+          617,
+          906,
+          889
+        ]
+      ],
+      "notes": [
+        "Upper left dark branching current.",
+        "First lower left thin wave band.",
+        "Middle lower left repeated rounded current band.",
+        "Last lower left thin wave band.",
+        "Upper right enclosed repeating crest band.",
+        "Middle right layered outlined waves.",
+        "Lower right foam-and-crest field."
+      ],
+      "source_sha256": "60955427c6aa1861c7719f9c6c53f8683ad892ffff34845b366e4de0cacabf85",
+      "size": [
+        5996,
+        5025
+      ]
+    },
+    {
+      "scan": 22,
+      "boxes": [
+        [
+          43,
+          229,
+          232,
+          420
+        ],
+        [
+          74,
+          457,
+          261,
+          647
+        ],
+        [
+          265,
+          197,
+          460,
+          706
+        ],
+        [
+          42,
+          718,
+          460,
+          933
+        ],
+        [
+          499,
+          198,
+          919,
+          928
+        ]
+      ],
+      "notes": [
+        "First group of small upright forms and arcs.",
+        "Second group of small upright forms and arcs.",
+        "Tall narrow cascading-line panel.",
+        "Lower left foam outline and bubble field.",
+        "Right full-panel breaking wave, retained as one composition."
+      ],
+      "source_sha256": "9f7a0da4e66d5e2642e5a72a1bbf0e70f63dc2850cac880dca1ae4692e588681",
+      "size": [
+        5979,
+        5025
+      ]
+    },
+    {
+      "scan": 23,
+      "boxes": [
+        [
+          53,
+          191,
+          458,
+          445
+        ],
+        [
+          40,
+          493,
+          458,
+          916
+        ],
+        [
+          499,
+          227,
+          917,
+          495
+        ],
+        [
+          499,
+          494,
+          917,
+          935
+        ]
+      ],
+      "notes": [
+        "Upper left long current with successive curled crests.",
+        "Lower left dense sweeping water field.",
+        "Upper right tall central crest and flanking waves.",
+        "Lower right angular foam and breaking-wave field."
+      ],
+      "source_sha256": "d25cf1f98ade37e11e5de6e21abe8548f5c9ff33414a553f67b6eafc9050ddcd",
+      "size": [
+        6013,
+        5058
+      ]
+    },
+    {
+      "scan": 24,
+      "boxes": [
+        [
+          42,
+          184,
+          458,
+          405
+        ],
+        [
+          42,
+          403,
+          458,
+          914
+        ],
+        [
+          503,
+          264,
+          860,
+          516
+        ],
+        [
+          499,
+          603,
+          640,
+          675
+        ],
+        [
+          498,
+          602,
+          899,
+          878
+        ],
+        [
+          785,
+          766,
+          910,
+          845
+        ]
+      ],
+      "notes": [
+        "Upper left field of short shaded strokes.",
+        "Lower left dense diagonal wave field.",
+        "Upper right repeated fine crest bands.",
+        "Small upper left current in the lower right panel.",
+        "Large connected meandering current across the lower panel, including the upper right ripples. The separate upper left spiral and lower right pool are masked out.",
+        "Small lower right outlined pool current."
+      ],
+      "source_sha256": "5a7ef7d9b56fb9523b278762a0ebb84e39c2f94504897c6f59a83e98356391d1",
+      "size": [
+        5996,
+        5042
+      ],
+      "polygons": {
+        "4": [
+          [
+            646,
+            602
+          ],
+          [
+            899,
+            602
+          ],
+          [
+            899,
+            747
+          ],
+          [
+            783,
+            747
+          ],
+          [
+            783,
+            878
+          ],
+          [
+            498,
+            878
+          ],
+          [
+            498,
+            675
+          ],
+          [
+            646,
+            675
+          ]
+        ]
+      }
+    },
+    {
+      "scan": 25,
+      "boxes": [
+        [
+          49,
+          192,
+          193,
+          900
+        ],
+        [
+          219,
+          223,
+          436,
+          400
+        ],
+        [
+          213,
+          444,
+          441,
+          582
+        ],
+        [
+          221,
+          681,
+          440,
+          896
+        ],
+        [
+          497,
+          181,
+          794,
+          260
+        ],
+        [
+          657,
+          279,
+          883,
+          370
+        ],
+        [
+          497,
+          443,
+          912,
+          745
+        ],
+        [
+          497,
+          747,
+          913,
+          918
+        ]
+      ],
+      "notes": [
+        "Tall left panel of repeated upright crests.",
+        "Upper narrow field of angular ripples.",
+        "Middle narrow field of pointed currents.",
+        "Lower narrow field of intersecting arcs.",
+        "Upper right crest group, clipped at the original panel edge.",
+        "Second upper right crest group.",
+        "Middle right foam and flowing-water composition.",
+        "Lower right repeated diagonal curling crests."
+      ],
+      "source_sha256": "41ab90ecb89c757f53c93f3ff85d5d90e6e440fa8a35b7b77cbeda6058a81b12",
+      "size": [
+        5996,
+        5025
+      ]
+    },
+    {
+      "scan": 26,
+      "boxes": [
+        [
+          36,
+          306,
+          455,
+          875
+        ],
+        [
+          502,
+          327,
+          913,
+          524
+        ],
+        [
+          496,
+          518,
+          909,
+          905
+        ]
+      ],
+      "notes": [
+        "Left continuous folded water-pattern ribbon composition.",
+        "Upper right narrow patterned ribbon and loop.",
+        "Lower right broad folded water-pattern ribbon."
+      ],
+      "source_sha256": "d6623bcd6d3ff165ea302e34ce524bd41c2f9119c2d5f52039f88521c5ae308d",
+      "size": [
+        5996,
+        5075
+      ]
+    },
+    {
+      "scan": 27,
+      "boxes": [
+        [
+          594,
+          453,
+          835,
+          582
+        ],
+        [
+          527,
+          398,
+          914,
+          787
+        ]
+      ],
+      "polygons": {
+        "0": [
+          [
+            594,
+            527
+          ],
+          [
+            835,
+            453
+          ],
+          [
+            690,
+            582
+          ]
+        ],
+        "1": [
+          [
+            914,
+            398
+          ],
+          [
+            914,
+            555
+          ],
+          [
+            702,
+            787
+          ],
+          [
+            527,
+            697
+          ],
+          [
+            530,
+            657
+          ],
+          [
+            580,
+            672
+          ]
+        ]
+      },
+      "notes": [
+        "Visible water pattern on the rear scroll; the front scroll hides part of it. The lettered box and surrounding objects are excluded.",
+        "Front scroll water composition with its paper roll; writing, the rear scroll, and surrounding objects are excluded."
+      ],
+      "source_sha256": "3812fd1822d8c76d57eeafbdbfcf4fe3f9c2ae558ecc16b992d916f639ccba8b",
+      "size": [
+        5979,
+        5025
+      ]
+    },
+    {
+      "scan": 28,
+      "boxes": [],
+      "source_sha256": "1a5e7be468b860bd5c89dc5e3fad4c1905fad7f59ab0f79a91368aeab45457e5",
+      "size": [
+        6029,
+        5025
+      ],
+      "exclude": "Writing and publication details only; no graphic water forms."
+    },
+    {
+      "scan": 29,
+      "boxes": [
+        [
+          109,
+          126,
+          491,
+          389
+        ],
+        [
+          328,
+          402,
+          524,
+          529
+        ],
+        [
+          331,
+          524,
+          888,
+          831
+        ]
+      ],
+      "notes": [
+        "Upper back-cover spiral group.",
+        "Isolated middle back-cover spiral.",
+        "Lower back-cover spiral group."
+      ],
+      "source_sha256": "809cdd6dd86678c190c2e2ac917664a29803f48464ee78f3c64c47903391a638",
+      "size": [
+        3496,
+        5025
+      ]
+    }
+  ]
+}

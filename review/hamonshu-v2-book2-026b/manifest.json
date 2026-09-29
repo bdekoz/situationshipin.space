@@ -1,0 +1,53 @@
+{
+  "id": "hamonshu_2-026b",
+  "scan": 26,
+  "note": "Large lower left scroll; mask excludes the separate small curl at its right.",
+  "box_pixels": [
+    478,
+    2496,
+    2550,
+    4427
+  ],
+  "polygon_normalized": [
+    [
+      78,
+      495
+    ],
+    [
+      416,
+      495
+    ],
+    [
+      416,
+      690
+    ],
+    [
+      316,
+      690
+    ],
+    [
+      316,
+      878
+    ],
+    [
+      78,
+      878
+    ]
+  ],
+  "size": [
+    2072,
+    1931
+  ],
+  "mode": "RGBA",
+  "pixel_sha256": "4cad0df42fb30ea67de789b818264c5d716fe93ef0899d15b5ff93d0ee59c357",
+  "sha256": "dc0128272415d8cb3a862d20673686e496b9c9b8b409da8162ca8b6f94f6465e",
+  "source_scan_sha256": "89155d5707b105bacd2a7d73bdf0609c7afeabcc39b3bb522daefbbe359cfc63",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-026b.jpg",
+    "bytes": 202766,
+    "sha256": "b9dae5857318172a41685f55e9475da4898246f07bcf5f3ca1b58d1e55c70cd9",
+    "width": 1600,
+    "height": 1491,
+    "format": "jpg"
+  }
+}

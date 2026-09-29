@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-016c",
+  "scan": 16,
+  "note": "Middle left repeated scalloped wave field.",
+  "box_pixels": [
+    1106,
+    2491,
+    2690,
+    3222
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1584,
+    731
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "d22a75ae934d795d0060374d9dcd29097900727c763372d766e2e9a80c65f4a3",
+  "sha256": "6a49dad3f23d72cc40a483f97fbba67066bb69df3c4478f4482997cd924ff0f1",
+  "source_scan_sha256": "552a7f6c709af404b6debd9adab5affd447c786253463e2aad02cbee20a25127",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-016c.jpg",
+    "bytes": 135601,
+    "sha256": "d82f900d727b32220fd7d6bd31a4f147420df3a1819443296ab48273d31210b3",
+    "width": 1584,
+    "height": 731,
+    "format": "jpg"
+  }
+}

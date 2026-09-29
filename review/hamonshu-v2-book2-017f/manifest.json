@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-017f",
+  "scan": 17,
+  "note": "Lower right connected irregular ripple group.",
+  "box_pixels": [
+    3264,
+    3161,
+    5508,
+    4347
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2244,
+    1186
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "2607ceb871fa28ad47585b2bf62d3a3b99fb5f01f71095e7ca3c2458ccc981a6",
+  "sha256": "c140ae9c8e43c5a2428af21791148ad8c380712af3073f0828e07520708d0fce",
+  "source_scan_sha256": "6ae0fd2f350d71e104c85ebc250325299a602811b4c20eba416ca61a932ac605",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-017f.jpg",
+    "bytes": 161404,
+    "sha256": "74a65a02a75b455ed5d2bb7759e8215beb51694e91b1264c76fe9be08585d8bc",
+    "width": 1600,
+    "height": 846,
+    "format": "jpg"
+  }
+}

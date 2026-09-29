@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-021d",
+  "scan": 21,
+  "note": "Last lower left thin wave band.",
+  "box_pixels": [
+    234,
+    4161,
+    2728,
+    4306
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2494,
+    145
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "946a21d53bb753be8529a7d90717bc17b8a573d63a54b9090a96d9c736c6e79c",
+  "sha256": "1022a74fed23859d86bb270436e0cbeb1583c4256667bd9e6ca8db1609ef0493",
+  "source_scan_sha256": "60955427c6aa1861c7719f9c6c53f8683ad892ffff34845b366e4de0cacabf85",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-021d.jpg",
+    "bytes": 36307,
+    "sha256": "ae0357a9b96d5bf4aaf9d2da74e09b381cd3af96c112120904adadafa2b96a7c",
+    "width": 1600,
+    "height": 93,
+    "format": "jpg"
+  }
+}

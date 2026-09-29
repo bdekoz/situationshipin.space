@@ -1,0 +1,61 @@
+{
+  "id": "hamonshu_2-027c",
+  "scan": 27,
+  "note": "Partly hidden zigzag-wave panel; mask excludes the overlapping foreground panels.",
+  "box_pixels": [
+    3949,
+    2158,
+    5276,
+    3494
+  ],
+  "polygon_normalized": [
+    [
+      841,
+      428
+    ],
+    [
+      863,
+      428
+    ],
+    [
+      863,
+      693
+    ],
+    [
+      751,
+      693
+    ],
+    [
+      751,
+      561
+    ],
+    [
+      646,
+      561
+    ],
+    [
+      646,
+      512
+    ],
+    [
+      841,
+      512
+    ]
+  ],
+  "size": [
+    1327,
+    1336
+  ],
+  "mode": "RGBA",
+  "pixel_sha256": "a5bc14728df334d57b6c0c25591df0441479374156c7c937c4464b3c94cf8a38",
+  "sha256": "dc006e9a3b822eb4c89155be524108f229567804c62710f4d390badb813a61af",
+  "source_scan_sha256": "8c79a4ca1a5d86f30eca9b3e17992d461be81e2bcf4527880d7c46ce4b765629",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-027c.jpg",
+    "bytes": 222252,
+    "sha256": "156e081302a7c99b8445a0014008ed58644ce18bb0eac5ed14ecd9fa8c3dc760",
+    "width": 1327,
+    "height": 1336,
+    "format": "jpg"
+  }
+}

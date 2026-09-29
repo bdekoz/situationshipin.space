@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-011d",
+  "scan": 11,
+  "note": "First left rectangular strip.",
+  "box_pixels": [
+    685,
+    3237,
+    1479,
+    3434
+  ],
+  "polygon_normalized": null,
+  "size": [
+    794,
+    197
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "51855156187334a6e96eb0ebbc308e459b4b31e643e7aebd12d756e143d1cd69",
+  "sha256": "cdbde63783f7c78b206191990f0e54a4a67cd4338deda34162b7ad43f1234030",
+  "source_scan_sha256": "3a2c623bc8f12c65ee252b48827261e60984a3963e065773067496f1d570142e",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-011d.jpg",
+    "bytes": 45945,
+    "sha256": "97f8ca86073465c6cb1396a62363d8e4b5cb68b7bbc4506c7ad0e67664ddf716",
+    "width": 794,
+    "height": 197,
+    "format": "jpg"
+  }
+}

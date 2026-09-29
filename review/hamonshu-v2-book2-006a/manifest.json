@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-006a",
+  "scan": 6,
+  "note": "Upper left curl-and-drop composition.",
+  "box_pixels": [
+    311,
+    899,
+    2835,
+    2518
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2524,
+    1619
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "355e9ba369ffddc92f6c72ab85c9b2dd692a44844973df5e5e1e028ec979451f",
+  "sha256": "17e1bcaef1384e85cc6d9ce68d892988e5adf4b469d4aab58e83f63614dbafc5",
+  "source_scan_sha256": "ddc3930133c6ab70c809e5fd7be048872aa932dc06136399cb2ca750d9ca2a07",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-006a.jpg",
+    "bytes": 205703,
+    "sha256": "3d8ce427f52a5b35473e8ef5d992a884827d83edea60415b0f23d9183be588f6",
+    "width": 1600,
+    "height": 1026,
+    "format": "jpg"
+  }
+}

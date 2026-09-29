@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-016a",
+  "scan": 16,
+  "note": "Upper left current loop.",
+  "box_pixels": [
+    472,
+    1370,
+    1912,
+    2086
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1440,
+    716
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "f66b22e9ff7d5bb338b191d35080c82566938deec0fef610e4d351eb24f875ce",
+  "sha256": "4351a21a29ed9c2f5e73192042d160df0c0718c47a22a4878193aa461cca4c50",
+  "source_scan_sha256": "76a1b68d8e8a72cd475a95a72d07c11fa6cdc588d8da54fe179c7556de44d63f",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-016a.jpg",
+    "bytes": 124941,
+    "sha256": "c20f00658ea94f46a0ed1f595b957c357a38676b427186dd1f7e223cfaba76e8",
+    "width": 1440,
+    "height": 716,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-007f",
+  "scan": 7,
+  "note": "Middle right interleaved dark crest bands.",
+  "box_pixels": [
+    3557,
+    2395,
+    5480,
+    3030
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1923,
+    635
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "bf39b1e64b4a0f0e59a02f41d89c81afa6fac15fd78ce126f278b72278c8cdc6",
+  "sha256": "b61aa8ad0070e1ef72b763e25e1fd506439f76c86d996ee4964d0ed986c7f84f",
+  "source_scan_sha256": "5fc2694d8dd62736fd42d388515f47269ffa71c5b6dd4df2d7e81eed4ce2525e",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-007f.jpg",
+    "bytes": 135690,
+    "sha256": "bdf44c940fc39b00c5a52f4051571aa1c688115b1fa2ec66904815f13b954695",
+    "width": 1600,
+    "height": 528,
+    "format": "jpg"
+  }
+}

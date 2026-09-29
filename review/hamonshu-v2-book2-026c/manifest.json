@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-026c",
+  "scan": 26,
+  "note": "Small lower left S-shaped curl.",
+  "box_pixels": [
+    1931,
+    3504,
+    2635,
+    4230
+  ],
+  "polygon_normalized": null,
+  "size": [
+    704,
+    726
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "9fed691bd821ace54f1ee902cacdd74045b91a8a67b9b78589c425b4ada80605",
+  "sha256": "8cadbba21c9947e1c36f5c7bd6cd150b7fbc480c1eb4238a6cd503b94491dd71",
+  "source_scan_sha256": "89155d5707b105bacd2a7d73bdf0609c7afeabcc39b3bb522daefbbe359cfc63",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-026c.jpg",
+    "bytes": 59984,
+    "sha256": "7a866f186e146fd8c10826aa967ffcc2064944679d4aa7afbfa7c7f171430240",
+    "width": 704,
+    "height": 726,
+    "format": "jpg"
+  }
+}

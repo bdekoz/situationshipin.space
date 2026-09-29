@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-018g",
+  "scan": 18,
+  "note": "Lower right dark curling current group.",
+  "box_pixels": [
+    3277,
+    3470,
+    5219,
+    4249
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1942,
+    779
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "87c76671f2bc7bdfc58c1d2d3777b43d238615b02562424f373c0b55ed73f5bd",
+  "sha256": "e4d13b752211dc3cb7ca07dbc0e993ecb7fc2b9b5378e00171884f976b625b6c",
+  "source_scan_sha256": "cb8172307dec2b6a9718bdffe752710e9e232dc791f6e536adcfd12db311b079",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-018g.jpg",
+    "bytes": 115849,
+    "sha256": "3de255b788dfef86e2b601ef2c562ea808fa558504632fbff6df13d842c6adf8",
+    "width": 1600,
+    "height": 642,
+    "format": "jpg"
+  }
+}

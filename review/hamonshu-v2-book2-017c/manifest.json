@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-017c",
+  "scan": 17,
+  "note": "Lower left flowing band.",
+  "box_pixels": [
+    281,
+    3216,
+    2696,
+    4397
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2415,
+    1181
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "8d26240bd9ef71fe3a71a70da5010cbafcd382832646aa995a1ae98fafd3d5d6",
+  "sha256": "7f06ef1a6b2a7466239f28bbfaa34e808c22184169aaff2269c592c27a8e8959",
+  "source_scan_sha256": "6ae0fd2f350d71e104c85ebc250325299a602811b4c20eba416ca61a932ac605",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-017c.jpg",
+    "bytes": 247720,
+    "sha256": "55b66a576f2500bafc257c4e0989780f18c78cffb4bc48e435bd2ccf7591b21d",
+    "width": 1600,
+    "height": 782,
+    "format": "jpg"
+  }
+}

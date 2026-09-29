@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-004b",
+  "scan": 4,
+  "note": "Second thin water band.",
+  "box_pixels": [
+    565,
+    1920,
+    2640,
+    2266
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2075,
+    346
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "a6ab1d4316de8c8469f5364d00fad3a438c19f61c885d9e7b7f65bc8d3d0085e",
+  "sha256": "92efc8e51278a5714465c31e9fdc6f7b415dce86c4d37142da0f84f8d16978fa",
+  "source_scan_sha256": "e282b7329c467bcca024dd8b5c9240449ffaf218e8d8ea8435b9c7bf377a6043",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-004b.jpg",
+    "bytes": 42361,
+    "sha256": "5b635b6423b89b474564b505ce839aa0bcf7f75c3abe97f45d9ec4997887b3bc",
+    "width": 1600,
+    "height": 267,
+    "format": "jpg"
+  }
+}

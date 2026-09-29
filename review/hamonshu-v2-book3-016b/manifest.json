@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-016b",
+  "scan": 16,
+  "note": "Upper middle spiral crest medallion.",
+  "box_pixels": [
+    1638,
+    1382,
+    2418,
+    2138
+  ],
+  "polygon_normalized": null,
+  "size": [
+    780,
+    756
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "e7cffdb7a2b1f379a89462cabb69934ede664f73e595700d939a2818b213e1e8",
+  "sha256": "2bac6750a527ea7ec457407dc43e2b6f5a7739db4b926af9392ac592e9bef33b",
+  "source_scan_sha256": "552a7f6c709af404b6debd9adab5affd447c786253463e2aad02cbee20a25127",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-016b.jpg",
+    "bytes": 86554,
+    "sha256": "b32fd737befa14e961c477f77493195e5b2fba29d521f6557f7b805c847feecf",
+    "width": 780,
+    "height": 756,
+    "format": "jpg"
+  }
+}

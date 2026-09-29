@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-020a",
+  "scan": 20,
+  "note": "Upper left decorated wave composition.",
+  "box_pixels": [
+    301,
+    933,
+    2811,
+    2965
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2510,
+    2032
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "e0d3830ff01c900d459c15ef82d87941030b86317db1e94f93e47b111106f50f",
+  "sha256": "172af1be2fa70768b3801c5f0c90630a6ce65c160a96026a69b651a6bbb109ec",
+  "source_scan_sha256": "64bb9859b661c8df2bb8f4849cd62aca687f948c987a9628423bfd7c728420d7",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-020a.jpg",
+    "bytes": 407962,
+    "sha256": "15950a11bc1399abe4d505e01b02dc93b9efa9601df3d86560863418479a8a5a",
+    "width": 1600,
+    "height": 1295,
+    "format": "jpg"
+  }
+}

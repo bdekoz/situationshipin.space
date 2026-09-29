@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-017h",
+  "scan": 17,
+  "note": "Lower right curling crest field.",
+  "box_pixels": [
+    3247,
+    3538,
+    5243,
+    4397
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1996,
+    859
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "8fe6e856dd6d8ac9ebc8ef72eaf34997e3a4e050e5bcf5846ab2dc59ff942f94",
+  "sha256": "cb5f6ed5f5de02ed986e778bdcdd18721db0809bd9a78c72b72f5df8746675e4",
+  "source_scan_sha256": "032cd565a1df68d1d5c8b9cfed52534edf596f6277ae2428652ff81eb2e4b85f",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-017h.jpg",
+    "bytes": 175710,
+    "sha256": "27779cf93fb0d1ea111dd26dac6cb26db44c14cd99ffd29e3738b0fcf221556a",
+    "width": 1600,
+    "height": 689,
+    "format": "jpg"
+  }
+}

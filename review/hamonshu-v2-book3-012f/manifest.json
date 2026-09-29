@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-012f",
+  "scan": 12,
+  "note": "Middle right dense crest field.",
+  "box_pixels": [
+    3668,
+    2123,
+    5550,
+    3171
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1882,
+    1048
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "55a38316fafa050ddae6db8fc850f72261ba1c643789812175f9e570fb35add9",
+  "sha256": "1cc0c876c828fdd60b0908f04e8091719d75d17843d02be09431b9008267ea48",
+  "source_scan_sha256": "10490cc85c429c795b9f40ba627531cc7b72cf06c97b897f8535ad8ac3aba4ec",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-012f.jpg",
+    "bytes": 242200,
+    "sha256": "6321b176cd4be04e09281f5ef4b5446da76de2eb9ded2237ae8e1e2999ae41b1",
+    "width": 1600,
+    "height": 891,
+    "format": "jpg"
+  }
+}

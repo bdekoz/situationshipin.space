@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-018a",
+  "scan": 18,
+  "note": "Upper left narrow current with a small breaking crest.",
+  "box_pixels": [
+    704,
+    1219,
+    2670,
+    1573
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1966,
+    354
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "de4b54e96d2fd5f7e8001b63e456a84bc54a489da4cc9e3775dbcd5b034aff92",
+  "sha256": "0568572dfdea3a53117770b5072a41fdf86e4d0fdd4ec71b18dc2b1aa4a648d1",
+  "source_scan_sha256": "cb8172307dec2b6a9718bdffe752710e9e232dc791f6e536adcfd12db311b079",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-018a.jpg",
+    "bytes": 44201,
+    "sha256": "3beb7cd488badb66d081650d8bb4628eaa75fa419604d66a105fd93dc59c23de",
+    "width": 1600,
+    "height": 288,
+    "format": "jpg"
+  }
+}

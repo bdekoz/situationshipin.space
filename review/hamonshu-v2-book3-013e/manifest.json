@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-013e",
+  "scan": 13,
+  "note": "Bottom left interwoven current.",
+  "box_pixels": [
+    1423,
+    3904,
+    2574,
+    4261
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1151,
+    357
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "68c4666ff60f76e8d02730e0667e8939f1b9d336f465ef36171f44010670914a",
+  "sha256": "283eb6f124fce162c0946fb2e40bf632e47df515146a54ceafc36d2177c20859",
+  "source_scan_sha256": "1e0a8b07cde573dc1f5d61f6f07e83ada42f4d4138151fabd9a37d2ce68f0ae3",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-013e.jpg",
+    "bytes": 80618,
+    "sha256": "016bba8e1d8f094e6cd4fc9eb404bdd62df92bb2dff0feb88c43faf3e2ed86e9",
+    "width": 1151,
+    "height": 357,
+    "format": "jpg"
+  }
+}

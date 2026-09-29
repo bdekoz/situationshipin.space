@@ -1,0 +1,53 @@
+{
+  "id": "hamonshu_3-017f",
+  "scan": 17,
+  "note": "Upper group of fine crests in the lower right panel. Neighboring forms are masked out.",
+  "box_pixels": [
+    4017,
+    2085,
+    5430,
+    2754
+  ],
+  "polygon_normalized": [
+    [
+      668,
+      415
+    ],
+    [
+      903,
+      415
+    ],
+    [
+      903,
+      548
+    ],
+    [
+      743,
+      548
+    ],
+    [
+      743,
+      521
+    ],
+    [
+      668,
+      521
+    ]
+  ],
+  "size": [
+    1413,
+    669
+  ],
+  "mode": "RGBA",
+  "pixel_sha256": "67019985a0ffc179af0237289c2c18d2d76e12b0c5b4a778e7fcb39f36c83c34",
+  "sha256": "a943a4a43b71949a805bdb923d37d5feeebb959e50d02566adc7ea8a2d62b1cb",
+  "source_scan_sha256": "032cd565a1df68d1d5c8b9cfed52534edf596f6277ae2428652ff81eb2e4b85f",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-017f.jpg",
+    "bytes": 141672,
+    "sha256": "9f9934f2d31ebbd3711c8592ecf4c20a6f0a39242058c84bb456d8057d3731aa",
+    "width": 1413,
+    "height": 669,
+    "format": "jpg"
+  }
+}

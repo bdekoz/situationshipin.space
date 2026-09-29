@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-018c",
+  "scan": 18,
+  "note": "Lower left broad foam cells.",
+  "box_pixels": [
+    281,
+    2839,
+    2794,
+    4644
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2513,
+    1805
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "f8e7f3d15dba151af919e23de6bd9cf513512733e9fae839d46f80662eadb679",
+  "sha256": "632f51e6c13de5b8540b460996d3391a93afbbd4f06f1f0f090632163e04e3e8",
+  "source_scan_sha256": "fc480ac314e798a5d97a3eb9956cdb4afb2a232221c79ea3f003d0d5151475c6",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-018c.jpg",
+    "bytes": 164865,
+    "sha256": "40c975a0e0dcd8874c1654d858503c18e1757425b15db86be259205ae7833720",
+    "width": 1600,
+    "height": 1149,
+    "format": "jpg"
+  }
+}

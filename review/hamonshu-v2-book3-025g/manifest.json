@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-025g",
+  "scan": 25,
+  "note": "Middle right foam and flowing-water composition.",
+  "box_pixels": [
+    2980,
+    2226,
+    5468,
+    3744
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2488,
+    1518
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "445f5234aa727668fa35da710f6b2654d6363333b283729b0198e51619728da7",
+  "sha256": "fdb3a9581d953e4438e9736e35326b40b833c27aaeba6e15466be6473ce14d63",
+  "source_scan_sha256": "41ab90ecb89c757f53c93f3ff85d5d90e6e440fa8a35b7b77cbeda6058a81b12",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-025g.jpg",
+    "bytes": 262386,
+    "sha256": "bc0abe05f1632483bbf550fb5683f85746d6eaf74f9c5b931de42bdc6ddb9056",
+    "width": 1600,
+    "height": 976,
+    "format": "jpg"
+  }
+}

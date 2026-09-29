@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-014b",
+  "scan": 14,
+  "note": "Right framed field of irregular foam and spray; the repeated composition is kept together.",
+  "box_pixels": [
+    3089,
+    955,
+    5608,
+    4603
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2519,
+    3648
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "144747e8ef489d1ed9c75c746f47c6a74cca9c628b8d7715aa71e8714e3d2876",
+  "sha256": "a6847eb887f7c3a7983a9576946b4e67921ea9179058e40d0a9b844eb321332d",
+  "source_scan_sha256": "9c6de48e5d8b4eda50b75ab50b8e18d8f24aff8f7c4c108fd89cc96212d8022f",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-014b.jpg",
+    "bytes": 220087,
+    "sha256": "714fc504674ba0e759ce457fb9bfafe599bb0cea0a7f542ef02db7f8287b3ecc",
+    "width": 1105,
+    "height": 1600,
+    "format": "jpg"
+  }
+}

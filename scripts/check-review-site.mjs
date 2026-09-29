@@ -15,7 +15,9 @@ const maximumFileBytes = 16 * 1024 * 1024;
 // plus the 29-voice audio bank exceed the prior bound.
 // Raised 2026-08-14 from 80 MiB to 96 MiB: the completed 3-episode
 // ai-time-to-die vertical adds three full-motion episode masters.
-const maximumPayloadBytes = 96 * 1024 * 1024;
+// Raised 2026-09-29 to 192 MiB for the three Hamonshū source-review books,
+// including readable crop previews, scan overlays, and contact sheets.
+const maximumPayloadBytes = 192 * 1024 * 1024;
 // .mp3 added 2026-08-14 for audio review artifacts (Kokoro female voice bank).
 // .txt added 2026-08-18 for the W3 canonical transcript review container.
 const allowedExtensions = new Set([".png", ".jpg", ".jpeg", ".svg", ".html", ".json", ".mp4", ".mp3", ".webp", ".pdf", ".md", ".txt"]);

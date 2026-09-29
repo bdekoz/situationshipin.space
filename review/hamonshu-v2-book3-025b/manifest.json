@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-025b",
+  "scan": 25,
+  "note": "Upper narrow field of angular ripples.",
+  "box_pixels": [
+    1313,
+    1121,
+    2614,
+    2010
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1301,
+    889
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "f42d3089528b0e0bd3a29704f8a8b56297d6f068e9b943c1a9aba6988ed697cb",
+  "sha256": "0d5acb36021babee1043ffb8e6b575118c93cd5cddb1f81492baf2f16c53348f",
+  "source_scan_sha256": "41ab90ecb89c757f53c93f3ff85d5d90e6e440fa8a35b7b77cbeda6058a81b12",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-025b.jpg",
+    "bytes": 126410,
+    "sha256": "343c67d68232b90506aec38454cfca775a47a456c5e3fa2ec88f893facd4df2a",
+    "width": 1301,
+    "height": 889,
+    "format": "jpg"
+  }
+}

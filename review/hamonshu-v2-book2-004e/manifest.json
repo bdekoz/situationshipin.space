@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-004e",
+  "scan": 4,
+  "note": "Lower right breaking-wave band.",
+  "box_pixels": [
+    3200,
+    3769,
+    5736,
+    4588
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2536,
+    819
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "8c83136113d6a76054b2fd3476de35da5f8a863b4e90d6e4d6ac42b85ad4f6e3",
+  "sha256": "ee446d7b55063fd58d887ba705b7f552f89cf86da6cfca5692f51e73564520ca",
+  "source_scan_sha256": "4433d20dfefe8dff701469ed20550e407b46e01908cf749e6ecd25e42a8cbb95",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-004e.jpg",
+    "bytes": 206020,
+    "sha256": "f6d22a6daa7b9ea3da36c9a3adf6e008a68b8e6fe4433bf09f1728a054cd4bda",
+    "width": 1600,
+    "height": 517,
+    "format": "jpg"
+  }
+}

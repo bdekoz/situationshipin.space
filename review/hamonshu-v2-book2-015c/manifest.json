@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-015c",
+  "scan": 15,
+  "note": "Upper left rising-water emblem.",
+  "box_pixels": [
+    674,
+    1745,
+    1643,
+    2239
+  ],
+  "polygon_normalized": null,
+  "size": [
+    969,
+    494
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "630368fc4e68fa559791b4ee4bb45806570ccd868043a374229dcff5a1a1e53c",
+  "sha256": "a5fadaab5c8fd5d77e5ec7664093d262bb6d09146891600bdb5bfc697fff2e77",
+  "source_scan_sha256": "a32f3012966f0111139d4e9c7300b0f837b85506feaa73fa015e8842bf1b3ed5",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-015c.jpg",
+    "bytes": 100832,
+    "sha256": "2321d2849bd60f8af709b419862d6dcdf1e1d793d41b65dee69ecdbc08baa91d",
+    "width": 969,
+    "height": 494,
+    "format": "jpg"
+  }
+}

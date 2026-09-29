@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-012g",
+  "scan": 12,
+  "note": "Small lower right open-center disk.",
+  "box_pixels": [
+    4585,
+    3692,
+    5129,
+    4234
+  ],
+  "polygon_normalized": null,
+  "size": [
+    544,
+    542
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "7041062153f7c51c4b85e4770e25ec62792f9790a0bc8848a77b78dea74c93ee",
+  "sha256": "e7d0eb91c6db971f6576f0b9112c5c7363bb02afbcec6c6cb93c13fbeca956ca",
+  "source_scan_sha256": "a36a2a9254c02fe0f0bf3588c19e7adc54d751b5deedd7925f2fba6e1f27a812",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-012g.jpg",
+    "bytes": 45334,
+    "sha256": "f4acb8d9ff679a0cf8acd000509da8bde6155ec52c2c0299c4f61a4d365a3c6d",
+    "width": 544,
+    "height": 542,
+    "format": "jpg"
+  }
+}

@@ -39,32 +39,43 @@ node scripts/update-build-manifest.mjs
 node scripts/check-review-site.mjs
 ```
 
-## Hamonshū V2 Book 1 categories
+## Hamonshū V2 source categories
 
-[Open the crop review](https://situationshipin.space/review/hamonshu-v2-book1/).
-The 165 graphic water forms have neutral scan/segment filenames and no assigned
-categories. Reviewers name their own groups, add notes, and download a single
-JSON file. Drafts stay in that browser; loading a review replaces its current
-draft. Return the file to Benjamin for applying the categories in Izzi.
+| Review packet | Inspected scans | Graphic water crops | Text-only exclusions |
+| --- | ---: | ---: | --- |
+| [Book 1](https://situationshipin.space/review/hamonshu-v2-book1/) | 29 | 165 | Scan 002 |
+| [Book 2](https://situationshipin.space/review/hamonshu-v2-book2/) | 28 | 154 | None |
+| [Book 3](https://situationshipin.space/review/hamonshu-v2-book3/) | 29 | 156 | Scan 028 |
 
-The packet includes 1600-pixel review JPEGs, 28 source-location overlays, and
-seven contact sheets. Scan 002 is excluded as writing/blank. Full-resolution
-PNG crops remain local in Izzi. The crop plan, source hashes, masks, and preview
-hashes travel with the packet; categories are tied to that exact crop plan.
+The 475 graphic water forms have neutral book/scan/segment filenames and no
+assigned categories. Reviewers name their own groups, add notes, and download
+a JSON file for each book. Drafts stay in that browser, separately for each
+book; loading a review replaces its current draft. Return the file to Benjamin
+for applying the categories in Izzi. Synthesis waits for human category review.
+
+Each packet includes 1600-pixel review JPEGs, 28 source-location overlays, and
+seven contact sheets. Writing examples are excluded. Full-resolution PNG crops
+remain local in Izzi. The crop plan, source hashes, masks, and preview hashes
+travel with each packet; categories are tied to that exact book and crop plan.
+Book 2 includes cross-gutter compositions and overlapping samples. Book 3
+includes folded water-pattern ribbons and two masked scroll designs.
 
 Rebuild from a verified Izzi crop packet (Python and Pillow required):
 
 ```sh
-python3 scripts/publish-hamonshu-crops.py \
+python3 scripts/publish-hamonshu-crops.py --volume 2 \
   --izzi-root /home/bkoz/src/izzi --izzi-commit <40-hex-source-commit>
 node scripts/update-build-manifest.mjs
 node scripts/check-review-site.mjs
 ```
 
-The publisher writes this checkout; commit and push to deploy. Supporting
-assets are included in the same 96 MiB site payload limit as catalog images.
-In Izzi, `scripts/apply-hamonshu-categories.py` validates returned JSON and
-previews folder moves; `--apply` performs the explicitly selected review.
+Use `--volume 1`, `2`, or `3`; the default is Book 1. Publishing one volume
+preserves the other books and their draft identities. The publisher writes
+this checkout; commit and push to deploy. Supporting assets are included in
+the same 192 MiB site payload limit as catalog images, with a 16 MiB per-file
+limit. In Izzi, `scripts/apply-hamonshu-categories.py` selects the book from the
+returned JSON and previews folder moves; `--apply` performs the selected review.
+It rejects a mismatched book or crop plan, even with a directory override.
 Different reviewers' files are reviewed separately before choosing categories.
 
 ## Publishing a new video proof

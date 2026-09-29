@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-020f",
+  "scan": 20,
+  "note": "Bottom right layered arc field.",
+  "box_pixels": [
+    3536,
+    3812,
+    5566,
+    4618
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2030,
+    806
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "8c57c6e30ff854e70573992a03f71e6155e68ccae5dbda4358145756dc63deda",
+  "sha256": "f65341d272bb5d617a665d8f8f4bea473db7fc61704c01c5a0d63e1d564ce891",
+  "source_scan_sha256": "64bb9859b661c8df2bb8f4849cd62aca687f948c987a9628423bfd7c728420d7",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-020f.jpg",
+    "bytes": 133734,
+    "sha256": "ebbd23748145ad5260c4718d481a685b8c39f47311f770c3ca388f70f0b6c9c1",
+    "width": 1600,
+    "height": 635,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-015i",
+  "scan": 15,
+  "note": "Lower right broad winding current with two bubbles.",
+  "box_pixels": [
+    3718,
+    3222,
+    5441,
+    4517
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1723,
+    1295
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "2c2bdf6cfe0bfe8f999bc22fbf4c9b1af750f55a46702b8e513ca92ee96c6235",
+  "sha256": "005cd2964e96e19f03462c5d2c7d726b5e71d867b6e569335d9a1f27e8e8f41a",
+  "source_scan_sha256": "e73e94dc79bc8470b42b385c9cebcb9084be955d5551f6ca8c76c65031d4be20",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-015i.jpg",
+    "bytes": 291327,
+    "sha256": "13284110c165071493aec123cc8d7ce848c7559ad7c8471aa978a22e51d4fef7",
+    "width": 1600,
+    "height": 1203,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-015a",
+  "scan": 15,
+  "note": "Upper pointed repeat crosses the gutter; both visible portions are retained.",
+  "box_pixels": [
+    2292,
+    1477,
+    4149,
+    1770
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1857,
+    293
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "52d8310ba4d16f68a67e9c5bc5d3ea9cc0bc6828421dadc4ee017e0af869b1a3",
+  "sha256": "b79ffe7038fd518cc6905646901f62126e002637efb99e269448179e08dc1959",
+  "source_scan_sha256": "a32f3012966f0111139d4e9c7300b0f837b85506feaa73fa015e8842bf1b3ed5",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-015a.jpg",
+    "bytes": 88639,
+    "sha256": "bb1ee32b7d9426c46928f8a11caf22c7a3ad88d65ff396500c7869462d0ac92c",
+    "width": 1600,
+    "height": 252,
+    "format": "jpg"
+  }
+}

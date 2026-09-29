@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-018b",
+  "scan": 18,
+  "note": "Second left narrow current.",
+  "box_pixels": [
+    607,
+    1624,
+    2297,
+    2059
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1690,
+    435
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "a8cd3e77455406447ff9ff563d2bb15e51388d485981baebff4688b2108b55d0",
+  "sha256": "c84bdf15f0e13c3918d47fa504558888d132f393764d26a409db162a999f09aa",
+  "source_scan_sha256": "cb8172307dec2b6a9718bdffe752710e9e232dc791f6e536adcfd12db311b079",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-018b.jpg",
+    "bytes": 50867,
+    "sha256": "67607de6c96fd66adb112245b775d0665da55fe6106401ba0bdcb84ab2cbc573",
+    "width": 1600,
+    "height": 412,
+    "format": "jpg"
+  }
+}

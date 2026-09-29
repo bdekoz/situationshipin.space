@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-024a",
+  "scan": 24,
+  "note": "Upper left field of short shaded strokes.",
+  "box_pixels": [
+    252,
+    928,
+    2746,
+    2042
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2494,
+    1114
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "ca0d64ec4e5c64f8ad65779c4f53d34f8ada28e1a1cff3e0c2417bf323a20bf6",
+  "sha256": "f46129f1452d2e49a94f82cce16029058232459d72a873d6b94ba02639c9f02b",
+  "source_scan_sha256": "5a7ef7d9b56fb9523b278762a0ebb84e39c2f94504897c6f59a83e98356391d1",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-024a.jpg",
+    "bytes": 231698,
+    "sha256": "8b30cf302987b6bd38094a00769f520887d8c1bdf803f4f290853362e7d7958c",
+    "width": 1600,
+    "height": 715,
+    "format": "jpg"
+  }
+}

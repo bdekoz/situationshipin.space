@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-006b",
+  "scan": 6,
+  "note": "Lower left repeated round-lobed water field.",
+  "box_pixels": [
+    283,
+    2377,
+    1906,
+    4638
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1623,
+    2261
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "eece5bb3a4e6824f312baefe94d0a7a0f6273f2639286f89ffac1de6bc4e14c0",
+  "sha256": "96c16b03a3ff9af8b8700bf0abf742af3e0b074439f9e18c638a5c3f42654afd",
+  "source_scan_sha256": "ce469dbfccb54e7ec4b121925b73ed0c7d01d787085b688a2c313e0b73a9faf8",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-006b.jpg",
+    "bytes": 281150,
+    "sha256": "2ab0a6dfec9838ac9811674a3979d3b48f79b88c843a9346a873976bb714ab79",
+    "width": 1149,
+    "height": 1600,
+    "format": "jpg"
+  }
+}

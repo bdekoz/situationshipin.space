@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-011j",
+  "scan": 11,
+  "note": "Lower right breaking-wave disk.",
+  "box_pixels": [
+    4511,
+    2798,
+    5343,
+    3585
+  ],
+  "polygon_normalized": null,
+  "size": [
+    832,
+    787
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "104faa4f6030bb697e573e2c9837cde8ae07d00b3fe4f6eaf4d8ca4b1ec75e08",
+  "sha256": "258f337c848dcaf443820bac3715d35abf642bea211cadc40386f1227692dbd5",
+  "source_scan_sha256": "3a2c623bc8f12c65ee252b48827261e60984a3963e065773067496f1d570142e",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-011j.jpg",
+    "bytes": 127468,
+    "sha256": "d027ca8bd0db4a937b69cc2013311c2a9d2cd6fecdde3ff4d20095f5ae15f2ea",
+    "width": 832,
+    "height": 787,
+    "format": "jpg"
+  }
+}

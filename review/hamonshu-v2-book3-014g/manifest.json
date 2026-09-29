@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-014g",
+  "scan": 14,
+  "note": "Small right threefold spiral disk.",
+  "box_pixels": [
+    3192,
+    2007,
+    3924,
+    2748
+  ],
+  "polygon_normalized": null,
+  "size": [
+    732,
+    741
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "86ac946b1d34aba7828f1a4f8cfcfc9313605f18307ca311f14036abce52a7a6",
+  "sha256": "422b018df9582e446a7dc26db98a4d2c25ecb3690bfc0d9a9ca19a14e50403ad",
+  "source_scan_sha256": "316b10a37cb8a2c8affae6496f1bf391dcfb8a42daef23ac9637abf414154e61",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-014g.jpg",
+    "bytes": 83276,
+    "sha256": "5b03ed2a2f8e24a9a004fb58e9ada5561b513e06178f97c49cb0adf81f6603a7",
+    "width": 732,
+    "height": 741,
+    "format": "jpg"
+  }
+}

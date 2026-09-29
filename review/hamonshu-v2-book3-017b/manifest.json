@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-017b",
+  "scan": 17,
+  "note": "Small middle left layered arc field.",
+  "box_pixels": [
+    1167,
+    2266,
+    2580,
+    2729
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1413,
+    463
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "d4ff7f256c6ebd1bd2ff532162ceeac3ad28ea0e944c7e545806e07fedd464c7",
+  "sha256": "3b7f026ef1b18001f187abe47ed61a38df4cae25f22b678f9544b9342ec39d1a",
+  "source_scan_sha256": "032cd565a1df68d1d5c8b9cfed52534edf596f6277ae2428652ff81eb2e4b85f",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-017b.jpg",
+    "bytes": 118611,
+    "sha256": "ebc851cfbc69da4322ab36dcb106dca23a8af408599fd65c38f7b3de741bc512",
+    "width": 1413,
+    "height": 463,
+    "format": "jpg"
+  }
+}

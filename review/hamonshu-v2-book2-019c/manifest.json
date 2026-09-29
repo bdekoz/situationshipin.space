@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-019c",
+  "scan": 19,
+  "note": "Upper right connected ripple field.",
+  "box_pixels": [
+    3124,
+    1225,
+    5624,
+    2294
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2500,
+    1069
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "584bfa11824ebdbf672e5eb15c9dc8b83d5abcbe0333d0b895e073bd44db352b",
+  "sha256": "5b7dd2a45812d004ea4175bc3416c107add3eb2e55cea06ed798b87d763630e8",
+  "source_scan_sha256": "1b9898a958e7c3feae03c653967646611e8985911ca738bd03b2e0b1e2c160be",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-019c.jpg",
+    "bytes": 229517,
+    "sha256": "8e90e25ef837b98d49a2429b55130cdd16c5eaa1e0fe26b4ae74575762d28bdd",
+    "width": 1600,
+    "height": 684,
+    "format": "jpg"
+  }
+}

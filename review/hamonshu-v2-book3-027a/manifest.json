@@ -1,0 +1,41 @@
+{
+  "id": "hamonshu_3-027a",
+  "scan": 27,
+  "note": "Visible water pattern on the rear scroll; the front scroll hides part of it. The lettered box and surrounding objects are excluded.",
+  "box_pixels": [
+    3552,
+    2276,
+    4992,
+    2925
+  ],
+  "polygon_normalized": [
+    [
+      594,
+      527
+    ],
+    [
+      835,
+      453
+    ],
+    [
+      690,
+      582
+    ]
+  ],
+  "size": [
+    1440,
+    649
+  ],
+  "mode": "RGBA",
+  "pixel_sha256": "94829a2ccc4254395eaa0dc6c8ce703dd6aaf93752f92555d8932f0f377c458b",
+  "sha256": "48ccfb974003b0d93827688db5abacfd521d2511dd452be13d80fb3c75631782",
+  "source_scan_sha256": "3812fd1822d8c76d57eeafbdbfcf4fe3f9c2ae558ecc16b992d916f639ccba8b",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-027a.jpg",
+    "bytes": 114708,
+    "sha256": "f6aa89725ed44538ce311ee04509cb2e2a769ee683a489ba475bf46c6a161caa",
+    "width": 1440,
+    "height": 649,
+    "format": "jpg"
+  }
+}

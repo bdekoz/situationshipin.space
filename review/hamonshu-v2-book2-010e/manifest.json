@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-010e",
+  "scan": 10,
+  "note": "Middle right rolling lines, kept as one field.",
+  "box_pixels": [
+    3154,
+    2236,
+    5697,
+    3397
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2543,
+    1161
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "1b3da7f9a16d73b5e55bf2d11c4274389593e708c2f64e745cc7fbc2bf783bc5",
+  "sha256": "b05aad0bbad8425614747f9b3d4d50d394e2db847812030c3a61c24a96593866",
+  "source_scan_sha256": "2764d161b0cf9cc1bfeddda95e6bc15628268d1405eefd305931216c4d5d3294",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-010e.jpg",
+    "bytes": 143107,
+    "sha256": "34305c5776f07d75b4ce2b53aa3e136ff61b0aea10554a0fede33c13d4dc4a4a",
+    "width": 1600,
+    "height": 730,
+    "format": "jpg"
+  }
+}

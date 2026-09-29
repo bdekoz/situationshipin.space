@@ -1,0 +1,1816 @@
+{
+  "schema": "izzi.hamonshu-crop-plan/1",
+  "volume": 2,
+  "source_directory": "resources.rizal/hamonshu/hamonshu_2.pages",
+  "default_output": "resources.rizal/hamonshu/hamonshu_2.crops",
+  "coordinate_system": "Normalized integers 0–1000 relative to full source image; boxes are left, top, right, bottom. Pixel boundaries are rounded. Optional polygons select original pixels inside that box; other pixels become transparent.",
+  "reviewed": "2026-09-29",
+  "status": "Prepared for human review; category names are not assigned.",
+  "segmentation": "One distinct bounded design or coherent repeated group per crop. Connected compositions spanning the gutter are kept together. Touching or occluded designs can leave neighboring fragments in rectangular crops; these are explicitly noted. Original linework, color and full resolution are preserved.",
+  "scans": [
+    {
+      "scan": 1,
+      "boxes": [
+        [
+          237,
+          95,
+          870,
+          595
+        ],
+        [
+          55,
+          650,
+          599,
+          966
+        ]
+      ],
+      "polygons": {
+        "0": [
+          [
+            237,
+            175
+          ],
+          [
+            720,
+            175
+          ],
+          [
+            720,
+            95
+          ],
+          [
+            870,
+            95
+          ],
+          [
+            870,
+            595
+          ],
+          [
+            237,
+            595
+          ]
+        ],
+        "1": [
+          [
+            230,
+            650
+          ],
+          [
+            599,
+            650
+          ],
+          [
+            599,
+            966
+          ],
+          [
+            55,
+            966
+          ],
+          [
+            55,
+            690
+          ],
+          [
+            230,
+            690
+          ]
+        ]
+      },
+      "notes": [
+        "Upper cover ornament; title labels are masked. The source already hides some linework.",
+        "Lower cover ornament; the vertical title is masked. Occluded lines are not reconstructed."
+      ],
+      "source_sha256": "333628aabe25006f8dbf3e888dbf87b55e3048d15fcbc27d4972f611f54613b8",
+      "size": [
+        3479,
+        5042
+      ]
+    },
+    {
+      "scan": 2,
+      "boxes": [
+        [
+          64,
+          274,
+          455,
+          825
+        ]
+      ],
+      "notes": [
+        "Left framed water composition; marginal writing and the blank facing page are excluded."
+      ],
+      "source_sha256": "ae113148728a8fbe851bca1921c1e214bd87af93d38096098fbd4be1a4bc3090",
+      "size": [
+        6079,
+        5042
+      ]
+    },
+    {
+      "scan": 3,
+      "boxes": [
+        [
+          52,
+          188,
+          461,
+          498
+        ],
+        [
+          52,
+          548,
+          461,
+          894
+        ],
+        [
+          590,
+          227,
+          941,
+          404
+        ],
+        [
+          534,
+          463,
+          902,
+          576
+        ],
+        [
+          537,
+          588,
+          952,
+          913
+        ]
+      ],
+      "notes": [
+        "Upper left current field.",
+        "Lower left breaking-wave composition.",
+        "Upper right outline crest group.",
+        "Middle right fine-line water field.",
+        "Lower right connected and repeated wave composition, kept within its panel."
+      ],
+      "source_sha256": "bfb6749030b6bb17556eb24d8e6040f860b1e51d10b7dcc9b4051df759669e0c",
+      "size": [
+        6096,
+        5042
+      ]
+    },
+    {
+      "scan": 4,
+      "boxes": [
+        [
+          190,
+          248,
+          420,
+          601
+        ],
+        [
+          94,
+          502,
+          248,
+          725
+        ],
+        [
+          46,
+          554,
+          462,
+          914
+        ],
+        [
+          520,
+          224,
+          942,
+          706
+        ],
+        [
+          525,
+          750,
+          941,
+          913
+        ]
+      ],
+      "polygons": {
+        "1": [
+          [
+            94,
+            502
+          ],
+          [
+            192,
+            502
+          ],
+          [
+            192,
+            602
+          ],
+          [
+            248,
+            602
+          ],
+          [
+            248,
+            725
+          ],
+          [
+            94,
+            725
+          ]
+        ],
+        "2": [
+          [
+            396,
+            554
+          ],
+          [
+            462,
+            554
+          ],
+          [
+            462,
+            914
+          ],
+          [
+            46,
+            914
+          ],
+          [
+            46,
+            744
+          ],
+          [
+            310,
+            744
+          ],
+          [
+            310,
+            732
+          ],
+          [
+            384,
+            732
+          ],
+          [
+            384,
+            604
+          ],
+          [
+            396,
+            604
+          ]
+        ]
+      },
+      "notes": [
+        "Upper left framed curls and drops.",
+        "Left diagonal-line panel; mask removes the overlapping upper panel. Its hidden corner remains absent.",
+        "Lower left flowing-water composition; mask separates the adjacent framed designs.",
+        "Upper right vertical repeat, kept as one graphic pattern.",
+        "Lower right breaking-wave band."
+      ],
+      "source_sha256": "4433d20dfefe8dff701469ed20550e407b46e01908cf749e6ecd25e42a8cbb95",
+      "size": [
+        6096,
+        5025
+      ]
+    },
+    {
+      "scan": 5,
+      "boxes": [
+        [
+          51,
+          177,
+          462,
+          338
+        ],
+        [
+          51,
+          352,
+          462,
+          487
+        ],
+        [
+          516,
+          179,
+          935,
+          338
+        ],
+        [
+          516,
+          352,
+          935,
+          487
+        ],
+        [
+          50,
+          786,
+          462,
+          916
+        ],
+        [
+          516,
+          713,
+          933,
+          916
+        ]
+      ],
+      "notes": [
+        "Upper left wave ribbon, preserving the printed panel boundaries.",
+        "Second left ribbon.",
+        "Upper right ribbon.",
+        "Second right ribbon.",
+        "Lower left dense water band; the surrounding blank layout is omitted.",
+        "Lower right dense water field; the vertical line belongs to the original layout."
+      ],
+      "source_sha256": "3d9b42f385d8a6710556fa79c8c25e1f1e9d22d19c6796af0c29257d8c641012",
+      "size": [
+        6113,
+        5025
+      ]
+    },
+    {
+      "scan": 6,
+      "boxes": [
+        [
+          51,
+          179,
+          465,
+          501
+        ],
+        [
+          51,
+          499,
+          464,
+          916
+        ],
+        [
+          516,
+          237,
+          930,
+          321
+        ],
+        [
+          516,
+          349,
+          936,
+          463
+        ],
+        [
+          520,
+          519,
+          914,
+          745
+        ],
+        [
+          558,
+          771,
+          917,
+          849
+        ]
+      ],
+      "notes": [
+        "Upper left curl-and-drop composition.",
+        "Lower left foam field, kept as a coherent composition.",
+        "Upper right sparse line group.",
+        "Second right sparse line group.",
+        "Middle right repeated short strokes.",
+        "Lower right interlaced band."
+      ],
+      "source_sha256": "ddc3930133c6ab70c809e5fd7be048872aa932dc06136399cb2ca750d9ca2a07",
+      "size": [
+        6096,
+        5025
+      ]
+    },
+    {
+      "scan": 7,
+      "boxes": [
+        [
+          61,
+          231,
+          450,
+          316
+        ],
+        [
+          184,
+          388,
+          454,
+          475
+        ],
+        [
+          62,
+          535,
+          425,
+          640
+        ],
+        [
+          70,
+          681,
+          382,
+          814
+        ],
+        [
+          516,
+          277,
+          857,
+          383
+        ],
+        [
+          730,
+          425,
+          912,
+          480
+        ],
+        [
+          542,
+          496,
+          858,
+          566
+        ],
+        [
+          529,
+          682,
+          887,
+          828
+        ]
+      ],
+      "notes": [
+        "Upper left layered strokes.",
+        "Middle left connected scalloped band.",
+        "Paired left crest lines, kept together as one example.",
+        "Lower left rows of small crests.",
+        "Upper right overlapping arc field.",
+        "Small right row of solid crests.",
+        "Larger right row of solid crests.",
+        "Lower right short-stroke field."
+      ],
+      "source_sha256": "2f5903f4ca9a2b1689e8884e02d0e2963b91475cd964cd88cb30fde5f3d43897",
+      "size": [
+        6113,
+        5042
+      ]
+    },
+    {
+      "scan": 8,
+      "boxes": [
+        [
+          108,
+          254,
+          392,
+          316
+        ],
+        [
+          61,
+          350,
+          348,
+          392
+        ],
+        [
+          70,
+          502,
+          279,
+          563
+        ],
+        [
+          302,
+          433,
+          414,
+          565
+        ],
+        [
+          62,
+          606,
+          452,
+          842
+        ],
+        [
+          541,
+          316,
+          742,
+          574
+        ],
+        [
+          745,
+          248,
+          891,
+          414
+        ],
+        [
+          556,
+          601,
+          642,
+          696
+        ],
+        [
+          639,
+          588,
+          895,
+          843
+        ]
+      ],
+      "notes": [
+        "Upper left framed strip.",
+        "Second left framed strip.",
+        "Third left framed strip.",
+        "Small left circular foam form.",
+        "Lower left symmetric scroll composition.",
+        "Upper right open-center ring.",
+        "Upper right filled disk.",
+        "Small middle right isolated curl group.",
+        "Two overlapping lower-right water medallions; kept together because one occludes the other."
+      ],
+      "source_sha256": "3766cad12bf43c9d25352f7282ee0e09cb3387bcae3637aec9e9222e0e97b17b",
+      "size": [
+        6113,
+        5075
+      ]
+    },
+    {
+      "scan": 9,
+      "boxes": [
+        [
+          52,
+          207,
+          463,
+          439
+        ],
+        [
+          51,
+          455,
+          463,
+          910
+        ],
+        [
+          510,
+          211,
+          922,
+          521
+        ],
+        [
+          510,
+          521,
+          922,
+          920
+        ]
+      ],
+      "notes": [
+        "Upper left current field.",
+        "Lower left breaking-wave composition.",
+        "Upper right outlined wave field.",
+        "Lower right sweeping current composition."
+      ],
+      "source_sha256": "132faefe88c56645a8c401b7fe13863c7f38ec44282f7b15c23b75c7b80a7dcc",
+      "size": [
+        6113,
+        5025
+      ]
+    },
+    {
+      "scan": 10,
+      "boxes": [
+        [
+          51,
+          264,
+          461,
+          372
+        ],
+        [
+          60,
+          428,
+          461,
+          615
+        ],
+        [
+          51,
+          618,
+          461,
+          818
+        ],
+        [
+          516,
+          250,
+          932,
+          329
+        ],
+        [
+          516,
+          445,
+          932,
+          676
+        ],
+        [
+          515,
+          693,
+          932,
+          850
+        ]
+      ],
+      "notes": [
+        "Upper left fine-line wave band.",
+        "Middle left rolling-wave group.",
+        "Lower left coiled current.",
+        "Upper right fine-line wave band.",
+        "Middle right rolling lines, kept as one field.",
+        "Lower right long current ribbon."
+      ],
+      "source_sha256": "2764d161b0cf9cc1bfeddda95e6bc15628268d1405eefd305931216c4d5d3294",
+      "size": [
+        6113,
+        5025
+      ]
+    },
+    {
+      "scan": 11,
+      "boxes": [
+        [
+          244,
+          260,
+          402,
+          451
+        ],
+        [
+          88,
+          389,
+          236,
+          567
+        ],
+        [
+          294,
+          559,
+          373,
+          650
+        ],
+        [
+          112,
+          642,
+          242,
+          681
+        ],
+        [
+          207,
+          711,
+          342,
+          751
+        ],
+        [
+          68,
+          794,
+          412,
+          847
+        ],
+        [
+          539,
+          272,
+          625,
+          366
+        ],
+        [
+          683,
+          245,
+          875,
+          473
+        ],
+        [
+          554,
+          433,
+          681,
+          577
+        ],
+        [
+          738,
+          555,
+          874,
+          711
+        ],
+        [
+          625,
+          633,
+          695,
+          712
+        ],
+        [
+          585,
+          702,
+          623,
+          749
+        ],
+        [
+          603,
+          746,
+          804,
+          850
+        ]
+      ],
+      "notes": [
+        "Upper left open-center disk.",
+        "Middle left arc-filled disk.",
+        "Small left open-center disk.",
+        "First left rectangular strip.",
+        "Second left rectangular strip.",
+        "Lower left isolated current line.",
+        "Two touching upper-right small curl disks, retained together.",
+        "Upper right bold spiral disk.",
+        "Middle right repeated-arch disk.",
+        "Lower right breaking-wave disk.",
+        "Small three-lobed curl form.",
+        "Small isolated circular curl.",
+        "Lower right group of flowing curls."
+      ],
+      "source_sha256": "3a2c623bc8f12c65ee252b48827261e60984a3963e065773067496f1d570142e",
+      "size": [
+        6113,
+        5042
+      ]
+    },
+    {
+      "scan": 12,
+      "boxes": [
+        [
+          118,
+          229,
+          345,
+          504
+        ],
+        [
+          108,
+          545,
+          257,
+          720
+        ],
+        [
+          274,
+          683,
+          416,
+          852
+        ],
+        [
+          344,
+          451,
+          546,
+          643
+        ],
+        [
+          579,
+          242,
+          876,
+          598
+        ],
+        [
+          534,
+          622,
+          692,
+          813
+        ],
+        [
+          750,
+          730,
+          839,
+          837
+        ]
+      ],
+      "notes": [
+        "Upper left foam-and-curl disk.",
+        "Middle left rimmed curl disk.",
+        "Lower left spiral-and-drop disk.",
+        "Central foam medallion crosses the gutter; its two visible halves are kept together.",
+        "Large upper right wave-filled disk.",
+        "Lower right interlaced-arc disk.",
+        "Small lower right open-center disk."
+      ],
+      "source_sha256": "a36a2a9254c02fe0f0bf3588c19e7adc54d751b5deedd7925f2fba6e1f27a812",
+      "size": [
+        6113,
+        5058
+      ]
+    },
+    {
+      "scan": 13,
+      "boxes": [
+        [
+          156,
+          236,
+          350,
+          469
+        ],
+        [
+          691,
+          256,
+          857,
+          453
+        ],
+        [
+          108,
+          519,
+          248,
+          644
+        ],
+        [
+          287,
+          404,
+          718,
+          666
+        ],
+        [
+          79,
+          694,
+          406,
+          822
+        ],
+        [
+          723,
+          578,
+          901,
+          684
+        ],
+        [
+          550,
+          689,
+          771,
+          832
+        ]
+      ],
+      "polygons": {
+        "3": [
+          [
+            429,
+            404
+          ],
+          [
+            562,
+            404
+          ],
+          [
+            562,
+            445
+          ],
+          [
+            674,
+            445
+          ],
+          [
+            674,
+            486
+          ],
+          [
+            718,
+            486
+          ],
+          [
+            718,
+            666
+          ],
+          [
+            287,
+            666
+          ],
+          [
+            287,
+            507
+          ],
+          [
+            365,
+            507
+          ],
+          [
+            365,
+            446
+          ],
+          [
+            429,
+            446
+          ]
+        ]
+      },
+      "notes": [
+        "Upper left foam disk.",
+        "Upper right rimmed foam disk.",
+        "Middle left broken-arc repeat.",
+        "Central scroll composition crosses the gutter; mask excludes nearby disks. Fold-hidden linework is not reconstructed.",
+        "Lower left crest composition.",
+        "Middle right isolated ripple group.",
+        "Lower right open double-line curl."
+      ],
+      "source_sha256": "2f9959042177f7ced6089e77c09e4aff476db642a810bc2cb94ac9e909bb2976",
+      "size": [
+        6129,
+        5042
+      ]
+    },
+    {
+      "scan": 14,
+      "boxes": [
+        [
+          51,
+          190,
+          461,
+          916
+        ],
+        [
+          504,
+          190,
+          915,
+          916
+        ]
+      ],
+      "notes": [
+        "Left framed field of irregular foam and spray; the repeated composition is kept together.",
+        "Right framed field of irregular foam and spray; the repeated composition is kept together."
+      ],
+      "source_sha256": "9c6de48e5d8b4eda50b75ab50b8e18d8f24aff8f7c4c108fd89cc96212d8022f",
+      "size": [
+        6129,
+        5025
+      ]
+    },
+    {
+      "scan": 15,
+      "boxes": [
+        [
+          374,
+          293,
+          677,
+          351
+        ],
+        [
+          321,
+          390,
+          566,
+          450
+        ],
+        [
+          110,
+          346,
+          268,
+          444
+        ],
+        [
+          175,
+          533,
+          438,
+          642
+        ],
+        [
+          76,
+          717,
+          366,
+          805
+        ],
+        [
+          698,
+          335,
+          866,
+          452
+        ],
+        [
+          518,
+          521,
+          783,
+          650
+        ],
+        [
+          619,
+          730,
+          858,
+          814
+        ]
+      ],
+      "notes": [
+        "Upper pointed repeat crosses the gutter; both visible portions are retained.",
+        "Second arched repeat crosses the gutter; both visible portions are retained.",
+        "Upper left rising-water emblem.",
+        "Middle left fountain-and-drop emblem.",
+        "Lower left pointed wave group.",
+        "Upper right pointed crest emblem.",
+        "Middle right rising-water scroll.",
+        "Lower right fountain-and-drop emblem."
+      ],
+      "source_sha256": "a32f3012966f0111139d4e9c7300b0f837b85506feaa73fa015e8842bf1b3ed5",
+      "size": [
+        6129,
+        5042
+      ]
+    },
+    {
+      "scan": 16,
+      "boxes": [
+        [
+          77,
+          270,
+          312,
+          411
+        ],
+        [
+          299,
+          445,
+          414,
+          497
+        ],
+        [
+          76,
+          519,
+          279,
+          574
+        ],
+        [
+          198,
+          585,
+          424,
+          671
+        ],
+        [
+          69,
+          689,
+          296,
+          757
+        ],
+        [
+          282,
+          756,
+          407,
+          815
+        ],
+        [
+          517,
+          216,
+          906,
+          497
+        ],
+        [
+          517,
+          513,
+          885,
+          870
+        ]
+      ],
+      "notes": [
+        "Upper left current loop.",
+        "Small detailed left crest.",
+        "First middle left scroll strip.",
+        "Second middle left scroll strip.",
+        "Lower left long scroll strip.",
+        "Small lower left curl group.",
+        "Upper right connected ripple field.",
+        "Lower right paired flowing-water ribbons, retained as one arrangement."
+      ],
+      "source_sha256": "76a1b68d8e8a72cd475a95a72d07c11fa6cdc588d8da54fe179c7556de44d63f",
+      "size": [
+        6129,
+        5075
+      ]
+    },
+    {
+      "scan": 17,
+      "boxes": [
+        [
+          46,
+          187,
+          456,
+          509
+        ],
+        [
+          153,
+          525,
+          449,
+          632
+        ],
+        [
+          46,
+          640,
+          441,
+          875
+        ],
+        [
+          554,
+          270,
+          876,
+          494
+        ],
+        [
+          517,
+          493,
+          838,
+          596
+        ],
+        [
+          534,
+          629,
+          901,
+          865
+        ]
+      ],
+      "notes": [
+        "Upper left framed repeat with foam rings and arc borders.",
+        "Middle left woven water band.",
+        "Lower left flowing band.",
+        "Upper right rows of narrow crests.",
+        "Middle right sparse crest group.",
+        "Lower right connected irregular ripple group."
+      ],
+      "source_sha256": "6ae0fd2f350d71e104c85ebc250325299a602811b4c20eba416ca61a932ac605",
+      "size": [
+        6113,
+        5025
+      ]
+    },
+    {
+      "scan": 18,
+      "boxes": [
+        [
+          56,
+          201,
+          453,
+          366
+        ],
+        [
+          68,
+          380,
+          449,
+          521
+        ],
+        [
+          46,
+          563,
+          457,
+          921
+        ],
+        [
+          513,
+          211,
+          924,
+          638
+        ],
+        [
+          513,
+          637,
+          924,
+          922
+        ]
+      ],
+      "notes": [
+        "Upper left broken-stroke water field.",
+        "Middle left small crest lines.",
+        "Lower left broad foam cells.",
+        "Upper right diagonal wave field.",
+        "Lower right solid foam silhouette."
+      ],
+      "source_sha256": "fc480ac314e798a5d97a3eb9956cdb4afb2a232221c79ea3f003d0d5151475c6",
+      "size": [
+        6113,
+        5042
+      ]
+    },
+    {
+      "scan": 19,
+      "boxes": [
+        [
+          46,
+          174,
+          456,
+          458
+        ],
+        [
+          46,
+          509,
+          456,
+          883
+        ],
+        [
+          511,
+          243,
+          920,
+          455
+        ],
+        [
+          509,
+          514,
+          924,
+          915
+        ]
+      ],
+      "notes": [
+        "Upper left fine-line crest field.",
+        "Lower left layered wave field.",
+        "Upper right connected ripple field.",
+        "Lower right breaking-wave composition with spray."
+      ],
+      "source_sha256": "1b9898a958e7c3feae03c653967646611e8985911ca738bd03b2e0b1e2c160be",
+      "size": [
+        6113,
+        5042
+      ]
+    },
+    {
+      "scan": 20,
+      "boxes": [
+        [
+          49,
+          185,
+          457,
+          588
+        ],
+        [
+          46,
+          629,
+          456,
+          910
+        ],
+        [
+          502,
+          178,
+          910,
+          405
+        ],
+        [
+          502,
+          408,
+          910,
+          648
+        ],
+        [
+          504,
+          655,
+          910,
+          750
+        ],
+        [
+          575,
+          756,
+          905,
+          916
+        ]
+      ],
+      "notes": [
+        "Upper left decorated wave composition.",
+        "Lower left dense flowing lines.",
+        "Upper right diagonal crest.",
+        "Middle right diagonal crest.",
+        "First lower right group of overlapping crests.",
+        "Bottom right layered arc field."
+      ],
+      "source_sha256": "64bb9859b661c8df2bb8f4849cd62aca687f948c987a9628423bfd7c728420d7",
+      "size": [
+        6150,
+        5042
+      ]
+    },
+    {
+      "scan": 21,
+      "boxes": [
+        [
+          45,
+          189,
+          247,
+          515
+        ],
+        [
+          247,
+          189,
+          456,
+          515
+        ],
+        [
+          45,
+          552,
+          455,
+          920
+        ],
+        [
+          500,
+          187,
+          913,
+          541
+        ],
+        [
+          502,
+          554,
+          913,
+          870
+        ]
+      ],
+      "notes": [
+        "Upper left large-curl panel.",
+        "Neighboring upper left dense-curl panel.",
+        "Lower left fine-line crest field.",
+        "Upper right repeated foam streaks.",
+        "Lower right paired curl-and-drop waves."
+      ],
+      "source_sha256": "2e7575e9aefebeaf4178ed15014bc7967e945fc2d6b8264c4513552539027347",
+      "size": [
+        6113,
+        5042
+      ]
+    },
+    {
+      "scan": 22,
+      "boxes": [
+        [
+          51,
+          192,
+          460,
+          448
+        ],
+        [
+          84,
+          461,
+          460,
+          676
+        ],
+        [
+          60,
+          711,
+          391,
+          837
+        ],
+        [
+          505,
+          184,
+          914,
+          439
+        ],
+        [
+          505,
+          439,
+          914,
+          660
+        ],
+        [
+          505,
+          661,
+          914,
+          915
+        ]
+      ],
+      "notes": [
+        "Upper left dense ripple field.",
+        "Middle left rows of fine crests.",
+        "Lower left small crest bands.",
+        "Upper right outlined breaking waves.",
+        "Middle right linked current ribbon.",
+        "Lower right foam-and-spray field."
+      ],
+      "source_sha256": "719714e884422604695564c74e27f2e7863d52bb29a9eec76582fe30097655ca",
+      "size": [
+        6129,
+        5025
+      ]
+    },
+    {
+      "scan": 23,
+      "boxes": [
+        [
+          45,
+          177,
+          454,
+          881
+        ],
+        [
+          502,
+          225,
+          914,
+          492
+        ],
+        [
+          502,
+          628,
+          664,
+          897
+        ],
+        [
+          508,
+          535,
+          912,
+          831
+        ]
+      ],
+      "polygons": {
+        "3": [
+          [
+            508,
+            535
+          ],
+          [
+            912,
+            535
+          ],
+          [
+            912,
+            831
+          ],
+          [
+            668,
+            831
+          ],
+          [
+            668,
+            657
+          ],
+          [
+            638,
+            640
+          ],
+          [
+            617,
+            628
+          ],
+          [
+            508,
+            628
+          ]
+        ]
+      },
+      "notes": [
+        "Left connected sweeping-water composition.",
+        "Upper right sweeping ribbon.",
+        "Lower right narrow current field along the inner page edge.",
+        "Lower right scattered crest group; mask separates the adjacent dense current."
+      ],
+      "source_sha256": "fcaabc1c988edd7df308284a9bb682a266e62ed65b4023b141ecead740b016c1",
+      "size": [
+        6129,
+        5042
+      ]
+    },
+    {
+      "scan": 24,
+      "boxes": [
+        [
+          45,
+          183,
+          452,
+          509
+        ],
+        [
+          45,
+          550,
+          453,
+          916
+        ],
+        [
+          500,
+          265,
+          913,
+          411
+        ],
+        [
+          519,
+          489,
+          913,
+          622
+        ],
+        [
+          504,
+          656,
+          836,
+          850
+        ]
+      ],
+      "notes": [
+        "Upper left solid foam silhouette and drops.",
+        "Lower left graphic wave-and-foam field.",
+        "Upper right water composition around a rock; the rock is retained as part of the scene.",
+        "Middle right coiled wave group.",
+        "Lower right breaking-wave group and spray."
+      ],
+      "source_sha256": "8351d4cbd98ec14a5bb16158b3e4726434748ed0d59cc0ed694e1e80c1a522f2",
+      "size": [
+        6150,
+        5042
+      ]
+    },
+    {
+      "scan": 25,
+      "boxes": [
+        [
+          60,
+          208,
+          905,
+          633
+        ],
+        [
+          64,
+          603,
+          913,
+          840
+        ]
+      ],
+      "polygons": {
+        "0": [
+          [
+            60,
+            208
+          ],
+          [
+            905,
+            208
+          ],
+          [
+            905,
+            633
+          ],
+          [
+            506,
+            633
+          ],
+          [
+            506,
+            592
+          ],
+          [
+            60,
+            592
+          ]
+        ],
+        "1": [
+          [
+            64,
+            603
+          ],
+          [
+            449,
+            603
+          ],
+          [
+            449,
+            659
+          ],
+          [
+            539,
+            659
+          ],
+          [
+            539,
+            714
+          ],
+          [
+            913,
+            714
+          ],
+          [
+            913,
+            840
+          ],
+          [
+            64,
+            840
+          ]
+        ]
+      },
+      "notes": [
+        "Upper outline-current composition spans both pages; mask excludes the lower pattern.",
+        "Lower broad current ribbon crosses the gutter; mask excludes the upper pattern."
+      ],
+      "source_sha256": "e35c11896828169b88a56210fe851de9ecfc38d4d08b14de026f091fd21682eb",
+      "size": [
+        6129,
+        5058
+      ]
+    },
+    {
+      "scan": 26,
+      "boxes": [
+        [
+          43,
+          210,
+          456,
+          495
+        ],
+        [
+          78,
+          495,
+          416,
+          878
+        ],
+        [
+          315,
+          695,
+          430,
+          839
+        ],
+        [
+          490,
+          182,
+          897,
+          516
+        ],
+        [
+          492,
+          565,
+          795,
+          710
+        ],
+        [
+          574,
+          742,
+          897,
+          884
+        ]
+      ],
+      "polygons": {
+        "1": [
+          [
+            78,
+            495
+          ],
+          [
+            416,
+            495
+          ],
+          [
+            416,
+            690
+          ],
+          [
+            316,
+            690
+          ],
+          [
+            316,
+            878
+          ],
+          [
+            78,
+            878
+          ]
+        ]
+      },
+      "notes": [
+        "Upper left outlined current group.",
+        "Large lower left scroll; mask excludes the separate small curl at its right.",
+        "Small lower left S-shaped curl.",
+        "Upper right interlaced-arc field.",
+        "Middle right open oval lattice.",
+        "Lower right flowing ripple field."
+      ],
+      "source_sha256": "89155d5707b105bacd2a7d73bdf0609c7afeabcc39b3bb522daefbbe359cfc63",
+      "size": [
+        6129,
+        5042
+      ]
+    },
+    {
+      "scan": 27,
+      "boxes": [
+        [
+          622,
+          239,
+          841,
+          512
+        ],
+        [
+          542,
+          321,
+          648,
+          561
+        ],
+        [
+          646,
+          428,
+          863,
+          693
+        ],
+        [
+          534,
+          559,
+          752,
+          827
+        ],
+        [
+          600,
+          690,
+          822,
+          854
+        ]
+      ],
+      "polygons": {
+        "1": [
+          [
+            542,
+            321
+          ],
+          [
+            621,
+            321
+          ],
+          [
+            621,
+            512
+          ],
+          [
+            648,
+            512
+          ],
+          [
+            648,
+            561
+          ],
+          [
+            542,
+            561
+          ]
+        ],
+        "2": [
+          [
+            841,
+            428
+          ],
+          [
+            863,
+            428
+          ],
+          [
+            863,
+            693
+          ],
+          [
+            751,
+            693
+          ],
+          [
+            751,
+            561
+          ],
+          [
+            646,
+            561
+          ],
+          [
+            646,
+            512
+          ],
+          [
+            841,
+            512
+          ]
+        ],
+        "4": [
+          [
+            752,
+            690
+          ],
+          [
+            822,
+            690
+          ],
+          [
+            822,
+            854
+          ],
+          [
+            600,
+            854
+          ],
+          [
+            600,
+            827
+          ],
+          [
+            752,
+            827
+          ]
+        ]
+      },
+      "notes": [
+        "Upper right foreground panel of dense curls and foam. The facing text page is excluded.",
+        "Partly hidden arc panel; mask retains its visible L-shaped portion.",
+        "Partly hidden zigzag-wave panel; mask excludes the overlapping foreground panels.",
+        "Lower right foreground crest panel.",
+        "Partly hidden radial-water panel; mask retains its exposed lower and right edges."
+      ],
+      "source_sha256": "8c79a4ca1a5d86f30eca9b3e17992d461be81e2bcf4527880d7c46ce4b765629",
+      "size": [
+        6113,
+        5042
+      ]
+    },
+    {
+      "scan": 28,
+      "boxes": [
+        [
+          87,
+          163,
+          452,
+          427
+        ],
+        [
+          302,
+          439,
+          492,
+          563
+        ],
+        [
+          303,
+          563,
+          861,
+          879
+        ]
+      ],
+      "notes": [
+        "Upper back-cover group of overlapping spirals.",
+        "Middle back-cover isolated spiral.",
+        "Lower back-cover group of overlapping spirals."
+      ],
+      "source_sha256": "33779f4493535c366def4093da7f4a8f69a5b73f58143c668d15df7b705d00bb",
+      "size": [
+        3513,
+        5025
+      ]
+    }
+  ]
+}

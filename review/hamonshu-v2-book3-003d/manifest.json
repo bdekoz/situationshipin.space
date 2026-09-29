@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-003d",
+  "scan": 3,
+  "note": "Upper right outline crest band.",
+  "box_pixels": [
+    3331,
+    1235,
+    5418,
+    1765
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2087,
+    530
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "90e7adebf761279ed5b3db22fe4e2c2315b63b43090e6fc7e6fb9edc238c12bb",
+  "sha256": "e0d8eabf64e44e21babfc9b87723d7d032755f9b1387056e90802d6ccb0623a8",
+  "source_scan_sha256": "978c2c3dab2a4919ed911cb734a326e492798778f51d2dccd25498bd74747627",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-003d.jpg",
+    "bytes": 112610,
+    "sha256": "bfd47bb5154dd57cdc306c2ea605f706baa3bcdea285d9efcf54935066ccdb9c",
+    "width": 1600,
+    "height": 406,
+    "format": "jpg"
+  }
+}

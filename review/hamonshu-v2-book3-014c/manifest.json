@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-014c",
+  "scan": 14,
+  "note": "Large left radial water medallion.",
+  "box_pixels": [
+    774,
+    2345,
+    1989,
+    3514
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1215,
+    1169
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "606c3d608bdbeef1de1be2173bcdfbe925831a287622a2abc3ecdcb31d9cd3d6",
+  "sha256": "d938fd0582f82e3b87a8ccd03d30828c1c48e1c15e83c835c555e685b852ef5f",
+  "source_scan_sha256": "316b10a37cb8a2c8affae6496f1bf391dcfb8a42daef23ac9637abf414154e61",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-014c.jpg",
+    "bytes": 213673,
+    "sha256": "803dbf8bbd0bd54e7511cb8bc996ce20ac0572b6bc2ae2fc63171ce87460b2be",
+    "width": 1215,
+    "height": 1169,
+    "format": "jpg"
+  }
+}

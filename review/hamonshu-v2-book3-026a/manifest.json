@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-026a",
+  "scan": 26,
+  "note": "Left continuous folded water-pattern ribbon composition.",
+  "box_pixels": [
+    216,
+    1553,
+    2728,
+    4441
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2512,
+    2888
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "dbb6d94ac4fc9dc28d758a4a96f63d030b6b327ff659e93f81b73f3fcc1a5551",
+  "sha256": "5f22172293c1839e260ad79b1ad35138343bfad846980460e22501bc7b33ea92",
+  "source_scan_sha256": "d6623bcd6d3ff165ea302e34ce524bd41c2f9119c2d5f52039f88521c5ae308d",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-026a.jpg",
+    "bytes": 348606,
+    "sha256": "bf823a6031291e283baa0b06702e8a394f8ef0da25e4e9f381b40714c637d7b9",
+    "width": 1392,
+    "height": 1600,
+    "format": "jpg"
+  }
+}

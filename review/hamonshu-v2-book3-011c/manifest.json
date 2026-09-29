@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-011c",
+  "scan": 11,
+  "note": "Narrow lower left foam-and-wave field.",
+  "box_pixels": [
+    277,
+    2754,
+    1308,
+    4643
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1031,
+    1889
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "5b689b543d926a65b8c3b75f4b6f8d2b963576c5857ce385d8e0b2c7cecb0f0c",
+  "sha256": "bcbc5ea2dba5bc747426a63fc04ad9b28def6ac19c7541a5bef034ae1ee82834",
+  "source_scan_sha256": "1a7d038ecb225341874705462421d42279971be1e269a0cb2cb32e931f4b53d7",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-011c.jpg",
+    "bytes": 385903,
+    "sha256": "d21e505dfbdb921fdc16b632214e0343af24afafa6ef3662f4d30ec3f4e38dd2",
+    "width": 873,
+    "height": 1600,
+    "format": "jpg"
+  }
+}

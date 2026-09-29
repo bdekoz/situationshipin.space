@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-026b",
+  "scan": 26,
+  "note": "Upper right narrow patterned ribbon and loop.",
+  "box_pixels": [
+    3010,
+    1660,
+    5474,
+    2659
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2464,
+    999
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "96110926a0a524b8b06657bfb18fca948b87ba3eea2b720df2565a5a85ce9a69",
+  "sha256": "44d4621d4e2433684e04ef71ad8fe61f01f1be583a3112c29cccd696d67c2c6c",
+  "source_scan_sha256": "d6623bcd6d3ff165ea302e34ce524bd41c2f9119c2d5f52039f88521c5ae308d",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-026b.jpg",
+    "bytes": 126240,
+    "sha256": "fe7ab44063958d9ea14c1b0aa6b5dd273033a70900698fc1def3069f2416d4d0",
+    "width": 1600,
+    "height": 649,
+    "format": "jpg"
+  }
+}

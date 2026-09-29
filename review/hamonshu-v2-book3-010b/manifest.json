@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-010b",
+  "scan": 10,
+  "note": "Upper right interlocking crests over an arc field.",
+  "box_pixels": [
+    3065,
+    915,
+    5587,
+    3226
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2522,
+    2311
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "43204a08292b2b1f68fc1dfc89d970965a7dc39afb04c4fa8bec79e35a6e2d2d",
+  "sha256": "112dc9aa59139d2d5aff8b9107b7443f1ea824aa38b6983cbfa76b185a32ce01",
+  "source_scan_sha256": "f6e19bfacf2b714516bd20cdf1aea2cf11a3a24da39c96d0a23b48fc204ab50f",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-010b.jpg",
+    "bytes": 479659,
+    "sha256": "62b42c945371205a36ddd61a364971b4512768d3a0abe2ee9003039f50e3a2bd",
+    "width": 1600,
+    "height": 1466,
+    "format": "jpg"
+  }
+}

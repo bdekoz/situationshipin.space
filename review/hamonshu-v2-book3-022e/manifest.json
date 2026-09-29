@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-022e",
+  "scan": 22,
+  "note": "Right full-panel breaking wave, retained as one composition.",
+  "box_pixels": [
+    2984,
+    995,
+    5495,
+    4663
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2511,
+    3668
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "ddb344ce7a59e2edd2b78622d5343a7e23cbe89ad5ee8018545ab36c04c22d7e",
+  "sha256": "38543fb9f090907d0acbd20e5140c4cf0998b8b27b497d1d6d0f990a6099808e",
+  "source_scan_sha256": "9f7a0da4e66d5e2642e5a72a1bbf0e70f63dc2850cac880dca1ae4692e588681",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-022e.jpg",
+    "bytes": 435983,
+    "sha256": "ceb1e6bff86bade6bc2ad947a4c2ab251f2a2feca5d25b27b1f65da7762928cc",
+    "width": 1095,
+    "height": 1600,
+    "format": "jpg"
+  }
+}

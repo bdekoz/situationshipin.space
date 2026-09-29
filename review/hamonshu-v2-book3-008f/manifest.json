@@ -1,0 +1,61 @@
+{
+  "id": "hamonshu_3-008f",
+  "scan": 8,
+  "note": "Lower right broad crests; neighboring branches are masked out.",
+  "box_pixels": [
+    3088,
+    3363,
+    5618,
+    4538
+  ],
+  "polygon_normalized": [
+    [
+      729,
+      667
+    ],
+    [
+      937,
+      667
+    ],
+    [
+      937,
+      900
+    ],
+    [
+      515,
+      900
+    ],
+    [
+      515,
+      763
+    ],
+    [
+      665,
+      763
+    ],
+    [
+      665,
+      736
+    ],
+    [
+      729,
+      736
+    ]
+  ],
+  "size": [
+    2530,
+    1175
+  ],
+  "mode": "RGBA",
+  "pixel_sha256": "a854f939fb11694c77d22a16188e5c57c00af18d3a4df70ed736c37905eff7c0",
+  "sha256": "c345148d5f30c53c6563e6768963763e4179f863c4188567ac0f9e2749cf3153",
+  "source_scan_sha256": "fc9f980b7da52452ea85c46618aa64a39a01c844e4d0e5cfee58f26033e303ea",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-008f.jpg",
+    "bytes": 97960,
+    "sha256": "b4f42d534bf36f31b4de467f5b0e37b775f89049bb04e251d8181f57ed41c3a0",
+    "width": 1600,
+    "height": 743,
+    "format": "jpg"
+  }
+}

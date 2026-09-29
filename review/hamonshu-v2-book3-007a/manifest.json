@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-007a",
+  "scan": 7,
+  "note": "Upper left enclosed crest ornament.",
+  "box_pixels": [
+    778,
+    1457,
+    2526,
+    2097
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1748,
+    640
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "b8ab162d7d95625f517f769621c9de79b456d196fbeec6c2d1acc6a3cf799125",
+  "sha256": "36cff3e990ac951c45fe013dbda3651f5ae7be30294bafada9f00d2b4ffee5b9",
+  "source_scan_sha256": "5fc2694d8dd62736fd42d388515f47269ffa71c5b6dd4df2d7e81eed4ce2525e",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-007a.jpg",
+    "bytes": 128856,
+    "sha256": "f0f14c377d0f561ebaf853f6d7b7160c6a18ad781ec27e50eb534370b2bf413c",
+    "width": 1600,
+    "height": 586,
+    "format": "jpg"
+  }
+}

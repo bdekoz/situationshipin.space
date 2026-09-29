@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-003a",
+  "scan": 3,
+  "note": "Upper left overlapping-wave field.",
+  "box_pixels": [
+    277,
+    1346,
+    2766,
+    2889
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2489,
+    1543
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "c9ca12168cebcf0faa62c567cd42921d08fff0be31032b7f944e9a7a4d621c25",
+  "sha256": "be1eecc4f6532b8eda744f357071eeaf87d480751f43b4abd1fda3a98554f1f0",
+  "source_scan_sha256": "978c2c3dab2a4919ed911cb734a326e492798778f51d2dccd25498bd74747627",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-003a.jpg",
+    "bytes": 296749,
+    "sha256": "7607f483195a31e70b7e8acd2adccc7b6924a77c89c11a01f6ec654561c7f8e3",
+    "width": 1600,
+    "height": 992,
+    "format": "jpg"
+  }
+}

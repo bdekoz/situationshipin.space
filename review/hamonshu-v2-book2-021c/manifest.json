@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-021c",
+  "scan": 21,
+  "note": "Lower left fine-line crest field.",
+  "box_pixels": [
+    275,
+    2783,
+    2781,
+    4639
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2506,
+    1856
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "74c2a417c2fe8a15785ca9d260739f949bff42be9d9ee6d542a575d2a6facf44",
+  "sha256": "684a80bd1a5a92ca93eefef5388904944a65ca8041442d9dd495ba0d7559e9b3",
+  "source_scan_sha256": "2e7575e9aefebeaf4178ed15014bc7967e945fc2d6b8264c4513552539027347",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-021c.jpg",
+    "bytes": 496554,
+    "sha256": "0e7dfddf4ecf10a9e803c36deadcee2e753f518a98c26cade5d389bd4b111a38",
+    "width": 1600,
+    "height": 1185,
+    "format": "jpg"
+  }
+}

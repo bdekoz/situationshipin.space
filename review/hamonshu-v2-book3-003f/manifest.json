@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-003f",
+  "scan": 3,
+  "note": "Lower right dotted wave composition.",
+  "box_pixels": [
+    3217,
+    2657,
+    5730,
+    4634
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2513,
+    1977
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "cc75fd96b5415db0552ff91996e898e5a426a7487bc50fcc3a61554583637b97",
+  "sha256": "df68c2a0bc72945f56f85dbbcfe766f30df107aeede2deaa47828c22b8440666",
+  "source_scan_sha256": "978c2c3dab2a4919ed911cb734a326e492798778f51d2dccd25498bd74747627",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-003f.jpg",
+    "bytes": 485495,
+    "sha256": "c702e2aa6ccc78d1f84a0dc16176e91dde77498aa7cb22d0eed88893194edd38",
+    "width": 1600,
+    "height": 1259,
+    "format": "jpg"
+  }
+}

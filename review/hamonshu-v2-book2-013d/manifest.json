@@ -1,0 +1,77 @@
+{
+  "id": "hamonshu_2-013d",
+  "scan": 13,
+  "note": "Central scroll composition crosses the gutter; mask excludes nearby disks. Fold-hidden linework is not reconstructed.",
+  "box_pixels": [
+    1759,
+    2037,
+    4401,
+    3358
+  ],
+  "polygon_normalized": [
+    [
+      429,
+      404
+    ],
+    [
+      562,
+      404
+    ],
+    [
+      562,
+      445
+    ],
+    [
+      674,
+      445
+    ],
+    [
+      674,
+      486
+    ],
+    [
+      718,
+      486
+    ],
+    [
+      718,
+      666
+    ],
+    [
+      287,
+      666
+    ],
+    [
+      287,
+      507
+    ],
+    [
+      365,
+      507
+    ],
+    [
+      365,
+      446
+    ],
+    [
+      429,
+      446
+    ]
+  ],
+  "size": [
+    2642,
+    1321
+  ],
+  "mode": "RGBA",
+  "pixel_sha256": "4a3c2e87fcd90a860e743e60a98cbaae513c5017ad8388d807b85bf2ebf5b920",
+  "sha256": "96f664b8c915bd441cb5f2fbb68a08d5b876733be14708c1cbaea8776e3aaad6",
+  "source_scan_sha256": "2f9959042177f7ced6089e77c09e4aff476db642a810bc2cb94ac9e909bb2976",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-013d.jpg",
+    "bytes": 142533,
+    "sha256": "df94f3f1885806ecd16209efbc36d6d5bc7a5cc19cbbd7c4e390bb31b7586ec4",
+    "width": 1600,
+    "height": 800,
+    "format": "jpg"
+  }
+}

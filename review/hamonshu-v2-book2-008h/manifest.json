@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-008h",
+  "scan": 8,
+  "note": "Small middle right isolated curl group.",
+  "box_pixels": [
+    3399,
+    3050,
+    3925,
+    3532
+  ],
+  "polygon_normalized": null,
+  "size": [
+    526,
+    482
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "1b6299fcc359619144633e8f35fcc8d2171653767dfc040f82609df4390b710e",
+  "sha256": "ddc574a8ef79237f329562b2487962a9d74e6e4c548a93832a28efdbf262ecf9",
+  "source_scan_sha256": "3766cad12bf43c9d25352f7282ee0e09cb3387bcae3637aec9e9222e0e97b17b",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-008h.jpg",
+    "bytes": 52349,
+    "sha256": "e48a786d284c32e65037c81dcd845d1dc09e14f8cdf69bc7163962d6847a06dd",
+    "width": 526,
+    "height": 482,
+    "format": "jpg"
+  }
+}

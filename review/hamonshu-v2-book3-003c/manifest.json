@@ -1,0 +1,53 @@
+{
+  "id": "hamonshu_3-003c",
+  "scan": 3,
+  "note": "Two touching lower crests are retained as one connected composition. Neighboring forms are masked out.",
+  "box_pixels": [
+    271,
+    3318,
+    2766,
+    4629
+  ],
+  "polygon_normalized": [
+    [
+      45,
+      658
+    ],
+    [
+      240,
+      658
+    ],
+    [
+      240,
+      736
+    ],
+    [
+      460,
+      736
+    ],
+    [
+      460,
+      918
+    ],
+    [
+      45,
+      918
+    ]
+  ],
+  "size": [
+    2495,
+    1311
+  ],
+  "mode": "RGBA",
+  "pixel_sha256": "993191323620bdbd1e05b264ff4ecd4f4ee1f8a64217cfa2680a420ae1c5099c",
+  "sha256": "8b5bfffd153a4b11320f7d9da44ffccb10eb418c17481ae3f52f15625d03cc6f",
+  "source_scan_sha256": "978c2c3dab2a4919ed911cb734a326e492798778f51d2dccd25498bd74747627",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-003c.jpg",
+    "bytes": 171485,
+    "sha256": "a81c7b6f0cb7a1a84388cff7af6aea7909829ee6ccbe35c0ff82c0cd30be74d9",
+    "width": 1600,
+    "height": 841,
+    "format": "jpg"
+  }
+}

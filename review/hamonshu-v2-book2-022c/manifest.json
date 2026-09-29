@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-022c",
+  "scan": 22,
+  "note": "Lower left small crest bands.",
+  "box_pixels": [
+    368,
+    3573,
+    2396,
+    4206
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2028,
+    633
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "166ec7de3501ca95ac77fc99c0351b95df8b1e20d903c4dd89df9852f76ebd50",
+  "sha256": "2a261882fe0b8265e7edde9a173954e54ecd56f9bbc90a51c73d9f9d494c09de",
+  "source_scan_sha256": "719714e884422604695564c74e27f2e7863d52bb29a9eec76582fe30097655ca",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-022c.jpg",
+    "bytes": 165701,
+    "sha256": "98f636034224f802f142330a5a48d67039c07be5c0ceb92cbd89b84820758076",
+    "width": 1600,
+    "height": 499,
+    "format": "jpg"
+  }
+}

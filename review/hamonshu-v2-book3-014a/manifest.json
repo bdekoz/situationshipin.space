@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-014a",
+  "scan": 14,
+  "note": "Upper left spiral-filled disk.",
+  "box_pixels": [
+    484,
+    1422,
+    1239,
+    2183
+  ],
+  "polygon_normalized": null,
+  "size": [
+    755,
+    761
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "08c9b5be2de7ce6a1464b37c191ffcfc2acb4f67bdbd756e4328c7f2f53a9302",
+  "sha256": "6fe7cd9fecc83c9f4087b2a14c336f2bd6f3bb27d1f07ebc2e9c1691b536e870",
+  "source_scan_sha256": "316b10a37cb8a2c8affae6496f1bf391dcfb8a42daef23ac9637abf414154e61",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-014a.jpg",
+    "bytes": 156577,
+    "sha256": "f45e301cb1dd86f48194650d0c454acec47d9a5c2d95feae54180c671d272292",
+    "width": 755,
+    "height": 761,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-017e",
+  "scan": 17,
+  "note": "Upper right spiral current with bubbles.",
+  "box_pixels": [
+    2994,
+    1085,
+    5502,
+    2020
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2508,
+    935
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "38030b4ca52339b38c40c1fcd4bc6b064bb55a983cf47cda419c406c4514fd54",
+  "sha256": "e8b26cc62e0538b632ec99b0b08470bab84c6cbefc1d2130841a75269145604d",
+  "source_scan_sha256": "032cd565a1df68d1d5c8b9cfed52534edf596f6277ae2428652ff81eb2e4b85f",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-017e.jpg",
+    "bytes": 95514,
+    "sha256": "b7bf8c7175c76395a43d4d4b35a2e760720a46701311239ca825479f18325ed6",
+    "width": 1600,
+    "height": 596,
+    "format": "jpg"
+  }
+}

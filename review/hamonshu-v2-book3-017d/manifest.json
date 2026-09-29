@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-017d",
+  "scan": 17,
+  "note": "Lower left pointed crests.",
+  "box_pixels": [
+    1167,
+    3703,
+    2658,
+    4226
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1491,
+    523
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "aec7ca6dd8c729bf46c8924b04bb1599f1dc21d5ba7e5bc06b47fe5e83649348",
+  "sha256": "e68701b9f4e0cc04bc9d1e1ce969cb96162d976df46ade9dfcbf79ba560955e4",
+  "source_scan_sha256": "032cd565a1df68d1d5c8b9cfed52534edf596f6277ae2428652ff81eb2e4b85f",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-017d.jpg",
+    "bytes": 122973,
+    "sha256": "7072111446aeee7f4c3c0e32e04715cfa6d5bbeb65c6db40be874cc1b1177c15",
+    "width": 1491,
+    "height": 523,
+    "format": "jpg"
+  }
+}

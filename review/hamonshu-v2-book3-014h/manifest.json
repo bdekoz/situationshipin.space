@@ -1,0 +1,53 @@
+{
+  "id": "hamonshu_3-014h",
+  "scan": 14,
+  "note": "Middle right overlapping-crest disk. Neighboring forms are masked out.",
+  "box_pixels": [
+    3809,
+    2617,
+    4807,
+    3610
+  ],
+  "polygon_normalized": [
+    [
+      630,
+      519
+    ],
+    [
+      795,
+      519
+    ],
+    [
+      795,
+      695
+    ],
+    [
+      776,
+      716
+    ],
+    [
+      655,
+      716
+    ],
+    [
+      630,
+      689
+    ]
+  ],
+  "size": [
+    998,
+    993
+  ],
+  "mode": "RGBA",
+  "pixel_sha256": "f098316f33447e90e8bddba4f34fffaa90da052ceb30d9ae27361b6a5a84b514",
+  "sha256": "320c759a6f127f2aa25d01370cc5ca8468481cdd47ad7efd7488b6c3d7cbe1dc",
+  "source_scan_sha256": "316b10a37cb8a2c8affae6496f1bf391dcfb8a42daef23ac9637abf414154e61",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-014h.jpg",
+    "bytes": 150136,
+    "sha256": "b1c252b4d3059b5c56b3234e1fc57ab95b7a57f440b7dded06f776293423c884",
+    "width": 998,
+    "height": 993,
+    "format": "jpg"
+  }
+}

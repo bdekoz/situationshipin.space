@@ -1,0 +1,61 @@
+{
+  "id": "hamonshu_3-024e",
+  "scan": 24,
+  "note": "Large connected meandering current across the lower panel, including the upper right ripples. The separate upper left spiral and lower right pool are masked out.",
+  "box_pixels": [
+    2986,
+    3035,
+    5390,
+    4427
+  ],
+  "polygon_normalized": [
+    [
+      646,
+      602
+    ],
+    [
+      899,
+      602
+    ],
+    [
+      899,
+      747
+    ],
+    [
+      783,
+      747
+    ],
+    [
+      783,
+      878
+    ],
+    [
+      498,
+      878
+    ],
+    [
+      498,
+      675
+    ],
+    [
+      646,
+      675
+    ]
+  ],
+  "size": [
+    2404,
+    1392
+  ],
+  "mode": "RGBA",
+  "pixel_sha256": "fc754059bd826fddbe838f2f215d3ad82f90375c8de678f10d5acfbaeb80c9a0",
+  "sha256": "0ed31d744ca5ac3dd017081e545f3350e21ac970e103a106a502f6d81a57ce19",
+  "source_scan_sha256": "5a7ef7d9b56fb9523b278762a0ebb84e39c2f94504897c6f59a83e98356391d1",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-024e.jpg",
+    "bytes": 138603,
+    "sha256": "5efa630329a7a811ebcc26baeeee185dd94f8853136d6c1e67f7e9e37583b3e3",
+    "width": 1600,
+    "height": 926,
+    "format": "jpg"
+  }
+}

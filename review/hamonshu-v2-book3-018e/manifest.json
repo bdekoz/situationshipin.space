@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-018e",
+  "scan": 18,
+  "note": "Upper right dense current and foam field.",
+  "box_pixels": [
+    3025,
+    1163,
+    5454,
+    2357
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2429,
+    1194
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "d9177701b127b157a3f9ee5f2ab81d3be5fdf75832a94679ae21a2b50dd6e027",
+  "sha256": "9b516e0e3ef137c4a417396fc9a0025141a2c79d3d34008286462437b50eeeda",
+  "source_scan_sha256": "cb8172307dec2b6a9718bdffe752710e9e232dc791f6e536adcfd12db311b079",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-018e.jpg",
+    "bytes": 269896,
+    "sha256": "25170537b1de43a4fa80d623465751c79e9f14958e1d4635fd547167598f6286",
+    "width": 1600,
+    "height": 786,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-020b",
+  "scan": 20,
+  "note": "Lower left broad crests and bubbles.",
+  "box_pixels": [
+    235,
+    2667,
+    2748,
+    4674
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2513,
+    2007
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "5d64483657dd8686af0a974602d42c2e27181c9ae2b25f0151ef78ece392039a",
+  "sha256": "63be08796763febb8fa6367a2db2a6a58de31b90941fb0529c490b717b0177a5",
+  "source_scan_sha256": "c91f2dac6421e75c3fdbd5fae6e29bbb78f5a6093ca3994e91f483b1f30c7ced",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-020b.jpg",
+    "bytes": 315070,
+    "sha256": "29b0022dd94f517c8c4f0daa6bf94004db171f4abfa2300d3955cc9981b1d484",
+    "width": 1600,
+    "height": 1278,
+    "format": "jpg"
+  }
+}

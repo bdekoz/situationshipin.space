@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-019g",
+  "scan": 19,
+  "note": "Lower right large meandering spiral current.",
+  "box_pixels": [
+    3058,
+    2777,
+    5372,
+    4311
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2314,
+    1534
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "324d68ef4d0355b2d1385abf1d57e4d50f0d2fcb40c18599a3ba96b37f1116f8",
+  "sha256": "f22b41f0846ef23c4afee851a158d99246125a7ca7aded861cd339a68f8a3e57",
+  "source_scan_sha256": "3005580cde005ab7ad426eb02f07bf6d20e4916210eafe589911509446bdcd03",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-019g.jpg",
+    "bytes": 220298,
+    "sha256": "da9c4565ac66a0a4a3a805afb7a93e22bc6c79e30493a543e6172d8ee6b7b1b5",
+    "width": 1600,
+    "height": 1061,
+    "format": "jpg"
+  }
+}

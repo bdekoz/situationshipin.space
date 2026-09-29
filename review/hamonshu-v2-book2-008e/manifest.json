@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-008e",
+  "scan": 8,
+  "note": "Lower left symmetric scroll composition.",
+  "box_pixels": [
+    379,
+    3075,
+    2763,
+    4273
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2384,
+    1198
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "c710c951aeef45bd755b6a04421ae82165a68a57096d360545f26fd89a9151f5",
+  "sha256": "29463ddbc786ebace23199a1707ed931ac1ef232936bf2be70dfb896d88a1362",
+  "source_scan_sha256": "3766cad12bf43c9d25352f7282ee0e09cb3387bcae3637aec9e9222e0e97b17b",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-008e.jpg",
+    "bytes": 150129,
+    "sha256": "136545494023d9467156250a0c804f0ed92baf6119662b1e92b5a3ace2798a05",
+    "width": 1600,
+    "height": 804,
+    "format": "jpg"
+  }
+}

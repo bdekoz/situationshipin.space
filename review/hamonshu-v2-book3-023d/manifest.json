@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-023d",
+  "scan": 23,
+  "note": "Lower right angular foam and breaking-wave field.",
+  "box_pixels": [
+    3000,
+    2499,
+    5514,
+    4729
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2514,
+    2230
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "9fec4bcbee087e94e7b33394cb761f5fa5087614dc603c2fdb702badcdf42643",
+  "sha256": "d865da83f12f0f4cc1cef78ee9606db517fde924df74ad5024bdb14e32183025",
+  "source_scan_sha256": "d25cf1f98ade37e11e5de6e21abe8548f5c9ff33414a553f67b6eafc9050ddcd",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-023d.jpg",
+    "bytes": 419889,
+    "sha256": "4aa02c45fed9bd8ae3a78fe844665e73afe16684d6cb187666e7bd14639ff887",
+    "width": 1600,
+    "height": 1419,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-001a",
+  "scan": 1,
+  "note": "Upper cover ornament; the title label already obscures its left edge.",
+  "box_pixels": [
+    822,
+    374,
+    3076,
+    2925
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2254,
+    2551
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "ba94df5ff2f96b5eeb019802307a95ddb59b64e294110b7fdaee3571db41b94f",
+  "sha256": "c544853cb2e2063e518851cba0d76ea36e7e505825937ddff599e753495675ad",
+  "source_scan_sha256": "7ab037cf5182a7b330db760b66ffe6c4a85c9c8de6f7be007e6543d4463ce71e",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-001a.jpg",
+    "bytes": 385453,
+    "sha256": "2eb410d17156f11d850328dd0b0b255cbaadba970cfafec3d47feee6a82591e8",
+    "width": 1414,
+    "height": 1600,
+    "format": "jpg"
+  }
+}

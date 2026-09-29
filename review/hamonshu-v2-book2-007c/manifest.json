@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-007c",
+  "scan": 7,
+  "note": "Paired left crest lines, kept together as one example.",
+  "box_pixels": [
+    379,
+    2697,
+    2598,
+    3227
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2219,
+    530
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "3ac39ff810b81b4ec753c20e0612305d4a054a9387158d8b2b7f3c0dfb2f18c1",
+  "sha256": "aa982a5b375c5f0838b9db507374a0a4ad466dda042d5787b938582461db837b",
+  "source_scan_sha256": "2f5903f4ca9a2b1689e8884e02d0e2963b91475cd964cd88cb30fde5f3d43897",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-007c.jpg",
+    "bytes": 76467,
+    "sha256": "81b2aae94ac6f79b25ed2b38dabd69164544b9ca743c5606bbfca4f3ea350e4f",
+    "width": 1600,
+    "height": 382,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-011k",
+  "scan": 11,
+  "note": "Small three-lobed curl form.",
+  "box_pixels": [
+    3821,
+    3192,
+    4249,
+    3590
+  ],
+  "polygon_normalized": null,
+  "size": [
+    428,
+    398
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "b9ee62d7c1488bdc4229aeaeb62bd31af3812bad637000737613999cbdcc2abe",
+  "sha256": "ee3dcc675b247aa2cc65f8fb61121480b43dc48a28b322fd2d8e5e2f68d627f1",
+  "source_scan_sha256": "3a2c623bc8f12c65ee252b48827261e60984a3963e065773067496f1d570142e",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-011k.jpg",
+    "bytes": 32753,
+    "sha256": "40af4547aff4b426b9e4eb5730d231a4dae935545d8f38b2b19070420e9d28e5",
+    "width": 428,
+    "height": 398,
+    "format": "jpg"
+  }
+}

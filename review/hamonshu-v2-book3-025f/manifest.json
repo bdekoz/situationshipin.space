@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-025f",
+  "scan": 25,
+  "note": "Second upper right crest group.",
+  "box_pixels": [
+    3939,
+    1402,
+    5294,
+    1859
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1355,
+    457
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "499b9ea24882a4927158483bbde09c38b7dd4f350c4b1ee3799ddd5389ef7b24",
+  "sha256": "80417b010b3f6838b9bfa68ba27ea04634f5a0a4c6a7281a39cf64fc937fbb20",
+  "source_scan_sha256": "41ab90ecb89c757f53c93f3ff85d5d90e6e440fa8a35b7b77cbeda6058a81b12",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-025f.jpg",
+    "bytes": 83832,
+    "sha256": "507407d7638727dabc7f7f19f410edd14dd77b656b9e634b7a2478f74deeb5f0",
+    "width": 1355,
+    "height": 457,
+    "format": "jpg"
+  }
+}

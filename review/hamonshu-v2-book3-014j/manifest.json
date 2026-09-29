@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-014j",
+  "scan": 14,
+  "note": "Small lower right dense crest disk.",
+  "box_pixels": [
+    4668,
+    3514,
+    5236,
+    4084
+  ],
+  "polygon_normalized": null,
+  "size": [
+    568,
+    570
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "0f84b33acdd4e15636f1731afc697b9f91b9aba7abe9c65565a5e75c6d28fdf5",
+  "sha256": "6d45a38e7d3cb1cad4cf312640c308dce1080a3e143837f005a80fa85f9ea809",
+  "source_scan_sha256": "316b10a37cb8a2c8affae6496f1bf391dcfb8a42daef23ac9637abf414154e61",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-014j.jpg",
+    "bytes": 78674,
+    "sha256": "ee37e2a780733881dcba497696460291b1335e7b3e4cd62b3f4d80479d0c795b",
+    "width": 568,
+    "height": 570,
+    "format": "jpg"
+  }
+}

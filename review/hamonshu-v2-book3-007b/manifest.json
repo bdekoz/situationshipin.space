@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-007b",
+  "scan": 7,
+  "note": "Middle left upright curling forms.",
+  "box_pixels": [
+    488,
+    2420,
+    2623,
+    2929
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2135,
+    509
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "d426ffe86e41522c0f04ae887e9fd18b11eb9253db2058e83c4496081c2d89b6",
+  "sha256": "4bf8b37a526a1e9ea006b14b68cab857a44b93efa5c9bec7c1ca44a1d688e6ed",
+  "source_scan_sha256": "5fc2694d8dd62736fd42d388515f47269ffa71c5b6dd4df2d7e81eed4ce2525e",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-007b.jpg",
+    "bytes": 89947,
+    "sha256": "31cb6d9e4d0cddaebd6f5c68d7489d20ccd721485f8c5961579e74241541acaa",
+    "width": 1600,
+    "height": 381,
+    "format": "jpg"
+  }
+}

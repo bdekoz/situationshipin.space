@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-012d",
+  "scan": 12,
+  "note": "Central foam medallion crosses the gutter; its two visible halves are kept together.",
+  "box_pixels": [
+    2103,
+    2281,
+    3338,
+    3252
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1235,
+    971
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "bbead3fd1dcbcc8a54af15ad37e16ced3f23459c0382689a895ac46bfcfcb4ba",
+  "sha256": "ad0cd23a4acb04c4bc91a5646c2d88e919f0a7678ced1a31467b08f690aabb8f",
+  "source_scan_sha256": "a36a2a9254c02fe0f0bf3588c19e7adc54d751b5deedd7925f2fba6e1f27a812",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-012d.jpg",
+    "bytes": 135010,
+    "sha256": "88f5028c75170b592daf9497a6df926632613731ad20f59cf4465b5666acfe72",
+    "width": 1235,
+    "height": 971,
+    "format": "jpg"
+  }
+}

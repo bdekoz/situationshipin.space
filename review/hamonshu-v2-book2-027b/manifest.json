@@ -1,0 +1,53 @@
+{
+  "id": "hamonshu_2-027b",
+  "scan": 27,
+  "note": "Partly hidden arc panel; mask retains its visible L-shaped portion.",
+  "box_pixels": [
+    3313,
+    1618,
+    3961,
+    2829
+  ],
+  "polygon_normalized": [
+    [
+      542,
+      321
+    ],
+    [
+      621,
+      321
+    ],
+    [
+      621,
+      512
+    ],
+    [
+      648,
+      512
+    ],
+    [
+      648,
+      561
+    ],
+    [
+      542,
+      561
+    ]
+  ],
+  "size": [
+    648,
+    1211
+  ],
+  "mode": "RGBA",
+  "pixel_sha256": "f221dbf01f7d7020565f83755f1caadd3ffa802fb670becaf3887b7cbbd8117a",
+  "sha256": "04776c12107463f23fdeff2de0156fb78b84a93e3f49f996ed19063790774b7d",
+  "source_scan_sha256": "8c79a4ca1a5d86f30eca9b3e17992d461be81e2bcf4527880d7c46ce4b765629",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-027b.jpg",
+    "bytes": 133623,
+    "sha256": "340e488015c76db2b601005139110f0f8f41bb0e6a3c9bc2b3b4d1fc44e6d5da",
+    "width": 648,
+    "height": 1211,
+    "format": "jpg"
+  }
+}

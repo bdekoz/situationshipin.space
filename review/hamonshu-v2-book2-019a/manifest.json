@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-019a",
+  "scan": 19,
+  "note": "Upper left fine-line crest field.",
+  "box_pixels": [
+    281,
+    877,
+    2788,
+    2309
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2507,
+    1432
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "b29244c8754ccd977b221559c1318bd22c28d31421e7d35d018f70b5da2246a5",
+  "sha256": "0d4e77594be6558b16de0601ee9f435961c5a1d227f8766a9d25c305b2032611",
+  "source_scan_sha256": "1b9898a958e7c3feae03c653967646611e8985911ca738bd03b2e0b1e2c160be",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-019a.jpg",
+    "bytes": 337835,
+    "sha256": "738cc3332c0dfb12dd2c2deaa8e1b14d467ab3f5d7b21760bf4f0a93ce116bd1",
+    "width": 1600,
+    "height": 914,
+    "format": "jpg"
+  }
+}

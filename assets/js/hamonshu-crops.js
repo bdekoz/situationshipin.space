@@ -23,11 +23,11 @@
   }
 
   function validate(review, allowDraft = false) {
-    if (review?.schema !== "izzi.hamonshu-categories/1" || review.volume !== 1
+    if (review?.schema !== "izzi.hamonshu-categories/1" || review.volume !== packet.volume
         || review.plan_sha256 !== packet.plan_sha256
         || typeof review.reviewer !== "string" || review.reviewer.length > 200
         || !Array.isArray(review.crops) || review.crops.length !== byId.size) {
-      throw new Error("This file does not match this Book 1 crop packet.");
+      throw new Error(`This file does not match this Book ${packet.volume} crop packet.`);
     }
     const seen = new Set();
     for (const row of review.crops) {
@@ -46,7 +46,7 @@
 
   function payload() {
     return {
-      schema: "izzi.hamonshu-categories/1", volume: 1,
+      schema: "izzi.hamonshu-categories/1", volume: packet.volume,
       plan_sha256: packet.plan_sha256, reviewer: el("reviewer").value.trim(),
       review_url: location.href.split("#")[0], exported_at: new Date().toISOString(),
       crops: packet.crops.map(crop => ({
@@ -129,7 +129,7 @@
       const review = validate(payload());
       const url = URL.createObjectURL(new Blob([JSON.stringify(review, null, 2) + "\n"], {type: "application/json"}));
       const anchor = document.createElement("a");
-      anchor.href = url; anchor.download = "hamonshu-book-1-categories.json";
+      anchor.href = url; anchor.download = `hamonshu-book-${packet.volume}-categories.json`;
       document.body.append(anchor); anchor.click(); anchor.remove();
       setTimeout(() => URL.revokeObjectURL(url), 1000);
       status("Classifications downloaded. Send the JSON file back to Benjamin for grouping the original crops.");

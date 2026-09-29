@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-006a",
+  "scan": 6,
+  "note": "Upper left sparse crest field.",
+  "box_pixels": [
+    289,
+    1095,
+    2766,
+    2382
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2477,
+    1287
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "684cb797711233f08f800cd7113b9106c6d75ff219ed65ee1bca404368644125",
+  "sha256": "c2ed723e8e703d096c589b08078fc20200cee3f3932f9b0231904b1fdf6141dd",
+  "source_scan_sha256": "ce469dbfccb54e7ec4b121925b73ed0c7d01d787085b688a2c313e0b73a9faf8",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-006a.jpg",
+    "bytes": 148717,
+    "sha256": "3c795f3056a1d77c940be1e03c8ffd6c43853304216e1494e54ba92ac9eca504",
+    "width": 1600,
+    "height": 831,
+    "format": "jpg"
+  }
+}

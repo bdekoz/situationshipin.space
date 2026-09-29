@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-011g",
+  "scan": 11,
+  "note": "Two touching upper-right small curl disks, retained together.",
+  "box_pixels": [
+    3295,
+    1371,
+    3821,
+    1845
+  ],
+  "polygon_normalized": null,
+  "size": [
+    526,
+    474
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "e36ddaf155826953d4531be318e29711ac7299d7d027fce914ac34f2abd9a2b5",
+  "sha256": "feec42e2ab75f46a175a3ad3957bfc905835d0a4435e58be14eca686d5179348",
+  "source_scan_sha256": "3a2c623bc8f12c65ee252b48827261e60984a3963e065773067496f1d570142e",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-011g.jpg",
+    "bytes": 43603,
+    "sha256": "4104b9dd5e5719f379ad050d7380e4c236d94b9d05ca5d3eda5900c87c9ca1f8",
+    "width": 526,
+    "height": 474,
+    "format": "jpg"
+  }
+}

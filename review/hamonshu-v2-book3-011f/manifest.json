@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-011f",
+  "scan": 11,
+  "note": "Middle right broad sweeping crests.",
+  "box_pixels": [
+    3063,
+    1442,
+    5577,
+    3186
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2514,
+    1744
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "26caeede20eaef87be155bcb686a94d9ae08a30a1b009b1380ecca4d5a33e9d3",
+  "sha256": "2771d2cbbe85972ced240eafd8e05cdcb9853f9cc9dda689c1fde98ea3b4bbe4",
+  "source_scan_sha256": "1a7d038ecb225341874705462421d42279971be1e269a0cb2cb32e931f4b53d7",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-011f.jpg",
+    "bytes": 236867,
+    "sha256": "40d6902716dce4a98f0ea92288ace0284fa92f6c38387f5cf8930b6b3bbfad3c",
+    "width": 1600,
+    "height": 1110,
+    "format": "jpg"
+  }
+}

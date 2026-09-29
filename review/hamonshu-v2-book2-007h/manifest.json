@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-007h",
+  "scan": 7,
+  "note": "Lower right short-stroke field.",
+  "box_pixels": [
+    3234,
+    3439,
+    5422,
+    4175
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2188,
+    736
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "cca798de60aa72f057804fea9720d1938685bd3eb1bd8df549fcc7c1f24b9567",
+  "sha256": "d8f56a8a30627f2bdafc593fc754d0d59f9ee046d3be74e384827c17844e6a37",
+  "source_scan_sha256": "2f5903f4ca9a2b1689e8884e02d0e2963b91475cd964cd88cb30fde5f3d43897",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-007h.jpg",
+    "bytes": 102900,
+    "sha256": "0ec63a7e6b2aff680d1855e6312fb653b22dcefd00ee46ff32f48a0a24f538b7",
+    "width": 1600,
+    "height": 538,
+    "format": "jpg"
+  }
+}

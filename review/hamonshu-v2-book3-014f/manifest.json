@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-014f",
+  "scan": 14,
+  "note": "Upper right ring of inward crests.",
+  "box_pixels": [
+    3996,
+    1260,
+    5151,
+    2405
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1155,
+    1145
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "e524f4c7420aa5a56d96c0b21631357874fbe456335d7d23144395aeed803f5b",
+  "sha256": "834d4622859b926ac64b417c10fa2cd556e1d5e0428f5903b499924d45266e08",
+  "source_scan_sha256": "316b10a37cb8a2c8affae6496f1bf391dcfb8a42daef23ac9637abf414154e61",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-014f.jpg",
+    "bytes": 155288,
+    "sha256": "d4dc3de11146d72cf6f3ba3c80080b444f2467e78295b393b9fe2266b7be5177",
+    "width": 1155,
+    "height": 1145,
+    "format": "jpg"
+  }
+}

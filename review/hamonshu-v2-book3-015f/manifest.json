@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-015f",
+  "scan": 15,
+  "note": "Large upper right dense wave disk.",
+  "box_pixels": [
+    4057,
+    1244,
+    5272,
+    2413
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1215,
+    1169
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "4ebc162bae215fb769d4164de5d88018c5e08e9d3d4c20743d9dcf05e2692534",
+  "sha256": "f373e897cce186d520a406b20c736d4b8158bb2d982ccb46a53a34e59edf407d",
+  "source_scan_sha256": "e73e94dc79bc8470b42b385c9cebcb9084be955d5551f6ca8c76c65031d4be20",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-015f.jpg",
+    "bytes": 315114,
+    "sha256": "1afecaa8f5969a1b3906a930e8cf15a5e59a6b9e84d792941e4d1fddc2899cde",
+    "width": 1215,
+    "height": 1169,
+    "format": "jpg"
+  }
+}

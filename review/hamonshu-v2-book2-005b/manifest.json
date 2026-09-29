@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-005b",
+  "scan": 5,
+  "note": "Second left ribbon.",
+  "box_pixels": [
+    312,
+    1769,
+    2824,
+    2447
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2512,
+    678
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "3642913b7852d491d6cf1a058e12c205fefe1cb2518d7e872b08b7a3f62ae686",
+  "sha256": "0398359de519784bfa01d84a2ea73e752f7f2f86e8eed3551c7926a081c66e3a",
+  "source_scan_sha256": "3d9b42f385d8a6710556fa79c8c25e1f1e9d22d19c6796af0c29257d8c641012",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-005b.jpg",
+    "bytes": 88862,
+    "sha256": "dc9ae36b26fb0dea58e2ddce59cbc59d5e064985188d04d157b4bddf38ce8bfc",
+    "width": 1600,
+    "height": 432,
+    "format": "jpg"
+  }
+}

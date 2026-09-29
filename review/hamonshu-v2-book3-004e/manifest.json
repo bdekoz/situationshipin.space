@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-004e",
+  "scan": 4,
+  "note": "Upper right outlined water composition with bubbles.",
+  "box_pixels": [
+    3247,
+    1116,
+    5688,
+    2990
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2441,
+    1874
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "83b4b12b5965517cd74535d1c5aaeee1a48a66bf3d8713f8e4c902fbc0b0e447",
+  "sha256": "26c09be305c84d6aa1ea488a75626b2527ba5deba5742ab0c883c9c14395c212",
+  "source_scan_sha256": "e282b7329c467bcca024dd8b5c9240449ffaf218e8d8ea8435b9c7bf377a6043",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-004e.jpg",
+    "bytes": 127769,
+    "sha256": "f8ff5a9c763dcf342dea0e8e7472c3eb22d69490358377226f20e43a7427229b",
+    "width": 1600,
+    "height": 1228,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-026d",
+  "scan": 26,
+  "note": "Upper right interlaced-arc field.",
+  "box_pixels": [
+    3003,
+    918,
+    5498,
+    2602
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2495,
+    1684
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "48c03e22e36d452c41c0f9527408f4c4f835360665ce7aad9a5ea98e01d8f05c",
+  "sha256": "c3117b148ea9ae22d1706c69dfdef8e359d66d4be31ad16f54143a1cc19bd6eb",
+  "source_scan_sha256": "89155d5707b105bacd2a7d73bdf0609c7afeabcc39b3bb522daefbbe359cfc63",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-026d.jpg",
+    "bytes": 303434,
+    "sha256": "cfb5026324070bc21e19e54470cbab8252fc8e3ae3f51f83ae171c37d63e5b60",
+    "width": 1600,
+    "height": 1080,
+    "format": "jpg"
+  }
+}

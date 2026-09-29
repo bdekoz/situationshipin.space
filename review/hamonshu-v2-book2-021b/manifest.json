@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-021b",
+  "scan": 21,
+  "note": "Neighboring upper left dense-curl panel.",
+  "box_pixels": [
+    1510,
+    953,
+    2788,
+    2597
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1278,
+    1644
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "9f48dd55dd798ee2f92512832ebb855f23dc139848ffc794690ad69815da328d",
+  "sha256": "1b6b7bf454c5743764d8a337af270e8695cb90d0abde93302d40877cb5919275",
+  "source_scan_sha256": "2e7575e9aefebeaf4178ed15014bc7967e945fc2d6b8264c4513552539027347",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-021b.jpg",
+    "bytes": 627911,
+    "sha256": "a3c148c7b2d042878146c8dc47f2cc81f9e672831542ebfbaf6b22c4c6011226",
+    "width": 1244,
+    "height": 1600,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-012b",
+  "scan": 12,
+  "note": "Middle left intertwined wave band with bubbles.",
+  "box_pixels": [
+    956,
+    2365,
+    2682,
+    2788
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1726,
+    423
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "6d0a59048624d69089778da7801e41cbcc3562459cdc338b6b440b839573d21c",
+  "sha256": "65d0996e5b2d8921b7fd736550c1cfcbc06250c378d1cd9653e8edd7f713a956",
+  "source_scan_sha256": "10490cc85c429c795b9f40ba627531cc7b72cf06c97b897f8535ad8ac3aba4ec",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-012b.jpg",
+    "bytes": 77842,
+    "sha256": "fc6974e96acd7bd68bb46baaaa432d54814778429bfbe1756a40fd15040ecdfe",
+    "width": 1600,
+    "height": 392,
+    "format": "jpg"
+  }
+}

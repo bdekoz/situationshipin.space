@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-022a",
+  "scan": 22,
+  "note": "Upper left dense ripple field.",
+  "box_pixels": [
+    313,
+    965,
+    2819,
+    2251
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2506,
+    1286
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "6ff2edf81d93b5ccf39b0e331bf1750f35789620f42464ab3d51a3f027533c50",
+  "sha256": "7b5e0ac43270fe922abf2a51d896d3866be4fe398abe8259dbe1c666359239f1",
+  "source_scan_sha256": "719714e884422604695564c74e27f2e7863d52bb29a9eec76582fe30097655ca",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-022a.jpg",
+    "bytes": 385494,
+    "sha256": "e12318be6e9aae9e37ec5e7c73920cb7f4f75366a21e9200cb2ed767bf648d6e",
+    "width": 1600,
+    "height": 821,
+    "format": "jpg"
+  }
+}

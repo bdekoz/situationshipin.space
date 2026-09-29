@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-013a",
+  "scan": 13,
+  "note": "Upper left foam disk.",
+  "box_pixels": [
+    956,
+    1190,
+    2145,
+    2365
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1189,
+    1175
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "4fcc20228bccd10b6be5cf1c0c34ab18fc4f6108c0e45dffeec380cfd5ecc3bf",
+  "sha256": "14b41cc67e15ab9308a0cef819096fbcb8e48110748a1f88494761c1f39dd7ff",
+  "source_scan_sha256": "2f9959042177f7ced6089e77c09e4aff476db642a810bc2cb94ac9e909bb2976",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-013a.jpg",
+    "bytes": 204798,
+    "sha256": "298c734fde1e4e6737cec90f89805a1b9fe4c60b359abf3413307e92a98edcbb",
+    "width": 1189,
+    "height": 1175,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-008i",
+  "scan": 8,
+  "note": "Two overlapping lower-right water medallions; kept together because one occludes the other.",
+  "box_pixels": [
+    3906,
+    2984,
+    5471,
+    4278
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1565,
+    1294
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "e0011cb51ae95efcba627ebf0a7193a9c410c205c292f717efb5bc223aecfb16",
+  "sha256": "0a3b8ab4b02f93d38f51a27b28e1091338737f12cdb221df6dca13d849eecf2b",
+  "source_scan_sha256": "3766cad12bf43c9d25352f7282ee0e09cb3387bcae3637aec9e9222e0e97b17b",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-008i.jpg",
+    "bytes": 350536,
+    "sha256": "4170a4724589d47ef74a9a281621365d27a9739ce4878742cb3d67b90738fc6d",
+    "width": 1565,
+    "height": 1294,
+    "format": "jpg"
+  }
+}

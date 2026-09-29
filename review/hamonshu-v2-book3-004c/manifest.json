@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-004c",
+  "scan": 4,
+  "note": "Third thin water band.",
+  "box_pixels": [
+    908,
+    2322,
+    2724,
+    2613
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1816,
+    291
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "1704a6cd5946e15eaa643b1198acbf3a1097ec6e02cec61c4ff6a9c2c25010fb",
+  "sha256": "3ae83c665745a6ebbfbd693df974e5b120b4b9d78a50c24ca64e85aab61d49c2",
+  "source_scan_sha256": "e282b7329c467bcca024dd8b5c9240449ffaf218e8d8ea8435b9c7bf377a6043",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-004c.jpg",
+    "bytes": 31240,
+    "sha256": "64ab28303a21f46963bd610bb62a00c98d808064c376bbaca0cbd5b5d69e4a55",
+    "width": 1600,
+    "height": 256,
+    "format": "jpg"
+  }
+}

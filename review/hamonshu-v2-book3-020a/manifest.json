@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-020a",
+  "scan": 20,
+  "note": "Upper left detailed breaking-wave field.",
+  "box_pixels": [
+    241,
+    973,
+    2748,
+    2546
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2507,
+    1573
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "acaf860d63ac0857923ae0eaac6acccffaa50d7c32ddf281cee563f73c839827",
+  "sha256": "654d02f71b6c7cdc70779f4ad805aaa6e128a868c5123d7e5e06c986355f3bb6",
+  "source_scan_sha256": "c91f2dac6421e75c3fdbd5fae6e29bbb78f5a6093ca3994e91f483b1f30c7ced",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-020a.jpg",
+    "bytes": 436789,
+    "sha256": "7f179da8f2561b9f96ddf19fd620024d4752a9f719f9cdb1d03491cbd2b730d0",
+    "width": 1600,
+    "height": 1004,
+    "format": "jpg"
+  }
+}

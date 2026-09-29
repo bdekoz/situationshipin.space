@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-015c",
+  "scan": 15,
+  "note": "Small lower left spiral disk.",
+  "box_pixels": [
+    732,
+    3763,
+    1064,
+    4062
+  ],
+  "polygon_normalized": null,
+  "size": [
+    332,
+    299
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "705854b032d42b80019683c1a77b561cc6ff81402b3d761446384484b1ef8693",
+  "sha256": "8be504ebfff9127ad7c8113508b4e25f21d25bc6b4c21c0a24720266dab9c1bf",
+  "source_scan_sha256": "e73e94dc79bc8470b42b385c9cebcb9084be955d5551f6ca8c76c65031d4be20",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-015c.jpg",
+    "bytes": 22021,
+    "sha256": "dcacf4fd8fe194ce096dff4e1e7a7df18acdfa4972a5b95e58ed43311bd31c2d",
+    "width": 332,
+    "height": 299,
+    "format": "jpg"
+  }
+}

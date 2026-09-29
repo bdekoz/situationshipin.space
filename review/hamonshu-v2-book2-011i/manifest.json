@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-011i",
+  "scan": 11,
+  "note": "Middle right repeated-arch disk.",
+  "box_pixels": [
+    3387,
+    2183,
+    4163,
+    2909
+  ],
+  "polygon_normalized": null,
+  "size": [
+    776,
+    726
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "e164085b975efd2a2f42bea11a512d459ab57ce8b76f04eff4de3517916e5e2f",
+  "sha256": "5588f910f2a3788f0511bfdbb58e77ca7ff6c35bd9cb04562543b33e305a5e45",
+  "source_scan_sha256": "3a2c623bc8f12c65ee252b48827261e60984a3963e065773067496f1d570142e",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-011i.jpg",
+    "bytes": 108264,
+    "sha256": "5a4b35f9a40022b686fc27b8274a86d0a2ab0238466bc1fd9bc912b615a31b20",
+    "width": 776,
+    "height": 726,
+    "format": "jpg"
+  }
+}

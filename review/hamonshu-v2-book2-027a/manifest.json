@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-027a",
+  "scan": 27,
+  "note": "Upper right foreground panel of dense curls and foam. The facing text page is excluded.",
+  "box_pixels": [
+    3802,
+    1205,
+    5141,
+    2582
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1339,
+    1377
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "61de225750e395167e8faad982127e7a6b19fe0860e4d7bc6634401af8379ecb",
+  "sha256": "087fa0a6f88b9a1558ea6992135d4546a21b7a072ad1cd954128fbc224cf9b14",
+  "source_scan_sha256": "8c79a4ca1a5d86f30eca9b3e17992d461be81e2bcf4527880d7c46ce4b765629",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-027a.jpg",
+    "bytes": 516365,
+    "sha256": "1f62e34fcac28fe1d05d1d02d6e41a174d0a20ee005f54b1bb298d52a6156098",
+    "width": 1339,
+    "height": 1377,
+    "format": "jpg"
+  }
+}

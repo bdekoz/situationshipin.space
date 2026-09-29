@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-025d",
+  "scan": 25,
+  "note": "Lower narrow field of intersecting arcs.",
+  "box_pixels": [
+    1325,
+    3422,
+    2638,
+    4502
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1313,
+    1080
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "def96d156259c00cca7393b57b7e0ca89789dbf3dbc347d445e63d67de735c22",
+  "sha256": "3c8eea501998a8972be2047fa9cd379526c1388dba13cd6fb59a96e7dfa7dd0b",
+  "source_scan_sha256": "41ab90ecb89c757f53c93f3ff85d5d90e6e440fa8a35b7b77cbeda6058a81b12",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-025d.jpg",
+    "bytes": 155426,
+    "sha256": "abe006e2732a58191e473bce79bd4cdc5aa0505264e74849f0619ac3993c5c94",
+    "width": 1313,
+    "height": 1080,
+    "format": "jpg"
+  }
+}

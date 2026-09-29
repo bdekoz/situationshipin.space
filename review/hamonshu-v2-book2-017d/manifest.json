@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-017d",
+  "scan": 17,
+  "note": "Upper right rows of narrow crests.",
+  "box_pixels": [
+    3387,
+    1357,
+    5355,
+    2482
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1968,
+    1125
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "78411ce4884064162e8d371040ce27247e7d36221a0a7c407dcc220a71f966ab",
+  "sha256": "6f3c2030bfa3704787b0f1904ac2e12ef0f8e02da8a2a74457e53d2abdf2e444",
+  "source_scan_sha256": "6ae0fd2f350d71e104c85ebc250325299a602811b4c20eba416ca61a932ac605",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-017d.jpg",
+    "bytes": 306703,
+    "sha256": "b63171517ef2ba65d2c3d6a4e6be2c74c6cddc398d137b33725dffc4e50b4441",
+    "width": 1600,
+    "height": 915,
+    "format": "jpg"
+  }
+}

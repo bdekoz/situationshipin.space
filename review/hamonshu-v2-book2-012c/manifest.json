@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-012c",
+  "scan": 12,
+  "note": "Lower left spiral-and-drop disk.",
+  "box_pixels": [
+    1675,
+    3455,
+    2543,
+    4309
+  ],
+  "polygon_normalized": null,
+  "size": [
+    868,
+    854
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "8960549de9a52607753572b62edbcb0388b537c8578693b43a62e0bdcb252c25",
+  "sha256": "608f80e7b1d075296c4e97796c625094726063aa6328ffc0078666412dee71dc",
+  "source_scan_sha256": "a36a2a9254c02fe0f0bf3588c19e7adc54d751b5deedd7925f2fba6e1f27a812",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-012c.jpg",
+    "bytes": 107368,
+    "sha256": "a026bb89b44303a1476d24d41bc8d38f29b12247fb6bd464c459d1a5e813f0d9",
+    "width": 868,
+    "height": 854,
+    "format": "jpg"
+  }
+}

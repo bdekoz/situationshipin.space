@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-007c",
+  "scan": 7,
+  "note": "Lower left long connected current.",
+  "box_pixels": [
+    332,
+    3373,
+    2635,
+    4467
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2303,
+    1094
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "a204226eed609b8a6d74125e00719c5e61a4ddf200aab8244faeb0c0b3fb4da2",
+  "sha256": "6039e2524641f70272b2968e102086c18f3710fc1468db0bda9ebe4ba0d226fc",
+  "source_scan_sha256": "5fc2694d8dd62736fd42d388515f47269ffa71c5b6dd4df2d7e81eed4ce2525e",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-007c.jpg",
+    "bytes": 148919,
+    "sha256": "990c85ca3a8540193bb71b667f46fbe7009f2246a69f0715287d98b9d6e7f9d0",
+    "width": 1600,
+    "height": 760,
+    "format": "jpg"
+  }
+}

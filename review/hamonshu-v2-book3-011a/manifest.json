@@ -1,0 +1,57 @@
+{
+  "id": "hamonshu_3-011a",
+  "scan": 11,
+  "note": "Upper left long current; the separate smaller current is masked out.",
+  "box_pixels": [
+    295,
+    985,
+    2791,
+    2327
+  ],
+  "polygon_normalized": [
+    [
+      49,
+      196
+    ],
+    [
+      463,
+      196
+    ],
+    [
+      463,
+      355
+    ],
+    [
+      306,
+      355
+    ],
+    [
+      259,
+      395
+    ],
+    [
+      259,
+      463
+    ],
+    [
+      49,
+      463
+    ]
+  ],
+  "size": [
+    2496,
+    1342
+  ],
+  "mode": "RGBA",
+  "pixel_sha256": "c2a7ca733e9b8d8393b22f2a21fff828626fc5aa1a83f75b22fa1918dbba3533",
+  "sha256": "7b6f8e1798418182672d87a00bd45ac74cdfbd232be7e03bb3677cbdd8effd45",
+  "source_scan_sha256": "1a7d038ecb225341874705462421d42279971be1e269a0cb2cb32e931f4b53d7",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-011a.jpg",
+    "bytes": 141378,
+    "sha256": "1f44d5bde1dead4904eb2fe7dc0c6ba3136b0c407b407f1da2223abf02a6d676",
+    "width": 1600,
+    "height": 860,
+    "format": "jpg"
+  }
+}

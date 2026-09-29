@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-008c",
+  "scan": 8,
+  "note": "Second lower left outline spiral band.",
+  "box_pixels": [
+    270,
+    3570,
+    2758,
+    4109
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2488,
+    539
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "0f853973f2a2190aecd9ea61d9ead843e980bfa530c1a90be67825ebfc95f3ae",
+  "sha256": "9d163a7142f82ebaefef158ddf18d9870d50c28022399105fc0b22a5b7dc304b",
+  "source_scan_sha256": "fc9f980b7da52452ea85c46618aa64a39a01c844e4d0e5cfee58f26033e303ea",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-008c.jpg",
+    "bytes": 97512,
+    "sha256": "60878519824f71d69c2a9896185f6ca0a2f828b0b7e0bf40172c862c4d6ba101",
+    "width": 1600,
+    "height": 347,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-022b",
+  "scan": 22,
+  "note": "Second group of small upright forms and arcs.",
+  "box_pixels": [
+    442,
+    2296,
+    1561,
+    3251
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1119,
+    955
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "421b12441c039c34779b74d702aabd3bf2b503ee4a689a8722e06a1132436cba",
+  "sha256": "7cad517ed8918b5bdfda2260391a06d91dd936f0218eecef4f182e52fb149817",
+  "source_scan_sha256": "9f7a0da4e66d5e2642e5a72a1bbf0e70f63dc2850cac880dca1ae4692e588681",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-022b.jpg",
+    "bytes": 132817,
+    "sha256": "a219cf58a9eb415ac06960ac7aa14f0f1346899eeaa0ebffa7e7f5861ed43628",
+    "width": 1119,
+    "height": 955,
+    "format": "jpg"
+  }
+}

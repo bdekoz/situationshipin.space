@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-010b",
+  "scan": 10,
+  "note": "Middle left rolling-wave group.",
+  "box_pixels": [
+    367,
+    2151,
+    2818,
+    3090
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2451,
+    939
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "ee990f78fbb642a765341596312ecbd91156dd627a1c33861f8a4a42b420f077",
+  "sha256": "310ee0cd5d6236795d3e257e38659419797c5ec325ba7394e69ca93a4e31ac80",
+  "source_scan_sha256": "2764d161b0cf9cc1bfeddda95e6bc15628268d1405eefd305931216c4d5d3294",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-010b.jpg",
+    "bytes": 110016,
+    "sha256": "27831e9301d7e8c7722a98e4cf9a0d6adae6d14aba491e794af353cd4bf8317a",
+    "width": 1600,
+    "height": 613,
+    "format": "jpg"
+  }
+}

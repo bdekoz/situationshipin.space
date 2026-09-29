@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-013d",
+  "scan": 13,
+  "note": "Lower left three tall wave forms.",
+  "box_pixels": [
+    476,
+    3060,
+    1785,
+    3914
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1309,
+    854
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "73fc97011209f478274d4f60a5d7753be0c81e89e420ce18a1598edcaa7f495b",
+  "sha256": "e1c143a04cddf7fc6256de729b4ce5d321b41a32806c852427da56990759e07d",
+  "source_scan_sha256": "1e0a8b07cde573dc1f5d61f6f07e83ada42f4d4138151fabd9a37d2ce68f0ae3",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-013d.jpg",
+    "bytes": 148142,
+    "sha256": "5b840f68ceea6ed86e53b9a48d46ec7e94b1511ba32300d2675a9a99c4223442",
+    "width": 1309,
+    "height": 854,
+    "format": "jpg"
+  }
+}

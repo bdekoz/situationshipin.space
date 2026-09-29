@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-006d",
+  "scan": 6,
+  "note": "Upper right scattered current strokes.",
+  "box_pixels": [
+    3139,
+    1402,
+    5652,
+    2804
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2513,
+    1402
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "ad2b7cbb0e53d3d8ff29c81e9e2a972fbb5d438bf4e0b3d5c68a0c9ddf13bb49",
+  "sha256": "9c165fbf109b6aba3cddb8336163d076f49cc62fecc426971456924593d59564",
+  "source_scan_sha256": "ce469dbfccb54e7ec4b121925b73ed0c7d01d787085b688a2c313e0b73a9faf8",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-006d.jpg",
+    "bytes": 178655,
+    "sha256": "6d02c3cd11089f44db53047bee725ae470f769c8c174fc07abfd9b3dc20281ba",
+    "width": 1600,
+    "height": 893,
+    "format": "jpg"
+  }
+}

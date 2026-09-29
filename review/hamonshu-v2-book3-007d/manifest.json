@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-007d",
+  "scan": 7,
+  "note": "First upper right narrow current.",
+  "box_pixels": [
+    3165,
+    1397,
+    5366,
+    1679
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2201,
+    282
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "a5d2b33594f9840f45d85c7083085a8ed534233590bb3ace7d37a845211a431a",
+  "sha256": "53335c5ea4a4c21d637cd6554b4a6e6ec175b16fd33043f910e69d81ce4a95f0",
+  "source_scan_sha256": "5fc2694d8dd62736fd42d388515f47269ffa71c5b6dd4df2d7e81eed4ce2525e",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-007d.jpg",
+    "bytes": 59587,
+    "sha256": "af8f31bdcd808d53602f953f081aede9584b7a271483614ef6c30bcc5deeb401",
+    "width": 1600,
+    "height": 205,
+    "format": "jpg"
+  }
+}

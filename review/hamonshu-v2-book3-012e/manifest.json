@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-012e",
+  "scan": 12,
+  "note": "Second upper right narrow crest band.",
+  "box_pixels": [
+    3385,
+    1613,
+    5117,
+    1886
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1732,
+    273
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "76c6870de36f1f7b5ce1362d69ade91845164e5cb232c432b37bb88b0f5b28be",
+  "sha256": "d74e0262b3947db9907d4b285d5a821edbc3b09c834ad26db5a8fc59b701ad88",
+  "source_scan_sha256": "10490cc85c429c795b9f40ba627531cc7b72cf06c97b897f8535ad8ac3aba4ec",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-012e.jpg",
+    "bytes": 43439,
+    "sha256": "81f394bf7b0ac62b89da2b43943ffcfb3f7b0b32f1ce06d9c154dc685ac208ff",
+    "width": 1600,
+    "height": 252,
+    "format": "jpg"
+  }
+}

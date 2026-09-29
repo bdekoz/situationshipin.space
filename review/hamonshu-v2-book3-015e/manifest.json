@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-015e",
+  "scan": 15,
+  "note": "Small upper right curled ring and bubbles.",
+  "box_pixels": [
+    3271,
+    1816,
+    3761,
+    2261
+  ],
+  "polygon_normalized": null,
+  "size": [
+    490,
+    445
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "7981df02a06d01c30f72ea0d923e2157cb03f366d342fc6ef08a71e81c49437f",
+  "sha256": "cc4615e8392737ccefdd224e4963d9bcafec2350fb16a45c20faa4947e147f44",
+  "source_scan_sha256": "e73e94dc79bc8470b42b385c9cebcb9084be955d5551f6ca8c76c65031d4be20",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-015e.jpg",
+    "bytes": 36466,
+    "sha256": "552c1e7a866a7cdfe89ccdadddb75c2d6cc5306e8120bc43d657c79e48bc3674",
+    "width": 490,
+    "height": 445,
+    "format": "jpg"
+  }
+}

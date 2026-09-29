@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-011h",
+  "scan": 11,
+  "note": "Upper right bold spiral disk.",
+  "box_pixels": [
+    4175,
+    1235,
+    5349,
+    2385
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1174,
+    1150
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "55e133a38c43452d74b873e30efc1defb0cc3b24c5db18f72eedcf0848827f50",
+  "sha256": "37037a1b903e5b920db1beaf5dbd513c16634f45919331b3139928b456026592",
+  "source_scan_sha256": "3a2c623bc8f12c65ee252b48827261e60984a3963e065773067496f1d570142e",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-011h.jpg",
+    "bytes": 275472,
+    "sha256": "4edbce39875299afd209278b97cc34909574b6fc3e566febb12b47b59141e2db",
+    "width": 1174,
+    "height": 1150,
+    "format": "jpg"
+  }
+}

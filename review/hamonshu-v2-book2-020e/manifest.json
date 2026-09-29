@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-020e",
+  "scan": 20,
+  "note": "First lower right group of overlapping crests.",
+  "box_pixels": [
+    3100,
+    3303,
+    5596,
+    3782
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2496,
+    479
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "3f08c142d96c5db7f528b19aeda1b1fc506268327742b639e2e53dc77fed33ca",
+  "sha256": "da26b8cb59e10284c4e46a287b34a430d3fb7314fc5f11f282afaf5f233e392c",
+  "source_scan_sha256": "64bb9859b661c8df2bb8f4849cd62aca687f948c987a9628423bfd7c728420d7",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-020e.jpg",
+    "bytes": 70801,
+    "sha256": "0e736fb26d948356e87a0d03bf0eb75fb51225f75d4c20421fb6abb3db604fa6",
+    "width": 1600,
+    "height": 307,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-018b",
+  "scan": 18,
+  "note": "Middle left small crest lines.",
+  "box_pixels": [
+    416,
+    1916,
+    2745,
+    2627
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2329,
+    711
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "0a4cbbb298b72bd150d6bcd40e49fe4378c76262994f9a9d11d04852638916a8",
+  "sha256": "d6586a8b52102921f7e6155b99e1c38b1da468687ca9af93b9931a75f82c5af0",
+  "source_scan_sha256": "fc480ac314e798a5d97a3eb9956cdb4afb2a232221c79ea3f003d0d5151475c6",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-018b.jpg",
+    "bytes": 83729,
+    "sha256": "bbd794e0b0583a653ff53cf48df5ab3a2697c35f7a44d3c18dee817cb90dc211",
+    "width": 1600,
+    "height": 488,
+    "format": "jpg"
+  }
+}

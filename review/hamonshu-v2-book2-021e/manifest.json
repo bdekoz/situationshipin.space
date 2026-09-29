@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-021e",
+  "scan": 21,
+  "note": "Lower right paired curl-and-drop waves.",
+  "box_pixels": [
+    3069,
+    2793,
+    5581,
+    4387
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2512,
+    1594
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "ab0641f742069256477516bf4af7626fed04ec91d2c35013f62a7802eeaed6f7",
+  "sha256": "7d312be1d58cc9ca86f00936d4092b6879ab8a902ca8bff452ffa4c5002065d0",
+  "source_scan_sha256": "2e7575e9aefebeaf4178ed15014bc7967e945fc2d6b8264c4513552539027347",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-021e.jpg",
+    "bytes": 201310,
+    "sha256": "79217f7116703938a85a2a9d9162a913ee897ad3a7e6fde63de7517b598f64d1",
+    "width": 1600,
+    "height": 1015,
+    "format": "jpg"
+  }
+}

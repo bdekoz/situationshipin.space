@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-008b",
+  "scan": 8,
+  "note": "First lower left dark spiral band.",
+  "box_pixels": [
+    270,
+    2975,
+    2758,
+    3524
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2488,
+    549
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "eb5cff34d47117d91982d22411aef96eb802978ec837e4a1bf0b472b5edc9edf",
+  "sha256": "00285cdb4d4e2cf4c8561d67c2ffc862a17252677c6f089668a6d8c7aff060f5",
+  "source_scan_sha256": "fc9f980b7da52452ea85c46618aa64a39a01c844e4d0e5cfee58f26033e303ea",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-008b.jpg",
+    "bytes": 116236,
+    "sha256": "25a320c8fd7f36c61bd66cecbefb11d2bd91e9e45322f644d4d03399b04d0299",
+    "width": 1600,
+    "height": 353,
+    "format": "jpg"
+  }
+}

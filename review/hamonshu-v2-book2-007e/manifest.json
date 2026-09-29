@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-007e",
+  "scan": 7,
+  "note": "Upper right overlapping arc field.",
+  "box_pixels": [
+    3154,
+    1397,
+    5239,
+    1931
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2085,
+    534
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "07a6f14e5afff23a982bccf2d1701a8d72ae398b62ec6a37b5413d0b8cff9ba8",
+  "sha256": "e65010d61b2c04dfc362df1751f97cfea058f2b26499d4a48ded27e031ccc9ff",
+  "source_scan_sha256": "2f5903f4ca9a2b1689e8884e02d0e2963b91475cd964cd88cb30fde5f3d43897",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-007e.jpg",
+    "bytes": 87812,
+    "sha256": "51c7eb6c1dffb9c6efd6dc303ce28cf1cdec6313b851cdaab5a00adf9a23dde4",
+    "width": 1600,
+    "height": 410,
+    "format": "jpg"
+  }
+}

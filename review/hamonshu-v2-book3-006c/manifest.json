@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-006c",
+  "scan": 6,
+  "note": "Small outline motifs in the narrow lower panel, retained as a repeated group.",
+  "box_pixels": [
+    1906,
+    2688,
+    2766,
+    4352
+  ],
+  "polygon_normalized": null,
+  "size": [
+    860,
+    1664
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "2d73304e320e26fdfac52628424e0dddd0e841378bac084bc7d202ad6095bbe9",
+  "sha256": "37d99983c0f59f6dba2f82697e45da0d3f815a4c82f9860260a099ad44951107",
+  "source_scan_sha256": "ce469dbfccb54e7ec4b121925b73ed0c7d01d787085b688a2c313e0b73a9faf8",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-006c.jpg",
+    "bytes": 119832,
+    "sha256": "343713743c7227c4656150fac055a209ed98679ae8769083ac1e616ad60dcf44",
+    "width": 827,
+    "height": 1600,
+    "format": "jpg"
+  }
+}

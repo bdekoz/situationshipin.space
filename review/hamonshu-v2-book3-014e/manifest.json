@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-014e",
+  "scan": 14,
+  "note": "Lower left open-crest disk.",
+  "box_pixels": [
+    1868,
+    3575,
+    2551,
+    4281
+  ],
+  "polygon_normalized": null,
+  "size": [
+    683,
+    706
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "9af05dacbb361037e00acb578158bdb87097ddcda28b78964e943d154c60af37",
+  "sha256": "87e53c421ade3f5ae1b671e0ec3dcbb9ce7e4a6397a01d55df49b00df8bde115",
+  "source_scan_sha256": "316b10a37cb8a2c8affae6496f1bf391dcfb8a42daef23ac9637abf414154e61",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-014e.jpg",
+    "bytes": 77189,
+    "sha256": "be987db53fc072b1fa876099802cd158018bc32ea1653a4a90bee5bdd6138d07",
+    "width": 683,
+    "height": 706,
+    "format": "jpg"
+  }
+}

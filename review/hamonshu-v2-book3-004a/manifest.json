@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-004a",
+  "scan": 4,
+  "note": "First thin water band.",
+  "box_pixels": [
+    337,
+    1487,
+    2658,
+    1859
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2321,
+    372
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "a9b68c828669f93908cf03bfc7192f0141c56cfb23f3ccfa2025e0be7e392da8",
+  "sha256": "b1db0aa7bc15a505ff63394f891f1ac8ebd062740aa1052a2344de715289dd1d",
+  "source_scan_sha256": "e282b7329c467bcca024dd8b5c9240449ffaf218e8d8ea8435b9c7bf377a6043",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-004a.jpg",
+    "bytes": 39315,
+    "sha256": "b041d808013a942e4d1cf2d0e1bf9ef25bbd5c264edf6a01de0a465240269922",
+    "width": 1600,
+    "height": 256,
+    "format": "jpg"
+  }
+}

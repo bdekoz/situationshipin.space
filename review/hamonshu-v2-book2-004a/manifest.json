@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-004a",
+  "scan": 4,
+  "note": "Upper left framed curls and drops.",
+  "box_pixels": [
+    1158,
+    1246,
+    2560,
+    3020
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1402,
+    1774
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "6552188222cba5af6545aea2189dc71e8c00c5840e329ed7eb3df388c351b488",
+  "sha256": "7d097c75a366ea0dc7c33555d1d8bca9174107a8edc1dd5a47f8e6808b5672b4",
+  "source_scan_sha256": "4433d20dfefe8dff701469ed20550e407b46e01908cf749e6ecd25e42a8cbb95",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-004a.jpg",
+    "bytes": 229880,
+    "sha256": "b06e79e6728aed3a5109cd593b48a40fefca7cc913d485a6a9540cfa0392316c",
+    "width": 1264,
+    "height": 1600,
+    "format": "jpg"
+  }
+}

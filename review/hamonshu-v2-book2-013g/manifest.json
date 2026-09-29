@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-013g",
+  "scan": 13,
+  "note": "Lower right open double-line curl.",
+  "box_pixels": [
+    3371,
+    3474,
+    4725,
+    4195
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1354,
+    721
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "788ad188ccffeee1b83f1e480edd399911f1c89f35db2326b63301ac8db24293",
+  "sha256": "03cdc0bd67fbc6818936cf6f5466ebad6977188d6ed5a221c41a7e34b823d973",
+  "source_scan_sha256": "2f9959042177f7ced6089e77c09e4aff476db642a810bc2cb94ac9e909bb2976",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-013g.jpg",
+    "bytes": 83292,
+    "sha256": "4b26bbf1c148e96fa7d7c31eac4bcd010ff1b7b481bd9b0eafcd8b37e781c1f5",
+    "width": 1354,
+    "height": 721,
+    "format": "jpg"
+  }
+}

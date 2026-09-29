@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-014i",
+  "scan": 14,
+  "note": "Lower right split current disk with bubbles.",
+  "box_pixels": [
+    3126,
+    3484,
+    3954,
+    4376
+  ],
+  "polygon_normalized": null,
+  "size": [
+    828,
+    892
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "c00c12001e82b141c03d4099bee31a9a1dd9fde8d72dd05c27ce35372d704760",
+  "sha256": "9c47fd33bdee508ff1a785b83c4c5f154201597209fdd76338b9b4512f3f1651",
+  "source_scan_sha256": "316b10a37cb8a2c8affae6496f1bf391dcfb8a42daef23ac9637abf414154e61",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-014i.jpg",
+    "bytes": 97715,
+    "sha256": "01a41bdaafdeb983e90c9bdb471af6425a556d3677255f1fb53c74de28b0890c",
+    "width": 828,
+    "height": 892,
+    "format": "jpg"
+  }
+}

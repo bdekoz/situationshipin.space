@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-023a",
+  "scan": 23,
+  "note": "Left connected sweeping-water composition.",
+  "box_pixels": [
+    276,
+    892,
+    2783,
+    4442
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2507,
+    3550
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "9b8ece58bba87c9cfbdfee3e5cf4c8aedf9ac1fcbd551f7f73caf6b1e773383a",
+  "sha256": "da6bf32946e36c25ae82d309b78fb485cfc93bff1d6580cda29c5c6db502ce86",
+  "source_scan_sha256": "fcaabc1c988edd7df308284a9bb682a266e62ed65b4023b141ecead740b016c1",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-023a.jpg",
+    "bytes": 358688,
+    "sha256": "63c4bf173ace49a43c53b516e88d80d3b9afb38d75ae78b9bc1613cd21873cdf",
+    "width": 1130,
+    "height": 1600,
+    "format": "jpg"
+  }
+}

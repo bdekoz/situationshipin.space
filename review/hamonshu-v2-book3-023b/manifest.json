@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-023b",
+  "scan": 23,
+  "note": "Lower left dense sweeping water field.",
+  "box_pixels": [
+    241,
+    2494,
+    2754,
+    4633
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2513,
+    2139
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "e53cfbfd8fe7d7b7556c705310405e8ef610c8a70b59c775ecea58f416dbbc34",
+  "sha256": "6b21357f90048ec46b1cdda5f2de2b2d8a6e846dcd31dac065c454af9806254f",
+  "source_scan_sha256": "d25cf1f98ade37e11e5de6e21abe8548f5c9ff33414a553f67b6eafc9050ddcd",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-023b.jpg",
+    "bytes": 438503,
+    "sha256": "abd793e4947bc9c208f7a29ca049c57ce27e5f9a6275a94072d453d9f4a953f7",
+    "width": 1600,
+    "height": 1362,
+    "format": "jpg"
+  }
+}

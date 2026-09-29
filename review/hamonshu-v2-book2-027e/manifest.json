@@ -1,0 +1,53 @@
+{
+  "id": "hamonshu_2-027e",
+  "scan": 27,
+  "note": "Partly hidden radial-water panel; mask retains its exposed lower and right edges.",
+  "box_pixels": [
+    3668,
+    3479,
+    5025,
+    4306
+  ],
+  "polygon_normalized": [
+    [
+      752,
+      690
+    ],
+    [
+      822,
+      690
+    ],
+    [
+      822,
+      854
+    ],
+    [
+      600,
+      854
+    ],
+    [
+      600,
+      827
+    ],
+    [
+      752,
+      827
+    ]
+  ],
+  "size": [
+    1357,
+    827
+  ],
+  "mode": "RGBA",
+  "pixel_sha256": "c5af07c47825062331e158e6fc69b78ae123319f42dffccd2554a29dab059f67",
+  "sha256": "90721ba15c204affe2dc405f227b40a27c95e3b18d287d147f143837d58630cf",
+  "source_scan_sha256": "8c79a4ca1a5d86f30eca9b3e17992d461be81e2bcf4527880d7c46ce4b765629",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-027e.jpg",
+    "bytes": 172051,
+    "sha256": "183c99b87e1bce7d6b884f7c96bd36600dc91a84d8dd34111d483350f1a4100f",
+    "width": 1357,
+    "height": 827,
+    "format": "jpg"
+  }
+}

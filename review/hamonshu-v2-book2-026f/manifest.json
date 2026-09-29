@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-026f",
+  "scan": 26,
+  "note": "Lower right flowing ripple field.",
+  "box_pixels": [
+    3518,
+    3741,
+    5498,
+    4457
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1980,
+    716
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "116400a839230ea25affadbee00d11492a4de88d2fb40c1156daba6714b7973e",
+  "sha256": "adcd8eb149f32660686aeec0dbbadc802ea0a63639fdc1405e8030b1a6c9a0be",
+  "source_scan_sha256": "89155d5707b105bacd2a7d73bdf0609c7afeabcc39b3bb522daefbbe359cfc63",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-026f.jpg",
+    "bytes": 178903,
+    "sha256": "37a9d1390a67ea82085193e22999bb6371bd307c5267fd925b8b3a714f71b15c",
+    "width": 1600,
+    "height": 579,
+    "format": "jpg"
+  }
+}

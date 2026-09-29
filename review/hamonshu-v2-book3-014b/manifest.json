@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-014b",
+  "scan": 14,
+  "note": "Upper middle dense crest disk.",
+  "box_pixels": [
+    1687,
+    1220,
+    2618,
+    2168
+  ],
+  "polygon_normalized": null,
+  "size": [
+    931,
+    948
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "580789067953f9457e953992d4532fc6bb6d91c29fd812bc46e8b1b80f930d7a",
+  "sha256": "58c2727dada45c23619d4e1715da2758586eb001104b1179af86d8a36c93c8ea",
+  "source_scan_sha256": "316b10a37cb8a2c8affae6496f1bf391dcfb8a42daef23ac9637abf414154e61",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-014b.jpg",
+    "bytes": 195464,
+    "sha256": "0b4f1538da4f071db9a2bfc014fef950ec07fddc6f2e66bc27c6e6fcd2e575a6",
+    "width": 931,
+    "height": 948,
+    "format": "jpg"
+  }
+}

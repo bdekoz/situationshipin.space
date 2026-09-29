@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-003d",
+  "scan": 3,
+  "note": "Middle right fine-line water field.",
+  "box_pixels": [
+    3255,
+    2334,
+    5499,
+    2904
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2244,
+    570
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "592ae248bbe72ac7b6bdc06f54b1c5e01995901ebc6ad6e041ac642770eecd46",
+  "sha256": "92f5facd430d0ec9f2c472647035b26d18439b480d94eecc89a0395802de5ea6",
+  "source_scan_sha256": "bfb6749030b6bb17556eb24d8e6040f860b1e51d10b7dcc9b4051df759669e0c",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-003d.jpg",
+    "bytes": 136708,
+    "sha256": "2e016fd447b307c60dde10020a4f83993c5c2f26ffe7f1fe0e8425c0acc77f27",
+    "width": 1600,
+    "height": 406,
+    "format": "jpg"
+  }
+}

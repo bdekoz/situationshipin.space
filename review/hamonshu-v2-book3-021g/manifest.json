@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-021g",
+  "scan": 21,
+  "note": "Lower right foam-and-crest field.",
+  "box_pixels": [
+    2956,
+    3100,
+    5432,
+    4467
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2476,
+    1367
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "fcb152fb5a8e86916ae6eec913c73461f51f5a92b3470ddb6afc8920c82d5c87",
+  "sha256": "203314ac20306072e6add1f9eeca999cec0b65724ff181475df4697257b45d3c",
+  "source_scan_sha256": "60955427c6aa1861c7719f9c6c53f8683ad892ffff34845b366e4de0cacabf85",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-021g.jpg",
+    "bytes": 215921,
+    "sha256": "9ceaac6a57a29ac2023dd053d27e965c66b6a4a1adae0d151943837ec5968662",
+    "width": 1600,
+    "height": 883,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-011l",
+  "scan": 11,
+  "note": "Small isolated circular curl.",
+  "box_pixels": [
+    3576,
+    3539,
+    3808,
+    3776
+  ],
+  "polygon_normalized": null,
+  "size": [
+    232,
+    237
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "08b433d426798ecee6b3eff7d79bf153515aa881034594c3b7d7ddda4bd2bb07",
+  "sha256": "95c045b04f09e8562c979982286f29ed44eb1ad771ce5fe3add6b5ade7d0eee8",
+  "source_scan_sha256": "3a2c623bc8f12c65ee252b48827261e60984a3963e065773067496f1d570142e",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-011l.jpg",
+    "bytes": 9065,
+    "sha256": "513863e31202782f093ade4244a13f86dc51bb630de72ab178e12d3e33f32c2e",
+    "width": 232,
+    "height": 237,
+    "format": "jpg"
+  }
+}

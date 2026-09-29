@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-020d",
+  "scan": 20,
+  "note": "Lower right repeated diagonal wave strips.",
+  "box_pixels": [
+    2958,
+    2834,
+    5442,
+    4654
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2484,
+    1820
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "43fd934f666bda640aeddf535a730560081d38e7366c1b897596838bae2de824",
+  "sha256": "401844016c4f251723b88a1f6baf84bb692c4ce2fdcb45785e13ea16bb4e8cc1",
+  "source_scan_sha256": "c91f2dac6421e75c3fdbd5fae6e29bbb78f5a6093ca3994e91f483b1f30c7ced",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-020d.jpg",
+    "bytes": 369676,
+    "sha256": "9a094074e5ac3bb596629dfb7c5d6175935be268c7fe7350e5f2808293036c8a",
+    "width": 1600,
+    "height": 1172,
+    "format": "jpg"
+  }
+}

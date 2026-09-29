@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-016b",
+  "scan": 16,
+  "note": "Small detailed left crest.",
+  "box_pixels": [
+    1833,
+    2258,
+    2537,
+    2522
+  ],
+  "polygon_normalized": null,
+  "size": [
+    704,
+    264
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "06736a654c6fb5ec0505312ece2240058fe0021dbc0177ea743e23dfddb1c92c",
+  "sha256": "f5bea469945d982d6e8e170f65b08f33391e918dd0c4b625051ac3cf43ce94e7",
+  "source_scan_sha256": "76a1b68d8e8a72cd475a95a72d07c11fa6cdc588d8da54fe179c7556de44d63f",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-016b.jpg",
+    "bytes": 50963,
+    "sha256": "fda14a97f51140c1f1999afc9ff9540869e637470aa4e86a8cc0cd5a9e7c0bbe",
+    "width": 704,
+    "height": 264,
+    "format": "jpg"
+  }
+}

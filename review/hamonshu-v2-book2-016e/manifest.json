@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-016e",
+  "scan": 16,
+  "note": "Lower left long scroll strip.",
+  "box_pixels": [
+    423,
+    3497,
+    1814,
+    3842
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1391,
+    345
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "d8ab1f257b5bb08b660b8b1f6e3b03c38c4a5bda9d456122cc512cc4295490a7",
+  "sha256": "7f9529b16a9e4c3991db413ae8829484f1c882fc66e1b59c5e8cef9037860574",
+  "source_scan_sha256": "76a1b68d8e8a72cd475a95a72d07c11fa6cdc588d8da54fe179c7556de44d63f",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-016e.jpg",
+    "bytes": 82942,
+    "sha256": "68ec80f367f460ce7d6d91d18084daca845f0a949949fe2d49f4d34e4af44595",
+    "width": 1391,
+    "height": 345,
+    "format": "jpg"
+  }
+}

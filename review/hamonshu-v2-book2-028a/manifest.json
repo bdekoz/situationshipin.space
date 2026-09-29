@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-028a",
+  "scan": 28,
+  "note": "Upper back-cover group of overlapping spirals.",
+  "box_pixels": [
+    306,
+    819,
+    1588,
+    2146
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1282,
+    1327
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "05ec84360c98956523382c635ae04aaf772f00b210f8d0b68d89aff249a3386e",
+  "sha256": "406c0a62677e4f99ce01d0385315f79890fca48df4adfde5f0c0137f9c691ed7",
+  "source_scan_sha256": "33779f4493535c366def4093da7f4a8f69a5b73f58143c668d15df7b705d00bb",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-028a.jpg",
+    "bytes": 256703,
+    "sha256": "685f6896cebca124f94491afbfdfd27623bb2233d7435286f7212b27cb121a79",
+    "width": 1282,
+    "height": 1327,
+    "format": "jpg"
+  }
+}

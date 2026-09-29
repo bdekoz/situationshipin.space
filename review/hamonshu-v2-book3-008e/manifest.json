@@ -1,0 +1,61 @@
+{
+  "id": "hamonshu_3-008e",
+  "scan": 8,
+  "note": "Right branching current with bubbles; the separate lower crest is masked out.",
+  "box_pixels": [
+    3094,
+    983,
+    5642,
+    3827
+  ],
+  "polygon_normalized": [
+    [
+      516,
+      195
+    ],
+    [
+      941,
+      195
+    ],
+    [
+      941,
+      585
+    ],
+    [
+      712,
+      585
+    ],
+    [
+      712,
+      665
+    ],
+    [
+      665,
+      665
+    ],
+    [
+      665,
+      759
+    ],
+    [
+      516,
+      759
+    ]
+  ],
+  "size": [
+    2548,
+    2844
+  ],
+  "mode": "RGBA",
+  "pixel_sha256": "b54db92356aee0f48587d60277dac858e6ae26aea277f30bbd1b9cfc6886b0a6",
+  "sha256": "b9d528fe6f2499e30883a544f325c8b660f10688a3018e36fcf20174a14e072e",
+  "source_scan_sha256": "fc9f980b7da52452ea85c46618aa64a39a01c844e4d0e5cfee58f26033e303ea",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-008e.jpg",
+    "bytes": 255737,
+    "sha256": "0580db52a538cf641b2671c88ab8849e10fc7a2d22d3a05205a49e175cbeb7a1",
+    "width": 1433,
+    "height": 1600,
+    "format": "jpg"
+  }
+}

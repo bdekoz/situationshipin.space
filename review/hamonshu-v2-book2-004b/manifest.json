@@ -1,0 +1,53 @@
+{
+  "id": "hamonshu_2-004b",
+  "scan": 4,
+  "note": "Left diagonal-line panel; mask removes the overlapping upper panel. Its hidden corner remains absent.",
+  "box_pixels": [
+    573,
+    2523,
+    1512,
+    3643
+  ],
+  "polygon_normalized": [
+    [
+      94,
+      502
+    ],
+    [
+      192,
+      502
+    ],
+    [
+      192,
+      602
+    ],
+    [
+      248,
+      602
+    ],
+    [
+      248,
+      725
+    ],
+    [
+      94,
+      725
+    ]
+  ],
+  "size": [
+    939,
+    1120
+  ],
+  "mode": "RGBA",
+  "pixel_sha256": "51fedc17eee847322c90ae02dd0a4a183e78248fd2fc405bce6942e7fdd8f1e7",
+  "sha256": "5e9e111abbcf1fcda90b38386596fb5a231eb78aa8ae386710181bad7c434230",
+  "source_scan_sha256": "4433d20dfefe8dff701469ed20550e407b46e01908cf749e6ecd25e42a8cbb95",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-004b.jpg",
+    "bytes": 291175,
+    "sha256": "4e0cc9f6ceda6d6aa035125cbcbb08e9d812b7918493bd6bdabaa588c92b5f1b",
+    "width": 939,
+    "height": 1120,
+    "format": "jpg"
+  }
+}

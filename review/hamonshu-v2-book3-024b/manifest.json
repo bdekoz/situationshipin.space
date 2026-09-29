@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-024b",
+  "scan": 24,
+  "note": "Lower left dense diagonal wave field.",
+  "box_pixels": [
+    252,
+    2032,
+    2746,
+    4608
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2494,
+    2576
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "1d28e2feed4e3fc74d67d9186beba1cc0e74bd2c20bae14cb0d0f2c2b054b029",
+  "sha256": "581f37bf6449b85fe0393b01a8946ba3c5b08ed095d4ccf31b5f60bbb2ab0147",
+  "source_scan_sha256": "5a7ef7d9b56fb9523b278762a0ebb84e39c2f94504897c6f59a83e98356391d1",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-024b.jpg",
+    "bytes": 681295,
+    "sha256": "c9a7f702ab09eecc52f7fc2ab13c2303a255d457c5e603ca297e498e9769ed23",
+    "width": 1549,
+    "height": 1600,
+    "format": "jpg"
+  }
+}

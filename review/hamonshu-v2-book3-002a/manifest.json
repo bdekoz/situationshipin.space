@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-002a",
+  "scan": 2,
+  "note": "Framed circular water composition with its surrounding spiral field; writing and the blank facing page are excluded.",
+  "box_pixels": [
+    333,
+    1387,
+    2727,
+    4220
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2394,
+    2833
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "2b6822a489bbd576d8c0a8852eed7a51df30529f971b911a4ff388b6fed36557",
+  "sha256": "ae98b170fb1cf576ab0195f0fad5016a0a146b8555c4d83c2377d34d3ad4a4e0",
+  "source_scan_sha256": "6acdf745198990d4e21915f0213abdd3825b0744955c5bb568836699715bd400",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-002a.jpg",
+    "bytes": 604547,
+    "sha256": "b034eeb30ea447139399922763bd0064efe9f7fd71796a47d71355a57b364ea6",
+    "width": 1352,
+    "height": 1600,
+    "format": "jpg"
+  }
+}

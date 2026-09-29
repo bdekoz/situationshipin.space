@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-016a",
+  "scan": 16,
+  "note": "Upper left inward-crest medallion.",
+  "box_pixels": [
+    562,
+    1624,
+    1336,
+    2390
+  ],
+  "polygon_normalized": null,
+  "size": [
+    774,
+    766
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "5fce176b08116d9c6850922bd75681da38441e81788f661a92565f29f4098747",
+  "sha256": "4a7ad8fc70ec873d73fdf9dfbdaec3dd9fecdca9a5e08dd4f0cf5db76d93b3d5",
+  "source_scan_sha256": "552a7f6c709af404b6debd9adab5affd447c786253463e2aad02cbee20a25127",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-016a.jpg",
+    "bytes": 90648,
+    "sha256": "287d7fb3feb0088eb1fb9ed0794094e97eca680e791a5e49dfe455e9ff6fde66",
+    "width": 774,
+    "height": 766,
+    "format": "jpg"
+  }
+}

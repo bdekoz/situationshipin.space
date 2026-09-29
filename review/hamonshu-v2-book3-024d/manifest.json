@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-024d",
+  "scan": 24,
+  "note": "Small upper left current in the lower right panel.",
+  "box_pixels": [
+    2992,
+    3040,
+    3837,
+    3403
+  ],
+  "polygon_normalized": null,
+  "size": [
+    845,
+    363
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "f58e28b7e3560080b291ec48fb0d124303590a214baac2dd2b279f83405427bf",
+  "sha256": "824f3f8c0617f7cece3bcb8931576776d82d66c36239912ed6a3663930aae6df",
+  "source_scan_sha256": "5a7ef7d9b56fb9523b278762a0ebb84e39c2f94504897c6f59a83e98356391d1",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-024d.jpg",
+    "bytes": 48682,
+    "sha256": "a61ad25f985b35b13ae66771093338057f1a92cf1ab70480d0c97606bd3f6c29",
+    "width": 845,
+    "height": 363,
+    "format": "jpg"
+  }
+}

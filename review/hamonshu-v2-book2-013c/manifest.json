@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-013c",
+  "scan": 13,
+  "note": "Middle left broken-arc repeat.",
+  "box_pixels": [
+    662,
+    2617,
+    1520,
+    3247
+  ],
+  "polygon_normalized": null,
+  "size": [
+    858,
+    630
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "6b83b26997e9426e0ec1bdbd786303629ee75650b8b90eae4e09e816bafc81b9",
+  "sha256": "63605842d36a2e24845ba8bbc0d5783685bae09f01650810d4203ef9dea6810c",
+  "source_scan_sha256": "2f9959042177f7ced6089e77c09e4aff476db642a810bc2cb94ac9e909bb2976",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-013c.jpg",
+    "bytes": 77261,
+    "sha256": "f20a396477824b1a2725202ef2cdf2afc975d180dfb563f28be5e07e79ba33f7",
+    "width": 858,
+    "height": 630,
+    "format": "jpg"
+  }
+}

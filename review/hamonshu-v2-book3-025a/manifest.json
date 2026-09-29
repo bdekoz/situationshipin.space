@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-025a",
+  "scan": 25,
+  "note": "Tall left panel of repeated upright crests.",
+  "box_pixels": [
+    294,
+    965,
+    1157,
+    4522
+  ],
+  "polygon_normalized": null,
+  "size": [
+    863,
+    3557
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "d97db07d64736fc205ad2400f2e6a2d619402e5212dbbc95a47a526af04a3334",
+  "sha256": "b88c2af3649a1ed233ad48659bc588d0f7805e374487a96ec5b8a24a809df49a",
+  "source_scan_sha256": "41ab90ecb89c757f53c93f3ff85d5d90e6e440fa8a35b7b77cbeda6058a81b12",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-025a.jpg",
+    "bytes": 159061,
+    "sha256": "7ad7bc3e0be6ca567b1c9029a707cdcbc24bcce2f9c2ec2642ef2e4916966a0c",
+    "width": 388,
+    "height": 1600,
+    "format": "jpg"
+  }
+}

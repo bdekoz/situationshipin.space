@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-015b",
+  "scan": 15,
+  "note": "Second arched repeat crosses the gutter; both visible portions are retained.",
+  "box_pixels": [
+    1967,
+    1966,
+    3469,
+    2269
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1502,
+    303
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "b711bcb09f8be89e5a4baecd1068010ae3444a348a80ad6cff1244f693ffc8c0",
+  "sha256": "a5290446cc1c07b81ed35572758fc9f67c2e2862db0466ec9f7941d60cfbcb7e",
+  "source_scan_sha256": "a32f3012966f0111139d4e9c7300b0f837b85506feaa73fa015e8842bf1b3ed5",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-015b.jpg",
+    "bytes": 88956,
+    "sha256": "717a225cf180019901d501e24d655151478a1bf685058051e6ef214c262dc73d",
+    "width": 1502,
+    "height": 303,
+    "format": "jpg"
+  }
+}

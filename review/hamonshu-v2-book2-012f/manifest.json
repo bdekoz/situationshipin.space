@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-012f",
+  "scan": 12,
+  "note": "Lower right interlaced-arc disk.",
+  "box_pixels": [
+    3264,
+    3146,
+    4230,
+    4112
+  ],
+  "polygon_normalized": null,
+  "size": [
+    966,
+    966
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "904e884011fdeb99b6302ed7687027d55a5d771b9095294ffa8f4d564ff10a95",
+  "sha256": "31e2efb55f428545c899d24c99ddae833f07cc91d67a789f7d78631591ea8be1",
+  "source_scan_sha256": "a36a2a9254c02fe0f0bf3588c19e7adc54d751b5deedd7925f2fba6e1f27a812",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-012f.jpg",
+    "bytes": 207730,
+    "sha256": "9c19139f42a60df4768cec0fa690dd1b10258202ad6ce309b69d5c4bb70f0411",
+    "width": 966,
+    "height": 966,
+    "format": "jpg"
+  }
+}

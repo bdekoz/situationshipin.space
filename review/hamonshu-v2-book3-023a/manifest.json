@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-023a",
+  "scan": 23,
+  "note": "Upper left long current with successive curled crests.",
+  "box_pixels": [
+    319,
+    966,
+    2754,
+    2251
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2435,
+    1285
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "d209060c545ff87e00d4fb09d5103e9b540ce8cd070d2c535afd0e34ba91a2aa",
+  "sha256": "65be4f82aed07390e1ebd98fa37fe3600f085cc8fdefeb56a8eca83992c6ebc8",
+  "source_scan_sha256": "d25cf1f98ade37e11e5de6e21abe8548f5c9ff33414a553f67b6eafc9050ddcd",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-023a.jpg",
+    "bytes": 152443,
+    "sha256": "51f559b86643ec5cdd68add75b13082b9f3bbd3986eab1b6939e15de50b89a6e",
+    "width": 1600,
+    "height": 844,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-003c",
+  "scan": 3,
+  "note": "Upper right outline crest group.",
+  "box_pixels": [
+    3597,
+    1145,
+    5736,
+    2037
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2139,
+    892
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "d93ce2602ccb40b72bea1343569ea8be6bf14d7269fc90672a7908c05013d045",
+  "sha256": "5935086d021fca2092f935f4c348a94410ab41bd1161d7f590eef496d76491ba",
+  "source_scan_sha256": "bfb6749030b6bb17556eb24d8e6040f860b1e51d10b7dcc9b4051df759669e0c",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-003c.jpg",
+    "bytes": 84760,
+    "sha256": "4c0e324c9e94463af01534d2d329523735608331765651f830acffdcf1d1bba5",
+    "width": 1600,
+    "height": 667,
+    "format": "jpg"
+  }
+}

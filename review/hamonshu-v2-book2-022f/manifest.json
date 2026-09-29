@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-022f",
+  "scan": 22,
+  "note": "Lower right foam-and-spray field.",
+  "box_pixels": [
+    3095,
+    3322,
+    5602,
+    4598
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2507,
+    1276
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "748a4c1c95fbefafbdaaebf3a7809dd3a80dc5cdce897a1d3959d150985699d0",
+  "sha256": "191ebec669d27f2feb700df7368b692114875688f01be4a1c363ea6176f105dc",
+  "source_scan_sha256": "719714e884422604695564c74e27f2e7863d52bb29a9eec76582fe30097655ca",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-022f.jpg",
+    "bytes": 202279,
+    "sha256": "fafc061ce0cb62ce39527ae5705ba74958fa871848bd2f4f8767b2456ad4c0ec",
+    "width": 1600,
+    "height": 814,
+    "format": "jpg"
+  }
+}

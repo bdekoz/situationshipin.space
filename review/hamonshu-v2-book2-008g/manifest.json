@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-008g",
+  "scan": 8,
+  "note": "Upper right filled disk.",
+  "box_pixels": [
+    4554,
+    1259,
+    5447,
+    2101
+  ],
+  "polygon_normalized": null,
+  "size": [
+    893,
+    842
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "ba528ce873761af171351e25406d97b5e8ec03d625dcb8e81f2bff6e98580bbf",
+  "sha256": "ec6a5a60dbdf4cf2f656abd9f973bf0266348620c1a0a6b927e3acaeb202d570",
+  "source_scan_sha256": "3766cad12bf43c9d25352f7282ee0e09cb3387bcae3637aec9e9222e0e97b17b",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-008g.jpg",
+    "bytes": 174998,
+    "sha256": "e943c1ae5706de567964169338d10f8e6608443b831170f874376d7dd6830ff2",
+    "width": 893,
+    "height": 842,
+    "format": "jpg"
+  }
+}

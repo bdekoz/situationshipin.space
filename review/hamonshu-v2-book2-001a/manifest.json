@@ -1,0 +1,53 @@
+{
+  "id": "hamonshu_2-001a",
+  "scan": 1,
+  "note": "Upper cover ornament; title labels are masked. The source already hides some linework.",
+  "box_pixels": [
+    825,
+    479,
+    3027,
+    3000
+  ],
+  "polygon_normalized": [
+    [
+      237,
+      175
+    ],
+    [
+      720,
+      175
+    ],
+    [
+      720,
+      95
+    ],
+    [
+      870,
+      95
+    ],
+    [
+      870,
+      595
+    ],
+    [
+      237,
+      595
+    ]
+  ],
+  "size": [
+    2202,
+    2521
+  ],
+  "mode": "RGBA",
+  "pixel_sha256": "fdb76546e83f9aefa4205ac640a4d43314907a15c55b80eba14e1fdec356182c",
+  "sha256": "fc5710367d6f632a9e56afd2bd34f495f37faeaabf1b93d43b2f01a7396884e0",
+  "source_scan_sha256": "333628aabe25006f8dbf3e888dbf87b55e3048d15fcbc27d4972f611f54613b8",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-001a.jpg",
+    "bytes": 376843,
+    "sha256": "6cca626e1fc79838e13397302521cd3a1cf44d078a0d3c68e6e28360b0004619",
+    "width": 1398,
+    "height": 1600,
+    "format": "jpg"
+  }
+}

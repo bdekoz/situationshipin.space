@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-021c",
+  "scan": 21,
+  "note": "Middle lower left repeated rounded current band.",
+  "box_pixels": [
+    234,
+    3673,
+    2734,
+    3965
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2500,
+    292
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "1b6f2152aee4d1e6c628cf27fe87c89b203814bb946cb42814bd298723f27764",
+  "sha256": "a42e139c32fc0a7a5bf6a033617ce3a1a3a7a0d2fd8e230ab27cd0d0cdee974f",
+  "source_scan_sha256": "60955427c6aa1861c7719f9c6c53f8683ad892ffff34845b366e4de0cacabf85",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-021c.jpg",
+    "bytes": 73968,
+    "sha256": "1b894b7d5eea0ca4d91a2db758f18637cd461821433108a607c5388a05cee6d4",
+    "width": 1600,
+    "height": 187,
+    "format": "jpg"
+  }
+}

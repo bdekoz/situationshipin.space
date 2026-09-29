@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the Book 1 water-form review packet from Izzi's verified source crops.
+"""Build a book's water-form review packet from Izzi's verified source crops.
 
 Requires Pillow. Writes this checkout only; commit/push publishes the result.
 Full-resolution PNGs stay in Izzi. No categories are inferred or preassigned.
@@ -18,11 +18,6 @@ from PIL import Image
 
 
 ROOT = Path(__file__).resolve().parents[1]
-ROUND = 'hamonshu-v2-book1-20260929'
-INDEX_ID = 'hamonshu-v2-book1'
-PUBLIC = Path('review') / INDEX_ID
-CROP_ROOT = Path('resources.rizal/hamonshu/hamonshu_1.crops')
-PLAN_PATH = Path('docs/generative_patterns/hamonshu-book-1-crops.json')
 
 
 def digest(path):
@@ -54,20 +49,33 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--izzi-root', type=Path, required=True)
     parser.add_argument('--izzi-commit', required=True)
+    parser.add_argument('--volume', type=int, choices=(1, 2, 3), default=1)
     args = parser.parse_args()
     if not re.fullmatch('[0-9a-f]{40}', args.izzi_commit):
         parser.error('--izzi-commit must be a full 40-character commit hash')
     izzi = args.izzi_root.resolve()
+    volume = args.volume
+    ROUND = f'hamonshu-v2-book{volume}-20260929'
+    INDEX_ID = f'hamonshu-v2-book{volume}'
+    PUBLIC = Path('review') / INDEX_ID
+    CROP_ROOT = Path(f'resources.rizal/hamonshu/hamonshu_{volume}.crops')
+    PLAN_PATH = Path(f'docs/generative_patterns/hamonshu-book-{volume}-crops.json')
     local = izzi / CROP_ROOT
     manifest = json.loads((local / 'manifest.json').read_text())
     plan = json.loads((izzi / PLAN_PATH).read_text())
+    count = sum(len(scan.get('boxes', [])) for scan in plan['scans'])
+    masked = sum(len(scan.get('polygons', {})) for scan in plan['scans'])
+    identifiers = [crop['id'] for crop in manifest['crops']]
     if (manifest['schema'] != 'izzi.hamonshu-crop-review/1'
-            or manifest['volume'] != 1 or len(manifest['crops']) != 165
+            or plan['volume'] != volume or manifest['volume'] != volume
+            or len(identifiers) != count or len(set(identifiers)) != count
+            or any(not re.fullmatch(rf'hamonshu_{volume}-[0-9]{{3}}[a-z]+', name)
+                   for name in identifiers)
             or manifest['plan_sha256'] != digest(izzi / PLAN_PATH)):
-        raise ValueError('Unexpected Book 1 crop packet or changed crop plan')
+        raise ValueError(f'Unexpected Book {volume} crop packet or changed crop plan')
     # Validate all inputs before writing anything in the publication tree.
     for source in plan['scans']:
-        path = izzi / plan['source_directory'] / f'hamonshu_1-{source["scan"]:03}.png'
+        path = izzi / plan['source_directory'] / f'hamonshu_{volume}-{source["scan"]:03}.png'
         if digest(path) != source['source_sha256']:
             raise ValueError(f'Source scan changed: {path.name}')
     for crop in manifest['crops']:
@@ -78,7 +86,7 @@ def main():
     out = ROOT / PUBLIC
     for subdir in ['', 'images', 'pages', 'sheets']:
         (out / subdir).mkdir(parents=True, exist_ok=True)
-    packet = {'schema': 'izzi.hamonshu-public-review/1', 'volume': 1,
+    packet = {'schema': 'izzi.hamonshu-public-review/1', 'volume': volume,
               'plan_sha256': manifest['plan_sha256'], 'source_commit': args.izzi_commit,
               'plan': 'crop-plan.json', 'categories_assigned': False,
               'proxy_description': 'JPEG, at most 1600 pixels per edge, quality 90. '
@@ -107,15 +115,15 @@ def main():
         record['source_scan_sha256'] = next(s['source_sha256'] for s in plan['scans'] if s['scan'] == crop['scan'])
         record['proxy'] = proxy
         packet['crops'].append(record)
-        artifact_id = f'{INDEX_ID}-{name.removeprefix("hamonshu_1-")}'
+        artifact_id = f'{INDEX_ID}-{name.removeprefix(f"hamonshu_{volume}-")}'
         members.append(artifact_id)
         item = {
-            'artifact_id': artifact_id, 'title': f'Hamonshū Book 1 · {name}.png',
-            'description': f'{crop["note"]} Name categories in the Book 1 crop gallery.',
-            'alt': f'Water ornament from Book 1, scan {crop["scan"]:03}, crop {name}.',
+            'artifact_id': artifact_id, 'title': f'Hamonshū Book {volume} · {name}.png',
+            'description': f'{crop["note"]} Name categories in the Book {volume} crop gallery.',
+            'alt': f'Water ornament from Book {volume}, scan {crop["scan"]:03}, crop {name}.',
             'family': ROUND, 'generation_class': 'style-processing', 'feedback_round': ROUND,
             'media_kind': 'image-reference', 'review_category': 'style-processing',
-            'review_scope': 'HAMONSHU-V2-BOOK1-CATEGORIES', 'review_mode': 'output',
+            'review_scope': f'HAMONSHU-V2-BOOK{volume}-CATEGORIES', 'review_mode': 'output',
             'source_path': (CROP_ROOT / crop['file']).as_posix(), 'source_state': 'HOST-LOCAL',
             'source_image': {'path': (CROP_ROOT / crop['file']).as_posix(),
                              'sha256': crop['sha256'], 'bytes': source_path.stat().st_size,
@@ -133,7 +141,7 @@ def main():
         detail.joinpath('index.html').write_text(page(item['title'],
             f'<main class="single"><h1>{escape(name)}.png</h1>'
             f'<p>{escape(crop["note"])}</p><p><a href="/{PUBLIC}/#{name}">'
-            'Name a category in the Book 1 gallery</a></p>'
+            f'Name a category in the Book {volume} gallery</a></p>'
             f'<a href="/{proxy["path"]}"><img src="/{proxy["path"]}" alt="{escape(item["alt"])}"></a>'
             f'<p><a href="/{PUBLIC}/pages.html#scan-{crop["scan"]:03}">Locate on original scan</a></p>'
             f'<p class="quiet">Review JPEG: {proxy["width"]} × {proxy["height"]}. '
@@ -159,10 +167,12 @@ def main():
     scan_options = ''.join(f'<option value="{scan["scan"]}">{scan["scan"]:03}</option>'
                            for scan in plan['scans'] if scan.get('boxes'))
     data = json.dumps(packet, ensure_ascii=False).replace('<', '\\u003c')
+    book_links = ''.join(f'<a href="/review/hamonshu-v2-book{n}/">Book {n}</a>'
+                         for n in (1, 2, 3) if n != volume)
     content = (
         '<header><nav><a href="/style.html">← Style review</a><a href="pages.html">Scan locations</a>'
-        '<a href="sheets.html">Contact sheets</a></nav><h1>Hamonshū · Book 1</h1>'
-        '<div class="intro"><p>165 graphic water forms, ready for your categories. '
+        f'<a href="sheets.html">Contact sheets</a>{book_links}</nav><h1>Hamonshū · Book {volume}</h1>'
+        f'<div class="intro"><p>{count} graphic water forms, ready for your categories. '
         'Writing examples are excluded. Open any crop for a larger view; use the scan links to check its boundaries.</p>'
         '<p>Choose your own category names. Reuse a name to group similar forms, and leave a note where a crop needs revision. '
         'Nothing has been categorized yet.</p></div></header>'
@@ -180,11 +190,11 @@ def main():
         '<noscript><p>Enable JavaScript to save category names and export your review. Images and scan links still work.</p></noscript>'
         '<main class="cards">' + ''.join(cards) + '</main>'
         '<footer><p>Previews are JPEGs up to 1600 pixels per edge. Full-resolution PNG crops retain the original scan pixels. '
-        'Six masked crops show omitted labels or neighboring regions on a neutral paper color. '
+        f'{masked} masked crops show omitted labels or neighboring regions on a neutral paper color. '
         'No linework has been reconstructed.</p><p><a href="manifest.json">Crop provenance</a> · '
         '<a href="crop-plan.json">Selections and exclusions</a></p></footer>'
         f'<script id="crop-data" type="application/json">{data}</script>')
-    (out / 'index.html').write_text(page('Hamonshū Book 1 · categorize water forms', content,
+    (out / 'index.html').write_text(page(f'Hamonshū Book {volume} · categorize water forms', content,
                                         '<script src="/assets/js/hamonshu-crops.js" defer></script>'))
 
     articles = []
@@ -200,7 +210,7 @@ def main():
         else:
             body = f'<p>Excluded: {escape(scan["exclude"])}</p>'
         articles.append(f'<article id="scan-{n:03}"><h2>Scan {n:03} · {len(selected)} crops</h2>{body}</article>')
-    (out / 'pages.html').write_text(page('Book 1 · scan locations',
+    (out / 'pages.html').write_text(page(f'Book {volume} · scan locations',
         '<header><a href="index.html">← Back to categories</a><h1>Scan locations</h1>'
         '<p>Letters mark the selected water regions and match the filename suffixes. '
         'These views give page context; writing is excluded from the crops.</p></header>'
@@ -210,20 +220,20 @@ def main():
         shutil.copyfile(source, out / 'sheets' / source.name)
         sheets.append(f'<article><a href="sheets/{source.name}"><img loading="lazy" '
                       f'src="sheets/{source.name}" alt="{source.stem}"></a></article>')
-    (out / 'sheets.html').write_text(page('Book 1 · contact sheets',
+    (out / 'sheets.html').write_text(page(f'Book {volume} · contact sheets',
         '<header><a href="index.html">← Back to categories</a><h1>Contact sheets</h1></header>'
         '<main class="pages">' + ''.join(sheets) + '</main>'))
     index = file_record(out / 'index.html')
     assets = [file_record(p) for p in sorted(out.rglob('*')) if p.is_file()
               and p != out / 'index.html' and p.parent != out / 'images']
     items.insert(0, {
-        'artifact_id': INDEX_ID, 'title': 'Hamonshū V2 · Book 1 · name the water-form categories',
-        'description': '165 manually segmented water forms. Enter your category names and notes, '
+        'artifact_id': INDEX_ID, 'title': f'Hamonshū V2 · Book {volume} · name the water-form categories',
+        'description': f'{count} manually segmented water forms. Enter your category names and notes, '
                        'then download a review JSON file. Scan locations and contact sheets included.',
-        'alt': 'Book 1 water forms for human categorization.', 'family': ROUND,
+        'alt': f'Book {volume} water forms for human categorization.', 'family': ROUND,
         'generation_class': 'style-processing-index', 'feedback_round': ROUND,
         'media_kind': 'index', 'review_category': 'style-processing', 'review_mode': 'output',
-        'review_scope': 'HAMONSHU-V2-BOOK1-CATEGORIES', 'source_path': PLAN_PATH.as_posix(),
+        'review_scope': f'HAMONSHU-V2-BOOK{volume}-CATEGORIES', 'source_path': PLAN_PATH.as_posix(),
         'published_path': index['path'], 'sha256': index['sha256'], 'bytes': index['bytes'], 'format': 'html',
         'generation_commit': args.izzi_commit, 'generation_state': 'CURRENT', 'index_members': members,
         'review_assets': assets, 'technical_state': 'DERIVATIVE-VERIFIED',

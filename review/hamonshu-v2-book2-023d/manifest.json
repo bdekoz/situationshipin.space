@@ -1,0 +1,61 @@
+{
+  "id": "hamonshu_2-023d",
+  "scan": 23,
+  "note": "Lower right scattered crest group; mask separates the adjacent dense current.",
+  "box_pixels": [
+    3114,
+    2697,
+    5590,
+    4190
+  ],
+  "polygon_normalized": [
+    [
+      508,
+      535
+    ],
+    [
+      912,
+      535
+    ],
+    [
+      912,
+      831
+    ],
+    [
+      668,
+      831
+    ],
+    [
+      668,
+      657
+    ],
+    [
+      638,
+      640
+    ],
+    [
+      617,
+      628
+    ],
+    [
+      508,
+      628
+    ]
+  ],
+  "size": [
+    2476,
+    1493
+  ],
+  "mode": "RGBA",
+  "pixel_sha256": "02a0de4a892d1fea34f3b5a997ec48b16fc55d7d347f4ea6710991611d58e558",
+  "sha256": "46cfbd9e7a5e7f8e55d2f3736d7f5c68e2079cdb2aa392ca8dd74906abf45105",
+  "source_scan_sha256": "fcaabc1c988edd7df308284a9bb682a266e62ed65b4023b141ecead740b016c1",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-023d.jpg",
+    "bytes": 185632,
+    "sha256": "829761232cf0e5d47f3ea60ad0fca62bf4c21d98886897a1348bb0e193cb0161",
+    "width": 1600,
+    "height": 965,
+    "format": "jpg"
+  }
+}

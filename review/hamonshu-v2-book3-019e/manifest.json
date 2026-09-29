@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-019e",
+  "scan": 19,
+  "note": "Upper right repeated crests with spiral centers.",
+  "box_pixels": [
+    3472,
+    1406,
+    5360,
+    2140
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1888,
+    734
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "ffd24c97146b2e46ccf5e0a9c7ce23002685b379a9fe35731d667c8ba1ae129e",
+  "sha256": "250a4f4d583c84e01ba5f66de8df81fa0be0b759c4966c68c779844ae1858a69",
+  "source_scan_sha256": "3005580cde005ab7ad426eb02f07bf6d20e4916210eafe589911509446bdcd03",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-019e.jpg",
+    "bytes": 145432,
+    "sha256": "d1432ec95ec599f863f57d7ddcf1542fc6cb71126dd961e7f0c4a4c2389eb4a5",
+    "width": 1600,
+    "height": 622,
+    "format": "jpg"
+  }
+}

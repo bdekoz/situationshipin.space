@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-019c",
+  "scan": 19,
+  "note": "Lower left repeated curled arcs and bubbles.",
+  "box_pixels": [
+    396,
+    3649,
+    1577,
+    4337
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1181,
+    688
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "525cf063018fdb96075c0df0d330e84d40c318f9435b1798512e0a7f7900419b",
+  "sha256": "41c87a8e80b8ab1164a1cd41ce84e82ed6cc842bed978d05b10612e9f22664ae",
+  "source_scan_sha256": "3005580cde005ab7ad426eb02f07bf6d20e4916210eafe589911509446bdcd03",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-019c.jpg",
+    "bytes": 129423,
+    "sha256": "be0be3c756327cda6e136f5be3be0eaebd787a7671fc99212210cc58b8265874",
+    "width": 1181,
+    "height": 688,
+    "format": "jpg"
+  }
+}

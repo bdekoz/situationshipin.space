@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-018e",
+  "scan": 18,
+  "note": "Lower right solid foam silhouette.",
+  "box_pixels": [
+    3136,
+    3212,
+    5648,
+    4649
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2512,
+    1437
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "b107dd440820ff89ff1835154a7516fcb1771e431c5a71b83bc6d73c20a430c9",
+  "sha256": "e32f870559d2f18a6eb3e4fcac9c15e87a2b879a66def3e0dc735388d86bc2c4",
+  "source_scan_sha256": "fc480ac314e798a5d97a3eb9956cdb4afb2a232221c79ea3f003d0d5151475c6",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-018e.jpg",
+    "bytes": 256691,
+    "sha256": "e39f0f54804ec71a854d86bf35af363279d88ee3a429b9677d027c6666610557",
+    "width": 1600,
+    "height": 915,
+    "format": "jpg"
+  }
+}

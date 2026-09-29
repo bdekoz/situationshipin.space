@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-013a",
+  "scan": 13,
+  "note": "Upper left three rounded crest marks.",
+  "box_pixels": [
+    1537,
+    1467,
+    2460,
+    1774
+  ],
+  "polygon_normalized": null,
+  "size": [
+    923,
+    307
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "3c8d39cfd036017accba1adc0c6e8f4e9179c459c164bd836a97e41a1790e444",
+  "sha256": "e7aabf51803b4e9adde527bc8bfc1c566501958fd678d200aacfc52d2993f24e",
+  "source_scan_sha256": "1e0a8b07cde573dc1f5d61f6f07e83ada42f4d4138151fabd9a37d2ce68f0ae3",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-013a.jpg",
+    "bytes": 52772,
+    "sha256": "e7e7849e34e4fbea51abc39800ff036c6fc6e8321cd84298f5256cabc22f5481",
+    "width": 923,
+    "height": 307,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-011d",
+  "scan": 11,
+  "note": "Adjacent lower left concentric crest field.",
+  "box_pixels": [
+    1314,
+    2673,
+    2791,
+    4643
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1477,
+    1970
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "f8bce60ab6ad254bd6430aeb42792925f64fb358c7eebdf32b1bddc6a4e65dac",
+  "sha256": "43e7788ff7ddf1add93ab555a94c18177791b509a2b4ff006a263e22113314e4",
+  "source_scan_sha256": "1a7d038ecb225341874705462421d42279971be1e269a0cb2cb32e931f4b53d7",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-011d.jpg",
+    "bytes": 496949,
+    "sha256": "624f1a88ec48891f516dad1190a7512cd880e7608875995bb92fda691461293c",
+    "width": 1200,
+    "height": 1600,
+    "format": "jpg"
+  }
+}

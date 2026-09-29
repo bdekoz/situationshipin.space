@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-008a",
+  "scan": 8,
+  "note": "Upper left framed strip.",
+  "box_pixels": [
+    660,
+    1289,
+    2396,
+    1604
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1736,
+    315
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "749f2c48996dfc92f3afe26f5203eeb0087d97968af4bceec9aa8a18b84bb2ac",
+  "sha256": "cdc7286a7e810b30c5652733fcf9bdbca3a53f35835752b2bb87de536e263756",
+  "source_scan_sha256": "3766cad12bf43c9d25352f7282ee0e09cb3387bcae3637aec9e9222e0e97b17b",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-008a.jpg",
+    "bytes": 125885,
+    "sha256": "94b88d5afb79feda37628bf5091ffaf75ba53c6a191bd4e9ccf53372a1504299",
+    "width": 1600,
+    "height": 290,
+    "format": "jpg"
+  }
+}

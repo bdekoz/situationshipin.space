@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-013b",
+  "scan": 13,
+  "note": "Upper right rimmed foam disk.",
+  "box_pixels": [
+    4235,
+    1291,
+    5253,
+    2284
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1018,
+    993
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "7cf1db7c229d850dde05bed29caa0badaee80eb5aa033fd31a1f0ecae3d4f83f",
+  "sha256": "0afdff102708831fa7879488eb0aff00a6979e0dfd38417201ca9be000c3db5e",
+  "source_scan_sha256": "2f9959042177f7ced6089e77c09e4aff476db642a810bc2cb94ac9e909bb2976",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-013b.jpg",
+    "bytes": 131722,
+    "sha256": "6f1bab8ffa73ec49a4123ac317261ae50ce16a658d827063b8aa0d59fae59e67",
+    "width": 1018,
+    "height": 993,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-006e",
+  "scan": 6,
+  "note": "Middle right repeated short strokes.",
+  "box_pixels": [
+    3170,
+    2608,
+    5572,
+    3744
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2402,
+    1136
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "f7a8320bf6109c41cf2a737f2d5c8324a0c56f36bf9111c61dff64c2ea0cf5e1",
+  "sha256": "2d30f0d36f00ed70ac694db0c5d1b961de6d3e4c58b46c5d1479474958458acb",
+  "source_scan_sha256": "ddc3930133c6ab70c809e5fd7be048872aa932dc06136399cb2ca750d9ca2a07",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-006e.jpg",
+    "bytes": 203405,
+    "sha256": "4d2c40a794cbc2b712b909836b33b311638b134233ef394d85d5dee65ce55b2f",
+    "width": 1600,
+    "height": 757,
+    "format": "jpg"
+  }
+}

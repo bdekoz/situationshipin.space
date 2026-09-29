@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-022c",
+  "scan": 22,
+  "note": "Tall narrow cascading-line panel.",
+  "box_pixels": [
+    1584,
+    990,
+    2750,
+    3548
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1166,
+    2558
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "fd1821e74f1f4f8dedc415fd7b28606051da52949024742b2033cfcd51af11a6",
+  "sha256": "84b91cc5267a32f05548dbf3ca4b2ef3063cf2fe3e98223c9462cd01f3754965",
+  "source_scan_sha256": "9f7a0da4e66d5e2642e5a72a1bbf0e70f63dc2850cac880dca1ae4692e588681",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-022c.jpg",
+    "bytes": 170078,
+    "sha256": "95fee4dbd420a86b49d5f4a6beac3bcada6ffe35c67a7ed289ea4c0b3b4fe3c5",
+    "width": 729,
+    "height": 1600,
+    "format": "jpg"
+  }
+}

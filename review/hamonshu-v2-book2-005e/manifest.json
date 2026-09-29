@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-005e",
+  "scan": 5,
+  "note": "Lower left dense water band; the surrounding blank layout is omitted.",
+  "box_pixels": [
+    306,
+    3950,
+    2824,
+    4603
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2518,
+    653
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "6944751b19509bd04698b91c2e8f1d12dfa0615690cd5f1b9a1fd5caeb90dd52",
+  "sha256": "c80841259ff37732f93b702f124f6023e212983518d3a5482e8574462f2d1677",
+  "source_scan_sha256": "3d9b42f385d8a6710556fa79c8c25e1f1e9d22d19c6796af0c29257d8c641012",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-005e.jpg",
+    "bytes": 146177,
+    "sha256": "13b549605c027453293219a231e2300b9a764f98655bc39fa2679429667ca2d6",
+    "width": 1600,
+    "height": 415,
+    "format": "jpg"
+  }
+}

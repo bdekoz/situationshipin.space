@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-013c",
+  "scan": 13,
+  "note": "Middle left crest-mark row.",
+  "box_pixels": [
+    1314,
+    2387,
+    2635,
+    2618
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1321,
+    231
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "a46ec7c66e6d0bd3dd089f65d299f25d3f68548d2fd5481eaef400c8a37f573c",
+  "sha256": "cd1095f21755c4c4449710b040e4e3fd87a45957a09abec0f1d78a998ee140d3",
+  "source_scan_sha256": "1e0a8b07cde573dc1f5d61f6f07e83ada42f4d4138151fabd9a37d2ce68f0ae3",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-013c.jpg",
+    "bytes": 46718,
+    "sha256": "160290dad8da8b5a7145a8aa3380bca2080df4e52c47c66dcee832396fb48805",
+    "width": 1321,
+    "height": 231,
+    "format": "jpg"
+  }
+}

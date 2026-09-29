@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-016f",
+  "scan": 16,
+  "note": "Upper right continuous dark spiral band.",
+  "box_pixels": [
+    3029,
+    998,
+    5544,
+    2516
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2515,
+    1518
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "5a65ffbb786760f2c6a8a2e93a8aaaaffbab2affd4d2a476503c524404ebdff2",
+  "sha256": "424ad9a24bd84f92ad8cd50a3fe53de5294a4f6a8d45578c375ae3d7fbe5a3b8",
+  "source_scan_sha256": "552a7f6c709af404b6debd9adab5affd447c786253463e2aad02cbee20a25127",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-016f.jpg",
+    "bytes": 193703,
+    "sha256": "39777626e8314d324f3f3df8d85c0f382c470991d6d577ca669ec51db6f4f37d",
+    "width": 1600,
+    "height": 966,
+    "format": "jpg"
+  }
+}

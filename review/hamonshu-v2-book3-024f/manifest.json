@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-024f",
+  "scan": 24,
+  "note": "Small lower right outlined pool current.",
+  "box_pixels": [
+    4707,
+    3862,
+    5456,
+    4260
+  ],
+  "polygon_normalized": null,
+  "size": [
+    749,
+    398
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "5479eb7fb8c094bf71bb70b6dbed1915a20b7debe036021412958667da74c2bb",
+  "sha256": "72c6e311af7459f585320f6805aa8bddf700168e60e98f7dcd75fd8764f92b9a",
+  "source_scan_sha256": "5a7ef7d9b56fb9523b278762a0ebb84e39c2f94504897c6f59a83e98356391d1",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-024f.jpg",
+    "bytes": 44677,
+    "sha256": "7f0a935c8136be130e945854fc568685fb132cd5057162f54ede529e19b65b80",
+    "width": 749,
+    "height": 398,
+    "format": "jpg"
+  }
+}

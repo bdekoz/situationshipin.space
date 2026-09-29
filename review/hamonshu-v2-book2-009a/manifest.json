@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-009a",
+  "scan": 9,
+  "note": "Upper left current field.",
+  "box_pixels": [
+    318,
+    1040,
+    2830,
+    2206
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2512,
+    1166
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "b45669a5ddcc0962b73100d8c7bf1cf85506bc345efe76bffa4c25856d7f040c",
+  "sha256": "9de20a9f0881cb8cb0e30cc1d938c07f50f8cdad68ffa8b115649058cb4b3468",
+  "source_scan_sha256": "132faefe88c56645a8c401b7fe13863c7f38ec44282f7b15c23b75c7b80a7dcc",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-009a.jpg",
+    "bytes": 339085,
+    "sha256": "aca1e5aa23a779c4c6726f020fa7543f8df432c60ddf12d08e144a11deef6d2c",
+    "width": 1600,
+    "height": 743,
+    "format": "jpg"
+  }
+}

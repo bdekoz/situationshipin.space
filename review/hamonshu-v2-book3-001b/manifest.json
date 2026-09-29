@@ -1,0 +1,53 @@
+{
+  "id": "hamonshu_3-001b",
+  "scan": 1,
+  "note": "Lower cover ornament; the title label is masked and occluded lines are not reconstructed.",
+  "box_pixels": [
+    175,
+    3155,
+    2091,
+    4762
+  ],
+  "polygon_normalized": [
+    [
+      235,
+      632
+    ],
+    [
+      598,
+      632
+    ],
+    [
+      598,
+      954
+    ],
+    [
+      50,
+      954
+    ],
+    [
+      50,
+      695
+    ],
+    [
+      235,
+      695
+    ]
+  ],
+  "size": [
+    1916,
+    1607
+  ],
+  "mode": "RGBA",
+  "pixel_sha256": "698b54ecfb84215fc17c355f576cf8e6b9225d9023722ebd7d53acd7f8d3539a",
+  "sha256": "1fa1c203ba4170d70eb48a63a9784f467cc512eaa50a92808aaaab12b54f4c38",
+  "source_scan_sha256": "7ab037cf5182a7b330db760b66ffe6c4a85c9c8de6f7be007e6543d4463ce71e",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-001b.jpg",
+    "bytes": 309784,
+    "sha256": "bd49d3820ea64abe60eb2fa7352cb401beef48b3d9e21c4802cebca26e67dc9f",
+    "width": 1600,
+    "height": 1342,
+    "format": "jpg"
+  }
+}

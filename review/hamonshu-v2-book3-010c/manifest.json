@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-010c",
+  "scan": 10,
+  "note": "Lower right winding shoreline and ripple composition.",
+  "box_pixels": [
+    3071,
+    3221,
+    5587,
+    4638
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2516,
+    1417
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "0bd663775d7dbbe544bd99e917e8b5d2dfe2956d44b743193788885932b3da4f",
+  "sha256": "eaf5375910d242162471832f6a2eea3cf5efcf7ecb7470ce4c6d5814c15c29d4",
+  "source_scan_sha256": "f6e19bfacf2b714516bd20cdf1aea2cf11a3a24da39c96d0a23b48fc204ab50f",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-010c.jpg",
+    "bytes": 210248,
+    "sha256": "097722891004b812c412c8318a821676d833d02c0dfbc04d8e8241f3926e3784",
+    "width": 1600,
+    "height": 901,
+    "format": "jpg"
+  }
+}

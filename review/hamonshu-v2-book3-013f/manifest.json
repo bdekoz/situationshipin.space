@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-013f",
+  "scan": 13,
+  "note": "Upper right enclosed water form.",
+  "box_pixels": [
+    4208,
+    1256,
+    5330,
+    1945
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1122,
+    689
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "95e676b801f1787c61a3dbd7a55ac9956c93c457e6b2b1cb63eb7f557f886511",
+  "sha256": "49c52c4f84357212343317cbd2e61adf3be2d775864d6c296dbf6617a5072950",
+  "source_scan_sha256": "1e0a8b07cde573dc1f5d61f6f07e83ada42f4d4138151fabd9a37d2ce68f0ae3",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-013f.jpg",
+    "bytes": 93884,
+    "sha256": "9a5d910491d58eff0cb3d3c67b5b4b66c914a9328da0531c81dd39671438fc92",
+    "width": 1122,
+    "height": 689,
+    "format": "jpg"
+  }
+}

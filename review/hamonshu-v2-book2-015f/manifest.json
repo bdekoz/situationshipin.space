@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-015f",
+  "scan": 15,
+  "note": "Upper right pointed crest emblem.",
+  "box_pixels": [
+    4278,
+    1689,
+    5308,
+    2279
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1030,
+    590
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "c7415c8a9412ede8e6f91399f2dff22cc4760b1b1ba37cedeb2585ecefa84395",
+  "sha256": "48b76402f3cbab0f033af45fa71a2b6769909beebfec9c812c8bee7defb1cd06",
+  "source_scan_sha256": "a32f3012966f0111139d4e9c7300b0f837b85506feaa73fa015e8842bf1b3ed5",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-015f.jpg",
+    "bytes": 93754,
+    "sha256": "740e10e6d015ffd1917310bb12f16516990866bfd16b667867de39614253e352",
+    "width": 1030,
+    "height": 590,
+    "format": "jpg"
+  }
+}

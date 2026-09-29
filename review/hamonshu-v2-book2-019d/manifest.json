@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-019d",
+  "scan": 19,
+  "note": "Lower right breaking-wave composition with spray.",
+  "box_pixels": [
+    3112,
+    2592,
+    5648,
+    4613
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2536,
+    2021
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "07de1e421d103eb3c7b5e03fe6c8c4d8ab746b7a6c6c3c89669c48068d308621",
+  "sha256": "8e6e98ca0ed3af6d0240c23f6e23387e51612a71c2012ca9670e097003d1d691",
+  "source_scan_sha256": "1b9898a958e7c3feae03c653967646611e8985911ca738bd03b2e0b1e2c160be",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-019d.jpg",
+    "bytes": 400455,
+    "sha256": "4a3c2613fffd76aa607222da33824f742a339fdd73cf79dd5d71fa386cd67772",
+    "width": 1600,
+    "height": 1275,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-012a",
+  "scan": 12,
+  "note": "Upper left foam-and-curl disk.",
+  "box_pixels": [
+    721,
+    1158,
+    2109,
+    2549
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1388,
+    1391
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "6f1987e9b35ffade47449504f18bbb9dffe9fe76f31a00aa98e4ee70364e79fa",
+  "sha256": "99efe298d76a7fc2f493daab62cb3cb1335189b1f7823ec75a2a702e0a06ce2b",
+  "source_scan_sha256": "a36a2a9254c02fe0f0bf3588c19e7adc54d751b5deedd7925f2fba6e1f27a812",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-012a.jpg",
+    "bytes": 261239,
+    "sha256": "71b8a4c14f37faf462fa27c0cd636b7ee21c527d5f1549426b4c2e6b5f56ab70",
+    "width": 1388,
+    "height": 1391,
+    "format": "jpg"
+  }
+}

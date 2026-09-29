@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-016g",
+  "scan": 16,
+  "note": "Lower right outlined foam field with bubbles and small arcs.",
+  "box_pixels": [
+    3029,
+    2511,
+    5544,
+    4664
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2515,
+    2153
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "5f933718dc7ef7044d2ce6db73f9500864ccd17c9c606bcc6abc85d06e6526b9",
+  "sha256": "a01228041b4ce987060449bf71e3bc8658021930ae2bf61ebdadacbc06d0b411",
+  "source_scan_sha256": "552a7f6c709af404b6debd9adab5affd447c786253463e2aad02cbee20a25127",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-016g.jpg",
+    "bytes": 243926,
+    "sha256": "203a71aedaa1b6ffeedf37ed4b9736f42d8d04edd9ad0ff7759c58a537236bab",
+    "width": 1600,
+    "height": 1370,
+    "format": "jpg"
+  }
+}

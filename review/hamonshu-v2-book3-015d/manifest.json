@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-015d",
+  "scan": 15,
+  "note": "Lower left paired ripple medallion.",
+  "box_pixels": [
+    1572,
+    3667,
+    2539,
+    4067
+  ],
+  "polygon_normalized": null,
+  "size": [
+    967,
+    400
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "0e567ab8be5f9bd23031d8ffbdf6fc70b4c0b7ce07b271a39777d936ae463f2b",
+  "sha256": "26fa06f4a49b8c299b8d0877f61513727e1f35e21021aa23fc87914a40ccb3ae",
+  "source_scan_sha256": "e73e94dc79bc8470b42b385c9cebcb9084be955d5551f6ca8c76c65031d4be20",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-015d.jpg",
+    "bytes": 94333,
+    "sha256": "8b86c8c638358e4b11a53afcbc8777bae8948952417d7fc055153d6bcac694e0",
+    "width": 967,
+    "height": 400,
+    "format": "jpg"
+  }
+}

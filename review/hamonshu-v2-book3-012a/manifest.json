@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-012a",
+  "scan": 12,
+  "note": "Upper left scattered small crest group.",
+  "box_pixels": [
+    295,
+    1220,
+    2207,
+    2077
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1912,
+    857
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "1836f11088ba5092e92b26f1a396a3ad2a8c10ce243ff1c3f0d5ec2449c04139",
+  "sha256": "91455b9f5c78aa1bf4846d8ddfa5887b6fd3962423fd2aecc084219140e90995",
+  "source_scan_sha256": "10490cc85c429c795b9f40ba627531cc7b72cf06c97b897f8535ad8ac3aba4ec",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-012a.jpg",
+    "bytes": 91056,
+    "sha256": "4c147d7daa1dd39f3e3e66d8b46e55e96692e47a6d93a48b990e8bf8119f7daf",
+    "width": 1600,
+    "height": 717,
+    "format": "jpg"
+  }
+}

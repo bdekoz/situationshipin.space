@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-019a",
+  "scan": 19,
+  "note": "Upper left ring of wave forms.",
+  "box_pixels": [
+    1139,
+    1269,
+    2368,
+    2477
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1229,
+    1208
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "b291494689055e19400ea4faacc70b17ec4ea787613069af6d6c7c360d778edc",
+  "sha256": "b7762c7fd12af04b15849f50cae13cc4453899ee8f53dbc162e3ffa754826da6",
+  "source_scan_sha256": "3005580cde005ab7ad426eb02f07bf6d20e4916210eafe589911509446bdcd03",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-019a.jpg",
+    "bytes": 205273,
+    "sha256": "00e2cb8e85cc6e4548cdaaf6278a1a8f3d14aca47b0281447877d75a4d3b704e",
+    "width": 1229,
+    "height": 1208,
+    "format": "jpg"
+  }
+}

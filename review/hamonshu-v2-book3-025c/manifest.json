@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-025c",
+  "scan": 25,
+  "note": "Middle narrow field of pointed currents.",
+  "box_pixels": [
+    1277,
+    2231,
+    2644,
+    2925
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1367,
+    694
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "4db4429451f03be83b6fb389b353f0af7245bc921b283f88109d2f58232510a9",
+  "sha256": "e9a9e27a96ddcc3fd0e307eedf43a24c4b6e03524a0c6f1ee2af8883915a5674",
+  "source_scan_sha256": "41ab90ecb89c757f53c93f3ff85d5d90e6e440fa8a35b7b77cbeda6058a81b12",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-025c.jpg",
+    "bytes": 140699,
+    "sha256": "2756fc93e8ab681d05c9fedc6b6af24937673df1520131b9dcb9a83c168d06e9",
+    "width": 1367,
+    "height": 694,
+    "format": "jpg"
+  }
+}

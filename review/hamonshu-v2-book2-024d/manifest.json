@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-024d",
+  "scan": 24,
+  "note": "Middle right coiled wave group.",
+  "box_pixels": [
+    3192,
+    2466,
+    5615,
+    3136
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2423,
+    670
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "3b1534c7125ba0ffee296789ef851675d0f279dd1a21291ef4cd5ac73f9ebc11",
+  "sha256": "20f9620ad33c6baba891aab11cb18b8a5dd2bbfd578cdb84c6d436e3fdfc05a3",
+  "source_scan_sha256": "8351d4cbd98ec14a5bb16158b3e4726434748ed0d59cc0ed694e1e80c1a522f2",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-024d.jpg",
+    "bytes": 151840,
+    "sha256": "a3fd48f1fb548b38a2dd59c937393ffd4ad8a6bf466df20cebb3100ab489154f",
+    "width": 1600,
+    "height": 442,
+    "format": "jpg"
+  }
+}

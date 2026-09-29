@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-028b",
+  "scan": 28,
+  "note": "Middle back-cover isolated spiral.",
+  "box_pixels": [
+    1061,
+    2206,
+    1728,
+    2829
+  ],
+  "polygon_normalized": null,
+  "size": [
+    667,
+    623
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "62075258e676d4af7da448b727cb5188996a158b8cd79da2f8104c9b0bb70d57",
+  "sha256": "8065d3f2c4e0edd0b7923d65ffa82df4e88ed52a4101e3d0999169c64e45fbfe",
+  "source_scan_sha256": "33779f4493535c366def4093da7f4a8f69a5b73f58143c668d15df7b705d00bb",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-028b.jpg",
+    "bytes": 67907,
+    "sha256": "e6323c67bd25929a608beea87041e63e0117079197033184ce7e9418d734775f",
+    "width": 667,
+    "height": 623,
+    "format": "jpg"
+  }
+}

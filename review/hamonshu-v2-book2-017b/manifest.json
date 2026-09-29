@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-017b",
+  "scan": 17,
+  "note": "Middle left woven water band.",
+  "box_pixels": [
+    935,
+    2638,
+    2745,
+    3176
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1810,
+    538
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "c983d8463408373d46cf5158248be1f3a6806cfbeede2ac24d932e993ba68cc5",
+  "sha256": "61e886437dec070bdd7629a66b0c6324cb6c277f7b94a1e789294f753def2c88",
+  "source_scan_sha256": "6ae0fd2f350d71e104c85ebc250325299a602811b4c20eba416ca61a932ac605",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-017b.jpg",
+    "bytes": 141800,
+    "sha256": "5b07272c52339290f69a790e108acbae39f4ca998f24ffa93d893ce6d57eca66",
+    "width": 1600,
+    "height": 476,
+    "format": "jpg"
+  }
+}

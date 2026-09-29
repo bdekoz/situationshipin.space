@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-019b",
+  "scan": 19,
+  "note": "Middle left diamond-shaped water ornament.",
+  "box_pixels": [
+    462,
+    2477,
+    1601,
+    3160
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1139,
+    683
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "11cbde950449d99f2df87b60accc58493a9a42dd4a8f1cdad90e8b51b9dd60f8",
+  "sha256": "ac24b6634b2cf96eece0944898744978e8fdd2081c453eb948d31692e5ad081b",
+  "source_scan_sha256": "3005580cde005ab7ad426eb02f07bf6d20e4916210eafe589911509446bdcd03",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-019b.jpg",
+    "bytes": 110675,
+    "sha256": "75492b5f2cc7dcb0e3e6250e6fd8566a797c561c82bd5c2a398b71eea398611e",
+    "width": 1139,
+    "height": 683,
+    "format": "jpg"
+  }
+}

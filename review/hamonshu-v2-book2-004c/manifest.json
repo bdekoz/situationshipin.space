@@ -1,0 +1,69 @@
+{
+  "id": "hamonshu_2-004c",
+  "scan": 4,
+  "note": "Lower left flowing-water composition; mask separates the adjacent framed designs.",
+  "box_pixels": [
+    280,
+    2784,
+    2816,
+    4593
+  ],
+  "polygon_normalized": [
+    [
+      396,
+      554
+    ],
+    [
+      462,
+      554
+    ],
+    [
+      462,
+      914
+    ],
+    [
+      46,
+      914
+    ],
+    [
+      46,
+      744
+    ],
+    [
+      310,
+      744
+    ],
+    [
+      310,
+      732
+    ],
+    [
+      384,
+      732
+    ],
+    [
+      384,
+      604
+    ],
+    [
+      396,
+      604
+    ]
+  ],
+  "size": [
+    2536,
+    1809
+  ],
+  "mode": "RGBA",
+  "pixel_sha256": "ac82fd7d58378278be7c9dd4678f0128ec1e4f47a33927faa937235eaf192852",
+  "sha256": "1cd69beafe0eb10170aaadea56113520f5fc8740e151476ba91ec0da8e34f7f9",
+  "source_scan_sha256": "4433d20dfefe8dff701469ed20550e407b46e01908cf749e6ecd25e42a8cbb95",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-004c.jpg",
+    "bytes": 283746,
+    "sha256": "c530ed1012ddb0fb74237b161a703470df090def9663812ae9d7ae5f97bfd162",
+    "width": 1600,
+    "height": 1141,
+    "format": "jpg"
+  }
+}

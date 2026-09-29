@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-020c",
+  "scan": 20,
+  "note": "Upper right strong parallel wave curves.",
+  "box_pixels": [
+    2952,
+    958,
+    5442,
+    2839
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2490,
+    1881
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "bdafccd399b5b2732ea593af31cebfa43e35a521d6a67c5c262d346478d4bb5b",
+  "sha256": "1efc299c1f807c44410dc08d63a407bf6ed6173f61017ce6a879ae6ec9a67359",
+  "source_scan_sha256": "c91f2dac6421e75c3fdbd5fae6e29bbb78f5a6093ca3994e91f483b1f30c7ced",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-020c.jpg",
+    "bytes": 300342,
+    "sha256": "ea07c4a999d0b686da87eb9cd7ce27c5af67e5ddf35ec5ea708618c62643984c",
+    "width": 1600,
+    "height": 1209,
+    "format": "jpg"
+  }
+}

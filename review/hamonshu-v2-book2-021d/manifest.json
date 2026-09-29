@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-021d",
+  "scan": 21,
+  "note": "Upper right repeated foam streaks.",
+  "box_pixels": [
+    3056,
+    943,
+    5581,
+    2728
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2525,
+    1785
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "364b807834224394cb41cf3964a2eecba061cd2772af4e70855cbf8104f85165",
+  "sha256": "0d724c743c3d8acef6489076396d62f568af97992edc36eb1d7c3128a86e6f3b",
+  "source_scan_sha256": "2e7575e9aefebeaf4178ed15014bc7967e945fc2d6b8264c4513552539027347",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-021d.jpg",
+    "bytes": 258242,
+    "sha256": "446295fab865edecf4cce8690af0c1fccdd1f7e54a5fe4f72d102a2d6c72a6ac",
+    "width": 1600,
+    "height": 1131,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-006f",
+  "scan": 6,
+  "note": "Lower right interlaced band.",
+  "box_pixels": [
+    3402,
+    3874,
+    5590,
+    4266
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2188,
+    392
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "25f5a87049d0ae75e6ade35426f433b4fb0aac9543e633df9218905510b6e69e",
+  "sha256": "47ca00a628a7c039c05c3f7617189f113273531c453056713dc252581bd4257d",
+  "source_scan_sha256": "ddc3930133c6ab70c809e5fd7be048872aa932dc06136399cb2ca750d9ca2a07",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-006f.jpg",
+    "bytes": 74305,
+    "sha256": "26fbc4c7c6a70ae8f7ce277c8281bc0e5f19a344b89727914e72f267e11f9477",
+    "width": 1600,
+    "height": 287,
+    "format": "jpg"
+  }
+}

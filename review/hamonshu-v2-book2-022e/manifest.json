@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-022e",
+  "scan": 22,
+  "note": "Middle right linked current ribbon.",
+  "box_pixels": [
+    3095,
+    2206,
+    5602,
+    3316
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2507,
+    1110
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "5486ca7a0d784941aa694c24788bb061b430c59b0889b2bea2051770da117ebd",
+  "sha256": "a55ba1a278c542ed61365b8b6bd3a8fc7f361805ebcb13edc6d718ba0a484263",
+  "source_scan_sha256": "719714e884422604695564c74e27f2e7863d52bb29a9eec76582fe30097655ca",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-022e.jpg",
+    "bytes": 214128,
+    "sha256": "decbb2cfefbfa72f56ba1521f4cdee01513a58004a25cc0278091d955863fb0b",
+    "width": 1600,
+    "height": 708,
+    "format": "jpg"
+  }
+}

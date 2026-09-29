@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-022a",
+  "scan": 22,
+  "note": "First group of small upright forms and arcs.",
+  "box_pixels": [
+    257,
+    1151,
+    1387,
+    2110
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1130,
+    959
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "7afe64cda6dc6e18731f951f658aec260f1c319fa1f41850a768a56015ea6a04",
+  "sha256": "fee03919da6df0784ef4e3fb7acb29fca6fc7b6aeac914f8bc8f7c6c2410e91b",
+  "source_scan_sha256": "9f7a0da4e66d5e2642e5a72a1bbf0e70f63dc2850cac880dca1ae4692e588681",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-022a.jpg",
+    "bytes": 141650,
+    "sha256": "7a3097c5f4d6bc377fa5a8d291be124105ec74fa2e0bc27ad837a8155d087553",
+    "width": 1130,
+    "height": 959,
+    "format": "jpg"
+  }
+}

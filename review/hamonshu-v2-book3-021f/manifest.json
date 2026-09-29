@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-021f",
+  "scan": 21,
+  "note": "Middle right layered outlined waves.",
+  "box_pixels": [
+    2950,
+    1889,
+    5432,
+    2995
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2482,
+    1106
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "01e6822ac0ac93a86e1efdc7e6ba8259095dc7b038d80cca469ec54b8cf74e61",
+  "sha256": "b03f8d2bb35706e850c293f0dbafcacbb594cd2f1bbdc507658667c4ff094596",
+  "source_scan_sha256": "60955427c6aa1861c7719f9c6c53f8683ad892ffff34845b366e4de0cacabf85",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-021f.jpg",
+    "bytes": 286159,
+    "sha256": "a38bd36677205d91f769c0c4788c48027978877dc900f5e007dd84742fcd2070",
+    "width": 1600,
+    "height": 713,
+    "format": "jpg"
+  }
+}

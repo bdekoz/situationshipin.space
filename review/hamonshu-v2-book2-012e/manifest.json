@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-012e",
+  "scan": 12,
+  "note": "Large upper right wave-filled disk.",
+  "box_pixels": [
+    3539,
+    1224,
+    5355,
+    3025
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1816,
+    1801
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "cea40dbedd08d241bba914caaeaf755d714c6b300e470f5282b6c343023327e9",
+  "sha256": "20973adae6782e879f8a24f1d3177e31fba178bb02158544d4d1cf5ceed4abc3",
+  "source_scan_sha256": "a36a2a9254c02fe0f0bf3588c19e7adc54d751b5deedd7925f2fba6e1f27a812",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-012e.jpg",
+    "bytes": 772853,
+    "sha256": "c371860e29fe386001ed03b713c223d406b828667d2d0bdd42a40da135e43695",
+    "width": 1600,
+    "height": 1587,
+    "format": "jpg"
+  }
+}

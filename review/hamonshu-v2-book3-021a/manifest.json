@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-021a",
+  "scan": 21,
+  "note": "Upper left dark branching current.",
+  "box_pixels": [
+    240,
+    1070,
+    2740,
+    3025
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2500,
+    1955
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "f011bb1b349cc2f79db4b218eda3fb6ac5cdabe48555b7213cde53bbb17f775c",
+  "sha256": "28fe1498288fe84ce7eb0ae2f0eaee5bfd35f79bb42630dd19350676f3ec328a",
+  "source_scan_sha256": "60955427c6aa1861c7719f9c6c53f8683ad892ffff34845b366e4de0cacabf85",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-021a.jpg",
+    "bytes": 247774,
+    "sha256": "9218aa9d12cbc2cb7ca1db144964065c13ad47fcd3c46befa360c8e79c4fdcee",
+    "width": 1600,
+    "height": 1251,
+    "format": "jpg"
+  }
+}

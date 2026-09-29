@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-022b",
+  "scan": 22,
+  "note": "Middle left rows of fine crests.",
+  "box_pixels": [
+    515,
+    2317,
+    2819,
+    3397
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2304,
+    1080
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "89cc3a0b6dfcad611efecc46bfa4ea8ca4736151872812ca404455577b15d7d2",
+  "sha256": "bde8dac2a64a9911557a9de9ea92d47919fbec550b84166f0b7a6bfc11a0e4df",
+  "source_scan_sha256": "719714e884422604695564c74e27f2e7863d52bb29a9eec76582fe30097655ca",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-022b.jpg",
+    "bytes": 250836,
+    "sha256": "18754914654efc9e25b3f2685035100061e2ddc4fb31e7c8e56b588aa9b76b6e",
+    "width": 1600,
+    "height": 750,
+    "format": "jpg"
+  }
+}

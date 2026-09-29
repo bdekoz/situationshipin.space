@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-007a",
+  "scan": 7,
+  "note": "Upper left layered strokes.",
+  "box_pixels": [
+    373,
+    1165,
+    2751,
+    1593
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2378,
+    428
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "d6dc0e60115a955f2256002c14381f37e0dd378447f00944e4e00f6f96d5a57e",
+  "sha256": "9960ddaf6ec1cc41fa1a232c856a5e0fcb856c4cc0be269ca329b293a411178c",
+  "source_scan_sha256": "2f5903f4ca9a2b1689e8884e02d0e2963b91475cd964cd88cb30fde5f3d43897",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-007a.jpg",
+    "bytes": 102804,
+    "sha256": "df6a6174794bba8ed0ac83843774a2c630a071cf862cd5623cc7972d4ed4a3f6",
+    "width": 1600,
+    "height": 288,
+    "format": "jpg"
+  }
+}

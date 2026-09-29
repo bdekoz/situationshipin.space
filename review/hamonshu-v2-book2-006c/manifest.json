@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-006c",
+  "scan": 6,
+  "note": "Upper right sparse line group.",
+  "box_pixels": [
+    3146,
+    1191,
+    5669,
+    1613
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2523,
+    422
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "1906b0ad8b9169cd7d3a8921e38edc5859e35b1be68a7504ae65d8f046704627",
+  "sha256": "34fa10c76bc0f1d28504eb603a44fbea6fcef3d906c5e0bbfec165a7e4dfe2c0",
+  "source_scan_sha256": "ddc3930133c6ab70c809e5fd7be048872aa932dc06136399cb2ca750d9ca2a07",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-006c.jpg",
+    "bytes": 59058,
+    "sha256": "b1d49bcba9bd18f4d92fbab3ec53ae0604223c45361577721d9a27e1aafec227",
+    "width": 1600,
+    "height": 268,
+    "format": "jpg"
+  }
+}

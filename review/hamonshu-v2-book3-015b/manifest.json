@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-015b",
+  "scan": 15,
+  "note": "Middle left open field of small breaking crests.",
+  "box_pixels": [
+    405,
+    2271,
+    2424,
+    3384
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2019,
+    1113
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "6ab30a4cdc268a68157edd639ff5880a6721d4f1945c9bdca8b8620e24b3afc9",
+  "sha256": "926616fb6dc9efff773d20f836aa8ecf2828af3ba0820a6f7ef4eee9f84cb0ce",
+  "source_scan_sha256": "e73e94dc79bc8470b42b385c9cebcb9084be955d5551f6ca8c76c65031d4be20",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-015b.jpg",
+    "bytes": 222650,
+    "sha256": "96870e44903e238b7963ed184ac154578a3c1b042f4aa676c667f17af49f49bd",
+    "width": 1600,
+    "height": 882,
+    "format": "jpg"
+  }
+}

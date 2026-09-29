@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-017g",
+  "scan": 17,
+  "note": "Angular crest field with its clipped continuation on the facing page; the gutter is retained.",
+  "box_pixels": [
+    2471,
+    2673,
+    4456,
+    3327
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1985,
+    654
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "f7215e8b2c91753cadf872002d7e4bbea97c5f094ead62e5837835b4ed17ca86",
+  "sha256": "bfb02a8f7d3a49abdbef6cc14fd8ca7e5baedd08b8acfddce471ceeeb2a50a59",
+  "source_scan_sha256": "032cd565a1df68d1d5c8b9cfed52534edf596f6277ae2428652ff81eb2e4b85f",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-017g.jpg",
+    "bytes": 120866,
+    "sha256": "28e7b6b23848a8e224cee7cdf29652d06997abf9418e62238ee75e1bfe8da6fc",
+    "width": 1600,
+    "height": 527,
+    "format": "jpg"
+  }
+}

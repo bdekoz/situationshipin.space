@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-013f",
+  "scan": 13,
+  "note": "Middle right isolated ripple group.",
+  "box_pixels": [
+    4431,
+    2914,
+    5522,
+    3449
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1091,
+    535
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "0c2695b0275e34ad19ff556f2c599bef141e6c560fd32e61503bc2b3e8759ae4",
+  "sha256": "c138773a58c1b38a29f0981f4a78ab8b8863896a7028c95e84da1c3498b0b681",
+  "source_scan_sha256": "2f9959042177f7ced6089e77c09e4aff476db642a810bc2cb94ac9e909bb2976",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-013f.jpg",
+    "bytes": 92757,
+    "sha256": "e57beadc49023b9eaf78a00475ddf37efda850a464fe50016383bf35838958ca",
+    "width": 1091,
+    "height": 535,
+    "format": "jpg"
+  }
+}

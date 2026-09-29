@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-011m",
+  "scan": 11,
+  "note": "Lower right group of flowing curls.",
+  "box_pixels": [
+    3686,
+    3761,
+    4915,
+    4286
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1229,
+    525
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "ca838ac627d2eb00339f474ca2f022f8bd0030127374b40621cb873aba87e840",
+  "sha256": "b23dfdd9156a319bc30d2b51f93afcc227a722f03e871cef5cffa5a735e5aed1",
+  "source_scan_sha256": "3a2c623bc8f12c65ee252b48827261e60984a3963e065773067496f1d570142e",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-011m.jpg",
+    "bytes": 61817,
+    "sha256": "a88feb995982367112b6969496bd28945ef32283d91a96c5efe42177cf32c835",
+    "width": 1229,
+    "height": 525,
+    "format": "jpg"
+  }
+}

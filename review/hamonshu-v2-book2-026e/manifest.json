@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-026e",
+  "scan": 26,
+  "note": "Middle right open oval lattice.",
+  "box_pixels": [
+    3015,
+    2849,
+    4873,
+    3580
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1858,
+    731
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "9d90ff45d4a634c53e2687769f7e3a95c741d2fcb4aa2711808ae2f1e7f9a2f2",
+  "sha256": "9e190114dae67f185af3d75b5242febdc4db1b5a5db858be2eb544f5f12f9801",
+  "source_scan_sha256": "89155d5707b105bacd2a7d73bdf0609c7afeabcc39b3bb522daefbbe359cfc63",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-026e.jpg",
+    "bytes": 176819,
+    "sha256": "f3cee2943e78a15a775c8c5bff1406b5a1ed9670ddc8a1c0d8ad503344f40c7a",
+    "width": 1600,
+    "height": 629,
+    "format": "jpg"
+  }
+}

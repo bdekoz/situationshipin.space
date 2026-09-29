@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-015d",
+  "scan": 15,
+  "note": "Middle left fountain-and-drop emblem.",
+  "box_pixels": [
+    1073,
+    2687,
+    2685,
+    3237
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1612,
+    550
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "7c883b136d5099c3f02ab67154b1b262dd77d1ae91e42fc152342a90a0bca3c3",
+  "sha256": "d3a695f4bd27dc3cd8189f63f8b47ac2a2822139d321d411ce1bfeb5c45e80c5",
+  "source_scan_sha256": "a32f3012966f0111139d4e9c7300b0f837b85506feaa73fa015e8842bf1b3ed5",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-015d.jpg",
+    "bytes": 133937,
+    "sha256": "c724bc0187f5dbfa9f218e946e6c5c5c07182e205af8c8001ac9d88742d0af46",
+    "width": 1600,
+    "height": 546,
+    "format": "jpg"
+  }
+}

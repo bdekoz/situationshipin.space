@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-021e",
+  "scan": 21,
+  "note": "Upper right enclosed repeating crest band.",
+  "box_pixels": [
+    2944,
+    1131,
+    5432,
+    1653
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2488,
+    522
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "c060beba9a0ae5c67c806d96054db1b71274b707b1166d7c684e46127baf8011",
+  "sha256": "61cfa412a9ea0d1181e571d7f331414a1984a9a261c5bcb1c0096e2a152284a4",
+  "source_scan_sha256": "60955427c6aa1861c7719f9c6c53f8683ad892ffff34845b366e4de0cacabf85",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-021e.jpg",
+    "bytes": 85963,
+    "sha256": "1702dec5050810fb6845dc62e7e6684d212358712fb2b18a781b4c1f3889faac",
+    "width": 1600,
+    "height": 336,
+    "format": "jpg"
+  }
+}

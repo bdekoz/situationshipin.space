@@ -1,0 +1,53 @@
+{
+  "id": "hamonshu_2-025a",
+  "scan": 25,
+  "note": "Upper outline-current composition spans both pages; mask excludes the lower pattern.",
+  "box_pixels": [
+    368,
+    1052,
+    5547,
+    3202
+  ],
+  "polygon_normalized": [
+    [
+      60,
+      208
+    ],
+    [
+      905,
+      208
+    ],
+    [
+      905,
+      633
+    ],
+    [
+      506,
+      633
+    ],
+    [
+      506,
+      592
+    ],
+    [
+      60,
+      592
+    ]
+  ],
+  "size": [
+    5179,
+    2150
+  ],
+  "mode": "RGBA",
+  "pixel_sha256": "e57c99f96c793a2faaac49d206f6a483af1dcd96cc5ea51d2b1bf17528ddcb5a",
+  "sha256": "fc4f545ceecb51f3cf930868b436000e842e572657b2b87886910afc97e88d98",
+  "source_scan_sha256": "e35c11896828169b88a56210fe851de9ecfc38d4d08b14de026f091fd21682eb",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-025a.jpg",
+    "bytes": 125729,
+    "sha256": "c88fe567416d961024ea9df2351f2384aba668ef1161ef91d7b8b2275228cdc4",
+    "width": 1600,
+    "height": 664,
+    "format": "jpg"
+  }
+}

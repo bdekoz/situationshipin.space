@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-020d",
+  "scan": 20,
+  "note": "Middle right diagonal crest.",
+  "box_pixels": [
+    3087,
+    2057,
+    5596,
+    3267
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2509,
+    1210
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "594f1c2a63711a45ca0c9d2da370a3516ff865147fd4a8f6f855df94fa2da14f",
+  "sha256": "31b9ac92887ebd51b54cb6e82489c5d2115d8ff5a9a51a87ad25355cc5701957",
+  "source_scan_sha256": "64bb9859b661c8df2bb8f4849cd62aca687f948c987a9628423bfd7c728420d7",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-020d.jpg",
+    "bytes": 163835,
+    "sha256": "e3cd043f0c2fb66f88408cfe1b26818147aa020f895b173fb15c4c0a4d3cee3d",
+    "width": 1600,
+    "height": 772,
+    "format": "jpg"
+  }
+}

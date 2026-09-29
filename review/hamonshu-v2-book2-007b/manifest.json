@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-007b",
+  "scan": 7,
+  "note": "Middle left connected scalloped band.",
+  "box_pixels": [
+    1125,
+    1956,
+    2775,
+    2395
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1650,
+    439
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "e331c7907e2ac52a0aa9860a7e3f375711a87794d3cd77ef8ace9af00b5e2a78",
+  "sha256": "214eb59c6f64868635796758d6952565405aa4b9d955c08194e4c9cb41258078",
+  "source_scan_sha256": "2f5903f4ca9a2b1689e8884e02d0e2963b91475cd964cd88cb30fde5f3d43897",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-007b.jpg",
+    "bytes": 195485,
+    "sha256": "bb53ddd9c93bbad2e13e98a47abd174e2c7fd1df4a4081d9629eff9981155a41",
+    "width": 1600,
+    "height": 426,
+    "format": "jpg"
+  }
+}

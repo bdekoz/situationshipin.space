@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-018d",
+  "scan": 18,
+  "note": "Lower left paired crests over a low wave.",
+  "box_pixels": [
+    337,
+    3591,
+    2742,
+    4244
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2405,
+    653
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "4a1bc1ce2ea6fb88b2104a140172d6b46a1a41f87b46fb124ca504643b9a41ef",
+  "sha256": "3ea5e453c5b3779cbb0f03fb59f5d5e854d83410d6ab62a7c4d55707412cf1db",
+  "source_scan_sha256": "cb8172307dec2b6a9718bdffe752710e9e232dc791f6e536adcfd12db311b079",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-018d.jpg",
+    "bytes": 114297,
+    "sha256": "20078f62299c70e14371a6112b6e07863424ae56de82b641d5c9ca968e9273f5",
+    "width": 1600,
+    "height": 434,
+    "format": "jpg"
+  }
+}

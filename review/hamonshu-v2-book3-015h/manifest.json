@@ -1,0 +1,49 @@
+{
+  "id": "hamonshu_3-015h",
+  "scan": 15,
+  "note": "Smaller middle right dark spiral disk. Neighboring forms are masked out.",
+  "box_pixels": [
+    3688,
+    2807,
+    4117,
+    3192
+  ],
+  "polygon_normalized": [
+    [
+      610,
+      555
+    ],
+    [
+      681,
+      555
+    ],
+    [
+      681,
+      631
+    ],
+    [
+      626,
+      631
+    ],
+    [
+      610,
+      608
+    ]
+  ],
+  "size": [
+    429,
+    385
+  ],
+  "mode": "RGBA",
+  "pixel_sha256": "c259c11da5894984c62961b07dcf9c012e75575553addd93c607f85b529b8b94",
+  "sha256": "3b019c2031fe61ea0799e680ee4f269c3855ed140c4683635acaa3fe6f4c2627",
+  "source_scan_sha256": "e73e94dc79bc8470b42b385c9cebcb9084be955d5551f6ca8c76c65031d4be20",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-015h.jpg",
+    "bytes": 37341,
+    "sha256": "f7c74a565801577f9b61b7a1cd664089a85516e9d4a605869063c6d50ad7f2e5",
+    "width": 429,
+    "height": 385,
+    "format": "jpg"
+  }
+}

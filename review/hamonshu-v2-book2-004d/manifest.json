@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-004d",
+  "scan": 4,
+  "note": "Upper right vertical repeat, kept as one graphic pattern.",
+  "box_pixels": [
+    3170,
+    1126,
+    5742,
+    3548
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2572,
+    2422
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "c898cffde755d373ef45e602f71240d92f5adcd9fed5d8195daaa5dddc1ffff9",
+  "sha256": "2e8e0afad95a2f5ced9e81f7b08923567b0523f0b0ffeae08f44741d033fc14a",
+  "source_scan_sha256": "4433d20dfefe8dff701469ed20550e407b46e01908cf749e6ecd25e42a8cbb95",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-004d.jpg",
+    "bytes": 316451,
+    "sha256": "08d902821315bde666b19c521d19a1e5469e96d455bcfa75af822e804be8d046",
+    "width": 1600,
+    "height": 1507,
+    "format": "jpg"
+  }
+}

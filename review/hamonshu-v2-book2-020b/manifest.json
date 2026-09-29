@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-020b",
+  "scan": 20,
+  "note": "Lower left dense flowing lines.",
+  "box_pixels": [
+    283,
+    3171,
+    2804,
+    4588
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2521,
+    1417
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "f8af4ceafed54c6200d56913ff1b999a813279f170e021d2b8bf50c40da2e092",
+  "sha256": "266cd7b6476f46aa822f2939f49408ea8d89b1c4218dad7a5b5483f0b5e86062",
+  "source_scan_sha256": "64bb9859b661c8df2bb8f4849cd62aca687f948c987a9628423bfd7c728420d7",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-020b.jpg",
+    "bytes": 342704,
+    "sha256": "c2e4d79c7550e2185e565dada029309d76fcbd6d8d7b3a0a3f75699acfc48dbb",
+    "width": 1600,
+    "height": 899,
+    "format": "jpg"
+  }
+}

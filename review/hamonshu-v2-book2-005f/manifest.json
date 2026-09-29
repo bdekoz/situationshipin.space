@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-005f",
+  "scan": 5,
+  "note": "Lower right dense water field; the vertical line belongs to the original layout.",
+  "box_pixels": [
+    3154,
+    3583,
+    5703,
+    4603
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2549,
+    1020
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "776e40431e0f9d103353ad44fcf436ff0f06186cc383a29c23c85fcc86666d1f",
+  "sha256": "ae832322b1f7ee0ed41f5511494a861230ebe173727be24040699f591525d78b",
+  "source_scan_sha256": "3d9b42f385d8a6710556fa79c8c25e1f1e9d22d19c6796af0c29257d8c641012",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-005f.jpg",
+    "bytes": 333377,
+    "sha256": "498ba222308188da131ebc911bb2081eb3a27e818999a49626e2c0bb88d601fb",
+    "width": 1600,
+    "height": 640,
+    "format": "jpg"
+  }
+}

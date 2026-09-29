@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-014d",
+  "scan": 14,
+  "note": "Small lower left paired-crest ornament.",
+  "box_pixels": [
+    641,
+    3802,
+    1203,
+    4381
+  ],
+  "polygon_normalized": null,
+  "size": [
+    562,
+    579
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "9cb2802b5f4216f77abd00ee3d8bb402e6a8591124589d2554e045065cb047e5",
+  "sha256": "ea9d3e5d8e7f3bfcce0848c961e30ff82027ddf41a7ddd330f2f897ec734348c",
+  "source_scan_sha256": "316b10a37cb8a2c8affae6496f1bf391dcfb8a42daef23ac9637abf414154e61",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-014d.jpg",
+    "bytes": 62523,
+    "sha256": "475b3dce6a078ad3f10b840fd660b700aae18f2ed2665382c3fc7a853db8e0b6",
+    "width": 562,
+    "height": 579,
+    "format": "jpg"
+  }
+}

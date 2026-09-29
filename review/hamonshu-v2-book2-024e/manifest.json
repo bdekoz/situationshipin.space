@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-024e",
+  "scan": 24,
+  "note": "Lower right breaking-wave group and spray.",
+  "box_pixels": [
+    3100,
+    3308,
+    5141,
+    4286
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2041,
+    978
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "cf17aeaa845acaf2ec3b4d78d03fe236795d7cb03e35317770a35b091a5be497",
+  "sha256": "7b5a9e93d3ca990abd6628e2323f9699cc919c7491ffc97ea66c08c342b951b8",
+  "source_scan_sha256": "8351d4cbd98ec14a5bb16158b3e4726434748ed0d59cc0ed694e1e80c1a522f2",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-024e.jpg",
+    "bytes": 189497,
+    "sha256": "46fc44ae9ba11ed14f945b492245ccd22b0c4c8ae014ce8ec73d2a1779b83d17",
+    "width": 1600,
+    "height": 767,
+    "format": "jpg"
+  }
+}

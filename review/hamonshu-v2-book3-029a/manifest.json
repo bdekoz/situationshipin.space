@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-029a",
+  "scan": 29,
+  "note": "Upper back-cover spiral group.",
+  "box_pixels": [
+    381,
+    633,
+    1717,
+    1955
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1336,
+    1322
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "23ca113e1838f00430a7e0354fda45d6ce4091341d3b15c41a94533451a0c4a1",
+  "sha256": "cd676b86b2a1b089a63fb96ee0ab097a2f06707841e5a051ebb3c2b5c2942cb7",
+  "source_scan_sha256": "809cdd6dd86678c190c2e2ac917664a29803f48464ee78f3c64c47903391a638",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-029a.jpg",
+    "bytes": 292270,
+    "sha256": "f5b32717f1e11ae7f2593ec31e93d6950a83adcf13ea1200c88920ad67a8a0d7",
+    "width": 1336,
+    "height": 1322,
+    "format": "jpg"
+  }
+}

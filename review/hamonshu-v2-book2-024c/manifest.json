@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-024c",
+  "scan": 24,
+  "note": "Upper right water composition around a rock; the rock is retained as part of the scene.",
+  "box_pixels": [
+    3075,
+    1336,
+    5615,
+    2072
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2540,
+    736
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "8cd03fd86b9451ba2fc0ed90ca9fd7c7233d3cf198d5f3a44afa2ded2c099ee6",
+  "sha256": "bbe91cbbda8e478794248dcaeccd7878326683251347ebe76422b54f4500aaee",
+  "source_scan_sha256": "8351d4cbd98ec14a5bb16158b3e4726434748ed0d59cc0ed694e1e80c1a522f2",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-024c.jpg",
+    "bytes": 170024,
+    "sha256": "35814d53e3277c07905c0ee008d188c5cb6ccf7f54be23b0b0cd27673b99b858",
+    "width": 1600,
+    "height": 464,
+    "format": "jpg"
+  }
+}

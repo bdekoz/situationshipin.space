@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-018a",
+  "scan": 18,
+  "note": "Upper left broken-stroke water field.",
+  "box_pixels": [
+    342,
+    1013,
+    2769,
+    1845
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2427,
+    832
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "f76847ac418796b5749f6151eeb2a8ccd19a30893eb1a014ef42985807aab0c5",
+  "sha256": "64f4229e4e87a69c8a9e67aa529513483963503058ae7bff2417d5dd5a12380f",
+  "source_scan_sha256": "fc480ac314e798a5d97a3eb9956cdb4afb2a232221c79ea3f003d0d5151475c6",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-018a.jpg",
+    "bytes": 220787,
+    "sha256": "e3ccf245b3833d04d885d3ca613df34243d4d8c4e0d6ecb14d91cd1785a6227c",
+    "width": 1600,
+    "height": 548,
+    "format": "jpg"
+  }
+}

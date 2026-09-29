@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-011e",
+  "scan": 11,
+  "note": "Top right strip of the spiral current field.",
+  "box_pixels": [
+    3063,
+    985,
+    5577,
+    1427
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2514,
+    442
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "62f5af0d2cce888de7ab41e521424ce1063e17da5c357c2fd23fbc76f2fabad3",
+  "sha256": "e0ef8c56cc03c8f59a82d1aeabf869d9fd121d29d449ba1d649ff13ba21e0da5",
+  "source_scan_sha256": "1a7d038ecb225341874705462421d42279971be1e269a0cb2cb32e931f4b53d7",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-011e.jpg",
+    "bytes": 117865,
+    "sha256": "900a53b9689440502dfc9e8edb1e6fb3dd9d727964ca47ec971a5ff5ac4cce28",
+    "width": 1600,
+    "height": 281,
+    "format": "jpg"
+  }
+}

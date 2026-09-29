@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-016d",
+  "scan": 16,
+  "note": "Small lower left spiral medallion.",
+  "box_pixels": [
+    556,
+    3076,
+    1088,
+    3565
+  ],
+  "polygon_normalized": null,
+  "size": [
+    532,
+    489
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "5686d3f59bce5c27488200ffe84399381351358be983580eb164e4df8b3806f2",
+  "sha256": "95f305617a8d94580c0b327a7ec6899842eb483843eeb892949b9f81e904c8bc",
+  "source_scan_sha256": "552a7f6c709af404b6debd9adab5affd447c786253463e2aad02cbee20a25127",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-016d.jpg",
+    "bytes": 52686,
+    "sha256": "eb6dbad84fdd0369ade6153630485ebb57ccb61ed7d80486c9322d85e6895024",
+    "width": 532,
+    "height": 489,
+    "format": "jpg"
+  }
+}

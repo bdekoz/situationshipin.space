@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-009d",
+  "scan": 9,
+  "note": "Lower right sweeping current composition.",
+  "box_pixels": [
+    3118,
+    2618,
+    5636,
+    4623
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2518,
+    2005
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "b783914f15612c0e84f21703302fa60097b4f01d6b343292a18bc593abe54677",
+  "sha256": "95d377137901980e7e4ac6b9ec3356930e807b7a538041b26cef3bb82dd2b16f",
+  "source_scan_sha256": "132faefe88c56645a8c401b7fe13863c7f38ec44282f7b15c23b75c7b80a7dcc",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-009d.jpg",
+    "bytes": 222289,
+    "sha256": "c39d98e2d47d1b5c937cacb5eda5a6fdca4e1b2aafd2f8438c61a63740a4cc36",
+    "width": 1600,
+    "height": 1274,
+    "format": "jpg"
+  }
+}

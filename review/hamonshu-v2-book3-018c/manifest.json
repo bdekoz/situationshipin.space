@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-018c",
+  "scan": 18,
+  "note": "Middle left long rippling current.",
+  "box_pixels": [
+    403,
+    2362,
+    2670,
+    3095
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2267,
+    733
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "9032aab75248d4e4d952f088408063a75b002d9427dc333880c39a6627fa742d",
+  "sha256": "bafba565bb8534ad3bd40599c5b7cb8aaf536fc09df84cae884356aa6ea8d0e2",
+  "source_scan_sha256": "cb8172307dec2b6a9718bdffe752710e9e232dc791f6e536adcfd12db311b079",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-018c.jpg",
+    "bytes": 90223,
+    "sha256": "2c921bd7e2d6709198892102ef4c9965a7c06a56e49e747ba667d82bd3da3f18",
+    "width": 1600,
+    "height": 517,
+    "format": "jpg"
+  }
+}

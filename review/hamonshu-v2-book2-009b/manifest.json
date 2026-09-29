@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-009b",
+  "scan": 9,
+  "note": "Lower left breaking-wave composition.",
+  "box_pixels": [
+    312,
+    2286,
+    2830,
+    4573
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2518,
+    2287
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "d30d484350e9e1b1479f3e3246cf93d49b3e30f18e7fe68de541c6fa10598d1f",
+  "sha256": "ee249b008a65ad3b2892f1da8532f7f32df39747d97048dc2e3a6790c4867416",
+  "source_scan_sha256": "132faefe88c56645a8c401b7fe13863c7f38ec44282f7b15c23b75c7b80a7dcc",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-009b.jpg",
+    "bytes": 415855,
+    "sha256": "75796af20bf90f5c31878da8202d35785d31b1e7dbbc5cd36265989926d49af7",
+    "width": 1600,
+    "height": 1453,
+    "format": "jpg"
+  }
+}

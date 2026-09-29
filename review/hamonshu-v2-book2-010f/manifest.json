@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-010f",
+  "scan": 10,
+  "note": "Lower right long current ribbon.",
+  "box_pixels": [
+    3148,
+    3482,
+    5697,
+    4271
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2549,
+    789
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "943018cf074f5c80f981ca4f854a8a5437ad61f4bbcc0b23e0000723b2a94b4d",
+  "sha256": "22391f710175f57e3dec65c7a946cb19e115080a142ed293d8e1c03c9cbf569b",
+  "source_scan_sha256": "2764d161b0cf9cc1bfeddda95e6bc15628268d1405eefd305931216c4d5d3294",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-010f.jpg",
+    "bytes": 92611,
+    "sha256": "0c2bbbc03866c03c645c83401d4f1be059a15695180a0be0ea80ae16c46f9b3d",
+    "width": 1600,
+    "height": 495,
+    "format": "jpg"
+  }
+}

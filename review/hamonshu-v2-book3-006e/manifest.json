@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-006e",
+  "scan": 6,
+  "note": "Lower right dark-tipped crest field.",
+  "box_pixels": [
+    3133,
+    3095,
+    5652,
+    4558
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2519,
+    1463
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "48965059f085f1e2578acb2afe648286818a254fcc3f1f3216768635eddd24fb",
+  "sha256": "491964cd81deec78e8d9d78000a5651f26f70b438d46163297307ca606670b59",
+  "source_scan_sha256": "ce469dbfccb54e7ec4b121925b73ed0c7d01d787085b688a2c313e0b73a9faf8",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-006e.jpg",
+    "bytes": 178019,
+    "sha256": "13c9a02501bb2452a4e5d3fcfaa81327aac0f611468e0f5d56aa20e30a93500e",
+    "width": 1600,
+    "height": 929,
+    "format": "jpg"
+  }
+}

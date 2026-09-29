@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-009d",
+  "scan": 9,
+  "note": "Lower right breaking waves and spray.",
+  "box_pixels": [
+    3114,
+    3126,
+    5605,
+    4679
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2491,
+    1553
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "6d0c375b1f484f65ee1bd878be0e903f057af9dd8a6ff5aa3ffae87412cbd4f6",
+  "sha256": "28117a0790109d3f4757d526ecfb2149a7b33197638fb3209cc41c11570f88b8",
+  "source_scan_sha256": "ee869b167fbfbd7cd565af24b9b1cc45fc0f4f120b3c737f3fd9da523687de53",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-009d.jpg",
+    "bytes": 235099,
+    "sha256": "acf640e70c80fb896ceaf8a2980c2186f3f9864e51bdd7b2593eaeb124559993",
+    "width": 1600,
+    "height": 998,
+    "format": "jpg"
+  }
+}

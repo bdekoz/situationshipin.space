@@ -1,0 +1,53 @@
+{
+  "id": "hamonshu_3-027b",
+  "scan": 27,
+  "note": "Front scroll water composition with its paper roll; writing, the rear scroll, and surrounding objects are excluded.",
+  "box_pixels": [
+    3151,
+    2000,
+    5465,
+    3955
+  ],
+  "polygon_normalized": [
+    [
+      914,
+      398
+    ],
+    [
+      914,
+      555
+    ],
+    [
+      702,
+      787
+    ],
+    [
+      527,
+      697
+    ],
+    [
+      530,
+      657
+    ],
+    [
+      580,
+      672
+    ]
+  ],
+  "size": [
+    2314,
+    1955
+  ],
+  "mode": "RGBA",
+  "pixel_sha256": "86bdd170fb794e5b2baeecd5557a26a7ec0755adb673022975282b0efb5b39f5",
+  "sha256": "f1fb2eb25f01ec02b9ca1b17e58df9bd2a969876d7c086c0ed7ef114a0a4b86c",
+  "source_scan_sha256": "3812fd1822d8c76d57eeafbdbfcf4fe3f9c2ae558ecc16b992d916f639ccba8b",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-027b.jpg",
+    "bytes": 194836,
+    "sha256": "30e94a44980d2a06899edfeab92ceb091a45b4dadd2585cb38a247b72ffc754f",
+    "width": 1600,
+    "height": 1352,
+    "format": "jpg"
+  }
+}

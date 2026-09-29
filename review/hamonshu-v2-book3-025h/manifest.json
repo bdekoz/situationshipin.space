@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-025h",
+  "scan": 25,
+  "note": "Lower right repeated diagonal curling crests.",
+  "box_pixels": [
+    2980,
+    3754,
+    5474,
+    4613
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2494,
+    859
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "38604fb74e3cd9aa554030b95e11fc71e3ffcd9f035a51b00503289b8db6535b",
+  "sha256": "ac3ada26a78f5b293ac530b8d13ea9f64bad5cbeb883dc4e27a29be1981e7924",
+  "source_scan_sha256": "41ab90ecb89c757f53c93f3ff85d5d90e6e440fa8a35b7b77cbeda6058a81b12",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-025h.jpg",
+    "bytes": 216623,
+    "sha256": "eabd62c4a3d9f272f811cd1c8910cf9028ed91ce1fb2370005e0558a0b37223a",
+    "width": 1600,
+    "height": 551,
+    "format": "jpg"
+  }
+}

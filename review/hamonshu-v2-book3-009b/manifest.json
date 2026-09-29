@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-009b",
+  "scan": 9,
+  "note": "Lower left large curling wave and spray.",
+  "box_pixels": [
+    278,
+    2778,
+    2787,
+    4674
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2509,
+    1896
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "78594b366bec1af4e9d769d8f59f1c2f51cdddbb2a5a6cca37f8544faac88047",
+  "sha256": "3159c940f98e886d6b9df492e0df393edb2b0f02b68ac9fa873008bfe8b9100b",
+  "source_scan_sha256": "ee869b167fbfbd7cd565af24b9b1cc45fc0f4f120b3c737f3fd9da523687de53",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-009b.jpg",
+    "bytes": 290327,
+    "sha256": "2154855a41ac633638e2ce11701bcdfb36bdbd05b15ee94d91e71f2ffe969e7f",
+    "width": 1600,
+    "height": 1209,
+    "format": "jpg"
+  }
+}

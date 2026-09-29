@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-002a",
+  "scan": 2,
+  "note": "Left framed water composition; marginal writing and the blank facing page are excluded.",
+  "box_pixels": [
+    389,
+    1382,
+    2766,
+    4160
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2377,
+    2778
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "0b2dce002e201cff04101095e91d89078865a5777c15598837de9ec04b407eca",
+  "sha256": "2450946e01ad419145c816de0ce60a53fc2b843d95248580125236c7c9134f63",
+  "source_scan_sha256": "ae113148728a8fbe851bca1921c1e214bd87af93d38096098fbd4be1a4bc3090",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-002a.jpg",
+    "bytes": 375053,
+    "sha256": "3dd4f33b8a305e1c2d97fbea2f333aeb8ef43bab4e8dca9e4ef9e1a149d0fd23",
+    "width": 1369,
+    "height": 1600,
+    "format": "jpg"
+  }
+}

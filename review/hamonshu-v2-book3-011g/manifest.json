@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-011g",
+  "scan": 11,
+  "note": "Lower right spiral and angular-current field.",
+  "box_pixels": [
+    3063,
+    3186,
+    5577,
+    4663
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2514,
+    1477
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "46baf4ee04a338438cb13f4842387d69ebefb8f9c603a14dc473a80434da30e5",
+  "sha256": "d6a0f4b21e7ce1942de7feff30ec24fff112f97f73fa709fa80494a905d5f05b",
+  "source_scan_sha256": "1a7d038ecb225341874705462421d42279971be1e269a0cb2cb32e931f4b53d7",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-011g.jpg",
+    "bytes": 408925,
+    "sha256": "d6a20025240e4e929e0c0e487d8d93918fae42c0c6d5ec23af432e10d832207e",
+    "width": 1600,
+    "height": 940,
+    "format": "jpg"
+  }
+}

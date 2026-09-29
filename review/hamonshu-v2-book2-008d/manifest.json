@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-008d",
+  "scan": 8,
+  "note": "Small left circular foam form.",
+  "box_pixels": [
+    1846,
+    2197,
+    2531,
+    2867
+  ],
+  "polygon_normalized": null,
+  "size": [
+    685,
+    670
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "c7c702b499a277df8cc3c1e0637fb34ef5e728abd0d7b067f8e1c42dc34b9a10",
+  "sha256": "6ebac25cf3c18675799c0340f6fbda1a76279216a8179d807e21cdbaadb3fde6",
+  "source_scan_sha256": "3766cad12bf43c9d25352f7282ee0e09cb3387bcae3637aec9e9222e0e97b17b",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-008d.jpg",
+    "bytes": 71938,
+    "sha256": "f2641e4f9bb647049385712bee470319b2ad26545af44ae6cefbbb9555e99264",
+    "width": 685,
+    "height": 670,
+    "format": "jpg"
+  }
+}

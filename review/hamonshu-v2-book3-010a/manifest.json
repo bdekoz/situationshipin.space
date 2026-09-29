@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-010a",
+  "scan": 10,
+  "note": "Left continuous spiral-filled current with linked open curls below.",
+  "box_pixels": [
+    278,
+    985,
+    2787,
+    4467
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2509,
+    3482
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "f87901234f33c828b2e894a19aad606e2e171f1812b57ee8981d86023ffda86c",
+  "sha256": "be2f729297fc89ea2e36fa108f83f6157d2d7fa74c864d8c005a4be0f091a6cc",
+  "source_scan_sha256": "f6e19bfacf2b714516bd20cdf1aea2cf11a3a24da39c96d0a23b48fc204ab50f",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-010a.jpg",
+    "bytes": 438547,
+    "sha256": "b9f113f5e98192da622f5a2c641ac8565d4a8e346bcba114a4bc59ac62ac19b2",
+    "width": 1153,
+    "height": 1600,
+    "format": "jpg"
+  }
+}

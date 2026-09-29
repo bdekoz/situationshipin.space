@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-019d",
+  "scan": 19,
+  "note": "Lower middle stacked pointed wave forms.",
+  "box_pixels": [
+    1571,
+    3047,
+    2554,
+    3995
+  ],
+  "polygon_normalized": null,
+  "size": [
+    983,
+    948
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "f85f8aa9353cc0ba42f163960b17ff6d886337fc6b7520acab6439caa95bdcef",
+  "sha256": "985cb5421d160428b0306f0bd9f7e091e4eb47244028869c12d83d155e028e46",
+  "source_scan_sha256": "3005580cde005ab7ad426eb02f07bf6d20e4916210eafe589911509446bdcd03",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-019d.jpg",
+    "bytes": 182241,
+    "sha256": "ca29e3b1654bb858079a6a2835cbf8524ad48e893a9ebb23bc3b0f8c3ae00c0d",
+    "width": 983,
+    "height": 948,
+    "format": "jpg"
+  }
+}

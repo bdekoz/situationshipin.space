@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-003e",
+  "scan": 3,
+  "note": "Middle right shaded crests with spray.",
+  "box_pixels": [
+    3217,
+    1956,
+    5730,
+    2607
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2513,
+    651
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "5c48a541e4329f9a3f9591ba0591806062c495e4bad12c7afc29ca42ed63ad65",
+  "sha256": "3007f5929b0d0b98af848f79b65be4d81a9a4bc394e71a40df5d716565e058c6",
+  "source_scan_sha256": "978c2c3dab2a4919ed911cb734a326e492798778f51d2dccd25498bd74747627",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-003e.jpg",
+    "bytes": 100306,
+    "sha256": "ba3d4735147134af6b1ed20e2834e187bd002ef64e28f522bbc9352376ef080b",
+    "width": 1600,
+    "height": 414,
+    "format": "jpg"
+  }
+}

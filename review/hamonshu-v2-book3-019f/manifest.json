@@ -1,0 +1,61 @@
+{
+  "id": "hamonshu_3-019f",
+  "scan": 19,
+  "note": "Middle right three long curling crests. Neighboring forms are masked out.",
+  "box_pixels": [
+    3082,
+    1982,
+    4899,
+    2630
+  ],
+  "polygon_normalized": [
+    [
+      514,
+      389
+    ],
+    [
+      577,
+      389
+    ],
+    [
+      577,
+      420
+    ],
+    [
+      640,
+      420
+    ],
+    [
+      640,
+      439
+    ],
+    [
+      817,
+      439
+    ],
+    [
+      817,
+      516
+    ],
+    [
+      514,
+      516
+    ]
+  ],
+  "size": [
+    1817,
+    648
+  ],
+  "mode": "RGBA",
+  "pixel_sha256": "69aa5c3624c8d7b8bcdbe81d1de0354acc39d453adb60a26d8c2b27294f795ea",
+  "sha256": "171c39f88c1d27210b9c477db3cbb7661f2a4d2a93cf6285281bc9a62b783fb9",
+  "source_scan_sha256": "3005580cde005ab7ad426eb02f07bf6d20e4916210eafe589911509446bdcd03",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-019f.jpg",
+    "bytes": 98797,
+    "sha256": "f2ccdc4d2f1676429f5ab8bfaf26bd2f1c1373b57d570e1e26f4a4e0f1c5a5d4",
+    "width": 1600,
+    "height": 571,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-022d",
+  "scan": 22,
+  "note": "Lower left foam outline and bubble field.",
+  "box_pixels": [
+    251,
+    3608,
+    2750,
+    4688
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2499,
+    1080
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "b57f29affba1c835a66161625bc80a6fac74c4c1872e72279f91d924daae36c0",
+  "sha256": "32c0c87967d98b585906d87bec4b97f876f6c20e0d566f3a81a78b7fb3a188ce",
+  "source_scan_sha256": "9f7a0da4e66d5e2642e5a72a1bbf0e70f63dc2850cac880dca1ae4692e588681",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-022d.jpg",
+    "bytes": 117848,
+    "sha256": "b7b841f3852bbe85daaca3d064588275234840a5cd98cfddcb5de4f7972fddbd",
+    "width": 1600,
+    "height": 691,
+    "format": "jpg"
+  }
+}

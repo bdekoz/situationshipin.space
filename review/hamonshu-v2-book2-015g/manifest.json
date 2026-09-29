@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-015g",
+  "scan": 15,
+  "note": "Middle right rising-water scroll.",
+  "box_pixels": [
+    3175,
+    2627,
+    4799,
+    3277
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1624,
+    650
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "7f0f86c501f749d4a5548416e76b9b1880b0a848125d2696a54d8325812e9089",
+  "sha256": "b0e692bd282eaa4fb6faafe37c8e9674a53ae68ae581810e1fc5d00911d4189d",
+  "source_scan_sha256": "a32f3012966f0111139d4e9c7300b0f837b85506feaa73fa015e8842bf1b3ed5",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-015g.jpg",
+    "bytes": 162125,
+    "sha256": "4db0f8a894970b917b691209bceeb250ae7d8ab80ad3b42e41006f2752ff8318",
+    "width": 1600,
+    "height": 640,
+    "format": "jpg"
+  }
+}

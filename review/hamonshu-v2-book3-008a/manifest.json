@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-008a",
+  "scan": 8,
+  "note": "Upper left meandering current and island group.",
+  "box_pixels": [
+    270,
+    1139,
+    2680,
+    2728
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2410,
+    1589
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "12c44b5fd7215a99c02fbb1f6594a288f9e9bfd32309f4d33965a8b01c5ad40e",
+  "sha256": "5f4c07b75cf0943b835190dfb6a65ea45ba076ae066915fe495394ea6a7aa386",
+  "source_scan_sha256": "fc9f980b7da52452ea85c46618aa64a39a01c844e4d0e5cfee58f26033e303ea",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-008a.jpg",
+    "bytes": 194617,
+    "sha256": "4dbbe73822aaefb51ac4be9014a21073d4a0bd275f52b7626b02ab35f7da83ba",
+    "width": 1600,
+    "height": 1055,
+    "format": "jpg"
+  }
+}

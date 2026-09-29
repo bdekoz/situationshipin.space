@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-018f",
+  "scan": 18,
+  "note": "Middle right sharply turning current.",
+  "box_pixels": [
+    3049,
+    2661,
+    4991,
+    3222
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1942,
+    561
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "92f20e4ba5e66cf87ecb084c69c95f24ec183a1354433f7fb71f271301a18460",
+  "sha256": "89235ff5c6292c587e270c5eff18d2fe3a5e77753861e70545c2eb4292cba3b9",
+  "source_scan_sha256": "cb8172307dec2b6a9718bdffe752710e9e232dc791f6e536adcfd12db311b079",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-018f.jpg",
+    "bytes": 85225,
+    "sha256": "16d46fc7c4b761d6baa120269654e9e4ae5ecb29c4110af20fb9ca75b925065a",
+    "width": 1600,
+    "height": 462,
+    "format": "jpg"
+  }
+}

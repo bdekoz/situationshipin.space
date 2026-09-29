@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-017a",
+  "scan": 17,
+  "note": "Upper left open current with bubbles.",
+  "box_pixels": [
+    265,
+    1181,
+    2766,
+    1894
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2501,
+    713
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "7f7287237614019533b1df05c8d63d41d73e960a31cd4ada02ea3a2ffee95ef2",
+  "sha256": "23e65008c0dee4bccb13ad1c6b84e6557df50c14a9ca95590137acbbe320e679",
+  "source_scan_sha256": "032cd565a1df68d1d5c8b9cfed52534edf596f6277ae2428652ff81eb2e4b85f",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-017a.jpg",
+    "bytes": 77898,
+    "sha256": "0fa1c1f896b7fed518f7c7ef40319f6d439ec3852d024dfde778fdc31ab0c8df",
+    "width": 1600,
+    "height": 456,
+    "format": "jpg"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "id": "hamonshu_2-025b",
+  "scan": 25,
+  "note": "Lower broad current ribbon crosses the gutter; mask excludes the upper pattern.",
+  "box_pixels": [
+    392,
+    3050,
+    5596,
+    4249
+  ],
+  "polygon_normalized": [
+    [
+      64,
+      603
+    ],
+    [
+      449,
+      603
+    ],
+    [
+      449,
+      659
+    ],
+    [
+      539,
+      659
+    ],
+    [
+      539,
+      714
+    ],
+    [
+      913,
+      714
+    ],
+    [
+      913,
+      840
+    ],
+    [
+      64,
+      840
+    ]
+  ],
+  "size": [
+    5204,
+    1199
+  ],
+  "mode": "RGBA",
+  "pixel_sha256": "0146c91b677350faa11e69a8d8412372a7d6c1e93ebdb9812f1f0bd3900cc52a",
+  "sha256": "400231d27af4dead6241a8517707760f631f588b5a73f69fcd0f18b3ed9116b0",
+  "source_scan_sha256": "e35c11896828169b88a56210fe851de9ecfc38d4d08b14de026f091fd21682eb",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-025b.jpg",
+    "bytes": 83419,
+    "sha256": "84b1a2bbb6d61d1b66e0e36ca32d05b5412d29074e273b9d2050f1ce255ba4ad",
+    "width": 1600,
+    "height": 369,
+    "format": "jpg"
+  }
+}

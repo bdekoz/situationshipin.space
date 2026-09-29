@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-012b",
+  "scan": 12,
+  "note": "Middle left rimmed curl disk.",
+  "box_pixels": [
+    660,
+    2757,
+    1571,
+    3642
+  ],
+  "polygon_normalized": null,
+  "size": [
+    911,
+    885
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "bd2523719e4c6c35264855730df5119ef4e883d95815e82343aa23d9d2ba3628",
+  "sha256": "650e94034ae61c915157e40303eed3c94a2c264e49ecb057a4a4b1d3fefd8035",
+  "source_scan_sha256": "a36a2a9254c02fe0f0bf3588c19e7adc54d751b5deedd7925f2fba6e1f27a812",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-012b.jpg",
+    "bytes": 113204,
+    "sha256": "4d9c3fe3997988de9e9b71708952a97dd7d88a8dc2aa73a683d0c32b88b0e0e4",
+    "width": 911,
+    "height": 885,
+    "format": "jpg"
+  }
+}

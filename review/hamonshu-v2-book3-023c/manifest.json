@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-023c",
+  "scan": 23,
+  "note": "Upper right tall central crest and flanking waves.",
+  "box_pixels": [
+    3000,
+    1148,
+    5514,
+    2504
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2514,
+    1356
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "538c71957d973d5a48ee941972dcb9e04190911540b39d7cd8ece008300b49d2",
+  "sha256": "7b8bbaa9c5db7888a36a72c40f88ab2553e268f230ac2deff745ed2a635a6849",
+  "source_scan_sha256": "d25cf1f98ade37e11e5de6e21abe8548f5c9ff33414a553f67b6eafc9050ddcd",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-023c.jpg",
+    "bytes": 265152,
+    "sha256": "9f6c7170f0daefa31b406107b49873eada2d9c048f4af8ced79f0ab23f5c6761",
+    "width": 1600,
+    "height": 863,
+    "format": "jpg"
+  }
+}

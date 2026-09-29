@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-019b",
+  "scan": 19,
+  "note": "Lower left layered wave field.",
+  "box_pixels": [
+    281,
+    2566,
+    2788,
+    4452
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2507,
+    1886
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "d1043d1fa6f0e591fd44b4e26ad13992dd286d1ee8d044574d61df89087b0b28",
+  "sha256": "b2a74c9a04dabaf2826ebf5923fe97e31bad5bf8654dc97b7f5dc3aeefba2d86",
+  "source_scan_sha256": "1b9898a958e7c3feae03c653967646611e8985911ca738bd03b2e0b1e2c160be",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-019b.jpg",
+    "bytes": 434088,
+    "sha256": "5af389bd8f034b1dcff10acea28700d98ecf0773b80d5b891f5b4f2d10147b15",
+    "width": 1600,
+    "height": 1204,
+    "format": "jpg"
+  }
+}

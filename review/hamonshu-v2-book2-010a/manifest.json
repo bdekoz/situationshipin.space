@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-010a",
+  "scan": 10,
+  "note": "Upper left fine-line wave band.",
+  "box_pixels": [
+    312,
+    1327,
+    2818,
+    1869
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2506,
+    542
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "844f37d5f79e4f673324b46cc973a931e701f11290fc269687094ad85db8bcf9",
+  "sha256": "45b96876f79787550ccd16a64f7c13cb0d522e40bea5fdb3fa11da2c9d0a7a21",
+  "source_scan_sha256": "2764d161b0cf9cc1bfeddda95e6bc15628268d1405eefd305931216c4d5d3294",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-010a.jpg",
+    "bytes": 97263,
+    "sha256": "b7a0305bd4c45e224ba3cc1aee330840a8dd7c08ebd23a4d7170ba0d82b8590d",
+    "width": 1600,
+    "height": 346,
+    "format": "jpg"
+  }
+}

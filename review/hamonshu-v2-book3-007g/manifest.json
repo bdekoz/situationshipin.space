@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-007g",
+  "scan": 7,
+  "note": "Lower right rippling pool group.",
+  "box_pixels": [
+    3171,
+    3660,
+    5414,
+    4255
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2243,
+    595
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "059633dc2164ca0a03d1ee42e11240a9ca53bdfe650c75711a00180dadac5ab6",
+  "sha256": "5da6f75fc2361a7bbddba07a44072f4c0f71510cb388b30d0fb5a7ff498dc637",
+  "source_scan_sha256": "5fc2694d8dd62736fd42d388515f47269ffa71c5b6dd4df2d7e81eed4ce2525e",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-007g.jpg",
+    "bytes": 170757,
+    "sha256": "3bff2bb179ebd304a78cfd67bb67ea7a759d09626e2970758fef9187cd18cd81",
+    "width": 1600,
+    "height": 424,
+    "format": "jpg"
+  }
+}

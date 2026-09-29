@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-024c",
+  "scan": 24,
+  "note": "Upper right repeated fine crest bands.",
+  "box_pixels": [
+    3016,
+    1331,
+    5157,
+    2602
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2141,
+    1271
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "c24d372382d7b8145b609298e227cef10124460a46a5ecd216ea11c9135f0938",
+  "sha256": "ac6ef5dae7bdacb9bc55f09b70a27bd039710c0b7fe93a656cba4853a0fd380d",
+  "source_scan_sha256": "5a7ef7d9b56fb9523b278762a0ebb84e39c2f94504897c6f59a83e98356391d1",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-024c.jpg",
+    "bytes": 357062,
+    "sha256": "298217acd48457103bf6ee6de5b3d0862331090f2fcc0091521c30f6df4541b1",
+    "width": 1600,
+    "height": 950,
+    "format": "jpg"
+  }
+}

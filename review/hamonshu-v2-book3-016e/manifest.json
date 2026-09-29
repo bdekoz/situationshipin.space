@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-016e",
+  "scan": 16,
+  "note": "Bottom left layered crest field.",
+  "box_pixels": [
+    459,
+    3615,
+    2690,
+    4397
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2231,
+    782
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "b8e4dd555cbd5c7d073f89cdc125c8193b7dc97109bf625528893152307f3993",
+  "sha256": "c191e33bc7937853dc3dabbb1592034eb6ab9e854c6b06eaf0d5ca3d0fdcebd4",
+  "source_scan_sha256": "552a7f6c709af404b6debd9adab5affd447c786253463e2aad02cbee20a25127",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-016e.jpg",
+    "bytes": 137905,
+    "sha256": "032d965d335c91b8f818ae810e84e15427f9ddc4b70d8bf1bc0c4ce5136f12aa",
+    "width": 1600,
+    "height": 561,
+    "format": "jpg"
+  }
+}

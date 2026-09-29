@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-013j",
+  "scan": 13,
+  "note": "Bottom right small wave-and-bubble group.",
+  "box_pixels": [
+    4082,
+    3804,
+    5227,
+    4392
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1145,
+    588
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "7bfc78abf6e22cf1fd3f3f3447090bebc96f32a64b81de8d9b6652ffb3c64050",
+  "sha256": "c1cd0418447c6acc8ac56f7836917f98b122e767435c20b790091c93e4595554",
+  "source_scan_sha256": "1e0a8b07cde573dc1f5d61f6f07e83ada42f4d4138151fabd9a37d2ce68f0ae3",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-013j.jpg",
+    "bytes": 61231,
+    "sha256": "0f4eeece20072bb6ffcf393857ee89bebfa3fb8ac69871cb8feeb383fdc5c16e",
+    "width": 1145,
+    "height": 588,
+    "format": "jpg"
+  }
+}

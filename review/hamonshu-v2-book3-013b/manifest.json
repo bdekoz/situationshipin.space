@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-013b",
+  "scan": 13,
+  "note": "Left four angular crest marks.",
+  "box_pixels": [
+    681,
+    1688,
+    1350,
+    2266
+  ],
+  "polygon_normalized": null,
+  "size": [
+    669,
+    578
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "70fa7ba62714ddedaa0100d2f0f622357f7cf53c35c1071135af0d5e426a8326",
+  "sha256": "c84450852b95b0564b68952dec347fe17201ec3401e0b5f4a4179ad7365d045a",
+  "source_scan_sha256": "1e0a8b07cde573dc1f5d61f6f07e83ada42f4d4138151fabd9a37d2ce68f0ae3",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-013b.jpg",
+    "bytes": 55363,
+    "sha256": "9839663638173134458c4b6938cdcf619c7de3b7ab05d258dcab21369967aaed",
+    "width": 669,
+    "height": 578,
+    "format": "jpg"
+  }
+}

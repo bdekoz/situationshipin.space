@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_3-009c",
+  "scan": 9,
+  "note": "Upper right crossed ripple outlines and bubbles.",
+  "box_pixels": [
+    3102,
+    963,
+    5605,
+    2728
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2503,
+    1765
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "3e0815752b0df6929729f8e25c51f5d66ad6413471c64985517f5a11bf369aa7",
+  "sha256": "dc22b8e74c25e36e1f3d4d1f8d70e65e3e0704cbc7638875a2e9be3ae5374bf0",
+  "source_scan_sha256": "ee869b167fbfbd7cd565af24b9b1cc45fc0f4f120b3c737f3fd9da523687de53",
+  "proxy": {
+    "path": "review/hamonshu-v2-book3/images/hamonshu_3-009c.jpg",
+    "bytes": 246872,
+    "sha256": "0905d83cfe726e9d89b6df45fdc245262d4f371d4820e5c2b488e1b605d2651e",
+    "width": 1600,
+    "height": 1128,
+    "format": "jpg"
+  }
+}

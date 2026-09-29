@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-023b",
+  "scan": 23,
+  "note": "Upper right sweeping ribbon.",
+  "box_pixels": [
+    3077,
+    1134,
+    5602,
+    2481
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2525,
+    1347
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "cd3e1f085ac5ab2316b7d17b363b68b1fc88b6e3fce67f5cde8fae75a941b148",
+  "sha256": "d256c48b820838078f09c8f8e3460d38efb769f6603e1f196504e73ae80fbae2",
+  "source_scan_sha256": "fcaabc1c988edd7df308284a9bb682a266e62ed65b4023b141ecead740b016c1",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-023b.jpg",
+    "bytes": 193150,
+    "sha256": "be9d27263e428177d881e02c3942ae68fa554dda44ef8782295ac4f1d38acf08",
+    "width": 1600,
+    "height": 854,
+    "format": "jpg"
+  }
+}

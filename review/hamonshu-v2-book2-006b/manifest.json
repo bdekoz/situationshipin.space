@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-006b",
+  "scan": 6,
+  "note": "Lower left foam field, kept as a coherent composition.",
+  "box_pixels": [
+    311,
+    2507,
+    2829,
+    4603
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2518,
+    2096
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "12625f8ca9129c2eb4fd9db7e246abfeb5f6b40bbe5fa5a8cb89b23b63d7b43a",
+  "sha256": "108b9ec6c860ee4ee5210657cf78a2e413761348ffaa26d24d0259967f1f553c",
+  "source_scan_sha256": "ddc3930133c6ab70c809e5fd7be048872aa932dc06136399cb2ca750d9ca2a07",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-006b.jpg",
+    "bytes": 286449,
+    "sha256": "63d8f19889782b65a7ff89e70af0a34369c19322609e2e863280a48024590d3f",
+    "width": 1600,
+    "height": 1332,
+    "format": "jpg"
+  }
+}

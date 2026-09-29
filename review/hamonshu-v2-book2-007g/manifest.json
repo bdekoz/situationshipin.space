@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-007g",
+  "scan": 7,
+  "note": "Larger right row of solid crests.",
+  "box_pixels": [
+    3313,
+    2501,
+    5245,
+    2854
+  ],
+  "polygon_normalized": null,
+  "size": [
+    1932,
+    353
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "1660b3c3a5a1db03df39969757727f3f313b556ac46041c796313bc68391e4d2",
+  "sha256": "ebc80c05fc7e700cd6fcc0b7024fe3c362345fa4f8c69828862b6a4703208c20",
+  "source_scan_sha256": "2f5903f4ca9a2b1689e8884e02d0e2963b91475cd964cd88cb30fde5f3d43897",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-007g.jpg",
+    "bytes": 66762,
+    "sha256": "32e39187ece5a78150b25dbe11253f511d6bc26e19574e5a0af5c5386bcbf4c4",
+    "width": 1600,
+    "height": 292,
+    "format": "jpg"
+  }
+}

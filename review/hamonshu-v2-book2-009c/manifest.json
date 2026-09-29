@@ -1,0 +1,28 @@
+{
+  "id": "hamonshu_2-009c",
+  "scan": 9,
+  "note": "Upper right outlined wave field.",
+  "box_pixels": [
+    3118,
+    1060,
+    5636,
+    2618
+  ],
+  "polygon_normalized": null,
+  "size": [
+    2518,
+    1558
+  ],
+  "mode": "RGB",
+  "pixel_sha256": "98510ad403ca011d002d83e1aff00743cde1017b9e55e8e2e7fd9dc7331b0ec5",
+  "sha256": "04f3a3eda1d44ba869dea7f93527a9f5e7a628a5752a8a2863e7bd8c41d5783f",
+  "source_scan_sha256": "132faefe88c56645a8c401b7fe13863c7f38ec44282f7b15c23b75c7b80a7dcc",
+  "proxy": {
+    "path": "review/hamonshu-v2-book2/images/hamonshu_2-009c.jpg",
+    "bytes": 211798,
+    "sha256": "ef3f72eed8101dd5146d8403abdcc593024500cd9577bc75173e7d7bb54198e7",
+    "width": 1600,
+    "height": 990,
+    "format": "jpg"
+  }
+}
