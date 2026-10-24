@@ -9,15 +9,23 @@
           "location_id": "frogtown",
           "display_name": "Frogtown",
           "slug": "frogtown",
-          "status": "SCOUTED-KEEP",
+          "status": "SCOUTED-REVISE",
           "route": {
             "points": [
-              { "label": "start", "lat": 34.105547608596765, "lng": -118.24361721594703 },
-              { "label": "next", "lat": 34.10771761395043, "lng": -118.24676789715588 },
-              { "label": "final", "lat": 34.107936983024416, "lng": -118.25265394226766 }
+              { "label": "start", "lat": 34.10503098183518, "lng": -118.24345707893373 },
+              { "label": "point-11", "lat": 34.10558409439261, "lng": -118.24386209249498 },
+              { "label": "point-10", "lat": 34.105992732555784, "lng": -118.24426710605623 },
+              { "label": "point-12", "lat": 34.106428020432865, "lng": -118.24476867914201 },
+              { "label": "point-9", "lat": 34.106847803799006, "lng": -118.24535608291626 },
+              { "label": "point-13", "lat": 34.1072986046245, "lng": -118.2462599873543 },
+              { "label": "next", "lat": 34.10754951318193, "lng": -118.24708342552186 },
+              { "label": "point-14", "lat": 34.10806478938369, "lng": -118.24919700622559 },
+              { "label": "point-15", "lat": 34.108073690490514, "lng": -118.25089216232301 },
+              { "label": "point-16", "lat": 34.10794934593308, "lng": -118.25348854064943 },
+              { "label": "final", "lat": 34.10780713830224, "lng": -118.2552480697632 }
             ],
-            "distance_straight_line_m": 920,
-            "notes": "Three-point Frogtown corridor (GitHub issue bdekoz/situationshipin.space#10, KEEP). Straight-line total 920 m (start→next 377 m, next→final 542 m). At walking pace a 165 s episode covers roughly 165–248 m, so the full three-point route reads as a multi-episode corridor rather than one episode."
+            "distance_straight_line_m": 1208,
+            "notes": "Revised via GitHub issue bdekoz/situationshipin.space#72 (REVISE), superseding the route from #10 (KEEP). Straight-line total 1208 m. Reviewer notes: use this revision. The route_beats_ref describes the earlier Frogtown v2 plan and has not been updated for this revised route."
           },
           "route_beats_ref": "examples/seedance2/here-lies-trouble-episode-01-frogtown.v2.json#location.route_beats"
         },
@@ -25,82 +33,114 @@
           "location_id": "dtla-central-library",
           "display_name": "DTLA — Los Angeles Central Library",
           "slug": "dtla",
-          "status": "SCOUTED-KEEP",
+          "status": "SCOUTED-REVISE",
           "route": {
             "points": [
-              { "label": "point-0", "lat": 34.05038773867568, "lng": -118.25540646757548 },
-              { "label": "point-1", "lat": 34.051211854821624, "lng": -118.25641572274131 },
+              { "label": "point-0", "lat": 34.04959694639191, "lng": -118.25621902942659 },
+              { "label": "point-24", "lat": 34.050190470888914, "lng": -118.25563162565233 },
+              { "label": "point-23", "lat": 34.05049265871342, "lng": -118.25603395700458 },
+              { "label": "point-22", "lat": 34.050766011480576, "lng": -118.25576573610307 },
+              { "label": "point-21", "lat": 34.050994929542966, "lng": -118.25613319873811 },
+              { "label": "point-20", "lat": 34.0510993783419, "lng": -118.25620830059053 },
+              { "label": "point-19", "lat": 34.05115284320687, "lng": -118.25631290674212 },
+              { "label": "point-1", "lat": 34.05129717427227, "lng": -118.25667768716815 },
               { "label": "point-2", "lat": 34.05092643328663, "lng": -118.25699943830298 },
-              { "label": "point-3", "lat": 34.05137835028655, "lng": -118.2585049776472 }
+              { "label": "point-17", "lat": 34.05094823680174, "lng": -118.25745284557344 },
+              { "label": "point-18", "lat": 34.05127717304897, "lng": -118.25795710086824 },
+              { "label": "point-3", "lat": 34.0512993635721, "lng": -118.25837552547456 }
             ],
-            "distance_straight_line_m": 341,
-            "notes": "Scouted via GitHub issue bdekoz/situationshipin.space#11 (KEEP)."
+            "distance_straight_line_m": 469,
+            "notes": "Revised via GitHub issue bdekoz/situationshipin.space#73 (REVISE), superseding the route from #11 (KEEP). Straight-line total 469 m. Reviewer notes: revise as."
           }
         },
         {
           "location_id": "moca-geffen",
           "display_name": "MOCA Geffen Contemporary",
           "slug": "moca-geffen",
-          "status": "SCOUTED-KEEP",
+          "status": "SCOUTED-REVISE",
           "route": {
             "points": [
-              { "label": "point-0", "lat": 34.05066860604046, "lng": -118.23775034028198 },
-              { "label": "point-1", "lat": 34.05028721093595, "lng": -118.2394734903869 },
-              { "label": "point-2", "lat": 34.0494121015412, "lng": -118.23889999203445 },
+              { "label": "point-0", "lat": 34.05104599328825, "lng": -118.23852717876436 },
+              { "label": "point-25", "lat": 34.05092603280487, "lng": -118.23903143405916 },
+              { "label": "point-1", "lat": 34.05029045549059, "lng": -118.23903143405916 },
+              { "label": "point-26", "lat": 34.04970370624658, "lng": -118.2391119003296 },
+              { "label": "point-2", "lat": 34.04927925059208, "lng": -118.23896974325181 },
               { "label": "point-3", "lat": 34.04882881463997, "lng": -118.23890298841859 }
             ],
-            "distance_straight_line_m": 340,
-            "notes": "Scouted via GitHub issue bdekoz/situationshipin.space#12 (KEEP)."
+            "distance_straight_line_m": 284,
+            "notes": "Revised via GitHub issue bdekoz/situationshipin.space#74 (REVISE), superseding the route from #12 (KEEP). Straight-line total 284 m."
           }
         },
         {
           "location_id": "hauser-wirth",
           "display_name": "Hauser & Wirth",
           "slug": "hauser-wirth",
-          "status": "SCOUTED-KEEP",
+          "status": "SCOUTED-REVISE",
           "route": {
             "points": [
               { "label": "point-0", "lat": 34.04653656105128, "lng": -118.2343572323265 },
-              { "label": "point-1", "lat": 34.046207640321384, "lng": -118.23420702863389 },
-              { "label": "point-3", "lat": 34.04558535436923, "lng": -118.23571979439498 },
-              { "label": "point-4", "lat": 34.04483505555045, "lng": -118.23447948678982 }
+              { "label": "point-30", "lat": 34.046032348137715, "lng": -118.23436975479127 },
+              { "label": "point-1", "lat": 34.04599233338854, "lng": -118.23479890823366 },
+              { "label": "point-27", "lat": 34.04573009668498, "lng": -118.2364672422409 },
+              { "label": "point-3", "lat": 34.04528992202269, "lng": -118.2359951734543 },
+              { "label": "point-29", "lat": 34.04432999159816, "lng": -118.23427319526674 },
+              { "label": "point-28", "lat": 34.04405435052791, "lng": -118.23382258415224 },
+              { "label": "point-31", "lat": 34.04406324052004, "lng": -118.23300719261171 },
+              { "label": "point-32", "lat": 34.04590350771388, "lng": -118.233060836792 },
+              { "label": "point-33", "lat": 34.045907886592026, "lng": -118.23277652263643 },
+              { "label": "point-34", "lat": 34.04451662709909, "lng": -118.23272824287416 },
+              { "label": "point-35", "lat": 34.044437057827935, "lng": -118.23261300721698 },
+              { "label": "point-4", "lat": 34.044285566749394, "lng": -118.23248684406282 }
             ],
-            "distance_straight_line_m": 336,
-            "notes": "Coordinates from GitHub issue bdekoz/situationshipin.space#13; user confirmed scouting complete 2026-08-12."
+            "distance_straight_line_m": 1056,
+            "notes": "Revised via GitHub issue bdekoz/situationshipin.space#75 (REVISE), superseding the previous catalog route from #13. Straight-line total 1056 m."
           }
         },
         {
           "location_id": "hammer-museum",
           "display_name": "Hammer Museum",
           "slug": "hammer-museum",
-          "status": "SCOUTED-KEEP",
+          "status": "SCOUTED-REVISE",
           "route": {
             "points": [
-              { "label": "point-0", "lat": 34.05925499935532, "lng": -118.44287346911709 },
-              { "label": "point-1", "lat": 34.05792925283554, "lng": -118.44840168317566 },
-              { "label": "point-3", "lat": 34.06198232913751, "lng": -118.45324038815107 }
+              { "label": "point-0", "lat": 34.05895260313647, "lng": -118.44392001628877 },
+              { "label": "point-1", "lat": 34.05781491386013, "lng": -118.44827055931093 },
+              { "label": "point-37", "lat": 34.057237049105254, "lng": -118.44991207122804 },
+              { "label": "point-36", "lat": 34.057610434148955, "lng": -118.45019102096559 },
+              { "label": "point-38", "lat": 34.061050507249995, "lng": -118.45330238342287 },
+              { "label": "point-39", "lat": 34.06187550255347, "lng": -118.45362464582652 },
+              { "label": "point-3", "lat": 34.062294687024675, "lng": -118.45419824123384 }
             ],
-            "distance_straight_line_m": 1164,
-            "notes": "Scouted via GitHub issue bdekoz/situationshipin.space#14 (KEEP)."
+            "distance_straight_line_m": 1278,
+            "notes": "Revised via GitHub issue bdekoz/situationshipin.space#76 (REVISE), superseding the route from #14 (KEEP). Straight-line total 1278 m."
           }
         },
         {
           "location_id": "hiho-to-runyon-canyon",
           "display_name": "Hi-Ho to Runyon Canyon",
           "slug": "hiho-to-runyon-canyon",
-          "status": "SCOUTED-KEEP",
+          "status": "SCOUTED-REVISE",
           "route": {
             "points": [
-              { "label": "point-0", "lat": 34.10185645528226, "lng": -118.33986031093878 },
+              { "label": "point-0", "lat": 34.10162860516774, "lng": -118.33927631378175 },
+              { "label": "point-1", "lat": 34.10162415784177, "lng": -118.33981275558473 },
+              { "label": "point-0", "lat": 34.10219273606059, "lng": -118.33952307701112 },
+              { "label": "point-2", "lat": 34.10279611844419, "lng": -118.33913962045246 },
               { "label": "point-1", "lat": 34.1030357345097, "lng": -118.33887580552874 },
-              { "label": "point-2", "lat": 34.1036055816663, "lng": -118.34221165437259 },
-              { "label": "point-3", "lat": 34.104610719371976, "lng": -118.34273736119032 },
-              { "label": "point-4", "lat": 34.10469170062718, "lng": -118.34570186345654 },
-              { "label": "point-5", "lat": 34.104557924197785, "lng": -118.34824517490453 },
-              { "label": "point-6", "lat": 34.105282903686025, "lng": -118.34918849319965 }
+              { "label": "point-3", "lat": 34.10304548923645, "lng": -118.34018826484682 },
+              { "label": "point-4", "lat": 34.10412952033967, "lng": -118.34017753601076 },
+              { "label": "point-2", "lat": 34.10411172977706, "lng": -118.34201753139497 },
+              { "label": "point-3", "lat": 34.10410708510009, "lng": -118.34284096956254 },
+              { "label": "point-5", "lat": 34.10410258949988, "lng": -118.34425191083484 },
+              { "label": "point-4", "lat": 34.10368500835802, "lng": -118.34591746330263 },
+              { "label": "point-6", "lat": 34.10451146539817, "lng": -118.34617535268993 },
+              { "label": "point-5", "lat": 34.10462689674868, "lng": -118.3489376306534 },
+              { "label": "point-7", "lat": 34.105293159828676, "lng": -118.34898054599763 },
+              { "label": "point-8", "lat": 34.10541753057877, "lng": -118.34922999143602 },
+              { "label": "point-6", "lat": 34.10600600564098, "lng": -118.34954649209979 }
             ],
-            "distance_straight_line_m": 1221,
-            "notes": "Renamed from sunset-scientology-pass per GitHub issue bdekoz/situationshipin.space#15 comment; scouted KEEP with seven points."
+            "distance_straight_line_m": 1529,
+            "notes": "Revised via GitHub issue bdekoz/situationshipin.space#71 (REVISE), superseding the route from #15 (KEEP). Straight-line total 1529 m."
           }
         },
         {
@@ -141,7 +181,7 @@
           "location_id": "runyon-to-inspiration-point",
           "display_name": "Runyon Canyon to Inspiration Point",
           "slug": "runyon-to-inspiration-point",
-          "status": "SCOUTED-KEEP",
+          "status": "SCOUTED-REVISE",
           "route": {
             "points": [
               { "label": "point-0", "lat": 34.105313176387746, "lng": -118.34897804300881 },
@@ -159,7 +199,7 @@
               { "label": "point-12", "lat": 34.10672213463482, "lng": -118.34879350814244 }
             ],
             "distance_straight_line_m": 742,
-            "notes": "Scouted via GitHub issue bdekoz/situationshipin.space#43 (KEEP). Straight-line total 742 m."
+            "notes": "GitHub issue bdekoz/situationshipin.space#77 (REVISE) repeats the 13-point route from #43 (KEEP); geometry unchanged. Straight-line total 742 m."
           }
         }
       ]
