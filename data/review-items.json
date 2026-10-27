@@ -1,6 +1,6 @@
 {
   "baseline_state": "NOT-PROMOTED",
-  "generated_at": "2026-09-29T18:08:02.077037+00:00",
+  "generated_at": "2026-10-27T14:14:51.963Z",
   "human_review_state": "UNREVIEWED",
   "items": [
     {
@@ -19383,50 +19383,6 @@
       "added_at": "2026-08-21T04:36:02.236Z"
     },
     {
-      "artifact_id": "here-lies-trouble-final-draft-enrichment-20260820",
-      "title": "Here Lies Trouble — Final Draft 13 enrichment",
-      "description": "Regenerated format-only enrichment of the unified canonical source transcript into a Final Draft 13 screenplay: SPEAKER 1-6 dialogue, verbatim text, two candidate styles — interpolated FDX (rendered Courier PDF) and Fountain open screenplay markup — plus a provenance sidecar. Reviewers pick the preferred style.",
-      "alt": "Final Draft 13 screenplay enrichment of the here-lies-trouble canonical transcript.",
-      "family": "here-lies-trouble-final-draft",
-      "generation_class": "transcript-enrichment",
-      "feedback_round": "transcription-enrichment-e1",
-      "media_kind": "plan",
-      "plan_stage": "PLAN-DRAFT",
-      "review_scope": "TRANSCRIPTION-ENRICHMENT-E1",
-      "review_mode": "output",
-      "source_path": "izzi 6681ef24af6fe1931af1937a1a7149de201352e2 resources.static/here-lies-trouble/seed-audio-corpus/here-lies-trouble.20260415.txt",
-      "source_sha256": "5904bcde3b999f723414c581ebfc1de2edb5f6a9282315e7ad37156851aae33f",
-      "source_derivation": {
-        "path": "here-lies-trouble.20260415.txt",
-        "sha256": "1dda95a363dd6d9f929bc90e6e652271a86aa3b06d15146dfeb16a14b64d1200",
-        "relation": "unified verbatim input transcript"
-      },
-      "published_path": "review/media/transcription-enrichment/here-lies-trouble-final-draft/here-lies-trouble.20260415.final-draft.pdf",
-      "sha256": "5904bcde3b999f723414c581ebfc1de2edb5f6a9282315e7ad37156851aae33f",
-      "bytes": 64765,
-      "format": "pdf",
-      "plan_links": [
-        {
-          "label": "Open FDX — interpolated style",
-          "path": "review/media/transcription-enrichment/here-lies-trouble-final-draft/here-lies-trouble.20260415.final-draft.fdx"
-        },
-        {
-          "label": "Open Fountain — open screenplay markup",
-          "path": "review/media/transcription-enrichment/here-lies-trouble-final-draft/here-lies-trouble.20260415.final-draft.fountain"
-        },
-        {
-          "label": "Open provenance JSON",
-          "path": "review/media/transcription-enrichment/here-lies-trouble-final-draft/here-lies-trouble.20260415.final-draft.provenance.json"
-        }
-      ],
-      "technical_state": "FDX-SUBSET-V1-REGENERATED-FROM-UNIFIED-TRANSCRIPT",
-      "generation_state": "CURRENT",
-      "human_review_state": "UNREVIEWED",
-      "baseline_state": "NOT-PROMOTED",
-      "review_category": "planning",
-      "added_at": "2026-08-21T04:36:02.235Z"
-    },
-    {
       "artifact_id": "here-lies-trouble-canonical-source-transcript",
       "title": "Here Lies Trouble — canonical source transcript",
       "description": "Unified canonical source transcript: the two seed recordings appended verbatim into one file for audio-plan review. Approval on the portal makes this text the canonical source edited that gates modified-voice production.",
@@ -19488,50 +19444,6 @@
       "baseline_state": "NOT-PROMOTED",
       "review_category": "planning",
       "added_at": "2026-08-21T01:59:20.630Z",
-      "generation_state": "STALE"
-    },
-    {
-      "artifact_id": "here-lies-trouble-final-draft-enrichment",
-      "title": "Here Lies Trouble — Final Draft 13 enrichment",
-      "description": "Format-only enrichment of the canonical source transcript into a Final Draft 13 screenplay: SPEAKER 1-6 dialogue, verbatim text, two candidate styles — interpolated FDX (rendered Courier PDF) and Fountain open screenplay markup — plus a provenance sidecar. Reviewers pick the preferred style.",
-      "alt": "Final Draft 13 screenplay enrichment of the here-lies-trouble canonical transcript.",
-      "family": "here-lies-trouble-final-draft",
-      "generation_class": "transcript-enrichment",
-      "feedback_round": "transcription-enrichment-e1",
-      "media_kind": "plan",
-      "plan_stage": "PLAN-DRAFT",
-      "review_scope": "TRANSCRIPTION-ENRICHMENT-E1",
-      "review_mode": "output",
-      "source_path": "izzi 7ef87399a59767cdfe9cf7a134d7addd0dc5bcd2 review/media/audio-transcript/here-lies-trouble-canonical-source-transcript.20260818.txt",
-      "source_sha256": "b58612d740fed3542e059c9b5b812340dd18a6f63b7a821abf239e1acb737021",
-      "source_derivation": {
-        "path": "here-lies-trouble-canonical-source-transcript.20260818.txt",
-        "sha256": "38415dbe4de0e5f3335023033d340aaf8d17ae4c128ef38a5d10764cb375df31",
-        "relation": "verbatim input transcript"
-      },
-      "published_path": "review/media/transcription-enrichment/here-lies-trouble-final-draft/here-lies-trouble-canonical-source-transcript.20260818.final-draft.pdf",
-      "sha256": "b58612d740fed3542e059c9b5b812340dd18a6f63b7a821abf239e1acb737021",
-      "bytes": 64765,
-      "format": "pdf",
-      "plan_links": [
-        {
-          "label": "Open FDX — interpolated style",
-          "path": "review/media/transcription-enrichment/here-lies-trouble-final-draft/here-lies-trouble-canonical-source-transcript.20260818.final-draft.fdx"
-        },
-        {
-          "label": "Open Fountain — open screenplay markup",
-          "path": "review/media/transcription-enrichment/here-lies-trouble-final-draft/here-lies-trouble-canonical-source-transcript.20260818.final-draft.fountain"
-        },
-        {
-          "label": "Open provenance JSON",
-          "path": "review/media/transcription-enrichment/here-lies-trouble-final-draft/here-lies-trouble-canonical-source-transcript.20260818.final-draft.provenance.json"
-        }
-      ],
-      "technical_state": "FDX-SUBSET-V1-FROM-CANONICAL-TRANSCRIPT",
-      "human_review_state": "REVISE",
-      "baseline_state": "NOT-PROMOTED",
-      "review_category": "planning",
-      "added_at": "2026-08-21T01:59:20.629Z",
       "generation_state": "STALE"
     },
     {
