@@ -1,8 +1,310 @@
 {
   "baseline_state": "NOT-PROMOTED",
-  "generated_at": "2026-10-27T14:14:51.963Z",
+  "generated_at": "2026-10-27T14:46:39.000998+00:00",
   "human_review_state": "UNREVIEWED",
   "items": [
+    {
+      "family": "here-lies-trouble",
+      "review_mode": "output",
+      "feedback_round": "stage-4-20261026",
+      "generation_commit": "47610923f394e7b162ba0701181e4ba1fddfa91b",
+      "generation_state": "CURRENT",
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "added_at": "2026-10-27T14:46:39.000998+00:00",
+      "artifact_id": "here-lies-trouble-stage-4-20261026",
+      "title": "Here Lies Trouble — fourth draft and Stage 4 review",
+      "description": "Current review package: the complete 1:43 Stage 4 sequence, canonical fourth draft in four formats, and three production documents.",
+      "alt": "Current review package: the complete 1:43 Stage 4 sequence, canonical fourth draft in four formats, and three production documents.",
+      "source_path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20261026.fourth-draft.txt",
+      "published_path": "review/here-lies-trouble-stage-4/index.html",
+      "sha256": "15d419ddd7a2fb9a3618b6ab8c938f84a9121d1ec885a0bae9f810996cc61cc5",
+      "bytes": 5950,
+      "media_kind": "index",
+      "generation_class": "stage-4-review-packet",
+      "review_scope": "STAGE-4-CURRENT-STATE",
+      "review_category": "proofs",
+      "index_members": [
+        "here-lies-trouble-stage-4-video-20261026",
+        "here-lies-trouble-fourth-draft-20261026",
+        "here-lies-trouble-format-fit-20261026",
+        "here-lies-trouble-production-breakdown-20261026",
+        "here-lies-trouble-production-details-20261026"
+      ],
+      "technical_state": "CURRENT-STATE-REVIEW-PACKAGE",
+      "review_assets": [
+        {
+          "path": "review/media/here-lies-trouble-stage-4-20261026/20261026.here_lies_trouble_format_fit.md",
+          "sha256": "94c5259d54aa0a83e7736cb8af8125baee5f0ebed88ec6e692acc33144e001eb",
+          "bytes": 8777
+        },
+        {
+          "path": "review/media/here-lies-trouble-stage-4-20261026/20261026.here_lies_trouble_stage_4_production_breakdown.md",
+          "sha256": "9ab0e653c47ff080d1b7843d3ac5d45956fd2622c22757859166da9b004521e5",
+          "bytes": 28026
+        },
+        {
+          "path": "review/media/here-lies-trouble-stage-4-20261026/20261026.here_lies_trouble_stage_4_production_details.md",
+          "sha256": "b6eee39329a65b89775a4403a3c15c60d358f113b8351df4746b91560347829f",
+          "bytes": 61497
+        },
+        {
+          "path": "review/media/here-lies-trouble-stage-4-20261026/credit-ledger.json",
+          "sha256": "afaa2860b4dec6383f976657aa56244a167b0ef3f7d6cef466b949782d0be83b",
+          "bytes": 2434
+        },
+        {
+          "path": "review/media/here-lies-trouble-stage-4-20261026/gaze-assessment.json",
+          "sha256": "bb949a76468064fe9d4bcb88afb7426b411d87fe1c41ad43f700f55d9ad9a505",
+          "bytes": 5566
+        },
+        {
+          "path": "review/media/here-lies-trouble-stage-4-20261026/here-lies-trouble.20261026.fourth-draft.fdx",
+          "sha256": "056cf57e1a8339095579061a99877a2ffe5b06ef1c1c0595d94327da848a88e3",
+          "bytes": 72027
+        },
+        {
+          "path": "review/media/here-lies-trouble-stage-4-20261026/here-lies-trouble.20261026.fourth-draft.fountain",
+          "sha256": "4ef88d9a2a761f18d86acc601dd787bced23d17be8913ea57caa3a18b753d0c5",
+          "bytes": 45830
+        },
+        {
+          "path": "review/media/here-lies-trouble-stage-4-20261026/here-lies-trouble.20261026.fourth-draft.txt",
+          "sha256": "889c2fdd91008e7acd998a7ed1ab94c4a0a20e71c5cba06ec37070e47001f4f6",
+          "bytes": 46859
+        },
+        {
+          "path": "review/media/here-lies-trouble-stage-4-20261026/poster.jpg",
+          "sha256": "9e382f93d0c98e08cb40fcc9d702854bb53fce403e95656dc71c758a70f0a242",
+          "bytes": 174891,
+          "width": 720,
+          "height": 1280
+        },
+        {
+          "path": "review/media/here-lies-trouble-stage-4-20261026/screenplay-provenance.json",
+          "sha256": "563bc7fc1d333b4443ac4b9f96a27cffa160c35ea7d7096f36719c507996bc08",
+          "bytes": 1346
+        },
+        {
+          "path": "review/media/here-lies-trouble-stage-4-20261026/stage-4-validation.json",
+          "sha256": "2feeabfc4e03f54e293a2e877fa3046cc2a1fb7a0a95018961a2b32c049bd778",
+          "bytes": 3510
+        },
+        {
+          "path": "review/media/here-lies-trouble-stage-4-20261026/publication.json",
+          "sha256": "ceb618d97b08431476491890b007d6e364cd390df136d680c23a9e138b1991c8",
+          "bytes": 5921
+        }
+      ]
+    },
+    {
+      "family": "here-lies-trouble",
+      "review_mode": "output",
+      "feedback_round": "stage-4-20261026",
+      "generation_commit": "47610923f394e7b162ba0701181e4ba1fddfa91b",
+      "generation_state": "CURRENT",
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "added_at": "2026-10-27T14:46:39.000998+00:00",
+      "artifact_id": "here-lies-trouble-stage-4-video-20261026",
+      "title": "Here Lies Trouble — complete Stage 4 sequence (1:43)",
+      "description": "All eight completed shots with four voices and exact fourth-draft captions. Terrain accepted; reciprocal gaze remains unfinished. The full 52:35 episode picture is not complete.",
+      "alt": "All eight completed shots with four voices and exact fourth-draft captions. Terrain accepted; reciprocal gaze remains unfinished. The full 52:35 episode picture is not complete.",
+      "source_path": "outputs/here-lies-trouble/stage-4-20261026-option-b-v3/review/here-lies-trouble-stage-4-103s.mp4",
+      "published_path": "review/media/here-lies-trouble-stage-4-20261026/here-lies-trouble-stage-4-103s.review.mp4",
+      "sha256": "f1db4de718a87892f7637672fc9bb29eb75eb1805b4a7c332cf863727523cd8a",
+      "bytes": 15473226,
+      "media_kind": "video",
+      "generation_class": "stage-4-review",
+      "review_scope": "STAGE-4-COMPLETE-FUNDED-SEQUENCE",
+      "review_category": "proofs",
+      "width": 720,
+      "height": 1280,
+      "duration_seconds": 103,
+      "technical_state": "FULL-DURATION-PROXY-ORIGINAL-AAC-PRESERVED",
+      "source_media": {
+        "path": "outputs/here-lies-trouble/stage-4-20261026-option-b-v3/review/here-lies-trouble-stage-4-103s.mp4",
+        "sha256": "e6e4a01909e458c5b477d6c0fdd48e50f03876ec7277d0a572bb314d4d89c629",
+        "bytes": 173507566,
+        "width": 1080,
+        "height": 1920,
+        "duration_seconds": 103,
+        "frame_rate": "24/1",
+        "published": false
+      },
+      "review_publication": {
+        "decision": "APPROVED",
+        "scope": "EXISTING-ARTIFACT-REVIEW",
+        "approved_on": "2026-10-27",
+        "authority": "Explicit project-owner request",
+        "instruction": "put the complete stage 4 video up for viewing",
+        "artifact_id": "here-lies-trouble-stage-4-video-20261026",
+        "source_sha256": "e6e4a01909e458c5b477d6c0fdd48e50f03876ec7277d0a572bb314d4d89c629",
+        "proxy_sha256": "f1db4de718a87892f7637672fc9bb29eb75eb1805b4a7c332cf863727523cd8a",
+        "creative_acceptance": false,
+        "further_production_authorized": false
+      }
+    },
+    {
+      "family": "here-lies-trouble",
+      "review_mode": "output",
+      "feedback_round": "stage-4-20261026",
+      "generation_commit": "47610923f394e7b162ba0701181e4ba1fddfa91b",
+      "generation_state": "CURRENT",
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "added_at": "2026-10-27T14:46:39.000998+00:00",
+      "artifact_id": "here-lies-trouble-fourth-draft-20261026",
+      "title": "Here Lies Trouble — canonical fourth draft",
+      "description": "Complete October 26 screenplay: 191 speaking turns, with the original TXT and PDF, Fountain and Final Draft FDX downloads.",
+      "alt": "Complete October 26 screenplay: 191 speaking turns, with the original TXT and PDF, Fountain and Final Draft FDX downloads.",
+      "source_path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20261026.fourth-draft.txt",
+      "published_path": "review/media/here-lies-trouble-stage-4-20261026/here-lies-trouble.20261026.fourth-draft.pdf",
+      "sha256": "99d5099a4750ccf1f03d9ba4c520a13210c1c6147278d2e7d2daad6d0ff9669a",
+      "bytes": 77584,
+      "media_kind": "plan",
+      "generation_class": "screenplay-review",
+      "review_scope": "CANONICAL-FOURTH-DRAFT",
+      "review_category": "planning",
+      "plan_stage": "PLAN-DRAFT",
+      "format": "pdf",
+      "source_sha256": "99d5099a4750ccf1f03d9ba4c520a13210c1c6147278d2e7d2daad6d0ff9669a",
+      "source_derivation": {
+        "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20261026.fourth-draft.txt",
+        "sha256": "889c2fdd91008e7acd998a7ed1ab94c4a0a20e71c5cba06ec37070e47001f4f6",
+        "relation": "Canonical fourth draft; formatting only"
+      },
+      "plan_links": [
+        {
+          "label": "Canonical source TXT",
+          "path": "review/media/here-lies-trouble-stage-4-20261026/here-lies-trouble.20261026.fourth-draft.txt"
+        },
+        {
+          "label": "Fountain screenplay",
+          "path": "review/media/here-lies-trouble-stage-4-20261026/here-lies-trouble.20261026.fourth-draft.fountain"
+        },
+        {
+          "label": "Final Draft FDX",
+          "path": "review/media/here-lies-trouble-stage-4-20261026/here-lies-trouble.20261026.fourth-draft.fdx"
+        },
+        {
+          "label": "Screenplay provenance",
+          "path": "review/media/here-lies-trouble-stage-4-20261026/screenplay-provenance.json"
+        }
+      ],
+      "technical_state": "191-TURNS-PRESERVED-FORMAT-ONLY"
+    },
+    {
+      "family": "here-lies-trouble",
+      "review_mode": "output",
+      "feedback_round": "stage-4-20261026",
+      "generation_commit": "47610923f394e7b162ba0701181e4ba1fddfa91b",
+      "generation_state": "CURRENT",
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "added_at": "2026-10-27T14:46:39.000998+00:00",
+      "artifact_id": "here-lies-trouble-format-fit-20261026",
+      "title": "Here Lies Trouble — format fit",
+      "description": "Animated cultural conversation, audience, format and distribution options.",
+      "alt": "Animated cultural conversation, audience, format and distribution options.",
+      "source_path": "docs/development/sessions/20261026.here_lies_trouble_format_fit.md",
+      "published_path": "review/here-lies-trouble-stage-4/format-fit.html",
+      "sha256": "e3d3f4b0d6c2b82140f72c003c8f157cc5a002a3214fc3efb64ab41ee60ce1a5",
+      "bytes": 11247,
+      "media_kind": "plan",
+      "generation_class": "production-document-review",
+      "review_scope": "STAGE-4-PRODUCTION-DOCUMENT",
+      "review_category": "planning",
+      "plan_stage": "PLAN-DRAFT",
+      "format": "html",
+      "source_sha256": "e3d3f4b0d6c2b82140f72c003c8f157cc5a002a3214fc3efb64ab41ee60ce1a5",
+      "source_derivation": {
+        "path": "docs/development/sessions/20261026.here_lies_trouble_format_fit.md",
+        "sha256": "94c5259d54aa0a83e7736cb8af8125baee5f0ebed88ec6e692acc33144e001eb",
+        "relation": "Full Markdown rendered for web review; original Markdown included"
+      },
+      "plan_links": [
+        {
+          "label": "Download original Markdown",
+          "path": "review/media/here-lies-trouble-stage-4-20261026/20261026.here_lies_trouble_format_fit.md"
+        }
+      ],
+      "technical_state": "FULL-DOCUMENT-RENDERED"
+    },
+    {
+      "family": "here-lies-trouble",
+      "review_mode": "output",
+      "feedback_round": "stage-4-20261026",
+      "generation_commit": "47610923f394e7b162ba0701181e4ba1fddfa91b",
+      "generation_state": "CURRENT",
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "added_at": "2026-10-27T14:46:39.000998+00:00",
+      "artifact_id": "here-lies-trouble-production-breakdown-20261026",
+      "title": "Here Lies Trouble — production breakdown",
+      "description": "Complete-draft scope, measured runtime, production allocation and budget.",
+      "alt": "Complete-draft scope, measured runtime, production allocation and budget.",
+      "source_path": "docs/development/sessions/20261026.here_lies_trouble_stage_4_production_breakdown.md",
+      "published_path": "review/here-lies-trouble-stage-4/production-breakdown.html",
+      "sha256": "16207c0d361b13793405aae086bc0cf5e96ecd2c2fbe0b0f73f681c99cfbbf5d",
+      "bytes": 38849,
+      "media_kind": "plan",
+      "generation_class": "production-document-review",
+      "review_scope": "STAGE-4-PRODUCTION-DOCUMENT",
+      "review_category": "planning",
+      "plan_stage": "PLAN-DRAFT",
+      "format": "html",
+      "source_sha256": "16207c0d361b13793405aae086bc0cf5e96ecd2c2fbe0b0f73f681c99cfbbf5d",
+      "source_derivation": {
+        "path": "docs/development/sessions/20261026.here_lies_trouble_stage_4_production_breakdown.md",
+        "sha256": "9ab0e653c47ff080d1b7843d3ac5d45956fd2622c22757859166da9b004521e5",
+        "relation": "Full Markdown rendered for web review; original Markdown included"
+      },
+      "plan_links": [
+        {
+          "label": "Download original Markdown",
+          "path": "review/media/here-lies-trouble-stage-4-20261026/20261026.here_lies_trouble_stage_4_production_breakdown.md"
+        }
+      ],
+      "technical_state": "FULL-DOCUMENT-RENDERED"
+    },
+    {
+      "family": "here-lies-trouble",
+      "review_mode": "output",
+      "feedback_round": "stage-4-20261026",
+      "generation_commit": "47610923f394e7b162ba0701181e4ba1fddfa91b",
+      "generation_state": "CURRENT",
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "added_at": "2026-10-27T14:46:39.000998+00:00",
+      "artifact_id": "here-lies-trouble-production-details-20261026",
+      "title": "Here Lies Trouble — production details",
+      "description": "Current delivery, accepted terrain, gaze findings and the Stage 5 plan.",
+      "alt": "Current delivery, accepted terrain, gaze findings and the Stage 5 plan.",
+      "source_path": "docs/development/sessions/20261026.here_lies_trouble_stage_4_production_details.md",
+      "published_path": "review/here-lies-trouble-stage-4/production-details.html",
+      "sha256": "68029872e357393a2824c6b4c827e2559b1045140640d1badddf1cb6b77dc3f7",
+      "bytes": 71220,
+      "media_kind": "plan",
+      "generation_class": "production-document-review",
+      "review_scope": "STAGE-4-PRODUCTION-DOCUMENT",
+      "review_category": "planning",
+      "plan_stage": "PLAN-DRAFT",
+      "format": "html",
+      "source_sha256": "68029872e357393a2824c6b4c827e2559b1045140640d1badddf1cb6b77dc3f7",
+      "source_derivation": {
+        "path": "docs/development/sessions/20261026.here_lies_trouble_stage_4_production_details.md",
+        "sha256": "b6eee39329a65b89775a4403a3c15c60d358f113b8351df4746b91560347829f",
+        "relation": "Full Markdown rendered for web review; original Markdown included"
+      },
+      "plan_links": [
+        {
+          "label": "Download original Markdown",
+          "path": "review/media/here-lies-trouble-stage-4-20261026/20261026.here_lies_trouble_stage_4_production_details.md"
+        }
+      ],
+      "technical_state": "FULL-DOCUMENT-RENDERED"
+    },
     {
       "artifact_id": "hamonshu-v2-book3",
       "title": "Hamonshū V2 · Book 3 · name the water-form categories",

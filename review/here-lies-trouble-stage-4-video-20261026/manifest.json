@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "here-lies-trouble-stage-4-video-20261026",
+  "artifact_id": "here-lies-trouble-stage-4-video-20261026",
+  "style": "house-style",
+  "source_media": {
+    "path": "outputs/here-lies-trouble/stage-4-20261026-option-b-v3/review/here-lies-trouble-stage-4-103s.mp4",
+    "sha256": "e6e4a01909e458c5b477d6c0fdd48e50f03876ec7277d0a572bb314d4d89c629",
+    "bytes": 173507566,
+    "width": 1080,
+    "height": 1920,
+    "duration_seconds": 103,
+    "frame_rate": "24/1",
+    "published": false
+  },
+  "proxy": {
+    "path": "/review/media/here-lies-trouble-stage-4-20261026/here-lies-trouble-stage-4-103s.review.mp4",
+    "sha256": "f1db4de718a87892f7637672fc9bb29eb75eb1805b4a7c332cf863727523cd8a"
+  },
+  "document": null
+}

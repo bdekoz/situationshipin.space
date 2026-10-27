@@ -1,0 +1,103 @@
+{
+  "recorded_at": "2026-10-26T22:26:52.656053+00:00",
+  "delivery_sha256": "e6e4a01909e458c5b477d6c0fdd48e50f03876ec7277d0a572bb314d4d89c629",
+  "technical_status": "PASS",
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 24,
+    "frames": 2472,
+    "seconds": 103,
+    "full_decode": "PASS"
+  },
+  "audio": {
+    "sample_rate": 48000,
+    "channels": 2,
+    "seconds": 103,
+    "continuous_master_alignment": {
+      "method": "Decode full final AAC and matching 0–103-second master excerpt to aligned 48kHz mono float PCM, without offset search.",
+      "compared_samples": 4944000,
+      "correlation": 0.9999662037172153,
+      "rms_difference": 0.0011584672315810823,
+      "interpretation": "Confirms continuous aligned master excerpt after lossy AAC encoding; not a human listening or naturalness judgment."
+    },
+    "full_master_seconds": 3155.375,
+    "full_master_sha256": "efc0ad9a7bdf1bd39a47003db860c4efc9d6659b912e6c32d22f66aa1d000cec"
+  },
+  "text": {
+    "source_sha256": "889c2fdd91008e7acd998a7ed1ab94c4a0a20e71c5cba06ec37070e47001f4f6",
+    "complete_turns": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "caption_words": 295,
+    "caption_cues": 31,
+    "all_caption_words_and_punctuation_match": true,
+    "approved_opening_cues_unchanged": true,
+    "last_recognized_word_end": 102.16,
+    "voices": {
+      "1": "af_bella",
+      "2": "am_echo",
+      "3": "af_nicole",
+      "4": "af_heart"
+    },
+    "full_text_retained": true
+  },
+  "visual_review": {
+    "method": "Assistant inspection of per-shot filmstrips, paired delivery frames at every cut, six representative captioned delivery frames and the hummingbird detail crop. Not a full human moving-picture or listening review.",
+    "sampled_delivery_seconds": [
+      12.76,
+      41.43,
+      80.5,
+      81.5,
+      101.2,
+      102.75
+    ],
+    "paired_join_seconds": [
+      6,
+      21,
+      36,
+      51,
+      66,
+      81,
+      96
+    ],
+    "observations": [
+      "Four main animal identities remain recognizable in the reviewed frames; the layout carries across cuts with small pose and texture shifts.",
+      "Caption text stays in the lower reserved area and is readable in the inspected frames.",
+      "Parrots, hummingbird and bee are small and clear of hero faces; the hummingbird is especially subtle against foliage.",
+      "The bee uses one event clock across the 81-second cut, preserving its path, wing phase and fade.",
+      "Exact dialogue gaze timing and lip synchronization are not established. The unicorn horn darkens in continuation footage.",
+      "Painted road markings appear in job 3, then recede in job 4. Stylized gates, vegetation and cliffs are not verified geographic reconstruction."
+    ],
+    "decision": "Retain the longest funded sequence with recorded limitations; no paid rerolls."
+  },
+  "local_tests": {
+    "source_contracts": 9,
+    "spend_and_restart": 11,
+    "finishing": 4,
+    "total": 24
+  },
+  "viewer": {
+    "local_links_verified": [
+      "poster.png",
+      "here-lies-trouble-stage-4-103s.mp4",
+      "here-lies-trouble-stage-4-103s.mp4",
+      "captions.srt",
+      "../source.txt",
+      "../dialogue-master.wav"
+    ],
+    "javascript_syntax": "PASS",
+    "method": "HTML link existence and Node syntax; no browser playback claim."
+  },
+  "full_human_listening_review": "PENDING",
+  "user_review_of_entire_103_second_sequence": "NOT_YET_RECORDED",
+  "opening_user_approval_preserved": true
+}

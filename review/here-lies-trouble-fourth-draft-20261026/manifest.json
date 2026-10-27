@@ -1,0 +1,15 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "here-lies-trouble-fourth-draft-20261026",
+  "artifact_id": "here-lies-trouble-fourth-draft-20261026",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": null,
+  "document": {
+    "path": "/review/media/here-lies-trouble-stage-4-20261026/here-lies-trouble.20261026.fourth-draft.pdf",
+    "sha256": "99d5099a4750ccf1f03d9ba4c520a13210c1c6147278d2e7d2daad6d0ff9669a",
+    "format": "pdf",
+    "plan_stage": "PLAN-DRAFT",
+    "plan_pdf": null
+  }
+}

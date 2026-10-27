@@ -1,0 +1,15 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "here-lies-trouble-production-details-20261026",
+  "artifact_id": "here-lies-trouble-production-details-20261026",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": null,
+  "document": {
+    "path": "/review/here-lies-trouble-stage-4/production-details.html",
+    "sha256": "68029872e357393a2824c6b4c827e2559b1045140640d1badddf1cb6b77dc3f7",
+    "format": "html",
+    "plan_stage": "PLAN-DRAFT",
+    "plan_pdf": null
+  }
+}

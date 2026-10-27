@@ -1,0 +1,100 @@
+{
+  "recorded_at": "2026-10-26T22:26:12.510034+00:00",
+  "starting_pool": 6220,
+  "credits_charged": 6180,
+  "credits_refunded": 0,
+  "ending_observed_balance": 40,
+  "jobs": [
+    {
+      "job": 1,
+      "episode_start": 0,
+      "episode_end": 6,
+      "status": "completed",
+      "task_id": "sd2_m6BEGXwBGz7j",
+      "credits_used": 360,
+      "credits_refunded": 0,
+      "media_collected": true,
+      "visual_review_saved": true
+    },
+    {
+      "job": 2,
+      "episode_start": 6,
+      "episode_end": 21,
+      "status": "completed",
+      "task_id": "sd2_VmZEvb1O6E0Q",
+      "credits_used": 900,
+      "credits_refunded": 0,
+      "media_collected": true,
+      "visual_review_saved": true
+    },
+    {
+      "job": 3,
+      "episode_start": 21,
+      "episode_end": 36,
+      "status": "completed",
+      "task_id": "sd2_dQWzaPvq1EX9",
+      "credits_used": 900,
+      "credits_refunded": 0,
+      "media_collected": true,
+      "visual_review_saved": true
+    },
+    {
+      "job": 4,
+      "episode_start": 36,
+      "episode_end": 51,
+      "status": "completed",
+      "task_id": "sd2_me7EZpemk5Gp",
+      "credits_used": 900,
+      "credits_refunded": 0,
+      "media_collected": true,
+      "visual_review_saved": true
+    },
+    {
+      "job": 5,
+      "episode_start": 51,
+      "episode_end": 66,
+      "status": "completed",
+      "task_id": "sd2_dBbEweAqm5ea",
+      "credits_used": 900,
+      "credits_refunded": 0,
+      "media_collected": true,
+      "visual_review_saved": true
+    },
+    {
+      "job": 6,
+      "episode_start": 66,
+      "episode_end": 81,
+      "status": "completed",
+      "task_id": "sd2_neAxLZDpWz4B",
+      "credits_used": 900,
+      "credits_refunded": 0,
+      "media_collected": true,
+      "visual_review_saved": true
+    },
+    {
+      "job": 7,
+      "episode_start": 81,
+      "episode_end": 96,
+      "status": "completed",
+      "task_id": "sd2_40yEMVWJ0zrk",
+      "credits_used": 900,
+      "credits_refunded": 0,
+      "media_collected": true,
+      "visual_review_saved": true
+    },
+    {
+      "job": 8,
+      "episode_start": 96,
+      "episode_end": 103,
+      "status": "completed",
+      "task_id": "sd2_BqG5A8glVzwX",
+      "credits_used": 420,
+      "credits_refunded": 0,
+      "media_collected": true,
+      "visual_review_saved": true
+    }
+  ],
+  "paid_creative_rerolls": 0,
+  "new_credit_purchases": false,
+  "minimum_job_credits_at_selected_tier": 240
+}

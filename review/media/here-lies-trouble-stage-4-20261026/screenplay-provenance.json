@@ -1,0 +1,36 @@
+{
+  "schema_version": "hlt-fourth-draft-screenplay-1",
+  "canonical_filename": "here-lies-trouble.20261026.fourth-draft.txt",
+  "canonical_sha256": "889c2fdd91008e7acd998a7ed1ab94c4a0a20e71c5cba06ec37070e47001f4f6",
+  "source_bytes_preserved": true,
+  "title": "HERE LIES TROUBLE",
+  "scene_heading": "EXT. RUNYON CANYON -- LOS ANGELES",
+  "turns": 191,
+  "speakers": [
+    "SPEAKER 1",
+    "SPEAKER 2",
+    "SPEAKER 3",
+    "SPEAKER 4"
+  ],
+  "pdf_pages_including_title": 35,
+  "formatting": "FDX and Fountain preserve all dialogue and punctuation, collapsing layout whitespace only. PDF adds a title page, pagination and MORE/CONT'D continuation markers; no dialogue edits.",
+  "fdx_format": "Final Draft XML script subset; XML and all dialogue round-tripped. Final Draft desktop application not used for validation.",
+  "exports": {
+    "txt": {
+      "sha256": "889c2fdd91008e7acd998a7ed1ab94c4a0a20e71c5cba06ec37070e47001f4f6",
+      "bytes": 46859
+    },
+    "pdf": {
+      "sha256": "99d5099a4750ccf1f03d9ba4c520a13210c1c6147278d2e7d2daad6d0ff9669a",
+      "bytes": 77584
+    },
+    "fountain": {
+      "sha256": "4ef88d9a2a761f18d86acc601dd787bced23d17be8913ea57caa3a18b753d0c5",
+      "bytes": 45830
+    },
+    "fdx": {
+      "sha256": "056cf57e1a8339095579061a99877a2ffe5b06ef1c1c0595d94327da848a88e3",
+      "bytes": 72027
+    }
+  }
+}

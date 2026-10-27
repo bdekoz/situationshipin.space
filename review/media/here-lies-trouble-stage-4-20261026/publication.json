@@ -1,0 +1,127 @@
+{
+  "schema_version": "hlt-stage4-publication-1",
+  "published_at": "2026-10-27T14:46:39.000998+00:00",
+  "izzi_commit": "47610923f394e7b162ba0701181e4ba1fddfa91b",
+  "canonical_source": {
+    "path": "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20261026.fourth-draft.txt",
+    "sha256": "889c2fdd91008e7acd998a7ed1ab94c4a0a20e71c5cba06ec37070e47001f4f6"
+  },
+  "video": {
+    "source_path": "outputs/here-lies-trouble/stage-4-20261026-option-b-v3/review/here-lies-trouble-stage-4-103s.mp4",
+    "source_sha256": "e6e4a01909e458c5b477d6c0fdd48e50f03876ec7277d0a572bb314d4d89c629",
+    "duration_seconds": 103,
+    "frames": 2472,
+    "proxy_path": "review/media/here-lies-trouble-stage-4-20261026/here-lies-trouble-stage-4-103s.review.mp4",
+    "proxy_sha256": "f1db4de718a87892f7637672fc9bb29eb75eb1805b4a7c332cf863727523cd8a",
+    "dimensions": [
+      720,
+      1280
+    ],
+    "audio_packets_preserved": true
+  },
+  "complete_episode_audio_seconds": 3155.375,
+  "complete_episode_picture": false,
+  "local_archive_references": [
+    "outputs/here-lies-trouble/stage-3-prep-20261026/readiness.json",
+    "outputs/here-lies-trouble/stage-3-prep-20261026/voice-smoke/word-fidelity.json",
+    "outputs/here-lies-trouble/stage-3-prep-20261026/wildlife/index.html",
+    "outputs/here-lies-trouble/stage-4-20261026-option-b-v2/location/route-terrain.png",
+    "outputs/here-lies-trouble/stage-4-20261026-option-b-v3/balance-check-20261026T173057Z.json",
+    "outputs/here-lies-trouble/stage-4-20261026-option-b-v3/inputs/point-0-keyframe.png",
+    "outputs/here-lies-trouble/stage-4-20261026-option-b-v3/inputs/point-0-prompt.txt",
+    "outputs/here-lies-trouble/stage-4-20261026-option-b-v3/readiness.json",
+    "outputs/here-lies-trouble/stage-4-20261026-option-b-v3/review/gaze-audit/index.html",
+    "outputs/here-lies-trouble/stage-5-prep-20261026/balance-check-20261027T013321Z.json",
+    "outputs/here-lies-trouble/stage-5-prep-20261026/canary-preparation.json",
+    "outputs/here-lies-trouble/stage-5-prep-20261026/canary-turn-008-dialogue.wav",
+    "outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20261024.third-draft.txt",
+    "outputs/transcription-enrichment/here-lies-trouble/revisions/here-lies-trouble.20261025.grammar-pass.json"
+  ],
+  "files": [
+    {
+      "path": "review/here-lies-trouble-stage-4/format-fit.html",
+      "sha256": "e3d3f4b0d6c2b82140f72c003c8f157cc5a002a3214fc3efb64ab41ee60ce1a5",
+      "bytes": 11247
+    },
+    {
+      "path": "review/here-lies-trouble-stage-4/index.html",
+      "sha256": "15d419ddd7a2fb9a3618b6ab8c938f84a9121d1ec885a0bae9f810996cc61cc5",
+      "bytes": 5950
+    },
+    {
+      "path": "review/here-lies-trouble-stage-4/production-breakdown.html",
+      "sha256": "16207c0d361b13793405aae086bc0cf5e96ecd2c2fbe0b0f73f681c99cfbbf5d",
+      "bytes": 38849
+    },
+    {
+      "path": "review/here-lies-trouble-stage-4/production-details.html",
+      "sha256": "68029872e357393a2824c6b4c827e2559b1045140640d1badddf1cb6b77dc3f7",
+      "bytes": 71220
+    },
+    {
+      "path": "review/media/here-lies-trouble-stage-4-20261026/20261026.here_lies_trouble_format_fit.md",
+      "sha256": "94c5259d54aa0a83e7736cb8af8125baee5f0ebed88ec6e692acc33144e001eb",
+      "bytes": 8777
+    },
+    {
+      "path": "review/media/here-lies-trouble-stage-4-20261026/20261026.here_lies_trouble_stage_4_production_breakdown.md",
+      "sha256": "9ab0e653c47ff080d1b7843d3ac5d45956fd2622c22757859166da9b004521e5",
+      "bytes": 28026
+    },
+    {
+      "path": "review/media/here-lies-trouble-stage-4-20261026/20261026.here_lies_trouble_stage_4_production_details.md",
+      "sha256": "b6eee39329a65b89775a4403a3c15c60d358f113b8351df4746b91560347829f",
+      "bytes": 61497
+    },
+    {
+      "path": "review/media/here-lies-trouble-stage-4-20261026/credit-ledger.json",
+      "sha256": "afaa2860b4dec6383f976657aa56244a167b0ef3f7d6cef466b949782d0be83b",
+      "bytes": 2434
+    },
+    {
+      "path": "review/media/here-lies-trouble-stage-4-20261026/gaze-assessment.json",
+      "sha256": "bb949a76468064fe9d4bcb88afb7426b411d87fe1c41ad43f700f55d9ad9a505",
+      "bytes": 5566
+    },
+    {
+      "path": "review/media/here-lies-trouble-stage-4-20261026/here-lies-trouble-stage-4-103s.review.mp4",
+      "sha256": "f1db4de718a87892f7637672fc9bb29eb75eb1805b4a7c332cf863727523cd8a",
+      "bytes": 15473226
+    },
+    {
+      "path": "review/media/here-lies-trouble-stage-4-20261026/here-lies-trouble.20261026.fourth-draft.fdx",
+      "sha256": "056cf57e1a8339095579061a99877a2ffe5b06ef1c1c0595d94327da848a88e3",
+      "bytes": 72027
+    },
+    {
+      "path": "review/media/here-lies-trouble-stage-4-20261026/here-lies-trouble.20261026.fourth-draft.fountain",
+      "sha256": "4ef88d9a2a761f18d86acc601dd787bced23d17be8913ea57caa3a18b753d0c5",
+      "bytes": 45830
+    },
+    {
+      "path": "review/media/here-lies-trouble-stage-4-20261026/here-lies-trouble.20261026.fourth-draft.pdf",
+      "sha256": "99d5099a4750ccf1f03d9ba4c520a13210c1c6147278d2e7d2daad6d0ff9669a",
+      "bytes": 77584
+    },
+    {
+      "path": "review/media/here-lies-trouble-stage-4-20261026/here-lies-trouble.20261026.fourth-draft.txt",
+      "sha256": "889c2fdd91008e7acd998a7ed1ab94c4a0a20e71c5cba06ec37070e47001f4f6",
+      "bytes": 46859
+    },
+    {
+      "path": "review/media/here-lies-trouble-stage-4-20261026/poster.jpg",
+      "sha256": "9e382f93d0c98e08cb40fcc9d702854bb53fce403e95656dc71c758a70f0a242",
+      "bytes": 174891
+    },
+    {
+      "path": "review/media/here-lies-trouble-stage-4-20261026/screenplay-provenance.json",
+      "sha256": "563bc7fc1d333b4443ac4b9f96a27cffa160c35ea7d7096f36719c507996bc08",
+      "bytes": 1346
+    },
+    {
+      "path": "review/media/here-lies-trouble-stage-4-20261026/stage-4-validation.json",
+      "sha256": "2feeabfc4e03f54e293a2e877fa3046cc2a1fb7a0a95018961a2b32c049bd778",
+      "bytes": 3510
+    }
+  ]
+}

@@ -39,6 +39,63 @@ node scripts/update-build-manifest.mjs
 node scripts/check-review-site.mjs
 ```
 
+## Here Lies Trouble — current Stage 4 review
+
+[Open the review package](https://situationshipin.space/review/here-lies-trouble-stage-4/).
+It includes the complete **103-second** Stage 4 allocation, the canonical
+`here-lies-trouble.20261026.fourth-draft.txt` and fresh PDF, Fountain and FDX
+exports, plus the October 26 format-fit, production-breakdown and
+production-details documents. All 191 screenplay turns are retained.
+The three Markdown downloads preserve their source bytes; readable web
+versions resolve published links and label unavailable working files as
+local archive references.
+
+This is the complete rendered Stage 4 sequence, covering turns 1–9. The
+full episode audio is 52:35.375; the remaining episode picture has not been
+produced. Terrain is accepted; reciprocal gaze and speaking mouths remain
+unfinished. Publication for review does not mark these requirements accepted.
+
+The browser video retains all 2,472 frames at 24 fps, resized to 720×1280,
+with the original AAC packets copied unchanged. Its 14.8 MiB size fits the
+existing 16 MiB object limit. The native 1080×1920 master stays in Izzi.
+
+To reproduce the proxy (FFmpeg) and package (Python Markdown, ReportLab and
+Liberation Mono required), choose a temporary output directory:
+
+```sh
+hlt_work=$(mktemp -d)
+hlt_video=/home/bkoz/src/izzi/outputs/here-lies-trouble/stage-4-20261026-option-b-v3/review/here-lies-trouble-stage-4-103s.mp4
+ffmpeg -y -i "$hlt_video" -map 0:v:0 \
+  -vf scale=720:1280:flags=lanczos -c:v libx264 -preset medium \
+  -b:v 1020k -pix_fmt yuv420p -threads 4 \
+  -pass 1 -passlogfile "$hlt_work/pass" -an -f null /dev/null
+ffmpeg -y -i "$hlt_video" -map 0:v:0 -map 0:a:0 \
+  -vf scale=720:1280:flags=lanczos -c:v libx264 -preset medium \
+  -b:v 1020k -pix_fmt yuv420p -threads 4 \
+  -pass 2 -passlogfile "$hlt_work/pass" -c:a copy -movflags +faststart \
+  "$hlt_work/stage-4.review.mp4"
+python3 scripts/publish-hlt-stage4.py --approve PROJECT-APPROVED \
+  --izzi-root /home/bkoz/src/izzi --video-proxy "$hlt_work/stage-4.review.mp4"
+node --test scripts/review-publication-approval.test.mjs
+node scripts/update-build-manifest.mjs
+node scripts/check-review-site.mjs
+```
+
+The publisher checks the frozen source hashes, full duration/frame count and
+AAC packet identity. It records every published asset's hash. The FDX is a
+Final Draft XML script subset, round-tripped against every source turn; it
+has not been tested in the Final Draft desktop application.
+
+The owner's October 27 request explicitly authorizes review publication of
+this existing video. Its catalog grant binds the artifact ID and both media
+hashes. The August visual-styling/audio production gates retain their existing
+decisions; this review grant authorizes neither creative acceptance nor new
+production. The validator rejects reuse of the grant for changed media.
+
+Before this publication, the site validator already reported 19 unrelated
+provider-input findings. The package adds no new findings. Those existing
+files are outside this publication's scope.
+
 ## Hamonshū V2 source categories
 
 | Review packet | Inspected scans | Graphic water crops | Text-only exclusions |

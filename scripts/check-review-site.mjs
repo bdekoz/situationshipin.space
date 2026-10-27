@@ -4,6 +4,7 @@ import { createHash } from "node:crypto";
 import { readdir, readFile, stat } from "node:fs/promises";
 import { dirname, extname, posix, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
+import { hasReviewPublicationApproval } from "./review-publication-approval.mjs";
 
 const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const catalogPath = resolve(repositoryRoot, "data/review-items.json");
@@ -20,7 +21,8 @@ const maximumFileBytes = 16 * 1024 * 1024;
 const maximumPayloadBytes = 192 * 1024 * 1024;
 // .mp3 added 2026-08-14 for audio review artifacts (Kokoro female voice bank).
 // .txt added 2026-08-18 for the W3 canonical transcript review container.
-const allowedExtensions = new Set([".png", ".jpg", ".jpeg", ".svg", ".html", ".json", ".mp4", ".mp3", ".webp", ".pdf", ".md", ".txt"]);
+// Editable screenplay companions are bounded and hash-checked like other assets.
+const allowedExtensions = new Set([".png", ".jpg", ".jpeg", ".svg", ".html", ".json", ".mp4", ".mp3", ".webp", ".pdf", ".md", ".txt", ".fdx", ".fountain"]);
 const forbiddenExtensions = new Set([".mkv", ".wav", ".mov"]);
 
 let failures = 0;
@@ -358,7 +360,8 @@ for (const item of catalog.items) {
 
 // ---------------------------------------------------------------------------
 // Workflow-v2 gates (visual-styling + audio). Video-production entries must
-// not appear in the catalog until both gates carry decision KEEP.
+// require both gates to carry KEEP, unless the project owner explicitly
+// authorizes review publication of the exact already-produced artifact.
 // ---------------------------------------------------------------------------
 const workflowGateDir = resolve(repositoryRoot, "data/gates");
 const workflowGates = new Map();
@@ -393,8 +396,16 @@ const gateFamilies = new Set([
   ...(workflowGates.get("audio")?.families || [])
 ]);
 const gatedVideoItems = videoProductionItems.filter(
-  (item) => gateFamilies.size === 0 || gateFamilies.has(item.family)
+  (item) => (gateFamilies.size === 0 || gateFamilies.has(item.family))
+    && !hasReviewPublicationApproval(item)
 );
+for (const item of videoProductionItems.filter(item => item.review_publication)) {
+  if (!hasReviewPublicationApproval(item)) {
+    fail(`${item.artifact_id} review-publication grant is incomplete or bound to different media`);
+  } else {
+    pass(`${item.artifact_id} has explicit publication approval for this existing review artifact`);
+  }
+}
 if (gatedVideoItems.length > 0) {
   for (const item of gatedVideoItems) {
     const visualDecision = workflowGates.get("visual-styling")?.decision || "PENDING";

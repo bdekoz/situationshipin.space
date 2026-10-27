@@ -1,0 +1,15 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "here-lies-trouble-format-fit-20261026",
+  "artifact_id": "here-lies-trouble-format-fit-20261026",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": null,
+  "document": {
+    "path": "/review/here-lies-trouble-stage-4/format-fit.html",
+    "sha256": "e3d3f4b0d6c2b82140f72c003c8f157cc5a002a3214fc3efb64ab41ee60ce1a5",
+    "format": "html",
+    "plan_stage": "PLAN-DRAFT",
+    "plan_pdf": null
+  }
+}
