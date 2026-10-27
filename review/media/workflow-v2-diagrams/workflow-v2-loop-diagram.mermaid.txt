@@ -1,0 +1,12 @@
+flowchart LR
+    PLAN["1. PLAN<br/>Audio, visual styling and video plans<br/>Optional local authoring on eureka:<br/>DeepSeek V4 Flash · Ornith 1.5"]
+    PRODUCE["2. PRODUCE<br/>Transcript + keyframes for review<br/>Voice audio · video render + mux"]
+    REVIEW["3. REVIEW<br/>Portal review · KEEP / REVISE"]
+    PLAN --> PRODUCE
+    PRODUCE --> REVIEW
+    REVIEW -->|stage-1| PLAN
+    REVIEW -->|stage-2| PLAN
+    REVIEW -->|pilot| PLAN
+    REVIEW -->|release| PLAN
+    classDef local fill:#e5f2ec,stroke:#286047,color:#163a2a,stroke-width:2px
+    class PLAN local

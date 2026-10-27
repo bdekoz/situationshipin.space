@@ -39,6 +39,47 @@ node scripts/update-build-manifest.mjs
 node scripts/check-review-site.mjs
 ```
 
+## Workflow diagrams and local models
+
+[Open the diagram index](https://situationshipin.space/review/workflow-v2-diagram-index/)
+for four views: hardware/software, compute resources, Baseline v1 and the
+Workflow v2 loop. Each has PNG, zoomable SVG and editable Mermaid downloads.
+The original two review URLs remain stable. The October 27 inventory places
+both DeepSeek V4 Flash (`ds4` / ROCm, on demand) and `ornith-1.5:35b`
+(Ollama) on eureka, sharing its 96 GiB GPU allocation.
+
+Edit the four tagged Mermaid blocks in Izzi's `docs/workflows.md`. Their
+hardware/model evidence is
+`resources.static/workflows/local-model-inventory.20261027.json`; the
+accepted August hardware/software map remains a historical snapshot in
+`docs/development/sessions/20260817.fal.ai_stage_2.md`, section 5.2.1.
+
+Render using Mermaid 11.16.1 / CLI 11.16.0 with the installed Chrome browser:
+
+```sh
+workflow_tools=$(mktemp -d)
+PUPPETEER_SKIP_DOWNLOAD=1 npm install --prefix "$workflow_tools" \
+  @mermaid-js/mermaid-cli@11.16.0 mermaid@11.16.1 puppeteer@24.16.0
+python3 /home/bkoz/src/izzi/scripts/render-workflow-diagrams.py \
+  --mmdc "$workflow_tools/node_modules/.bin/mmdc"
+```
+
+After committing the source, prepare this site's bounded publication:
+
+```sh
+node scripts/publish-workflow-diagrams.mjs \
+  --izzi-commit <40-hex-source-commit> \
+  --diagrams-dir /home/bkoz/src/izzi/outputs/workflows-v2/20261027-local-models
+node scripts/update-build-manifest.mjs
+node scripts/check-review-site.mjs
+```
+
+The publisher verifies every render-packet file against its receipt before
+copying it. Downloads live under `review/media/workflow-v2-diagrams/`;
+Mermaid sources use `.mermaid.txt` URLs and download as `.mmd` files. The
+index also links the inventory, render receipt, render configuration and
+commit-pinned editable documentation. Updated diagrams await human review.
+
 ## Here Lies Trouble — current Stage 4 review
 
 [Open the review package](https://situationshipin.space/review/here-lies-trouble-stage-4/).

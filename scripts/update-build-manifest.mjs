@@ -35,6 +35,7 @@ const codePaths = [
   "scripts/publish-make-check-generation.mjs",
   "scripts/rebuild-review-pages.mjs",
   "scripts/publish-video-proof.mjs",
+  "scripts/publish-workflow-diagrams.mjs",
   "scripts/publish-plan-proof.mjs",
   "scripts/publish-palette-index.mjs",
   "scripts/publish-palette-20260822-index.mjs",

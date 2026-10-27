@@ -1,0 +1,135 @@
+{
+  "schema_version": "izzi-workflow-diagram-render-1",
+  "rendered_at": "2026-10-27T16:45:47.462235+00:00",
+  "source": {
+    "path": "docs/workflows.md",
+    "bytes": 20622,
+    "sha256": "795dcfad57eadb325e41e4941ceeb9c09f1540bb7660e592cbfd3851b767bed8"
+  },
+  "renderer": {
+    "mermaid_cli": "11.16.0",
+    "mermaid": "11.16.1",
+    "browser": "Google Chrome 156.0.8078.47"
+  },
+  "render_config": {
+    "path": "mermaid-config.json",
+    "bytes": 749,
+    "sha256": "4acb6235e9038f52447bfc3b4f83ba9a1106874c34584f82f7e92f0f3aa2784e"
+  },
+  "inventory": {
+    "path": "local-model-inventory.20261027.json",
+    "bytes": 4350,
+    "sha256": "636751693f28bc875cdb6b724c4ddbfd1a1af8ef2fcd1fa5f3deac8c5eca4057"
+  },
+  "human_review_state": "UNREVIEWED",
+  "diagrams": [
+    {
+      "artifact_id": "workflow-hardware-software-diagram",
+      "render_config": {
+        "path": "workflow-hardware-software-diagram.config.json",
+        "bytes": 749,
+        "sha256": "4acb6235e9038f52447bfc3b4f83ba9a1106874c34584f82f7e92f0f3aa2784e"
+      },
+      "files": [
+        {
+          "path": "workflow-hardware-software-diagram.mmd",
+          "bytes": 1304,
+          "sha256": "3f43d77b30ef6aa586b8bcd5454de583fd3029e26f3e2de5ff3cc6f88106ec86"
+        },
+        {
+          "path": "workflow-hardware-software-diagram.svg",
+          "bytes": 28862,
+          "sha256": "828fe19b3660ac064cdd2bd6dd710b1b0ae6ba8f6db69783d38a74d000628449"
+        },
+        {
+          "path": "workflow-hardware-software-diagram.png",
+          "bytes": 241841,
+          "sha256": "833a08de0e5706a5cd0ef9814cf31d048508f03261a33518ceba779d0081c3b9",
+          "width": 3536,
+          "height": 2000
+        }
+      ]
+    },
+    {
+      "artifact_id": "devpac-compute-resources-diagram",
+      "render_config": {
+        "path": "devpac-compute-resources-diagram.config.json",
+        "bytes": 749,
+        "sha256": "4acb6235e9038f52447bfc3b4f83ba9a1106874c34584f82f7e92f0f3aa2784e"
+      },
+      "files": [
+        {
+          "path": "devpac-compute-resources-diagram.mmd",
+          "bytes": 829,
+          "sha256": "3f114f9d8828fdb8a944195f3ed71769a456524cdd0b52db79a98e16652f3a7f"
+        },
+        {
+          "path": "devpac-compute-resources-diagram.svg",
+          "bytes": 19045,
+          "sha256": "29aab5e436dd0a7f6a2d403059d58af7d80dd9fb6597b8603d86493a128e6353"
+        },
+        {
+          "path": "devpac-compute-resources-diagram.png",
+          "bytes": 162708,
+          "sha256": "b4a0c3b29e94a9d870d8e61c220cfb13e8e2597115980f254e2de20b3754b14b",
+          "width": 1382,
+          "height": 1752
+        }
+      ]
+    },
+    {
+      "artifact_id": "workflow-baseline-v1-diagram",
+      "render_config": {
+        "path": "workflow-baseline-v1-diagram.config.json",
+        "bytes": 749,
+        "sha256": "4acb6235e9038f52447bfc3b4f83ba9a1106874c34584f82f7e92f0f3aa2784e"
+      },
+      "files": [
+        {
+          "path": "workflow-baseline-v1-diagram.mmd",
+          "bytes": 1184,
+          "sha256": "309ade986fc177067629bfd5bfb9a4f7ad8f6f83630240231c35d6d27d11ba78"
+        },
+        {
+          "path": "workflow-baseline-v1-diagram.svg",
+          "bytes": 24885,
+          "sha256": "f7296811ccee463cbcf1e6f275935c504767516ba9992eee77fc525e2a8e338e"
+        },
+        {
+          "path": "workflow-baseline-v1-diagram.png",
+          "bytes": 208390,
+          "sha256": "cf72fd252e7c3969437b1d445f570b30d014afec2caeda42df3ed9903f90ab76",
+          "width": 1890,
+          "height": 2246
+        }
+      ]
+    },
+    {
+      "artifact_id": "workflow-v2-loop-diagram",
+      "render_config": {
+        "path": "workflow-v2-loop-diagram.config.json",
+        "bytes": 753,
+        "sha256": "4d2c2f72016d96a1212c634e4b964cbd4d69d7673c1b922b0df0ae4ec2e015c8"
+      },
+      "files": [
+        {
+          "path": "workflow-v2-loop-diagram.mmd",
+          "bytes": 569,
+          "sha256": "f4cb08d8c5689638613bbcea5a69b924801097b0213f03bcda3a8b049cff69a5"
+        },
+        {
+          "path": "workflow-v2-loop-diagram.svg",
+          "bytes": 18539,
+          "sha256": "59fce139f30b64dec5b10dcd405e6115dbfc46e41cd65623dc7656a956869c8b"
+        },
+        {
+          "path": "workflow-v2-loop-diagram.png",
+          "bytes": 97837,
+          "sha256": "348dc150c15abc95234dd96b82d9ca413ea0efdf2261192508d37e84598ff0d3",
+          "width": 2688,
+          "height": 744
+        }
+      ]
+    }
+  ]
+}

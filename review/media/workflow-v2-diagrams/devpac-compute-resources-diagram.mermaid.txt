@@ -1,0 +1,13 @@
+flowchart TB
+    R["rizal · control plane<br/>Fedora 44 · Ryzen 9 3950X · 32 threads<br/>62.7 GiB host RAM · Quadro RTX 4000"]
+    O["ord · compute worker / deliveries<br/>Fedora 44 · Ryzen AI MAX+ 395 · 32 threads<br/>125.1 GiB host RAM · Radeon 8060S"]
+    E["eureka · compute worker / local LLMs<br/>Fedora 44 · Ryzen AI MAX+ 395 · 32 threads<br/>31.1 GiB host RAM + 96 GiB GPU allocation"]
+    MODELS["Shared eureka GPU capacity<br/>DeepSeek V4 Flash · Ornith 1.5"]
+    R -->|SSH dispatch and status| O
+    R -->|SSH dispatch and status| E
+    O <-->|USB4 / thunderbolt0 · direct transfer| E
+    E --- MODELS
+    classDef control fill:#edf1fb,stroke:#426795,color:#172d4b,stroke-width:2px
+    classDef local fill:#e5f2ec,stroke:#286047,color:#163a2a,stroke-width:2px
+    class R control
+    class E,MODELS local

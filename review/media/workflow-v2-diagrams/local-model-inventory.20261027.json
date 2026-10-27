@@ -1,0 +1,113 @@
+{
+  "schema_version": "izzi-local-model-inventory-1",
+  "observed_at": "2026-10-27T16:31:49.495039+00:00",
+  "method": "Read-only SSH inventory of ord/eureka, local rizal inventory, Ollama list/show API, and saved October 21 DeepSeek trial receipts. No inference, model downloads, service changes or provider calls were performed for this inventory.",
+  "hosts": [
+    {
+      "host": "rizal",
+      "role": "control plane, workspace and CPU audio/verification",
+      "os": "Fedora 44",
+      "cpu": "AMD Ryzen 9 3950X",
+      "logical_cpus": 32,
+      "host_memtotal_kib": 65729700,
+      "gpu": "Quadro RTX 4000; PCI identity rechecked, VRAM capacity not remeasured"
+    },
+    {
+      "host": "ord",
+      "role": "compute worker and canonical deliveries",
+      "os": "Fedora 44",
+      "cpu": "AMD Ryzen AI MAX+ 395 with Radeon 8060S",
+      "logical_cpus": 32,
+      "host_memtotal_kib": 131149964,
+      "reported_gpu_vram_bytes": 536870912,
+      "usb4": {
+        "interface": "thunderbolt0",
+        "ipv4": "169.254.4.107",
+        "operstate": "UP"
+      }
+    },
+    {
+      "host": "eureka",
+      "role": "compute worker and both new local LLMs",
+      "os": "Fedora 44",
+      "cpu": "AMD Ryzen AI MAX+ 395 with Radeon 8060S",
+      "logical_cpus": 32,
+      "host_memtotal_kib": 32624888,
+      "reported_gpu_vram_bytes": 103079215104,
+      "usb4": {
+        "interface": "thunderbolt0",
+        "ipv4": "169.254.31.134",
+        "operstate": "UP"
+      }
+    }
+  ],
+  "models": [
+    {
+      "name": "DeepSeek V4 Flash",
+      "host": "eureka",
+      "runtime": "ds4 / ds4-server with ROCm",
+      "runtime_revision": "5379c1c9ac315f1540371b06a3db88491d4059ff",
+      "model_path": "/home/bkoz/.local/share/deepseek-flash/trial-20261021/weights/DeepSeek-V4-Flash-IQ2XXS-w2Q2K-AProjQ8-SExpQ8-OutQ8-chat-v2-imatrix-0731.gguf",
+      "model_bytes": 86720111488,
+      "weight_verification_receipt": {
+        "status": "verified",
+        "size": 86720111488,
+        "sha256": "ca22ae2f838e14077c22bc1c1417b71b45b5e5a3687bd96c2ac6e17fdb6261c0",
+        "completed_at": "2026-10-21T14:58:17-0700"
+      },
+      "current_file_size_matches_receipt": true,
+      "weight_hash_recomputed_in_this_inventory": false,
+      "configured_context_tokens": 4096,
+      "server_bind_when_launched": "127.0.0.1:18080",
+      "listener_active_at_inventory": false,
+      "operating_state": "Installed and trial-verified; on-demand runner, not a persistent active endpoint.",
+      "trial_results": {
+        "date": "2026-10-21",
+        "smoke_returncode": 0,
+        "structured_output_passed": true,
+        "tool_roundtrip_passed": true
+      },
+      "source_receipts": [
+        "eureka:~/.local/share/deepseek-flash/trial-20261021/model-verified.json",
+        "eureka:~/.local/share/deepseek-flash/trial-20261021/smoke-result.json",
+        "eureka:~/.local/share/deepseek-flash/trial-20261021/api-summary.json"
+      ]
+    },
+    {
+      "name": "Ornith 1.5",
+      "model_id": "ornith-1.5:35b",
+      "host": "eureka",
+      "runtime": "Ollama",
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen35moe",
+        "families": [
+          "qwen35moe"
+        ],
+        "parameter_size": "35.5B",
+        "quantization_level": "Q4_K_M"
+      },
+      "capabilities_reported_by_runtime": [
+        "tools",
+        "thinking",
+        "completion",
+        "vision"
+      ],
+      "model_info": {
+        "general.architecture": "qwen35moe",
+        "general.parameter_count": 35505251456,
+        "qwen35moe.context_length": 262144
+      },
+      "listener_active_at_inventory": true,
+      "operating_state": "Installed in Ollama; local service listening. Installed capabilities are metadata, not a new performance test.",
+      "evidence_commands": [
+        "ollama list",
+        "ollama show ornith-1.5:35b",
+        "local Ollama /api/show metadata"
+      ]
+    }
+  ],
+  "integration_scope": "Optional local LLM assistance for planning, code and analysis. This diagram refresh does not implement automatic Izzi routing or change human review gates. Local media models and hosted motion generation remain separate paths.",
+  "capacity_note": "Both new models share eureka and its single 96 GiB GPU allocation. Their boxes do not imply dedicated GPUs or validated concurrent residency."
+}
