@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1900 2200" width="1900" height="2200" role="img" aria-labelledby="diagram-title" font-family="DejaVu Sans">
-  <title id="diagram-title">workflow hardware software diagram</title>
+  <title id="diagram-title">Compute software</title>
   <rect width="1900" height="2200" fill="white" />
   <rect id="group-SOFTWARE-frame" x="620" y="60" width="660" height="600" fill="#fafafa" stroke="#999999" stroke-width="2" />
   <text x="950.0" y="102" text-anchor="middle" fill="#222222" font-size="24" font-weight="700">Local Software</text>
