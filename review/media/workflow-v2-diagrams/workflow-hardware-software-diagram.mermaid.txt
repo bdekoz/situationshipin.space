@@ -2,9 +2,14 @@ flowchart LR
     I["devp.ac<br/>Planning and generation control"]
     subgraph SOFTWARE["Local Software"]
         direction TB
-        NATIVE["Native SVG + FFmpeg<br/>rizal / compute workers"]
+        NATIVE["FFmpeg / Inkscape / Ghostscript<br/>rizal / compute workers"]
         CARTO["Cartofreako"]
         IZZI["Izzi"]
+        CLUSTEROPS["Clusterops"]
+    end
+    subgraph DATABASE["Local Database"]
+        direction TB
+        IPINFO["Ipinfo"]
     end
     subgraph LOCALAI["Local AI"]
         direction TB
@@ -15,31 +20,34 @@ flowchart LR
     end
     subgraph HOSTEDAI["Hosted AI"]
         direction TB
-        CLOUD["Hosted motion generation<br/>seedance2ai.io / fal.ai"]
-        IMAGE["Hosted image generation<br/>gpt-sol-6.1 / gpt-astra-6"]
-        CODING["Hosted coding<br/>gpt-sol-6.1 / deepseek-v4"]
+        CLOUD["Motion generation<br/>seedance2ai.io / fal.ai"]
+        IMAGE["Image generation<br/>gpt-sol-6.1 / gpt-astra-6"]
+        CODING["Coding<br/>gpt-sol-6.1 / deepseek-v4"]
     end
     REVIEW["situationshipin.space<br/>Human review"]
-    I -.-> DS
-    I -.-> ORN
+    I --> DS
+    I --> ORN
     I -.-> CODING
     I --> AUDIO
     I --> PRIOR
     I --> NATIVE
     I --> CARTO
     I --> IZZI
-    I --> CLOUD
-    I --> IMAGE
+    I --> CLUSTEROPS
+    I --> IPINFO
+    I -.-> CLOUD
+    I -.-> IMAGE
     AUDIO --> REVIEW
     PRIOR --> REVIEW
     NATIVE --> REVIEW
     CARTO --> REVIEW
     IZZI --> REVIEW
-    CLOUD --> REVIEW
-    IMAGE --> REVIEW
+    CLOUD -.-> REVIEW
+    IMAGE -.-> REVIEW
     classDef node fill:#f1f1f1,stroke:#666666,color:#222222,stroke-width:2px
-    class I,AUDIO,PRIOR,NATIVE,CARTO,IZZI,DS,ORN,CLOUD,IMAGE,CODING,REVIEW node
+    class I,AUDIO,PRIOR,NATIVE,CARTO,IZZI,CLUSTEROPS,IPINFO,DS,ORN,CLOUD,IMAGE,CODING,REVIEW node
     style SOFTWARE fill:#fafafa,stroke:#999999,color:#222222
+    style DATABASE fill:#fafafa,stroke:#999999,color:#222222
     style LOCALAI fill:#fafafa,stroke:#999999,color:#222222
     style HOSTEDAI fill:#fafafa,stroke:#999999,color:#222222
     linkStyle default stroke:#666666,color:#222222

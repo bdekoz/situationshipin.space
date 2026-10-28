@@ -2,7 +2,7 @@
   "renderer": "izzi-fixed-svg-1",
   "title": "Compute software",
   "width": 1900,
-  "height": 2200,
+  "height": 2700,
   "font_family": "DejaVu Sans",
   "font_size": 19,
   "line_height": 31,
@@ -14,18 +14,30 @@
         620,
         60,
         660,
-        600
+        760
       ],
       "members": [
         "NATIVE",
         "CARTO",
-        "IZZI"
+        "IZZI",
+        "CLUSTEROPS"
+      ]
+    },
+    "DATABASE": {
+      "box": [
+        620,
+        880,
+        660,
+        280
+      ],
+      "members": [
+        "IPINFO"
       ]
     },
     "LOCALAI": {
       "box": [
         620,
-        720,
+        1220,
         660,
         760
       ],
@@ -39,7 +51,7 @@
     "HOSTEDAI": {
       "box": [
         620,
-        1540,
+        2040,
         660,
         600
       ],
@@ -54,7 +66,7 @@
     "I": {
       "box": [
         40,
-        1040,
+        1290,
         460,
         120
       ],
@@ -91,17 +103,17 @@
       "fill": "#f1f1f1",
       "stroke": "#666666"
     },
-    "AUDIO": {
+    "CLUSTEROPS": {
       "box": [
         660,
-        820,
+        640,
         580,
         120
       ],
       "fill": "#f1f1f1",
       "stroke": "#666666"
     },
-    "PRIOR": {
+    "IPINFO": {
       "box": [
         660,
         980,
@@ -111,27 +123,27 @@
       "fill": "#f1f1f1",
       "stroke": "#666666"
     },
+    "AUDIO": {
+      "box": [
+        660,
+        1320,
+        580,
+        120
+      ],
+      "fill": "#f1f1f1",
+      "stroke": "#666666"
+    },
+    "PRIOR": {
+      "box": [
+        660,
+        1480,
+        580,
+        120
+      ],
+      "fill": "#f1f1f1",
+      "stroke": "#666666"
+    },
     "DS": {
-      "box": [
-        660,
-        1140,
-        580,
-        120
-      ],
-      "fill": "#f1f1f1",
-      "stroke": "#666666"
-    },
-    "ORN": {
-      "box": [
-        660,
-        1300,
-        580,
-        120
-      ],
-      "fill": "#f1f1f1",
-      "stroke": "#666666"
-    },
-    "CLOUD": {
       "box": [
         660,
         1640,
@@ -141,7 +153,7 @@
       "fill": "#f1f1f1",
       "stroke": "#666666"
     },
-    "IMAGE": {
+    "ORN": {
       "box": [
         660,
         1800,
@@ -151,10 +163,30 @@
       "fill": "#f1f1f1",
       "stroke": "#666666"
     },
+    "CLOUD": {
+      "box": [
+        660,
+        2140,
+        580,
+        120
+      ],
+      "fill": "#f1f1f1",
+      "stroke": "#666666"
+    },
+    "IMAGE": {
+      "box": [
+        660,
+        2300,
+        580,
+        120
+      ],
+      "fill": "#f1f1f1",
+      "stroke": "#666666"
+    },
     "CODING": {
       "box": [
         660,
-        1960,
+        2460,
         580,
         120
       ],
@@ -164,7 +196,7 @@
     "REVIEW": {
       "box": [
         1400,
-        1040,
+        1290,
         460,
         120
       ],
@@ -177,18 +209,18 @@
       "source": "I",
       "target": "NATIVE",
       "arrow": true,
-      "dashed": false,
+      "dotted": false,
       "points": [
         [
           500,
-          1050
+          1295
         ],
         [
-          535,
-          1050
+          525,
+          1295
         ],
         [
-          535,
+          525,
           220
         ],
         [
@@ -201,18 +233,18 @@
       "source": "I",
       "target": "CARTO",
       "arrow": true,
-      "dashed": false,
+      "dotted": false,
       "points": [
         [
           500,
-          1061
+          1305
         ],
         [
-          550,
-          1061
+          538,
+          1305
         ],
         [
-          550,
+          538,
           380
         ],
         [
@@ -225,23 +257,71 @@
       "source": "I",
       "target": "IZZI",
       "arrow": true,
-      "dashed": false,
+      "dotted": false,
       "points": [
         [
           500,
-          1072
+          1315
         ],
         [
-          565,
-          1072
+          551,
+          1315
         ],
         [
-          565,
+          551,
           540
         ],
         [
           660,
           540
+        ]
+      ]
+    },
+    {
+      "source": "I",
+      "target": "CLUSTEROPS",
+      "arrow": true,
+      "dotted": false,
+      "points": [
+        [
+          500,
+          1325
+        ],
+        [
+          564,
+          1325
+        ],
+        [
+          564,
+          700
+        ],
+        [
+          660,
+          700
+        ]
+      ]
+    },
+    {
+      "source": "I",
+      "target": "IPINFO",
+      "arrow": true,
+      "dotted": false,
+      "points": [
+        [
+          500,
+          1335
+        ],
+        [
+          577,
+          1335
+        ],
+        [
+          577,
+          1040
+        ],
+        [
+          660,
+          1040
         ]
       ]
     },
@@ -249,23 +329,23 @@
       "source": "I",
       "target": "AUDIO",
       "arrow": true,
-      "dashed": false,
+      "dotted": false,
       "points": [
         [
           500,
-          1083
+          1345
         ],
         [
-          580,
-          1083
+          603,
+          1345
         ],
         [
-          580,
-          880
+          603,
+          1380
         ],
         [
           660,
-          880
+          1380
         ]
       ]
     },
@@ -273,23 +353,23 @@
       "source": "I",
       "target": "PRIOR",
       "arrow": true,
-      "dashed": false,
+      "dotted": false,
       "points": [
         [
           500,
-          1094
+          1355
         ],
         [
-          595,
-          1094
+          590,
+          1355
         ],
         [
-          595,
-          1040
+          590,
+          1540
         ],
         [
           660,
-          1040
+          1540
         ]
       ]
     },
@@ -297,23 +377,23 @@
       "source": "I",
       "target": "DS",
       "arrow": true,
-      "dashed": true,
+      "dotted": false,
       "points": [
         [
           500,
-          1105
+          1365
         ],
         [
-          595,
-          1105
+          577,
+          1365
         ],
         [
-          595,
-          1200
+          577,
+          1700
         ],
         [
           660,
-          1200
+          1700
         ]
       ]
     },
@@ -321,23 +401,23 @@
       "source": "I",
       "target": "ORN",
       "arrow": true,
-      "dashed": true,
+      "dotted": false,
       "points": [
         [
           500,
-          1116
+          1375
         ],
         [
-          580,
-          1116
+          564,
+          1375
         ],
         [
-          580,
-          1360
+          564,
+          1860
         ],
         [
           660,
-          1360
+          1860
         ]
       ]
     },
@@ -345,23 +425,23 @@
       "source": "I",
       "target": "CLOUD",
       "arrow": true,
-      "dashed": false,
+      "dotted": true,
       "points": [
         [
           500,
-          1127
+          1385
         ],
         [
-          565,
-          1127
+          551,
+          1385
         ],
         [
-          565,
-          1700
+          551,
+          2200
         ],
         [
           660,
-          1700
+          2200
         ]
       ]
     },
@@ -369,23 +449,23 @@
       "source": "I",
       "target": "IMAGE",
       "arrow": true,
-      "dashed": false,
+      "dotted": true,
       "points": [
         [
           500,
-          1138
+          1395
         ],
         [
-          550,
-          1138
+          538,
+          1395
         ],
         [
-          550,
-          1860
+          538,
+          2360
         ],
         [
           660,
-          1860
+          2360
         ]
       ]
     },
@@ -393,23 +473,23 @@
       "source": "I",
       "target": "CODING",
       "arrow": true,
-      "dashed": true,
+      "dotted": true,
       "points": [
         [
           500,
-          1149
+          1405
         ],
         [
-          535,
-          1149
+          525,
+          1405
         ],
         [
-          535,
-          2020
+          525,
+          2520
         ],
         [
           660,
-          2020
+          2520
         ]
       ]
     },
@@ -417,6 +497,7 @@
       "source": "NATIVE",
       "target": "REVIEW",
       "arrow": true,
+      "dotted": false,
       "points": [
         [
           1240,
@@ -428,11 +509,11 @@
         ],
         [
           1365,
-          1058
+          1308
         ],
         [
           1400,
-          1058
+          1308
         ]
       ]
     },
@@ -440,6 +521,7 @@
       "source": "CARTO",
       "target": "REVIEW",
       "arrow": true,
+      "dotted": false,
       "points": [
         [
           1240,
@@ -451,11 +533,11 @@
         ],
         [
           1350,
-          1072
+          1322
         ],
         [
           1400,
-          1072
+          1322
         ]
       ]
     },
@@ -463,6 +545,7 @@
       "source": "IZZI",
       "target": "REVIEW",
       "arrow": true,
+      "dotted": false,
       "points": [
         [
           1240,
@@ -474,11 +557,11 @@
         ],
         [
           1335,
-          1086
+          1336
         ],
         [
           1400,
-          1086
+          1336
         ]
       ]
     },
@@ -486,22 +569,23 @@
       "source": "AUDIO",
       "target": "REVIEW",
       "arrow": true,
+      "dotted": false,
       "points": [
         [
           1240,
-          880
+          1380
         ],
         [
           1320,
-          880
+          1380
         ],
         [
           1320,
-          1100
+          1350
         ],
         [
           1400,
-          1100
+          1350
         ]
       ]
     },
@@ -509,22 +593,23 @@
       "source": "PRIOR",
       "target": "REVIEW",
       "arrow": true,
+      "dotted": false,
       "points": [
         [
           1240,
-          1040
+          1540
         ],
         [
-          1305,
-          1040
+          1335,
+          1540
         ],
         [
-          1305,
-          1114
+          1335,
+          1364
         ],
         [
           1400,
-          1114
+          1364
         ]
       ]
     },
@@ -532,22 +617,23 @@
       "source": "CLOUD",
       "target": "REVIEW",
       "arrow": true,
+      "dotted": true,
       "points": [
         [
           1240,
-          1700
+          2200
         ],
         [
-          1305,
-          1700
+          1350,
+          2200
         ],
         [
-          1305,
-          1128
+          1350,
+          1378
         ],
         [
           1400,
-          1128
+          1378
         ]
       ]
     },
@@ -555,22 +641,23 @@
       "source": "IMAGE",
       "target": "REVIEW",
       "arrow": true,
+      "dotted": true,
       "points": [
         [
           1240,
-          1860
+          2360
         ],
         [
-          1320,
-          1860
+          1365,
+          2360
         ],
         [
-          1320,
-          1142
+          1365,
+          1392
         ],
         [
           1400,
-          1142
+          1392
         ]
       ]
     }

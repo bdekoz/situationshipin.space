@@ -1,10 +1,10 @@
 {
   "schema_version": "izzi-workflow-diagram-render-1",
-  "rendered_at": "2026-10-28T02:24:51.898689+00:00",
+  "rendered_at": "2026-10-28T02:39:42.315833+00:00",
   "source": {
     "path": "docs/workflows.md",
-    "bytes": 24046,
-    "sha256": "452447c68cc3d891cc3157afd8382e22fdb5bd1c4d0cdb55c8eaeae556e93d35"
+    "bytes": 24425,
+    "sha256": "8c5445e75a2c42dea129fd2f56cfb9e2d173dd14ed99bc38439af134d9f58c03"
   },
   "renderer": {
     "mermaid_cli": "11.16.0",
@@ -28,26 +28,26 @@
       "renderer": "izzi-fixed-svg-1",
       "render_config": {
         "path": "workflow-hardware-software-diagram.config.json",
-        "bytes": 8123,
-        "sha256": "7f67f414a2d25d2c213463e142f16a77f3427d6741848b7232e764aeb4741ea4"
+        "bytes": 9425,
+        "sha256": "e8c7f9c4d21dd0f9a5cd38d60c4bc5917ae8a80704950f098425b49838d970eb"
       },
       "files": [
         {
           "path": "workflow-hardware-software-diagram.mmd",
-          "bytes": 1638,
-          "sha256": "11fc1baa141cc82eeaa55791345e5fc9e5d48d9c7e3e985674160d4a7891d449"
+          "bytes": 1875,
+          "sha256": "52ac46c757e2e4d204f6841f803c38f5a7ea3ac01643091bf55a68962864f131"
         },
         {
           "path": "workflow-hardware-software-diagram.svg",
-          "bytes": 8854,
-          "sha256": "5ce15754b041e980439b1fa0a4ec49dfbff1c6ee3d37e0c49b47436417869c62"
+          "bytes": 10160,
+          "sha256": "57c0037931afdf978ac5d805bfc29f3dd350c4334e1f9ce77852e4843909f8c8"
         },
         {
           "path": "workflow-hardware-software-diagram.png",
-          "bytes": 300695,
-          "sha256": "9dcf6a3e33c2c71655361511a0afc7d44401ac2fbb446d129e11887a7f82afc8",
+          "bytes": 345372,
+          "sha256": "977f7aaebe857a297e0a77eb182bff0baa386cf4b13490eaed14a60029e6d56b",
           "width": 3800,
-          "height": 4400
+          "height": 5400
         }
       ]
     },
