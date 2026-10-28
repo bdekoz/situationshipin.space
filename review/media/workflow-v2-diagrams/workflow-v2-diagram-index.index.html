@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><meta name="description" content="Four updated diagrams for the current Izzi workflow, including DeepSeek V4 Flash and Ornith 1.5 on eureka. Inventory: October 27, 2026."><title>Workflow diagrams, hardware & local models — situationshipin.space</title><style>body{margin:0;background:#fcfbf7}main{max-width:80rem;margin:auto;padding:2rem 1rem 4rem}h1{font-size:2rem}
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><meta name="description" content="Three updated diagrams for the current Izzi workflow, including DeepSeek V4 Flash and Ornith 1.5 on eureka. Inventory: October 27, 2026."><title>Workflow diagrams, hardware & local models — situationshipin.space</title><style>body{margin:0;background:#fcfbf7}main{max-width:80rem;margin:auto;padding:2rem 1rem 4rem}h1{font-size:2rem}
 .review-page .review-hero h1{font-size:clamp(2rem,4vw,3.5rem);line-height:1.08;letter-spacing:-.035em;max-width:none}
 .review-page .review-media>h2,.review-page #feedback-title{font-size:1.6rem;letter-spacing:-.025em}
 .workflow-index{font-family:ui-sans-serif,system-ui,sans-serif;line-height:1.55;min-width:0;color:#172d40}
@@ -15,7 +15,7 @@
 .workflow-links a,.workflow-downloads a{display:inline-block;padding:.35rem 0;font-weight:600}
 .workflow-source{font-size:.85rem;overflow-wrap:anywhere;margin-top:1.5rem}
 @media(max-width:760px){.workflow-cards{grid-template-columns:1fr}.workflow-card .workflow-preview{height:17rem}.workflow-intro{padding:.8rem}}
-</style></head><body><main class="workflow-index"><p><a href="/">← Review catalog</a> · <a href="/review/workflow-v2-diagram-index/">Review this diagram set</a></p><h1>Workflow diagrams, hardware & local models</h1><p>Four updated diagrams for the current Izzi workflow, including DeepSeek V4 Flash and Ornith 1.5 on eureka. Inventory: October 27, 2026.</p><h2>Current hardware and local models</h2>
+</style></head><body><main class="workflow-index"><p><a href="/">← Review catalog</a> · <a href="/review/workflow-v2-diagram-index/">Review this diagram set</a></p><h1>Workflow diagrams, hardware & local models</h1><p>Three updated diagrams for the current Izzi workflow, including DeepSeek V4 Flash and Ornith 1.5 on eureka. Inventory: October 27, 2026.</p><h2>Current hardware and local models</h2>
 <div class="workflow-intro"><p><strong>Both new LLMs are on eureka.</strong> DeepSeek V4 Flash uses the ROCm <code>ds4</code> runner; Ornith 1.5 is installed as <code>ornith-1.5:35b</code> in Ollama. They share one 96 GiB GPU allocation.</p>
 <p>DeepSeek’s saved October 21 inference and API trials passed. Its server is on demand and was not listening at inventory time; Ollama was listening. The diagrams show available local authoring choices. Model installation does not add automatic workflow routing.</p></div>
 <ul class="workflow-cards"><li class="workflow-card">
@@ -39,23 +39,13 @@
 <a href="/review/media/workflow-v2-diagrams/devpac-compute-resources-diagram.config.json">Configuration</a>
 <a href="/review/devpac-compute-resources-diagram/">Review</a></nav></li>
 <li class="workflow-card">
-<h3><a href="/review/workflow-baseline-v1-diagram/">Workflow Baseline v1 — three-box</a></h3>
-<p>Plan and source review, Izzi production, then output review. The refreshed baseline includes optional local LLM assistance and current audio and publication paths.</p>
-<a class="workflow-preview" href="/review/media/workflow-v2-diagrams/workflow-baseline-v1-diagram.svg" target="_blank" rel="noopener" aria-label="Open Workflow Baseline v1 — three-box as a zoomable SVG"><img src="/review/media/workflow-v2-diagrams/workflow-baseline-v1-diagram.png" alt="Plan and source review, Izzi production, then output review. The refreshed baseline includes optional local LLM assistance and current audio and publication paths." loading="lazy" decoding="async"></a>
-<nav class="workflow-links" aria-label="Workflow Baseline v1 — three-box downloads">
-<a href="/review/media/workflow-v2-diagrams/workflow-baseline-v1-diagram.svg" target="_blank" rel="noopener">Open SVG ↗</a>
-<a href="/review/media/workflow-v2-diagrams/workflow-baseline-v1-diagram.png" download>PNG</a>
-<a href="/review/media/workflow-v2-diagrams/workflow-baseline-v1-diagram.mermaid.txt" download="workflow-baseline-v1-diagram.mmd">Mermaid source</a>
-<a href="/review/media/workflow-v2-diagrams/workflow-baseline-v1-diagram.config.json">Configuration</a>
-<a href="/review/workflow-baseline-v1-diagram/">Review</a></nav></li>
-<li class="workflow-card">
-<h3><a href="/review/workflow-v2-loop-diagram/">Workflow v2 — plan to produce to revise</a></h3>
-<p>PLAN, PRODUCE and REVISE share one horizontal row and one box color. The stage 1, stage 2, pilot and release arrows return beneath PRODUCE into the bottom of PLAN. Revised for issue #78.</p>
-<a class="workflow-preview" href="/review/media/workflow-v2-diagrams/workflow-v2-loop-diagram.svg" target="_blank" rel="noopener" aria-label="Open Workflow v2 — plan to produce to revise as a zoomable SVG"><img src="/review/media/workflow-v2-diagrams/workflow-v2-loop-diagram.png" alt="PLAN, PRODUCE and REVISE share one horizontal row and one box color. The stage 1, stage 2, pilot and release arrows return beneath PRODUCE into the bottom of PLAN. Revised for issue #78." loading="lazy" decoding="async"></a>
-<nav class="workflow-links" aria-label="Workflow v2 — plan to produce to revise downloads">
+<h3><a href="/review/workflow-v2-loop-diagram/">Workflow</a></h3>
+<p>PLAN, PRODUCE and REVISE share one horizontal row of gray boxes. The stage 1, stage 2, pilot and release arrows return beneath PRODUCE into the bottom of PLAN. Revised for issue #78.</p>
+<a class="workflow-preview" href="/review/media/workflow-v2-diagrams/workflow-v2-loop-diagram.svg" target="_blank" rel="noopener" aria-label="Open Workflow as a zoomable SVG"><img src="/review/media/workflow-v2-diagrams/workflow-v2-loop-diagram.png" alt="PLAN, PRODUCE and REVISE share one horizontal row of gray boxes. The stage 1, stage 2, pilot and release arrows return beneath PRODUCE into the bottom of PLAN. Revised for issue #78." loading="lazy" decoding="async"></a>
+<nav class="workflow-links" aria-label="Workflow downloads">
 <a href="/review/media/workflow-v2-diagrams/workflow-v2-loop-diagram.svg" target="_blank" rel="noopener">Open SVG ↗</a>
 <a href="/review/media/workflow-v2-diagrams/workflow-v2-loop-diagram.png" download>PNG</a>
 <a href="/review/media/workflow-v2-diagrams/workflow-v2-loop-diagram.mermaid.txt" download="workflow-v2-loop-diagram.mmd">Mermaid source</a>
 <a href="/review/media/workflow-v2-diagrams/workflow-v2-loop-diagram.config.json">Configuration</a>
 <a href="/review/workflow-v2-loop-diagram/">Review</a></nav></li></ul>
-<p class="workflow-source"><a href="https://github.com/bdekoz/izzi/blob/239462b66e11bd3c4bf41f0130360453892bb1a9/docs/workflows.md">Editable source: docs/workflows.md</a> · <a href="https://github.com/bdekoz/izzi/blob/239462b66e11bd3c4bf41f0130360453892bb1a9/scripts/render-workflow-diagrams.py">Diagram renderer</a> · <a href="/review/media/workflow-v2-diagrams/local-model-inventory.20261027.json">Model and hardware inventory</a> · <a href="/review/media/workflow-v2-diagrams/render-manifest.json">Render receipt</a><br>Source commit: <code>239462b66e11bd3c4bf41f0130360453892bb1a9</code>. The architecture, compute triangle and workflow loop use explicit SVG layouts; the baseline uses Mermaid 11.16.1. Updated diagrams await human review.</p></main></body></html>
+<p class="workflow-source"><a href="https://github.com/bdekoz/izzi/blob/1f7e5f04dc8e12aae236ea08d9f1d3795c50c6b1/docs/workflows.md">Editable source: docs/workflows.md</a> · <a href="https://github.com/bdekoz/izzi/blob/1f7e5f04dc8e12aae236ea08d9f1d3795c50c6b1/scripts/render-workflow-diagrams.py">Diagram renderer</a> · <a href="/review/media/workflow-v2-diagrams/local-model-inventory.20261027.json">Model and hardware inventory</a> · <a href="/review/media/workflow-v2-diagrams/render-manifest.json">Render receipt</a><br>Source commit: <code>1f7e5f04dc8e12aae236ea08d9f1d3795c50c6b1</code>. The compute software, compute triangle and workflow loop use explicit SVG layouts. Updated diagrams await human review.</p></main></body></html>

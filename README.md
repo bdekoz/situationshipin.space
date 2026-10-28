@@ -42,13 +42,13 @@ node scripts/check-review-site.mjs
 ## Workflow diagrams and local models
 
 [Open the diagram index](https://situationshipin.space/review/workflow-v2-diagram-index/)
-for four views: hardware/software, compute resources, Baseline v1 and the
-Workflow v2 loop. Each has PNG, zoomable SVG and editable Mermaid downloads.
-The original two review URLs remain stable. The October 27 inventory places
+for three views: Compute software, compute resources and the
+Workflow diagram. Each has PNG, zoomable SVG and editable Mermaid downloads.
+The October 27 inventory places
 both DeepSeek V4 Flash (`ds4` / ROCm, on demand) and `ornith-1.5:35b`
 (Ollama) on eureka, sharing its 96 GiB GPU allocation.
 
-Edit the four tagged Mermaid blocks in Izzi's `docs/workflows.md`. Their
+Edit the three tagged Mermaid blocks in Izzi's `docs/workflows.md`. Their
 hardware/model evidence is
 `resources.static/workflows/local-model-inventory.20261027.json`; the
 accepted August hardware/software map remains a historical snapshot in
@@ -57,8 +57,8 @@ accepted August hardware/software map remains a historical snapshot in
 Render using Mermaid 11.16.1 / CLI 11.16.0 with the installed Chrome browser:
 the three layouts revised for issues #78–#80 use explicit SVG coordinates
 and librsvg/Pycairo PNG export. This preserves equal workflow boxes,
-rectangular hosts arranged in a triangle, and the architecture's combined
-local-media group and three hosted choices. The per-diagram configurations
+rectangular hosts arranged in a triangle, and the Compute software groups
+for Custom Software, Local Database, Local AI and Hosted AI. The per-diagram configurations
 record the layout; the Mermaid blocks supply labels and connections.
 
 ```sh

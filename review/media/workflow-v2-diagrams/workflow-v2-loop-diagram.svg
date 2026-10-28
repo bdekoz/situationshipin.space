@@ -1,42 +1,42 @@
 <?xml version='1.0' encoding='utf-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1540 530" width="1540" height="530" role="img" aria-labelledby="diagram-title" font-family="DejaVu Sans">
-  <title id="diagram-title">workflow v2 loop diagram</title>
+  <title id="diagram-title">Workflow</title>
   <rect width="1540" height="530" fill="white" />
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#60778a" />
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#666666" />
     </marker>
   </defs>
-  <path d="M 480 155 L 550 155" fill="none" stroke="#60778a" stroke-width="2" data-source="PLAN" data-target="PRODUCE" marker-end="url(#arrow)" />
-  <path d="M 990 155 L 1060 155" fill="none" stroke="#60778a" stroke-width="2" data-source="PRODUCE" data-target="REVIEW" marker-end="url(#arrow)" />
-  <path d="M 1110 270 L 1110 330 L 430 330 L 430 270" fill="none" stroke="#60778a" stroke-width="2" data-source="REVIEW" data-target="PLAN" marker-end="url(#arrow)" />
-  <path d="M 1160 270 L 1160 385 L 380 385 L 380 270" fill="none" stroke="#60778a" stroke-width="2" data-source="REVIEW" data-target="PLAN" marker-end="url(#arrow)" />
-  <path d="M 1210 270 L 1210 440 L 330 440 L 330 270" fill="none" stroke="#60778a" stroke-width="2" data-source="REVIEW" data-target="PLAN" marker-end="url(#arrow)" />
-  <path d="M 1260 270 L 1260 495 L 280 495 L 280 270" fill="none" stroke="#60778a" stroke-width="2" data-source="REVIEW" data-target="PLAN" marker-end="url(#arrow)" />
+  <path d="M 480 155 L 550 155" fill="none" stroke="#666666" stroke-width="2" data-source="PLAN" data-target="PRODUCE" marker-end="url(#arrow)" />
+  <path d="M 990 155 L 1060 155" fill="none" stroke="#666666" stroke-width="2" data-source="PRODUCE" data-target="REVIEW" marker-end="url(#arrow)" />
+  <path d="M 1110 270 L 1110 330 L 430 330 L 430 270" fill="none" stroke="#666666" stroke-width="2" data-source="REVIEW" data-target="PLAN" marker-end="url(#arrow)" />
+  <path d="M 1160 270 L 1160 385 L 380 385 L 380 270" fill="none" stroke="#666666" stroke-width="2" data-source="REVIEW" data-target="PLAN" marker-end="url(#arrow)" />
+  <path d="M 1210 270 L 1210 440 L 330 440 L 330 270" fill="none" stroke="#666666" stroke-width="2" data-source="REVIEW" data-target="PLAN" marker-end="url(#arrow)" />
+  <path d="M 1260 270 L 1260 495 L 280 495 L 280 270" fill="none" stroke="#666666" stroke-width="2" data-source="REVIEW" data-target="PLAN" marker-end="url(#arrow)" />
   <g id="node-PLAN">
-    <rect x="40" y="40" width="440" height="230" rx="4" fill="#e5f2ec" stroke="#286047" stroke-width="2" />
-    <text x="260.0" y="83" text-anchor="middle" fill="#172d40" font-size="22" font-weight="700">1. PLAN</text>
-    <text x="260.0" y="121" text-anchor="middle" fill="#172d40" font-size="19" font-weight="400">Audio, visual styling and video plans</text>
-    <text x="260.0" y="151" text-anchor="middle" fill="#172d40" font-size="19" font-weight="400">Optional local authoring on eureka:</text>
-    <text x="260.0" y="181" text-anchor="middle" fill="#172d40" font-size="19" font-weight="400">DeepSeek V4 Flash · Ornith 1.5</text>
+    <rect x="40" y="40" width="440" height="230" rx="4" fill="#e6e6e6" stroke="#666666" stroke-width="2" />
+    <text x="260.0" y="83" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">1. PLAN</text>
+    <text x="260.0" y="121" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">Audio, visual styling and video plans</text>
+    <text x="260.0" y="151" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">Optional local authoring on eureka:</text>
+    <text x="260.0" y="181" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">DeepSeek V4 Flash · Ornith 1.5</text>
   </g>
   <g id="node-PRODUCE">
-    <rect x="550" y="40" width="440" height="230" rx="4" fill="#e5f2ec" stroke="#286047" stroke-width="2" />
-    <text x="770.0" y="83" text-anchor="middle" fill="#172d40" font-size="22" font-weight="700">2. PRODUCE</text>
-    <text x="770.0" y="121" text-anchor="middle" fill="#172d40" font-size="19" font-weight="400">Transcript + keyframes for review</text>
-    <text x="770.0" y="151" text-anchor="middle" fill="#172d40" font-size="19" font-weight="400">Voice audio · video render + mux</text>
+    <rect x="550" y="40" width="440" height="230" rx="4" fill="#e6e6e6" stroke="#666666" stroke-width="2" />
+    <text x="770.0" y="83" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">2. PRODUCE</text>
+    <text x="770.0" y="121" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">Transcript + keyframes for review</text>
+    <text x="770.0" y="151" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">Voice audio · video render + mux</text>
   </g>
   <g id="node-REVIEW">
-    <rect x="1060" y="40" width="440" height="230" rx="4" fill="#e5f2ec" stroke="#286047" stroke-width="2" />
-    <text x="1280.0" y="83" text-anchor="middle" fill="#172d40" font-size="22" font-weight="700">3. REVISE</text>
-    <text x="1280.0" y="121" text-anchor="middle" fill="#172d40" font-size="19" font-weight="400">Portal review · KEEP / REVISE</text>
+    <rect x="1060" y="40" width="440" height="230" rx="4" fill="#e6e6e6" stroke="#666666" stroke-width="2" />
+    <text x="1280.0" y="83" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">3. REVISE</text>
+    <text x="1280.0" y="121" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">Portal review · KEEP / REVISE</text>
   </g>
   <rect x="723.5" y="316" width="93" height="28" rx="4" fill="white" />
-  <text x="770" y="337" text-anchor="middle" fill="#172d40" font-size="19">stage 1</text>
+  <text x="770" y="337" text-anchor="middle" fill="#222222" font-size="19">stage 1</text>
   <rect x="723.5" y="371" width="93" height="28" rx="4" fill="white" />
-  <text x="770" y="392" text-anchor="middle" fill="#172d40" font-size="19">stage 2</text>
+  <text x="770" y="392" text-anchor="middle" fill="#222222" font-size="19">stage 2</text>
   <rect x="734.5" y="426" width="71" height="28" rx="4" fill="white" />
-  <text x="770" y="447" text-anchor="middle" fill="#172d40" font-size="19">pilot</text>
+  <text x="770" y="447" text-anchor="middle" fill="#222222" font-size="19">pilot</text>
   <rect x="723.5" y="481" width="93" height="28" rx="4" fill="white" />
-  <text x="770" y="502" text-anchor="middle" fill="#172d40" font-size="19">release</text>
+  <text x="770" y="502" text-anchor="middle" fill="#222222" font-size="19">release</text>
 </svg>

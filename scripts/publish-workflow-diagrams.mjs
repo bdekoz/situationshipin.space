@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Publish the four source-bound diagrams and their editable downloads.
+// Publish the three source-bound diagrams and their editable downloads.
 // Usage: node scripts/publish-workflow-diagrams.mjs \
 //   --izzi-commit <40-hex> --diagrams-dir <render-workflow-diagrams.py packet>
 
@@ -26,18 +26,13 @@ const MEMBERS = [
     description: "Three grayscale rectangular Fedora 44 host boxes arranged in a triangle: rizal above eureka and ord. Each host lists its hardware and local model paths; Gold 20TB cold storage sits below the workers, connected to their horizontal USB4/Thunderbolt local link. Revised for issue #79.",
   },
   {
-    name: "workflow-baseline-v1-diagram",
-    title: "Workflow Baseline v1 — three-box",
-    description: "Plan and source review, Izzi production, then output review. The refreshed baseline includes optional local LLM assistance and current audio and publication paths.",
-  },
-  {
     name: "workflow-v2-loop-diagram",
-    title: "Workflow v2 — plan to produce to revise",
-    description: "PLAN, PRODUCE and REVISE share one horizontal row and one box color. The stage 1, stage 2, pilot and release arrows return beneath PRODUCE into the bottom of PLAN. Revised for issue #78.",
+    title: "Workflow",
+    description: "PLAN, PRODUCE and REVISE share one horizontal row of gray boxes. The stage 1, stage 2, pilot and release arrows return beneath PRODUCE into the bottom of PLAN. Revised for issue #78.",
   },
 ];
 const TITLE = "Workflow diagrams, hardware & local models";
-const DESCRIPTION = "Four updated diagrams for the current Izzi workflow, including DeepSeek V4 Flash and Ornith 1.5 on eureka. Inventory: October 27, 2026.";
+const DESCRIPTION = "Three updated diagrams for the current Izzi workflow, including DeepSeek V4 Flash and Ornith 1.5 on eureka. Inventory: October 27, 2026.";
 const CSS = `
 .review-page .review-hero h1{font-size:clamp(2rem,4vw,3.5rem);line-height:1.08;letter-spacing:-.035em;max-width:none}
 .review-page .review-media>h2,.review-page #feedback-title{font-size:1.6rem;letter-spacing:-.025em}
@@ -90,7 +85,7 @@ function indexContent(commit) {
 <p>${escape(spec.description)}</p>
 <a class="workflow-preview" href="/${MEDIA}/${spec.name}.svg" target="_blank" rel="noopener" aria-label="Open ${escape(spec.title)} as a zoomable SVG"><img src="/${MEDIA}/${spec.name}.png" alt="${escape(spec.description)}" loading="lazy" decoding="async"></a>
 ${links(spec)}</li>`).join("\n")}</ul>
-<p class="workflow-source"><a href="${source}">Editable source: docs/workflows.md</a> · <a href="https://github.com/bdekoz/izzi/blob/${commit}/scripts/render-workflow-diagrams.py">Diagram renderer</a> · <a href="/${MEDIA}/local-model-inventory.20261027.json">Model and hardware inventory</a> · <a href="/${MEDIA}/render-manifest.json">Render receipt</a><br>Source commit: <code>${commit}</code>. The architecture, compute triangle and workflow loop use explicit SVG layouts; the baseline uses Mermaid 11.16.1. Updated diagrams await human review.</p>`;
+<p class="workflow-source"><a href="${source}">Editable source: docs/workflows.md</a> · <a href="https://github.com/bdekoz/izzi/blob/${commit}/scripts/render-workflow-diagrams.py">Diagram renderer</a> · <a href="/${MEDIA}/local-model-inventory.20261027.json">Model and hardware inventory</a> · <a href="/${MEDIA}/render-manifest.json">Render receipt</a><br>Source commit: <code>${commit}</code>. The compute software, compute triangle and workflow loop use explicit SVG layouts. Updated diagrams await human review.</p>`;
 }
 
 function indexHtml(commit) {
@@ -104,7 +99,7 @@ function reviewPage(item, commit) {
       .replace("Open the generation index ↗", "Open diagrams in a full page ↗");
   } else {
     const spec = MEMBERS.find((member) => member.name === item.artifact_id);
-    html = html.replace('<p class="meta">', `${links(spec)}<p><a href="/review/${INDEX_ID}/">All four workflow diagrams</a> · <a href="https://github.com/bdekoz/izzi/blob/${commit}/docs/workflows.md">Editable documentation</a></p><p class="meta">`)
+    html = html.replace('<p class="meta">', `${links(spec)}<p><a href="/review/${INDEX_ID}/">All workflow diagrams</a> · <a href="https://github.com/bdekoz/izzi/blob/${commit}/docs/workflows.md">Editable documentation</a></p><p class="meta">`)
       .replace("Motion and audio notes", "Diagram notes");
   }
   return html;
@@ -180,7 +175,7 @@ async function main() {
   const index = await publish(`${INDEX_ID}.index.html`, Buffer.from(indexHtml(commit)));
   updated.push({
     ...common, artifact_id: INDEX_ID, title: TITLE, description: DESCRIPTION,
-    alt: "Four diagrams: software and local models, compute hardware, Baseline v1 and Workflow v2.",
+    alt: "Three diagrams: Compute software, compute hardware and Workflow.",
     generation_class: "workflow-diagram-index", media_kind: "index", published_path: index.path,
     sha256: index.sha256, bytes: index.bytes, format: "html", technical_state: "WORKFLOW-DIAGRAM-INDEX",
     index_members: MEMBERS.map((spec) => spec.name), review_assets: [inventory, renderConfig, renderReceipt],
@@ -191,9 +186,9 @@ async function main() {
     await writeFile(join(directory, "index.html"), reviewPage(item, commit));
     await writeFile(join(directory, "manifest.json"), renderReviewManifest(item));
   }
-  // Replace this family in place; retain every unrelated item and its order.
+  // Replace current family members and drop retired ones; retain unrelated items and their order.
   const replacements = new Map(updated.map((item) => [item.artifact_id, item]));
-  catalog.items = catalog.items.map((item) => {
+  catalog.items = catalog.items.filter((item) => item.family !== FAMILY || replacements.has(item.artifact_id)).map((item) => {
     const replacement = replacements.get(item.artifact_id);
     replacements.delete(item.artifact_id);
     return replacement || item;

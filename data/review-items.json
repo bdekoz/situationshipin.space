@@ -1,6 +1,6 @@
 {
   "baseline_state": "NOT-PROMOTED",
-  "generated_at": "2026-10-28T02:55:26.987Z",
+  "generated_at": "2026-10-28T03:04:13.509Z",
   "human_review_state": "UNREVIEWED",
   "items": [
     {
@@ -19922,29 +19922,28 @@
       "feedback_round": "workflow-v2-diagrams",
       "review_scope": "WORKFLOW-V2-DIAGRAMS",
       "review_mode": "output",
-      "source_path": "izzi 239462b66e11bd3c4bf41f0130360453892bb1a9 docs/workflows.md",
-      "source_sha256": "cfc82f152807d356222818ea0f5b22e77a4cad98de055f3c82107dcaef98fb64",
-      "generation_commit": "239462b66e11bd3c4bf41f0130360453892bb1a9",
+      "source_path": "izzi 1f7e5f04dc8e12aae236ea08d9f1d3795c50c6b1 docs/workflows.md",
+      "source_sha256": "be3877d718d27accfbf76713748a9054ef162b7723fcfeca9fed57b36f434ac0",
+      "generation_commit": "1f7e5f04dc8e12aae236ea08d9f1d3795c50c6b1",
       "generation_state": "CURRENT",
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-10-28T02:55:26.987Z",
+      "added_at": "2026-10-28T03:04:13.509Z",
       "artifact_id": "workflow-v2-diagram-index",
       "title": "Workflow diagrams, hardware & local models",
-      "description": "Four updated diagrams for the current Izzi workflow, including DeepSeek V4 Flash and Ornith 1.5 on eureka. Inventory: October 27, 2026.",
-      "alt": "Four diagrams: software and local models, compute hardware, Baseline v1 and Workflow v2.",
+      "description": "Three updated diagrams for the current Izzi workflow, including DeepSeek V4 Flash and Ornith 1.5 on eureka. Inventory: October 27, 2026.",
+      "alt": "Three diagrams: Compute software, compute hardware and Workflow.",
       "generation_class": "workflow-diagram-index",
       "media_kind": "index",
       "published_path": "review/media/workflow-v2-diagrams/workflow-v2-diagram-index.index.html",
-      "sha256": "082daa60dae2394dc73301fa2e284272fa5ad6cffeea63a58597d83ad3a7350d",
-      "bytes": 10515,
+      "sha256": "2ea7a088c3fd3f42770ea46b1fa29aabd481e9830139c656c169014d0196e27d",
+      "bytes": 8963,
       "format": "html",
       "technical_state": "WORKFLOW-DIAGRAM-INDEX",
       "index_members": [
         "workflow-hardware-software-diagram",
         "devpac-compute-resources-diagram",
-        "workflow-baseline-v1-diagram",
         "workflow-v2-loop-diagram"
       ],
       "review_assets": [
@@ -19960,8 +19959,8 @@
         },
         {
           "path": "review/media/workflow-v2-diagrams/render-manifest.json",
-          "bytes": 4581,
-          "sha256": "062cb2fd27ae1bc547dee76385d4740a77eb56dda195f5cef69f557c6295c272"
+          "bytes": 3638,
+          "sha256": "cc7c2ae239bc85db8cdf547e8dc51a737b3bcc125658a61a5b4dd7a5ab08b4e7"
         }
       ]
     },
@@ -19970,23 +19969,23 @@
       "feedback_round": "workflow-v2-diagrams",
       "review_scope": "WORKFLOW-V2-DIAGRAMS",
       "review_mode": "output",
-      "source_path": "izzi 239462b66e11bd3c4bf41f0130360453892bb1a9 docs/workflows.md",
-      "source_sha256": "cfc82f152807d356222818ea0f5b22e77a4cad98de055f3c82107dcaef98fb64",
-      "generation_commit": "239462b66e11bd3c4bf41f0130360453892bb1a9",
+      "source_path": "izzi 1f7e5f04dc8e12aae236ea08d9f1d3795c50c6b1 docs/workflows.md",
+      "source_sha256": "be3877d718d27accfbf76713748a9054ef162b7723fcfeca9fed57b36f434ac0",
+      "generation_commit": "1f7e5f04dc8e12aae236ea08d9f1d3795c50c6b1",
       "generation_state": "CURRENT",
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-10-28T02:55:26.987Z",
+      "added_at": "2026-10-28T03:04:13.509Z",
       "artifact_id": "workflow-v2-loop-diagram",
-      "title": "Workflow v2 — plan to produce to revise",
-      "description": "PLAN, PRODUCE and REVISE share one horizontal row and one box color. The stage 1, stage 2, pilot and release arrows return beneath PRODUCE into the bottom of PLAN. Revised for issue #78.",
-      "alt": "PLAN, PRODUCE and REVISE share one horizontal row and one box color. The stage 1, stage 2, pilot and release arrows return beneath PRODUCE into the bottom of PLAN. Revised for issue #78.",
+      "title": "Workflow",
+      "description": "PLAN, PRODUCE and REVISE share one horizontal row of gray boxes. The stage 1, stage 2, pilot and release arrows return beneath PRODUCE into the bottom of PLAN. Revised for issue #78.",
+      "alt": "PLAN, PRODUCE and REVISE share one horizontal row of gray boxes. The stage 1, stage 2, pilot and release arrows return beneath PRODUCE into the bottom of PLAN. Revised for issue #78.",
       "generation_class": "workflow-diagram",
       "media_kind": "image",
       "published_path": "review/media/workflow-v2-diagrams/workflow-v2-loop-diagram.png",
-      "sha256": "f9601da5dcaf3d1e3562d32537d11c4b99e1c95f69268ba3e26fda0cd397f497",
-      "bytes": 109626,
+      "sha256": "7d3dd1c99566a668aba4bb2ef6e6e7a22ccc5f4ffe2688500449a80365e75b43",
+      "bytes": 102686,
       "width": 3080,
       "height": 1060,
       "format": "png",
@@ -19994,62 +19993,18 @@
       "review_assets": [
         {
           "path": "review/media/workflow-v2-diagrams/workflow-v2-loop-diagram.svg",
-          "bytes": 3727,
-          "sha256": "b2b3bf87cc46f32a69adcf3074f697b116fab8564f2d19b120a423a623639fd4"
+          "bytes": 3711,
+          "sha256": "c2541e81ac8b3c9f8f44d69daef4ef8125eff3a43583c3415bbe32c67da2e33e"
         },
         {
           "path": "review/media/workflow-v2-diagrams/workflow-v2-loop-diagram.mermaid.txt",
           "bytes": 605,
-          "sha256": "016b717e4882666a73951ce7a518dddb97f9c366751ab73525a65b0ce0aa3e95"
+          "sha256": "8a10743232a6dbdebd3c2347a050d31486c67255ebab5aca68772ec96aae398d"
         },
         {
           "path": "review/media/workflow-v2-diagrams/workflow-v2-loop-diagram.config.json",
-          "bytes": 2605,
-          "sha256": "53ac07d9378194c7155fb2eb341fb7734ab85e45febb332650bc0c0a7e676122"
-        }
-      ]
-    },
-    {
-      "family": "workflow-v2-diagrams",
-      "feedback_round": "workflow-v2-diagrams",
-      "review_scope": "WORKFLOW-V2-DIAGRAMS",
-      "review_mode": "output",
-      "source_path": "izzi 239462b66e11bd3c4bf41f0130360453892bb1a9 docs/workflows.md",
-      "source_sha256": "cfc82f152807d356222818ea0f5b22e77a4cad98de055f3c82107dcaef98fb64",
-      "generation_commit": "239462b66e11bd3c4bf41f0130360453892bb1a9",
-      "generation_state": "CURRENT",
-      "human_review_state": "UNREVIEWED",
-      "baseline_state": "NOT-PROMOTED",
-      "review_category": "proofs",
-      "added_at": "2026-10-28T02:55:26.987Z",
-      "artifact_id": "workflow-baseline-v1-diagram",
-      "title": "Workflow Baseline v1 — three-box",
-      "description": "Plan and source review, Izzi production, then output review. The refreshed baseline includes optional local LLM assistance and current audio and publication paths.",
-      "alt": "Plan and source review, Izzi production, then output review. The refreshed baseline includes optional local LLM assistance and current audio and publication paths.",
-      "generation_class": "workflow-diagram",
-      "media_kind": "image",
-      "published_path": "review/media/workflow-v2-diagrams/workflow-baseline-v1-diagram.png",
-      "sha256": "cf72fd252e7c3969437b1d445f570b30d014afec2caeda42df3ed9903f90ab76",
-      "bytes": 208390,
-      "width": 1890,
-      "height": 2246,
-      "format": "png",
-      "technical_state": "RENDER-VERIFIED-MERMAID-11.16.1",
-      "review_assets": [
-        {
-          "path": "review/media/workflow-v2-diagrams/workflow-baseline-v1-diagram.svg",
-          "bytes": 24885,
-          "sha256": "f7296811ccee463cbcf1e6f275935c504767516ba9992eee77fc525e2a8e338e"
-        },
-        {
-          "path": "review/media/workflow-v2-diagrams/workflow-baseline-v1-diagram.mermaid.txt",
-          "bytes": 1184,
-          "sha256": "309ade986fc177067629bfd5bfb9a4f7ad8f6f83630240231c35d6d27d11ba78"
-        },
-        {
-          "path": "review/media/workflow-v2-diagrams/workflow-baseline-v1-diagram.config.json",
-          "bytes": 749,
-          "sha256": "4acb6235e9038f52447bfc3b4f83ba9a1106874c34584f82f7e92f0f3aa2784e"
+          "bytes": 2682,
+          "sha256": "a9d2feb806b69e42b6b6388b8fe6cc6b0cb5fff01bd611388a45b795231427d6"
         }
       ]
     },
@@ -32451,14 +32406,14 @@
       "feedback_round": "workflow-v2-diagrams",
       "review_scope": "WORKFLOW-V2-DIAGRAMS",
       "review_mode": "output",
-      "source_path": "izzi 239462b66e11bd3c4bf41f0130360453892bb1a9 docs/workflows.md",
-      "source_sha256": "cfc82f152807d356222818ea0f5b22e77a4cad98de055f3c82107dcaef98fb64",
-      "generation_commit": "239462b66e11bd3c4bf41f0130360453892bb1a9",
+      "source_path": "izzi 1f7e5f04dc8e12aae236ea08d9f1d3795c50c6b1 docs/workflows.md",
+      "source_sha256": "be3877d718d27accfbf76713748a9054ef162b7723fcfeca9fed57b36f434ac0",
+      "generation_commit": "1f7e5f04dc8e12aae236ea08d9f1d3795c50c6b1",
       "generation_state": "CURRENT",
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-10-28T02:55:26.987Z",
+      "added_at": "2026-10-28T03:04:13.509Z",
       "artifact_id": "workflow-hardware-software-diagram",
       "title": "Compute software",
       "description": "A grayscale map with devp.ac and situationshipin.space aligned across the center. Custom Software contains FFmpeg / Inkscape / Ghostscript, Cartofreako, Izzi and Clusterops. Local Database contains Ipinfo between Custom Software and Local AI's media models, DeepSeek V4 Flash and Ornith 1.5. Hosted AI groups Motion generation, Image generation and Coding. Local connections are solid; hosted connections are dotted.",
@@ -32495,14 +32450,14 @@
       "feedback_round": "workflow-v2-diagrams",
       "review_scope": "WORKFLOW-V2-DIAGRAMS",
       "review_mode": "output",
-      "source_path": "izzi 239462b66e11bd3c4bf41f0130360453892bb1a9 docs/workflows.md",
-      "source_sha256": "cfc82f152807d356222818ea0f5b22e77a4cad98de055f3c82107dcaef98fb64",
-      "generation_commit": "239462b66e11bd3c4bf41f0130360453892bb1a9",
+      "source_path": "izzi 1f7e5f04dc8e12aae236ea08d9f1d3795c50c6b1 docs/workflows.md",
+      "source_sha256": "be3877d718d27accfbf76713748a9054ef162b7723fcfeca9fed57b36f434ac0",
+      "generation_commit": "1f7e5f04dc8e12aae236ea08d9f1d3795c50c6b1",
       "generation_state": "CURRENT",
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-10-28T02:55:26.987Z",
+      "added_at": "2026-10-28T03:04:13.509Z",
       "artifact_id": "devpac-compute-resources-diagram",
       "title": "Compute hardware — rizal, ord and eureka",
       "description": "Three grayscale rectangular Fedora 44 host boxes arranged in a triangle: rizal above eureka and ord. Each host lists its hardware and local model paths; Gold 20TB cold storage sits below the workers, connected to their horizontal USB4/Thunderbolt local link. Revised for issue #79.",

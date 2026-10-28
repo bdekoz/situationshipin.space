@@ -1,10 +1,13 @@
 {
   "renderer": "izzi-fixed-svg-1",
+  "title": "Workflow",
   "width": 1540,
   "height": 530,
   "font_family": "DejaVu Sans",
   "font_size": 19,
   "line_height": 30,
+  "text_color": "#222222",
+  "line_color": "#666666",
   "nodes": {
     "PLAN": {
       "box": [
@@ -13,8 +16,8 @@
         440,
         230
       ],
-      "fill": "#e5f2ec",
-      "stroke": "#286047"
+      "fill": "#e6e6e6",
+      "stroke": "#666666"
     },
     "PRODUCE": {
       "box": [
@@ -23,8 +26,8 @@
         440,
         230
       ],
-      "fill": "#e5f2ec",
-      "stroke": "#286047"
+      "fill": "#e6e6e6",
+      "stroke": "#666666"
     },
     "REVIEW": {
       "box": [
@@ -33,8 +36,8 @@
         440,
         230
       ],
-      "fill": "#e5f2ec",
-      "stroke": "#286047"
+      "fill": "#e6e6e6",
+      "stroke": "#666666"
     }
   },
   "edges": [

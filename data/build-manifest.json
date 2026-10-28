@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "portal_build": "izzi-review-2026-08-11.7",
-  "generated_at": "2026-10-28T02:55:27.164Z",
+  "generated_at": "2026-10-28T03:04:13.691Z",
   "portal_repository": "bdekoz/situationshipin.space",
   "portal_source_commit": "219a9b7f0891998c1525c94fa15b43c490b5d79f",
   "izzi_repository": "bdekoz/izzi",
@@ -10,13 +10,13 @@
   "human_review_state": "UNREVIEWED",
   "baseline_state": "NOT-PROMOTED",
   "training_conversion_transfer_state": "NOT-SHARED",
-  "artifact_count": 860,
+  "artifact_count": 859,
   "review_category_counts": {
-    "proofs": 50,
+    "proofs": 49,
     "style_processing": 801,
     "planning": 9
   },
-  "artifact_payload_bytes": 199012480,
+  "artifact_payload_bytes": 198767898,
   "frame_preview_count": 0,
   "sampled_frame_count": 0,
   "source_media_bytes_represented": 173507566,
@@ -103,7 +103,7 @@
     },
     {
       "path": "data/review-items.json",
-      "sha256": "c3edda326e19a50fe46d738fdc0ebcef6991a06e23d0997b3d2b009a5ffec8b2"
+      "sha256": "e9a45a9cf02ec073bfed7ffea9eb6bbde7b688c65734e5bb272824e2c4c4002a"
     },
     {
       "path": "scripts/check-review-site.mjs",
@@ -115,7 +115,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "a57b57fa4d91dd120722f719e93330e1d72734feb05dbd05cfa9123fe4676571"
+      "sha256": "c8203b93e5a2f06fefd4d73b71ce86741815970cbddce9fdb692d6f00a9bf392"
     },
     {
       "path": "_config.yml",
@@ -147,7 +147,7 @@
     },
     {
       "path": "scripts/publish-workflow-diagrams.mjs",
-      "sha256": "e5b4163b23d49a435aebf230a269fbb02690e253c39f9c20c9a1cd13cc9e85bd"
+      "sha256": "20c8397d790c489b4f6ccd1228326ffd31444ca293912d3caae4a2aa36e3c648"
     },
     {
       "path": "scripts/publish-plan-proof.mjs",
@@ -191,7 +191,7 @@
     }
   ],
   "artifact_inventory": "data/review-items.json",
-  "catalog_sha256": "c3edda326e19a50fe46d738fdc0ebcef6991a06e23d0997b3d2b009a5ffec8b2",
+  "catalog_sha256": "e9a45a9cf02ec073bfed7ffea9eb6bbde7b688c65734e5bb272824e2c4c4002a",
   "notes": [
     "The catalog binds every published derivative to an Izzi source path and SHA-256.",
     "Canonical source MKVs remain outside Pages; one bounded H.264/AAC MP4 proxy is published for continuous motion and audio review with independent lineage.",
