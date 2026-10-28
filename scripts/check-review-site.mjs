@@ -5,6 +5,7 @@ import { readdir, readFile, stat } from "node:fs/promises";
 import { dirname, extname, posix, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { hasReviewPublicationApproval } from "./review-publication-approval.mjs";
+import { inspectStaging, PREFIX as providerInputPrefix } from "./provider-staging.mjs";
 
 const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const catalogPath = resolve(repositoryRoot, "data/review-items.json");
@@ -435,6 +436,16 @@ for (const path of await recursiveFiles(resolve(repositoryRoot, "review"))) {
 
 const htmlReferences = await collectReviewReferences();
 const referencedReviewFiles = new Set(htmlReferences);
+let staging = { activePaths: [], bytes: 0, manifestSha256: null };
+try {
+  staging = await inspectStaging(repositoryRoot);
+  for (const message of staging.failures) fail(`provider staging: ${message}`);
+  for (const path of staging.activePaths) referencedReviewFiles.add(path);
+  payloadBytes += staging.bytes;
+  if (!staging.failures.length) pass(`provider staging receipts verified (${staging.activePaths.length} active inputs)`);
+} catch (error) {
+  fail(`provider staging: ${error.message}`);
+}
 const addReviewCompanions = (id) => {
   if (!id) return;
   referencedReviewFiles.add(`review/${id}/index.html`);
@@ -450,8 +461,17 @@ for (const item of catalog.items) {
 }
 
 const staleReviewFiles = [];
+// Three historical Duotone Noir review frames already live under this prefix.
+// Cataloged review assets have permanent, hash-checked lineage and byte limits;
+// an HTML link alone must never exempt an uncataloged provider input.
+const catalogedReviewPaths = new Set(catalog.items.flatMap(item => [
+  item.published_path, item.plan_pdf?.path, ...(item.review_assets || []).map(asset => asset.path)
+]).filter(Boolean));
 for (const path of await recursiveFiles(resolve(repositoryRoot, "review"))) {
   const rel = repositoryRelative(path);
+  if (rel.startsWith(providerInputPrefix) && !staging.activePaths.includes(rel) && !catalogedReviewPaths.has(rel)) {
+    fail(`provider input lacks a valid active staging receipt: ${rel}`);
+  }
   if (!referencedReviewFiles.has(rel)) staleReviewFiles.push(rel);
 }
 if (staleReviewFiles.length) {
@@ -486,6 +506,9 @@ try {
     izzi_source_commit: catalog.source_commit,
     artifact_count: catalog.items.length,
     artifact_payload_bytes: payloadBytes,
+    provider_staging_bytes: staging.bytes,
+    provider_staging_active_count: staging.activePaths.length,
+    provider_staging_manifest_sha256: staging.manifestSha256,
     frame_preview_count: catalog.items.filter((item) => item.frame_manifest_path).length,
     sampled_frame_count: catalog.items.filter((item) => item.frame_manifest_path).length * 10,
     source_media_bytes_represented: [...sourceMedia.values()].reduce((sum, media) => sum + media.bytes, 0),

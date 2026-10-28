@@ -28,6 +28,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+      - name: Test publication and provider staging safeguards
+        run: node --test scripts/review-publication-approval.test.mjs scripts/provider-staging.test.mjs
+      - name: Validate review site before building
+        run: node scripts/check-review-site.mjs
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll

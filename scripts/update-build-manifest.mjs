@@ -4,6 +4,7 @@ import { createHash } from "node:crypto";
 import { readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { inspectStaging } from "./provider-staging.mjs";
 
 const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const catalogPath = resolve(repositoryRoot, "data/review-items.json");
@@ -24,6 +25,10 @@ const codePaths = [
   "scripts/publish-hlt-stage4.py",
   "scripts/review-publication-approval.mjs",
   "scripts/review-publication-approval.test.mjs",
+  "scripts/provider-staging.mjs",
+  "scripts/provider-staging.test.mjs",
+  "scripts/stage-provider-input.mjs",
+  "scripts/publish-provider-history.mjs",
   "data/review-items.json",
   "scripts/check-review-site.mjs",
   "scripts/update-build-manifest.mjs",
@@ -55,12 +60,14 @@ function sha256(bytes) {
 const catalogBytes = await readFile(catalogPath);
 const catalog = JSON.parse(catalogBytes.toString("utf8"));
 const prior = JSON.parse(await readFile(manifestPath, "utf8"));
+const staging = await inspectStaging(repositoryRoot);
+if (staging.failures.length) throw new Error(staging.failures.join("\n"));
 const sourceMedia = new Map();
 const aestheticCollectionCounts = {};
 let proofCount = 0;
 let styleProcessingCount = 0;
 let planningCount = 0;
-let artifactPayloadBytes = 0;
+let artifactPayloadBytes = staging.bytes;
 let framePreviewCount = 0;
 let sampledFrameCount = 0;
 
@@ -126,6 +133,9 @@ const manifest = {
     planning: planningCount
   },
   artifact_payload_bytes: artifactPayloadBytes,
+  provider_staging_bytes: staging.bytes,
+  provider_staging_active_count: staging.activePaths.length,
+  provider_staging_manifest_sha256: staging.manifestSha256,
   frame_preview_count: framePreviewCount,
   sampled_frame_count: sampledFrameCount,
   source_media_bytes_represented: [...sourceMedia.values()].reduce(
@@ -148,6 +158,7 @@ const manifest = {
   catalog_sha256: sha256(catalogBytes),
   notes: [
     "The catalog binds every published derivative to an Izzi source path and SHA-256.",
+    "Active provider inputs require archive receipts, owner/job attribution and expiry; their bytes count against the same payload budget.",
     "Canonical source MKVs remain outside Pages; one bounded H.264/AAC MP4 proxy is published for continuous motion and audio review with independent lineage.",
     "The 234 aesthetic-reference originals remain outside the Pages tree; compact derivatives preserve source-image hashes and explicit worktree state.",
     "No source episode media, source audio, credential, analytics code, or account token is included.",

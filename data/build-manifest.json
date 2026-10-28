@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "portal_build": "izzi-review-2026-08-11.7",
-  "generated_at": "2026-10-28T03:04:13.691Z",
+  "generated_at": "2026-10-28T04:23:23.770Z",
   "portal_repository": "bdekoz/situationshipin.space",
   "portal_source_commit": "219a9b7f0891998c1525c94fa15b43c490b5d79f",
   "izzi_repository": "bdekoz/izzi",
@@ -10,16 +10,19 @@
   "human_review_state": "UNREVIEWED",
   "baseline_state": "NOT-PROMOTED",
   "training_conversion_transfer_state": "NOT-SHARED",
-  "artifact_count": 859,
+  "artifact_count": 863,
   "review_category_counts": {
-    "proofs": 49,
+    "proofs": 53,
     "style_processing": 801,
     "planning": 9
   },
-  "artifact_payload_bytes": 198767898,
+  "artifact_payload_bytes": 200142647,
+  "provider_staging_bytes": 0,
+  "provider_staging_active_count": 0,
+  "provider_staging_manifest_sha256": "946e9156b2de13886912150a7e7e53b9d54561d674934f69239145961658cb09",
   "frame_preview_count": 0,
   "sampled_frame_count": 0,
-  "source_media_bytes_represented": 173507566,
+  "source_media_bytes_represented": 219222506,
   "source_image_count": 795,
   "source_image_bytes_represented": 918759032,
   "aesthetic_collection_counts": {
@@ -102,20 +105,36 @@
       "sha256": "589bf96e0196f9b1525ac68efb3a4810a91776059ca8dae46ccc374c31e9c4b0"
     },
     {
+      "path": "scripts/provider-staging.mjs",
+      "sha256": "fdd39e5313bceb02cfe3e497b96cc0677c75512a8b37d9668f9883235fc3651e"
+    },
+    {
+      "path": "scripts/provider-staging.test.mjs",
+      "sha256": "bc1850b406f5a6965ea1d8b9c3ccb805a268210c2404aa3fbab72adc52870223"
+    },
+    {
+      "path": "scripts/stage-provider-input.mjs",
+      "sha256": "03a8c20dbb74039b7dbdf3a84e6c7a24b67bfda47d91fb894598df7929fec46d"
+    },
+    {
+      "path": "scripts/publish-provider-history.mjs",
+      "sha256": "a3d17a944171558edbbea5ea641a465731a9770a4c7d61bb500539be59254256"
+    },
+    {
       "path": "data/review-items.json",
-      "sha256": "e9a45a9cf02ec073bfed7ffea9eb6bbde7b688c65734e5bb272824e2c4c4002a"
+      "sha256": "4faa117112c72535788f05bee157c5b7fa397feda7ede2fd67cfa9f8357472bc"
     },
     {
       "path": "scripts/check-review-site.mjs",
-      "sha256": "3407d7fccd5c769b66c43e7ab9426ecac5367115826bc60fb5df0663b45ca5ec"
+      "sha256": "4da38cc71a26797011361eedd0e7bf3df90a30baf091fc30223559da52a47d69"
     },
     {
       "path": "scripts/update-build-manifest.mjs",
-      "sha256": "40ab9e74725b3092cc2866c76ae2db9e54c4aed1795340daacb324d2df0bbb77"
+      "sha256": "f5e4b8ee78c8dac2092e8d2c88645046c5c77dd87b14f482052abeedccde85a7"
     },
     {
       "path": "README.md",
-      "sha256": "c8203b93e5a2f06fefd4d73b71ce86741815970cbddce9fdb692d6f00a9bf392"
+      "sha256": "744af55e5e580af9454c6aef22c6d0fed30589aed6d99b4b635f3a7568418d09"
     },
     {
       "path": "_config.yml",
@@ -187,13 +206,14 @@
     },
     {
       "path": ".github/workflows/jekyll-gh-pages.yml",
-      "sha256": "fd3d53d4ebbbfc6b7616ca857a63e157aaabcdc6dba0673e622894358db033f8"
+      "sha256": "781d4dd1027bddbb2cefefb57f9362962f47c9dbbd50bd6d581ddb39d7a9025c"
     }
   ],
   "artifact_inventory": "data/review-items.json",
-  "catalog_sha256": "e9a45a9cf02ec073bfed7ffea9eb6bbde7b688c65734e5bb272824e2c4c4002a",
+  "catalog_sha256": "4faa117112c72535788f05bee157c5b7fa397feda7ede2fd67cfa9f8357472bc",
   "notes": [
     "The catalog binds every published derivative to an Izzi source path and SHA-256.",
+    "Active provider inputs require archive receipts, owner/job attribution and expiry; their bytes count against the same payload budget.",
     "Canonical source MKVs remain outside Pages; one bounded H.264/AAC MP4 proxy is published for continuous motion and audio review with independent lineage.",
     "The 234 aesthetic-reference originals remain outside the Pages tree; compact derivatives preserve source-image hashes and explicit worktree state.",
     "No source episode media, source audio, credential, analytics code, or account token is included.",

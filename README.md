@@ -138,9 +138,88 @@ hashes. The August visual-styling/audio production gates retain their existing
 decisions; this review grant authorizes neither creative acceptance nor new
 production. The validator rejects reuse of the grant for changed media.
 
-Before this publication, the site validator already reported 19 unrelated
-provider-input findings. The package adds no new findings. Those existing
-files are outside this publication's scope.
+The 19 historical provider-input findings were resolved on October 27, 2026.
+All 18 originals were checksum-verified in the local Izzi archive before their
+temporary public copies were removed. The full site validator now passes.
+
+## Historical provider trials
+
+The [August trial archive](https://situationshipin.space/review/hlt-provider-trials-archive-20260816-17/)
+keeps three complete clips available: the two Griffith Park canaries and the
+Runyon Canyon 30-second chain. Their 270×480 H.264/AAC review copies total
+1,372,585 bytes. The Runyon copy retains the historically rejected vendor
+dialogue; publication does not accept it as an episode master.
+
+The 18 originals (127,819,062 bytes) remain outside this site at
+`/home/bkoz/src/izzi/resources.rizal/here-lies-trouble/provider-input-archive/20261027/`.
+The tracked Izzi receipt
+`resources.static/here-lies-trouble/provider-input-archive.20261027.json`
+records original and derivative hashes. `data/provider-staging.json` records
+the retired public paths. Old provider-input URLs intentionally return 404.
+
+Rebuild the cataloged pages from the saved proxies and verified archive:
+
+```sh
+node scripts/publish-provider-history.mjs --approve PROJECT-APPROVED \
+  --izzi-root /home/bkoz/src/izzi \
+  --proxy-dir /home/bkoz/src/izzi/outputs/provider-input-retirement/20261027
+node scripts/update-build-manifest.mjs
+node scripts/check-review-site.mjs
+```
+
+## Temporary provider inputs
+
+Use `scripts/stage-provider-input.mjs` for every new provider input. It archives
+the exact bytes outside the published repository before creating the public
+copy, records an owner, purpose, job, checksum and expiry, and validates the
+whole site. A failed check rolls back public changes while keeping the archive.
+PNG, JPEG, WebP, MP4 and MP3 are supported; WAV remains local. Inputs count
+against the existing 16 MiB file and shared 192 MiB payload limits.
+
+For an already authorized provider job, prepare the input and record submission
+intent before sending the request. Choose a fresh asset ID for each consuming
+job and keep the same idempotency key when retrying an ambiguous submission:
+
+```sh
+provider_archive=/home/bkoz/src/izzi/resources.rizal/here-lies-trouble/provider-input-archive
+node scripts/stage-provider-input.mjs stage \
+  --source /path/to/frame.jpg --id hlt-job-009-input --owner here-lies-trouble \
+  --purpose 'Continuity frame for job 009' --job hlt-stage4-job-009 \
+  --archive-root "$provider_archive" --ttl-hours 24
+node scripts/stage-provider-input.mjs submit \
+  --id hlt-job-009-input --idempotency-key stable-job-009-request-key
+# Commit/push the returned paths and verify the live hash before provider use.
+node scripts/stage-provider-input.mjs attach \
+  --id hlt-job-009-input --task-id actual-provider-task-id
+# After the provider confirms completion, failure or cancellation:
+node scripts/stage-provider-input.mjs finish \
+  --id hlt-job-009-input --status completed --archive-root "$provider_archive"
+# Commit/push the retirement and verify the former URL returns 404.
+```
+
+The CLI changes this checkout; it does not submit provider jobs or push Git.
+Izzi's pilot producer integrates these commands with checked commits, pushes,
+live hash verification and post-job removal. It stages continuation frames only
+when the next segment starts. Final frames and frames held at a credit gate
+remain local. Configure its `pilot.site_repo` to a current site checkout;
+`provider_archive_root` and `provider_input_ttl_hours` are optional overrides.
+
+The default lifetime is 24 hours, with a seven-day maximum. Run
+`node scripts/stage-provider-input.mjs expire --archive-root "$provider_archive"`
+to retire expired inputs that were never submitted. Inputs marked `submitting`
+or `submitted` require an explicit terminal job result; an HTTP timeout does
+not prove failure. Resolve those jobs and use `finish`, retaining the archive.
+Expiry is checked on each CLI operation and deployment, not by a scheduled
+deletion service. An expired unresolved input blocks deployment until resolved.
+
+GitHub Pages runs both safeguard test suites and the full site validator before
+Jekyll builds or uploads a deployment. Locally, run the same checks:
+
+```sh
+node --test scripts/review-publication-approval.test.mjs scripts/provider-staging.test.mjs
+node scripts/update-build-manifest.mjs
+node scripts/check-review-site.mjs
+```
 
 ## Hamonshū V2 source categories
 

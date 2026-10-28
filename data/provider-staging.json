@@ -1,0 +1,401 @@
+{
+  "schema_version": "izzi-provider-staging-1",
+  "assets": [
+    {
+      "id": "legacy-1ceb5fdea3e590b3a218",
+      "owner": "here-lies-trouble",
+      "purpose": "Historical provider trial; public staging retired after archival",
+      "path": "review/provider-inputs/here-lies-trouble/griffith-park/canary/j1-muxed-local-voices.mp4",
+      "bytes": 16877372,
+      "sha256": "1ceb5fdea3e590b3a218da1899fee4c734c171d35e9a267d63dd55190506c2f9",
+      "created_at": "2026-08-17T01:39:34.000Z",
+      "expires_at": "2026-10-28T04:11:10.840Z",
+      "state": "retired",
+      "job": {
+        "id": "historical-20261027-griffith-park-canary",
+        "status": "completed"
+      },
+      "archive": {
+        "key": "20261027/griffith-park/canary/j1-muxed-local-voices.mp4",
+        "bytes": 16877372,
+        "sha256": "1ceb5fdea3e590b3a218da1899fee4c734c171d35e9a267d63dd55190506c2f9"
+      },
+      "retired_at": "2026-10-28T04:11:10.840Z",
+      "retirement_reason": "Historical trials complete; exact originals archived locally, selected review derivatives cataloged separately."
+    },
+    {
+      "id": "legacy-fbdfc956f154ce6ad6fc",
+      "owner": "here-lies-trouble",
+      "purpose": "Historical provider trial; public staging retired after archival",
+      "path": "review/provider-inputs/here-lies-trouble/griffith-park/canary/j2-muxed-local-voices.mp4",
+      "bytes": 9675408,
+      "sha256": "fbdfc956f154ce6ad6fc911d374d3cbc5da675ff0f072fb217c2b64a6c80981e",
+      "created_at": "2026-08-17T01:39:34.000Z",
+      "expires_at": "2026-10-28T04:11:10.840Z",
+      "state": "retired",
+      "job": {
+        "id": "historical-20261027-griffith-park-canary",
+        "status": "completed"
+      },
+      "archive": {
+        "key": "20261027/griffith-park/canary/j2-muxed-local-voices.mp4",
+        "bytes": 9675408,
+        "sha256": "fbdfc956f154ce6ad6fc911d374d3cbc5da675ff0f072fb217c2b64a6c80981e"
+      },
+      "retired_at": "2026-10-28T04:11:10.840Z",
+      "retirement_reason": "Historical trials complete; exact originals archived locally, selected review derivatives cataloged separately."
+    },
+    {
+      "id": "legacy-b49ef29b42afe19a53a5",
+      "owner": "here-lies-trouble",
+      "purpose": "Historical provider trial; public staging retired after archival",
+      "path": "review/provider-inputs/here-lies-trouble/griffith-park/canary/sample-03-griffith-park-source.png",
+      "bytes": 3019191,
+      "sha256": "b49ef29b42afe19a53a5a8ee60049b2c373bcfdcade6597ee147da9661ca0864",
+      "created_at": "2026-08-17T01:23:19.000Z",
+      "expires_at": "2026-10-28T04:11:10.840Z",
+      "state": "retired",
+      "job": {
+        "id": "historical-20261027-griffith-park-canary",
+        "status": "completed"
+      },
+      "archive": {
+        "key": "20261027/griffith-park/canary/sample-03-griffith-park-source.png",
+        "bytes": 3019191,
+        "sha256": "b49ef29b42afe19a53a5a8ee60049b2c373bcfdcade6597ee147da9661ca0864"
+      },
+      "retired_at": "2026-10-28T04:11:10.840Z",
+      "retirement_reason": "Historical trials complete; exact originals archived locally, selected review derivatives cataloged separately."
+    },
+    {
+      "id": "legacy-674d60891e96c72ccbee",
+      "owner": "here-lies-trouble",
+      "purpose": "Historical provider trial; public staging retired after archival",
+      "path": "review/provider-inputs/here-lies-trouble/runyon-canyon/canary/bg-motion-test.mp4",
+      "bytes": 2929267,
+      "sha256": "674d60891e96c72ccbee5e2c6b2633de976e6f93bed685aa9f7036a53a664394",
+      "created_at": "2026-08-17T02:26:19.000Z",
+      "expires_at": "2026-10-28T04:11:10.840Z",
+      "state": "retired",
+      "job": {
+        "id": "historical-20261027-runyon-canyon-canary",
+        "status": "completed"
+      },
+      "archive": {
+        "key": "20261027/runyon-canyon/canary/bg-motion-test.mp4",
+        "bytes": 2929267,
+        "sha256": "674d60891e96c72ccbee5e2c6b2633de976e6f93bed685aa9f7036a53a664394"
+      },
+      "retired_at": "2026-10-28T04:11:10.840Z",
+      "retirement_reason": "Historical trials complete; exact originals archived locally, selected review derivatives cataloged separately."
+    },
+    {
+      "id": "legacy-d5bfee7a72654dcae197",
+      "owner": "here-lies-trouble",
+      "purpose": "Historical provider trial; public staging retired after archival",
+      "path": "review/provider-inputs/here-lies-trouble/runyon-canyon/canary/runyon-10s-changed-voices-V01.normalized.wav",
+      "bytes": 2854182,
+      "sha256": "d5bfee7a72654dcae19797dd645e882553111fea0495e54c5c274cef4b07436d",
+      "created_at": "2026-08-17T00:57:55.000Z",
+      "expires_at": "2026-10-28T04:11:10.840Z",
+      "state": "retired",
+      "job": {
+        "id": "historical-20261027-runyon-canyon-canary",
+        "status": "completed"
+      },
+      "archive": {
+        "key": "20261027/runyon-canyon/canary/runyon-10s-changed-voices-V01.normalized.wav",
+        "bytes": 2854182,
+        "sha256": "d5bfee7a72654dcae19797dd645e882553111fea0495e54c5c274cef4b07436d"
+      },
+      "retired_at": "2026-10-28T04:11:10.840Z",
+      "retirement_reason": "Historical trials complete; exact originals archived locally, selected review derivatives cataloged separately."
+    },
+    {
+      "id": "legacy-636cf0856d7652d4cf9c",
+      "owner": "here-lies-trouble",
+      "purpose": "Historical provider trial; public staging retired after archival",
+      "path": "review/provider-inputs/here-lies-trouble/runyon-canyon/canary/runyon-keyframe-nano-banana-candidate.png",
+      "bytes": 2026855,
+      "sha256": "636cf0856d7652d4cf9c14c7280062c997b481f2f551d0f8457d492e6af1156d",
+      "created_at": "2026-08-17T01:16:55.000Z",
+      "expires_at": "2026-10-28T04:11:10.840Z",
+      "state": "retired",
+      "job": {
+        "id": "historical-20261027-runyon-canyon-canary",
+        "status": "completed"
+      },
+      "archive": {
+        "key": "20261027/runyon-canyon/canary/runyon-keyframe-nano-banana-candidate.png",
+        "bytes": 2026855,
+        "sha256": "636cf0856d7652d4cf9c14c7280062c997b481f2f551d0f8457d492e6af1156d"
+      },
+      "retired_at": "2026-10-28T04:11:10.840Z",
+      "retirement_reason": "Historical trials complete; exact originals archived locally, selected review derivatives cataloged separately."
+    },
+    {
+      "id": "legacy-fd6c8c4c675e18173946",
+      "owner": "here-lies-trouble",
+      "purpose": "Historical provider trial; public staging retired after archival",
+      "path": "review/provider-inputs/here-lies-trouble/runyon-canyon/run30/j1-last-frame.png",
+      "bytes": 1319687,
+      "sha256": "fd6c8c4c675e18173946adbb8a94ae0a5847cbc0447203237e545f78efe13f7b",
+      "created_at": "2026-08-17T15:17:10.000Z",
+      "expires_at": "2026-10-28T04:11:10.840Z",
+      "state": "retired",
+      "job": {
+        "id": "historical-20261027-runyon-canyon-run30",
+        "status": "completed"
+      },
+      "archive": {
+        "key": "20261027/runyon-canyon/run30/j1-last-frame.png",
+        "bytes": 1319687,
+        "sha256": "fd6c8c4c675e18173946adbb8a94ae0a5847cbc0447203237e545f78efe13f7b"
+      },
+      "retired_at": "2026-10-28T04:11:10.840Z",
+      "retirement_reason": "Historical trials complete; exact originals archived locally, selected review derivatives cataloged separately."
+    },
+    {
+      "id": "legacy-90ead84169d67908b793",
+      "owner": "here-lies-trouble",
+      "purpose": "Historical provider trial; public staging retired after archival",
+      "path": "review/provider-inputs/here-lies-trouble/runyon-canyon/run30/j1-provider.original.mp4",
+      "bytes": 12697469,
+      "sha256": "90ead84169d67908b79344cd3bf05b2df581779120b101b2ef1c31311997fb02",
+      "created_at": "2026-08-17T15:17:10.000Z",
+      "expires_at": "2026-10-28T04:11:10.840Z",
+      "state": "retired",
+      "job": {
+        "id": "historical-20261027-runyon-canyon-run30",
+        "status": "completed"
+      },
+      "archive": {
+        "key": "20261027/runyon-canyon/run30/j1-provider.original.mp4",
+        "bytes": 12697469,
+        "sha256": "90ead84169d67908b79344cd3bf05b2df581779120b101b2ef1c31311997fb02"
+      },
+      "retired_at": "2026-10-28T04:11:10.840Z",
+      "retirement_reason": "Historical trials complete; exact originals archived locally, selected review derivatives cataloged separately."
+    },
+    {
+      "id": "legacy-17655b4ec60d7185684e",
+      "owner": "here-lies-trouble",
+      "purpose": "Historical provider trial; public staging retired after archival",
+      "path": "review/provider-inputs/here-lies-trouble/runyon-canyon/run30/j2-roll1-provider.original.mp4",
+      "bytes": 13176412,
+      "sha256": "17655b4ec60d7185684e0f1c5373938c09b51627b367a01d4c1e37e54651b8aa",
+      "created_at": "2026-08-17T15:48:53.000Z",
+      "expires_at": "2026-10-28T04:11:10.840Z",
+      "state": "retired",
+      "job": {
+        "id": "historical-20261027-runyon-canyon-run30",
+        "status": "completed"
+      },
+      "archive": {
+        "key": "20261027/runyon-canyon/run30/j2-roll1-provider.original.mp4",
+        "bytes": 13176412,
+        "sha256": "17655b4ec60d7185684e0f1c5373938c09b51627b367a01d4c1e37e54651b8aa"
+      },
+      "retired_at": "2026-10-28T04:11:10.840Z",
+      "retirement_reason": "Historical trials complete; exact originals archived locally, selected review derivatives cataloged separately."
+    },
+    {
+      "id": "legacy-388beb0d49e83ba78b6c",
+      "owner": "here-lies-trouble",
+      "purpose": "Historical provider trial; public staging retired after archival",
+      "path": "review/provider-inputs/here-lies-trouble/runyon-canyon/run30/j2-roll2-provider.original.mp4",
+      "bytes": 15426283,
+      "sha256": "388beb0d49e83ba78b6c0af937ae4d05d8e816f7ddc9dcef16ee0e4f093e73ff",
+      "created_at": "2026-08-17T15:48:53.000Z",
+      "expires_at": "2026-10-28T04:11:10.840Z",
+      "state": "retired",
+      "job": {
+        "id": "historical-20261027-runyon-canyon-run30",
+        "status": "completed"
+      },
+      "archive": {
+        "key": "20261027/runyon-canyon/run30/j2-roll2-provider.original.mp4",
+        "bytes": 15426283,
+        "sha256": "388beb0d49e83ba78b6c0af937ae4d05d8e816f7ddc9dcef16ee0e4f093e73ff"
+      },
+      "retired_at": "2026-10-28T04:11:10.840Z",
+      "retirement_reason": "Historical trials complete; exact originals archived locally, selected review derivatives cataloged separately."
+    },
+    {
+      "id": "legacy-c6106bea016676253038",
+      "owner": "here-lies-trouble",
+      "purpose": "Historical provider trial; public staging retired after archival",
+      "path": "review/provider-inputs/here-lies-trouble/runyon-canyon/run30/probe-duration-15s.mp4",
+      "bytes": 16430356,
+      "sha256": "c6106bea0166762530385353964c2e4b29b5f1809046abf4489641e38586dee6",
+      "created_at": "2026-08-17T10:43:40.000Z",
+      "expires_at": "2026-10-28T04:11:10.840Z",
+      "state": "retired",
+      "job": {
+        "id": "historical-20261027-runyon-canyon-run30",
+        "status": "completed"
+      },
+      "archive": {
+        "key": "20261027/runyon-canyon/run30/probe-duration-15s.mp4",
+        "bytes": 16430356,
+        "sha256": "c6106bea0166762530385353964c2e4b29b5f1809046abf4489641e38586dee6"
+      },
+      "retired_at": "2026-10-28T04:11:10.840Z",
+      "retirement_reason": "Historical trials complete; exact originals archived locally, selected review derivatives cataloged separately."
+    },
+    {
+      "id": "legacy-3283f2ce264082c27f8d",
+      "owner": "here-lies-trouble",
+      "purpose": "Historical provider trial; public staging retired after archival",
+      "path": "review/provider-inputs/here-lies-trouble/runyon-canyon/run30/runyon-30s-chain.mp4",
+      "bytes": 19162160,
+      "sha256": "3283f2ce264082c27f8d611824fb5098bf73a19fc0d2bc3865044b30d82ffec7",
+      "created_at": "2026-08-17T15:48:53.000Z",
+      "expires_at": "2026-10-28T04:11:10.840Z",
+      "state": "retired",
+      "job": {
+        "id": "historical-20261027-runyon-canyon-run30",
+        "status": "completed"
+      },
+      "archive": {
+        "key": "20261027/runyon-canyon/run30/runyon-30s-chain.mp4",
+        "bytes": 19162160,
+        "sha256": "3283f2ce264082c27f8d611824fb5098bf73a19fc0d2bc3865044b30d82ffec7"
+      },
+      "retired_at": "2026-10-28T04:11:10.840Z",
+      "retirement_reason": "Historical trials complete; exact originals archived locally, selected review derivatives cataloged separately."
+    },
+    {
+      "id": "legacy-923729351ca68eed3865",
+      "owner": "here-lies-trouble",
+      "purpose": "Historical provider trial; public staging retired after archival",
+      "path": "review/provider-inputs/here-lies-trouble/runyon-canyon/run30/runyon-keyframe-qwen-seed1.png",
+      "bytes": 1575864,
+      "sha256": "923729351ca68eed386536831ea15151c0da0f72a80531aa8888398dc67f92bb",
+      "created_at": "2026-08-17T10:43:40.000Z",
+      "expires_at": "2026-10-28T04:11:10.840Z",
+      "state": "retired",
+      "job": {
+        "id": "historical-20261027-runyon-canyon-run30",
+        "status": "completed"
+      },
+      "archive": {
+        "key": "20261027/runyon-canyon/run30/runyon-keyframe-qwen-seed1.png",
+        "bytes": 1575864,
+        "sha256": "923729351ca68eed386536831ea15151c0da0f72a80531aa8888398dc67f92bb"
+      },
+      "retired_at": "2026-10-28T04:11:10.840Z",
+      "retirement_reason": "Historical trials complete; exact originals archived locally, selected review derivatives cataloged separately."
+    },
+    {
+      "id": "legacy-5a102eaa6b7d34114afa",
+      "owner": "here-lies-trouble",
+      "purpose": "Historical provider trial; public staging retired after archival",
+      "path": "review/provider-inputs/here-lies-trouble/runyon-canyon/run30/runyon-keyframe-qwen-seed2.png",
+      "bytes": 1635202,
+      "sha256": "5a102eaa6b7d34114afaac9adb74b371380646ab55dfb77a6bcb6b1aee401357",
+      "created_at": "2026-08-17T15:05:53.000Z",
+      "expires_at": "2026-10-28T04:11:10.840Z",
+      "state": "retired",
+      "job": {
+        "id": "historical-20261027-runyon-canyon-run30",
+        "status": "completed"
+      },
+      "archive": {
+        "key": "20261027/runyon-canyon/run30/runyon-keyframe-qwen-seed2.png",
+        "bytes": 1635202,
+        "sha256": "5a102eaa6b7d34114afaac9adb74b371380646ab55dfb77a6bcb6b1aee401357"
+      },
+      "retired_at": "2026-10-28T04:11:10.840Z",
+      "retirement_reason": "Historical trials complete; exact originals archived locally, selected review derivatives cataloged separately."
+    },
+    {
+      "id": "legacy-56e0789d46327389126e",
+      "owner": "here-lies-trouble",
+      "purpose": "Historical provider trial; public staging retired after archival",
+      "path": "review/provider-inputs/here-lies-trouble/runyon-canyon/run30/runyon-keyframe-qwen-seed3.png",
+      "bytes": 1219545,
+      "sha256": "56e0789d46327389126e0a8e51c31f5c24ca0b26c52d0aea5172128bc22e61bf",
+      "created_at": "2026-08-17T15:05:53.000Z",
+      "expires_at": "2026-10-28T04:11:10.840Z",
+      "state": "retired",
+      "job": {
+        "id": "historical-20261027-runyon-canyon-run30",
+        "status": "completed"
+      },
+      "archive": {
+        "key": "20261027/runyon-canyon/run30/runyon-keyframe-qwen-seed3.png",
+        "bytes": 1219545,
+        "sha256": "56e0789d46327389126e0a8e51c31f5c24ca0b26c52d0aea5172128bc22e61bf"
+      },
+      "retired_at": "2026-10-28T04:11:10.840Z",
+      "retirement_reason": "Historical trials complete; exact originals archived locally, selected review derivatives cataloged separately."
+    },
+    {
+      "id": "legacy-5869bed1ca192c04a68c",
+      "owner": "here-lies-trouble",
+      "purpose": "Historical provider trial; public staging retired after archival",
+      "path": "review/provider-inputs/here-lies-trouble/runyon-canyon/run30/runyon-keyframe-qwen.png",
+      "bytes": 2780926,
+      "sha256": "5869bed1ca192c04a68c5bd061cd53aba679ae6d07d5c1a1a0b80dd3aa5a2f3b",
+      "created_at": "2026-08-17T10:43:40.000Z",
+      "expires_at": "2026-10-28T04:11:10.840Z",
+      "state": "retired",
+      "job": {
+        "id": "historical-20261027-runyon-canyon-run30",
+        "status": "completed"
+      },
+      "archive": {
+        "key": "20261027/runyon-canyon/run30/runyon-keyframe-qwen.png",
+        "bytes": 2780926,
+        "sha256": "5869bed1ca192c04a68c5bd061cd53aba679ae6d07d5c1a1a0b80dd3aa5a2f3b"
+      },
+      "retired_at": "2026-10-28T04:11:10.840Z",
+      "retirement_reason": "Historical trials complete; exact originals archived locally, selected review derivatives cataloged separately."
+    },
+    {
+      "id": "legacy-0a800b4fd6d5f65eb168",
+      "owner": "here-lies-trouble",
+      "purpose": "Historical provider trial; public staging retired after archival",
+      "path": "review/provider-inputs/here-lies-trouble/stage-4-20261026/job-006-last-frame.png",
+      "bytes": 1881491,
+      "sha256": "0a800b4fd6d5f65eb1681c6ef973d513b46fbaa641e5dc0d5bea3d315d1fa114",
+      "created_at": "2026-10-26T22:08:36.000Z",
+      "expires_at": "2026-10-28T04:11:10.840Z",
+      "state": "retired",
+      "job": {
+        "id": "historical-20261027-stage-4-20261026",
+        "status": "completed"
+      },
+      "archive": {
+        "key": "20261027/stage-4-20261026/job-006-last-frame.png",
+        "bytes": 1881491,
+        "sha256": "0a800b4fd6d5f65eb1681c6ef973d513b46fbaa641e5dc0d5bea3d315d1fa114"
+      },
+      "retired_at": "2026-10-28T04:11:10.840Z",
+      "retirement_reason": "Historical trials complete; exact originals archived locally, selected review derivatives cataloged separately."
+    },
+    {
+      "id": "legacy-9b4b4b124769f4dcb42a",
+      "owner": "here-lies-trouble",
+      "purpose": "Historical provider trial; public staging retired after archival",
+      "path": "review/provider-inputs/here-lies-trouble/stage-4-20261026/point-0-keyframe.png",
+      "bytes": 3131392,
+      "sha256": "9b4b4b124769f4dcb42a73eabd5268a850fdf87a93020b8c50d5b601ac151c80",
+      "created_at": "2026-10-26T18:12:13.000Z",
+      "expires_at": "2026-10-28T04:11:10.840Z",
+      "state": "retired",
+      "job": {
+        "id": "historical-20261027-stage-4-20261026",
+        "status": "completed"
+      },
+      "archive": {
+        "key": "20261027/stage-4-20261026/point-0-keyframe.png",
+        "bytes": 3131392,
+        "sha256": "9b4b4b124769f4dcb42a73eabd5268a850fdf87a93020b8c50d5b601ac151c80"
+      },
+      "retired_at": "2026-10-28T04:11:10.840Z",
+      "retirement_reason": "Historical trials complete; exact originals archived locally, selected review derivatives cataloged separately."
+    }
+  ]
+}
