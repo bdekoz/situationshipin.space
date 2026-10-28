@@ -1,58 +1,58 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 1000" width="1560" height="1000" role="img" aria-labelledby="diagram-title" font-family="DejaVu Sans">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1560 1140" width="1560" height="1140" role="img" aria-labelledby="diagram-title" font-family="DejaVu Sans">
   <title id="diagram-title">devpac compute resources diagram</title>
-  <rect width="1560" height="1000" fill="white" />
+  <rect width="1560" height="1140" fill="white" />
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
-      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#60778a" />
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#666666" />
     </marker>
   </defs>
-  <path d="M 600 325 L 310 490" fill="none" stroke="#60778a" stroke-width="2" data-source="R" data-target="E" marker-end="url(#arrow)" />
-  <path d="M 960 325 L 1250 490" fill="none" stroke="#60778a" stroke-width="2" data-source="R" data-target="O" marker-end="url(#arrow)" />
-  <path d="M 580 685 L 780 685" fill="none" stroke="#60778a" stroke-width="2" data-source="E" data-target="LINK" marker-start="url(#arrow)" />
-  <path d="M 780 685 L 980 685" fill="none" stroke="#60778a" stroke-width="2" data-source="LINK" data-target="O" marker-end="url(#arrow)" />
-  <path d="M 780 685 L 780 825" fill="none" stroke="#60778a" stroke-width="2" data-source="LINK" data-target="STORAGE" />
+  <path d="M 600 325 L 310 490" fill="none" stroke="#666666" stroke-width="2" data-source="R" data-target="E" marker-end="url(#arrow)" />
+  <path d="M 960 325 L 1250 490" fill="none" stroke="#666666" stroke-width="2" data-source="R" data-target="O" marker-end="url(#arrow)" />
+  <path d="M 580 685 L 780 685" fill="none" stroke="#666666" stroke-width="2" data-source="E" data-target="LINK" marker-start="url(#arrow)" />
+  <path d="M 780 685 L 980 685" fill="none" stroke="#666666" stroke-width="2" data-source="LINK" data-target="O" marker-end="url(#arrow)" />
+  <path d="M 780 685 L 780 975" fill="none" stroke="#666666" stroke-width="2" data-source="LINK" data-target="STORAGE" />
   <g id="node-R">
-    <rect x="510" y="40" width="540" height="285" rx="4" fill="#edf1fb" stroke="#426795" stroke-width="2" />
-    <text x="780.0" y="83" text-anchor="middle" fill="#172d40" font-size="22" font-weight="700">rizal · control plane</text>
-    <text x="780.0" y="122" text-anchor="middle" fill="#172d40" font-size="18" font-weight="400">Fedora 44 · Ryzen 9 3950X · 32 threads</text>
-    <text x="780.0" y="153" text-anchor="middle" fill="#172d40" font-size="18" font-weight="400">62.7 GiB host RAM · Quadro RTX 4000</text>
-    <text x="780.0" y="184" text-anchor="middle" fill="#172d40" font-size="18" font-weight="700">Local models</text>
-    <text x="780.0" y="215" text-anchor="middle" fill="#172d40" font-size="18" font-weight="400">Kokoro-82M · faster-whisper-small</text>
-    <text x="780.0" y="246" text-anchor="middle" fill="#172d40" font-size="18" font-weight="400">MeanVC2 · retained voice-conversion path</text>
-    <text x="780.0" y="277" text-anchor="middle" fill="#172d40" font-size="18" font-weight="400">Native SVG · FFmpeg · dispatch and verification</text>
+    <rect x="510" y="40" width="540" height="285" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
+    <text x="780.0" y="83" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">rizal · control plane</text>
+    <text x="780.0" y="122" text-anchor="middle" fill="#222222" font-size="18" font-weight="400">Fedora 44 · Ryzen 9 3950X · 32 threads</text>
+    <text x="780.0" y="153" text-anchor="middle" fill="#222222" font-size="18" font-weight="400">62.7 GiB host RAM · Quadro RTX 4000</text>
+    <text x="780.0" y="184" text-anchor="middle" fill="#222222" font-size="18" font-weight="700">Local models</text>
+    <text x="780.0" y="215" text-anchor="middle" fill="#222222" font-size="18" font-weight="400">Kokoro-82M · faster-whisper-small</text>
+    <text x="780.0" y="246" text-anchor="middle" fill="#222222" font-size="18" font-weight="400">MeanVC2 · retained voice-conversion path</text>
+    <text x="780.0" y="277" text-anchor="middle" fill="#222222" font-size="18" font-weight="400">Native SVG · FFmpeg · dispatch and verification</text>
   </g>
   <g id="node-E">
-    <rect x="40" y="490" width="540" height="390" rx="4" fill="#e5f2ec" stroke="#286047" stroke-width="2" />
-    <text x="310.0" y="533" text-anchor="middle" fill="#172d40" font-size="22" font-weight="700">eureka · compute worker / local models</text>
-    <text x="310.0" y="572" text-anchor="middle" fill="#172d40" font-size="18" font-weight="400">Fedora 44 · Ryzen AI MAX+ 395 · 32 threads</text>
-    <text x="310.0" y="603" text-anchor="middle" fill="#172d40" font-size="18" font-weight="400">Radeon 8060S · gfx1151</text>
-    <text x="310.0" y="634" text-anchor="middle" fill="#172d40" font-size="18" font-weight="400">31.1 GiB host RAM · 96 GiB GPU allocation</text>
-    <text x="310.0" y="665" text-anchor="middle" fill="#172d40" font-size="18" font-weight="700">Local models</text>
-    <text x="310.0" y="696" text-anchor="middle" fill="#172d40" font-size="18" font-weight="400">DeepSeek V4 Flash · ds4 / ROCm</text>
-    <text x="310.0" y="727" text-anchor="middle" fill="#172d40" font-size="18" font-weight="400">Ornith 1.5 · 35B · Ollama</text>
-    <text x="310.0" y="758" text-anchor="middle" fill="#172d40" font-size="18" font-weight="400">Qwen-Image-Edit-2511 · Higgs Audio TTS v2</text>
-    <text x="310.0" y="789" text-anchor="middle" fill="#172d40" font-size="18" font-weight="400">Shared GPU · job-selected execution</text>
+    <rect x="40" y="490" width="540" height="390" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
+    <text x="310.0" y="533" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">eureka: compute worker</text>
+    <text x="310.0" y="572" text-anchor="middle" fill="#222222" font-size="18" font-weight="400">Fedora 44 · Ryzen AI MAX+ 395 · 32 threads</text>
+    <text x="310.0" y="603" text-anchor="middle" fill="#222222" font-size="18" font-weight="400">Radeon 8060S · gfx1151</text>
+    <text x="310.0" y="634" text-anchor="middle" fill="#222222" font-size="18" font-weight="400">31.1 GiB host RAM · 96 GiB GPU allocation</text>
+    <text x="310.0" y="665" text-anchor="middle" fill="#222222" font-size="18" font-weight="700">Local models</text>
+    <text x="310.0" y="696" text-anchor="middle" fill="#222222" font-size="18" font-weight="400">DeepSeek V4 Flash · ds4 / ROCm</text>
+    <text x="310.0" y="727" text-anchor="middle" fill="#222222" font-size="18" font-weight="400">Ornith 1.5 · 35B · Ollama</text>
+    <text x="310.0" y="758" text-anchor="middle" fill="#222222" font-size="18" font-weight="400">Qwen-Image-Edit-2511 · Higgs Audio TTS v2</text>
+    <text x="310.0" y="789" text-anchor="middle" fill="#222222" font-size="18" font-weight="400">Shared GPU · job-selected execution</text>
   </g>
   <g id="node-O">
-    <rect x="980" y="490" width="540" height="390" rx="4" fill="#e5f2ec" stroke="#286047" stroke-width="2" />
-    <text x="1250.0" y="533" text-anchor="middle" fill="#172d40" font-size="22" font-weight="700">ord · compute worker / deliveries</text>
-    <text x="1250.0" y="572" text-anchor="middle" fill="#172d40" font-size="18" font-weight="400">Fedora 44 · Ryzen AI MAX+ 395 · 32 threads</text>
-    <text x="1250.0" y="603" text-anchor="middle" fill="#172d40" font-size="18" font-weight="400">125.1 GiB host RAM · Radeon 8060S</text>
-    <text x="1250.0" y="634" text-anchor="middle" fill="#172d40" font-size="18" font-weight="700">Local models</text>
-    <text x="1250.0" y="665" text-anchor="middle" fill="#172d40" font-size="18" font-weight="400">MeanVC2 · retained voice-conversion path</text>
-    <text x="1250.0" y="696" text-anchor="middle" fill="#172d40" font-size="18" font-weight="400">Native SVG · FFmpeg · canonical deliveries</text>
+    <rect x="980" y="490" width="540" height="390" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
+    <text x="1250.0" y="533" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">ord: compute worker</text>
+    <text x="1250.0" y="572" text-anchor="middle" fill="#222222" font-size="18" font-weight="400">Fedora 44 · Ryzen AI MAX+ 395 · 32 threads</text>
+    <text x="1250.0" y="603" text-anchor="middle" fill="#222222" font-size="18" font-weight="400">125.1 GiB host RAM · Radeon 8060S</text>
+    <text x="1250.0" y="634" text-anchor="middle" fill="#222222" font-size="18" font-weight="700">Local models</text>
+    <text x="1250.0" y="665" text-anchor="middle" fill="#222222" font-size="18" font-weight="400">MeanVC2 · retained voice-conversion path</text>
+    <text x="1250.0" y="696" text-anchor="middle" fill="#222222" font-size="18" font-weight="400">Native SVG · FFmpeg · canonical deliveries</text>
   </g>
   <g id="node-STORAGE">
-    <path d="M 620 843 A 160.0 18 0 0 1 940 843 V 917 A 160.0 18 0 0 1 620 917 Z" fill="#f0f3f6" stroke="#60778a" stroke-width="2" />
-    <ellipse cx="780.0" cy="843" rx="160.0" ry="18" fill="#f0f3f6" stroke="#60778a" stroke-width="2" />
-    <text x="780.0" y="895.0" text-anchor="middle" fill="#172d40" font-size="18" font-weight="700">Gold 20TB cold storage</text>
+    <path d="M 620 993 A 160.0 18 0 0 1 940 993 V 1067 A 160.0 18 0 0 1 620 1067 Z" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
+    <ellipse cx="780.0" cy="993" rx="160.0" ry="18" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
+    <text x="780.0" y="1045.0" text-anchor="middle" fill="#222222" font-size="18" font-weight="700">Gold 20TB cold storage</text>
   </g>
   <rect x="260.5" y="376" width="269" height="28" rx="4" fill="white" />
-  <text x="395" y="397" text-anchor="middle" fill="#172d40" font-size="19">SSH dispatch and status</text>
+  <text x="395" y="397" text-anchor="middle" fill="#222222" font-size="19">SSH dispatch and status</text>
   <rect x="1030.5" y="376" width="269" height="28" rx="4" fill="white" />
-  <text x="1165" y="397" text-anchor="middle" fill="#172d40" font-size="19">SSH dispatch and status</text>
+  <text x="1165" y="397" text-anchor="middle" fill="#222222" font-size="19">SSH dispatch and status</text>
   <rect x="623.5" y="636" width="313" height="28" rx="4" fill="white" />
-  <text x="780" y="657" text-anchor="middle" fill="#172d40" font-size="19">USB4/Thunderbolt local link</text>
-  <circle id="node-LINK" cx="780" cy="685" r="4" fill="#60778a" />
+  <text x="780" y="657" text-anchor="middle" fill="#222222" font-size="19">USB4/Thunderbolt local link</text>
+  <circle id="node-LINK" cx="780" cy="685" r="4" fill="#666666" />
 </svg>

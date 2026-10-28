@@ -1,7 +1,7 @@
 flowchart TB
     R["rizal · control plane<br/>Fedora 44 · Ryzen 9 3950X · 32 threads<br/>62.7 GiB host RAM · Quadro RTX 4000<br/>Local models<br/>Kokoro-82M · faster-whisper-small<br/>MeanVC2 · retained voice-conversion path<br/>Native SVG · FFmpeg · dispatch and verification"]
-    E["eureka · compute worker / local models<br/>Fedora 44 · Ryzen AI MAX+ 395 · 32 threads<br/>Radeon 8060S · gfx1151<br/>31.1 GiB host RAM · 96 GiB GPU allocation<br/>Local models<br/>DeepSeek V4 Flash · ds4 / ROCm<br/>Ornith 1.5 · 35B · Ollama<br/>Qwen-Image-Edit-2511 · Higgs Audio TTS v2<br/>Shared GPU · job-selected execution"]
-    O["ord · compute worker / deliveries<br/>Fedora 44 · Ryzen AI MAX+ 395 · 32 threads<br/>125.1 GiB host RAM · Radeon 8060S<br/>Local models<br/>MeanVC2 · retained voice-conversion path<br/>Native SVG · FFmpeg · canonical deliveries"]
+    E["eureka: compute worker<br/>Fedora 44 · Ryzen AI MAX+ 395 · 32 threads<br/>Radeon 8060S · gfx1151<br/>31.1 GiB host RAM · 96 GiB GPU allocation<br/>Local models<br/>DeepSeek V4 Flash · ds4 / ROCm<br/>Ornith 1.5 · 35B · Ollama<br/>Qwen-Image-Edit-2511 · Higgs Audio TTS v2<br/>Shared GPU · job-selected execution"]
+    O["ord: compute worker<br/>Fedora 44 · Ryzen AI MAX+ 395 · 32 threads<br/>125.1 GiB host RAM · Radeon 8060S<br/>Local models<br/>MeanVC2 · retained voice-conversion path<br/>Native SVG · FFmpeg · canonical deliveries"]
     LINK((" "))
     STORAGE[("Gold 20TB cold storage")]
     R -->|SSH dispatch and status| E
@@ -9,7 +9,7 @@ flowchart TB
     E <-->|USB4/Thunderbolt local link| LINK
     LINK <--> O
     LINK --- STORAGE
-    classDef control fill:#edf1fb,stroke:#426795,color:#172d4b,stroke-width:2px
-    classDef local fill:#e5f2ec,stroke:#286047,color:#163a2a,stroke-width:2px
-    class R control
-    class E,O local
+    classDef machine fill:#f1f1f1,stroke:#666666,color:#222222,stroke-width:2px
+    class R,E,O,STORAGE machine
+    style LINK fill:#666666,stroke:#666666,color:#222222
+    linkStyle default stroke:#666666,color:#222222

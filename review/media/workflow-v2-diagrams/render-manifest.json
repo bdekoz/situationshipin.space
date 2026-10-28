@@ -1,10 +1,10 @@
 {
   "schema_version": "izzi-workflow-diagram-render-1",
-  "rendered_at": "2026-10-28T00:51:28.141186+00:00",
+  "rendered_at": "2026-10-28T01:20:48.629093+00:00",
   "source": {
     "path": "docs/workflows.md",
-    "bytes": 22795,
-    "sha256": "79a5bf1729e9e8cdc4851f9ebe1b4d590f797cecabcc37c1a155fcea2ec939c3"
+    "bytes": 22861,
+    "sha256": "e57fa1b9fe77b3a507050e545b0d1efce475c0e2778e5b5ab7c4addcfc4a7909"
   },
   "renderer": {
     "mermaid_cli": "11.16.0",
@@ -56,26 +56,26 @@
       "renderer": "izzi-fixed-svg-1",
       "render_config": {
         "path": "devpac-compute-resources-diagram.config.json",
-        "bytes": 2146,
-        "sha256": "138e31abeb6351008f798058d8c02970d98eb2f854d287f7295921b680a45aa8"
+        "bytes": 2200,
+        "sha256": "e8ba56ec34c983c8d94f178403f989a1f8c8c5e1af6e1085105324688dfdb777"
       },
       "files": [
         {
           "path": "devpac-compute-resources-diagram.mmd",
-          "bytes": 1287,
-          "sha256": "8f5033dc291970873246a049dc588a4b92dde3857e8c1c237b6554ea240cc788"
+          "bytes": 1277,
+          "sha256": "f145f0f9660558897d5a5614673424cf8ee652f3bd3d428585d8c0d88a27c619"
         },
         {
           "path": "devpac-compute-resources-diagram.svg",
-          "bytes": 5686,
-          "sha256": "53c144cea49b2ce080c6941cdfadf067f82c80f903e12b29a27f51bf3e5807a5"
+          "bytes": 5657,
+          "sha256": "a0a29b6f524a28cac0fd201816969536c235f52b9d72f75dc238c61edcca0fc8"
         },
         {
           "path": "devpac-compute-resources-diagram.png",
-          "bytes": 346188,
-          "sha256": "99b3ba263ed77012b7d8673deb5da2ba4a4b18cb60fa62fb827e360868258e86",
+          "bytes": 317096,
+          "sha256": "fdbe08b2ef6644a240ea276de3419ea91b0c534c201a006d662b5d3d2e666605",
           "width": 3120,
-          "height": 2000
+          "height": 2280
         }
       ]
     },

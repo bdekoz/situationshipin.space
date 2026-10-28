@@ -23,7 +23,7 @@ const MEMBERS = [
   {
     name: "devpac-compute-resources-diagram",
     title: "Compute hardware — rizal, ord and eureka",
-    description: "Three rectangular Fedora 44 host boxes arranged in a triangle: rizal above eureka and ord. Each host lists its hardware and local model paths; the horizontal USB4/Thunderbolt local link branches to Gold 20TB cold storage. Revised for issue #79.",
+    description: "Three grayscale rectangular Fedora 44 host boxes arranged in a triangle: rizal above eureka and ord. Each host lists its hardware and local model paths; Gold 20TB cold storage sits below the workers, connected to their horizontal USB4/Thunderbolt local link. Revised for issue #79.",
   },
   {
     name: "workflow-baseline-v1-diagram",
