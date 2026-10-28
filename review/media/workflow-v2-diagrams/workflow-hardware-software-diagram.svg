@@ -2,13 +2,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1900 2700" width="1900" height="2700" role="img" aria-labelledby="diagram-title" font-family="DejaVu Sans">
   <title id="diagram-title">Compute software</title>
   <rect width="1900" height="2700" fill="white" />
-  <rect id="group-SOFTWARE-frame" x="620" y="60" width="660" height="760" fill="#fafafa" stroke="#999999" stroke-width="2" />
+  <rect id="group-SOFTWARE-frame" x="620" y="60" width="660" height="760" fill="#d9d9d9" stroke="#999999" stroke-width="2" />
   <text x="950.0" y="102" text-anchor="middle" fill="#222222" font-size="24" font-weight="700">Local Software</text>
-  <rect id="group-DATABASE-frame" x="620" y="880" width="660" height="280" fill="#fafafa" stroke="#999999" stroke-width="2" />
+  <rect id="group-DATABASE-frame" x="620" y="880" width="660" height="280" fill="#d9d9d9" stroke="#999999" stroke-width="2" />
   <text x="950.0" y="922" text-anchor="middle" fill="#222222" font-size="24" font-weight="700">Local Database</text>
-  <rect id="group-LOCALAI-frame" x="620" y="1220" width="660" height="760" fill="#fafafa" stroke="#999999" stroke-width="2" />
+  <rect id="group-LOCALAI-frame" x="620" y="1220" width="660" height="760" fill="#d9d9d9" stroke="#999999" stroke-width="2" />
   <text x="950.0" y="1262" text-anchor="middle" fill="#222222" font-size="24" font-weight="700">Local AI</text>
-  <rect id="group-HOSTEDAI-frame" x="620" y="2040" width="660" height="600" fill="#fafafa" stroke="#999999" stroke-width="2" />
+  <rect id="group-HOSTEDAI-frame" x="620" y="2040" width="660" height="600" fill="#d9d9d9" stroke="#999999" stroke-width="2" />
   <text x="950.0" y="2082" text-anchor="middle" fill="#222222" font-size="24" font-weight="700">Hosted AI</text>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
@@ -36,75 +36,78 @@
   <path d="M 1240 2360 L 1365 2360 L 1365 1392 L 1400 1392" fill="none" stroke="#666666" stroke-width="2" data-source="IMAGE" data-target="REVIEW" marker-end="url(#arrow)" stroke-dasharray="1 7" stroke-linecap="round" />
   <g id="group-SOFTWARE">
     <g id="node-NATIVE">
-      <rect x="660" y="160" width="580" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
+      <rect x="660" y="160" width="580" height="120" rx="4" fill="#e6e6e6" stroke="#666666" stroke-width="2" />
       <text x="950.0" y="203" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">FFmpeg / Inkscape / Ghostscript</text>
-      <text x="950.0" y="242" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">rizal / compute workers</text>
+      <text x="950.0" y="242" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">python scripted utilities</text>
     </g>
     <g id="node-CARTO">
-      <rect x="660" y="320" width="580" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
-      <text x="950.0" y="388.0" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Cartofreako</text>
+      <rect x="660" y="320" width="580" height="120" rx="4" fill="#e6e6e6" stroke="#666666" stroke-width="2" />
+      <text x="950.0" y="363" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Cartofreako</text>
+      <text x="950.0" y="402" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">cartographic visualization</text>
     </g>
     <g id="node-IZZI">
-      <rect x="660" y="480" width="580" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
-      <text x="950.0" y="548.0" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Izzi</text>
+      <rect x="660" y="480" width="580" height="120" rx="4" fill="#e6e6e6" stroke="#666666" stroke-width="2" />
+      <text x="950.0" y="523" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Izzi</text>
+      <text x="950.0" y="562" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">2D / 4D visualization</text>
     </g>
     <g id="node-CLUSTEROPS">
-      <rect x="660" y="640" width="580" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
-      <text x="950.0" y="708.0" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Clusterops</text>
+      <rect x="660" y="640" width="580" height="120" rx="4" fill="#e6e6e6" stroke="#666666" stroke-width="2" />
+      <text x="950.0" y="683" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Clusterops</text>
+      <text x="950.0" y="722" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">ansible, python utilities</text>
     </g>
   </g>
   <g id="group-DATABASE">
     <g id="node-IPINFO">
-      <rect x="660" y="980" width="580" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
+      <rect x="660" y="980" width="580" height="120" rx="4" fill="#e6e6e6" stroke="#666666" stroke-width="2" />
       <text x="950.0" y="1048.0" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Ipinfo</text>
     </g>
   </g>
   <g id="group-LOCALAI">
     <g id="node-AUDIO">
-      <rect x="660" y="1320" width="580" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
+      <rect x="660" y="1320" width="580" height="120" rx="4" fill="#e6e6e6" stroke="#666666" stroke-width="2" />
       <text x="950.0" y="1363" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Kokoro voices + Whisper checks</text>
       <text x="950.0" y="1402" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">rizal CPU · current HLT audio</text>
     </g>
     <g id="node-PRIOR">
-      <rect x="660" y="1480" width="580" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
+      <rect x="660" y="1480" width="580" height="120" rx="4" fill="#e6e6e6" stroke="#666666" stroke-width="2" />
       <text x="950.0" y="1523" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Qwen image editing + Higgs TTS</text>
       <text x="950.0" y="1562" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">eureka · retained earlier paths</text>
     </g>
     <g id="node-DS">
-      <rect x="660" y="1640" width="580" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
+      <rect x="660" y="1640" width="580" height="120" rx="4" fill="#e6e6e6" stroke="#666666" stroke-width="2" />
       <text x="950.0" y="1683" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">DeepSeek V4 Flash</text>
       <text x="950.0" y="1722" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">eureka · ds4 / ROCm · on-demand runner</text>
     </g>
     <g id="node-ORN">
-      <rect x="660" y="1800" width="580" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
+      <rect x="660" y="1800" width="580" height="120" rx="4" fill="#e6e6e6" stroke="#666666" stroke-width="2" />
       <text x="950.0" y="1843" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Ornith 1.5 · 35B</text>
       <text x="950.0" y="1882" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">eureka · Ollama · Q4_K_M</text>
     </g>
   </g>
   <g id="group-HOSTEDAI">
     <g id="node-CLOUD">
-      <rect x="660" y="2140" width="580" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
+      <rect x="660" y="2140" width="580" height="120" rx="4" fill="#e6e6e6" stroke="#666666" stroke-width="2" />
       <text x="950.0" y="2183" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Motion generation</text>
       <text x="950.0" y="2222" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">seedance2ai.io / fal.ai</text>
     </g>
     <g id="node-IMAGE">
-      <rect x="660" y="2300" width="580" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
+      <rect x="660" y="2300" width="580" height="120" rx="4" fill="#e6e6e6" stroke="#666666" stroke-width="2" />
       <text x="950.0" y="2343" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Image generation</text>
       <text x="950.0" y="2382" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">gpt-sol-6.1 / gpt-astra-6</text>
     </g>
     <g id="node-CODING">
-      <rect x="660" y="2460" width="580" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
+      <rect x="660" y="2460" width="580" height="120" rx="4" fill="#e6e6e6" stroke="#666666" stroke-width="2" />
       <text x="950.0" y="2503" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Coding</text>
       <text x="950.0" y="2542" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">gpt-sol-6.1 / deepseek-v4</text>
     </g>
   </g>
   <g id="node-I">
-    <rect x="40" y="1290" width="460" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
+    <rect x="40" y="1290" width="460" height="120" rx="4" fill="#e6e6e6" stroke="#666666" stroke-width="2" />
     <text x="270.0" y="1333" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">devp.ac</text>
     <text x="270.0" y="1372" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">Planning and generation control</text>
   </g>
   <g id="node-REVIEW">
-    <rect x="1400" y="1290" width="460" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
+    <rect x="1400" y="1290" width="460" height="120" rx="4" fill="#e6e6e6" stroke="#666666" stroke-width="2" />
     <text x="1630.0" y="1333" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">situationshipin.space</text>
     <text x="1630.0" y="1372" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">Human review</text>
   </g>

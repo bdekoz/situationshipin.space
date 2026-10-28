@@ -2,10 +2,10 @@ flowchart LR
     I["devp.ac<br/>Planning and generation control"]
     subgraph SOFTWARE["Local Software"]
         direction TB
-        NATIVE["FFmpeg / Inkscape / Ghostscript<br/>rizal / compute workers"]
-        CARTO["Cartofreako"]
-        IZZI["Izzi"]
-        CLUSTEROPS["Clusterops"]
+        NATIVE["FFmpeg / Inkscape / Ghostscript<br/>python scripted utilities"]
+        CARTO["Cartofreako<br/>cartographic visualization"]
+        IZZI["Izzi<br/>2D / 4D visualization"]
+        CLUSTEROPS["Clusterops<br/>ansible, python utilities"]
     end
     subgraph DATABASE["Local Database"]
         direction TB
@@ -44,10 +44,10 @@ flowchart LR
     IZZI --> REVIEW
     CLOUD -.-> REVIEW
     IMAGE -.-> REVIEW
-    classDef node fill:#f1f1f1,stroke:#666666,color:#222222,stroke-width:2px
+    classDef node fill:#e6e6e6,stroke:#666666,color:#222222,stroke-width:2px
     class I,AUDIO,PRIOR,NATIVE,CARTO,IZZI,CLUSTEROPS,IPINFO,DS,ORN,CLOUD,IMAGE,CODING,REVIEW node
-    style SOFTWARE fill:#fafafa,stroke:#999999,color:#222222
-    style DATABASE fill:#fafafa,stroke:#999999,color:#222222
-    style LOCALAI fill:#fafafa,stroke:#999999,color:#222222
-    style HOSTEDAI fill:#fafafa,stroke:#999999,color:#222222
+    style SOFTWARE fill:#d9d9d9,stroke:#999999,color:#222222
+    style DATABASE fill:#d9d9d9,stroke:#999999,color:#222222
+    style LOCALAI fill:#d9d9d9,stroke:#999999,color:#222222
+    style HOSTEDAI fill:#d9d9d9,stroke:#999999,color:#222222
     linkStyle default stroke:#666666,color:#222222
