@@ -18,7 +18,7 @@ const MEMBERS = [
   {
     name: "workflow-hardware-software-diagram",
     title: "Compute software",
-    description: "A grayscale map with devp.ac and situationshipin.space aligned across the center. Local Software contains FFmpeg / Inkscape / Ghostscript, Cartofreako, Izzi and Clusterops. Local Database contains Ipinfo between Local Software and Local AI's media models, DeepSeek V4 Flash and Ornith 1.5. Hosted AI groups Motion generation, Image generation and Coding. Local connections are solid; hosted connections are dotted.",
+    description: "A grayscale map with devp.ac and situationshipin.space aligned across the center. Custom Software contains FFmpeg / Inkscape / Ghostscript, Cartofreako, Izzi and Clusterops. Local Database contains Ipinfo between Custom Software and Local AI's media models, DeepSeek V4 Flash and Ornith 1.5. Hosted AI groups Motion generation, Image generation and Coding. Local connections are solid; hosted connections are dotted.",
   },
   {
     name: "devpac-compute-resources-diagram",

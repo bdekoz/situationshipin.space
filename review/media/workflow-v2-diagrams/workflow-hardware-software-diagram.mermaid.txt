@@ -1,6 +1,6 @@
 flowchart LR
     I["devp.ac<br/>Planning and generation control"]
-    subgraph SOFTWARE["Local Software"]
+    subgraph SOFTWARE["Custom Software"]
         direction TB
         NATIVE["FFmpeg / Inkscape / Ghostscript<br/>python scripted utilities"]
         CARTO["Cartofreako<br/>cartographic visualization"]

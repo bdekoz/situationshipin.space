@@ -3,7 +3,7 @@
   <title id="diagram-title">Compute software</title>
   <rect width="1900" height="2700" fill="white" />
   <rect id="group-SOFTWARE-frame" x="620" y="60" width="660" height="760" fill="#d9d9d9" stroke="#999999" stroke-width="2" />
-  <text x="950.0" y="102" text-anchor="middle" fill="#222222" font-size="24" font-weight="700">Local Software</text>
+  <text x="950.0" y="102" text-anchor="middle" fill="#222222" font-size="24" font-weight="700">Custom Software</text>
   <rect id="group-DATABASE-frame" x="620" y="880" width="660" height="280" fill="#d9d9d9" stroke="#999999" stroke-width="2" />
   <text x="950.0" y="922" text-anchor="middle" fill="#222222" font-size="24" font-weight="700">Local Database</text>
   <rect id="group-LOCALAI-frame" x="620" y="1220" width="660" height="760" fill="#d9d9d9" stroke="#999999" stroke-width="2" />
