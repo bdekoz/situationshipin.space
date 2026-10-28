@@ -1,11 +1,11 @@
 flowchart TB
     R["rizal · control plane<br/>Fedora 44 · Ryzen 9 3950X · 32 threads<br/>62.7 GiB host RAM · Quadro RTX 4000<br/>Local models<br/>Kokoro-82M · faster-whisper-small<br/>MeanVC2 · retained voice-conversion path<br/>Native SVG · FFmpeg · dispatch and verification"]
     E["eureka: compute worker<br/>Fedora 44 · Ryzen AI MAX+ 395 · 32 threads<br/>Radeon 8060S · gfx1151<br/>31.1 GiB host RAM · 96 GiB GPU allocation<br/>Local models<br/>DeepSeek V4 Flash · ds4 / ROCm<br/>Ornith 1.5 · 35B · Ollama<br/>Qwen-Image-Edit-2511 · Higgs Audio TTS v2<br/>Shared GPU · job-selected execution"]
-    O["ord: compute worker<br/>Fedora 44 · Ryzen AI MAX+ 395 · 32 threads<br/>125.1 GiB host RAM · Radeon 8060S<br/>Local models<br/>MeanVC2 · retained voice-conversion path<br/>Native SVG · FFmpeg · canonical deliveries"]
+    O["ord: compute worker<br/>Fedora 44 · Ryzen AI MAX+ 395 · 32 threads<br/>Radeon 8060S · gfx1151<br/>125.1 GiB host RAM · 512 MiB GPU allocation<br/>Local models<br/>MeanVC2 · retained voice-conversion path<br/>Native SVG · FFmpeg · canonical deliveries"]
     LINK((" "))
     STORAGE[("Gold 20TB cold storage")]
-    R -->|SSH dispatch and status| E
-    R -->|SSH dispatch and status| O
+    R -.->|SSH dispatch and status| E
+    R -.->|SSH dispatch and status| O
     E <-->|USB4/Thunderbolt local link| LINK
     LINK <--> O
     LINK --- STORAGE

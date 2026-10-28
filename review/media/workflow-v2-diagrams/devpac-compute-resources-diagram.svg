@@ -7,8 +7,8 @@
       <path d="M 0 0 L 10 5 L 0 10 Z" fill="#666666" />
     </marker>
   </defs>
-  <path d="M 600 325 L 310 490" fill="none" stroke="#666666" stroke-width="2" data-source="R" data-target="E" marker-end="url(#arrow)" />
-  <path d="M 960 325 L 1250 490" fill="none" stroke="#666666" stroke-width="2" data-source="R" data-target="O" marker-end="url(#arrow)" />
+  <path d="M 600 325 L 310 490" fill="none" stroke="#666666" stroke-width="2" data-source="R" data-target="E" marker-end="url(#arrow)" stroke-dasharray="1 7" stroke-linecap="round" />
+  <path d="M 960 325 L 1250 490" fill="none" stroke="#666666" stroke-width="2" data-source="R" data-target="O" marker-end="url(#arrow)" stroke-dasharray="1 7" stroke-linecap="round" />
   <path d="M 580 685 L 780 685" fill="none" stroke="#666666" stroke-width="2" data-source="E" data-target="LINK" marker-start="url(#arrow)" />
   <path d="M 780 685 L 980 685" fill="none" stroke="#666666" stroke-width="2" data-source="LINK" data-target="O" marker-end="url(#arrow)" />
   <path d="M 780 685 L 780 975" fill="none" stroke="#666666" stroke-width="2" data-source="LINK" data-target="STORAGE" />
@@ -38,10 +38,11 @@
     <rect x="980" y="490" width="540" height="390" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
     <text x="1250.0" y="533" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">ord: compute worker</text>
     <text x="1250.0" y="572" text-anchor="middle" fill="#222222" font-size="18" font-weight="400">Fedora 44 · Ryzen AI MAX+ 395 · 32 threads</text>
-    <text x="1250.0" y="603" text-anchor="middle" fill="#222222" font-size="18" font-weight="400">125.1 GiB host RAM · Radeon 8060S</text>
-    <text x="1250.0" y="634" text-anchor="middle" fill="#222222" font-size="18" font-weight="700">Local models</text>
-    <text x="1250.0" y="665" text-anchor="middle" fill="#222222" font-size="18" font-weight="400">MeanVC2 · retained voice-conversion path</text>
-    <text x="1250.0" y="696" text-anchor="middle" fill="#222222" font-size="18" font-weight="400">Native SVG · FFmpeg · canonical deliveries</text>
+    <text x="1250.0" y="603" text-anchor="middle" fill="#222222" font-size="18" font-weight="400">Radeon 8060S · gfx1151</text>
+    <text x="1250.0" y="634" text-anchor="middle" fill="#222222" font-size="18" font-weight="400">125.1 GiB host RAM · 512 MiB GPU allocation</text>
+    <text x="1250.0" y="665" text-anchor="middle" fill="#222222" font-size="18" font-weight="700">Local models</text>
+    <text x="1250.0" y="696" text-anchor="middle" fill="#222222" font-size="18" font-weight="400">MeanVC2 · retained voice-conversion path</text>
+    <text x="1250.0" y="727" text-anchor="middle" fill="#222222" font-size="18" font-weight="400">Native SVG · FFmpeg · canonical deliveries</text>
   </g>
   <g id="node-STORAGE">
     <path d="M 620 993 A 160.0 18 0 0 1 940 993 V 1067 A 160.0 18 0 0 1 620 1067 Z" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
