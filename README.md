@@ -55,13 +55,17 @@ accepted August hardware/software map remains a historical snapshot in
 `docs/development/sessions/20260817.fal.ai_stage_2.md`, section 5.2.1.
 
 Render using Mermaid 11.16.1 / CLI 11.16.0 with the installed Chrome browser:
+the two layouts revised for issues #78 and #79 use explicit SVG coordinates
+and librsvg/Pycairo PNG export. This preserves equal workflow boxes and
+rectangular hosts arranged in a triangle. The per-diagram configurations
+record the layout; the Mermaid blocks supply labels and connections.
 
 ```sh
 workflow_tools=$(mktemp -d)
 PUPPETEER_SKIP_DOWNLOAD=1 npm install --prefix "$workflow_tools" \
   @mermaid-js/mermaid-cli@11.16.0 mermaid@11.16.1 puppeteer@24.16.0
 python3 /home/bkoz/src/izzi/scripts/render-workflow-diagrams.py \
-  --mmdc "$workflow_tools/node_modules/.bin/mmdc"
+  --mmdc "$workflow_tools/node_modules/.bin/mmdc" --update-doc-images
 ```
 
 After committing the source, prepare this site's bounded publication:
@@ -69,7 +73,7 @@ After committing the source, prepare this site's bounded publication:
 ```sh
 node scripts/publish-workflow-diagrams.mjs \
   --izzi-commit <40-hex-source-commit> \
-  --diagrams-dir /home/bkoz/src/izzi/outputs/workflows-v2/20261027-local-models
+  --diagrams-dir /home/bkoz/src/izzi/outputs/workflows-v2/20261027-review-78-79
 node scripts/update-build-manifest.mjs
 node scripts/check-review-site.mjs
 ```

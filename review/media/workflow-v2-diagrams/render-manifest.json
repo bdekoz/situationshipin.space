@@ -1,15 +1,15 @@
 {
   "schema_version": "izzi-workflow-diagram-render-1",
-  "rendered_at": "2026-10-27T16:45:47.462235+00:00",
+  "rendered_at": "2026-10-28T00:51:28.141186+00:00",
   "source": {
     "path": "docs/workflows.md",
-    "bytes": 20622,
-    "sha256": "795dcfad57eadb325e41e4941ceeb9c09f1540bb7660e592cbfd3851b767bed8"
+    "bytes": 22795,
+    "sha256": "79a5bf1729e9e8cdc4851f9ebe1b4d590f797cecabcc37c1a155fcea2ec939c3"
   },
   "renderer": {
     "mermaid_cli": "11.16.0",
     "mermaid": "11.16.1",
-    "browser": "Google Chrome 156.0.8078.47"
+    "browser": "Google Chrome 156.0.8078.73"
   },
   "render_config": {
     "path": "mermaid-config.json",
@@ -25,6 +25,7 @@
   "diagrams": [
     {
       "artifact_id": "workflow-hardware-software-diagram",
+      "renderer": "mermaid-11.16.1",
       "render_config": {
         "path": "workflow-hardware-software-diagram.config.json",
         "bytes": 749,
@@ -52,33 +53,35 @@
     },
     {
       "artifact_id": "devpac-compute-resources-diagram",
+      "renderer": "izzi-fixed-svg-1",
       "render_config": {
         "path": "devpac-compute-resources-diagram.config.json",
-        "bytes": 749,
-        "sha256": "4acb6235e9038f52447bfc3b4f83ba9a1106874c34584f82f7e92f0f3aa2784e"
+        "bytes": 2146,
+        "sha256": "138e31abeb6351008f798058d8c02970d98eb2f854d287f7295921b680a45aa8"
       },
       "files": [
         {
           "path": "devpac-compute-resources-diagram.mmd",
-          "bytes": 829,
-          "sha256": "3f114f9d8828fdb8a944195f3ed71769a456524cdd0b52db79a98e16652f3a7f"
+          "bytes": 1287,
+          "sha256": "8f5033dc291970873246a049dc588a4b92dde3857e8c1c237b6554ea240cc788"
         },
         {
           "path": "devpac-compute-resources-diagram.svg",
-          "bytes": 19045,
-          "sha256": "29aab5e436dd0a7f6a2d403059d58af7d80dd9fb6597b8603d86493a128e6353"
+          "bytes": 5686,
+          "sha256": "53c144cea49b2ce080c6941cdfadf067f82c80f903e12b29a27f51bf3e5807a5"
         },
         {
           "path": "devpac-compute-resources-diagram.png",
-          "bytes": 162708,
-          "sha256": "b4a0c3b29e94a9d870d8e61c220cfb13e8e2597115980f254e2de20b3754b14b",
-          "width": 1382,
-          "height": 1752
+          "bytes": 346188,
+          "sha256": "99b3ba263ed77012b7d8673deb5da2ba4a4b18cb60fa62fb827e360868258e86",
+          "width": 3120,
+          "height": 2000
         }
       ]
     },
     {
       "artifact_id": "workflow-baseline-v1-diagram",
+      "renderer": "mermaid-11.16.1",
       "render_config": {
         "path": "workflow-baseline-v1-diagram.config.json",
         "bytes": 749,
@@ -106,28 +109,29 @@
     },
     {
       "artifact_id": "workflow-v2-loop-diagram",
+      "renderer": "izzi-fixed-svg-1",
       "render_config": {
         "path": "workflow-v2-loop-diagram.config.json",
-        "bytes": 753,
-        "sha256": "4d2c2f72016d96a1212c634e4b964cbd4d69d7673c1b922b0df0ae4ec2e015c8"
+        "bytes": 2605,
+        "sha256": "53ac07d9378194c7155fb2eb341fb7734ab85e45febb332650bc0c0a7e676122"
       },
       "files": [
         {
           "path": "workflow-v2-loop-diagram.mmd",
-          "bytes": 569,
-          "sha256": "f4cb08d8c5689638613bbcea5a69b924801097b0213f03bcda3a8b049cff69a5"
+          "bytes": 605,
+          "sha256": "016b717e4882666a73951ce7a518dddb97f9c366751ab73525a65b0ce0aa3e95"
         },
         {
           "path": "workflow-v2-loop-diagram.svg",
-          "bytes": 18539,
-          "sha256": "59fce139f30b64dec5b10dcd405e6115dbfc46e41cd65623dc7656a956869c8b"
+          "bytes": 3727,
+          "sha256": "b2b3bf87cc46f32a69adcf3074f697b116fab8564f2d19b120a423a623639fd4"
         },
         {
           "path": "workflow-v2-loop-diagram.png",
-          "bytes": 97837,
-          "sha256": "348dc150c15abc95234dd96b82d9ca413ea0efdf2261192508d37e84598ff0d3",
-          "width": 2688,
-          "height": 744
+          "bytes": 109626,
+          "sha256": "f9601da5dcaf3d1e3562d32537d11c4b99e1c95f69268ba3e26fda0cd397f497",
+          "width": 3080,
+          "height": 1060
         }
       ]
     }

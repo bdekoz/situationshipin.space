@@ -1,31 +1,148 @@
 {
-  "theme": "base",
-  "layout": "elk",
-  "elk": {
-    "cycleBreakingStrategy": "GREEDY",
-    "forceNodeModelOrder": false,
-    "considerModelOrder": "NODES_AND_EDGES"
+  "renderer": "izzi-fixed-svg-1",
+  "width": 1560,
+  "height": 1000,
+  "font_family": "DejaVu Sans",
+  "font_size": 18,
+  "line_height": 31,
+  "nodes": {
+    "R": {
+      "box": [
+        510,
+        40,
+        540,
+        285
+      ],
+      "fill": "#edf1fb",
+      "stroke": "#426795"
+    },
+    "E": {
+      "box": [
+        40,
+        490,
+        540,
+        390
+      ],
+      "fill": "#e5f2ec",
+      "stroke": "#286047"
+    },
+    "O": {
+      "box": [
+        980,
+        490,
+        540,
+        390
+      ],
+      "fill": "#e5f2ec",
+      "stroke": "#286047"
+    },
+    "STORAGE": {
+      "box": [
+        620,
+        825,
+        320,
+        110
+      ],
+      "fill": "#f0f3f6",
+      "stroke": "#60778a",
+      "shape": "storage"
+    }
   },
-  "themeVariables": {
-    "fontFamily": "DejaVu Sans, sans-serif",
-    "fontSize": "18px",
-    "primaryColor": "#f0f3f6",
-    "primaryTextColor": "#172d40",
-    "primaryBorderColor": "#60778a",
-    "lineColor": "#60778a",
-    "secondaryColor": "#e5f2ec",
-    "tertiaryColor": "#ffffff",
-    "clusterBkg": "#f8fafb",
-    "clusterBorder": "#adbcc8",
-    "edgeLabelBackground": "#ffffff"
+  "junctions": {
+    "LINK": [
+      780,
+      685
+    ]
   },
-  "flowchart": {
-    "htmlLabels": false,
-    "curve": "basis",
-    "padding": 20,
-    "wrappingWidth": 360,
-    "nodeSpacing": 35,
-    "rankSpacing": 60,
-    "diagramPadding": 24
-  }
+  "edges": [
+    {
+      "source": "R",
+      "target": "E",
+      "points": [
+        [
+          600,
+          325
+        ],
+        [
+          310,
+          490
+        ]
+      ],
+      "label": "SSH dispatch and status",
+      "label_at": [
+        395,
+        390
+      ],
+      "arrow": true
+    },
+    {
+      "source": "R",
+      "target": "O",
+      "points": [
+        [
+          960,
+          325
+        ],
+        [
+          1250,
+          490
+        ]
+      ],
+      "label": "SSH dispatch and status",
+      "label_at": [
+        1165,
+        390
+      ],
+      "arrow": true
+    },
+    {
+      "source": "E",
+      "target": "LINK",
+      "points": [
+        [
+          580,
+          685
+        ],
+        [
+          780,
+          685
+        ]
+      ],
+      "label": "USB4/Thunderbolt local link",
+      "label_at": [
+        780,
+        650
+      ],
+      "start_arrow": true
+    },
+    {
+      "source": "LINK",
+      "target": "O",
+      "points": [
+        [
+          780,
+          685
+        ],
+        [
+          980,
+          685
+        ]
+      ],
+      "arrow": true
+    },
+    {
+      "source": "LINK",
+      "target": "STORAGE",
+      "points": [
+        [
+          780,
+          685
+        ],
+        [
+          780,
+          825
+        ]
+      ]
+    }
+  ]
 }

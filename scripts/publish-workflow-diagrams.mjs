@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Publish the four source-bound Mermaid diagrams and their editable downloads.
+// Publish the four source-bound diagrams and their editable downloads.
 // Usage: node scripts/publish-workflow-diagrams.mjs \
 //   --izzi-commit <40-hex> --diagrams-dir <render-workflow-diagrams.py packet>
 
@@ -23,7 +23,7 @@ const MEMBERS = [
   {
     name: "devpac-compute-resources-diagram",
     title: "Compute hardware — rizal, ord and eureka",
-    description: "The three Fedora 44 hosts, SSH dispatch, direct USB4 transfers and eureka’s shared 96 GiB GPU allocation. Hardware labels were checked October 27, 2026.",
+    description: "Three rectangular Fedora 44 host boxes arranged in a triangle: rizal above eureka and ord. Each host lists its hardware and local model paths; the horizontal USB4/Thunderbolt local link branches to Gold 20TB cold storage. Revised for issue #79.",
   },
   {
     name: "workflow-baseline-v1-diagram",
@@ -32,8 +32,8 @@ const MEMBERS = [
   },
   {
     name: "workflow-v2-loop-diagram",
-    title: "Workflow v2 — plan to produce to review",
-    description: "The development loop with local authoring choices and all four review-to-plan feedback edges: stage-1, stage-2, pilot and release.",
+    title: "Workflow v2 — plan to produce to revise",
+    description: "PLAN, PRODUCE and REVISE share one horizontal row and one box color. The stage 1, stage 2, pilot and release arrows return beneath PRODUCE into the bottom of PLAN. Revised for issue #78.",
   },
 ];
 const TITLE = "Workflow diagrams, hardware & local models";
@@ -90,7 +90,7 @@ function indexContent(commit) {
 <p>${escape(spec.description)}</p>
 <a class="workflow-preview" href="/${MEDIA}/${spec.name}.svg" target="_blank" rel="noopener" aria-label="Open ${escape(spec.title)} as a zoomable SVG"><img src="/${MEDIA}/${spec.name}.png" alt="${escape(spec.description)}" loading="lazy" decoding="async"></a>
 ${links(spec)}</li>`).join("\n")}</ul>
-<p class="workflow-source"><a href="${source}">Editable source: docs/workflows.md</a> · <a href="/${MEDIA}/local-model-inventory.20261027.json">Model and hardware inventory</a> · <a href="/${MEDIA}/render-manifest.json">Render receipt</a> · <a href="/${MEDIA}/mermaid-config.json">Render configuration</a><br>Source commit: <code>${commit}</code> · Mermaid 11.16.1 / CLI 11.16.0. Updated diagrams await human review.</p>`;
+<p class="workflow-source"><a href="${source}">Editable source: docs/workflows.md</a> · <a href="https://github.com/bdekoz/izzi/blob/${commit}/scripts/render-workflow-diagrams.py">Diagram renderer</a> · <a href="/${MEDIA}/local-model-inventory.20261027.json">Model and hardware inventory</a> · <a href="/${MEDIA}/render-manifest.json">Render receipt</a><br>Source commit: <code>${commit}</code>. The compute triangle and workflow loop use explicit SVG layouts; the architecture and baseline use Mermaid 11.16.1. Updated diagrams await human review.</p>`;
 }
 
 function indexHtml(commit) {
@@ -161,6 +161,7 @@ async function main() {
   const updated = [];
   for (const spec of MEMBERS) {
     const png = verified.get(`${spec.name}.png`);
+    const diagram = manifest.diagrams.find((entry) => entry.artifact_id === spec.name);
     if (png.subarray(0, 8).toString("hex") !== "89504e470d0a1a0a") throw new Error("Invalid PNG");
     const primary = await publish(`${spec.name}.png`, png);
     const svg = await publish(`${spec.name}.svg`, verified.get(`${spec.name}.svg`));
@@ -170,7 +171,7 @@ async function main() {
       ...common, artifact_id: spec.name, title: spec.title, description: spec.description, alt: spec.description,
       generation_class: "workflow-diagram", media_kind: "image", published_path: primary.path,
       sha256: primary.sha256, bytes: primary.bytes, width: png.readUInt32BE(16), height: png.readUInt32BE(20),
-      format: "png", technical_state: "RENDER-VERIFIED-MERMAID-11.16.1", review_assets: [svg, source, config],
+      format: "png", technical_state: diagram.renderer === "izzi-fixed-svg-1" ? "RENDER-VERIFIED-FIXED-SVG-1" : "RENDER-VERIFIED-MERMAID-11.16.1", review_assets: [svg, source, config],
     });
   }
   const inventory = await publish(manifest.inventory.path, verified.get(manifest.inventory.path));

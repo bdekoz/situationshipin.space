@@ -1,6 +1,6 @@
 {
   "baseline_state": "NOT-PROMOTED",
-  "generated_at": "2026-10-27T16:47:49.317Z",
+  "generated_at": "2026-10-28T00:55:17.057Z",
   "human_review_state": "UNREVIEWED",
   "items": [
     {
@@ -19922,14 +19922,14 @@
       "feedback_round": "workflow-v2-diagrams",
       "review_scope": "WORKFLOW-V2-DIAGRAMS",
       "review_mode": "output",
-      "source_path": "izzi 896c812ada830d0825e603ef9e8f8aa36b7231ec docs/workflows.md",
-      "source_sha256": "795dcfad57eadb325e41e4941ceeb9c09f1540bb7660e592cbfd3851b767bed8",
-      "generation_commit": "896c812ada830d0825e603ef9e8f8aa36b7231ec",
+      "source_path": "izzi 48c5c67f92cd4ee8adfa1bfdaea6f51e498368c0 docs/workflows.md",
+      "source_sha256": "79a5bf1729e9e8cdc4851f9ebe1b4d590f797cecabcc37c1a155fcea2ec939c3",
+      "generation_commit": "48c5c67f92cd4ee8adfa1bfdaea6f51e498368c0",
       "generation_state": "CURRENT",
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-10-27T16:47:49.317Z",
+      "added_at": "2026-10-28T00:55:17.057Z",
       "artifact_id": "workflow-v2-diagram-index",
       "title": "Workflow diagrams, hardware & local models",
       "description": "Four updated diagrams for the current Izzi workflow, including DeepSeek V4 Flash and Ornith 1.5 on eureka. Inventory: October 27, 2026.",
@@ -19937,8 +19937,8 @@
       "generation_class": "workflow-diagram-index",
       "media_kind": "index",
       "published_path": "review/media/workflow-v2-diagrams/workflow-v2-diagram-index.index.html",
-      "sha256": "4ae902449fe08af640d52d039e97ecead33b156be963a1953cbc1b3a013db0cf",
-      "bytes": 9644,
+      "sha256": "bc5c2eb9fe3037fe5b9d71398068cfe523ca663c28b7e5408644c333b5e20d35",
+      "bytes": 10073,
       "format": "html",
       "technical_state": "WORKFLOW-DIAGRAM-INDEX",
       "index_members": [
@@ -19960,8 +19960,8 @@
         },
         {
           "path": "review/media/workflow-v2-diagrams/render-manifest.json",
-          "bytes": 4426,
-          "sha256": "6d383bc69892a8a2bb49e9dad208e8c272bc9fb06e4659a672e7e899ba80f45e"
+          "bytes": 4579,
+          "sha256": "131d4097809201a039b340f3a7e60b6b34b7a6e38755cc5195a929821aa29bfd"
         }
       ]
     },
@@ -19970,42 +19970,42 @@
       "feedback_round": "workflow-v2-diagrams",
       "review_scope": "WORKFLOW-V2-DIAGRAMS",
       "review_mode": "output",
-      "source_path": "izzi 896c812ada830d0825e603ef9e8f8aa36b7231ec docs/workflows.md",
-      "source_sha256": "795dcfad57eadb325e41e4941ceeb9c09f1540bb7660e592cbfd3851b767bed8",
-      "generation_commit": "896c812ada830d0825e603ef9e8f8aa36b7231ec",
+      "source_path": "izzi 48c5c67f92cd4ee8adfa1bfdaea6f51e498368c0 docs/workflows.md",
+      "source_sha256": "79a5bf1729e9e8cdc4851f9ebe1b4d590f797cecabcc37c1a155fcea2ec939c3",
+      "generation_commit": "48c5c67f92cd4ee8adfa1bfdaea6f51e498368c0",
       "generation_state": "CURRENT",
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-10-27T16:47:49.317Z",
+      "added_at": "2026-10-28T00:55:17.057Z",
       "artifact_id": "workflow-v2-loop-diagram",
-      "title": "Workflow v2 — plan to produce to review",
-      "description": "The development loop with local authoring choices and all four review-to-plan feedback edges: stage-1, stage-2, pilot and release.",
-      "alt": "The development loop with local authoring choices and all four review-to-plan feedback edges: stage-1, stage-2, pilot and release.",
+      "title": "Workflow v2 — plan to produce to revise",
+      "description": "PLAN, PRODUCE and REVISE share one horizontal row and one box color. The stage 1, stage 2, pilot and release arrows return beneath PRODUCE into the bottom of PLAN. Revised for issue #78.",
+      "alt": "PLAN, PRODUCE and REVISE share one horizontal row and one box color. The stage 1, stage 2, pilot and release arrows return beneath PRODUCE into the bottom of PLAN. Revised for issue #78.",
       "generation_class": "workflow-diagram",
       "media_kind": "image",
       "published_path": "review/media/workflow-v2-diagrams/workflow-v2-loop-diagram.png",
-      "sha256": "348dc150c15abc95234dd96b82d9ca413ea0efdf2261192508d37e84598ff0d3",
-      "bytes": 97837,
-      "width": 2688,
-      "height": 744,
+      "sha256": "f9601da5dcaf3d1e3562d32537d11c4b99e1c95f69268ba3e26fda0cd397f497",
+      "bytes": 109626,
+      "width": 3080,
+      "height": 1060,
       "format": "png",
-      "technical_state": "RENDER-VERIFIED-MERMAID-11.16.1",
+      "technical_state": "RENDER-VERIFIED-FIXED-SVG-1",
       "review_assets": [
         {
           "path": "review/media/workflow-v2-diagrams/workflow-v2-loop-diagram.svg",
-          "bytes": 18539,
-          "sha256": "59fce139f30b64dec5b10dcd405e6115dbfc46e41cd65623dc7656a956869c8b"
+          "bytes": 3727,
+          "sha256": "b2b3bf87cc46f32a69adcf3074f697b116fab8564f2d19b120a423a623639fd4"
         },
         {
           "path": "review/media/workflow-v2-diagrams/workflow-v2-loop-diagram.mermaid.txt",
-          "bytes": 569,
-          "sha256": "f4cb08d8c5689638613bbcea5a69b924801097b0213f03bcda3a8b049cff69a5"
+          "bytes": 605,
+          "sha256": "016b717e4882666a73951ce7a518dddb97f9c366751ab73525a65b0ce0aa3e95"
         },
         {
           "path": "review/media/workflow-v2-diagrams/workflow-v2-loop-diagram.config.json",
-          "bytes": 753,
-          "sha256": "4d2c2f72016d96a1212c634e4b964cbd4d69d7673c1b922b0df0ae4ec2e015c8"
+          "bytes": 2605,
+          "sha256": "53ac07d9378194c7155fb2eb341fb7734ab85e45febb332650bc0c0a7e676122"
         }
       ]
     },
@@ -20014,14 +20014,14 @@
       "feedback_round": "workflow-v2-diagrams",
       "review_scope": "WORKFLOW-V2-DIAGRAMS",
       "review_mode": "output",
-      "source_path": "izzi 896c812ada830d0825e603ef9e8f8aa36b7231ec docs/workflows.md",
-      "source_sha256": "795dcfad57eadb325e41e4941ceeb9c09f1540bb7660e592cbfd3851b767bed8",
-      "generation_commit": "896c812ada830d0825e603ef9e8f8aa36b7231ec",
+      "source_path": "izzi 48c5c67f92cd4ee8adfa1bfdaea6f51e498368c0 docs/workflows.md",
+      "source_sha256": "79a5bf1729e9e8cdc4851f9ebe1b4d590f797cecabcc37c1a155fcea2ec939c3",
+      "generation_commit": "48c5c67f92cd4ee8adfa1bfdaea6f51e498368c0",
       "generation_state": "CURRENT",
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-10-27T16:47:49.317Z",
+      "added_at": "2026-10-28T00:55:17.057Z",
       "artifact_id": "workflow-baseline-v1-diagram",
       "title": "Workflow Baseline v1 — three-box",
       "description": "Plan and source review, Izzi production, then output review. The refreshed baseline includes optional local LLM assistance and current audio and publication paths.",
@@ -32451,14 +32451,14 @@
       "feedback_round": "workflow-v2-diagrams",
       "review_scope": "WORKFLOW-V2-DIAGRAMS",
       "review_mode": "output",
-      "source_path": "izzi 896c812ada830d0825e603ef9e8f8aa36b7231ec docs/workflows.md",
-      "source_sha256": "795dcfad57eadb325e41e4941ceeb9c09f1540bb7660e592cbfd3851b767bed8",
-      "generation_commit": "896c812ada830d0825e603ef9e8f8aa36b7231ec",
+      "source_path": "izzi 48c5c67f92cd4ee8adfa1bfdaea6f51e498368c0 docs/workflows.md",
+      "source_sha256": "79a5bf1729e9e8cdc4851f9ebe1b4d590f797cecabcc37c1a155fcea2ec939c3",
+      "generation_commit": "48c5c67f92cd4ee8adfa1bfdaea6f51e498368c0",
       "generation_state": "CURRENT",
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-10-27T16:47:49.317Z",
+      "added_at": "2026-10-28T00:55:17.057Z",
       "artifact_id": "workflow-hardware-software-diagram",
       "title": "Hardware & software — local models and media paths",
       "description": "DeepSeek V4 Flash and Ornith 1.5 on eureka, alongside local audio, image editing, native graphics and hosted motion paths. Dashed edges mark optional authoring assistance.",
@@ -32495,42 +32495,42 @@
       "feedback_round": "workflow-v2-diagrams",
       "review_scope": "WORKFLOW-V2-DIAGRAMS",
       "review_mode": "output",
-      "source_path": "izzi 896c812ada830d0825e603ef9e8f8aa36b7231ec docs/workflows.md",
-      "source_sha256": "795dcfad57eadb325e41e4941ceeb9c09f1540bb7660e592cbfd3851b767bed8",
-      "generation_commit": "896c812ada830d0825e603ef9e8f8aa36b7231ec",
+      "source_path": "izzi 48c5c67f92cd4ee8adfa1bfdaea6f51e498368c0 docs/workflows.md",
+      "source_sha256": "79a5bf1729e9e8cdc4851f9ebe1b4d590f797cecabcc37c1a155fcea2ec939c3",
+      "generation_commit": "48c5c67f92cd4ee8adfa1bfdaea6f51e498368c0",
       "generation_state": "CURRENT",
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-10-27T16:47:49.317Z",
+      "added_at": "2026-10-28T00:55:17.057Z",
       "artifact_id": "devpac-compute-resources-diagram",
       "title": "Compute hardware — rizal, ord and eureka",
-      "description": "The three Fedora 44 hosts, SSH dispatch, direct USB4 transfers and eureka’s shared 96 GiB GPU allocation. Hardware labels were checked October 27, 2026.",
-      "alt": "The three Fedora 44 hosts, SSH dispatch, direct USB4 transfers and eureka’s shared 96 GiB GPU allocation. Hardware labels were checked October 27, 2026.",
+      "description": "Three rectangular Fedora 44 host boxes arranged in a triangle: rizal above eureka and ord. Each host lists its hardware and local model paths; the horizontal USB4/Thunderbolt local link branches to Gold 20TB cold storage. Revised for issue #79.",
+      "alt": "Three rectangular Fedora 44 host boxes arranged in a triangle: rizal above eureka and ord. Each host lists its hardware and local model paths; the horizontal USB4/Thunderbolt local link branches to Gold 20TB cold storage. Revised for issue #79.",
       "generation_class": "workflow-diagram",
       "media_kind": "image",
       "published_path": "review/media/workflow-v2-diagrams/devpac-compute-resources-diagram.png",
-      "sha256": "b4a0c3b29e94a9d870d8e61c220cfb13e8e2597115980f254e2de20b3754b14b",
-      "bytes": 162708,
-      "width": 1382,
-      "height": 1752,
+      "sha256": "99b3ba263ed77012b7d8673deb5da2ba4a4b18cb60fa62fb827e360868258e86",
+      "bytes": 346188,
+      "width": 3120,
+      "height": 2000,
       "format": "png",
-      "technical_state": "RENDER-VERIFIED-MERMAID-11.16.1",
+      "technical_state": "RENDER-VERIFIED-FIXED-SVG-1",
       "review_assets": [
         {
           "path": "review/media/workflow-v2-diagrams/devpac-compute-resources-diagram.svg",
-          "bytes": 19045,
-          "sha256": "29aab5e436dd0a7f6a2d403059d58af7d80dd9fb6597b8603d86493a128e6353"
+          "bytes": 5686,
+          "sha256": "53c144cea49b2ce080c6941cdfadf067f82c80f903e12b29a27f51bf3e5807a5"
         },
         {
           "path": "review/media/workflow-v2-diagrams/devpac-compute-resources-diagram.mermaid.txt",
-          "bytes": 829,
-          "sha256": "3f114f9d8828fdb8a944195f3ed71769a456524cdd0b52db79a98e16652f3a7f"
+          "bytes": 1287,
+          "sha256": "8f5033dc291970873246a049dc588a4b92dde3857e8c1c237b6554ea240cc788"
         },
         {
           "path": "review/media/workflow-v2-diagrams/devpac-compute-resources-diagram.config.json",
-          "bytes": 749,
-          "sha256": "4acb6235e9038f52447bfc3b4f83ba9a1106874c34584f82f7e92f0f3aa2784e"
+          "bytes": 2146,
+          "sha256": "138e31abeb6351008f798058d8c02970d98eb2f854d287f7295921b680a45aa8"
         }
       ]
     }

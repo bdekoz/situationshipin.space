@@ -1,31 +1,184 @@
 {
-  "theme": "base",
-  "layout": "elk",
-  "elk": {
-    "cycleBreakingStrategy": "MODEL_ORDER",
-    "forceNodeModelOrder": true,
-    "considerModelOrder": "NODES_AND_EDGES"
+  "renderer": "izzi-fixed-svg-1",
+  "width": 1540,
+  "height": 530,
+  "font_family": "DejaVu Sans",
+  "font_size": 19,
+  "line_height": 30,
+  "nodes": {
+    "PLAN": {
+      "box": [
+        40,
+        40,
+        440,
+        230
+      ],
+      "fill": "#e5f2ec",
+      "stroke": "#286047"
+    },
+    "PRODUCE": {
+      "box": [
+        550,
+        40,
+        440,
+        230
+      ],
+      "fill": "#e5f2ec",
+      "stroke": "#286047"
+    },
+    "REVIEW": {
+      "box": [
+        1060,
+        40,
+        440,
+        230
+      ],
+      "fill": "#e5f2ec",
+      "stroke": "#286047"
+    }
   },
-  "themeVariables": {
-    "fontFamily": "DejaVu Sans, sans-serif",
-    "fontSize": "18px",
-    "primaryColor": "#f0f3f6",
-    "primaryTextColor": "#172d40",
-    "primaryBorderColor": "#60778a",
-    "lineColor": "#60778a",
-    "secondaryColor": "#e5f2ec",
-    "tertiaryColor": "#ffffff",
-    "clusterBkg": "#f8fafb",
-    "clusterBorder": "#adbcc8",
-    "edgeLabelBackground": "#ffffff"
-  },
-  "flowchart": {
-    "htmlLabels": false,
-    "curve": "basis",
-    "padding": 20,
-    "wrappingWidth": 360,
-    "nodeSpacing": 35,
-    "rankSpacing": 60,
-    "diagramPadding": 24
-  }
+  "edges": [
+    {
+      "source": "PLAN",
+      "target": "PRODUCE",
+      "points": [
+        [
+          480,
+          155
+        ],
+        [
+          550,
+          155
+        ]
+      ],
+      "arrow": true
+    },
+    {
+      "source": "PRODUCE",
+      "target": "REVIEW",
+      "points": [
+        [
+          990,
+          155
+        ],
+        [
+          1060,
+          155
+        ]
+      ],
+      "arrow": true
+    },
+    {
+      "source": "REVIEW",
+      "target": "PLAN",
+      "label": "stage 1",
+      "points": [
+        [
+          1110,
+          270
+        ],
+        [
+          1110,
+          330
+        ],
+        [
+          430,
+          330
+        ],
+        [
+          430,
+          270
+        ]
+      ],
+      "label_at": [
+        770,
+        330
+      ],
+      "arrow": true
+    },
+    {
+      "source": "REVIEW",
+      "target": "PLAN",
+      "label": "stage 2",
+      "points": [
+        [
+          1160,
+          270
+        ],
+        [
+          1160,
+          385
+        ],
+        [
+          380,
+          385
+        ],
+        [
+          380,
+          270
+        ]
+      ],
+      "label_at": [
+        770,
+        385
+      ],
+      "arrow": true
+    },
+    {
+      "source": "REVIEW",
+      "target": "PLAN",
+      "label": "pilot",
+      "points": [
+        [
+          1210,
+          270
+        ],
+        [
+          1210,
+          440
+        ],
+        [
+          330,
+          440
+        ],
+        [
+          330,
+          270
+        ]
+      ],
+      "label_at": [
+        770,
+        440
+      ],
+      "arrow": true
+    },
+    {
+      "source": "REVIEW",
+      "target": "PLAN",
+      "label": "release",
+      "points": [
+        [
+          1260,
+          270
+        ],
+        [
+          1260,
+          495
+        ],
+        [
+          280,
+          495
+        ],
+        [
+          280,
+          270
+        ]
+      ],
+      "label_at": [
+        770,
+        495
+      ],
+      "arrow": true
+    }
+  ]
 }
