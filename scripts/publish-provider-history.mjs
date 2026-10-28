@@ -107,7 +107,7 @@ for (const item of items) {
   const directory = resolve(root, "review", item.artifact_id);
   await mkdir(directory, { recursive: true });
   await writeFile(resolve(directory, "index.html"), renderReviewPage(item));
-  await writeFile(resolve(directory, "manifest.json"), JSON.stringify(renderReviewManifest(item), null, 2) + "\n");
+  await writeFile(resolve(directory, "manifest.json"), renderReviewManifest(item));
 }
 catalog.items = [...catalog.items.filter(item => !replacements.has(item.artifact_id)), ...items];
 catalog.generated_at = new Date().toISOString();

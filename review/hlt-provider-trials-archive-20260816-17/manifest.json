@@ -1,1 +1,15 @@
-"{\n  \"schema_version\": \"situationship-review-page-1\",\n  \"review_id\": \"hlt-provider-trials-archive-20260816-17\",\n  \"artifact_id\": \"hlt-provider-trials-archive-20260816-17\",\n  \"style\": \"house-style\",\n  \"source_media\": null,\n  \"proxy\": null,\n  \"document\": {\n    \"path\": \"/review/media/here-lies-trouble-provider-archive/index.html\",\n    \"sha256\": \"eee387b33637555e8bdb0de711a059541aa22d8b5e5d6a1e1e13b4dc8c6c9741\",\n    \"format\": \"html\",\n    \"plan_stage\": null,\n    \"plan_pdf\": null\n  }\n}\n"
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "hlt-provider-trials-archive-20260816-17",
+  "artifact_id": "hlt-provider-trials-archive-20260816-17",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": null,
+  "document": {
+    "path": "/review/media/here-lies-trouble-provider-archive/index.html",
+    "sha256": "eee387b33637555e8bdb0de711a059541aa22d8b5e5d6a1e1e13b4dc8c6c9741",
+    "format": "html",
+    "plan_stage": null,
+    "plan_pdf": null
+  }
+}

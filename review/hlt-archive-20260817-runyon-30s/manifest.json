@@ -1,1 +1,17 @@
-"{\n  \"schema_version\": \"situationship-review-page-1\",\n  \"review_id\": \"hlt-archive-20260817-runyon-30s\",\n  \"artifact_id\": \"hlt-archive-20260817-runyon-30s\",\n  \"style\": \"house-style\",\n  \"source_media\": {\n    \"path\": \"resources.rizal/here-lies-trouble/provider-input-archive/20261027/runyon-canyon/run30/runyon-30s-chain.mp4\",\n    \"sha256\": \"3283f2ce264082c27f8d611824fb5098bf73a19fc0d2bc3865044b30d82ffec7\",\n    \"bytes\": 19162160,\n    \"published\": false\n  },\n  \"proxy\": {\n    \"path\": \"/review/media/here-lies-trouble-provider-archive/hlt-archive-20260817-runyon-30s.review.mp4\",\n    \"sha256\": \"a73da804ab47ba5aaee2f8ef2ebb05bb1a760e6d54089ec763511684189275a4\"\n  },\n  \"document\": null\n}\n"
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "hlt-archive-20260817-runyon-30s",
+  "artifact_id": "hlt-archive-20260817-runyon-30s",
+  "style": "house-style",
+  "source_media": {
+    "path": "resources.rizal/here-lies-trouble/provider-input-archive/20261027/runyon-canyon/run30/runyon-30s-chain.mp4",
+    "sha256": "3283f2ce264082c27f8d611824fb5098bf73a19fc0d2bc3865044b30d82ffec7",
+    "bytes": 19162160,
+    "published": false
+  },
+  "proxy": {
+    "path": "/review/media/here-lies-trouble-provider-archive/hlt-archive-20260817-runyon-30s.review.mp4",
+    "sha256": "a73da804ab47ba5aaee2f8ef2ebb05bb1a760e6d54089ec763511684189275a4"
+  },
+  "document": null
+}
