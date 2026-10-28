@@ -18,7 +18,7 @@ const MEMBERS = [
   {
     name: "workflow-hardware-software-diagram",
     title: "Hardware & software — local models and media paths",
-    description: "DeepSeek V4 Flash and Ornith 1.5 on eureka, alongside local audio, image editing, native graphics and hosted motion paths. Dashed edges mark optional authoring assistance.",
+    description: "A grayscale map with DeepSeek V4 Flash and Ornith 1.5 inside Existing local media paths. Three hosted boxes stack motion generation, image generation and coding, with the model labels requested in issue #80. Dashed edges mark optional authoring or coding assistance.",
   },
   {
     name: "devpac-compute-resources-diagram",
@@ -90,7 +90,7 @@ function indexContent(commit) {
 <p>${escape(spec.description)}</p>
 <a class="workflow-preview" href="/${MEDIA}/${spec.name}.svg" target="_blank" rel="noopener" aria-label="Open ${escape(spec.title)} as a zoomable SVG"><img src="/${MEDIA}/${spec.name}.png" alt="${escape(spec.description)}" loading="lazy" decoding="async"></a>
 ${links(spec)}</li>`).join("\n")}</ul>
-<p class="workflow-source"><a href="${source}">Editable source: docs/workflows.md</a> · <a href="https://github.com/bdekoz/izzi/blob/${commit}/scripts/render-workflow-diagrams.py">Diagram renderer</a> · <a href="/${MEDIA}/local-model-inventory.20261027.json">Model and hardware inventory</a> · <a href="/${MEDIA}/render-manifest.json">Render receipt</a><br>Source commit: <code>${commit}</code>. The compute triangle and workflow loop use explicit SVG layouts; the architecture and baseline use Mermaid 11.16.1. Updated diagrams await human review.</p>`;
+<p class="workflow-source"><a href="${source}">Editable source: docs/workflows.md</a> · <a href="https://github.com/bdekoz/izzi/blob/${commit}/scripts/render-workflow-diagrams.py">Diagram renderer</a> · <a href="/${MEDIA}/local-model-inventory.20261027.json">Model and hardware inventory</a> · <a href="/${MEDIA}/render-manifest.json">Render receipt</a><br>Source commit: <code>${commit}</code>. The architecture, compute triangle and workflow loop use explicit SVG layouts; the baseline uses Mermaid 11.16.1. Updated diagrams await human review.</p>`;
 }
 
 function indexHtml(commit) {

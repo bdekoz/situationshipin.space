@@ -1,31 +1,463 @@
 {
-  "theme": "base",
-  "layout": "elk",
-  "elk": {
-    "cycleBreakingStrategy": "GREEDY",
-    "forceNodeModelOrder": false,
-    "considerModelOrder": "NODES_AND_EDGES"
+  "renderer": "izzi-fixed-svg-1",
+  "width": 2520,
+  "height": 1540,
+  "font_family": "DejaVu Sans",
+  "font_size": 19,
+  "line_height": 31,
+  "text_color": "#222222",
+  "line_color": "#666666",
+  "groups": {
+    "MEDIA": {
+      "box": [
+        620,
+        60,
+        660,
+        920
+      ],
+      "members": [
+        "AUDIO",
+        "PRIOR",
+        "NATIVE",
+        "DS",
+        "ORN"
+      ]
+    }
   },
-  "themeVariables": {
-    "fontFamily": "DejaVu Sans, sans-serif",
-    "fontSize": "18px",
-    "primaryColor": "#f0f3f6",
-    "primaryTextColor": "#172d40",
-    "primaryBorderColor": "#60778a",
-    "lineColor": "#60778a",
-    "secondaryColor": "#e5f2ec",
-    "tertiaryColor": "#ffffff",
-    "clusterBkg": "#f8fafb",
-    "clusterBorder": "#adbcc8",
-    "edgeLabelBackground": "#ffffff"
+  "nodes": {
+    "I": {
+      "box": [
+        40,
+        60,
+        460,
+        160
+      ],
+      "fill": "#f1f1f1",
+      "stroke": "#666666"
+    },
+    "AUDIO": {
+      "box": [
+        660,
+        160,
+        580,
+        120
+      ],
+      "fill": "#f1f1f1",
+      "stroke": "#666666"
+    },
+    "PRIOR": {
+      "box": [
+        660,
+        320,
+        580,
+        120
+      ],
+      "fill": "#f1f1f1",
+      "stroke": "#666666"
+    },
+    "NATIVE": {
+      "box": [
+        660,
+        480,
+        580,
+        120
+      ],
+      "fill": "#f1f1f1",
+      "stroke": "#666666"
+    },
+    "DS": {
+      "box": [
+        660,
+        640,
+        580,
+        120
+      ],
+      "fill": "#f1f1f1",
+      "stroke": "#666666"
+    },
+    "ORN": {
+      "box": [
+        660,
+        800,
+        580,
+        120
+      ],
+      "fill": "#f1f1f1",
+      "stroke": "#666666"
+    },
+    "CLOUD": {
+      "box": [
+        660,
+        1040,
+        580,
+        120
+      ],
+      "fill": "#f1f1f1",
+      "stroke": "#666666"
+    },
+    "IMAGE": {
+      "box": [
+        660,
+        1200,
+        580,
+        120
+      ],
+      "fill": "#f1f1f1",
+      "stroke": "#666666"
+    },
+    "CODING": {
+      "box": [
+        660,
+        1360,
+        580,
+        120
+      ],
+      "fill": "#f1f1f1",
+      "stroke": "#666666"
+    },
+    "OUTPUT": {
+      "box": [
+        1450,
+        540,
+        520,
+        120
+      ],
+      "fill": "#f1f1f1",
+      "stroke": "#666666"
+    },
+    "REVIEW": {
+      "box": [
+        2040,
+        540,
+        440,
+        120
+      ],
+      "fill": "#f1f1f1",
+      "stroke": "#666666"
+    }
   },
-  "flowchart": {
-    "htmlLabels": false,
-    "curve": "basis",
-    "padding": 20,
-    "wrappingWidth": 360,
-    "nodeSpacing": 35,
-    "rankSpacing": 60,
-    "diagramPadding": 24
-  }
+  "edges": [
+    {
+      "source": "I",
+      "target": "AUDIO",
+      "arrow": true,
+      "dashed": false,
+      "points": [
+        [
+          500,
+          90
+        ],
+        [
+          625,
+          90
+        ],
+        [
+          625,
+          220
+        ],
+        [
+          660,
+          220
+        ]
+      ]
+    },
+    {
+      "source": "I",
+      "target": "PRIOR",
+      "arrow": true,
+      "dashed": false,
+      "points": [
+        [
+          500,
+          105
+        ],
+        [
+          610,
+          105
+        ],
+        [
+          610,
+          380
+        ],
+        [
+          660,
+          380
+        ]
+      ]
+    },
+    {
+      "source": "I",
+      "target": "NATIVE",
+      "arrow": true,
+      "dashed": false,
+      "points": [
+        [
+          500,
+          120
+        ],
+        [
+          595,
+          120
+        ],
+        [
+          595,
+          540
+        ],
+        [
+          660,
+          540
+        ]
+      ]
+    },
+    {
+      "source": "I",
+      "target": "DS",
+      "arrow": true,
+      "dashed": true,
+      "points": [
+        [
+          500,
+          135
+        ],
+        [
+          580,
+          135
+        ],
+        [
+          580,
+          700
+        ],
+        [
+          660,
+          700
+        ]
+      ]
+    },
+    {
+      "source": "I",
+      "target": "ORN",
+      "arrow": true,
+      "dashed": true,
+      "points": [
+        [
+          500,
+          150
+        ],
+        [
+          565,
+          150
+        ],
+        [
+          565,
+          860
+        ],
+        [
+          660,
+          860
+        ]
+      ]
+    },
+    {
+      "source": "I",
+      "target": "CLOUD",
+      "arrow": true,
+      "dashed": false,
+      "points": [
+        [
+          500,
+          165
+        ],
+        [
+          550,
+          165
+        ],
+        [
+          550,
+          1100
+        ],
+        [
+          660,
+          1100
+        ]
+      ]
+    },
+    {
+      "source": "I",
+      "target": "IMAGE",
+      "arrow": true,
+      "dashed": false,
+      "points": [
+        [
+          500,
+          180
+        ],
+        [
+          535,
+          180
+        ],
+        [
+          535,
+          1260
+        ],
+        [
+          660,
+          1260
+        ]
+      ]
+    },
+    {
+      "source": "I",
+      "target": "CODING",
+      "arrow": true,
+      "dashed": true,
+      "points": [
+        [
+          500,
+          195
+        ],
+        [
+          520,
+          195
+        ],
+        [
+          520,
+          1420
+        ],
+        [
+          660,
+          1420
+        ]
+      ]
+    },
+    {
+      "source": "AUDIO",
+      "target": "OUTPUT",
+      "arrow": true,
+      "points": [
+        [
+          1240,
+          220
+        ],
+        [
+          1400,
+          220
+        ],
+        [
+          1400,
+          565
+        ],
+        [
+          1450,
+          565
+        ]
+      ]
+    },
+    {
+      "source": "PRIOR",
+      "target": "OUTPUT",
+      "arrow": true,
+      "points": [
+        [
+          1240,
+          380
+        ],
+        [
+          1380,
+          380
+        ],
+        [
+          1380,
+          580
+        ],
+        [
+          1450,
+          580
+        ]
+      ]
+    },
+    {
+      "source": "NATIVE",
+      "target": "OUTPUT",
+      "arrow": true,
+      "points": [
+        [
+          1240,
+          540
+        ],
+        [
+          1360,
+          540
+        ],
+        [
+          1360,
+          595
+        ],
+        [
+          1450,
+          595
+        ]
+      ]
+    },
+    {
+      "source": "CLOUD",
+      "target": "OUTPUT",
+      "arrow": true,
+      "points": [
+        [
+          1240,
+          1100
+        ],
+        [
+          1360,
+          1100
+        ],
+        [
+          1360,
+          625
+        ],
+        [
+          1450,
+          625
+        ]
+      ]
+    },
+    {
+      "source": "IMAGE",
+      "target": "OUTPUT",
+      "arrow": true,
+      "points": [
+        [
+          1240,
+          1260
+        ],
+        [
+          1380,
+          1260
+        ],
+        [
+          1380,
+          640
+        ],
+        [
+          1450,
+          640
+        ]
+      ]
+    },
+    {
+      "source": "OUTPUT",
+      "target": "REVIEW",
+      "arrow": true,
+      "points": [
+        [
+          1970,
+          600
+        ],
+        [
+          2040,
+          600
+        ]
+      ]
+    }
+  ]
 }

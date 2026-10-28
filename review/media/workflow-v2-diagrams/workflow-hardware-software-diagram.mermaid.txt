@@ -1,33 +1,33 @@
 flowchart LR
     I["izzi on rizal<br/>Planning and generation control"]
-    subgraph LOCAL["New local LLMs — eureka"]
-        direction TB
-        DS["DeepSeek V4 Flash<br/>ds4 / ROCm · on-demand runner"]
-        ORN["Ornith 1.5 · 35B<br/>Ollama · Q4_K_M"]
-    end
     subgraph MEDIA["Existing local media paths"]
         direction TB
         AUDIO["Kokoro voices + Whisper checks<br/>rizal CPU · current HLT audio"]
         PRIOR["Qwen image editing + Higgs TTS<br/>eureka · retained earlier paths"]
         NATIVE["Native SVG + FFmpeg<br/>rizal / compute workers"]
+        DS["DeepSeek V4 Flash<br/>eureka · ds4 / ROCm · on-demand runner"]
+        ORN["Ornith 1.5 · 35B<br/>eureka · Ollama · Q4_K_M"]
     end
     CLOUD["Hosted motion generation<br/>seedance2ai.io / fal.ai"]
-    HOSTED["Hosted authoring / image choices<br/>OpenAI · DeepSeek · per job"]
+    IMAGE["Hosted image generation<br/>gpt-sol-6.1 / gpt-astra-6"]
+    CODING["Hosted coding<br/>gpt-sol-6.1 / deepseek-v4"]
     OUTPUT["Verified media and source records"]
     REVIEW["situationshipin.space<br/>Human review"]
-    I -.->|optional authoring| DS
-    I -.->|optional authoring| ORN
-    I -.->|job-selected authoring| HOSTED
+    I -.-> DS
+    I -.-> ORN
+    I -.-> CODING
     I --> AUDIO
     I --> PRIOR
     I --> NATIVE
     I --> CLOUD
+    I --> IMAGE
     AUDIO --> OUTPUT
     PRIOR --> OUTPUT
     NATIVE --> OUTPUT
     CLOUD --> OUTPUT
+    IMAGE --> OUTPUT
     OUTPUT --> REVIEW
-    classDef local fill:#e5f2ec,stroke:#286047,color:#163a2a,stroke-width:2px
-    classDef cloud fill:#edf1fb,stroke:#426795,color:#172d4b
-    class DS,ORN local
-    class CLOUD,HOSTED cloud
+    classDef node fill:#f1f1f1,stroke:#666666,color:#222222,stroke-width:2px
+    class I,AUDIO,PRIOR,NATIVE,DS,ORN,CLOUD,IMAGE,CODING,OUTPUT,REVIEW node
+    style MEDIA fill:#fafafa,stroke:#999999,color:#222222
+    linkStyle default stroke:#666666,color:#222222

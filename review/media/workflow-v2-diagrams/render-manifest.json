@@ -1,10 +1,10 @@
 {
   "schema_version": "izzi-workflow-diagram-render-1",
-  "rendered_at": "2026-10-28T01:20:48.629093+00:00",
+  "rendered_at": "2026-10-28T01:41:13.808930+00:00",
   "source": {
     "path": "docs/workflows.md",
-    "bytes": 22861,
-    "sha256": "e57fa1b9fe77b3a507050e545b0d1efce475c0e2778e5b5ab7c4addcfc4a7909"
+    "bytes": 23475,
+    "sha256": "ec6d5ceffb320aff5ae51b9ad7ee8e6060cf2fceaaeddf55ab5d70afbe4fe3c7"
   },
   "renderer": {
     "mermaid_cli": "11.16.0",
@@ -25,29 +25,29 @@
   "diagrams": [
     {
       "artifact_id": "workflow-hardware-software-diagram",
-      "renderer": "mermaid-11.16.1",
+      "renderer": "izzi-fixed-svg-1",
       "render_config": {
         "path": "workflow-hardware-software-diagram.config.json",
-        "bytes": 749,
-        "sha256": "4acb6235e9038f52447bfc3b4f83ba9a1106874c34584f82f7e92f0f3aa2784e"
+        "bytes": 6489,
+        "sha256": "dee619c2e98b998d91d7b976f31b400567f581a212ee8011a2729b96a6423443"
       },
       "files": [
         {
           "path": "workflow-hardware-software-diagram.mmd",
-          "bytes": 1304,
-          "sha256": "3f43d77b30ef6aa586b8bcd5454de583fd3029e26f3e2de5ff3cc6f88106ec86"
+          "bytes": 1335,
+          "sha256": "93d99b5939ed069d2dceea73f153749c0666d85c1a4fc3e28c0795bff36af8ec"
         },
         {
           "path": "workflow-hardware-software-diagram.svg",
-          "bytes": 28862,
-          "sha256": "828fe19b3660ac064cdd2bd6dd710b1b0ae6ba8f6db69783d38a74d000628449"
+          "bytes": 7496,
+          "sha256": "3f37333bd8ce32c80ae2bb9b9a92ed92045eecef0358db17d0365e09e1f5f932"
         },
         {
           "path": "workflow-hardware-software-diagram.png",
-          "bytes": 241841,
-          "sha256": "833a08de0e5706a5cd0ef9814cf31d048508f03261a33518ceba779d0081c3b9",
-          "width": 3536,
-          "height": 2000
+          "bytes": 295195,
+          "sha256": "fcc76b5f736e82be54fc009221c1b502d62338d212150e4e3a23f8304564d5f2",
+          "width": 5040,
+          "height": 3080
         }
       ]
     },

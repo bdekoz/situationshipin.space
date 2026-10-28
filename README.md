@@ -55,9 +55,10 @@ accepted August hardware/software map remains a historical snapshot in
 `docs/development/sessions/20260817.fal.ai_stage_2.md`, section 5.2.1.
 
 Render using Mermaid 11.16.1 / CLI 11.16.0 with the installed Chrome browser:
-the two layouts revised for issues #78 and #79 use explicit SVG coordinates
-and librsvg/Pycairo PNG export. This preserves equal workflow boxes and
-rectangular hosts arranged in a triangle. The per-diagram configurations
+the three layouts revised for issues #78–#80 use explicit SVG coordinates
+and librsvg/Pycairo PNG export. This preserves equal workflow boxes,
+rectangular hosts arranged in a triangle, and the architecture's combined
+local-media group and three hosted choices. The per-diagram configurations
 record the layout; the Mermaid blocks supply labels and connections.
 
 ```sh
@@ -73,7 +74,7 @@ After committing the source, prepare this site's bounded publication:
 ```sh
 node scripts/publish-workflow-diagrams.mjs \
   --izzi-commit <40-hex-source-commit> \
-  --diagrams-dir /home/bkoz/src/izzi/outputs/workflows-v2/20261027-review-78-79
+  --diagrams-dir /home/bkoz/src/izzi/outputs/workflows-v2/20261027-review-80
 node scripts/update-build-manifest.mjs
 node scripts/check-review-site.mjs
 ```
