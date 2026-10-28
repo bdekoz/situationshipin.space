@@ -18,7 +18,7 @@ const MEMBERS = [
   {
     name: "workflow-hardware-software-diagram",
     title: "Hardware & software — local models and media paths",
-    description: "A grayscale map with DeepSeek V4 Flash and Ornith 1.5 inside Existing local media paths. Three hosted boxes stack motion generation, image generation and coding, with the model labels requested in issue #80. Dashed edges mark optional authoring or coding assistance.",
+    description: "A grayscale map with devp.ac and situationshipin.space aligned across the center. Local Software contains Native SVG + FFmpeg, Cartofreako and Izzi above Local AI's media models, DeepSeek V4 Flash and Ornith 1.5. Hosted AI groups motion generation, image generation and coding below Local AI. Media paths connect directly to human review; dashed edges mark optional authoring or coding assistance.",
   },
   {
     name: "devpac-compute-resources-diagram",

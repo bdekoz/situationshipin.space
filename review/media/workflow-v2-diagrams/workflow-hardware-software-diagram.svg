@@ -1,82 +1,97 @@
 <?xml version='1.0' encoding='utf-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2520 1540" width="2520" height="1540" role="img" aria-labelledby="diagram-title" font-family="DejaVu Sans">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1900 2200" width="1900" height="2200" role="img" aria-labelledby="diagram-title" font-family="DejaVu Sans">
   <title id="diagram-title">workflow hardware software diagram</title>
-  <rect width="2520" height="1540" fill="white" />
-  <rect id="group-MEDIA-frame" x="620" y="60" width="660" height="920" fill="#fafafa" stroke="#999999" stroke-width="2" />
-  <text x="950.0" y="102" text-anchor="middle" fill="#222222" font-size="24" font-weight="700">Existing local media paths</text>
+  <rect width="1900" height="2200" fill="white" />
+  <rect id="group-SOFTWARE-frame" x="620" y="60" width="660" height="600" fill="#fafafa" stroke="#999999" stroke-width="2" />
+  <text x="950.0" y="102" text-anchor="middle" fill="#222222" font-size="24" font-weight="700">Local Software</text>
+  <rect id="group-LOCALAI-frame" x="620" y="720" width="660" height="760" fill="#fafafa" stroke="#999999" stroke-width="2" />
+  <text x="950.0" y="762" text-anchor="middle" fill="#222222" font-size="24" font-weight="700">Local AI</text>
+  <rect id="group-HOSTEDAI-frame" x="620" y="1540" width="660" height="600" fill="#fafafa" stroke="#999999" stroke-width="2" />
+  <text x="950.0" y="1582" text-anchor="middle" fill="#222222" font-size="24" font-weight="700">Hosted AI</text>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
       <path d="M 0 0 L 10 5 L 0 10 Z" fill="#666666" />
     </marker>
   </defs>
-  <path d="M 500 90 L 625 90 L 625 220 L 660 220" fill="none" stroke="#666666" stroke-width="2" data-source="I" data-target="AUDIO" marker-end="url(#arrow)" />
-  <path d="M 500 105 L 610 105 L 610 380 L 660 380" fill="none" stroke="#666666" stroke-width="2" data-source="I" data-target="PRIOR" marker-end="url(#arrow)" />
-  <path d="M 500 120 L 595 120 L 595 540 L 660 540" fill="none" stroke="#666666" stroke-width="2" data-source="I" data-target="NATIVE" marker-end="url(#arrow)" />
-  <path d="M 500 135 L 580 135 L 580 700 L 660 700" fill="none" stroke="#666666" stroke-width="2" data-source="I" data-target="DS" marker-end="url(#arrow)" stroke-dasharray="7 5" />
-  <path d="M 500 150 L 565 150 L 565 860 L 660 860" fill="none" stroke="#666666" stroke-width="2" data-source="I" data-target="ORN" marker-end="url(#arrow)" stroke-dasharray="7 5" />
-  <path d="M 500 165 L 550 165 L 550 1100 L 660 1100" fill="none" stroke="#666666" stroke-width="2" data-source="I" data-target="CLOUD" marker-end="url(#arrow)" />
-  <path d="M 500 180 L 535 180 L 535 1260 L 660 1260" fill="none" stroke="#666666" stroke-width="2" data-source="I" data-target="IMAGE" marker-end="url(#arrow)" />
-  <path d="M 500 195 L 520 195 L 520 1420 L 660 1420" fill="none" stroke="#666666" stroke-width="2" data-source="I" data-target="CODING" marker-end="url(#arrow)" stroke-dasharray="7 5" />
-  <path d="M 1240 220 L 1400 220 L 1400 565 L 1450 565" fill="none" stroke="#666666" stroke-width="2" data-source="AUDIO" data-target="OUTPUT" marker-end="url(#arrow)" />
-  <path d="M 1240 380 L 1380 380 L 1380 580 L 1450 580" fill="none" stroke="#666666" stroke-width="2" data-source="PRIOR" data-target="OUTPUT" marker-end="url(#arrow)" />
-  <path d="M 1240 540 L 1360 540 L 1360 595 L 1450 595" fill="none" stroke="#666666" stroke-width="2" data-source="NATIVE" data-target="OUTPUT" marker-end="url(#arrow)" />
-  <path d="M 1240 1100 L 1360 1100 L 1360 625 L 1450 625" fill="none" stroke="#666666" stroke-width="2" data-source="CLOUD" data-target="OUTPUT" marker-end="url(#arrow)" />
-  <path d="M 1240 1260 L 1380 1260 L 1380 640 L 1450 640" fill="none" stroke="#666666" stroke-width="2" data-source="IMAGE" data-target="OUTPUT" marker-end="url(#arrow)" />
-  <path d="M 1970 600 L 2040 600" fill="none" stroke="#666666" stroke-width="2" data-source="OUTPUT" data-target="REVIEW" marker-end="url(#arrow)" />
-  <g id="group-MEDIA">
-    <g id="node-AUDIO">
+  <path d="M 500 1050 L 535 1050 L 535 220 L 660 220" fill="none" stroke="#666666" stroke-width="2" data-source="I" data-target="NATIVE" marker-end="url(#arrow)" />
+  <path d="M 500 1061 L 550 1061 L 550 380 L 660 380" fill="none" stroke="#666666" stroke-width="2" data-source="I" data-target="CARTO" marker-end="url(#arrow)" />
+  <path d="M 500 1072 L 565 1072 L 565 540 L 660 540" fill="none" stroke="#666666" stroke-width="2" data-source="I" data-target="IZZI" marker-end="url(#arrow)" />
+  <path d="M 500 1083 L 580 1083 L 580 880 L 660 880" fill="none" stroke="#666666" stroke-width="2" data-source="I" data-target="AUDIO" marker-end="url(#arrow)" />
+  <path d="M 500 1094 L 595 1094 L 595 1040 L 660 1040" fill="none" stroke="#666666" stroke-width="2" data-source="I" data-target="PRIOR" marker-end="url(#arrow)" />
+  <path d="M 500 1105 L 595 1105 L 595 1200 L 660 1200" fill="none" stroke="#666666" stroke-width="2" data-source="I" data-target="DS" marker-end="url(#arrow)" stroke-dasharray="7 5" />
+  <path d="M 500 1116 L 580 1116 L 580 1360 L 660 1360" fill="none" stroke="#666666" stroke-width="2" data-source="I" data-target="ORN" marker-end="url(#arrow)" stroke-dasharray="7 5" />
+  <path d="M 500 1127 L 565 1127 L 565 1700 L 660 1700" fill="none" stroke="#666666" stroke-width="2" data-source="I" data-target="CLOUD" marker-end="url(#arrow)" />
+  <path d="M 500 1138 L 550 1138 L 550 1860 L 660 1860" fill="none" stroke="#666666" stroke-width="2" data-source="I" data-target="IMAGE" marker-end="url(#arrow)" />
+  <path d="M 500 1149 L 535 1149 L 535 2020 L 660 2020" fill="none" stroke="#666666" stroke-width="2" data-source="I" data-target="CODING" marker-end="url(#arrow)" stroke-dasharray="7 5" />
+  <path d="M 1240 220 L 1365 220 L 1365 1058 L 1400 1058" fill="none" stroke="#666666" stroke-width="2" data-source="NATIVE" data-target="REVIEW" marker-end="url(#arrow)" />
+  <path d="M 1240 380 L 1350 380 L 1350 1072 L 1400 1072" fill="none" stroke="#666666" stroke-width="2" data-source="CARTO" data-target="REVIEW" marker-end="url(#arrow)" />
+  <path d="M 1240 540 L 1335 540 L 1335 1086 L 1400 1086" fill="none" stroke="#666666" stroke-width="2" data-source="IZZI" data-target="REVIEW" marker-end="url(#arrow)" />
+  <path d="M 1240 880 L 1320 880 L 1320 1100 L 1400 1100" fill="none" stroke="#666666" stroke-width="2" data-source="AUDIO" data-target="REVIEW" marker-end="url(#arrow)" />
+  <path d="M 1240 1040 L 1305 1040 L 1305 1114 L 1400 1114" fill="none" stroke="#666666" stroke-width="2" data-source="PRIOR" data-target="REVIEW" marker-end="url(#arrow)" />
+  <path d="M 1240 1700 L 1305 1700 L 1305 1128 L 1400 1128" fill="none" stroke="#666666" stroke-width="2" data-source="CLOUD" data-target="REVIEW" marker-end="url(#arrow)" />
+  <path d="M 1240 1860 L 1320 1860 L 1320 1142 L 1400 1142" fill="none" stroke="#666666" stroke-width="2" data-source="IMAGE" data-target="REVIEW" marker-end="url(#arrow)" />
+  <g id="group-SOFTWARE">
+    <g id="node-NATIVE">
       <rect x="660" y="160" width="580" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
-      <text x="950.0" y="203" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Kokoro voices + Whisper checks</text>
-      <text x="950.0" y="242" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">rizal CPU · current HLT audio</text>
+      <text x="950.0" y="203" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Native SVG + FFmpeg</text>
+      <text x="950.0" y="242" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">rizal / compute workers</text>
+    </g>
+    <g id="node-CARTO">
+      <rect x="660" y="320" width="580" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
+      <text x="950.0" y="388.0" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Cartofreako</text>
+    </g>
+    <g id="node-IZZI">
+      <rect x="660" y="480" width="580" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
+      <text x="950.0" y="548.0" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Izzi</text>
+    </g>
+  </g>
+  <g id="group-LOCALAI">
+    <g id="node-AUDIO">
+      <rect x="660" y="820" width="580" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
+      <text x="950.0" y="863" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Kokoro voices + Whisper checks</text>
+      <text x="950.0" y="902" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">rizal CPU · current HLT audio</text>
     </g>
     <g id="node-PRIOR">
-      <rect x="660" y="320" width="580" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
-      <text x="950.0" y="363" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Qwen image editing + Higgs TTS</text>
-      <text x="950.0" y="402" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">eureka · retained earlier paths</text>
-    </g>
-    <g id="node-NATIVE">
-      <rect x="660" y="480" width="580" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
-      <text x="950.0" y="523" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Native SVG + FFmpeg</text>
-      <text x="950.0" y="562" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">rizal / compute workers</text>
+      <rect x="660" y="980" width="580" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
+      <text x="950.0" y="1023" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Qwen image editing + Higgs TTS</text>
+      <text x="950.0" y="1062" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">eureka · retained earlier paths</text>
     </g>
     <g id="node-DS">
-      <rect x="660" y="640" width="580" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
-      <text x="950.0" y="683" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">DeepSeek V4 Flash</text>
-      <text x="950.0" y="722" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">eureka · ds4 / ROCm · on-demand runner</text>
+      <rect x="660" y="1140" width="580" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
+      <text x="950.0" y="1183" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">DeepSeek V4 Flash</text>
+      <text x="950.0" y="1222" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">eureka · ds4 / ROCm · on-demand runner</text>
     </g>
     <g id="node-ORN">
-      <rect x="660" y="800" width="580" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
-      <text x="950.0" y="843" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Ornith 1.5 · 35B</text>
-      <text x="950.0" y="882" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">eureka · Ollama · Q4_K_M</text>
+      <rect x="660" y="1300" width="580" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
+      <text x="950.0" y="1343" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Ornith 1.5 · 35B</text>
+      <text x="950.0" y="1382" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">eureka · Ollama · Q4_K_M</text>
+    </g>
+  </g>
+  <g id="group-HOSTEDAI">
+    <g id="node-CLOUD">
+      <rect x="660" y="1640" width="580" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
+      <text x="950.0" y="1683" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Hosted motion generation</text>
+      <text x="950.0" y="1722" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">seedance2ai.io / fal.ai</text>
+    </g>
+    <g id="node-IMAGE">
+      <rect x="660" y="1800" width="580" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
+      <text x="950.0" y="1843" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Hosted image generation</text>
+      <text x="950.0" y="1882" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">gpt-sol-6.1 / gpt-astra-6</text>
+    </g>
+    <g id="node-CODING">
+      <rect x="660" y="1960" width="580" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
+      <text x="950.0" y="2003" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Hosted coding</text>
+      <text x="950.0" y="2042" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">gpt-sol-6.1 / deepseek-v4</text>
     </g>
   </g>
   <g id="node-I">
-    <rect x="40" y="60" width="460" height="160" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
-    <text x="270.0" y="103" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">izzi on rizal</text>
-    <text x="270.0" y="142" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">Planning and generation control</text>
-  </g>
-  <g id="node-CLOUD">
-    <rect x="660" y="1040" width="580" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
-    <text x="950.0" y="1083" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Hosted motion generation</text>
-    <text x="950.0" y="1122" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">seedance2ai.io / fal.ai</text>
-  </g>
-  <g id="node-IMAGE">
-    <rect x="660" y="1200" width="580" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
-    <text x="950.0" y="1243" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Hosted image generation</text>
-    <text x="950.0" y="1282" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">gpt-sol-6.1 / gpt-astra-6</text>
-  </g>
-  <g id="node-CODING">
-    <rect x="660" y="1360" width="580" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
-    <text x="950.0" y="1403" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Hosted coding</text>
-    <text x="950.0" y="1442" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">gpt-sol-6.1 / deepseek-v4</text>
-  </g>
-  <g id="node-OUTPUT">
-    <rect x="1450" y="540" width="520" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
-    <text x="1710.0" y="583" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">Verified media and source records</text>
+    <rect x="40" y="1040" width="460" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
+    <text x="270.0" y="1083" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">devp.ac</text>
+    <text x="270.0" y="1122" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">Planning and generation control</text>
   </g>
   <g id="node-REVIEW">
-    <rect x="2040" y="540" width="440" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
-    <text x="2260.0" y="583" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">situationshipin.space</text>
-    <text x="2260.0" y="622" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">Human review</text>
+    <rect x="1400" y="1040" width="460" height="120" rx="4" fill="#f1f1f1" stroke="#666666" stroke-width="2" />
+    <text x="1630.0" y="1083" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">situationshipin.space</text>
+    <text x="1630.0" y="1122" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">Human review</text>
   </g>
 </svg>

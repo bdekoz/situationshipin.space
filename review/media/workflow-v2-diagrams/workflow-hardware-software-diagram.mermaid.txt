@@ -1,17 +1,24 @@
 flowchart LR
-    I["izzi on rizal<br/>Planning and generation control"]
-    subgraph MEDIA["Existing local media paths"]
+    I["devp.ac<br/>Planning and generation control"]
+    subgraph SOFTWARE["Local Software"]
+        direction TB
+        NATIVE["Native SVG + FFmpeg<br/>rizal / compute workers"]
+        CARTO["Cartofreako"]
+        IZZI["Izzi"]
+    end
+    subgraph LOCALAI["Local AI"]
         direction TB
         AUDIO["Kokoro voices + Whisper checks<br/>rizal CPU · current HLT audio"]
         PRIOR["Qwen image editing + Higgs TTS<br/>eureka · retained earlier paths"]
-        NATIVE["Native SVG + FFmpeg<br/>rizal / compute workers"]
         DS["DeepSeek V4 Flash<br/>eureka · ds4 / ROCm · on-demand runner"]
         ORN["Ornith 1.5 · 35B<br/>eureka · Ollama · Q4_K_M"]
     end
-    CLOUD["Hosted motion generation<br/>seedance2ai.io / fal.ai"]
-    IMAGE["Hosted image generation<br/>gpt-sol-6.1 / gpt-astra-6"]
-    CODING["Hosted coding<br/>gpt-sol-6.1 / deepseek-v4"]
-    OUTPUT["Verified media and source records"]
+    subgraph HOSTEDAI["Hosted AI"]
+        direction TB
+        CLOUD["Hosted motion generation<br/>seedance2ai.io / fal.ai"]
+        IMAGE["Hosted image generation<br/>gpt-sol-6.1 / gpt-astra-6"]
+        CODING["Hosted coding<br/>gpt-sol-6.1 / deepseek-v4"]
+    end
     REVIEW["situationshipin.space<br/>Human review"]
     I -.-> DS
     I -.-> ORN
@@ -19,15 +26,20 @@ flowchart LR
     I --> AUDIO
     I --> PRIOR
     I --> NATIVE
+    I --> CARTO
+    I --> IZZI
     I --> CLOUD
     I --> IMAGE
-    AUDIO --> OUTPUT
-    PRIOR --> OUTPUT
-    NATIVE --> OUTPUT
-    CLOUD --> OUTPUT
-    IMAGE --> OUTPUT
-    OUTPUT --> REVIEW
+    AUDIO --> REVIEW
+    PRIOR --> REVIEW
+    NATIVE --> REVIEW
+    CARTO --> REVIEW
+    IZZI --> REVIEW
+    CLOUD --> REVIEW
+    IMAGE --> REVIEW
     classDef node fill:#f1f1f1,stroke:#666666,color:#222222,stroke-width:2px
-    class I,AUDIO,PRIOR,NATIVE,DS,ORN,CLOUD,IMAGE,CODING,OUTPUT,REVIEW node
-    style MEDIA fill:#fafafa,stroke:#999999,color:#222222
+    class I,AUDIO,PRIOR,NATIVE,CARTO,IZZI,DS,ORN,CLOUD,IMAGE,CODING,REVIEW node
+    style SOFTWARE fill:#fafafa,stroke:#999999,color:#222222
+    style LOCALAI fill:#fafafa,stroke:#999999,color:#222222
+    style HOSTEDAI fill:#fafafa,stroke:#999999,color:#222222
     linkStyle default stroke:#666666,color:#222222
