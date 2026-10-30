@@ -360,3 +360,17 @@ repository/commit, delivery-manifest hash, original PNG hashes and published
 image hashes travel with the packet. Full-size print masters stay in the
 Cartofreako delivery. The site payload limit is 256 MiB, raised from 192 MiB
 for this requested collection; the 16 MiB per-object limit is unchanged.
+
+
+## Complete Here Lies Trouble listening review
+
+The October 30 project-owner instruction requests the complete canonical
+draft-four audio for listening and script improvement. The review publishes
+a 52:35.375 MP3 (24 kHz mono, 40 kbit/s, 15,777,591 bytes), derived without
+text edits or time stretching from the unchanged four-voice dialogue master.
+The full lossless WAV remains local. The matching screenplay is linked on
+the listening page; creative acceptance remains unreviewed.
+
+This bounded addition raises the shared payload limit from 256 to 272 MiB;
+the 16 MiB per-file limit remains. The prior Cartofreako publication is
+preserved. Refresh the build manifest and run the site checker before push.

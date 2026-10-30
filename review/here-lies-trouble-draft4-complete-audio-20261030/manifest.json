@@ -1,0 +1,20 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "here-lies-trouble-draft4-complete-audio-20261030",
+  "artifact_id": "here-lies-trouble-draft4-complete-audio-20261030",
+  "style": "house-style",
+  "source_media": {
+    "path": "outputs/here-lies-trouble/stage-4-20261026-option-b-v3/dialogue-master.wav",
+    "sha256": "efc0ad9a7bdf1bd39a47003db860c4efc9d6659b912e6c32d22f66aa1d000cec",
+    "bytes": 908748102,
+    "duration_seconds": 3155.375,
+    "sample_rate": 48000,
+    "channels": 2,
+    "published": false
+  },
+  "proxy": {
+    "path": "/review/media/here-lies-trouble-stage-5/here-lies-trouble-draft4-complete-audio-20261030.mp3",
+    "sha256": "8608e5939b15fc9d814f3425284c45391a5e5a75eb9adb2c44ba7bd2cda8c3ce"
+  },
+  "document": null
+}

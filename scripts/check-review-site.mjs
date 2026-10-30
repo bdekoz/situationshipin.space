@@ -21,7 +21,9 @@ const maximumFileBytes = 16 * 1024 * 1024;
 // including readable crop previews, scan overlays, and contact sheets.
 // Raised 2026-10-30 to 256 MiB for 76 requested Cartofreako world/Japan
 // plates, with lossless 3840-pixel images and compact gallery thumbnails.
-const maximumPayloadBytes = 256 * 1024 * 1024;
+// Raised 2026-10-30 to 272 MiB for the explicitly requested complete
+// Here Lies Trouble listening proxy (15,777,591 bytes); 16 MiB per file stays.
+const maximumPayloadBytes = 272 * 1024 * 1024;
 // .mp3 added 2026-08-14 for audio review artifacts (Kokoro female voice bank).
 // .txt added 2026-08-18 for the W3 canonical transcript review container.
 // Editable screenplay companions are bounded and hash-checked like other assets.

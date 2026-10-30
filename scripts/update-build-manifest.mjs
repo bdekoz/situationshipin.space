@@ -155,7 +155,7 @@ const manifest = {
     Object.entries(aestheticCollectionCounts).sort(([left], [right]) => left.localeCompare(right))
   ),
   maximum_artifact_bytes: 16 * 1024 * 1024,
-  maximum_payload_bytes: 256 * 1024 * 1024,
+  maximum_payload_bytes: 272 * 1024 * 1024,
   excluded_media: ["mkv", "mp4", "mov", "wav", "mp3"],
   code_files: codeFiles,
   artifact_inventory: "data/review-items.json",

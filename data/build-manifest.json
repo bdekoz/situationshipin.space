@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "portal_build": "izzi-review-2026-08-11.7",
-  "generated_at": "2026-10-30T18:13:08.431Z",
+  "generated_at": "2026-10-30T23:14:57.168Z",
   "portal_repository": "bdekoz/situationshipin.space",
   "portal_source_commit": "219a9b7f0891998c1525c94fa15b43c490b5d79f",
   "izzi_repository": "bdekoz/izzi",
@@ -10,19 +10,19 @@
   "human_review_state": "UNREVIEWED",
   "baseline_state": "NOT-PROMOTED",
   "training_conversion_transfer_state": "NOT-SHARED",
-  "artifact_count": 864,
+  "artifact_count": 865,
   "review_category_counts": {
-    "proofs": 54,
+    "proofs": 55,
     "style_processing": 801,
     "planning": 9
   },
-  "artifact_payload_bytes": 263241234,
+  "artifact_payload_bytes": 279018825,
   "provider_staging_bytes": 0,
   "provider_staging_active_count": 0,
   "provider_staging_manifest_sha256": "946e9156b2de13886912150a7e7e53b9d54561d674934f69239145961658cb09",
   "frame_preview_count": 0,
   "sampled_frame_count": 0,
-  "source_media_bytes_represented": 219222506,
+  "source_media_bytes_represented": 1127970608,
   "source_image_count": 795,
   "source_image_bytes_represented": 918759032,
   "aesthetic_collection_counts": {
@@ -35,7 +35,7 @@
     "tokyo-psychedelic": 30
   },
   "maximum_artifact_bytes": 16777216,
-  "maximum_payload_bytes": 268435456,
+  "maximum_payload_bytes": 285212672,
   "excluded_media": [
     "mkv",
     "mp4",
@@ -122,19 +122,19 @@
     },
     {
       "path": "data/review-items.json",
-      "sha256": "bece273de6769aed862309286a324b9e1d9ae11827acd909ef1574dce35f7d87"
+      "sha256": "30e0a9b0148280e7b62b8a37dac0031508b8d16ad5e42ffa0b1e10e28c3c6ea6"
     },
     {
       "path": "scripts/check-review-site.mjs",
-      "sha256": "f132378597757d02296e4f776878351218fec56822f11d4a15455785f02c02d7"
+      "sha256": "6579adbdbfef8c5e5f2877b6400af14f9e373140104094dc68478f02827149fa"
     },
     {
       "path": "scripts/update-build-manifest.mjs",
-      "sha256": "9ce5ee8e184efd2b704517e442e8710b18b759a16ad23466e865bff659398449"
+      "sha256": "034637cc79186ea6859a7c1c881bcbef3f1f4b0bbb4bdff7287171de1632ef05"
     },
     {
       "path": "README.md",
-      "sha256": "2aea7c300976c7ff9abf4c9adfeae32716db51a781699e88df16aff0fd626c90"
+      "sha256": "5952e89e430c3458e67e6b48ac10502c3863e815071686e219d72a74f18376e0"
     },
     {
       "path": "_config.yml",
@@ -226,7 +226,7 @@
     }
   ],
   "artifact_inventory": "data/review-items.json",
-  "catalog_sha256": "bece273de6769aed862309286a324b9e1d9ae11827acd909ef1574dce35f7d87",
+  "catalog_sha256": "30e0a9b0148280e7b62b8a37dac0031508b8d16ad5e42ffa0b1e10e28c3c6ea6",
   "notes": [
     "The catalog binds every published derivative to an Izzi source path and SHA-256.",
     "Active provider inputs require archive receipts, owner/job attribution and expiry; their bytes count against the same payload budget.",
