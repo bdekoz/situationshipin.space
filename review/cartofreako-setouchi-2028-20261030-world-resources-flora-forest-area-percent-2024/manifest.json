@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-setouchi-2028-20261030-world-resources-flora-forest-area-percent-2024",
+  "artifact_id": "cartofreako-setouchi-2028-20261030-world-resources-flora-forest-area-percent-2024",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/setouchi-triennale-2028/plates/world/png/resources-flora-forest-area-percent-2024-authagraph-44-19.052559.png",
+    "sha256": "481e00af0b7208a00d98a32ffb0c0a1c312e77f4e686f288801a3de6388516df",
+    "bytes": 2283487,
+    "dimensions": [
+      13200,
+      5716
+    ],
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

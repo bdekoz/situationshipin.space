@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-setouchi-2028-20261030-world-resources-energy-nuclear-operating-capacity-2024",
+  "artifact_id": "cartofreako-setouchi-2028-20261030-world-resources-energy-nuclear-operating-capacity-2024",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/setouchi-triennale-2028/plates/world/png/resources-energy-nuclear-operating-capacity-2024-authagraph-44-19.052559.png",
+    "sha256": "c86f219be5cb06c2853372df33875f22f0b286439de0c500f68e1444376d4618",
+    "bytes": 2178398,
+    "dimensions": [
+      13200,
+      5716
+    ],
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

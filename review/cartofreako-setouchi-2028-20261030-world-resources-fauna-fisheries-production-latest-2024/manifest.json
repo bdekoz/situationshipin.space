@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-setouchi-2028-20261030-world-resources-fauna-fisheries-production-latest-2024",
+  "artifact_id": "cartofreako-setouchi-2028-20261030-world-resources-fauna-fisheries-production-latest-2024",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/setouchi-triennale-2028/plates/world/png/resources-fauna-fisheries-production-latest-2024-authagraph-44-19.052559.png",
+    "sha256": "4db6d234f1db591da688e82aee71f3ee027646b634c9458403cac5eaf406bdb3",
+    "bytes": 2280894,
+    "dimensions": [
+      13200,
+      5716
+    ],
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

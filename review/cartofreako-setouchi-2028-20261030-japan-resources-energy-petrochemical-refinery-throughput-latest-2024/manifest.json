@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-setouchi-2028-20261030-japan-resources-energy-petrochemical-refinery-throughput-latest-2024",
+  "artifact_id": "cartofreako-setouchi-2028-20261030-japan-resources-energy-petrochemical-refinery-throughput-latest-2024",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/setouchi-triennale-2028/plates/japan/png/resources-energy-petrochemical-refinery-throughput-latest-2024-authagraph-44-19.052559-japan.png",
+    "sha256": "2fd19eb50e6917c6b79e75e3a2b63f56092e2b028cac0ff007230765140b01ed",
+    "bytes": 1745908,
+    "dimensions": [
+      13200,
+      5716
+    ],
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

@@ -19,7 +19,9 @@ const maximumFileBytes = 16 * 1024 * 1024;
 // ai-time-to-die vertical adds three full-motion episode masters.
 // Raised 2026-09-29 to 192 MiB for the three Hamonshū source-review books,
 // including readable crop previews, scan overlays, and contact sheets.
-const maximumPayloadBytes = 192 * 1024 * 1024;
+// Raised 2026-10-30 to 256 MiB for 76 requested Cartofreako world/Japan
+// plates, with lossless 3840-pixel images and compact gallery thumbnails.
+const maximumPayloadBytes = 256 * 1024 * 1024;
 // .mp3 added 2026-08-14 for audio review artifacts (Kokoro female voice bank).
 // .txt added 2026-08-18 for the W3 canonical transcript review container.
 // Editable screenplay companions are bounded and hash-checked like other assets.

@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-setouchi-2028-20261030-world-water",
+  "artifact_id": "cartofreako-setouchi-2028-20261030-world-water",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/setouchi-triennale-2028/plates/world/png/water-authagraph-44-19.052559.png",
+    "sha256": "77b908d9680e75f8a27d0b3c696cd779523147462388a7e90d03b93b1d211b45",
+    "bytes": 21251423,
+    "dimensions": [
+      13200,
+      5716
+    ],
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

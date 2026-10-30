@@ -50,6 +50,10 @@ const codePaths = [
   "scripts/build-generation-index.mjs",
   "scripts/publish-enrichment-review.mjs",
   "scripts/review-page.mjs",
+  "scripts/prepare-cartofreako-plates.py",
+  "scripts/publish-cartofreako-plates.mjs",
+  "assets/css/cartofreako-plates.css",
+  "assets/js/cartofreako-plates.js",
   ".github/workflows/jekyll-gh-pages.yml"
 ];
 
@@ -151,7 +155,7 @@ const manifest = {
     Object.entries(aestheticCollectionCounts).sort(([left], [right]) => left.localeCompare(right))
   ),
   maximum_artifact_bytes: 16 * 1024 * 1024,
-  maximum_payload_bytes: 192 * 1024 * 1024,
+  maximum_payload_bytes: 256 * 1024 * 1024,
   excluded_media: ["mkv", "mp4", "mov", "wav", "mp3"],
   code_files: codeFiles,
   artifact_inventory: "data/review-items.json",

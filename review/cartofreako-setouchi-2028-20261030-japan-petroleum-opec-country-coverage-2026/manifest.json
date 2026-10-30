@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-setouchi-2028-20261030-japan-petroleum-opec-country-coverage-2026",
+  "artifact_id": "cartofreako-setouchi-2028-20261030-japan-petroleum-opec-country-coverage-2026",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/setouchi-triennale-2028/plates/japan/png/petroleum-opec-country-coverage-2026-authagraph-44-19.052559-japan.png",
+    "sha256": "00ec3b693e537d4b0b74d32d0e5db33c061341663eea9ffb77640cc2a96364ad",
+    "bytes": 1577851,
+    "dimensions": [
+      13200,
+      5716
+    ],
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

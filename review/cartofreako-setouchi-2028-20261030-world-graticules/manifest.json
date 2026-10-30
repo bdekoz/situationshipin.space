@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-setouchi-2028-20261030-world-graticules",
+  "artifact_id": "cartofreako-setouchi-2028-20261030-world-graticules",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/setouchi-triennale-2028/plates/world/png/graticules-authagraph-44-19.052559.png",
+    "sha256": "a13f87595f2fe7a6933a559d467e29cb75470e2c313b58de105233c0161e864f",
+    "bytes": 5863092,
+    "dimensions": [
+      13200,
+      5716
+    ],
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

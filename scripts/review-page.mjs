@@ -147,7 +147,7 @@ function renderMarkdown(markdown) {
 function reviewScript(item) {
   const reviewId = JSON.stringify(item.artifact_id);
   const proxySha = JSON.stringify(item.sha256);
-  const sourceSha = JSON.stringify(item.source_media?.sha256 || item.sha256);
+  const sourceSha = JSON.stringify(item.source_artifact?.sha256 || item.source_media?.sha256 || item.sha256);
   return `<script>
 (function () {
   const reviewId = ${reviewId};
@@ -161,7 +161,10 @@ function reviewScript(item) {
   const note = form.elements.note;
   const key = "review:" + reviewId;
   function saved() {
-    try { return JSON.parse(localStorage.getItem(key) || "null"); } catch (error) { return null; }
+    try {
+      const value = JSON.parse(localStorage.getItem(key) || "null");
+      return value && value.proxy_sha256 === proxySha && value.source_sha256 === sourceSha ? value : null;
+    } catch (error) { return null; }
   }
   function gridReview() {
     try {
@@ -300,7 +303,7 @@ export function renderReviewPage(item, localRoot = "") {
     ? `Review ID: ${escape(item.artifact_id)}<br>Document SHA-256: ${escape(item.sha256)}<br>Plan stage: ${escape(item.plan_stage || "PLAN-DRAFT")}<br>Canonical source: ${escape(item.source_path || "not supplied")}`
     : item.media_kind === "index"
       ? `Review ID: ${escape(item.artifact_id)}<br>Index SHA-256: ${escape(item.sha256)}<br>Index members: ${escape(String(item.index_members?.length || 0))}<br>Generation commit: ${escape(item.generation_commit || "not supplied")}`
-      : `Review ID: ${escape(item.artifact_id)}<br>Proxy SHA-256: ${escape(item.sha256)}<br>Canonical source SHA-256: ${escape(item.source_media?.sha256 || item.sha256)}<br>Canonical source publication: ${item.source_media?.published === false ? "local only" : "published"}`;
+      : `Review ID: ${escape(item.artifact_id)}<br>Proxy SHA-256: ${escape(item.sha256)}<br>Canonical source SHA-256: ${escape(item.source_artifact?.sha256 || item.source_media?.sha256 || item.sha256)}<br>Canonical source publication: ${(item.source_artifact?.published === false || item.source_media?.published === false) ? "local only" : "published"}`;
   const fullResPath = localFullResolutionPath(item, localRoot);
   const fullResLabel = item.media_kind === "image"
     ? "Local SVG file"
@@ -361,6 +364,7 @@ export function renderReviewManifest(item) {
       artifact_id: item.artifact_id,
       style: item.style || "house-style",
       source_media: item.source_media || null,
+      ...(item.source_artifact ? { source_artifact: item.source_artifact } : {}),
       proxy:
         item.media_kind === "video" || item.media_kind === "audio"
           ? { path: "/" + item.published_path, sha256: item.sha256 }

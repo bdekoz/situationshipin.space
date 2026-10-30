@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-setouchi-2028-20261030-world-anthropocene-particulate-2025",
+  "artifact_id": "cartofreako-setouchi-2028-20261030-world-anthropocene-particulate-2025",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/setouchi-triennale-2028/plates/world/png/anthropocene-particulate-2025-authagraph-44-19.052559.png",
+    "sha256": "92b0f99c6711d846b1c3e8e979880f44e7b54c5c4b926d3ea3ef7c59c64fbadf",
+    "bytes": 26070836,
+    "dimensions": [
+      13200,
+      5716
+    ],
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

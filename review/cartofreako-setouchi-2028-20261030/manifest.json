@@ -1,0 +1,15 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-setouchi-2028-20261030",
+  "artifact_id": "cartofreako-setouchi-2028-20261030",
+  "style": "cartofreako",
+  "source_media": null,
+  "proxy": null,
+  "document": {
+    "path": "/review/cartofreako-setouchi-2028-20261030/index.html",
+    "sha256": "35b0478c34aeff11927035765646a22be5ecf6fc963dea28f5130250a285213b",
+    "format": "html",
+    "plan_stage": null,
+    "plan_pdf": null
+  }
+}

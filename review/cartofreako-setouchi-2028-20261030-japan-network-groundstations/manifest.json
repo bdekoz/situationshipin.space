@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-setouchi-2028-20261030-japan-network-groundstations",
+  "artifact_id": "cartofreako-setouchi-2028-20261030-japan-network-groundstations",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/setouchi-triennale-2028/plates/japan/png/network-groundstations-authagraph-44-19.052559-japan.png",
+    "sha256": "37b4d6f6d4724ada0af672ec6a40d1ae1e9a197c0fb8d3efcec1ad14941b4b35",
+    "bytes": 1707588,
+    "dimensions": [
+      13200,
+      5716
+    ],
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

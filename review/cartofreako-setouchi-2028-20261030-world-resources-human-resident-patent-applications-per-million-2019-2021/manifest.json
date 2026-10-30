@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-setouchi-2028-20261030-world-resources-human-resident-patent-applications-per-million-2019-2021",
+  "artifact_id": "cartofreako-setouchi-2028-20261030-world-resources-human-resident-patent-applications-per-million-2019-2021",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/setouchi-triennale-2028/plates/world/png/resources-human-resident-patent-applications-per-million-2019-2021-authagraph-44-19.052559.png",
+    "sha256": "02d59e4394dd49e66ade39809ddfdc772c17a6b76b8b3ef92c927d7c15451cf0",
+    "bytes": 2256125,
+    "dimensions": [
+      13200,
+      5716
+    ],
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

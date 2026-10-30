@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-setouchi-2028-20261030-world-astro-all-sky",
+  "artifact_id": "cartofreako-setouchi-2028-20261030-world-astro-all-sky",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/setouchi-triennale-2028/plates/world/png/astro-all-sky-authagraph-44-19.052559.png",
+    "sha256": "1671a5bc5cba37e3dfded5932dbce41c3fc494a71e3b6bfaeb17eb5cbe79fee9",
+    "bytes": 1955394,
+    "dimensions": [
+      13200,
+      5716
+    ],
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

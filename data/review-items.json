@@ -1,8 +1,1344 @@
 {
   "baseline_state": "NOT-PROMOTED",
-  "generated_at": "2026-10-28T04:26:47.092Z",
+  "generated_at": "2026-10-30T18:13:08.250Z",
   "human_review_state": "UNREVIEWED",
   "items": [
+    {
+      "artifact_id": "cartofreako-setouchi-2028-20261030",
+      "title": "Cartofreako / Setouchi 2028 / World & Japan",
+      "description": "38 world/Japan pairs, 76 latest plates: searchable comparisons, zoomable lossless images, individual notes and a combined review download.",
+      "alt": "World and Japan Cartofreako plate comparison gallery",
+      "family": "cartofreako",
+      "generation_class": "cartofreako-plate-index",
+      "feedback_round": "cartofreako-setouchi-2028-20261030",
+      "media_kind": "index",
+      "review_scope": "CARTOFREAKO-WORLD-JAPAN-PLATES",
+      "review_mode": "output",
+      "review_category": "proofs",
+      "source_repository": "bdekoz/cartofreako",
+      "source_commit": "385650cfd88f8596134b787cc87bcee59b171389",
+      "source_path": "output/setouchi-triennale-2028/index.html",
+      "source_manifest_sha256": "89ec09e943a2425ae488a5e04ff43898f7be2ac741e9153fc007d531118f05b9",
+      "published_path": "review/cartofreako-setouchi-2028-20261030/index.html",
+      "sha256": "35b0478c34aeff11927035765646a22be5ecf6fc963dea28f5130250a285213b",
+      "bytes": 114570,
+      "format": "html",
+      "generation_commit": "385650cfd88f8596134b787cc87bcee59b171389",
+      "generation_state": "CURRENT",
+      "index_members": [
+        "cartofreako-setouchi-2028-20261030-world-geometry",
+        "cartofreako-setouchi-2028-20261030-japan-geometry",
+        "cartofreako-setouchi-2028-20261030-world-graticules",
+        "cartofreako-setouchi-2028-20261030-japan-graticules",
+        "cartofreako-setouchi-2028-20261030-world-earth",
+        "cartofreako-setouchi-2028-20261030-japan-earth",
+        "cartofreako-setouchi-2028-20261030-world-water",
+        "cartofreako-setouchi-2028-20261030-japan-water",
+        "cartofreako-setouchi-2028-20261030-world-bathymetry-roulette",
+        "cartofreako-setouchi-2028-20261030-japan-bathymetry-roulette",
+        "cartofreako-setouchi-2028-20261030-world-bathymetry-hamonshu",
+        "cartofreako-setouchi-2028-20261030-japan-bathymetry-hamonshu",
+        "cartofreako-setouchi-2028-20261030-world-cloud-atmosphere",
+        "cartofreako-setouchi-2028-20261030-japan-cloud-atmosphere",
+        "cartofreako-setouchi-2028-20261030-world-network-cdn",
+        "cartofreako-setouchi-2028-20261030-japan-network-cdn",
+        "cartofreako-setouchi-2028-20261030-world-network-fiber",
+        "cartofreako-setouchi-2028-20261030-japan-network-fiber",
+        "cartofreako-setouchi-2028-20261030-world-network-groundstations",
+        "cartofreako-setouchi-2028-20261030-japan-network-groundstations",
+        "cartofreako-setouchi-2028-20261030-world-network-swarm-ge-1080p",
+        "cartofreako-setouchi-2028-20261030-japan-network-swarm-ge-1080p",
+        "cartofreako-setouchi-2028-20261030-world-network-swarm-lt-1080p",
+        "cartofreako-setouchi-2028-20261030-japan-network-swarm-lt-1080p",
+        "cartofreako-setouchi-2028-20261030-world-anthropocene-particulate-2025",
+        "cartofreako-setouchi-2028-20261030-japan-anthropocene-particulate-2025",
+        "cartofreako-setouchi-2028-20261030-world-anthropocene-particulate-2026",
+        "cartofreako-setouchi-2028-20261030-japan-anthropocene-particulate-2026",
+        "cartofreako-setouchi-2028-20261030-world-anthropocene-temperature-2025",
+        "cartofreako-setouchi-2028-20261030-japan-anthropocene-temperature-2025",
+        "cartofreako-setouchi-2028-20261030-world-anthropocene-temperature-2026",
+        "cartofreako-setouchi-2028-20261030-japan-anthropocene-temperature-2026",
+        "cartofreako-setouchi-2028-20261030-world-astro-all-sky",
+        "cartofreako-setouchi-2028-20261030-japan-astro-all-sky",
+        "cartofreako-setouchi-2028-20261030-world-astro-observer-ground-multiband",
+        "cartofreako-setouchi-2028-20261030-japan-astro-observer-ground-multiband",
+        "cartofreako-setouchi-2028-20261030-world-astro-observer-hubble",
+        "cartofreako-setouchi-2028-20261030-japan-astro-observer-hubble",
+        "cartofreako-setouchi-2028-20261030-world-orbital-technosphere-global",
+        "cartofreako-setouchi-2028-20261030-japan-orbital-technosphere-global",
+        "cartofreako-setouchi-2028-20261030-world-orbital-technosphere-observer",
+        "cartofreako-setouchi-2028-20261030-japan-orbital-technosphere-observer",
+        "cartofreako-setouchi-2028-20261030-world-resources-energy-solar-capacity-2025",
+        "cartofreako-setouchi-2028-20261030-japan-resources-energy-solar-capacity-2025",
+        "cartofreako-setouchi-2028-20261030-world-resources-energy-wind-capacity-2025",
+        "cartofreako-setouchi-2028-20261030-japan-resources-energy-wind-capacity-2025",
+        "cartofreako-setouchi-2028-20261030-world-resources-energy-nuclear-operating-capacity-2024",
+        "cartofreako-setouchi-2028-20261030-japan-resources-energy-nuclear-operating-capacity-2024",
+        "cartofreako-setouchi-2028-20261030-world-resources-energy-petrochemical-refinery-throughput-latest-2024",
+        "cartofreako-setouchi-2028-20261030-japan-resources-energy-petrochemical-refinery-throughput-latest-2024",
+        "cartofreako-setouchi-2028-20261030-world-resources-food-food-production-index-latest-2024",
+        "cartofreako-setouchi-2028-20261030-japan-resources-food-food-production-index-latest-2024",
+        "cartofreako-setouchi-2028-20261030-world-resources-fauna-fisheries-production-latest-2024",
+        "cartofreako-setouchi-2028-20261030-japan-resources-fauna-fisheries-production-latest-2024",
+        "cartofreako-setouchi-2028-20261030-world-resources-fauna-coral-reef-threat-2011",
+        "cartofreako-setouchi-2028-20261030-japan-resources-fauna-coral-reef-threat-2011",
+        "cartofreako-setouchi-2028-20261030-world-resources-flora-forest-area-percent-2024",
+        "cartofreako-setouchi-2028-20261030-japan-resources-flora-forest-area-percent-2024",
+        "cartofreako-setouchi-2028-20261030-world-resources-mineral-rare-earth-mine-production-2025",
+        "cartofreako-setouchi-2028-20261030-japan-resources-mineral-rare-earth-mine-production-2025",
+        "cartofreako-setouchi-2028-20261030-world-resources-human-population-under-30-2024",
+        "cartofreako-setouchi-2028-20261030-japan-resources-human-population-under-30-2024",
+        "cartofreako-setouchi-2028-20261030-world-resources-human-population-over-60-2024",
+        "cartofreako-setouchi-2028-20261030-japan-resources-human-population-over-60-2024",
+        "cartofreako-setouchi-2028-20261030-world-resources-human-upper-secondary-attainment-latest-2025",
+        "cartofreako-setouchi-2028-20261030-japan-resources-human-upper-secondary-attainment-latest-2025",
+        "cartofreako-setouchi-2028-20261030-world-resources-human-bachelors-attainment-latest-2024",
+        "cartofreako-setouchi-2028-20261030-japan-resources-human-bachelors-attainment-latest-2024",
+        "cartofreako-setouchi-2028-20261030-world-resources-human-resident-patent-applications-per-million-2019-2021",
+        "cartofreako-setouchi-2028-20261030-japan-resources-human-resident-patent-applications-per-million-2019-2021",
+        "cartofreako-setouchi-2028-20261030-world-petroleum-eia-liquids-2025",
+        "cartofreako-setouchi-2028-20261030-japan-petroleum-eia-liquids-2025",
+        "cartofreako-setouchi-2028-20261030-world-petroleum-opec-liquids-projection-2030",
+        "cartofreako-setouchi-2028-20261030-japan-petroleum-opec-liquids-projection-2030",
+        "cartofreako-setouchi-2028-20261030-world-petroleum-opec-country-coverage-2026",
+        "cartofreako-setouchi-2028-20261030-japan-petroleum-opec-country-coverage-2026"
+      ],
+      "review_assets": [
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/geometry.webp",
+          "sha256": "e49d769f9cd170969693991369db9c820a076a742d1d25155317bcb1067d4625",
+          "bytes": 89348,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/geometry.thumb.webp",
+          "sha256": "4f40ca6d74a07fa41c6d48b3a031bec40e4da44f752e0f9b79fa1c5532657048",
+          "bytes": 16042,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/geometry.webp",
+          "sha256": "f4cb143eaf0801feb935c575f90be25a3b13da9f57ddb1aa2f58672f249950e1",
+          "bytes": 110796,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/geometry.thumb.webp",
+          "sha256": "3869b230eb1cd4f40433d0d8762ec82c1943c4fb9bc146dabd061101ac2d7ff8",
+          "bytes": 18902,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/graticules.webp",
+          "sha256": "2e23119072419df3bd76f7102b3acb9eda3a9787b45dbdb1e3d1fee8a1f1e6c4",
+          "bytes": 994956,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/graticules.thumb.webp",
+          "sha256": "168776d6d0bd2e04ee57bc80b106adde31a677048d59d2d54909a2f503f3cfb5",
+          "bytes": 132350,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/graticules.webp",
+          "sha256": "5d9833667db85168db1fed25074ab855bd19197494386d09b1b1f46e2174b62c",
+          "bytes": 223134,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/graticules.thumb.webp",
+          "sha256": "68e5e1592b8891e19e2a4727c8665d44174c841750b67fc206a2b958272fb4f6",
+          "bytes": 42398,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/earth.webp",
+          "sha256": "2ee98d2b4998c0e8de08987aa16569704a1cc658ecc6cd4cf03a65c600acc91d",
+          "bytes": 413078,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/earth.thumb.webp",
+          "sha256": "85f5afdefc1e140c694c85f549421e8ca70fc7d852db1b2c3581bf4db30029ed",
+          "bytes": 72158,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/earth.webp",
+          "sha256": "c469dd19797ec53380d2eedabbe8525c92c2535f615143702713284483df80b0",
+          "bytes": 208872,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/earth.thumb.webp",
+          "sha256": "ba7bb4b653e4b74031bcfd0c6be5a516e2203d19a27c43a5718a81ee414f59a0",
+          "bytes": 36144,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/water.webp",
+          "sha256": "616b370737b182aa847ab5294ee308fdfff885d5b3f3e6772a864b8af57ea637",
+          "bytes": 3041688,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/water.thumb.webp",
+          "sha256": "91bb8aa089317856e75b697cc441b8b5b5d700250953bda9678c7bdeeed6b888",
+          "bytes": 344274,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/water.webp",
+          "sha256": "947568f855198f1c2571dc51d13a7cf45e16856007e4a2fce857039d92dce6d9",
+          "bytes": 714288,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/water.thumb.webp",
+          "sha256": "cc9f5a56ecf19ed2d8643e6f504d2b9a36bec8d9c820454660e9e544c03c2678",
+          "bytes": 116368,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/bathymetry-roulette.webp",
+          "sha256": "2bd9f7fe9d72624d4d46969cfe48af74e3d6cb02b21302256a69e8ac1e765852",
+          "bytes": 1369306,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/bathymetry-roulette.thumb.webp",
+          "sha256": "d2f18ff82e2b734a2bab435a3f446e6eae14acbf97ba43a25ea2ad6187f684d6",
+          "bytes": 185156,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/bathymetry-roulette.webp",
+          "sha256": "df6ad3d2a8fef315654e2d9efb74569ddf4b4fe661fde31e7653e84980a1bb88",
+          "bytes": 366594,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/bathymetry-roulette.thumb.webp",
+          "sha256": "559c6fd820a123ef88edee70405d60650a12d04a7bf9191ccee0584c72b0230c",
+          "bytes": 57326,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/bathymetry-hamonshu.webp",
+          "sha256": "d3cc9d59a99fa20aa0379eeaa7fabdbce95f4f9892c152e40133cebc854dc54b",
+          "bytes": 982872,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/bathymetry-hamonshu.thumb.webp",
+          "sha256": "e7156fb8f155ab78ba5fc62728581903907430a1aace6b3141badd312e69d0b3",
+          "bytes": 123568,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/bathymetry-hamonshu.webp",
+          "sha256": "6551bb73a44d29fc6a67ee3ed458145d0419c544fd4139c2658b20944e852579",
+          "bytes": 339390,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/bathymetry-hamonshu.thumb.webp",
+          "sha256": "6a16612146a13426f21535de421b7edbf7cd04b9008a9810ad19559a299e592e",
+          "bytes": 52758,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/cloud-atmosphere.webp",
+          "sha256": "944ac7c450c33e93bca218d7d51c7d746f0634350650a145d79fed34190c9e56",
+          "bytes": 5743776,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/cloud-atmosphere.thumb.webp",
+          "sha256": "5c138e4e656d463d68d5865382afdcaac684a131d5ea2b64f8db3c2522ecb986",
+          "bytes": 554686,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/cloud-atmosphere.webp",
+          "sha256": "18e833d93e84f4568cd4fa889cc6ba1b233cade52ea72d07123e2cc723f338e6",
+          "bytes": 1835378,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/cloud-atmosphere.thumb.webp",
+          "sha256": "2afcd260c37810041d9f09b7b139bb30297e06639c3e3a0f78524a8faa933628",
+          "bytes": 248542,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/network-cdn.webp",
+          "sha256": "484e0528a4783df2efe58ae6946bb875b94cb075ed2bd73c1179f5f398f13308",
+          "bytes": 660176,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/network-cdn.thumb.webp",
+          "sha256": "b7c2f96550347c6162a66522681c5f6a2db7724eeaab0225bb659d945c7846d5",
+          "bytes": 87110,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/network-cdn.webp",
+          "sha256": "97c056711f27fdc03435f08963e012c58cec1db1bd358e209e30d21309f696bd",
+          "bytes": 488744,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/network-cdn.thumb.webp",
+          "sha256": "a4fefd11cfc2e8f6757704f7291ac911d29eceaad05f3da9982c1bb435b4e6a5",
+          "bytes": 66376,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/network-fiber.webp",
+          "sha256": "1f58afdbfd74aa0763308d0f8fe871bc77becc9adb1bfed89de4b0b51f426da0",
+          "bytes": 1947986,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/network-fiber.thumb.webp",
+          "sha256": "8c43be2386d00dee310392e23361ac2ebfe5ead686154f8c3b7d6e6987b9056f",
+          "bytes": 221548,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/network-fiber.webp",
+          "sha256": "3f5440f34c56a66f06185034cd5935ac9d671a060715868e3a6b7b0b9cce0049",
+          "bytes": 854108,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/network-fiber.thumb.webp",
+          "sha256": "96e424886baef3f9bee6aa1a349dae68bb560e23126a604b6de0b3a9da782ef5",
+          "bytes": 132278,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/network-groundstations.webp",
+          "sha256": "a20d57603ef929ccc795d0b549f62bf83e3593f4e7073f13d337e3a3b8eed2a6",
+          "bytes": 501652,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/network-groundstations.thumb.webp",
+          "sha256": "452eee45f20ef4c6d72676468e1c2beb0d7647bf0bdfc2794d3e060a2b68777f",
+          "bytes": 80744,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/network-groundstations.webp",
+          "sha256": "da4778a9e0d89eca5e06a4a10353715a017a383b49972c0e35be1185acffd8e9",
+          "bytes": 241088,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/network-groundstations.thumb.webp",
+          "sha256": "deedfbd547b4de22a8fef82a986780b2b291ee966da3d5153a6941555bbf9b9f",
+          "bytes": 38676,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/network-swarm-ge-1080p.webp",
+          "sha256": "531a10497fccd14a23b3896a7b0b1f26201d1a783373ec85c5a7c083c0bc847c",
+          "bytes": 1938844,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/network-swarm-ge-1080p.thumb.webp",
+          "sha256": "7d93d216363e87b0cac3943cb5b32f2a3a3e7b769d61c50554571ea838c33781",
+          "bytes": 195468,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/network-swarm-ge-1080p.webp",
+          "sha256": "ef9ea8d2029d0ab938fd6263ba25275e0d933a7689c083f4deb06f7b31724717",
+          "bytes": 869206,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/network-swarm-ge-1080p.thumb.webp",
+          "sha256": "252769797526fe20347a5365c1818cc932ad8a7060b57c57bdf5f481fad45bf9",
+          "bytes": 103812,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/network-swarm-lt-1080p.webp",
+          "sha256": "eb26aa77fd0b5a184ca04c31088c9f4dada12e291bda6dd1e9c0d2743376f430",
+          "bytes": 1842930,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/network-swarm-lt-1080p.thumb.webp",
+          "sha256": "eebc41add3ace46d1c40b33f4e04c1225b4640352d349e4016af176c8b3949d0",
+          "bytes": 188536,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/network-swarm-lt-1080p.webp",
+          "sha256": "f53365f611d6eff31da5446c43cd854dc47e526c3e3ae702d0001ba52fbc4aad",
+          "bytes": 769644,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/network-swarm-lt-1080p.thumb.webp",
+          "sha256": "00028c795cb3f7d6ce9fe2ff3cbc85c734981eb45a3867e77368301892577b4b",
+          "bytes": 90790,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/anthropocene-particulate-2025.webp",
+          "sha256": "45bfac45f5e04cc37528a726abeccabdfa98c4276119b002b8af7063f51dd5e7",
+          "bytes": 2079366,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/anthropocene-particulate-2025.thumb.webp",
+          "sha256": "bcc5ed74e05567c0c0126f944cda29133ddd69d4de9cce1bec5d69c56037a2e2",
+          "bytes": 155038,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/anthropocene-particulate-2025.webp",
+          "sha256": "5b6e8322832c745090eea35f2ed4a4a00b52eb2ed79faf56571c867a8de5edbd",
+          "bytes": 1043552,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/anthropocene-particulate-2025.thumb.webp",
+          "sha256": "e74bfa22e15c53792f564825d8352a847b4099de89589c2c601b61dcdf618b2e",
+          "bytes": 133376,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/anthropocene-particulate-2026.webp",
+          "sha256": "ed23f46fab7b22772c902019f8e14a05012a7e0e2504b67d64ec25158ea9f2b1",
+          "bytes": 1833216,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/anthropocene-particulate-2026.thumb.webp",
+          "sha256": "eb99ec7d52389fd361437622ea89c034b07b29873300f44507b9933ee0254251",
+          "bytes": 133932,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/anthropocene-particulate-2026.webp",
+          "sha256": "0e5e170fbe4db248605e85499cadd1f7cedb3cd1a4e6d9e33ad159a4fcd054d3",
+          "bytes": 1046730,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/anthropocene-particulate-2026.thumb.webp",
+          "sha256": "93e46c70455e5138488e1c983400b84db14e7b8df175fc48b61b1ba812ee8bc8",
+          "bytes": 131132,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/anthropocene-temperature-2025.webp",
+          "sha256": "7b2c3f3be884408f121892c73145dec22e526793fcc85b498c5f5d5377ad120c",
+          "bytes": 2714304,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/anthropocene-temperature-2025.thumb.webp",
+          "sha256": "7ab8c9e34325d1410a9fdebd2a72511e7e0bcfca35b3523f3a74ed72a3109b8d",
+          "bytes": 292372,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/anthropocene-temperature-2025.webp",
+          "sha256": "837e8ff2b1cedbebc3bb1b1d9f3c14dbf87dbbe5728972a82271ee4284cd5990",
+          "bytes": 866952,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/anthropocene-temperature-2025.thumb.webp",
+          "sha256": "f82857b39cd6b53a8f88c06859387a6f2cb922029c1ce83c54b5a2dfac1f7945",
+          "bytes": 142488,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/anthropocene-temperature-2026.webp",
+          "sha256": "e427757d9f7d6cef01c069b203a604cd5fd364deabaaa3c36eb78c014714700a",
+          "bytes": 2592100,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/anthropocene-temperature-2026.thumb.webp",
+          "sha256": "c9fff2d48570e20e3fa455ca5ee04a72b5e69d8712db8de7cb61130d6b546403",
+          "bytes": 287286,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/anthropocene-temperature-2026.webp",
+          "sha256": "75fb9b60debeb749cd7f8b2883644ced52f13d0463bfb3582746cff54a9f6787",
+          "bytes": 835652,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/anthropocene-temperature-2026.thumb.webp",
+          "sha256": "8bdaf8343e5f17ceaaee1af1b9dd85a1e7566b6a1f87468e037b95683fa8e155",
+          "bytes": 141874,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/astro-all-sky.webp",
+          "sha256": "16c840c776d14eeef3c179a1bb1d3951c9529e9e07c3878f9b067ca3e94c5501",
+          "bytes": 346926,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/astro-all-sky.thumb.webp",
+          "sha256": "3432a7c08f1da82d074746d5e41c0beafce39203051f560589a25e1d97692179",
+          "bytes": 62764,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/astro-all-sky.webp",
+          "sha256": "b09c4bd42819da19b1ce4c4b5f6e36f7b6b1a588e1a768f1d13ba82fadcd476a",
+          "bytes": 309322,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/astro-all-sky.thumb.webp",
+          "sha256": "b16dca785c17382a5d900c0b2f876dfce6a7cda9b1d3194d68f5c5d82b76c1cc",
+          "bytes": 64756,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/astro-observer-ground-multiband.webp",
+          "sha256": "60d5a947a65e81d5b2715279465c719d779e3e9edfc11d0eda66d64d1d761935",
+          "bytes": 200206,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/astro-observer-ground-multiband.thumb.webp",
+          "sha256": "23bbb3c023cbd513c335b929558e704a0c55d079cf1547fb04de83c2093d5b10",
+          "bytes": 35846,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/astro-observer-ground-multiband.webp",
+          "sha256": "5b7f064365aefd6d967ad9c93aa406031bdcf39a6807ee12910cc7e04af2226a",
+          "bytes": 244292,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/astro-observer-ground-multiband.thumb.webp",
+          "sha256": "2cf3322190ae75350f217489144471b1dc9c9480ee5775f0b451e8ab471a5f7e",
+          "bytes": 42290,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/astro-observer-hubble.webp",
+          "sha256": "e3c028a4bec77683a8b57d31ffa2bb929c38890e7c3e9f627f197126e32e9b5a",
+          "bytes": 321198,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/astro-observer-hubble.thumb.webp",
+          "sha256": "4f70b8df2fabb4285219d20a09a77e7705753b12f529b2a71b8ad10b441091c6",
+          "bytes": 60270,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/astro-observer-hubble.webp",
+          "sha256": "123f50721bf2dcf8ca2879706e9b7095cea438092dc4b3f0641cf1df63353d9a",
+          "bytes": 336108,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/astro-observer-hubble.thumb.webp",
+          "sha256": "1557487f1f571debbfa9b2f8edbf7568c8a50c2a7da93489c1683bcd56cd703c",
+          "bytes": 59776,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/orbital-technosphere-global.webp",
+          "sha256": "d9e3d048866e91d2b2d82b365877ef3513ac109b10306c9ddccd14702ebb5e15",
+          "bytes": 1972590,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/orbital-technosphere-global.thumb.webp",
+          "sha256": "4aa4cb31a37be53625fc093b73da63d7d804b581a3ef4f7fa1533fc0d80f8f7c",
+          "bytes": 376750,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/orbital-technosphere-global.webp",
+          "sha256": "292ef3608fdbe101a73ca9ad0b3620ce101d3f91bb04cfe4f9a1357b0afdd405",
+          "bytes": 501458,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/orbital-technosphere-global.thumb.webp",
+          "sha256": "215eb3399e3a24beab9630ddf4c1c61c546329d386d77b3fdc79991c426f7907",
+          "bytes": 102450,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/orbital-technosphere-observer.webp",
+          "sha256": "bee087caa957028a4865c78debe20727951b41b220f90f392b021eab03a3adbd",
+          "bytes": 159036,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/orbital-technosphere-observer.thumb.webp",
+          "sha256": "ad491e4bcaae7efaa0d94732d5dcde94f00da738fb776b1648523e3e6ac3816a",
+          "bytes": 35346,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/orbital-technosphere-observer.webp",
+          "sha256": "69cdf5aa794a9d018c5df7933175f508c6fc81072af2417ed596253977e022ae",
+          "bytes": 226756,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/orbital-technosphere-observer.thumb.webp",
+          "sha256": "489d7ba4b58eff4a571060f0b23d968948f6e489cf036b198fd6102db70443b6",
+          "bytes": 43466,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-energy-solar-capacity-2025.webp",
+          "sha256": "1016939e5052499642f3a30fbb096bdcaaefe1089b125b86abd10dd1a0ae5809",
+          "bytes": 451180,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-energy-solar-capacity-2025.thumb.webp",
+          "sha256": "203c433377d80fcade0e7530ad828556bd2c2e5e6ba5064f897889f114e1a978",
+          "bytes": 92700,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-energy-solar-capacity-2025.webp",
+          "sha256": "0669358e0d64da86dbed6231660d50170773de07b0d6cef3eb95d35d1b96b2f8",
+          "bytes": 275366,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-energy-solar-capacity-2025.thumb.webp",
+          "sha256": "dae3ae988bf6860b5c0ff8d3b76fbb71e81a7b51a94ed37fcecd3c3d0a96b073",
+          "bytes": 43604,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-energy-wind-capacity-2025.webp",
+          "sha256": "ce05968b7b30f950f0859a7f98af820f61a8549d7f6728212a8c442e4b4af861",
+          "bytes": 460738,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-energy-wind-capacity-2025.thumb.webp",
+          "sha256": "7eece89b7b7eb71aded7501522a4530580b1f9831473615db7bffd813b97a4d0",
+          "bytes": 95872,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-energy-wind-capacity-2025.webp",
+          "sha256": "535715e1f2be8bb3fc8353678ee681802ea24bb15813f1efa0b3651b500939d6",
+          "bytes": 256832,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-energy-wind-capacity-2025.thumb.webp",
+          "sha256": "3229b1c9840f27a135f1cf8d667f01a946466dd8384ae0e0709db0b007ecffec",
+          "bytes": 42080,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-energy-nuclear-operating-capacity-2024.webp",
+          "sha256": "da40cd86b1677ab1a2e176c734a251dc0936365cc58770b17e7b0a9000904431",
+          "bytes": 382168,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-energy-nuclear-operating-capacity-2024.thumb.webp",
+          "sha256": "38dbebb530e5668e0a85a1bfbd3510b80fe584f5b39237389e7827f7cdc5baaa",
+          "bytes": 78698,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-energy-nuclear-operating-capacity-2024.webp",
+          "sha256": "0934fc093b8df815c0c3fbfb9af0a5649f67e012b1f6bd1ad628016d13631599",
+          "bytes": 259472,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-energy-nuclear-operating-capacity-2024.thumb.webp",
+          "sha256": "f810b3eaac06700c4e7692918df01cc1eb0aa2abbbc7559d81c10d0e59fa1807",
+          "bytes": 41438,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-energy-petrochemical-refinery-throughput-latest-2024.webp",
+          "sha256": "715e4a0bca4addfe581f7290949412f4bb55c89ca2df6780573d1f0ceb86fc9f",
+          "bytes": 453628,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-energy-petrochemical-refinery-throughput-latest-2024.thumb.webp",
+          "sha256": "71fc958d96e7853a6bb50f0511e3297ac326753d763a98f7eb19ad8ff08a4288",
+          "bytes": 92356,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-energy-petrochemical-refinery-throughput-latest-2024.webp",
+          "sha256": "52a9659bf7be5af9bb89fff5fca4e3262fdf7e3eb36701c2213768f4e89db6a9",
+          "bytes": 265544,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-energy-petrochemical-refinery-throughput-latest-2024.thumb.webp",
+          "sha256": "0dd8592d3168dd5be4bc4c82f6897d0cb5dbcc408b087188c810268e3b098141",
+          "bytes": 42170,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-food-food-production-index-latest-2024.webp",
+          "sha256": "52006a357f7ffcb18fef91ee8ad49632cb1409536f2d047b9690c3c6b210fcdf",
+          "bytes": 419810,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-food-food-production-index-latest-2024.thumb.webp",
+          "sha256": "9d47da735c1c20b3ad9fd38dd00b241ae514f0ef242597d3bff38840b8956fdd",
+          "bytes": 86318,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-food-food-production-index-latest-2024.webp",
+          "sha256": "9526893896e63ac77679b7627525f99447c1e67837fa0ffb776c3fec34e4c4d7",
+          "bytes": 233250,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-food-food-production-index-latest-2024.thumb.webp",
+          "sha256": "18385d254fe704616463fecb301caa3ea665d797cfc33aa98df1cb10973b91ef",
+          "bytes": 38832,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-fauna-fisheries-production-latest-2024.webp",
+          "sha256": "6fd81d50bd9d38be50766c1ccc07513fdd7cd742eef37baaa9555448f77a05c9",
+          "bytes": 494628,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-fauna-fisheries-production-latest-2024.thumb.webp",
+          "sha256": "70efb22995d72d3ab34ec9772c716db7ca890adeca5a3340fb6d7469f1857f4b",
+          "bytes": 102282,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-fauna-fisheries-production-latest-2024.webp",
+          "sha256": "e82ba97d08d3e9c90e7fc1bd194173a07a1a36ab9d7fbc9fab8a955151b84ad3",
+          "bytes": 273218,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-fauna-fisheries-production-latest-2024.thumb.webp",
+          "sha256": "1fd80af545a0e8bd7b4c5794b799052607abb517a1411fdb52cd27babba6c823",
+          "bytes": 44496,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-fauna-coral-reef-threat-2011.webp",
+          "sha256": "521cb1683c314ee963ea294211b9aa73734a7b4522a622822bc28758531f2360",
+          "bytes": 328688,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-fauna-coral-reef-threat-2011.thumb.webp",
+          "sha256": "f88a67f24ff4bad40185277e85e9996a571949c2870447d4750d3450845ee47e",
+          "bytes": 49942,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-fauna-coral-reef-threat-2011.webp",
+          "sha256": "4a2c5e0d0e8b41cfd9484630abd0d973fbfd4fdd7c9aba6b6c33206f53ed26a8",
+          "bytes": 197084,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-fauna-coral-reef-threat-2011.thumb.webp",
+          "sha256": "9aae033bb3c12e0cbd59a86ab1765437891b2e7212d55adf485136b705b03fad",
+          "bytes": 29380,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-flora-forest-area-percent-2024.webp",
+          "sha256": "d193f8892bbf21f09096ad510b7a834df19937fe1bb58328f1d6bbcbd6f85a21",
+          "bytes": 422382,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-flora-forest-area-percent-2024.thumb.webp",
+          "sha256": "5c82bb79f9d55e93b39b1ac6d8f2379c93411212dd8f2c41b66b59f809403205",
+          "bytes": 85120,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-flora-forest-area-percent-2024.webp",
+          "sha256": "38f13fdf9a2a26d8d77a0c76cad5aea425679e7ea5f791554ee6467952f22b4e",
+          "bytes": 241528,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-flora-forest-area-percent-2024.thumb.webp",
+          "sha256": "384e02eebad9ceb973ae5bc5733b00908eab51dd29c5eb9ac79dfc6912e05dba",
+          "bytes": 37648,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-mineral-rare-earth-mine-production-2025.webp",
+          "sha256": "b28c6c37bed13c3133b3d7296360652b82752db93724d583c602a94da09f9a4b",
+          "bytes": 355908,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-mineral-rare-earth-mine-production-2025.thumb.webp",
+          "sha256": "33e0340ea9a2c0f74d382052c675604a24dd7bea7f96fad0508f0ed23c7e48d9",
+          "bytes": 74842,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-mineral-rare-earth-mine-production-2025.webp",
+          "sha256": "e8222da6abec9e2c9aed116ee4294b56d4de4e670043744d9c8004dfe41f305c",
+          "bytes": 242506,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-mineral-rare-earth-mine-production-2025.thumb.webp",
+          "sha256": "3f4cafcebcf51eee747951a308566e2f6b279bae6fd63c7da175791d3c46b57e",
+          "bytes": 37956,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-human-population-under-30-2024.webp",
+          "sha256": "5d0dc739fce97118545290e6b51fd9d7104fd63d172e933dfea376f9e575970a",
+          "bytes": 451408,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-human-population-under-30-2024.thumb.webp",
+          "sha256": "688de7801c1bf9bf066c36c978148ea14caa3dc17fd9cc9925016f5b54c3ba33",
+          "bytes": 93724,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-human-population-under-30-2024.webp",
+          "sha256": "87c70e4c25063c3a9ddc4503d46950245aae6239e556d6ced762db8b1b5821f5",
+          "bytes": 232142,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-human-population-under-30-2024.thumb.webp",
+          "sha256": "43ee263926c92d8ea50b324dad808509100e7240c6dfa18206f783a94a30d59f",
+          "bytes": 40686,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-human-population-over-60-2024.webp",
+          "sha256": "ba6d23675676b35499d722b51eded9fd65ca132e81b78f96e73772c8ad413c1a",
+          "bytes": 416522,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-human-population-over-60-2024.thumb.webp",
+          "sha256": "8c479195b421a19527841c688b4d380ca93720070d7944deb78d29a3238a1524",
+          "bytes": 84944,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-human-population-over-60-2024.webp",
+          "sha256": "c94855951bdb0a28841058bf6e328517df4c45dffd80a0572160f153a4e3b77f",
+          "bytes": 247164,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-human-population-over-60-2024.thumb.webp",
+          "sha256": "139fb3ed86eb5d7c766dad93eb0ad528ef5cee909a05af42c98418fc6fa9cca9",
+          "bytes": 39406,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-human-upper-secondary-attainment-latest-2025.webp",
+          "sha256": "1731b799a0ab6ad9f4429a99af3f3ce378ba3a457aa040798b237635be6223cb",
+          "bytes": 421078,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-human-upper-secondary-attainment-latest-2025.thumb.webp",
+          "sha256": "960ff95583a0937791a2737ebcab11b27fe81e93705d994ab02525be5a96f535",
+          "bytes": 84730,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-human-upper-secondary-attainment-latest-2025.webp",
+          "sha256": "902f5c823a97e6cae5f553467cab42e798066a7d6cae96105ea01550c166a756",
+          "bytes": 248512,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-human-upper-secondary-attainment-latest-2025.thumb.webp",
+          "sha256": "e1f90c53158935b754bbed64c9f816fde2fefbbe3552fc1e33eae09f0af30429",
+          "bytes": 39714,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-human-bachelors-attainment-latest-2024.webp",
+          "sha256": "15ccf4d46f9a034ead1eef3b9a17463679a158347a56892f3b94566f060ea030",
+          "bytes": 415510,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-human-bachelors-attainment-latest-2024.thumb.webp",
+          "sha256": "4e9334507ec0fb2302ee437f57c07d8a5569025b34b4930422e6df036e54fedd",
+          "bytes": 85978,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-human-bachelors-attainment-latest-2024.webp",
+          "sha256": "2699368fa3ba4144ebb7b91162de154d5c86da788a5be8ce83e868d61b5d4922",
+          "bytes": 263854,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-human-bachelors-attainment-latest-2024.thumb.webp",
+          "sha256": "0e3af50803ba096492b6153a8ee118d4b0e530b9d3678765ea812f72843db514",
+          "bytes": 40510,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-human-resident-patent-applications-per-million-2019-2021.webp",
+          "sha256": "8e65400f292ec99365bfc51ae4ca45b63ccc1f6da453bd49a067f9c5cde0df82",
+          "bytes": 451244,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-human-resident-patent-applications-per-million-2019-2021.thumb.webp",
+          "sha256": "e6c5cd424445166091382d83992aec64a30529b302da1454e44935edfbb7eec3",
+          "bytes": 93558,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-human-resident-patent-applications-per-million-2019-2021.webp",
+          "sha256": "6c8ee0555827088d3193c19298fa3816d59dc746f63b38e395fc1e339b62b22f",
+          "bytes": 277056,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-human-resident-patent-applications-per-million-2019-2021.thumb.webp",
+          "sha256": "9eae7627782d8d7cf8bc23515c3d23e7b80ef94e04f7aeeb8f66e18a70a46840",
+          "bytes": 44778,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/petroleum-eia-liquids-2025.webp",
+          "sha256": "5463cd177472fe77d276fcf4186c60ebd930cb9f14c54680d79c7dc79aaf26fa",
+          "bytes": 365186,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/petroleum-eia-liquids-2025.thumb.webp",
+          "sha256": "d7de6d9d93b9551036b7c35f66b7ddd1e177ab67abc92398ddb02f93ca6ccd35",
+          "bytes": 77468,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/petroleum-eia-liquids-2025.webp",
+          "sha256": "1cd1816d2912973fab3def49342e91f9b2474a9b97bbe5d1b9e9f8d15c2372f6",
+          "bytes": 224370,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/petroleum-eia-liquids-2025.thumb.webp",
+          "sha256": "393441e622e2e6070a21a69feb106d511c3169078c07de26fd36eb0b8ad8e9f6",
+          "bytes": 36312,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/petroleum-opec-liquids-projection-2030.webp",
+          "sha256": "e8185ae8a02041e42a3ce2efa8b20d73b1942e95d3a086be00a2c38f4453e5d3",
+          "bytes": 303512,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/petroleum-opec-liquids-projection-2030.thumb.webp",
+          "sha256": "c6231b1a41d0242df4e3f792709fd40f21327933239e4998f06bba7eabd8b698",
+          "bytes": 64010,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/petroleum-opec-liquids-projection-2030.webp",
+          "sha256": "b548fcfa7bc1655778e55854eb2f7718c08df90a8605d02cff61a979d95fffba",
+          "bytes": 224760,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/petroleum-opec-liquids-projection-2030.thumb.webp",
+          "sha256": "14e04a28e95f0bd9ba7e861deda5e10c364a7d928bf01f62ed3958fa454d27ba",
+          "bytes": 36804,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/petroleum-opec-country-coverage-2026.webp",
+          "sha256": "8f14172f4e0d57b0fab3df8f0ecb9daea3a65d22a9bfe43d2af754f6240d3d72",
+          "bytes": 318242,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/world/petroleum-opec-country-coverage-2026.thumb.webp",
+          "sha256": "0254a0bcac3f509fc7f7f3e16e8a1cf6b72fcc7fba77e46c2364afc14fcced8b",
+          "bytes": 64716,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/petroleum-opec-country-coverage-2026.webp",
+          "sha256": "63e8cd33ba77358555033f1dd6718448a2d72bf4030f2509d747221dd47a4b06",
+          "bytes": 226234,
+          "width": 3840,
+          "height": 1663,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/japan/petroleum-opec-country-coverage-2026.thumb.webp",
+          "sha256": "f9083fe8745a2324afb6a8f5a29a39292bb72d48ea02ca2605527024b9bbca92",
+          "bytes": 35604,
+          "width": 960,
+          "height": 416,
+          "format": "webp"
+        },
+        {
+          "path": "review/media/cartofreako-setouchi-2028-20261030/plates.json",
+          "sha256": "1401ba872886482b3e80323db1aa1d6be52ec6da9ec806ce0dfce5472c433790",
+          "bytes": 119777,
+          "format": "json"
+        }
+      ],
+      "technical_state": "CHECKSUM-VERIFIED-REVIEW-COLLECTION",
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "style": "cartofreako",
+      "added_at": "2026-10-30T18:10:33.875Z",
+      "publication_request": {
+        "authority": "Explicit project-owner request",
+        "approved_on": "2026-10-30",
+        "instruction": "can you put the latest world and japan plates up on situationshipin.space for review?",
+        "scope": "Publish the existing Cartofreako world and Japan plates for review"
+      }
+    },
     {
       "family": "here-lies-trouble",
       "review_mode": "output",

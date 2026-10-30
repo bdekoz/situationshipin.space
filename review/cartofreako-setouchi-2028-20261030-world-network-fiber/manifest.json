@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-setouchi-2028-20261030-world-network-fiber",
+  "artifact_id": "cartofreako-setouchi-2028-20261030-world-network-fiber",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/setouchi-triennale-2028/plates/world/png/network-fiber-authagraph-44-19.052559.png",
+    "sha256": "b9522da8684500c0d303f71e8e3b30f5db3450313f3e179599890b1562a65baf",
+    "bytes": 17122449,
+    "dimensions": [
+      13200,
+      5716
+    ],
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-setouchi-2028-20261030-japan-network-swarm-lt-1080p",
+  "artifact_id": "cartofreako-setouchi-2028-20261030-japan-network-swarm-lt-1080p",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/setouchi-triennale-2028/plates/japan/png/network-swarm-lt-1080p-authagraph-44-19.052559-japan.png",
+    "sha256": "1dee9bfcfa205a9f8b93289f93fc1da3dfca531fc2ca17a12451f78de26885df",
+    "bytes": 6802043,
+    "dimensions": [
+      13200,
+      5716
+    ],
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

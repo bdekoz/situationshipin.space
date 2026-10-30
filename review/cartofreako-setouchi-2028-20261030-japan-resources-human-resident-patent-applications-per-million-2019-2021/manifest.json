@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-setouchi-2028-20261030-japan-resources-human-resident-patent-applications-per-million-2019-2021",
+  "artifact_id": "cartofreako-setouchi-2028-20261030-japan-resources-human-resident-patent-applications-per-million-2019-2021",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/setouchi-triennale-2028/plates/japan/png/resources-human-resident-patent-applications-per-million-2019-2021-authagraph-44-19.052559-japan.png",
+    "sha256": "56346fdd236f4746752842620c4d3588269eb84c52e3389c88e879cc82fdb29d",
+    "bytes": 1738702,
+    "dimensions": [
+      13200,
+      5716
+    ],
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

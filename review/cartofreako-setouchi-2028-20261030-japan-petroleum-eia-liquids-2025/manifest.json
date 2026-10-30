@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-setouchi-2028-20261030-japan-petroleum-eia-liquids-2025",
+  "artifact_id": "cartofreako-setouchi-2028-20261030-japan-petroleum-eia-liquids-2025",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/setouchi-triennale-2028/plates/japan/png/petroleum-eia-liquids-2025-authagraph-44-19.052559-japan.png",
+    "sha256": "592fe6a6ef0beee159a8041cc1a08294e63c1d1673f80a8a7441b94782c6d3f3",
+    "bytes": 1556382,
+    "dimensions": [
+      13200,
+      5716
+    ],
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

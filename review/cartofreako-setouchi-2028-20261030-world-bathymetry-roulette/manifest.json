@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-setouchi-2028-20261030-world-bathymetry-roulette",
+  "artifact_id": "cartofreako-setouchi-2028-20261030-world-bathymetry-roulette",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/setouchi-triennale-2028/plates/world/png/bathymetry-roulette-authagraph-44-19.052559.png",
+    "sha256": "d3b6a59b221f9bcc8e270ef4018bdabe399f18eb9f84a866a9b1c1a735486dd8",
+    "bytes": 9884363,
+    "dimensions": [
+      13200,
+      5716
+    ],
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

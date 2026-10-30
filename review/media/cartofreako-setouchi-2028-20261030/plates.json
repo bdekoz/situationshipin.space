@@ -1,0 +1,2523 @@
+{
+  "schema_version": "cartofreako-plate-review-1",
+  "source_repository": "bdekoz/cartofreako",
+  "source_commit": "385650cfd88f8596134b787cc87bcee59b171389",
+  "source_delivery": "output/setouchi-triennale-2028",
+  "source_delivery_manifest_sha256": "89ec09e943a2425ae488a5e04ff43898f7be2ac741e9153fc007d531118f05b9",
+  "generation_instant": "2026-10-29T20:00:00Z",
+  "world_count": 38,
+  "japan_count": 38,
+  "review_image_encoding": "3840-pixel longest side; lossless WebP; Lanczos downsample from 300 dpi PNG masters",
+  "plates": [
+    {
+      "ordinal": 1,
+      "stem": "geometry",
+      "title": "Native geometry",
+      "note": "Mathematical projection reference; no observational data.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/geometry-authagraph-44-19.052559.png",
+      "source_sha256": "0399c82039a86698502eb903b78c328d6ef225615e1b8514b9666ec5c5aa9d60",
+      "source_bytes": 1735106,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/geometry.webp",
+      "sha256": "e49d769f9cd170969693991369db9c820a076a742d1d25155317bcb1067d4625",
+      "bytes": 89348,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/geometry.thumb.webp",
+        "sha256": "4f40ca6d74a07fa41c6d48b3a031bec40e4da44f752e0f9b79fa1c5532657048",
+        "bytes": 16042,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-geometry",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/geometry.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/geometry.thumb.webp"
+    },
+    {
+      "ordinal": 1,
+      "stem": "geometry",
+      "title": "Native geometry",
+      "note": "Mathematical projection reference; no observational data.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/geometry-authagraph-44-19.052559-japan.png",
+      "source_sha256": "125f28c4e1f9b85aa2e10030f737977d0a902fdcf2c13215e311c98fd2b71e85",
+      "source_bytes": 1164811,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/geometry.webp",
+      "sha256": "f4cb143eaf0801feb935c575f90be25a3b13da9f57ddb1aa2f58672f249950e1",
+      "bytes": 110796,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/geometry.thumb.webp",
+        "sha256": "3869b230eb1cd4f40433d0d8762ec82c1943c4fb9bc146dabd061101ac2d7ff8",
+        "bytes": 18902,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-geometry",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/geometry.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/geometry.thumb.webp"
+    },
+    {
+      "ordinal": 2,
+      "stem": "graticules",
+      "title": "Graticules",
+      "note": "Mathematical projection reference; no observational data.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/graticules-authagraph-44-19.052559.png",
+      "source_sha256": "a13f87595f2fe7a6933a559d467e29cb75470e2c313b58de105233c0161e864f",
+      "source_bytes": 5863092,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/graticules.webp",
+      "sha256": "2e23119072419df3bd76f7102b3acb9eda3a9787b45dbdb1e3d1fee8a1f1e6c4",
+      "bytes": 994956,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/graticules.thumb.webp",
+        "sha256": "168776d6d0bd2e04ee57bc80b106adde31a677048d59d2d54909a2f503f3cfb5",
+        "bytes": 132350,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-graticules",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/graticules.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/graticules.thumb.webp"
+    },
+    {
+      "ordinal": 2,
+      "stem": "graticules",
+      "title": "Graticules",
+      "note": "Mathematical projection reference; no observational data.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/graticules-authagraph-44-19.052559-japan.png",
+      "source_sha256": "64843b8fe18632ad49fbbade53e98312c06e6e38c29d1db439904feeb1dced09",
+      "source_bytes": 1551570,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/graticules.webp",
+      "sha256": "5d9833667db85168db1fed25074ab855bd19197494386d09b1b1f46e2174b62c",
+      "bytes": 223134,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/graticules.thumb.webp",
+        "sha256": "68e5e1592b8891e19e2a4727c8665d44174c841750b67fc206a2b958272fb4f6",
+        "bytes": 42398,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-graticules",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/graticules.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/graticules.thumb.webp"
+    },
+    {
+      "ordinal": 3,
+      "stem": "earth",
+      "title": "Earth",
+      "note": "Natural Earth physical vectors in the current checkout; bathymetry is generalized, not a navigation chart.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/earth-authagraph-44-19.052559.png",
+      "source_sha256": "0f52c99de21a9408ddb0863da2a2cdd6e76c5a0fe6f1cf16ca2fd058ed052689",
+      "source_bytes": 2731187,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/earth.webp",
+      "sha256": "2ee98d2b4998c0e8de08987aa16569704a1cc658ecc6cd4cf03a65c600acc91d",
+      "bytes": 413078,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/earth.thumb.webp",
+        "sha256": "85f5afdefc1e140c694c85f549421e8ca70fc7d852db1b2c3581bf4db30029ed",
+        "bytes": 72158,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-earth",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/earth.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/earth.thumb.webp"
+    },
+    {
+      "ordinal": 3,
+      "stem": "earth",
+      "title": "Earth",
+      "note": "Natural Earth physical vectors in the current checkout; bathymetry is generalized, not a navigation chart.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/earth-authagraph-44-19.052559-japan.png",
+      "source_sha256": "0be7d041a4e62f1bcf8d68dc1627df9db7779f7892d164383b53e0cb04c18d62",
+      "source_bytes": 1385322,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/earth.webp",
+      "sha256": "c469dd19797ec53380d2eedabbe8525c92c2535f615143702713284483df80b0",
+      "bytes": 208872,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/earth.thumb.webp",
+        "sha256": "ba7bb4b653e4b74031bcfd0c6be5a516e2203d19a27c43a5718a81ee414f59a0",
+        "bytes": 36144,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-earth",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/earth.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/earth.thumb.webp"
+    },
+    {
+      "ordinal": 4,
+      "stem": "water",
+      "title": "Water",
+      "note": "Natural Earth physical vectors in the current checkout; bathymetry is generalized, not a navigation chart.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/water-authagraph-44-19.052559.png",
+      "source_sha256": "77b908d9680e75f8a27d0b3c696cd779523147462388a7e90d03b93b1d211b45",
+      "source_bytes": 21251423,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/water.webp",
+      "sha256": "616b370737b182aa847ab5294ee308fdfff885d5b3f3e6772a864b8af57ea637",
+      "bytes": 3041688,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/water.thumb.webp",
+        "sha256": "91bb8aa089317856e75b697cc441b8b5b5d700250953bda9678c7bdeeed6b888",
+        "bytes": 344274,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-water",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/water.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/water.thumb.webp"
+    },
+    {
+      "ordinal": 4,
+      "stem": "water",
+      "title": "Water",
+      "note": "Natural Earth physical vectors in the current checkout; bathymetry is generalized, not a navigation chart.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/water-authagraph-44-19.052559-japan.png",
+      "source_sha256": "52a86dbf1e64efe0dab94cf1c413c0421967225e1219234cdba74e461ec41d0a",
+      "source_bytes": 4421025,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/water.webp",
+      "sha256": "947568f855198f1c2571dc51d13a7cf45e16856007e4a2fce857039d92dce6d9",
+      "bytes": 714288,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/water.thumb.webp",
+        "sha256": "cc9f5a56ecf19ed2d8643e6f504d2b9a36bec8d9c820454660e9e544c03c2678",
+        "bytes": 116368,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-water",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/water.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/water.thumb.webp"
+    },
+    {
+      "ordinal": 5,
+      "stem": "bathymetry-roulette",
+      "title": "Bathymetry Roulette",
+      "note": "Natural Earth physical vectors in the current checkout; bathymetry is generalized, not a navigation chart.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/bathymetry-roulette-authagraph-44-19.052559.png",
+      "source_sha256": "d3b6a59b221f9bcc8e270ef4018bdabe399f18eb9f84a866a9b1c1a735486dd8",
+      "source_bytes": 9884363,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/bathymetry-roulette.webp",
+      "sha256": "2bd9f7fe9d72624d4d46969cfe48af74e3d6cb02b21302256a69e8ac1e765852",
+      "bytes": 1369306,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/bathymetry-roulette.thumb.webp",
+        "sha256": "d2f18ff82e2b734a2bab435a3f446e6eae14acbf97ba43a25ea2ad6187f684d6",
+        "bytes": 185156,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-bathymetry-roulette",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/bathymetry-roulette.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/bathymetry-roulette.thumb.webp"
+    },
+    {
+      "ordinal": 5,
+      "stem": "bathymetry-roulette",
+      "title": "Bathymetry Roulette",
+      "note": "Natural Earth physical vectors in the current checkout; bathymetry is generalized, not a navigation chart.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/bathymetry-roulette-authagraph-44-19.052559-japan.png",
+      "source_sha256": "6dd8fe4f8f6acd450c28964ec1a79b23c7cd819faac6bcac41ee7e0b65920b61",
+      "source_bytes": 2465248,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/bathymetry-roulette.webp",
+      "sha256": "df6ad3d2a8fef315654e2d9efb74569ddf4b4fe661fde31e7653e84980a1bb88",
+      "bytes": 366594,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/bathymetry-roulette.thumb.webp",
+        "sha256": "559c6fd820a123ef88edee70405d60650a12d04a7bf9191ccee0584c72b0230c",
+        "bytes": 57326,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-bathymetry-roulette",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/bathymetry-roulette.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/bathymetry-roulette.thumb.webp"
+    },
+    {
+      "ordinal": 6,
+      "stem": "bathymetry-hamonshu",
+      "title": "Bathymetry Hamonshu",
+      "note": "Natural Earth physical vectors in the current checkout; bathymetry is generalized, not a navigation chart.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/bathymetry-hamonshu-authagraph-44-19.052559.png",
+      "source_sha256": "dc5d8dcc1e784ebcbc99e22d710dcdfccd6d8a7fe6ef3e474b897b3d8be1e3c1",
+      "source_bytes": 8122496,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/bathymetry-hamonshu.webp",
+      "sha256": "d3cc9d59a99fa20aa0379eeaa7fabdbce95f4f9892c152e40133cebc854dc54b",
+      "bytes": 982872,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/bathymetry-hamonshu.thumb.webp",
+        "sha256": "e7156fb8f155ab78ba5fc62728581903907430a1aace6b3141badd312e69d0b3",
+        "bytes": 123568,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-bathymetry-hamonshu",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/bathymetry-hamonshu.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/bathymetry-hamonshu.thumb.webp"
+    },
+    {
+      "ordinal": 6,
+      "stem": "bathymetry-hamonshu",
+      "title": "Bathymetry Hamonshu",
+      "note": "Natural Earth physical vectors in the current checkout; bathymetry is generalized, not a navigation chart.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/bathymetry-hamonshu-authagraph-44-19.052559-japan.png",
+      "source_sha256": "002ee6eef701fe79406bd0c12235f3a8d8204140736855477c82320c7c0e92cd",
+      "source_bytes": 2202362,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/bathymetry-hamonshu.webp",
+      "sha256": "6551bb73a44d29fc6a67ee3ed458145d0419c544fd4139c2658b20944e852579",
+      "bytes": 339390,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/bathymetry-hamonshu.thumb.webp",
+        "sha256": "6a16612146a13426f21535de421b7edbf7cd04b9008a9810ad19559a299e592e",
+        "bytes": 52758,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-bathymetry-hamonshu",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/bathymetry-hamonshu.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/bathymetry-hamonshu.thumb.webp"
+    },
+    {
+      "ordinal": 7,
+      "stem": "cloud-atmosphere",
+      "title": "Atmosphere",
+      "note": "JAXA cloud observations through 29 October 2026; precipitation 26 October; aerosols and shortwave 15 October. Pink cloud fields, rose aerosol outlines, blue precipitation/height and gold shortwave outlines. Land outlines sit above the fields with fill opacity 0; observations remain visible over land. The nighttime Japan snapshot has no positive daytime cloud retrievals; missing cloud is not clear sky.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/cloud-atmosphere-authagraph-44-19.052559.png",
+      "source_sha256": "930c22efb70777910af3eb9b1f1cee607597907cf43dcd5320a48cbf08f8f637",
+      "source_bytes": 38157984,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/cloud-atmosphere.webp",
+      "sha256": "944ac7c450c33e93bca218d7d51c7d746f0634350650a145d79fed34190c9e56",
+      "bytes": 5743776,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/cloud-atmosphere.thumb.webp",
+        "sha256": "5c138e4e656d463d68d5865382afdcaac684a131d5ea2b64f8db3c2522ecb986",
+        "bytes": 554686,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-cloud-atmosphere",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/cloud-atmosphere.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/cloud-atmosphere.thumb.webp"
+    },
+    {
+      "ordinal": 7,
+      "stem": "cloud-atmosphere",
+      "title": "Atmosphere",
+      "note": "JAXA cloud observations through 29 October 2026; precipitation 26 October; aerosols and shortwave 15 October. Pink cloud fields, rose aerosol outlines, blue precipitation/height and gold shortwave outlines. Land outlines sit above the fields with fill opacity 0; observations remain visible over land. The nighttime Japan snapshot has no positive daytime cloud retrievals; missing cloud is not clear sky.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/cloud-atmosphere-authagraph-44-19.052559-japan.png",
+      "source_sha256": "563b3b9a7cd9b836cb1c6f3d981fa52ac038d708bad262c0fc380e61951ec2b2",
+      "source_bytes": 11316503,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/cloud-atmosphere.webp",
+      "sha256": "18e833d93e84f4568cd4fa889cc6ba1b233cade52ea72d07123e2cc723f338e6",
+      "bytes": 1835378,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/cloud-atmosphere.thumb.webp",
+        "sha256": "2afcd260c37810041d9f09b7b139bb30297e06639c3e3a0f78524a8faa933628",
+        "bytes": 248542,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-cloud-atmosphere",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/cloud-atmosphere.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/cloud-atmosphere.thumb.webp"
+    },
+    {
+      "ordinal": 8,
+      "stem": "network-cdn",
+      "title": "Network CDN / source records",
+      "note": "cloud_cdn_cache.bkoz, manifest 21 October 2026: 28,243 typed records; 13,140 source coordinates, 1,405 derived references, 13,698 unplotted. Alpha60 r8 vendor colours, 33% honeycombs, reference triangles; counts are not unique active facilities or traffic.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/network-cdn-authagraph-44-19.052559.png",
+      "source_sha256": "3c412fb756f86d4b4e8745d028551aa31ad7b01596246f627316787aa47eba88",
+      "source_bytes": 4572190,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/network-cdn.webp",
+      "sha256": "484e0528a4783df2efe58ae6946bb875b94cb075ed2bd73c1179f5f398f13308",
+      "bytes": 660176,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/network-cdn.thumb.webp",
+        "sha256": "b7c2f96550347c6162a66522681c5f6a2db7724eeaab0225bb659d945c7846d5",
+        "bytes": 87110,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-network-cdn",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/network-cdn.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/network-cdn.thumb.webp"
+    },
+    {
+      "ordinal": 8,
+      "stem": "network-cdn",
+      "title": "Network CDN / source records",
+      "note": "cloud_cdn_cache.bkoz, manifest 21 October 2026: 28,243 typed records; 13,140 source coordinates, 1,405 derived references, 13,698 unplotted. Alpha60 r8 vendor colours, 33% honeycombs, reference triangles; counts are not unique active facilities or traffic.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/network-cdn-authagraph-44-19.052559-japan.png",
+      "source_sha256": "1ab166306ad90d106ea6e96d2058ce044713d71a4866742f8cf306222c8cb0db",
+      "source_bytes": 2820893,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/network-cdn.webp",
+      "sha256": "97c056711f27fdc03435f08963e012c58cec1db1bd358e209e30d21309f696bd",
+      "bytes": 488744,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/network-cdn.thumb.webp",
+        "sha256": "a4fefd11cfc2e8f6757704f7291ac911d29eceaad05f3da9982c1bb435b4e6a5",
+        "bytes": 66376,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-network-cdn",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/network-cdn.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/network-cdn.thumb.webp"
+    },
+    {
+      "ordinal": 9,
+      "stem": "network-fiber",
+      "title": "Network Fiber",
+      "note": "TeleGeography submarine snapshots 2022 / 5 August 2026 plus 37,397 public ITU terrestrial fibre routes retrieved 29 October 2026. Kelly green land routes, black submarine routes: 0.5 pt, 75% opacity. Status retained; schematic locations, not surveyed routes.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/network-fiber-authagraph-44-19.052559.png",
+      "source_sha256": "b9522da8684500c0d303f71e8e3b30f5db3450313f3e179599890b1562a65baf",
+      "source_bytes": 17122449,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/network-fiber.webp",
+      "sha256": "1f58afdbfd74aa0763308d0f8fe871bc77becc9adb1bfed89de4b0b51f426da0",
+      "bytes": 1947986,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/network-fiber.thumb.webp",
+        "sha256": "8c43be2386d00dee310392e23361ac2ebfe5ead686154f8c3b7d6e6987b9056f",
+        "bytes": 221548,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-network-fiber",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/network-fiber.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/network-fiber.thumb.webp"
+    },
+    {
+      "ordinal": 9,
+      "stem": "network-fiber",
+      "title": "Network Fiber",
+      "note": "TeleGeography submarine snapshots 2022 / 5 August 2026 plus 37,397 public ITU terrestrial fibre routes retrieved 29 October 2026. Kelly green land routes, black submarine routes: 0.5 pt, 75% opacity. Status retained; schematic locations, not surveyed routes.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/network-fiber-authagraph-44-19.052559-japan.png",
+      "source_sha256": "f5b464ceb9a3a8ebdda418c4f7d4d5ab688cbd896b78437305e5990b59b6e46c",
+      "source_bytes": 7300660,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/network-fiber.webp",
+      "sha256": "3f5440f34c56a66f06185034cd5935ac9d671a060715868e3a6b7b0b9cce0049",
+      "bytes": 854108,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/network-fiber.thumb.webp",
+        "sha256": "96e424886baef3f9bee6aa1a349dae68bb560e23126a604b6de0b3a9da782ef5",
+        "bytes": 132278,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-network-fiber",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/network-fiber.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/network-fiber.thumb.webp"
+    },
+    {
+      "ordinal": 10,
+      "stem": "network-groundstations",
+      "title": "Network Groundstations",
+      "note": "Groundstation snapshot 2025-09-02. A location is not evidence of present operation.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/network-groundstations-authagraph-44-19.052559.png",
+      "source_sha256": "46d9c7eee8b25bd121b69bdb1c9b7296feb5e9a80efea270460bea3217b7c7c0",
+      "source_bytes": 3971371,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/network-groundstations.webp",
+      "sha256": "a20d57603ef929ccc795d0b549f62bf83e3593f4e7073f13d337e3a3b8eed2a6",
+      "bytes": 501652,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/network-groundstations.thumb.webp",
+        "sha256": "452eee45f20ef4c6d72676468e1c2beb0d7647bf0bdfc2794d3e060a2b68777f",
+        "bytes": 80744,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-network-groundstations",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/network-groundstations.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/network-groundstations.thumb.webp"
+    },
+    {
+      "ordinal": 10,
+      "stem": "network-groundstations",
+      "title": "Network Groundstations",
+      "note": "Groundstation snapshot 2025-09-02. A location is not evidence of present operation.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/network-groundstations-authagraph-44-19.052559-japan.png",
+      "source_sha256": "37b4d6f6d4724ada0af672ec6a40d1ae1e9a197c0fb8d3efcec1ad14941b4b35",
+      "source_bytes": 1707588,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/network-groundstations.webp",
+      "sha256": "da4778a9e0d89eca5e06a4a10353715a017a383b49972c0e35be1185acffd8e9",
+      "bytes": 241088,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/network-groundstations.thumb.webp",
+        "sha256": "deedfbd547b4de22a8fef82a986780b2b291ee966da3d5153a6941555bbf9b9f",
+        "bytes": 38676,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-network-groundstations",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/network-groundstations.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/network-groundstations.thumb.webp"
+    },
+    {
+      "ordinal": 11,
+      "stem": "network-swarm-ge-1080p",
+      "title": "Network swarm / Dan Da Dan / 1080p / 4K",
+      "note": "Dan Da Dan cumulative cache, 4 September 2025–4 March 2026. Native Alpha60 weighted circles in AuthaGraph, 5% opacity. 1080p / 4K has a separate world plate and Japan detail. Circle area follows downloader-observation weight, not unique people or traffic volume. Japan uses a geographic viewport, including neighbouring countries.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/network-swarm-ge-1080p-authagraph-44-19.052559.png",
+      "source_sha256": "7a44c1cee55a08eaa596d89c1a8e5a05eda01e8672f9c0cc00ddcb45089a3a3a",
+      "source_bytes": 19231655,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/network-swarm-ge-1080p.webp",
+      "sha256": "531a10497fccd14a23b3896a7b0b1f26201d1a783373ec85c5a7c083c0bc847c",
+      "bytes": 1938844,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/network-swarm-ge-1080p.thumb.webp",
+        "sha256": "7d93d216363e87b0cac3943cb5b32f2a3a3e7b769d61c50554571ea838c33781",
+        "bytes": 195468,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-network-swarm-ge-1080p",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/network-swarm-ge-1080p.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/network-swarm-ge-1080p.thumb.webp"
+    },
+    {
+      "ordinal": 11,
+      "stem": "network-swarm-ge-1080p",
+      "title": "Network swarm / Dan Da Dan / 1080p / 4K",
+      "note": "Dan Da Dan cumulative cache, 4 September 2025–4 March 2026. Native Alpha60 weighted circles in AuthaGraph, 5% opacity. 1080p / 4K has a separate world plate and Japan detail. Circle area follows downloader-observation weight, not unique people or traffic volume. Japan uses a geographic viewport, including neighbouring countries.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/network-swarm-ge-1080p-authagraph-44-19.052559-japan.png",
+      "source_sha256": "ff9bf714f451f26d75edd2a5f002b2e44863e91cd2b4aadeab32e2a9790691f1",
+      "source_bytes": 8299705,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/network-swarm-ge-1080p.webp",
+      "sha256": "ef9ea8d2029d0ab938fd6263ba25275e0d933a7689c083f4deb06f7b31724717",
+      "bytes": 869206,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/network-swarm-ge-1080p.thumb.webp",
+        "sha256": "252769797526fe20347a5365c1818cc932ad8a7060b57c57bdf5f481fad45bf9",
+        "bytes": 103812,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-network-swarm-ge-1080p",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/network-swarm-ge-1080p.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/network-swarm-ge-1080p.thumb.webp"
+    },
+    {
+      "ordinal": 12,
+      "stem": "network-swarm-lt-1080p",
+      "title": "Network swarm / Dan Da Dan / 720p / SD",
+      "note": "Dan Da Dan cumulative cache, 4 September 2025–4 March 2026. Native Alpha60 weighted circles in AuthaGraph, 5% opacity. 720p / SD has a separate world plate and Japan detail. Circle area follows downloader-observation weight, not unique people or traffic volume. Japan uses a geographic viewport, including neighbouring countries.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/network-swarm-lt-1080p-authagraph-44-19.052559.png",
+      "source_sha256": "94065c0b9bf5a0e71a2cf26b7f6c08c3cfe2cce74784464205d2fa56e3dc5740",
+      "source_bytes": 17113100,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/network-swarm-lt-1080p.webp",
+      "sha256": "eb26aa77fd0b5a184ca04c31088c9f4dada12e291bda6dd1e9c0d2743376f430",
+      "bytes": 1842930,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/network-swarm-lt-1080p.thumb.webp",
+        "sha256": "eebc41add3ace46d1c40b33f4e04c1225b4640352d349e4016af176c8b3949d0",
+        "bytes": 188536,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-network-swarm-lt-1080p",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/network-swarm-lt-1080p.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/network-swarm-lt-1080p.thumb.webp"
+    },
+    {
+      "ordinal": 12,
+      "stem": "network-swarm-lt-1080p",
+      "title": "Network swarm / Dan Da Dan / 720p / SD",
+      "note": "Dan Da Dan cumulative cache, 4 September 2025–4 March 2026. Native Alpha60 weighted circles in AuthaGraph, 5% opacity. 720p / SD has a separate world plate and Japan detail. Circle area follows downloader-observation weight, not unique people or traffic volume. Japan uses a geographic viewport, including neighbouring countries.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/network-swarm-lt-1080p-authagraph-44-19.052559-japan.png",
+      "source_sha256": "1dee9bfcfa205a9f8b93289f93fc1da3dfca531fc2ca17a12451f78de26885df",
+      "source_bytes": 6802043,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/network-swarm-lt-1080p.webp",
+      "sha256": "f53365f611d6eff31da5446c43cd854dc47e526c3e3ae702d0001ba52fbc4aad",
+      "bytes": 769644,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/network-swarm-lt-1080p.thumb.webp",
+        "sha256": "00028c795cb3f7d6ce9fe2ff3cbc85c734981eb45a3867e77368301892577b4b",
+        "bytes": 90790,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-network-swarm-lt-1080p",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/network-swarm-lt-1080p.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/network-swarm-lt-1080p.thumb.webp"
+    },
+    {
+      "ordinal": 13,
+      "stem": "anthropocene-particulate-2025",
+      "title": "Particulate 2025",
+      "note": "2025 available monitored days, not a complete-year comparison. Japan MOE provisional PM2.5: Nov–Dec 2025. China CNEMC via Quotsoft; selected Indian CPCB/AirNow sites and one separate AirGradient sensor. At least 18 valid hours/day; >35 µg/m³ counts differ from EPA AQI >100. Source-specific periods and coordinate limits are documented.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/anthropocene-particulate-2025-authagraph-44-19.052559.png",
+      "source_sha256": "92b0f99c6711d846b1c3e8e979880f44e7b54c5c4b926d3ea3ef7c59c64fbadf",
+      "source_bytes": 26070836,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/anthropocene-particulate-2025.webp",
+      "sha256": "45bfac45f5e04cc37528a726abeccabdfa98c4276119b002b8af7063f51dd5e7",
+      "bytes": 2079366,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/anthropocene-particulate-2025.thumb.webp",
+        "sha256": "bcc5ed74e05567c0c0126f944cda29133ddd69d4de9cce1bec5d69c56037a2e2",
+        "bytes": 155038,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-anthropocene-particulate-2025",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/anthropocene-particulate-2025.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/anthropocene-particulate-2025.thumb.webp"
+    },
+    {
+      "ordinal": 13,
+      "stem": "anthropocene-particulate-2025",
+      "title": "Particulate 2025",
+      "note": "2025 available monitored days, not a complete-year comparison. Japan MOE provisional PM2.5: Nov–Dec 2025. China CNEMC via Quotsoft; selected Indian CPCB/AirNow sites and one separate AirGradient sensor. At least 18 valid hours/day; >35 µg/m³ counts differ from EPA AQI >100. Source-specific periods and coordinate limits are documented.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/anthropocene-particulate-2025-authagraph-44-19.052559-japan.png",
+      "source_sha256": "8c8e6c993f0432574a1c6337d9ee43465810f6f39c52bd1f88fa2b81a311aca7",
+      "source_bytes": 4593529,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/anthropocene-particulate-2025.webp",
+      "sha256": "5b6e8322832c745090eea35f2ed4a4a00b52eb2ed79faf56571c867a8de5edbd",
+      "bytes": 1043552,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/anthropocene-particulate-2025.thumb.webp",
+        "sha256": "e74bfa22e15c53792f564825d8352a847b4099de89589c2c601b61dcdf618b2e",
+        "bytes": 133376,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-anthropocene-particulate-2025",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/anthropocene-particulate-2025.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/anthropocene-particulate-2025.thumb.webp"
+    },
+    {
+      "ordinal": 14,
+      "stem": "anthropocene-particulate-2026",
+      "title": "Particulate 2026",
+      "note": "2026 available monitored days, not a complete-year comparison. Japan MOE provisional PM2.5: Jan–Sep 2026. China CNEMC via Quotsoft; selected Indian CPCB/AirNow sites and one separate AirGradient sensor. At least 18 valid hours/day; >35 µg/m³ counts differ from EPA AQI >100. Source-specific periods and coordinate limits are documented.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/anthropocene-particulate-2026-authagraph-44-19.052559.png",
+      "source_sha256": "a58de165b5a5c44cb76e1e0afed06c12896e2377072b78a15a2985a66cf1ace4",
+      "source_bytes": 23773166,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/anthropocene-particulate-2026.webp",
+      "sha256": "ed23f46fab7b22772c902019f8e14a05012a7e0e2504b67d64ec25158ea9f2b1",
+      "bytes": 1833216,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/anthropocene-particulate-2026.thumb.webp",
+        "sha256": "eb99ec7d52389fd361437622ea89c034b07b29873300f44507b9933ee0254251",
+        "bytes": 133932,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-anthropocene-particulate-2026",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/anthropocene-particulate-2026.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/anthropocene-particulate-2026.thumb.webp"
+    },
+    {
+      "ordinal": 14,
+      "stem": "anthropocene-particulate-2026",
+      "title": "Particulate 2026",
+      "note": "2026 available monitored days, not a complete-year comparison. Japan MOE provisional PM2.5: Jan–Sep 2026. China CNEMC via Quotsoft; selected Indian CPCB/AirNow sites and one separate AirGradient sensor. At least 18 valid hours/day; >35 µg/m³ counts differ from EPA AQI >100. Source-specific periods and coordinate limits are documented.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/anthropocene-particulate-2026-authagraph-44-19.052559-japan.png",
+      "source_sha256": "b00fecbdb03cb460787e303b1a4f8429b2d50b53a27b27dfe998370671cd7912",
+      "source_bytes": 4641556,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/anthropocene-particulate-2026.webp",
+      "sha256": "0e5e170fbe4db248605e85499cadd1f7cedb3cd1a4e6d9e33ad159a4fcd054d3",
+      "bytes": 1046730,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/anthropocene-particulate-2026.thumb.webp",
+        "sha256": "93e46c70455e5138488e1c983400b84db14e7b8df175fc48b61b1ba812ee8bc8",
+        "bytes": 131132,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-anthropocene-particulate-2026",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/anthropocene-particulate-2026.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/anthropocene-particulate-2026.thumb.webp"
+    },
+    {
+      "ordinal": 15,
+      "stem": "anthropocene-temperature-2025",
+      "title": "Temperature 2025",
+      "note": "Local snapshot: {'as_of_utc': '2026-08-06T00:00:00Z', 'data_through': '2025-12-31', 'partial_year': False}. Daily land-temperature record counts on H3 cells; no marine or neighborhood temperature measurement. High-record bins: 1–5, 6–10, 11–20, 21–40, 41–80 and 81+ days; same count key for both years. 2026 is through 28 October, not a full-year change estimate.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/anthropocene-temperature-2025-authagraph-44-19.052559.png",
+      "source_sha256": "29b4783a654549fe8286e5abf0afe2d2d78ab025a8e26b9ba0a87217e606ec92",
+      "source_bytes": 13005614,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/anthropocene-temperature-2025.webp",
+      "sha256": "7b2c3f3be884408f121892c73145dec22e526793fcc85b498c5f5d5377ad120c",
+      "bytes": 2714304,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/anthropocene-temperature-2025.thumb.webp",
+        "sha256": "7ab8c9e34325d1410a9fdebd2a72511e7e0bcfca35b3523f3a74ed72a3109b8d",
+        "bytes": 292372,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-anthropocene-temperature-2025",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/anthropocene-temperature-2025.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/anthropocene-temperature-2025.thumb.webp"
+    },
+    {
+      "ordinal": 15,
+      "stem": "anthropocene-temperature-2025",
+      "title": "Temperature 2025",
+      "note": "Local snapshot: {'as_of_utc': '2026-08-06T00:00:00Z', 'data_through': '2025-12-31', 'partial_year': False}. Daily land-temperature record counts on H3 cells; no marine or neighborhood temperature measurement. High-record bins: 1–5, 6–10, 11–20, 21–40, 41–80 and 81+ days; same count key for both years. 2026 is through 28 October, not a full-year change estimate.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/anthropocene-temperature-2025-authagraph-44-19.052559-japan.png",
+      "source_sha256": "f1627eb66587386eb484dca6d5323f0c34846d51cc4dcd7d97dbc93a5abbc7c5",
+      "source_bytes": 4528158,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/anthropocene-temperature-2025.webp",
+      "sha256": "837e8ff2b1cedbebc3bb1b1d9f3c14dbf87dbbe5728972a82271ee4284cd5990",
+      "bytes": 866952,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/anthropocene-temperature-2025.thumb.webp",
+        "sha256": "f82857b39cd6b53a8f88c06859387a6f2cb922029c1ce83c54b5a2dfac1f7945",
+        "bytes": 142488,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-anthropocene-temperature-2025",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/anthropocene-temperature-2025.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/anthropocene-temperature-2025.thumb.webp"
+    },
+    {
+      "ordinal": 16,
+      "stem": "anthropocene-temperature-2026",
+      "title": "Temperature 2026",
+      "note": "Local snapshot: {'as_of_utc': '2026-10-29T19:15:00Z', 'data_through': '2026-10-28', 'partial_year': True}. Daily land-temperature record counts on H3 cells; no marine or neighborhood temperature measurement. High-record bins: 1–5, 6–10, 11–20, 21–40, 41–80 and 81+ days; same count key for both years. 2026 is through 28 October, not a full-year change estimate.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/anthropocene-temperature-2026-authagraph-44-19.052559.png",
+      "source_sha256": "aacc1140cff50a9335829d4c26f59563399d251847ad5e781862c44a2b698d7c",
+      "source_bytes": 12387780,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/anthropocene-temperature-2026.webp",
+      "sha256": "e427757d9f7d6cef01c069b203a604cd5fd364deabaaa3c36eb78c014714700a",
+      "bytes": 2592100,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/anthropocene-temperature-2026.thumb.webp",
+        "sha256": "c9fff2d48570e20e3fa455ca5ee04a72b5e69d8712db8de7cb61130d6b546403",
+        "bytes": 287286,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-anthropocene-temperature-2026",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/anthropocene-temperature-2026.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/anthropocene-temperature-2026.thumb.webp"
+    },
+    {
+      "ordinal": 16,
+      "stem": "anthropocene-temperature-2026",
+      "title": "Temperature 2026",
+      "note": "Local snapshot: {'as_of_utc': '2026-10-29T19:15:00Z', 'data_through': '2026-10-28', 'partial_year': True}. Daily land-temperature record counts on H3 cells; no marine or neighborhood temperature measurement. High-record bins: 1–5, 6–10, 11–20, 21–40, 41–80 and 81+ days; same count key for both years. 2026 is through 28 October, not a full-year change estimate.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/anthropocene-temperature-2026-authagraph-44-19.052559-japan.png",
+      "source_sha256": "4e550a0badea679835165a4bc1554eb45ee138ec32e9dc3ad4c051c5472a69a8",
+      "source_bytes": 4360989,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/anthropocene-temperature-2026.webp",
+      "sha256": "75fb9b60debeb749cd7f8b2883644ced52f13d0463bfb3582746cff54a9f6787",
+      "bytes": 835652,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/anthropocene-temperature-2026.thumb.webp",
+        "sha256": "8bdaf8343e5f17ceaaee1af1b9dd85a1e7566b6a1f87468e037b95683fa8e155",
+        "bytes": 141874,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-anthropocene-temperature-2026",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/anthropocene-temperature-2026.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/anthropocene-temperature-2026.thumb.webp"
+    },
+    {
+      "ordinal": 17,
+      "stem": "astro-all-sky",
+      "title": "Astronomy: all sky",
+      "note": "Celestial coordinates. Refreshed astronomy catalogs, calculated at 2026-10-29T20:00:00Z. The world ground-observer reference remains San Francisco; the Japan companion uses Setouchi.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/astro-all-sky-authagraph-44-19.052559.png",
+      "source_sha256": "1671a5bc5cba37e3dfded5932dbce41c3fc494a71e3b6bfaeb17eb5cbe79fee9",
+      "source_bytes": 1955394,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/astro-all-sky.webp",
+      "sha256": "16c840c776d14eeef3c179a1bb1d3951c9529e9e07c3878f9b067ca3e94c5501",
+      "bytes": 346926,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/astro-all-sky.thumb.webp",
+        "sha256": "3432a7c08f1da82d074746d5e41c0beafce39203051f560589a25e1d97692179",
+        "bytes": 62764,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-astro-all-sky",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/astro-all-sky.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/astro-all-sky.thumb.webp"
+    },
+    {
+      "ordinal": 17,
+      "stem": "astro-all-sky",
+      "title": "Astronomy: all sky",
+      "note": "Celestial coordinates. Refreshed astronomy catalogs, calculated at 2026-10-29T20:00:00Z. The world ground-observer reference remains San Francisco; the Japan companion uses Setouchi.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/astro-all-sky-authagraph-44-19.052559-japan.png",
+      "source_sha256": "b5fb06ddf82293886d2bd46fb4f9fff097884ad23a4af82e31a75391781d3352",
+      "source_bytes": 1992101,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/astro-all-sky.webp",
+      "sha256": "b09c4bd42819da19b1ce4c4b5f6e36f7b6b1a588e1a768f1d13ba82fadcd476a",
+      "bytes": 309322,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/astro-all-sky.thumb.webp",
+        "sha256": "b16dca785c17382a5d900c0b2f876dfce6a7cda9b1d3194d68f5c5d82b76c1cc",
+        "bytes": 64756,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-astro-all-sky",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/astro-all-sky.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/astro-all-sky.thumb.webp"
+    },
+    {
+      "ordinal": 18,
+      "stem": "astro-observer-ground-multiband",
+      "title": "Astronomy: ground observer",
+      "note": "Celestial coordinates. Refreshed astronomy catalogs, calculated at 2026-10-29T20:00:00Z. The world ground-observer reference remains San Francisco; the Japan companion uses Setouchi.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/astro-observer-ground-multiband-authagraph-44-19.052559.png",
+      "source_sha256": "7d8eade8111674b09abe688908a50fe6cb911e27886ccae5331064585a0c3f40",
+      "source_bytes": 1375094,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/astro-observer-ground-multiband.webp",
+      "sha256": "60d5a947a65e81d5b2715279465c719d779e3e9edfc11d0eda66d64d1d761935",
+      "bytes": 200206,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/astro-observer-ground-multiband.thumb.webp",
+        "sha256": "23bbb3c023cbd513c335b929558e704a0c55d079cf1547fb04de83c2093d5b10",
+        "bytes": 35846,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-astro-observer-ground-multiband",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/astro-observer-ground-multiband.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/astro-observer-ground-multiband.thumb.webp"
+    },
+    {
+      "ordinal": 18,
+      "stem": "astro-observer-ground-multiband",
+      "title": "Astronomy: ground observer",
+      "note": "Celestial coordinates. Refreshed astronomy catalogs, calculated at 2026-10-29T20:00:00Z. The world ground-observer reference remains San Francisco; the Japan companion uses Setouchi.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/astro-observer-ground-multiband-authagraph-44-19.052559-japan.png",
+      "source_sha256": "d63f2c962f569da61a5269ada6d1135b4c2d1a49ecdd74c935cea75c4bfe224d",
+      "source_bytes": 1652664,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/astro-observer-ground-multiband.webp",
+      "sha256": "5b7f064365aefd6d967ad9c93aa406031bdcf39a6807ee12910cc7e04af2226a",
+      "bytes": 244292,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/astro-observer-ground-multiband.thumb.webp",
+        "sha256": "2cf3322190ae75350f217489144471b1dc9c9480ee5775f0b451e8ab471a5f7e",
+        "bytes": 42290,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-astro-observer-ground-multiband",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/astro-observer-ground-multiband.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/astro-observer-ground-multiband.thumb.webp"
+    },
+    {
+      "ordinal": 19,
+      "stem": "astro-observer-hubble",
+      "title": "Astronomy: Hubble observer",
+      "note": "Celestial coordinates. Refreshed astronomy catalogs, calculated at 2026-10-29T20:00:00Z. The world ground-observer reference remains San Francisco; the Japan companion uses Setouchi.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/astro-observer-hubble-authagraph-44-19.052559.png",
+      "source_sha256": "5809b50e1f33257a4dc9c181b4ce5fc7d4bd6066d7257e5125771211a6422595",
+      "source_bytes": 1859373,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/astro-observer-hubble.webp",
+      "sha256": "e3c028a4bec77683a8b57d31ffa2bb929c38890e7c3e9f627f197126e32e9b5a",
+      "bytes": 321198,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/astro-observer-hubble.thumb.webp",
+        "sha256": "4f70b8df2fabb4285219d20a09a77e7705753b12f529b2a71b8ad10b441091c6",
+        "bytes": 60270,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-astro-observer-hubble",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/astro-observer-hubble.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/astro-observer-hubble.thumb.webp"
+    },
+    {
+      "ordinal": 19,
+      "stem": "astro-observer-hubble",
+      "title": "Astronomy: Hubble observer",
+      "note": "Celestial coordinates. Refreshed astronomy catalogs, calculated at 2026-10-29T20:00:00Z. The world ground-observer reference remains San Francisco; the Japan companion uses Setouchi.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/astro-observer-hubble-authagraph-44-19.052559-japan.png",
+      "source_sha256": "1d7d9f207dcf7ff33a5247596284f8c4bda622a7347fec29743f8f2e47142963",
+      "source_bytes": 1980410,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/astro-observer-hubble.webp",
+      "sha256": "123f50721bf2dcf8ca2879706e9b7095cea438092dc4b3f0641cf1df63353d9a",
+      "bytes": 336108,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/astro-observer-hubble.thumb.webp",
+        "sha256": "1557487f1f571debbfa9b2f8edbf7568c8a50c2a7da93489c1683bcd56cd703c",
+        "bytes": 59776,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-astro-observer-hubble",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/astro-observer-hubble.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/astro-observer-hubble.thumb.webp"
+    },
+    {
+      "ordinal": 20,
+      "stem": "orbital-technosphere-global",
+      "title": "Orbital Technosphere: global",
+      "note": "CelesTrak catalogs retrieved 2026-10-29; SGP4 at 2026-10-29T20:00:00Z. Native age/future-epoch filters retained. Observer product uses celestial coordinates.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/orbital-technosphere-global-authagraph-44-19.052559.png",
+      "source_sha256": "848f8751783e35326b48ba9d4cb07f960cb7c7dbdd03cafb9cd05fb87a4808f8",
+      "source_bytes": 11301784,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/orbital-technosphere-global.webp",
+      "sha256": "d9e3d048866e91d2b2d82b365877ef3513ac109b10306c9ddccd14702ebb5e15",
+      "bytes": 1972590,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/orbital-technosphere-global.thumb.webp",
+        "sha256": "4aa4cb31a37be53625fc093b73da63d7d804b581a3ef4f7fa1533fc0d80f8f7c",
+        "bytes": 376750,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-orbital-technosphere-global",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/orbital-technosphere-global.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/orbital-technosphere-global.thumb.webp"
+    },
+    {
+      "ordinal": 20,
+      "stem": "orbital-technosphere-global",
+      "title": "Orbital Technosphere: global",
+      "note": "CelesTrak catalogs retrieved 2026-10-29; SGP4 at 2026-10-29T20:00:00Z. Native age/future-epoch filters retained. Observer product uses celestial coordinates.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/orbital-technosphere-global-authagraph-44-19.052559-japan.png",
+      "source_sha256": "fda00711881410abd6962e5e7e2868be4352952768b004a74450494afa2ac07f",
+      "source_bytes": 2730833,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/orbital-technosphere-global.webp",
+      "sha256": "292ef3608fdbe101a73ca9ad0b3620ce101d3f91bb04cfe4f9a1357b0afdd405",
+      "bytes": 501458,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/orbital-technosphere-global.thumb.webp",
+        "sha256": "215eb3399e3a24beab9630ddf4c1c61c546329d386d77b3fdc79991c426f7907",
+        "bytes": 102450,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-orbital-technosphere-global",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/orbital-technosphere-global.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/orbital-technosphere-global.thumb.webp"
+    },
+    {
+      "ordinal": 21,
+      "stem": "orbital-technosphere-observer",
+      "title": "Orbital Technosphere: observer",
+      "note": "CelesTrak catalogs retrieved 2026-10-29; SGP4 at 2026-10-29T20:00:00Z. Native age/future-epoch filters retained. Observer product uses celestial coordinates.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/orbital-technosphere-observer-authagraph-44-19.052559.png",
+      "source_sha256": "b407ee4858e1ddf563e6e410dae37be48102473eba314c57234b57908637459f",
+      "source_bytes": 1061819,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/orbital-technosphere-observer.webp",
+      "sha256": "bee087caa957028a4865c78debe20727951b41b220f90f392b021eab03a3adbd",
+      "bytes": 159036,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/orbital-technosphere-observer.thumb.webp",
+        "sha256": "ad491e4bcaae7efaa0d94732d5dcde94f00da738fb776b1648523e3e6ac3816a",
+        "bytes": 35346,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-orbital-technosphere-observer",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/orbital-technosphere-observer.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/orbital-technosphere-observer.thumb.webp"
+    },
+    {
+      "ordinal": 21,
+      "stem": "orbital-technosphere-observer",
+      "title": "Orbital Technosphere: observer",
+      "note": "CelesTrak catalogs retrieved 2026-10-29; SGP4 at 2026-10-29T20:00:00Z. Native age/future-epoch filters retained. Observer product uses celestial coordinates.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/orbital-technosphere-observer-authagraph-44-19.052559-japan.png",
+      "source_sha256": "7199d2852e321d6af9c421a1e42e12b9d1d740bb7f59a92e0dc18fa5362e2ec2",
+      "source_bytes": 1656195,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/orbital-technosphere-observer.webp",
+      "sha256": "69cdf5aa794a9d018c5df7933175f508c6fc81072af2417ed596253977e022ae",
+      "bytes": 226756,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/orbital-technosphere-observer.thumb.webp",
+        "sha256": "489d7ba4b58eff4a571060f0b23d968948f6e489cf036b198fd6102db70443b6",
+        "bytes": 43466,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-orbital-technosphere-observer",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/orbital-technosphere-observer.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/orbital-technosphere-observer.thumb.webp"
+    },
+    {
+      "ordinal": 22,
+      "stem": "resources-energy-solar-capacity-2025",
+      "title": "Installed solar generating capacity",
+      "note": "2025; MW. End-of-year capacity; not generation. Country-level statistics are not Setouchi-specific measurements. Distinct named izzi-hue colours; fully opaque data fills. Grey means missing.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/resources-energy-solar-capacity-2025-authagraph-44-19.052559.png",
+      "source_sha256": "702827a36eb3e46a7a64ebdf8a6cc1602ff9755b27f5c3bd1d26f35fc89cdeb8",
+      "source_bytes": 2135746,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/resources-energy-solar-capacity-2025.webp",
+      "sha256": "1016939e5052499642f3a30fbb096bdcaaefe1089b125b86abd10dd1a0ae5809",
+      "bytes": 451180,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/resources-energy-solar-capacity-2025.thumb.webp",
+        "sha256": "203c433377d80fcade0e7530ad828556bd2c2e5e6ba5064f897889f114e1a978",
+        "bytes": 92700,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-resources-energy-solar-capacity-2025",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-energy-solar-capacity-2025.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-energy-solar-capacity-2025.thumb.webp"
+    },
+    {
+      "ordinal": 22,
+      "stem": "resources-energy-solar-capacity-2025",
+      "title": "Installed solar generating capacity",
+      "note": "2025; MW. End-of-year capacity; not generation. Country-level statistics are not Setouchi-specific measurements. Distinct named izzi-hue colours; fully opaque data fills. Grey means missing.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/resources-energy-solar-capacity-2025-authagraph-44-19.052559-japan.png",
+      "source_sha256": "2a9dd38fde083b320ba4719075415032781a71deabd8037ce4d2549bcb2b9fd9",
+      "source_bytes": 1660274,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/resources-energy-solar-capacity-2025.webp",
+      "sha256": "0669358e0d64da86dbed6231660d50170773de07b0d6cef3eb95d35d1b96b2f8",
+      "bytes": 275366,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/resources-energy-solar-capacity-2025.thumb.webp",
+        "sha256": "dae3ae988bf6860b5c0ff8d3b76fbb71e81a7b51a94ed37fcecd3c3d0a96b073",
+        "bytes": 43604,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-resources-energy-solar-capacity-2025",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-energy-solar-capacity-2025.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-energy-solar-capacity-2025.thumb.webp"
+    },
+    {
+      "ordinal": 23,
+      "stem": "resources-energy-wind-capacity-2025",
+      "title": "Installed wind generating capacity",
+      "note": "2025; MW. End-of-year onshore and offshore capacity combined; not generation. Country-level statistics are not Setouchi-specific measurements. Distinct named izzi-hue colours; fully opaque data fills. Grey means missing.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/resources-energy-wind-capacity-2025-authagraph-44-19.052559.png",
+      "source_sha256": "5361484cfd8c4fbf6e9d6317e7b26543986b7af7b0a7843da986c6f5af07a29b",
+      "source_bytes": 2269840,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/resources-energy-wind-capacity-2025.webp",
+      "sha256": "ce05968b7b30f950f0859a7f98af820f61a8549d7f6728212a8c442e4b4af861",
+      "bytes": 460738,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/resources-energy-wind-capacity-2025.thumb.webp",
+        "sha256": "7eece89b7b7eb71aded7501522a4530580b1f9831473615db7bffd813b97a4d0",
+        "bytes": 95872,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-resources-energy-wind-capacity-2025",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-energy-wind-capacity-2025.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-energy-wind-capacity-2025.thumb.webp"
+    },
+    {
+      "ordinal": 23,
+      "stem": "resources-energy-wind-capacity-2025",
+      "title": "Installed wind generating capacity",
+      "note": "2025; MW. End-of-year onshore and offshore capacity combined; not generation. Country-level statistics are not Setouchi-specific measurements. Distinct named izzi-hue colours; fully opaque data fills. Grey means missing.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/resources-energy-wind-capacity-2025-authagraph-44-19.052559-japan.png",
+      "source_sha256": "7b4188af319521fdf0cf15d46853e53a00e7b5f1316f5d0d6b0dc2778be82d0c",
+      "source_bytes": 1645515,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/resources-energy-wind-capacity-2025.webp",
+      "sha256": "535715e1f2be8bb3fc8353678ee681802ea24bb15813f1efa0b3651b500939d6",
+      "bytes": 256832,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/resources-energy-wind-capacity-2025.thumb.webp",
+        "sha256": "3229b1c9840f27a135f1cf8d667f01a946466dd8384ae0e0709db0b007ecffec",
+        "bytes": 42080,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-resources-energy-wind-capacity-2025",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-energy-wind-capacity-2025.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-energy-wind-capacity-2025.thumb.webp"
+    },
+    {
+      "ordinal": 24,
+      "stem": "resources-energy-nuclear-operating-capacity-2024",
+      "title": "Operating nuclear net electrical capacity",
+      "note": "31 December 2024; MW(e). Operating capacity only; suspended, shutdown, and under-construction reactors are excluded. Country-level statistics are not Setouchi-specific measurements. Distinct named izzi-hue colours; fully opaque data fills. Grey means missing.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/resources-energy-nuclear-operating-capacity-2024-authagraph-44-19.052559.png",
+      "source_sha256": "c86f219be5cb06c2853372df33875f22f0b286439de0c500f68e1444376d4618",
+      "source_bytes": 2178398,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/resources-energy-nuclear-operating-capacity-2024.webp",
+      "sha256": "da40cd86b1677ab1a2e176c734a251dc0936365cc58770b17e7b0a9000904431",
+      "bytes": 382168,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/resources-energy-nuclear-operating-capacity-2024.thumb.webp",
+        "sha256": "38dbebb530e5668e0a85a1bfbd3510b80fe584f5b39237389e7827f7cdc5baaa",
+        "bytes": 78698,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-resources-energy-nuclear-operating-capacity-2024",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-energy-nuclear-operating-capacity-2024.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-energy-nuclear-operating-capacity-2024.thumb.webp"
+    },
+    {
+      "ordinal": 24,
+      "stem": "resources-energy-nuclear-operating-capacity-2024",
+      "title": "Operating nuclear net electrical capacity",
+      "note": "31 December 2024; MW(e). Operating capacity only; suspended, shutdown, and under-construction reactors are excluded. Country-level statistics are not Setouchi-specific measurements. Distinct named izzi-hue colours; fully opaque data fills. Grey means missing.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/resources-energy-nuclear-operating-capacity-2024-authagraph-44-19.052559-japan.png",
+      "source_sha256": "47edd67975a30d212109dd7ab329c2f66d7ce1cfbd43e9d2771adcae542e4871",
+      "source_bytes": 1683064,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/resources-energy-nuclear-operating-capacity-2024.webp",
+      "sha256": "0934fc093b8df815c0c3fbfb9af0a5649f67e012b1f6bd1ad628016d13631599",
+      "bytes": 259472,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/resources-energy-nuclear-operating-capacity-2024.thumb.webp",
+        "sha256": "f810b3eaac06700c4e7692918df01cc1eb0aa2abbbc7559d81c10d0e59fa1807",
+        "bytes": 41438,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-resources-energy-nuclear-operating-capacity-2024",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-energy-nuclear-operating-capacity-2024.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-energy-nuclear-operating-capacity-2024.thumb.webp"
+    },
+    {
+      "ordinal": 25,
+      "stem": "resources-energy-petrochemical-refinery-throughput-latest-2024",
+      "title": "Petroleum refinery throughput",
+      "note": "latest reported from 2018–2024; thousand metric tonnes/year. The public petrochemical target selects this comparable refinery-processing measure. It is throughput, not nameplate capacity, extraction, or total petrochemical output; observations before 2018 are excluded. Country-level statistics are not Setouchi-specific measurements. Distinct named izzi-hue colours; fully opaque data fills. Grey means missing.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/resources-energy-petrochemical-refinery-throughput-latest-2024-authagraph-44-19.052559.png",
+      "source_sha256": "0c0db1c695a320eda17dfa49dcd6e9c4c1299e0a52d8fe9068b907371ec074fe",
+      "source_bytes": 2361582,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/resources-energy-petrochemical-refinery-throughput-latest-2024.webp",
+      "sha256": "715e4a0bca4addfe581f7290949412f4bb55c89ca2df6780573d1f0ceb86fc9f",
+      "bytes": 453628,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/resources-energy-petrochemical-refinery-throughput-latest-2024.thumb.webp",
+        "sha256": "71fc958d96e7853a6bb50f0511e3297ac326753d763a98f7eb19ad8ff08a4288",
+        "bytes": 92356,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-resources-energy-petrochemical-refinery-throughput-latest-2024",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-energy-petrochemical-refinery-throughput-latest-2024.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-energy-petrochemical-refinery-throughput-latest-2024.thumb.webp"
+    },
+    {
+      "ordinal": 25,
+      "stem": "resources-energy-petrochemical-refinery-throughput-latest-2024",
+      "title": "Petroleum refinery throughput",
+      "note": "latest reported from 2018–2024; thousand metric tonnes/year. The public petrochemical target selects this comparable refinery-processing measure. It is throughput, not nameplate capacity, extraction, or total petrochemical output; observations before 2018 are excluded. Country-level statistics are not Setouchi-specific measurements. Distinct named izzi-hue colours; fully opaque data fills. Grey means missing.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/resources-energy-petrochemical-refinery-throughput-latest-2024-authagraph-44-19.052559-japan.png",
+      "source_sha256": "2fd19eb50e6917c6b79e75e3a2b63f56092e2b028cac0ff007230765140b01ed",
+      "source_bytes": 1745908,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/resources-energy-petrochemical-refinery-throughput-latest-2024.webp",
+      "sha256": "52a9659bf7be5af9bb89fff5fca4e3262fdf7e3eb36701c2213768f4e89db6a9",
+      "bytes": 265544,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/resources-energy-petrochemical-refinery-throughput-latest-2024.thumb.webp",
+        "sha256": "0dd8592d3168dd5be4bc4c82f6897d0cb5dbcc408b087188c810268e3b098141",
+        "bytes": 42170,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-resources-energy-petrochemical-refinery-throughput-latest-2024",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-energy-petrochemical-refinery-throughput-latest-2024.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-energy-petrochemical-refinery-throughput-latest-2024.thumb.webp"
+    },
+    {
+      "ordinal": 26,
+      "stem": "resources-food-food-production-index-latest-2024",
+      "title": "Food production index",
+      "note": "latest observation from 2022–2024; index, 2014–2016=100. Latest published WDI country observations in the pinned snapshot. Country-level statistics are not Setouchi-specific measurements. Distinct named izzi-hue colours; fully opaque data fills. Grey means missing.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/resources-food-food-production-index-latest-2024-authagraph-44-19.052559.png",
+      "source_sha256": "afb1b6790855074e08121393ff383954dc4441ffdf710d5f9dfb04e1a6cc497e",
+      "source_bytes": 2150374,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/resources-food-food-production-index-latest-2024.webp",
+      "sha256": "52006a357f7ffcb18fef91ee8ad49632cb1409536f2d047b9690c3c6b210fcdf",
+      "bytes": 419810,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/resources-food-food-production-index-latest-2024.thumb.webp",
+        "sha256": "9d47da735c1c20b3ad9fd38dd00b241ae514f0ef242597d3bff38840b8956fdd",
+        "bytes": 86318,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-resources-food-food-production-index-latest-2024",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-food-food-production-index-latest-2024.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-food-food-production-index-latest-2024.thumb.webp"
+    },
+    {
+      "ordinal": 26,
+      "stem": "resources-food-food-production-index-latest-2024",
+      "title": "Food production index",
+      "note": "latest observation from 2022–2024; index, 2014–2016=100. Latest published WDI country observations in the pinned snapshot. Country-level statistics are not Setouchi-specific measurements. Distinct named izzi-hue colours; fully opaque data fills. Grey means missing.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/resources-food-food-production-index-latest-2024-authagraph-44-19.052559-japan.png",
+      "source_sha256": "1b650d02baee6355ff3f32a50de9855fc8c9a31557bd653f48527f2cfbead274",
+      "source_bytes": 1618451,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/resources-food-food-production-index-latest-2024.webp",
+      "sha256": "9526893896e63ac77679b7627525f99447c1e67837fa0ffb776c3fec34e4c4d7",
+      "bytes": 233250,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/resources-food-food-production-index-latest-2024.thumb.webp",
+        "sha256": "18385d254fe704616463fecb301caa3ea665d797cfc33aa98df1cb10973b91ef",
+        "bytes": 38832,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-resources-food-food-production-index-latest-2024",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-food-food-production-index-latest-2024.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-food-food-production-index-latest-2024.thumb.webp"
+    },
+    {
+      "ordinal": 27,
+      "stem": "resources-fauna-fisheries-production-latest-2024",
+      "title": "Total fisheries production",
+      "note": "latest accepted through 2024; metric tonnes. FAO-supplied World Development Indicator; capture fisheries and aquaculture are combined in this released total. Country-level statistics are not Setouchi-specific measurements. Distinct named izzi-hue colours; fully opaque data fills. Grey means missing.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/resources-fauna-fisheries-production-latest-2024-authagraph-44-19.052559.png",
+      "source_sha256": "4db6d234f1db591da688e82aee71f3ee027646b634c9458403cac5eaf406bdb3",
+      "source_bytes": 2280894,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/resources-fauna-fisheries-production-latest-2024.webp",
+      "sha256": "6fd81d50bd9d38be50766c1ccc07513fdd7cd742eef37baaa9555448f77a05c9",
+      "bytes": 494628,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/resources-fauna-fisheries-production-latest-2024.thumb.webp",
+        "sha256": "70efb22995d72d3ab34ec9772c716db7ca890adeca5a3340fb6d7469f1857f4b",
+        "bytes": 102282,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-resources-fauna-fisheries-production-latest-2024",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-fauna-fisheries-production-latest-2024.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-fauna-fisheries-production-latest-2024.thumb.webp"
+    },
+    {
+      "ordinal": 27,
+      "stem": "resources-fauna-fisheries-production-latest-2024",
+      "title": "Total fisheries production",
+      "note": "latest accepted through 2024; metric tonnes. FAO-supplied World Development Indicator; capture fisheries and aquaculture are combined in this released total. Country-level statistics are not Setouchi-specific measurements. Distinct named izzi-hue colours; fully opaque data fills. Grey means missing.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/resources-fauna-fisheries-production-latest-2024-authagraph-44-19.052559-japan.png",
+      "source_sha256": "6d005aedca10278ace38e1a4b275162afb4096cc6a27097f427560bd6681be41",
+      "source_bytes": 1684089,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/resources-fauna-fisheries-production-latest-2024.webp",
+      "sha256": "e82ba97d08d3e9c90e7fc1bd194173a07a1a36ab9d7fbc9fab8a955151b84ad3",
+      "bytes": 273218,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/resources-fauna-fisheries-production-latest-2024.thumb.webp",
+        "sha256": "1fd80af545a0e8bd7b4c5794b799052607abb517a1411fdb52cd27babba6c823",
+        "bytes": 44496,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-resources-fauna-fisheries-production-latest-2024",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-fauna-fisheries-production-latest-2024.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-fauna-fisheries-production-latest-2024.thumb.webp"
+    },
+    {
+      "ordinal": 28,
+      "stem": "resources-fauna-coral-reef-threat-2011",
+      "title": "Coral reef integrated local threat",
+      "note": "WRI Reefs at Risk Revisited 2011. Honeycomb groups retain the four-class mix of 7,215 occupied 0.25 degree source cells; highest threat within each original cell. Glyph areas are not reef extent or present-day condition. Compare bounded Voronoi and composition-circle prototypes.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/resources-fauna-coral-reef-threat-2011-authagraph-44-19.052559.png",
+      "source_sha256": "b4ff216513135b06f4077bf6c03865afd1661b645942aac1e368e26ddfa109a4",
+      "source_bytes": 2446461,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/resources-fauna-coral-reef-threat-2011.webp",
+      "sha256": "521cb1683c314ee963ea294211b9aa73734a7b4522a622822bc28758531f2360",
+      "bytes": 328688,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/resources-fauna-coral-reef-threat-2011.thumb.webp",
+        "sha256": "f88a67f24ff4bad40185277e85e9996a571949c2870447d4750d3450845ee47e",
+        "bytes": 49942,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-resources-fauna-coral-reef-threat-2011",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-fauna-coral-reef-threat-2011.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-fauna-coral-reef-threat-2011.thumb.webp"
+    },
+    {
+      "ordinal": 28,
+      "stem": "resources-fauna-coral-reef-threat-2011",
+      "title": "Coral reef integrated local threat",
+      "note": "WRI Reefs at Risk Revisited 2011. Honeycomb groups retain the four-class mix of 7,215 occupied 0.25 degree source cells; highest threat within each original cell. Glyph areas are not reef extent or present-day condition. Compare bounded Voronoi and composition-circle prototypes.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/resources-fauna-coral-reef-threat-2011-authagraph-44-19.052559-japan.png",
+      "source_sha256": "ec6847ecb28ce5ad32b4276c8f556b2d4fd44271ce9d1c6a875165d60eccfd5f",
+      "source_bytes": 1712370,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/resources-fauna-coral-reef-threat-2011.webp",
+      "sha256": "4a2c5e0d0e8b41cfd9484630abd0d973fbfd4fdd7c9aba6b6c33206f53ed26a8",
+      "bytes": 197084,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/resources-fauna-coral-reef-threat-2011.thumb.webp",
+        "sha256": "9aae033bb3c12e0cbd59a86ab1765437891b2e7212d55adf485136b705b03fad",
+        "bytes": 29380,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-resources-fauna-coral-reef-threat-2011",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-fauna-coral-reef-threat-2011.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-fauna-coral-reef-threat-2011.thumb.webp"
+    },
+    {
+      "ordinal": 29,
+      "stem": "resources-flora-forest-area-percent-2024",
+      "title": "Forest area",
+      "note": "latest observation from 2023–2024; % of land area. Latest published WDI country observations in the pinned snapshot; not a remotely sensed density field. Country-level statistics are not Setouchi-specific measurements. Distinct named izzi-hue colours; fully opaque data fills. Grey means missing.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/resources-flora-forest-area-percent-2024-authagraph-44-19.052559.png",
+      "source_sha256": "481e00af0b7208a00d98a32ffb0c0a1c312e77f4e686f288801a3de6388516df",
+      "source_bytes": 2283487,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/resources-flora-forest-area-percent-2024.webp",
+      "sha256": "d193f8892bbf21f09096ad510b7a834df19937fe1bb58328f1d6bbcbd6f85a21",
+      "bytes": 422382,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/resources-flora-forest-area-percent-2024.thumb.webp",
+        "sha256": "5c82bb79f9d55e93b39b1ac6d8f2379c93411212dd8f2c41b66b59f809403205",
+        "bytes": 85120,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-resources-flora-forest-area-percent-2024",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-flora-forest-area-percent-2024.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-flora-forest-area-percent-2024.thumb.webp"
+    },
+    {
+      "ordinal": 29,
+      "stem": "resources-flora-forest-area-percent-2024",
+      "title": "Forest area",
+      "note": "latest observation from 2023–2024; % of land area. Latest published WDI country observations in the pinned snapshot; not a remotely sensed density field. Country-level statistics are not Setouchi-specific measurements. Distinct named izzi-hue colours; fully opaque data fills. Grey means missing.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/resources-flora-forest-area-percent-2024-authagraph-44-19.052559-japan.png",
+      "source_sha256": "1916c92fdc5578f431758a10c3e6677f70ad6415bb2acbec34951a55246c08fe",
+      "source_bytes": 1617099,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/resources-flora-forest-area-percent-2024.webp",
+      "sha256": "38f13fdf9a2a26d8d77a0c76cad5aea425679e7ea5f791554ee6467952f22b4e",
+      "bytes": 241528,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/resources-flora-forest-area-percent-2024.thumb.webp",
+        "sha256": "384e02eebad9ceb973ae5bc5733b00908eab51dd29c5eb9ac79dfc6912e05dba",
+        "bytes": 37648,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-resources-flora-forest-area-percent-2024",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-flora-forest-area-percent-2024.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-flora-forest-area-percent-2024.thumb.webp"
+    },
+    {
+      "ordinal": 30,
+      "stem": "resources-mineral-rare-earth-mine-production-2025",
+      "title": "Rare-earth mine production",
+      "note": "2025 estimate; metric tonnes REO equivalent. Mine production; reserves and processing are separate. Country-level statistics are not Setouchi-specific measurements. Distinct named izzi-hue colours; fully opaque data fills. Grey means missing.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/resources-mineral-rare-earth-mine-production-2025-authagraph-44-19.052559.png",
+      "source_sha256": "2298eb713b648c3adf713b893729355209017a00a432fc7f359fc41114c2089a",
+      "source_bytes": 2053220,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/resources-mineral-rare-earth-mine-production-2025.webp",
+      "sha256": "b28c6c37bed13c3133b3d7296360652b82752db93724d583c602a94da09f9a4b",
+      "bytes": 355908,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/resources-mineral-rare-earth-mine-production-2025.thumb.webp",
+        "sha256": "33e0340ea9a2c0f74d382052c675604a24dd7bea7f96fad0508f0ed23c7e48d9",
+        "bytes": 74842,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-resources-mineral-rare-earth-mine-production-2025",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-mineral-rare-earth-mine-production-2025.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-mineral-rare-earth-mine-production-2025.thumb.webp"
+    },
+    {
+      "ordinal": 30,
+      "stem": "resources-mineral-rare-earth-mine-production-2025",
+      "title": "Rare-earth mine production",
+      "note": "2025 estimate; metric tonnes REO equivalent. Mine production; reserves and processing are separate. Country-level statistics are not Setouchi-specific measurements. Distinct named izzi-hue colours; fully opaque data fills. Grey means missing.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/resources-mineral-rare-earth-mine-production-2025-authagraph-44-19.052559-japan.png",
+      "source_sha256": "aa1f2c623c96441d2fc2541e62c78100eb66f70930c67dcd692abc575a19b03f",
+      "source_bytes": 1653926,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/resources-mineral-rare-earth-mine-production-2025.webp",
+      "sha256": "e8222da6abec9e2c9aed116ee4294b56d4de4e670043744d9c8004dfe41f305c",
+      "bytes": 242506,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/resources-mineral-rare-earth-mine-production-2025.thumb.webp",
+        "sha256": "3f4cafcebcf51eee747951a308566e2f6b279bae6fd63c7da175791d3c46b57e",
+        "bytes": 37956,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-resources-mineral-rare-earth-mine-production-2025",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-mineral-rare-earth-mine-production-2025.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-mineral-rare-earth-mine-production-2025.thumb.webp"
+    },
+    {
+      "ordinal": 31,
+      "stem": "resources-human-population-under-30-2024",
+      "title": "Population under age 30",
+      "note": "2024; % of population. Derived from age 0–14 and sex-specific five-year age bands using matched population denominators. Country-level statistics are not Setouchi-specific measurements. Distinct named izzi-hue colours; fully opaque data fills. Grey means missing.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/resources-human-population-under-30-2024-authagraph-44-19.052559.png",
+      "source_sha256": "8ad191662acb326eced6b8ba085e04884f144b8d5fe9eaef2c6640669a60fbd8",
+      "source_bytes": 2291482,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/resources-human-population-under-30-2024.webp",
+      "sha256": "5d0dc739fce97118545290e6b51fd9d7104fd63d172e933dfea376f9e575970a",
+      "bytes": 451408,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/resources-human-population-under-30-2024.thumb.webp",
+        "sha256": "688de7801c1bf9bf066c36c978148ea14caa3dc17fd9cc9925016f5b54c3ba33",
+        "bytes": 93724,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-resources-human-population-under-30-2024",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-human-population-under-30-2024.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-human-population-under-30-2024.thumb.webp"
+    },
+    {
+      "ordinal": 31,
+      "stem": "resources-human-population-under-30-2024",
+      "title": "Population under age 30",
+      "note": "2024; % of population. Derived from age 0–14 and sex-specific five-year age bands using matched population denominators. Country-level statistics are not Setouchi-specific measurements. Distinct named izzi-hue colours; fully opaque data fills. Grey means missing.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/resources-human-population-under-30-2024-authagraph-44-19.052559-japan.png",
+      "source_sha256": "2b45e43f81805098b44815b4d7eaff10d1fe790a0d2271e0843dffb3a6dae932",
+      "source_bytes": 1638365,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/resources-human-population-under-30-2024.webp",
+      "sha256": "87c70e4c25063c3a9ddc4503d46950245aae6239e556d6ced762db8b1b5821f5",
+      "bytes": 232142,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/resources-human-population-under-30-2024.thumb.webp",
+        "sha256": "43ee263926c92d8ea50b324dad808509100e7240c6dfa18206f783a94a30d59f",
+        "bytes": 40686,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-resources-human-population-under-30-2024",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-human-population-under-30-2024.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-human-population-under-30-2024.thumb.webp"
+    },
+    {
+      "ordinal": 32,
+      "stem": "resources-human-population-over-60-2024",
+      "title": "Population age 60 and older",
+      "note": "2024; % of population. Derived from age 60–64 and age 65+ using matched population denominators. Country-level statistics are not Setouchi-specific measurements. Distinct named izzi-hue colours; fully opaque data fills. Grey means missing.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/resources-human-population-over-60-2024-authagraph-44-19.052559.png",
+      "source_sha256": "6a55a8cac6f6708d4faec65bb3779f2d45ed5e257052e990859d9e764d37acd0",
+      "source_bytes": 2188226,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/resources-human-population-over-60-2024.webp",
+      "sha256": "ba6d23675676b35499d722b51eded9fd65ca132e81b78f96e73772c8ad413c1a",
+      "bytes": 416522,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/resources-human-population-over-60-2024.thumb.webp",
+        "sha256": "8c479195b421a19527841c688b4d380ca93720070d7944deb78d29a3238a1524",
+        "bytes": 84944,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-resources-human-population-over-60-2024",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-human-population-over-60-2024.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-human-population-over-60-2024.thumb.webp"
+    },
+    {
+      "ordinal": 32,
+      "stem": "resources-human-population-over-60-2024",
+      "title": "Population age 60 and older",
+      "note": "2024; % of population. Derived from age 60–64 and age 65+ using matched population denominators. Country-level statistics are not Setouchi-specific measurements. Distinct named izzi-hue colours; fully opaque data fills. Grey means missing.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/resources-human-population-over-60-2024-authagraph-44-19.052559-japan.png",
+      "source_sha256": "9d07e2512a1aa1642469abe8a9361d5b772df6ddd76461ccc4ae47a72c0cf8b0",
+      "source_bytes": 1595780,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/resources-human-population-over-60-2024.webp",
+      "sha256": "c94855951bdb0a28841058bf6e328517df4c45dffd80a0572160f153a4e3b77f",
+      "bytes": 247164,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/resources-human-population-over-60-2024.thumb.webp",
+        "sha256": "139fb3ed86eb5d7c766dad93eb0ad528ef5cee909a05af42c98418fc6fa9cca9",
+        "bytes": 39406,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-resources-human-population-over-60-2024",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-human-population-over-60-2024.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-human-population-over-60-2024.thumb.webp"
+    },
+    {
+      "ordinal": 33,
+      "stem": "resources-human-upper-secondary-attainment-latest-2025",
+      "title": "Completed ISCED 3 or higher, age 25+",
+      "note": "latest observation from 2018–2025; %. Educational attainment, not enrollment; every released observation is from 2018 or later. Country-level statistics are not Setouchi-specific measurements. Distinct named izzi-hue colours; fully opaque data fills. Grey means missing.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/resources-human-upper-secondary-attainment-latest-2025-authagraph-44-19.052559.png",
+      "source_sha256": "e7b57cda9c4b13a0ed8f633c636d4f05fae4b2038c5b9b39bda8b09be3b56c50",
+      "source_bytes": 2312016,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/resources-human-upper-secondary-attainment-latest-2025.webp",
+      "sha256": "1731b799a0ab6ad9f4429a99af3f3ce378ba3a457aa040798b237635be6223cb",
+      "bytes": 421078,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/resources-human-upper-secondary-attainment-latest-2025.thumb.webp",
+        "sha256": "960ff95583a0937791a2737ebcab11b27fe81e93705d994ab02525be5a96f535",
+        "bytes": 84730,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-resources-human-upper-secondary-attainment-latest-2025",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-human-upper-secondary-attainment-latest-2025.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-human-upper-secondary-attainment-latest-2025.thumb.webp"
+    },
+    {
+      "ordinal": 33,
+      "stem": "resources-human-upper-secondary-attainment-latest-2025",
+      "title": "Completed ISCED 3 or higher, age 25+",
+      "note": "latest observation from 2018–2025; %. Educational attainment, not enrollment; every released observation is from 2018 or later. Country-level statistics are not Setouchi-specific measurements. Distinct named izzi-hue colours; fully opaque data fills. Grey means missing.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/resources-human-upper-secondary-attainment-latest-2025-authagraph-44-19.052559-japan.png",
+      "source_sha256": "e8ef5e3359b261b79ff5778c1fac4b20ed60a2e14d53ea3556ee0b5ca104a407",
+      "source_bytes": 1669793,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/resources-human-upper-secondary-attainment-latest-2025.webp",
+      "sha256": "902f5c823a97e6cae5f553467cab42e798066a7d6cae96105ea01550c166a756",
+      "bytes": 248512,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/resources-human-upper-secondary-attainment-latest-2025.thumb.webp",
+        "sha256": "e1f90c53158935b754bbed64c9f816fde2fefbbe3552fc1e33eae09f0af30429",
+        "bytes": 39714,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-resources-human-upper-secondary-attainment-latest-2025",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-human-upper-secondary-attainment-latest-2025.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-human-upper-secondary-attainment-latest-2025.thumb.webp"
+    },
+    {
+      "ordinal": 34,
+      "stem": "resources-human-bachelors-attainment-latest-2024",
+      "title": "Completed ISCED 6 or higher, age 25+",
+      "note": "latest observation from 2018–2024; %. At least bachelor's or equivalent; short-cycle ISCED 5 is excluded and every released observation is from 2018 or later. Country-level statistics are not Setouchi-specific measurements. Distinct named izzi-hue colours; fully opaque data fills. Grey means missing.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/resources-human-bachelors-attainment-latest-2024-authagraph-44-19.052559.png",
+      "source_sha256": "31308f3ebb9d159819d528e254b34e12cb8bf17cb77a8a095728b7942520b7fa",
+      "source_bytes": 2199811,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/resources-human-bachelors-attainment-latest-2024.webp",
+      "sha256": "15ccf4d46f9a034ead1eef3b9a17463679a158347a56892f3b94566f060ea030",
+      "bytes": 415510,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/resources-human-bachelors-attainment-latest-2024.thumb.webp",
+        "sha256": "4e9334507ec0fb2302ee437f57c07d8a5569025b34b4930422e6df036e54fedd",
+        "bytes": 85978,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-resources-human-bachelors-attainment-latest-2024",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-human-bachelors-attainment-latest-2024.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-human-bachelors-attainment-latest-2024.thumb.webp"
+    },
+    {
+      "ordinal": 34,
+      "stem": "resources-human-bachelors-attainment-latest-2024",
+      "title": "Completed ISCED 6 or higher, age 25+",
+      "note": "latest observation from 2018–2024; %. At least bachelor's or equivalent; short-cycle ISCED 5 is excluded and every released observation is from 2018 or later. Country-level statistics are not Setouchi-specific measurements. Distinct named izzi-hue colours; fully opaque data fills. Grey means missing.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/resources-human-bachelors-attainment-latest-2024-authagraph-44-19.052559-japan.png",
+      "source_sha256": "0182745cb8528e3026ffd44bb87a1be70db5fab4e0d6daa7834e6b2688e6ad62",
+      "source_bytes": 1690630,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/resources-human-bachelors-attainment-latest-2024.webp",
+      "sha256": "2699368fa3ba4144ebb7b91162de154d5c86da788a5be8ce83e868d61b5d4922",
+      "bytes": 263854,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/resources-human-bachelors-attainment-latest-2024.thumb.webp",
+        "sha256": "0e3af50803ba096492b6153a8ee118d4b0e530b9d3678765ea812f72843db514",
+        "bytes": 40510,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-resources-human-bachelors-attainment-latest-2024",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-human-bachelors-attainment-latest-2024.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-human-bachelors-attainment-latest-2024.thumb.webp"
+    },
+    {
+      "ordinal": 35,
+      "stem": "resources-human-resident-patent-applications-per-million-2019-2021",
+      "title": "Resident patent applications",
+      "note": "2019–2021 mean; 2019–2021 applications per million person-years. A matched three-year resident-application rate; applications are not grants, invention quality, or current 2026 activity. Country-level statistics are not Setouchi-specific measurements. Distinct named izzi-hue colours; fully opaque data fills. Grey means missing.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/resources-human-resident-patent-applications-per-million-2019-2021-authagraph-44-19.052559.png",
+      "source_sha256": "02d59e4394dd49e66ade39809ddfdc772c17a6b76b8b3ef92c927d7c15451cf0",
+      "source_bytes": 2256125,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/resources-human-resident-patent-applications-per-million-2019-2021.webp",
+      "sha256": "8e65400f292ec99365bfc51ae4ca45b63ccc1f6da453bd49a067f9c5cde0df82",
+      "bytes": 451244,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/resources-human-resident-patent-applications-per-million-2019-2021.thumb.webp",
+        "sha256": "e6c5cd424445166091382d83992aec64a30529b302da1454e44935edfbb7eec3",
+        "bytes": 93558,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-resources-human-resident-patent-applications-per-million-2019-2021",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-human-resident-patent-applications-per-million-2019-2021.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/resources-human-resident-patent-applications-per-million-2019-2021.thumb.webp"
+    },
+    {
+      "ordinal": 35,
+      "stem": "resources-human-resident-patent-applications-per-million-2019-2021",
+      "title": "Resident patent applications",
+      "note": "2019–2021 mean; 2019–2021 applications per million person-years. A matched three-year resident-application rate; applications are not grants, invention quality, or current 2026 activity. Country-level statistics are not Setouchi-specific measurements. Distinct named izzi-hue colours; fully opaque data fills. Grey means missing.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/resources-human-resident-patent-applications-per-million-2019-2021-authagraph-44-19.052559-japan.png",
+      "source_sha256": "56346fdd236f4746752842620c4d3588269eb84c52e3389c88e879cc82fdb29d",
+      "source_bytes": 1738702,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/resources-human-resident-patent-applications-per-million-2019-2021.webp",
+      "sha256": "6c8ee0555827088d3193c19298fa3816d59dc746f63b38e395fc1e339b62b22f",
+      "bytes": 277056,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/resources-human-resident-patent-applications-per-million-2019-2021.thumb.webp",
+        "sha256": "9eae7627782d8d7cf8bc23515c3d23e7b80ef94e04f7aeeb8f66e18a70a46840",
+        "bytes": 44778,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-resources-human-resident-patent-applications-per-million-2019-2021",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-human-resident-patent-applications-per-million-2019-2021.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/resources-human-resident-patent-applications-per-million-2019-2021.thumb.webp"
+    },
+    {
+      "ordinal": 36,
+      "stem": "petroleum-eia-liquids-2025",
+      "title": "Petroleum and other liquid fuels / 2025",
+      "note": "EIA Short-Term Energy Outlook, October 2026, tables 3b/3c. Annual historical/estimated production, million barrels/day. Includes crude, condensate, NGLs, other liquids and processing gain. 36 country observations; missing is not zero. Japan has no separate production entry in these tables.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/petroleum-eia-liquids-2025-authagraph-44-19.052559.png",
+      "source_sha256": "5be9e58b84f3dc87b8ada4093d95ada243853b4a48af3faf65d9c485b5eb26bd",
+      "source_bytes": 1817231,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/petroleum-eia-liquids-2025.webp",
+      "sha256": "5463cd177472fe77d276fcf4186c60ebd930cb9f14c54680d79c7dc79aaf26fa",
+      "bytes": 365186,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/petroleum-eia-liquids-2025.thumb.webp",
+        "sha256": "d7de6d9d93b9551036b7c35f66b7ddd1e177ab67abc92398ddb02f93ca6ccd35",
+        "bytes": 77468,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-petroleum-eia-liquids-2025",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/petroleum-eia-liquids-2025.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/petroleum-eia-liquids-2025.thumb.webp"
+    },
+    {
+      "ordinal": 36,
+      "stem": "petroleum-eia-liquids-2025",
+      "title": "Petroleum and other liquid fuels / 2025",
+      "note": "EIA Short-Term Energy Outlook, October 2026, tables 3b/3c. Annual historical/estimated production, million barrels/day. Includes crude, condensate, NGLs, other liquids and processing gain. 36 country observations; missing is not zero. Japan has no separate production entry in these tables.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/petroleum-eia-liquids-2025-authagraph-44-19.052559-japan.png",
+      "source_sha256": "592fe6a6ef0beee159a8041cc1a08294e63c1d1673f80a8a7441b94782c6d3f3",
+      "source_bytes": 1556382,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/petroleum-eia-liquids-2025.webp",
+      "sha256": "1cd1816d2912973fab3def49342e91f9b2474a9b97bbe5d1b9e9f8d15c2372f6",
+      "bytes": 224370,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/petroleum-eia-liquids-2025.thumb.webp",
+        "sha256": "393441e622e2e6070a21a69feb106d511c3169078c07de26fd36eb0b8ad8e9f6",
+        "bytes": 36312,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-petroleum-eia-liquids-2025",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/petroleum-eia-liquids-2025.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/petroleum-eia-liquids-2025.thumb.webp"
+    },
+    {
+      "ordinal": 37,
+      "stem": "petroleum-opec-liquids-projection-2030",
+      "title": "OPEC total liquids / 2030 projection",
+      "note": "OPEC World Oil Outlook 2026, tables 4.1 and 8.7 and figures 4.7–4.11. Total liquids supply projection for 14 individually reported countries. Other countries remain missing; DoC and regional totals are not allocated. Source components and cell addresses are retained. Japan has no separate total-liquids projection in these series.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/petroleum-opec-liquids-projection-2030-authagraph-44-19.052559.png",
+      "source_sha256": "ba6cd782e0246022c9c28f7598ee20d01f1c8b5f588472ed8fa602b63cc547fa",
+      "source_bytes": 1636245,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/petroleum-opec-liquids-projection-2030.webp",
+      "sha256": "e8185ae8a02041e42a3ce2efa8b20d73b1942e95d3a086be00a2c38f4453e5d3",
+      "bytes": 303512,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/petroleum-opec-liquids-projection-2030.thumb.webp",
+        "sha256": "c6231b1a41d0242df4e3f792709fd40f21327933239e4998f06bba7eabd8b698",
+        "bytes": 64010,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-petroleum-opec-liquids-projection-2030",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/petroleum-opec-liquids-projection-2030.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/petroleum-opec-liquids-projection-2030.thumb.webp"
+    },
+    {
+      "ordinal": 37,
+      "stem": "petroleum-opec-liquids-projection-2030",
+      "title": "OPEC total liquids / 2030 projection",
+      "note": "OPEC World Oil Outlook 2026, tables 4.1 and 8.7 and figures 4.7–4.11. Total liquids supply projection for 14 individually reported countries. Other countries remain missing; DoC and regional totals are not allocated. Source components and cell addresses are retained. Japan has no separate total-liquids projection in these series.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/petroleum-opec-liquids-projection-2030-authagraph-44-19.052559-japan.png",
+      "source_sha256": "a49dcfcec17e2c310634cb497e68d4d6712c4ce3d4586a770eda4793b95fdffa",
+      "source_bytes": 1547691,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/petroleum-opec-liquids-projection-2030.webp",
+      "sha256": "b548fcfa7bc1655778e55854eb2f7718c08df90a8605d02cff61a979d95fffba",
+      "bytes": 224760,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/petroleum-opec-liquids-projection-2030.thumb.webp",
+        "sha256": "14e04a28e95f0bd9ba7e861deda5e10c364a7d928bf01f62ed3958fa454d27ba",
+        "bytes": 36804,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-petroleum-opec-liquids-projection-2030",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/petroleum-opec-liquids-projection-2030.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/petroleum-opec-liquids-projection-2030.thumb.webp"
+    },
+    {
+      "ordinal": 38,
+      "stem": "petroleum-opec-country-coverage-2026",
+      "title": "World Oil Outlook / country coverage",
+      "note": "OPEC World Oil Outlook 2026: all 14 supplied workbooks and 202 worksheets retained. Country figures are indexed separately from regional definitions. Grey countries have no separately indexed country figure; no regional totals are allocated to countries. This plate measures source coverage, not oil production.",
+      "scope": "world",
+      "source_path": "output/setouchi-triennale-2028/plates/world/png/petroleum-opec-country-coverage-2026-authagraph-44-19.052559.png",
+      "source_sha256": "3c3d9fe4b2d18f7fc2fc0dc53541e87a2a58f0d892926bb83d7d662431ae3668",
+      "source_bytes": 1743324,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "world/petroleum-opec-country-coverage-2026.webp",
+      "sha256": "8f14172f4e0d57b0fab3df8f0ecb9daea3a65d22a9bfe43d2af754f6240d3d72",
+      "bytes": 318242,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "world/petroleum-opec-country-coverage-2026.thumb.webp",
+        "sha256": "0254a0bcac3f509fc7f7f3e16e8a1cf6b72fcc7fba77e46c2364afc14fcced8b",
+        "bytes": 64716,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-world-petroleum-opec-country-coverage-2026",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/world/petroleum-opec-country-coverage-2026.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/world/petroleum-opec-country-coverage-2026.thumb.webp"
+    },
+    {
+      "ordinal": 38,
+      "stem": "petroleum-opec-country-coverage-2026",
+      "title": "World Oil Outlook / country coverage",
+      "note": "OPEC World Oil Outlook 2026: all 14 supplied workbooks and 202 worksheets retained. Country figures are indexed separately from regional definitions. Grey countries have no separately indexed country figure; no regional totals are allocated to countries. This plate measures source coverage, not oil production.",
+      "scope": "japan",
+      "source_path": "output/setouchi-triennale-2028/plates/japan/png/petroleum-opec-country-coverage-2026-authagraph-44-19.052559-japan.png",
+      "source_sha256": "00ec3b693e537d4b0b74d32d0e5db33c061341663eea9ffb77640cc2a96364ad",
+      "source_bytes": 1577851,
+      "source_dimensions": [
+        13200,
+        5716
+      ],
+      "file": "japan/petroleum-opec-country-coverage-2026.webp",
+      "sha256": "63e8cd33ba77358555033f1dd6718448a2d72bf4030f2509d747221dd47a4b06",
+      "bytes": 226234,
+      "dimensions": [
+        3840,
+        1663
+      ],
+      "thumbnail": {
+        "file": "japan/petroleum-opec-country-coverage-2026.thumb.webp",
+        "sha256": "f9083fe8745a2324afb6a8f5a29a39292bb72d48ea02ca2605527024b9bbca92",
+        "bytes": 35604,
+        "dimensions": [
+          960,
+          416
+        ]
+      },
+      "artifact_id": "cartofreako-setouchi-2028-20261030-japan-petroleum-opec-country-coverage-2026",
+      "published_path": "review/media/cartofreako-setouchi-2028-20261030/japan/petroleum-opec-country-coverage-2026.webp",
+      "thumbnail_path": "review/media/cartofreako-setouchi-2028-20261030/japan/petroleum-opec-country-coverage-2026.thumb.webp"
+    }
+  ],
+  "collection_id": "cartofreako-setouchi-2028-20261030",
+  "published_at": "2026-10-30T18:10:33.875Z"
+}

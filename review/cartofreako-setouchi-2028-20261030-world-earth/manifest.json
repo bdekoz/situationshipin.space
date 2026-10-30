@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-setouchi-2028-20261030-world-earth",
+  "artifact_id": "cartofreako-setouchi-2028-20261030-world-earth",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/setouchi-triennale-2028/plates/world/png/earth-authagraph-44-19.052559.png",
+    "sha256": "0f52c99de21a9408ddb0863da2a2cdd6e76c5a0fe6f1cf16ca2fd058ed052689",
+    "bytes": 2731187,
+    "dimensions": [
+      13200,
+      5716
+    ],
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

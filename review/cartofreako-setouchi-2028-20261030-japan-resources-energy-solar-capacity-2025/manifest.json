@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-setouchi-2028-20261030-japan-resources-energy-solar-capacity-2025",
+  "artifact_id": "cartofreako-setouchi-2028-20261030-japan-resources-energy-solar-capacity-2025",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/setouchi-triennale-2028/plates/japan/png/resources-energy-solar-capacity-2025-authagraph-44-19.052559-japan.png",
+    "sha256": "2a9dd38fde083b320ba4719075415032781a71deabd8037ce4d2549bcb2b9fd9",
+    "bytes": 1660274,
+    "dimensions": [
+      13200,
+      5716
+    ],
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

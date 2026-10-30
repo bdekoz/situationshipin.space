@@ -254,7 +254,7 @@ node scripts/check-review-site.mjs
 Use `--volume 1`, `2`, or `3`; the default is Book 1. Publishing one volume
 preserves the other books and their draft identities. The publisher writes
 this checkout; commit and push to deploy. Supporting assets are included in
-the same 192 MiB site payload limit as catalog images, with a 16 MiB per-file
+the same 256 MiB site payload limit as catalog images, with a 16 MiB per-file
 limit. In Izzi, `scripts/apply-hamonshu-categories.py` selects the book from the
 returned JSON and previews folder moves; `--apply` performs the selected review.
 It rejects a mismatched book or crop plan, even with a directory override.
@@ -329,3 +329,34 @@ dimensions, and SHA-256. Full episode media requires a separate storage, cost,
 privacy, and publication decision.
 
 Technical publication does not imply human acceptance or baseline promotion.
+
+
+## Cartofreako / Setouchi 2028 plates
+
+The [world/Japan review gallery](https://situationshipin.space/review/cartofreako-setouchi-2028-20261030/)
+contains 38 subjects and 76 plates from the latest complete Cartofreako delivery.
+Each subject pairs a world plate with its Japan companion, including separate
+1080p/4K and 720p/SD native swarm plates. Review images are 3840-pixel lossless
+WebP derivatives of checksum-verified 300 dpi PNG masters. The gallery uses
+960-pixel thumbnails, search, geographic filters, individual review pages and
+one download for collection notes plus all saved plate feedback.
+
+Rebuild from a complete local delivery (Python, Pillow and Node required):
+
+```sh
+python3 scripts/prepare-cartofreako-plates.py \
+  --cartofreako-root /home/bkoz/src/cartofreako \
+  --output /tmp/cartofreako-review-packet
+node scripts/publish-cartofreako-plates.mjs \
+  --approve PROJECT-APPROVED --prepared /tmp/cartofreako-review-packet \
+  --collection cartofreako-setouchi-2028-20261030
+node scripts/update-build-manifest.mjs
+node scripts/check-review-site.mjs
+```
+
+Use a new dated collection ID for a new review round. The publisher registers
+one collection in Proofs, with all 76 individual pages linked inside it. Source
+repository/commit, delivery-manifest hash, original PNG hashes and published
+image hashes travel with the packet. Full-size print masters stay in the
+Cartofreako delivery. The site payload limit is 256 MiB, raised from 192 MiB
+for this requested collection; the 16 MiB per-object limit is unchanged.

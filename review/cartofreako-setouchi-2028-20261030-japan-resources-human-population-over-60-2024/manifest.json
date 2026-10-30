@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-setouchi-2028-20261030-japan-resources-human-population-over-60-2024",
+  "artifact_id": "cartofreako-setouchi-2028-20261030-japan-resources-human-population-over-60-2024",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/setouchi-triennale-2028/plates/japan/png/resources-human-population-over-60-2024-authagraph-44-19.052559-japan.png",
+    "sha256": "9d07e2512a1aa1642469abe8a9361d5b772df6ddd76461ccc4ae47a72c0cf8b0",
+    "bytes": 1595780,
+    "dimensions": [
+      13200,
+      5716
+    ],
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-setouchi-2028-20261030-world-cloud-atmosphere",
+  "artifact_id": "cartofreako-setouchi-2028-20261030-world-cloud-atmosphere",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/setouchi-triennale-2028/plates/world/png/cloud-atmosphere-authagraph-44-19.052559.png",
+    "sha256": "930c22efb70777910af3eb9b1f1cee607597907cf43dcd5320a48cbf08f8f637",
+    "bytes": 38157984,
+    "dimensions": [
+      13200,
+      5716
+    ],
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-setouchi-2028-20261030-world-resources-energy-wind-capacity-2025",
+  "artifact_id": "cartofreako-setouchi-2028-20261030-world-resources-energy-wind-capacity-2025",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/setouchi-triennale-2028/plates/world/png/resources-energy-wind-capacity-2025-authagraph-44-19.052559.png",
+    "sha256": "5361484cfd8c4fbf6e9d6317e7b26543986b7af7b0a7843da986c6f5af07a29b",
+    "bytes": 2269840,
+    "dimensions": [
+      13200,
+      5716
+    ],
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

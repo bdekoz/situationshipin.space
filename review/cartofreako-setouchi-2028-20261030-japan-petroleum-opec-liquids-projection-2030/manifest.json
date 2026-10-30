@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-setouchi-2028-20261030-japan-petroleum-opec-liquids-projection-2030",
+  "artifact_id": "cartofreako-setouchi-2028-20261030-japan-petroleum-opec-liquids-projection-2030",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/setouchi-triennale-2028/plates/japan/png/petroleum-opec-liquids-projection-2030-authagraph-44-19.052559-japan.png",
+    "sha256": "a49dcfcec17e2c310634cb497e68d4d6712c4ce3d4586a770eda4793b95fdffa",
+    "bytes": 1547691,
+    "dimensions": [
+      13200,
+      5716
+    ],
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

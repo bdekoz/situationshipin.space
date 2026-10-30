@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "portal_build": "izzi-review-2026-08-11.7",
-  "generated_at": "2026-10-28T04:26:47.419Z",
+  "generated_at": "2026-10-30T18:13:08.431Z",
   "portal_repository": "bdekoz/situationshipin.space",
   "portal_source_commit": "219a9b7f0891998c1525c94fa15b43c490b5d79f",
   "izzi_repository": "bdekoz/izzi",
@@ -10,13 +10,13 @@
   "human_review_state": "UNREVIEWED",
   "baseline_state": "NOT-PROMOTED",
   "training_conversion_transfer_state": "NOT-SHARED",
-  "artifact_count": 863,
+  "artifact_count": 864,
   "review_category_counts": {
-    "proofs": 53,
+    "proofs": 54,
     "style_processing": 801,
     "planning": 9
   },
-  "artifact_payload_bytes": 200142647,
+  "artifact_payload_bytes": 263241234,
   "provider_staging_bytes": 0,
   "provider_staging_active_count": 0,
   "provider_staging_manifest_sha256": "946e9156b2de13886912150a7e7e53b9d54561d674934f69239145961658cb09",
@@ -35,7 +35,7 @@
     "tokyo-psychedelic": 30
   },
   "maximum_artifact_bytes": 16777216,
-  "maximum_payload_bytes": 201326592,
+  "maximum_payload_bytes": 268435456,
   "excluded_media": [
     "mkv",
     "mp4",
@@ -122,19 +122,19 @@
     },
     {
       "path": "data/review-items.json",
-      "sha256": "9290edc03a36c50082b17ccff94e65c746f95f9086023e6eb62e932b8e67d93f"
+      "sha256": "bece273de6769aed862309286a324b9e1d9ae11827acd909ef1574dce35f7d87"
     },
     {
       "path": "scripts/check-review-site.mjs",
-      "sha256": "4da38cc71a26797011361eedd0e7bf3df90a30baf091fc30223559da52a47d69"
+      "sha256": "f132378597757d02296e4f776878351218fec56822f11d4a15455785f02c02d7"
     },
     {
       "path": "scripts/update-build-manifest.mjs",
-      "sha256": "f5e4b8ee78c8dac2092e8d2c88645046c5c77dd87b14f482052abeedccde85a7"
+      "sha256": "9ce5ee8e184efd2b704517e442e8710b18b759a16ad23466e865bff659398449"
     },
     {
       "path": "README.md",
-      "sha256": "744af55e5e580af9454c6aef22c6d0fed30589aed6d99b4b635f3a7568418d09"
+      "sha256": "2aea7c300976c7ff9abf4c9adfeae32716db51a781699e88df16aff0fd626c90"
     },
     {
       "path": "_config.yml",
@@ -202,7 +202,23 @@
     },
     {
       "path": "scripts/review-page.mjs",
-      "sha256": "9ea7b91b926bbf5eb7775d6c6e927d5204d7f2d125ee02434bdac99a25019913"
+      "sha256": "38d8df80cba481e42ed10519e34287d8c4de8a0e787bcbef48e795b533b027c0"
+    },
+    {
+      "path": "scripts/prepare-cartofreako-plates.py",
+      "sha256": "7b9e08757bdaf441904a3405f5bb483b6cafa9887cf0dfba08b5ad2cd756ebe6"
+    },
+    {
+      "path": "scripts/publish-cartofreako-plates.mjs",
+      "sha256": "d1c05412978d1f82e6ea404fd86ea83b060db254f6994091d0e6bb2a62ef7ad2"
+    },
+    {
+      "path": "assets/css/cartofreako-plates.css",
+      "sha256": "53283972aff2fc3261deb8cb571ee6d221be1c4b234f9e69de037b0379c2f1bf"
+    },
+    {
+      "path": "assets/js/cartofreako-plates.js",
+      "sha256": "eba0fb0c5eb90a04aafd81a64c2fed6c5118369f1c6e045f52ab88cbb3f6f5d9"
     },
     {
       "path": ".github/workflows/jekyll-gh-pages.yml",
@@ -210,7 +226,7 @@
     }
   ],
   "artifact_inventory": "data/review-items.json",
-  "catalog_sha256": "9290edc03a36c50082b17ccff94e65c746f95f9086023e6eb62e932b8e67d93f",
+  "catalog_sha256": "bece273de6769aed862309286a324b9e1d9ae11827acd909ef1574dce35f7d87",
   "notes": [
     "The catalog binds every published derivative to an Izzi source path and SHA-256.",
     "Active provider inputs require archive receipts, owner/job attribution and expiry; their bytes count against the same payload budget.",

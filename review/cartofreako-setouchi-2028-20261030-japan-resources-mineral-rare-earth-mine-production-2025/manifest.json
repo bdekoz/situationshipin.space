@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-setouchi-2028-20261030-japan-resources-mineral-rare-earth-mine-production-2025",
+  "artifact_id": "cartofreako-setouchi-2028-20261030-japan-resources-mineral-rare-earth-mine-production-2025",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/setouchi-triennale-2028/plates/japan/png/resources-mineral-rare-earth-mine-production-2025-authagraph-44-19.052559-japan.png",
+    "sha256": "aa1f2c623c96441d2fc2541e62c78100eb66f70930c67dcd692abc575a19b03f",
+    "bytes": 1653926,
+    "dimensions": [
+      13200,
+      5716
+    ],
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

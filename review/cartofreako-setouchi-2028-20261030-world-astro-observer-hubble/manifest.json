@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-setouchi-2028-20261030-world-astro-observer-hubble",
+  "artifact_id": "cartofreako-setouchi-2028-20261030-world-astro-observer-hubble",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/setouchi-triennale-2028/plates/world/png/astro-observer-hubble-authagraph-44-19.052559.png",
+    "sha256": "5809b50e1f33257a4dc9c181b4ce5fc7d4bd6066d7257e5125771211a6422595",
+    "bytes": 1859373,
+    "dimensions": [
+      13200,
+      5716
+    ],
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

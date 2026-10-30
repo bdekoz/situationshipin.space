@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-setouchi-2028-20261030-world-resources-human-population-over-60-2024",
+  "artifact_id": "cartofreako-setouchi-2028-20261030-world-resources-human-population-over-60-2024",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/setouchi-triennale-2028/plates/world/png/resources-human-population-over-60-2024-authagraph-44-19.052559.png",
+    "sha256": "6a55a8cac6f6708d4faec65bb3779f2d45ed5e257052e990859d9e764d37acd0",
+    "bytes": 2188226,
+    "dimensions": [
+      13200,
+      5716
+    ],
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

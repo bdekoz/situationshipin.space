@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-setouchi-2028-20261030-japan-resources-flora-forest-area-percent-2024",
+  "artifact_id": "cartofreako-setouchi-2028-20261030-japan-resources-flora-forest-area-percent-2024",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/setouchi-triennale-2028/plates/japan/png/resources-flora-forest-area-percent-2024-authagraph-44-19.052559-japan.png",
+    "sha256": "1916c92fdc5578f431758a10c3e6677f70ad6415bb2acbec34951a55246c08fe",
+    "bytes": 1617099,
+    "dimensions": [
+      13200,
+      5716
+    ],
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

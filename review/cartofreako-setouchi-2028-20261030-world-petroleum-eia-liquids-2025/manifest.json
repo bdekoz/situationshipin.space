@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-setouchi-2028-20261030-world-petroleum-eia-liquids-2025",
+  "artifact_id": "cartofreako-setouchi-2028-20261030-world-petroleum-eia-liquids-2025",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/setouchi-triennale-2028/plates/world/png/petroleum-eia-liquids-2025-authagraph-44-19.052559.png",
+    "sha256": "5be9e58b84f3dc87b8ada4093d95ada243853b4a48af3faf65d9c485b5eb26bd",
+    "bytes": 1817231,
+    "dimensions": [
+      13200,
+      5716
+    ],
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

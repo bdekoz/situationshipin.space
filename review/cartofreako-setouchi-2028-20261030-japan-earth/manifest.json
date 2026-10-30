@@ -1,0 +1,21 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-setouchi-2028-20261030-japan-earth",
+  "artifact_id": "cartofreako-setouchi-2028-20261030-japan-earth",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/setouchi-triennale-2028/plates/japan/png/earth-authagraph-44-19.052559-japan.png",
+    "sha256": "0be7d041a4e62f1bcf8d68dc1627df9db7779f7892d164383b53e0cb04c18d62",
+    "bytes": 1385322,
+    "dimensions": [
+      13200,
+      5716
+    ],
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}
