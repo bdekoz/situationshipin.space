@@ -25,6 +25,7 @@ const codePaths = [
   "scripts/publish-hlt-stage4.py",
   "scripts/review-publication-approval.mjs",
   "scripts/review-publication-approval.test.mjs",
+  "scripts/review-catalog.test.mjs",
   "scripts/provider-staging.mjs",
   "scripts/provider-staging.test.mjs",
   "scripts/stage-provider-input.mjs",

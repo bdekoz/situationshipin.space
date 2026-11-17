@@ -88,7 +88,7 @@ function cacheElements() {
     "previous-page", "next-page", "page-status", "category-proofs",
     "category-style-processing", "category-planning", "category-proofs-count",
     "category-style-processing-count", "category-planning-count", "results-eyebrow", "results-title",
-    "results-description", "issue-scope-description"
+    "results-description", "issue-scope-description", "show-archived"
   ];
   ids.forEach((id) => {
     elements[toCamel(id)] = document.getElementById(id);
@@ -185,7 +185,7 @@ function validateCatalog(catalog) {
       "artifact_id", "title", "family", "generation_class", "published_path",
       "sha256", "bytes", "alt"
     ];
-    if (item.media_kind !== "plan" && item.media_kind !== "index") {
+    if (!["plan", "index", "audio"].includes(item.media_kind)) {
       required.push("width", "height");
     }
     const missing = required.filter((key) => item[key] === undefined || item[key] === "");
@@ -325,7 +325,8 @@ function resetOptions(select, label) {
 function categoryItems() {
   return state.catalog.items.filter((item) =>
     item.review_category === state.category
-    && !(state.category === "proofs" && item.generation_state === "STALE")
+    && !(["proofs", "planning"].includes(state.category)
+      && item.generation_state === "STALE" && !elements.showArchived?.checked)
   );
 }
 
@@ -385,7 +386,7 @@ function setCategory(category) {
     }
     elements.resultsTitle.textContent = "Plan review";
     elements.resultsDescription.textContent =
-      "Review vertical production plans as the first reviewable artifact; a formal-stage KEEP unlocks the draft loop.";
+      "Review current plans and production records. Include earlier plans to inspect superseded material.";
   } else {
     if (elements.resultsEyebrow) {
       elements.resultsEyebrow.textContent = "";
@@ -452,7 +453,7 @@ function filteredItems() {
       const review = state.feedback.reviews[item.artifact_id];
       const currentDecision = review && review.decision ? review.decision : "UNREVIEWED";
       const haystack = [
-        item.title, item.description, item.family, item.generation_class,
+        item.artifact_id, item.title, item.description, item.media_kind, item.family, item.generation_class,
         item.feedback_round, item.source_group, item.source_path
       ].join(" ").toLowerCase();
       return (!search || haystack.includes(search))
@@ -463,6 +464,18 @@ function filteredItems() {
     .sort((left, right) =>
       String(right.added_at || "").localeCompare(String(left.added_at || ""))
     );
+}
+
+function mediaAffordance(item) {
+  if (item.media_kind === "plan") return { label: "plan", action: "Open plan review" };
+  if (item.media_kind === "index") return { label: "index", action: "Open review index" };
+  if (item.media_kind === "audio" || /\.mp3$/i.test(item.published_path)) {
+    return { label: "audio", action: "Listen to audio review" };
+  }
+  if (/\.mp4$/i.test(item.published_path)) {
+    return { label: "video", action: "Watch video review" };
+  }
+  return null;
 }
 
 function renderLatestReview(items) {
@@ -476,10 +489,9 @@ function renderLatestReview(items) {
   }
   const id = latest.artifact_id.replace(/[^a-zA-Z0-9._-]+/g, "-");
   const media = latest.media_kind === "video" ? "▶ " : "";
-  const mediaHtml = latest.media_kind === "plan"
-    ? `<span class="plan-affordance" aria-hidden="true">[plan]</span>`
-    : latest.media_kind === "index"
-      ? `<span class="plan-affordance" aria-hidden="true">[index]</span>`
+  const affordance = mediaAffordance(latest);
+  const mediaHtml = affordance
+    ? `<span class="plan-affordance" aria-hidden="true">[${affordance.label}]</span>`
     : `<img src="${latest.published_path}" alt="" width="120">`;
   elements.latestReview.hidden = false;
   elements.latestReview.innerHTML =
@@ -516,9 +528,9 @@ function renderCard(item) {
     });
   }
 
-  const documentCard = item.media_kind === "plan" || item.media_kind === "index";
-  if (documentCard) {
-    const action = item.media_kind === "plan" ? "Open plan review" : "Open generation index";
+  const affordance = mediaAffordance(item);
+  if (affordance) {
+    const action = affordance.action;
     link.setAttribute("aria-label", `${action}: ${item.title}`);
     card.querySelector(".open-label").textContent = action;
     const image = card.querySelector(".artifact-image");
@@ -532,7 +544,7 @@ function renderCard(item) {
       badge.setAttribute("aria-hidden", "true");
       link.insertBefore(badge, link.firstChild);
     }
-    badge.textContent = item.media_kind === "plan" ? "[plan]" : "[index]";
+    badge.textContent = `[${affordance.label}]`;
   } else {
     const image = card.querySelector(".artifact-image");
     image.src = item.published_path;

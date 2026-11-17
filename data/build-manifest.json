@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "portal_build": "izzi-review-2026-08-11.7",
-  "generated_at": "2026-10-30T23:14:57.168Z",
+  "generated_at": "2026-11-17T19:01:02.030Z",
   "portal_repository": "bdekoz/situationshipin.space",
   "portal_source_commit": "219a9b7f0891998c1525c94fa15b43c490b5d79f",
   "izzi_repository": "bdekoz/izzi",
@@ -46,23 +46,23 @@
   "code_files": [
     {
       "path": "index.html",
-      "sha256": "25c84bf0b1abaa2f9715477e824db46b417b743902e08909af33ae574da1bdd1"
+      "sha256": "036debb9e3d27f83da117db28d6fcc28cc35fa1bde304ab5bc666135cfa0625a"
     },
     {
       "path": "location.html",
-      "sha256": "20b3c6c95b8d3ef26d36f41e78f2984d72578a0d5953a1f38c60b355367c7cd4"
+      "sha256": "80ff1f64de741cc454ed4fb404b089abda2981dd95131580f2e26fd012052412"
     },
     {
       "path": "proofs.html",
-      "sha256": "ca82b10b464c3ae470c05644d639c999bdcc1cce642cfe9b63016fff87c1261d"
+      "sha256": "9eff94e4608fa847723cbf626ea06fa494da192ee772d47ad8080e65c4e5af48"
     },
     {
       "path": "style.html",
-      "sha256": "9d6e9f0ddd04a2d73ee3d392e7b2281fd37bdc78cbe0cbea0b101f0ad04f736a"
+      "sha256": "8db63a35feb2f603848582ab145e82708b36db713310b3a155fd6cb649fd484c"
     },
     {
       "path": "plans.html",
-      "sha256": "12374ccfa65bc496077d3e786d9e0de642a86ae0d13add30dadfe02231b17d53"
+      "sha256": "9e7a112349138c72c9723ddf138395403b7c380c67353b439cedae323a022685"
     },
     {
       "path": "assets/css/review.css",
@@ -70,7 +70,7 @@
     },
     {
       "path": "assets/js/review.js",
-      "sha256": "083a9c9d94f3bd2be8545a0832d557f5232ef16e18b5a43d7b0de9109d04395d"
+      "sha256": "870ae8bbb3ebed1779d41e147502a8f625eee13a20ca4a165a165ad4fbe33630"
     },
     {
       "path": "assets/css/hamonshu-crops.css",
@@ -105,6 +105,10 @@
       "sha256": "589bf96e0196f9b1525ac68efb3a4810a91776059ca8dae46ccc374c31e9c4b0"
     },
     {
+      "path": "scripts/review-catalog.test.mjs",
+      "sha256": "b5eb4c4e63156ddab50a386b7d79d979c7d114faa5421786de30c16ddba89fe7"
+    },
+    {
       "path": "scripts/provider-staging.mjs",
       "sha256": "fdd39e5313bceb02cfe3e497b96cc0677c75512a8b37d9668f9883235fc3651e"
     },
@@ -130,11 +134,11 @@
     },
     {
       "path": "scripts/update-build-manifest.mjs",
-      "sha256": "034637cc79186ea6859a7c1c881bcbef3f1f4b0bbb4bdff7287171de1632ef05"
+      "sha256": "d15dec25548bb810e2d60f1ce42793acee4d2ab1f456a5f25ebab67c2df3400a"
     },
     {
       "path": "README.md",
-      "sha256": "5952e89e430c3458e67e6b48ac10502c3863e815071686e219d72a74f18376e0"
+      "sha256": "0be9a63368f51df345d43ff41310bbbdc0d8a9f2d467c6b310904725fb23b923"
     },
     {
       "path": "_config.yml",
@@ -222,7 +226,7 @@
     },
     {
       "path": ".github/workflows/jekyll-gh-pages.yml",
-      "sha256": "781d4dd1027bddbb2cefefb57f9362962f47c9dbbd50bd6d581ddb39d7a9025c"
+      "sha256": "ce93f44376d613b8a929c89cb4d7ac87ff943552a1b59fdb6d9dbec9938d3e17"
     }
   ],
   "artifact_inventory": "data/review-items.json",

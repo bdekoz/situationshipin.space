@@ -28,8 +28,22 @@ Then open `http://127.0.0.1:8080/`.
 Validate the bounded public payload locally:
 
 ```sh
+node --test scripts/*.test.mjs
 node scripts/check-review-site.mjs
 ```
+
+The browser-catalog tests run the real catalog through the same validator used
+by Plans, Proofs and Style. They cover audio without image dimensions, direct
+video/audio previews, visual dimensions, duplicate identities and archived
+plans. Keep this check in the deployment workflow: the static payload audit
+alone does not establish that the browser can render a new media type.
+
+Use the homepage to choose a review surface. Featured workflow diagrams and
+the published Here Lies Trouble video are on Proofs. Plans leads with the
+current production status and preserves earlier records through its archive
+control. The navigation on each main surface returns to Home or another view.
+Project proposals prepare an issue for human triage; there is no automatic
+issue-to-production workflow in this repository.
 
 After intentionally changing the catalog or portal code, refresh the measured
 build receipt and rerun the checker:
@@ -96,10 +110,13 @@ The three Markdown downloads preserve their source bytes; readable web
 versions resolve published links and label unavailable working files as
 local archive references.
 
-This is the complete rendered Stage 4 sequence, covering turns 1–9. The
-full episode audio is 52:35.375; the remaining episode picture has not been
-produced. Terrain is accepted; reciprocal gaze and speaking mouths remain
-unfinished. Publication for review does not mark these requirements accepted.
+This published sequence covers turns 1–9 and retains the October 26 provider
+review status: terrain accepted, reciprocal gaze and speaking mouths unfinished.
+The later local production delivered a complete 52:35.375 film on November 1;
+its full-length human review remains open. See the
+[current local-production guide](https://bdekoz.github.io/izzi.public/docs/visual_workflow/tool_moss_local.html).
+This site hosts the earlier 1:43 video and the complete audio listening proxy,
+not the later full-length local movie. Publication does not imply creative acceptance.
 
 The browser video retains all 2,472 frames at 24 fps, resized to 720×1280,
 with the original AAC packets copied unchanged. Its 14.8 MiB size fits the

@@ -17,9 +17,29 @@
       <div class="wordmark" aria-label="situationship in space">
 	<span aria-hidden="true">-[{0-0}]-</span><span>situationshipin.space</span>
       </div>
+      <nav aria-label="Review sections"><a href="index.html">Home</a> · <a href="proofs.html">Proofs</a> · <a href="plans.html">Plans</a> · <a href="location.html">Locations</a> · <a href="style.html">Style references</a></nav>
     </header>
 
     <main id="review-catalog">
+      <section class="review-choices" aria-labelledby="current-work-title">
+        <div class="section-heading"><h2 id="current-work-title">Current work</h2></div>
+        <p class="results-description">Here Lies Trouble now has a complete 52:35 local film, technically verified with full-length human review still open. The public video below is the earlier 1:43 provider sequence.</p>
+        <div class="choice-grid">
+          <a class="choice-card" href="https://bdekoz.github.io/izzi.public/docs/visual_workflow/tool_moss_local.html">
+            <h3>Here Lies Trouble — current production status</h3>
+            <p>MOSS appearance, local animation, completed full-episode delivery, and remaining review.</p>
+          </a>
+          <a class="choice-card" href="review/here-lies-trouble-stage-4/">
+            <h3>Published film and production records</h3>
+            <p>The 1:43 video, canonical fourth draft, and the October provider-production record.</p>
+          </a>
+          <a class="choice-card" href="review/here-lies-trouble-draft4-complete-audio-20261030/">
+            <h3>Complete dialogue review</h3>
+            <p>Listen to the full 52:35 fourth-draft audio and review the matching screenplay.</p>
+          </a>
+        </div>
+      </section>
+
       <section class="summary" aria-labelledby="summary-title">
 	<div>
 	  <h2 id="summary-title">Status</h2>
@@ -37,10 +57,10 @@
 	    <h2 id="new-title">New</h2>
 	    <p class="results-description">
 	      Propose a new project from this page: choose a product type,
-	      then fill in slug, title, and description. Submit opens a
-	      prefilled GitHub issue; approval there creates the izzi project
-	      directory and starts the plan-v1 draft. This page never creates
-	      or publishes anything itself.
+	      then fill in slug, title, and description. Prepare a public
+	      GitHub issue for a maintainer to review and scope. Repository
+	      changes and production happen separately; this page saves no
+	      project and publishes nothing itself.
 	    </p>
 	  </div>
 	</div>
@@ -57,19 +77,20 @@
 	  </article>
 	  <article>
 	    <span class="step" aria-hidden="true">02</span>
-	    <h3>Approve on GitHub</h3>
+	    <h3>Review and scope</h3>
 	    <p>
-	      Approving the issue creates the izzi project directory
-	      (docs/development/&lt;slug&gt;/) and starts planning with a
-	      plan-v1 draft.
+	      A maintainer reviews the proposal, agrees on the scope,
+	      and records the next action in the issue. A submitted issue
+	      does not automatically create a project or start production.
 	    </p>
 	  </article>
 	  <article>
 	    <span class="step" aria-hidden="true">03</span>
 	    <h3>Review</h3>
 	    <p>
-	      The plan-v1 draft publishes here newest-first. A KEEP advances
-	      it; a KEEP on the formal plan unlocks production.
+	      When a plan is ready, a maintainer publishes it here for review.
+	      Export your feedback or attach it to the issue so the next
+	      revision preserves what you decided.
 	    </p>
 	  </article>
 	</div>
@@ -140,7 +161,7 @@
 	    <div class="command-actions">
 	      <button id="submit-plan-proposal" class="button" type="button"
 		disabled>
-		Submit proposal on GitHub
+		Prepare proposal on GitHub
 	      </button>
 	      <p id="plan-proposal-status" class="status-note" role="status"
 		aria-live="polite"></p>
@@ -202,6 +223,10 @@
 	    <label class="checkbox-label">
 	      <input id="hide-images" type="checkbox">
 	      Compact text view
+	    </label>
+	    <label class="checkbox-label">
+	      <input id="show-archived" type="checkbox">
+	      Include earlier plans
 	    </label>
 	    <button class="button button-secondary" type="reset">Clear filters</button>
 	  </form>
