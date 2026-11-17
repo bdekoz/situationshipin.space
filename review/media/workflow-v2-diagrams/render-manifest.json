@@ -1,15 +1,15 @@
 {
   "schema_version": "izzi-workflow-diagram-render-1",
-  "rendered_at": "2026-10-28T03:02:30.965879+00:00",
+  "rendered_at": "2026-11-17T19:28:05.341051+00:00",
   "source": {
     "path": "docs/workflows.md",
-    "bytes": 22444,
-    "sha256": "be3877d718d27accfbf76713748a9054ef162b7723fcfeca9fed57b36f434ac0"
+    "bytes": 27451,
+    "sha256": "6759fb8ee00efdd36f783cc6bde642c939776dc6aaa0a443902b8fb82bdbfa1b"
   },
   "renderer": {
     "mermaid_cli": "11.16.0",
     "mermaid": "11.16.1",
-    "browser": "Google Chrome 156.0.8078.73"
+    "browser": "Google Chrome 157.0.8103.78"
   },
   "render_config": {
     "path": "mermaid-config.json",
@@ -28,26 +28,26 @@
       "renderer": "izzi-fixed-svg-1",
       "render_config": {
         "path": "workflow-hardware-software-diagram.config.json",
-        "bytes": 9452,
-        "sha256": "6d056ef837d103f6e8d010c56c7710bcf24f1ec5dff0106c7bd9d7394f4d0540"
+        "bytes": 11959,
+        "sha256": "ed469359b0ca91f6d13063b1c33a5264c1d94be5a8a007199e7ff4bf48d0aaf9"
       },
       "files": [
         {
           "path": "workflow-hardware-software-diagram.mmd",
-          "bytes": 1965,
-          "sha256": "99f048dec3a35aa3659d0486f72b742f0bd60aa4610acc33102bdd7e33710e54"
+          "bytes": 2396,
+          "sha256": "ce2a62f276c62e5e8b0554ad0a9cf8bba9590c0ddeac7c5a4e58817c89a1921d"
         },
         {
           "path": "workflow-hardware-software-diagram.svg",
-          "bytes": 10550,
-          "sha256": "b5fc61fba5a35a2392db5801194324c5a165386336fff234d1bf3bd8ed78c0bf"
+          "bytes": 12891,
+          "sha256": "781036a3e633e196334496426aa58c3b977ed37722fd8d74b92f745cc56b3a6f"
         },
         {
           "path": "workflow-hardware-software-diagram.png",
-          "bytes": 374289,
-          "sha256": "c68fb1dbc6759857979ca8b90cb2d6d1ec3a1bb7dcfba3cb51e419e597571233",
+          "bytes": 500895,
+          "sha256": "70e91cb008ea2a4832d58afc142370fa4e005ddfd539782d12d464f40fb8c042",
           "width": 3800,
-          "height": 5400
+          "height": 6360
         }
       ]
     },
@@ -56,26 +56,26 @@
       "renderer": "izzi-fixed-svg-1",
       "render_config": {
         "path": "devpac-compute-resources-diagram.config.json",
-        "bytes": 2244,
-        "sha256": "5468b288341aaa5a1ba43cd068c5346cffd232e483bb95d80b1dfd60027f3a93"
+        "bytes": 2246,
+        "sha256": "f10b6c29a3d54652f0bedf3a3aecbe32273bf6898614d22a250f78478a55ebd4"
       },
       "files": [
         {
           "path": "devpac-compute-resources-diagram.mmd",
-          "bytes": 1317,
-          "sha256": "000da6dd630a41ed54ce0dcb28041650795ce1629a7315f64f1758a719b08312"
+          "bytes": 1384,
+          "sha256": "6da663002fb1c2a98503447a8c8df6771f576092a40bcdd03400ee0557f392d6"
         },
         {
           "path": "devpac-compute-resources-diagram.svg",
-          "bytes": 5888,
-          "sha256": "11dbd0b394f96c286c39597c88b19ab9ede0b0dc43187d127fd23326b3885990"
+          "bytes": 6159,
+          "sha256": "003ea2bf678a5fd2ee53faa087c0f7a0920dd0f710f16a17f484091f52c44777"
         },
         {
           "path": "devpac-compute-resources-diagram.png",
-          "bytes": 307132,
-          "sha256": "b3d5a19a0d3905e55a07ce7afe647790c201ab4556da2954cc67e71a756b2dd8",
+          "bytes": 336194,
+          "sha256": "48add1b86ecaa49c9ca7b1f062910680fdf505fea5901c8e388116bd6bd9b4b3",
           "width": 3120,
-          "height": 2280
+          "height": 2420
         }
       ]
     },
@@ -90,18 +90,18 @@
       "files": [
         {
           "path": "workflow-v2-loop-diagram.mmd",
-          "bytes": 605,
-          "sha256": "8a10743232a6dbdebd3c2347a050d31486c67255ebab5aca68772ec96aae398d"
+          "bytes": 708,
+          "sha256": "7ae95ecfc4ddf862a03316e083cb0432599799d1dfd3a68cd25c9e2faf2561d8"
         },
         {
           "path": "workflow-v2-loop-diagram.svg",
-          "bytes": 3711,
-          "sha256": "c2541e81ac8b3c9f8f44d69daef4ef8125eff3a43583c3415bbe32c67da2e33e"
+          "bytes": 4116,
+          "sha256": "81d59552edd59b9a79f776912a17fb429788c5ef0448256945ee6658f70f8fe5"
         },
         {
           "path": "workflow-v2-loop-diagram.png",
-          "bytes": 102686,
-          "sha256": "7d3dd1c99566a668aba4bb2ef6e6e7a22ccc5f4ffe2688500449a80365e75b43",
+          "bytes": 130468,
+          "sha256": "9dc76499ed7343224ce0481f7ad75d29bfd072831531f527196432db4301183b",
           "width": 3080,
           "height": 1060
         }

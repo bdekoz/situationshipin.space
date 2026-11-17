@@ -1,0 +1,16 @@
+{
+  "schema_version": "situationship-release-video-1",
+  "url": "https://github.com/bdekoz/situationshipin.space/releases/download/hlt-local-full-20261117/here-lies-trouble-local-full-720p.mp4",
+  "release_tag": "hlt-local-full-20261117",
+  "release_id": 449101130,
+  "asset_id": 760366478,
+  "sha256": "93f043622d3078d8a914a69d549a579fd79f1a9e27df6b4ebd81394c7a8f8f72",
+  "bytes": 579286761,
+  "github_digest": "sha256:93f043622d3078d8a914a69d549a579fd79f1a9e27df6b4ebd81394c7a8f8f72",
+  "source_sha256": "5d21325b8b7c7d34af06516a1c6e35e8ddb109448fe17f5ac97ac0efba85d3d2",
+  "content_type": "video/mp4",
+  "uploaded_at": "2026-11-17T19:38:45Z",
+  "source_frame_count": 75729,
+  "audio_packets_identical": true,
+  "published_at": "2026-11-17T19:39:39Z"
+}

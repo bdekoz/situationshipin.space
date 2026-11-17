@@ -1,7 +1,7 @@
 {
   "renderer": "izzi-fixed-svg-1",
   "width": 1560,
-  "height": 1140,
+  "height": 1210,
   "font_family": "DejaVu Sans",
   "font_size": 18,
   "line_height": 31,
@@ -13,7 +13,7 @@
         510,
         40,
         540,
-        285
+        350
       ],
       "fill": "#f1f1f1",
       "stroke": "#666666"
@@ -21,7 +21,7 @@
     "E": {
       "box": [
         40,
-        490,
+        540,
         540,
         390
       ],
@@ -31,7 +31,7 @@
     "O": {
       "box": [
         980,
-        490,
+        540,
         540,
         390
       ],
@@ -41,7 +41,7 @@
     "STORAGE": {
       "box": [
         620,
-        975,
+        1040,
         320,
         110
       ],
@@ -53,7 +53,7 @@
   "junctions": {
     "LINK": [
       780,
-      685
+      735
     ]
   },
   "edges": [
@@ -63,17 +63,17 @@
       "points": [
         [
           600,
-          325
+          390
         ],
         [
           310,
-          490
+          540
         ]
       ],
       "label": "SSH dispatch and status",
       "label_at": [
         395,
-        390
+        460
       ],
       "arrow": true,
       "dotted": true
@@ -84,17 +84,17 @@
       "points": [
         [
           960,
-          325
+          390
         ],
         [
           1250,
-          490
+          540
         ]
       ],
       "label": "SSH dispatch and status",
       "label_at": [
         1165,
-        390
+        460
       ],
       "arrow": true,
       "dotted": true
@@ -105,17 +105,17 @@
       "points": [
         [
           580,
-          685
+          735
         ],
         [
           780,
-          685
+          735
         ]
       ],
       "label": "USB4/Thunderbolt local link",
       "label_at": [
         780,
-        650
+        700
       ],
       "start_arrow": true
     },
@@ -125,11 +125,11 @@
       "points": [
         [
           780,
-          685
+          735
         ],
         [
           980,
-          685
+          735
         ]
       ],
       "arrow": true
@@ -140,11 +140,11 @@
       "points": [
         [
           780,
-          685
+          735
         ],
         [
           780,
-          975
+          1040
         ]
       ]
     }

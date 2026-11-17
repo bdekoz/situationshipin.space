@@ -1,0 +1,1116 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Here Lies Trouble — Stage 5 durable workflow and full delivery</title><style>body{max-width:70rem;margin:auto;padding:1.5rem;font:17px/1.6 system-ui;color:#172d40;background:#fcfbf7;overflow-wrap:anywhere}pre{overflow:auto;padding:1rem;background:#eee}table{display:block;overflow:auto;border-collapse:collapse}td,th{border:1px solid #aaa;padding:.4rem}a{color:#173a55}</style><p><a href="/plans.html">Plans</a> · <a href="/review/here-lies-trouble-local-full-20261117/">Complete film review</a> · <a href="/review/media/hlt-local-full-20261117/20261030.local_rendering_exploration_stage_5_durable_workflow.md">Original Markdown</a></p><p>Published November 17 from the current committed Stage 5 record. References marked “local archive” remain in production storage.</p><h1 id="here-lies-trouble-local-stage-5-durable-workflow">Here Lies Trouble: local Stage 5 durable workflow</h1>
+<p>Filename date: October 30, 2026. Revision begun October 31, 2026.
+Repository: <code>/home/bkoz/src/izzi</code>. Render host: rizal.</p>
+<p><strong>Current status: opening-v7 approved; the complete 52:35.375 episode is delivered for full-length human review.</strong></p>
+<p>November 17 public review: <a href="https://situationshipin.space/review/here-lies-trouble-local-full-20261117/">watch the complete local film</a>
+and <a href="https://situationshipin.space/review/here-lies-trouble-local-stage5-workflow-20261117/">review this durable workflow</a>.
+The 720p review derivative retains the complete picture sequence and source AAC
+dialogue. English captions are selectable. This publication does not change
+the full-film human-review status or replace the preserved production masters.
+Opening-v6 remains the preserved baseline. The final sections record production
+and archive receipts after their respective verification steps complete.</p>
+<p>The November 1 approval supersedes the earlier pending visual-review status
+in this document and in the immutable October 31 receipts. The accepted v7
+film includes its documented forward attention and source-occlusion limits.
+Approval authorizes animation of the entire canonical transcript with this
+treatment. It does not imply that the new full-length delivery has already
+been rendered or reviewed. See the complete-episode continuation at the end.</p>
+<h2 id="human-review-and-authorized-revision">Human review and authorized revision</h2>
+<p>The human rejected the simultaneous camera-facing gaze in opening-v6. The
+requested behavior is conversation between neighbors walking side by side:
+look toward one another when actually abreast; keep looking forward when one
+is ahead or behind. Approval of that algorithm is not visual acceptance of a
+new film. The unicorn jerks; cat/dog gait timing is good, but body/leg and matte
+joins remain visible. Preserve the accepted scenery, route, incidental animals,
+dialogue and useful existing bird treatment.</p>
+<p>The exact review and execution request are stored in
+<code>resources.static/here-lies-trouble/local-rendering-stage-5/review-and-revision.20261031.json</code>.
+Implementation proceeds independently as opening-v7, with short checks before
+the authorized ten-minute revision and no new paid generation. Never modify
+the frozen opening-v6 assets, code, media or archive in place.</p>
+<h2 id="root-causes-established-from-code-and-source-inspection">Root causes established from code and source inspection</h2>
+<ol>
+<li>Every v6 listener inherited the same speech-relative 7.6-second glance
+   clock, offset by only 0.18 seconds per animal. Every turn used the same
+   profile-to-front atlas; target labels did not supply the missing away view.</li>
+<li>The unicorn's 22-frame source selection did not contain a matching full
+   stride. Its last pose was interpolated back to a substantially different
+   first pose. A source-cycle search finds a better 36-frame selection.</li>
+<li>Optical flow used RGB outside the source alpha mask, allowing the moving
+   scenery to influence interpolation. Disagreeing limbs became translucent
+   double edges. The detached neutral head also introduced a moving neck join.</li>
+<li>Some unicorn limb pixels were genuinely hidden by the source dog/cat.
+   Segmentation and opaque masks cannot recover observed anatomy there;
+   existing explicit occlusion completions remain reviewable approximations.</li>
+</ol>
+<h2 id="selected-implementation">Selected implementation</h2>
+<ul>
+<li>Use complete walking surfaces with their attached neutral heads, applying
+  speech motion to the lower jaw in that same image. Preserve dog/cat cycle
+  lengths: 35 and 18 output frames. Use unicorn source frames 5–40 as a
+  complete 66-output-frame cycle, matching the shared travel speed.</li>
+<li>Compute flow on masked animal RGB over a neutral field. Use an opaque
+  interior silhouette and repair narrow matte cracks/edge contamination.</li>
+<li>Evaluate conversation eligibility using authored ground-contact roots,
+  longitudinal position and neighboring trail lanes, not eye height.</li>
+<li>Select at most one speaker/listener pair, with individual glance timing.
+  Require reciprocal toward/away view coverage. With the existing staggered
+  staging, forward attention is the expected result. Unsupported turns stay
+  forward rather than substituting a camera-facing pose.</li>
+</ul>
+<p>The saved source library supplies profile-to-camera turns, not reciprocal
+away-from-camera views. This revision can stop incorrect group camera turns;
+it does not invent missing head surfaces or silently claim mutual eye contact.</p>
+<h2 id="working-paths-and-commands">Working paths and commands</h2>
+<p>All paths below are relative to
+<code>outputs/here-lies-trouble/local-rendering-stage-5-performance-20261030/</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Purpose</th>
+<th>Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Preserved v6</td>
+<td><code>opening-v6</code>, <code>scene-v6</code>, <code>implementation-v6</code></td>
+</tr>
+<tr>
+<td>New development candidate</td>
+<td><code>opening-v7-dev</code>, <code>scene-v7-dev</code>, <code>implementation-v7-dev</code></td>
+</tr>
+<tr>
+<td>Frozen selected candidate</td>
+<td><code>opening-v7</code>, <code>scene-v7</code>, <code>implementation-v7</code></td>
+</tr>
+<tr>
+<td>Source/cycle investigation</td>
+<td><code>v7-audit/</code></td>
+</tr>
+<tr>
+<td>Existing full audio receipt</td>
+<td><code>audio-review/publication-live.json</code></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-bash">python3 scripts/hlt-local-stage5-v7-prepare.py setup
+python3 scripts/hlt-local-stage5-v7-prepare.py atlases
+python3 scripts/hlt-local-stage5-v7-prepare.py mouths
+python3 scripts/hlt-local-stage5-v7-prepare.py controls
+python3 scripts/hlt-local-stage5-v7-run.py sync
+python3 scripts/hlt-local-stage5-v7-check.py --dev
+python3 scripts/hlt-local-stage5-v7-run.py canaries --dev
+python3 scripts/hlt-local-stage5-v7-canary.py
+</code></pre>
+<p>Preparation writes development paths only. A changed development identity
+requires a fresh canary job directory; preserve previous trials and receipts.
+The selected candidate has already been frozen. Do not run <code>freeze</code> again on
+these paths. The production and restore commands below use the selected copy.</p>
+<p>The editable orchestration lives in <code>scripts/</code>; the selected pixel renderer
+lives in <code>implementation-v7/</code>. The important entry points are:</p>
+<table>
+<thead>
+<tr>
+<th>Source file under <code>scripts/</code></th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>hlt-local-stage5-v7-probe.py</code></td>
+<td>Audit saved unicorn source cycles</td>
+</tr>
+<tr>
+<td><code>hlt-local-stage5-v7-prepare.py</code></td>
+<td>Build development surfaces, jaw landmarks and controls</td>
+</tr>
+<tr>
+<td><code>hlt_local_stage5_v7_gaze.py</code></td>
+<td>Abreast geometry, reciprocal-view requirements and event timing</td>
+</tr>
+<tr>
+<td><code>hlt_local_stage5_v7_art.py</code></td>
+<td>Complete walking surfaces and local speaking-jaw patches</td>
+</tr>
+<tr>
+<td><code>hlt-local-stage5-v7-run.py</code></td>
+<td>Sync development code, freeze, admit, render, verify and recover</td>
+</tr>
+<tr>
+<td><code>hlt-local-stage5-v7-check.py</code></td>
+<td>Canonical inputs, silhouettes, landmarks and conversation-policy fixtures</td>
+</tr>
+<tr>
+<td><code>hlt-local-stage5-v7-canary.py</code></td>
+<td>Short development comparison page and clips</td>
+</tr>
+<tr>
+<td><code>hlt-local-stage5-v7-deliver.py</code></td>
+<td>Final captions, films, comparisons and review page</td>
+</tr>
+<tr>
+<td><code>hlt-local-stage5-v7-delivery-check.py</code></td>
+<td>Media counts/durations, captions, links and freshly hashed frozen inputs</td>
+</tr>
+<tr>
+<td><code>hlt-local-stage5-v7-state.py</code></td>
+<td>Current state and preserved candidate history</td>
+</tr>
+<tr>
+<td><code>hlt-local-stage5-v7-package.py</code></td>
+<td>Local restart archive and full member verification</td>
+</tr>
+<tr>
+<td><code>hlt-local-stage5-v7-complete.py</code></td>
+<td>Ordered post-render delivery, documents, state and archive</td>
+</tr>
+</tbody>
+</table>
+<p>During sync, the v7 art source becomes the frozen file
+<code>implementation-v7/hlt_local_stage5_art.py</code>. It reuses saved v6 helpers through
+<code>hlt_local_stage5_v6_art.py</code>; the selected worker is
+<code>implementation-v7/hlt-local-stage5-worker.py</code>. That worker inherits the
+existing file-locked CPU ledger from the frozen Stage 4 worker. Editing a
+similarly named repository script after freezing does not change selected
+rendered pixels. A future change needs a new frozen identity and candidate.</p>
+<h2 id="exact-production-identity-and-inputs">Exact production identity and inputs</h2>
+<p>The selected identity is
+<code>f7f23d0ca28dedb822e78de558b730094ff2fef52068ba815fc88257a1d7acab</code>.
+<code>opening-v7/review/input-identity.json</code> pins <strong>507 code/input/asset paths</strong>,
+including <strong>13 frozen Python files</strong>. Delivery rehashes those paths. A
+different input, image, registration or implementation requires a new candidate;
+do not edit files beneath <code>scene-v7</code>, <code>implementation-v7</code> or the run's inputs.</p>
+<table>
+<thead>
+<tr>
+<th>Input</th>
+<th>Exact location or identity</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Canonical text</td>
+<td><code>outputs/transcription-enrichment/here-lies-trouble/here-lies-trouble.20261026.fourth-draft.txt</code></td>
+<td>Words and source offsets; keep BOM/CRLF when applying offsets</td>
+</tr>
+<tr>
+<td>Text SHA-256</td>
+<td><code>889c2fdd91008e7acd998a7ed1ab94c4a0a20e71c5cba06ec37070e47001f4f6</code></td>
+<td>Canonical identity</td>
+</tr>
+<tr>
+<td>Complete audio</td>
+<td><code>outputs/here-lies-trouble/stage-4-20261026-option-b-v3/dialogue-master.wav</code></td>
+<td>Existing four-voice master; no speech regeneration</td>
+</tr>
+<tr>
+<td>Complete audio SHA-256</td>
+<td><code>efc0ad9a7bdf1bd39a47003db860c4efc9d6659b912e6c32d22f66aa1d000cec</code></td>
+<td>52:35.375, stereo 48 kHz, 24-bit PCM</td>
+</tr>
+<tr>
+<td>Canonical timeline</td>
+<td>Same production directory, <code>timeline.json</code></td>
+<td>Speaker/turn timing and source offsets</td>
+</tr>
+<tr>
+<td>Timeline SHA-256</td>
+<td><code>dddbd3a6b4cc32da77a235bef0ea40958f4401a2c89093be62f9c3956075bf70</code></td>
+<td>Unchanged timing</td>
+</tr>
+<tr>
+<td>Exact ten-minute audio</td>
+<td><code>opening-v7/inputs/dialogue.wav</code></td>
+<td>Byte-identical copy of the verified v6 excerpt</td>
+</tr>
+<tr>
+<td>Excerpt WAV SHA-256</td>
+<td><code>aee65d5e704b27deb4a0287b97f444817cba5063ab49e9f6d153ceb9863de4eb</code></td>
+<td>28,800,000 stereo sample frames</td>
+</tr>
+<tr>
+<td>Canonical visual source</td>
+<td><code>outputs/here-lies-trouble/stage-4-20261026-option-b-v3/review/sequence-silent.mp4</code></td>
+<td>Saved 103-second Seedance footage; no new provider job</td>
+</tr>
+<tr>
+<td>Compiled controls</td>
+<td><code>opening-v7/performance.json</code></td>
+<td>14,400 frame controls at 24 fps</td>
+</tr>
+<tr>
+<td>Source library</td>
+<td><code>scene-v7/assets/source-pose-bank.json</code></td>
+<td>Pose paths, source frame/time/hash, completion records and per-phase jaw landmarks</td>
+</tr>
+<tr>
+<td>Formation</td>
+<td><code>opening-v7/inputs/staging.json</code></td>
+<td>Saved positions through 102.958 seconds; final formation held afterward</td>
+</tr>
+<tr>
+<td>Conversation rules</td>
+<td><code>opening-v7/inputs/gaze-policy.json</code></td>
+<td>Ground-contact roots, lane/longitudinal thresholds and source-view coverage</td>
+</tr>
+<tr>
+<td>Terrain</td>
+<td><code>opening-v7/inputs/route-terrain.json</code>, <code>scene-v7/assets/scenery-v6.json</code></td>
+<td>Saved OSM route/USGS elevation trend and fixed spatial panorama</td>
+</tr>
+<tr>
+<td>Visitors</td>
+<td><code>opening-v7/inputs/wildlife-events.json</code> and inherited drawing helpers</td>
+<td>Existing event timing and artwork</td>
+</tr>
+<tr>
+<td>Avian motion</td>
+<td><code>opening-v7/inputs/seagull-wing-coefficients.json</code> and frozen helpers</td>
+<td>Retained bird wing/body/contact system</td>
+</tr>
+</tbody>
+</table>
+<p>The four speaker assignments remain:</p>
+<table>
+<thead>
+<tr>
+<th>Speaker</th>
+<th>Animal</th>
+<th>Existing voice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Unicorn</td>
+<td><code>af_bella</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Dog</td>
+<td><code>am_echo</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Albatross</td>
+<td><code>af_nicole</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Cat</td>
+<td><code>af_heart</code></td>
+</tr>
+</tbody>
+</table>
+<p>Inherited <code>dog-walk-cycle.json</code> and <code>cat-gait-parameters.json</code> remain as source
+history. V7's quadruped pose clocks come from the compiled source-pose bank;
+those older biomechanical parameters do not drive a separate leg mesh.</p>
+<h2 id="walking-surfaces-cadence-and-mouth-registration">Walking surfaces, cadence and mouth registration</h2>
+<table>
+<thead>
+<tr>
+<th>Animal</th>
+<th>Saved source bank and frames</th>
+<th>Output cycle</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unicorn</td>
+<td><code>sam-poses/opening-6s</code>, original frames 5–40 inclusive</td>
+<td>66 frames / 2.750 s</td>
+<td>Complete matching stride selection instead of the truncated 22-frame source loop</td>
+</tr>
+<tr>
+<td>Dog</td>
+<td>Same bank, frames 11–28</td>
+<td>35 frames / 1.458 s</td>
+<td>Preserve accepted gait phase order and cadence</td>
+</tr>
+<tr>
+<td>Cat</td>
+<td><code>sam-poses/cat-clean-11s</code>, frames 266–276</td>
+<td>18 frames / 0.750 s</td>
+<td>Preserve accepted gait phase order and cadence</td>
+</tr>
+<tr>
+<td>Albatross</td>
+<td>Existing selected artwork and frozen avian functions</td>
+<td>Existing flight/contact schedule</td>
+<td>Preserve the reviewed bird treatment</td>
+</tr>
+</tbody>
+</table>
+<p>The source unicorn's stance displacement is approximately 8 pixels per source
+frame. Retiming 36 source frames into 66 output frames gives approximately
+<code>8 × 36 / 66 × 24 = 104.73</code> pixels/s against 105-pixel/s scenery travel.
+This is a source-image calibration, not a recovered 3D gait measurement.</p>
+<p>Each output quadruped is one complete RGBA walking pose, including its neutral
+head, neck, torso and visible limbs. There is no detached neutral head pasted
+over a moving neck and no independently composited leg rectangle. All 119
+selected cycle phases have one connected foreground component at alpha &gt;128,
+with fully opaque interiors more than two pixels inside the silhouette.</p>
+<p>Preparation computes bidirectional Farneback flow on masked animal RGB over
+a uniform gray field. It warps premultiplied color/alpha, selects a single
+material silhouette, closes only narrow three-pixel cracks, fills enclosed
+holes no larger than 24 pixels, and removes detached fragments below 256 pixels.
+Large spaces between legs stay open. A 0.45-pixel Gaussian edge softens the
+outline without making limb interiors translucent. Bright contamination on
+dark lower limbs is replaced only where an observed dark animal pixel lies
+within eight pixels; per-phase pixel counts are saved in <code>atlas-audit.json</code>.</p>
+<p>The unicorn still contains explicit short completions where the source dog
+or cat hid a limb. Those pixels are approximations, not newly observed anatomy.
+Removing small detached fragments avoids floating hoof flecks; it does not
+prove that every hidden hoof has been anatomically reconstructed.</p>
+<p>The walking head's lower lip is registered separately from the old detached
+head atlas. The dog uses a six-point curve along its actual smile. Unicorn and
+cat use their lower-muzzle endpoints. Masked flow transports these landmarks
+through each pose cycle. Mouth changes are confined to a small jaw rectangle,
+which replaces the corresponding pixels directly. Remapping or compositing
+the whole body during speech would perturb unrelated antialiased edges.</p>
+<p>The four existing speech envelopes are preserved exactly. Mouth apertures
+remain energy-driven, with the prior silence gating and discrete opening
+levels; this is not phoneme synthesis. Only the active speaker's mouth opens.</p>
+<p>The comparable solid-background cycle audit reports:</p>
+<table>
+<thead>
+<tr>
+<th>Animal</th>
+<th style="text-align: right;">V6 seam / median adjacent change</th>
+<th style="text-align: right;">V7 seam / median adjacent change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unicorn</td>
+<td style="text-align: right;">2.610</td>
+<td style="text-align: right;">1.395</td>
+</tr>
+<tr>
+<td>Dog</td>
+<td style="text-align: right;">1.543</td>
+<td style="text-align: right;">1.533</td>
+</tr>
+<tr>
+<td>Cat</td>
+<td style="text-align: right;">0.960</td>
+<td style="text-align: right;">0.961</td>
+</tr>
+</tbody>
+</table>
+<p>These measurements identify the reduced unicorn discontinuity while showing
+the dog/cat cadence was retained. They do not establish naturalness at normal
+speed. The exact method and values are in
+<code>opening-v7/review/like-for-like-cycle-comparison.json</code>.</p>
+<h2 id="conversation-behavior-and-its-current-limit">Conversation behavior and its current limit</h2>
+<p>Travel runs toward image-right. Authored roots near each animal's torso/ground
+contact define longitudinal progress and lane depth. Eye height is excluded:
+a tall unicorn and a small dog can occupy neighboring lanes without their
+eyes sharing a screen row.</p>
+<p>Two grounded actors can be a conversation pair only when their longitudinal
+separation is less than 60 pixels and their lane separation is 12–130 pixels.
+The turn weight fades between 40 and 60 longitudinal pixels. Geometry is
+reevaluated every frame. An existing eligible partner is retained to prevent
+rapid switching; otherwise the nearest eligible partner is chosen. Everyone
+outside that single pair remains forward. Speaker/listener glance events use
+different onset/return times and deterministic per-turn seeds.</p>
+<p>The thresholds and root registrations are compiled from
+<code>hlt_local_stage5_v7_gaze.py</code> and the preparation script. <code>gaze-policy.json</code>
+records those decisions; it is not a live configuration file. For a new
+candidate, change the compiler deliberately and regenerate <code>performance.json</code>
+before freezing, rather than editing only the policy receipt.</p>
+<p>An actual pair requires a toward-camera view for its farther member and an
+away-from-camera view for its nearer member. The source library has only the
+former. Missing reciprocal coverage keeps both neutral. The current renderer
+also rejects an unexpected active turn rather than silently substituting a
+frontal atlas. Adding views requires a new candidate and a registered reciprocal
+head renderer; changing a coverage flag alone is insufficient.</p>
+<p>The unchanged ten-minute formation contains <strong>zero eligible abreast pair
+frames</strong>. All 14,400 controls therefore retain forward gaze, including silence.
+There are no synchronized camera turns or scripted wildlife-directed turns.
+The incidental animals themselves retain their accepted event animation.
+Synthetic policy fixtures demonstrate pair eligibility, ahead/behind exclusion,
+missing-view rejection and independently timed reciprocal events; those fixtures
+are not footage proving mutual eye contact.</p>
+<h2 id="retained-scenery-route-and-bird-behavior">Retained scenery, route and bird behavior</h2>
+<p>V7 preserves 99 non-quadruped asset files byte for byte. The 67,072×1,280
+panorama, sky, trail surface and foreground use the existing spatial renderer.
+The panorama camera starts at x=280 and advances at 105 pixels/s; ground and
+foreground share that clock. There is no timed background dissolve. The sky
+motif remains fixed, as in the accepted baseline.</p>
+<p>The saved route begins near the Runyon Canyon trail location previously
+specified by the human. The existing OSM route and USGS elevations guide an
+illustrated scene, approximately 428.298 metres into the route at ten minutes.
+This is not a photographic reconstruction. V7 performs no new map fetch and
+uses no Google map imagery. The panorama SHA-256 is
+<code>19e90feb5ed81552fa53046423c9615898de954ef555423ae0e85b94df4471ba</code>.</p>
+<p>The albatross still approaches at 49–51.5 s, rides at 51.5–56.3 s, crouches at
+56.3–56.8 s, pushes off at 56.8–57.15 s and departs through 59.5 s. Its contact
+point follows the selected unicorn back contour. Wing and mouth treatment are
+retained. No extra visitor or landing events are invented for the extension.</p>
+<h2 id="software-hosts-ai-and-data-usage">Software, hosts, AI and data usage</h2>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Version / host</th>
+<th>Role in this revision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Host</td>
+<td>rizal, Linux <code>7.2.11-200.fc44.x86_64</code>, glibc 2.43</td>
+<td>CPU preparation, rendering, encoding and local archive</td>
+</tr>
+<tr>
+<td>Python</td>
+<td>3.14.8</td>
+<td>Control compilation, workers, state and receipts</td>
+</tr>
+<tr>
+<td>NumPy / SciPy</td>
+<td>2.4.6 / 1.16.2</td>
+<td>Image arrays, masks and distance operations</td>
+</tr>
+<tr>
+<td>Pillow</td>
+<td>12.3.0</td>
+<td>PNG surfaces, compositing, jaw patches and review sheets</td>
+</tr>
+<tr>
+<td>OpenCV</td>
+<td>4.13.0</td>
+<td>Masked optical flow, remapping and component checks</td>
+</tr>
+<tr>
+<td>FFmpeg / FFprobe</td>
+<td>8.1.3</td>
+<td>FFV1/PCM master, H.264/AAC reviews, exact decode and media checks</td>
+</tr>
+<tr>
+<td>Review fonts and shaping</td>
+<td>FreeSans / DejaVu Sans; libass 0.17.4, FriBidi 1.0.16, HarfBuzz 14.1.0</td>
+<td>Comparison labels and burned captions; actual font files, hashes and licenses saved under <code>v7-audit/</code></td>
+</tr>
+<tr>
+<td>Codex</td>
+<td>This implementation session</td>
+<td>Code, diagnosis, authored registrations, documentation and internal still inspection</td>
+</tr>
+<tr>
+<td>Saved Seedance footage</td>
+<td>Existing production Stage 4 reference</td>
+<td>Quadruped appearance and observed gait poses</td>
+</tr>
+<tr>
+<td>Saved SAM 2.1 masks</td>
+<td>V6 extraction on rizal CPU</td>
+<td>Reused segmentation; no new model inference in v7</td>
+</tr>
+<tr>
+<td>Saved MOSS artwork</td>
+<td>Earlier selected bird/scenery assets</td>
+<td>Reused illustrated surfaces</td>
+</tr>
+<tr>
+<td>GitHub Pages</td>
+<td>Existing situationshipin.space deployment</td>
+<td>Already-published full audio review</td>
+</tr>
+</tbody>
+</table>
+<p>There is no database server in this renderer. JSON files carry controls,
+metadata, maps, state and receipts; PNG files carry compiled poses and frames;
+WAV/MKV/MP4 files carry media. The exact Codex backend/model revision was not
+captured, and is not a dependency for replaying the saved implementation.</p>
+<p>No LLM, image model, provider account, GPU or network is called while replaying
+the compiled film. Optional future rematting can use the saved SAM checkpoint
+<code>sam2.1_hiera_small.pt</code>, SHA-256
+<code>6d1aa6f30de5c92224f8172114de081d104bbd23dd9dc5c58996f0cad5dc4d38</code>,
+source revision <code>2b90b9f5ceec907a1c18123530e92e794ad901a4</code>.
+Its source/model provenance and license files are saved under <code>models/</code>.
+Re-extraction is not required for exact compiled replay.</p>
+<pre><code class="language-mermaid">flowchart TD
+    Review[October 31 human review] --&gt; Rules[Abreast-only conversation rules]
+    Seedance[Saved Seedance frames] --&gt; Masks[Existing SAM masks]
+    Masks --&gt; Library[Complete source poses and masked flow]
+    Library --&gt; Surfaces[Opaque interiors and one connected walking surface]
+    Surfaces --&gt; Jaw[Per-phase jaw landmarks and dog lip curve]
+    Formation[Saved route-plane staging] --&gt; Rules
+    Coverage[Toward and away view coverage] --&gt; Rules
+    Rules --&gt; Forward[Current staggered formation: forward gaze]
+    Audio[Unchanged four-voice PCM and timing] --&gt; Controls[600-second controls]
+    Jaw --&gt; Frozen[Frozen scene-v7 and implementation-v7]
+    Forward --&gt; Controls
+    Controls --&gt; Frozen
+    Terrain[Existing OSM terrain and visitor assets] --&gt; Frozen
+    Frozen --&gt; Frames[CPU frame chunks on rizal]
+    Frames --&gt; Master[FFV1 picture and exact PCM]
+    Master --&gt; Verify[Pixel, audio, caption and restart verification]
+    Verify --&gt; Delivery[Ten-minute review and matched comparisons]
+    Verify --&gt; Archive[Local archive, manifest and external hash receipt]
+</code></pre>
+<pre><code class="language-mermaid">flowchart LR
+    Input[507 pinned files] --&gt; Identity[SHA-256 input identity]
+    Identity --&gt; Lock[Chunk lock and finite worker reservation]
+    Lock --&gt; Render[Render one deterministic frame]
+    Render --&gt; Save[Atomic PNG and checkpoint]
+    Save --&gt; Next{More frames?}
+    Next --&gt;|yes| Render
+    Next --&gt;|no| Receipt[Completed chunk receipt]
+    Stop[Controlled interruption] --&gt; Resume[Rehash saved frames and retain completed prefix]
+    Resume --&gt; Lock
+    Receipt --&gt; Assemble[Assemble only all 60 complete chunks]
+</code></pre>
+<h2 id="resource-admission-and-selected-canary">Resource admission and selected canary</h2>
+<p>The selected canary covers 0–6, 18–21 and 42–45 seconds: <strong>288 frames</strong> in
+<strong>60.324 seconds</strong> of frame-worker time. It projects <strong>3,016.214 seconds</strong>
+for 14,400 frames. With a 10% frame margin, 15% margin on measured v6 assembly,
+and 410 seconds for verification/recovery, the forecast is <strong>4,320.796 seconds</strong>.
+At admission the shared ledger had <strong>5,254.299 seconds</strong> remaining from its
+original 21,600-second limit. It was not reset.</p>
+<p>The ledger is
+<code>outputs/here-lies-trouble/local-rendering-stage-3-opening-20261028/cpu-budget.json</code>.
+Each worker action reserves at most 900 seconds under a serial file lock and
+charges measured elapsed time. An external kill can retain its reservation;
+reconcile evidence rather than clearing a charge or resetting the allowance.
+Frame work, technical preflight, master/proxy encoding, exact verification and
+restart proofs are charged. Source preparation, review-only derivatives,
+documentation and archive construction follow the inherited separate delivery
+scope. Saved receipts record measured timings.</p>
+<p>Earlier internal trials remain under <code>opening-v7-dev/jobs/canaries-*</code> with
+their receipts. <code>opening-v7/review/internal-canary-history.json</code> distinguishes
+those trials from the selected canary. New paid credits, model generations and
+training attempts in this revision are all zero.</p>
+<h2 id="resume-verify-and-restore">Resume, verify and restore</h2>
+<p>First read <code>v7-continuation.json</code>, <code>v7-completion.json</code> and
+<code>opening-v7/readiness.json</code> under the Stage 5 output root. An active session
+and current heartbeat mean the job is still running. Recorded PIDs belong to
+the execution namespace; do not treat them as host-wide process identifiers.
+Avoid starting another worker over a live job. Locks enforce serial admission.
+The frame heartbeat stops advancing during encoding and media verification.
+At 14,400 completed frames, also inspect the active execution session, worker
+reservation, partial media and verification receipts before deciding a run
+has stalled. A stale frame heartbeat alone does not establish a stopped encoder.</p>
+<p>From <code>/home/bkoz/src/izzi</code>, a partially completed selected run resumes with:</p>
+<pre><code class="language-bash">python3 scripts/hlt-local-stage5-v7-run.py full
+python3 scripts/hlt-local-stage5-v7-complete.py
+</code></pre>
+<p><code>full</code> verifies saved chunk/frame hashes and keeps completed frames. Each
+240-frame chunk has a request identity, atomic per-frame checkpoint and final
+receipt. A changed identity is rejected. It assembles the complete 14,400-frame
+set, encodes the master/review MP4 and verifies the result. The completion
+command requires the full render to have passed. <code>--wait</code> may supervise an
+already-running authorized render; it does not authorize future work.</p>
+<p>Individual completion commands, when needed for a known interrupted step:</p>
+<pre><code class="language-bash">python3 scripts/hlt-local-stage5-v7-run.py verify
+python3 scripts/hlt-local-stage5-v7-run.py recover
+python3 scripts/hlt-local-stage5-v7-deliver.py
+python3 scripts/hlt-local-stage5-v7-delivery-check.py
+python3 scripts/hlt-local-stage5-v7-state.py --final
+python3 scripts/hlt-local-stage5-v7-package.py
+python3 scripts/hlt-local-stage5-v7-state.py --final
+</code></pre>
+<p>Do not repeat expensive checks after a completed receipt without a reason.
+The full lossless check decodes four 3,600-frame sections and compares every
+RGB frame with its saved pixel hash. PCM comparison checks all 28,800,000
+stereo sample frames. Captions retain canonical words, case, punctuation and
+source offsets; ASR supplies timing only. A listening MP4's AAC is a derivative,
+not the bit-identical PCM evidence.</p>
+<p>For an archive restore, place its members beneath the same Stage 5 output
+directory in an izzi checkout. <code>opening-v7/assets</code> must resolve to
+<code>../scene-v7/assets</code>. Restore missing scripts/resources from <code>recipe-v7</code> at
+their repository-relative paths. Restore the canonical/reference subdirectory
+to <code>outputs/here-lies-trouble/stage-4-20261026-option-b-v3/</code> when regenerating
+captions/comparisons. The prior v6 review movie has a separate recipe copy.</p>
+<p>For optional source rebuilding, <code>recipe-v7/previous-v6-build-inputs</code> contains
+the v6 scene, implementation and input files needed by the preparation scripts.
+Restore those folders to the Stage 5 output root only when absent. Compiled v7
+replay does not need them. Preserve newer existing files and the newer live
+CPU ledger; never overwrite an updated allowance with the archived snapshot.</p>
+<p>Original frame PNGs and media provide exact saved results. Re-rasterization
+should use the recorded library versions and be checked against saved pixel
+hashes: different rasterizer/library versions can alter bytes. No regeneration
+from a language or image model is needed to recover the selected result.</p>
+<p>The archive contains the working assets and implementation, not an operating
+system image or Python wheelhouse. A replacement host must supply the recorded
+Python, NumPy, SciPy, Pillow, OpenCV and FFmpeg versions. The saved
+<code>v7-audit/runtime-environment.json</code>, <code>runtime-package-provenance.json</code> and
+<code>font-provenance.json</code> identify that environment, including the exact Fedora
+package releases and FFmpeg build configuration. The two actual review fonts
+and their licenses are included;
+delivery uses the saved FreeSans file for labels and the saved font directory
+for libass captions. Check decoded pixels and PCM after moving environments;
+equivalent appearance is not evidence of identical raster output.</p>
+<p>The review encoder makes H.264/AAC listening copies, while the FFV1/PCM master
+retains the exact picture and sound. The captioned movie uses x264 <code>veryfast</code>,
+CRF 17 and copied AAC from the clean review. Comparisons use CRF 18, matched
+24-fps episode time and a single excerpt of canonical audio. Saved script
+arguments and derivative receipts, rather than a fresh model prompt, define
+these outputs. Encoding the same pixels with a different FFmpeg build may
+produce different compressed bytes; the archived media remain the exact
+original deliverables.</p>
+<p>For another evolution, copy the selected run/scene/implementation to new names,
+update the controller deliberately, and retain all original receipts. Do not
+run development preparation against a delivered candidate. Acquire missing
+head surfaces before enabling reciprocal turns. Validate a short walking and
+speaking example, inspect it at normal speed, then calculate resource admission
+for a longer render.</p>
+<h2 id="complete-audio-review">Complete audio review</h2>
+<p>The <a href="https://situationshipin.space/review/here-lies-trouble-draft4-complete-audio-20261030/">complete fourth-draft listening review</a>
+remains published alongside the
+<a href="https://situationshipin.space/review/here-lies-trouble-fourth-draft-20261026/">canonical screenplay</a>.
+It is 52:35.375 long. No words, order, pauses or voices were edited for v7.
+The mono 24-kHz/40-kbit/s MP3 is a bounded listening derivative; the full
+lossless stereo master remains local. The publication receipt records site
+commit <code>99f3696</code>, live HTTP checks and a matching downloaded media hash.</p>
+<p>MP3 SHA-256:
+<code>8608e5939b15fc9d814f3425284c45391a5e5a75eb9adb2c44ba7bd2cda8c3ce</code>.
+No new website publication is needed for unchanged audio.</p>
+<h2 id="open-human-review">Open human review</h2>
+<ul>
+<li>Unicorn stride continuity, stance sliding and hidden-limb completion.</li>
+<li>Dog/cat shoulder, hip, neck and paw surfaces at normal and slow speed.</li>
+<li>Forward gaze in the current staggered formation; future reciprocal turns
+  require actual away-view assets and a separate visual canary.</li>
+<li>Correct mouth placement on the walking head across each complete cycle.</li>
+<li>Retained bird contact, foreground, terrain and visitor appearance.</li>
+<li>Bird toe placement, folded wings and push-off articulation at 49–59.5 seconds.</li>
+<li>Repeated walking cycles and reused scenery textures across ten minutes;
+  the available Seedance comparison covers only the first 103 seconds.</li>
+</ul>
+<p>Implementation and exact-media checks do not establish visual approval.</p>
+<p>The implementation session inspected nine production stills at 0, 6, 19, 42,
+52, 57, 60, 103 and 150 seconds. Those samples show forward attention and
+attached dog/cat surfaces, with the sampled bird contact following the unicorn
+back. Unicorn lower-limb completions remain approximations. These are bounded
+still-image observations, not a claim of human normal-speed approval. See
+<code>v7-audit/early-production-contact.jpg</code> and
+<code>v7-audit/early-production-samples.json</code> for the exact sampled PNGs and hashes.
+Four later samples at 420, 480, 540 and 599.958 seconds retain the same forward
+attention and connected dog/cat surfaces, with panorama coverage through the
+final frame. Their bounded observations and hashes are in
+<code>v7-audit/late-production-body-samples.json</code>, with the corresponding contact
+sheet alongside it. They leave normal-speed motion and hidden-hoof naturalness
+open for human review.</p>
+<h2 id="completed-production-results">Completed production results</h2>
+<p>Recorded 2026-11-01T05:23:00.471568+00:00.
+Open the <span>ten-minute review player <small>(local archive)</small></span>,
+the <span>clean film <small>(local archive)</small></span>,
+or the <span>v6/v7 comparison <small>(local archive)</small></span>.</p>
+<table>
+<thead>
+<tr>
+<th>Verified result</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Picture</td>
+<td>600 seconds, 14,400 frames, 1080×1920, 24 fps</td>
+</tr>
+<tr>
+<td>Lossless decoded frames</td>
+<td>All 14,400 RGB frames match production pixel hashes</td>
+</tr>
+<tr>
+<td>Audio</td>
+<td>28,800,000 stereo 48-kHz PCM sample frames, identical to the canonical prefix</td>
+</tr>
+<tr>
+<td>Captions</td>
+<td>1413 canonical tokens, 141 cues; case/punctuation retained</td>
+</tr>
+<tr>
+<td>Frozen inputs freshly rehashed</td>
+<td>507 code/input/asset paths</td>
+</tr>
+<tr>
+<td>Frame worker time</td>
+<td>2909.622 seconds across 60 chunks</td>
+</tr>
+<tr>
+<td>Master/proxy assembly elapsed</td>
+<td>526.161 seconds</td>
+</tr>
+<tr>
+<td>Shared worker ledger</td>
+<td>20101.467 / 21,600 seconds</td>
+</tr>
+<tr>
+<td>Remaining worker allowance</td>
+<td>1498.533 seconds</td>
+</tr>
+<tr>
+<td>New provider credits / model generations / training</td>
+<td>0 / 0 / 0</td>
+</tr>
+</tbody>
+</table>
+<p>Two controlled interruption tests stopped after 12 saved frames and resumed
+24-frame jobs starting at frames 1,200 and 4,800. Completed prefix PNG bytes
+and modification times were retained; all resumed PNG bytes match production.
+Receipts: <code>opening-v7/review/restart-verification.json</code> and
+<code>delivery/opening-v7/delivery-validation.json</code>.</p>
+<ul>
+<li>Input identity: <code>f7f23d0ca28dedb822e78de558b730094ff2fef52068ba815fc88257a1d7acab</code>.</li>
+<li>Lossless master SHA-256: <code>341f863fc6fcd4a95bcc22a9a2242acbf19fe7737208fea7cdb806a5dac28aa4</code>.</li>
+<li>Clean MP4 SHA-256: <code>296e5f3114350b733693042dcfe0e41f639f3cc0b265ac8ec3eca81e26f0464c</code>.</li>
+<li>Exact decoded PCM SHA-256: <code>0a23e55f1325e312ce906196af125f20438d20aae381aa981b84e49df6d3defb</code>.</li>
+</ul>
+<p>The ten-minute endpoint falls inside speaker 3 / albatross turn 33, during
+“doesn't” according to the saved timing. The complete canonical transcript
+and full audio remain intact. This is an exact requested excerpt, not a rewrite.</p>
+<p>Technical production is complete. The human-review items in this document
+remain open; neither the software checks nor the unattended run establish
+visual acceptance. The current staggered cast stays forward. No mutual
+side-by-side look is claimed without the missing reciprocal view assets.</p>
+<h2 id="completed-local-restart-archive">Completed local restart archive</h2>
+<p><span>Opening-v7 restart archive <small>(local archive)</small></span> is
+<strong>46,020,853,760 bytes</strong>, with <strong>30,580 payload paths</strong>
+verified against their hashes. Construction and verification took
+429.629 seconds.</p>
+<p>SHA-256: <code>ca27d1fce34df994df95c6cd677ee805ee4384e7a18687bed16db9f2cdfed678</code>.</p>
+<p>The <span>external archive receipt <small>(local archive)</small></span>
+and <span>member manifest <small>(local archive)</small></span>
+identify the completed file. The archive is local; no independent-host copy
+was made. Its documentation/state snapshot precedes this final hash, which
+cannot be embedded into the file being hashed. Preserve the external receipt.</p>
+<h2 id="november-1-approval-and-complete-episode-production">November 1 approval and complete-episode production</h2>
+<p>The human explicitly approved this rendering and requested animation of the
+entire transcript. The exact instruction, approved v7 identity and master hash
+are recorded in
+<code>resources.static/here-lies-trouble/local-rendering-stage-5/approval-and-full-production.20261101.json</code>.
+The earlier visual-review notes describe accepted residual limitations of v7;
+they are no longer approval gates for extending this treatment. The original
+technical receipts, media and archive remain historical evidence, including
+their then-pending approval fields. The new approval receipt is authoritative.</p>
+<p>The complete episode is <strong>52:35.375</strong>, <strong>75,729 frames at 24 fps</strong>, with
+<strong>151,458,000 stereo 48-kHz sample frames</strong>, <strong>191 turns</strong> and <strong>297 speech
+chunks</strong>. Reuse the approved first <strong>14,400 frames / 600 seconds</strong> directly;
+render the remaining <strong>61,329 frames / 42:35.375</strong>. Preserve the complete
+canonical fourth-draft text, full PCM master and all four voice assignments.
+The continuation completes the sentence previously intersected by the
+ten-minute preview and runs through the final canonical turn and audio tail.</p>
+<p>The new root is
+<code>outputs/here-lies-trouble/local-rendering-stage-5-full-20261101/</code>, with
+<code>episode-v1</code>, <code>scene-v1</code>, <code>implementation-v1</code> and <code>delivery/episode-v1</code>.
+The v7 renderer and walking surfaces are copied unchanged. A small wrapper
+changes only the scenery reader to load bounded panorama pages. Staging,
+mouth treatment, forward attention, bird performance and the existing visitor
+schedule carry through from the approved implementation. No new model
+sampling, training, provider credits or purchases are used.</p>
+<p>The saved OSM working route is 2,252.4 metres long. The same terrain construction
+continues along its eight saved USGS elevation anchors using the existing
+illustrated scenery sources. The camera, ground and foreground retain the
+105-pixel/s clock. The first 64,356 panorama columns are compared exactly with
+the accepted panorama, including every source pixel visible in the approved
+ten-minute prefix. Additional tiles join spatially beyond that prefix; no timed
+background dissolve or resetting scenery clock is introduced. The full atlas
+is stored as 8,192-column pages so workers need only the visible neighboring
+pages in memory. This remains an illustrated route, with the same geographic
+precision limits documented above.</p>
+<p>The compiled full atlas is <strong>333,312 × 1,280 pixels in 41 pages</strong>. Each worker
+caches at most four decoded pages. <code>scene-v1/assets/full-route-panorama.json</code>
+records every page hash and spatial tile's source, world x-coordinate, episode
+time, route distance, interpolated longitude/latitude and centre elevation.
+The extension uses the saved four terrain paintings, 1,280-pixel tile advances
+and 512-pixel spatial overlaps. It follows the fixed source-selection order
+and minimum-error seams in <code>hlt-local-stage5-full-prepare.py</code>; there is no new
+random seed or model sampling. The first added tile starts at x=66,560, beyond
+the 64,356 columns needed by the approved prefix. Saved USGS centre elevations
+guide a two-pixels-per-metre vertical adjustment, with horizon alignment at
+each overlap. Preserve the compiled pages for exact replay; reconstructing
+them requires the recorded NumPy/OpenCV/SciPy environment and source assets.</p>
+<p>The old six-hour exploration ledger remains at <strong>20,101.467 / 21,600 seconds</strong>.
+Its remaining 24:58.533 cannot fund a full episode. This explicit new
+complete-episode instruction authorizes a separate production run, recorded
+in <code>local-rendering-stage-5-full-20261101/cpu-budget.json</code>, with a bounded
+<strong>28,800 aggregate active worker-second ceiling</strong>. The initial agent-selected
+six-hour planning bound did not pass the measured full-pipeline admission;
+its failed admission receipt is retained as <code>resource-admission-initial-6h.json</code>.
+The new-production ledger records that measured revision to eight hours. This does not reset or
+increase the earlier exploration allowance, exhausted image allowance or
+training allowance. Measure representative complete segment work before
+admission; choose worker concurrency from those measurements and retain
+finite reservations and measured elapsed charges, including failed work.</p>
+<p>Storage is bounded by keeping verified FFV1/PCM segment masters. Each new
+ten-second job first saves restartable PNGs, encodes its lossless segment,
+decodes and compares every RGB frame and PCM sample, and then removes only
+that job's temporary PNGs. The exact pixel hashes and lossless segment remain.
+The approved ten-minute masters and review files are reused through hard links.
+The full review is delivered as continuous clean and captioned MP4s with the
+complete canonical audio encoded once per movie. A lossless segment manifest
+and concat playlist define the full lossless master without duplicating its
+large media payload into another monolithic file or archive.</p>
+<pre><code class="language-mermaid">flowchart TD
+    Approval[November 1 approval of opening-v7] --&gt; Prefix[Reuse approved first 600 seconds]
+    Canonical[Complete canonical PCM and 191 turns] --&gt; Controls[Full four-voice mouth controls]
+    Route[Saved OSM route and USGS heights] --&gt; Pages[Extend and page the fixed panorama]
+    Controls --&gt; Freeze[Freeze complete-episode inputs and code]
+    Pages --&gt; Freeze
+    Freeze --&gt; Canary[Boundary, later-route and final-turn checks]
+    Canary --&gt; Admission[Measured compute and storage admission]
+    Admission --&gt; Segments[Bounded restartable segment workers]
+    Segments --&gt; Verify[Exact decoded RGB and PCM checks]
+    Verify --&gt; Keep[Keep lossless segments and pixel hashes]
+    Verify --&gt; Clean[Remove only verified temporary PNGs]
+    Prefix --&gt; Assemble[Continuous full-length review movies]
+    Keep --&gt; Assemble
+    Assemble --&gt; Handoff[Full transcript checks, durable receipts and human review]
+</code></pre>
+<p>Preparation and renderer sources are <code>scripts/hlt-local-stage5-full-prepare.py</code>,
+<code>scripts/hlt_local_stage5_full_art.py</code> and
+<code>scripts/hlt_local_stage5_full_worker.py</code>. The worker code used for production
+is frozen beneath the new implementation directory. Full-length captions use
+the saved word alignment and canonical source offsets; recognition text never
+replaces canonical words. Final measured admission, delivery and restart
+receipts will be appended after the corresponding checks complete.</p>
+<h3 id="measured-full-production-admission-and-continuation">Measured full-production admission and continuation</h3>
+<p>The selected full-episode input identity is
+<code>c8a891c7b0afc5d9263f913f23a0df9ca3c0203a39f4e310cb0daac7a1e3f9df</code>,
+covering <strong>563 frozen paths</strong>. A total of <strong>1,329 newly rendered canary frames</strong>
+passed exact segment checks and are reused in production. Seven sample frames
+from the approved prefix also rendered identically through the paged scenery
+reader, and all original 14,400 prefix controls are identical.</p>
+<table>
+<thead>
+<tr>
+<th>Measured admission item</th>
+<th style="text-align: right;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Serial complete segment work</td>
+<td style="text-align: right;">0.306606 active seconds/frame</td>
+</tr>
+<tr>
+<td>Two workers, aggregate active work</td>
+<td style="text-align: right;">0.322817 seconds/frame</td>
+</tr>
+<tr>
+<td>Three workers, aggregate active work</td>
+<td style="text-align: right;">0.336504 seconds/frame</td>
+</tr>
+<tr>
+<td>Selected concurrency</td>
+<td style="text-align: right;">3 workers</td>
+</tr>
+<tr>
+<td>Remaining new frames after canaries</td>
+<td style="text-align: right;">60,000</td>
+</tr>
+<tr>
+<td>Forecast with 15% segment margin and 1,800 seconds delivery allowance</td>
+<td style="text-align: right;">25,018.789 aggregate seconds</td>
+</tr>
+<tr>
+<td>Worker allowance remaining at admission</td>
+<td style="text-align: right;">28,354.548 seconds</td>
+</tr>
+<tr>
+<td>Additional storage forecast including margin and reserve</td>
+<td style="text-align: right;">105,963,933,451 bytes</td>
+</tr>
+<tr>
+<td>Free storage at admission</td>
+<td style="text-align: right;">127,936,167,936 bytes</td>
+</tr>
+</tbody>
+</table>
+<p>The resource admission passed. The old six-hour planning rejection is retained
+alongside the accepted receipt; no attempts or charges were erased. The
+controller submits only three jobs at a time, updates completion state after
+verified segments, then assembles and checks the complete review movies.
+It uses Python's <code>ProcessPoolExecutor</code> with spawned processes. Each worker
+keeps the frozen controls and pose cache, uses two OpenCV threads and two
+FFmpeg codec threads, and retains the global episode frame number. Gait,
+mouths, terrain and foreground clocks never restart at segment boundaries.
+At most three 240-frame PNG scratch sets are live. Final review assembly
+copies the already-encoded video streams and encodes the complete canonical
+audio once for each continuous film; independently encoded segment AAC is
+not joined into the final soundtrack.</p>
+<p>The clean and captioned joins were separately remuxed and decoded across
+599–601 seconds. All 48 frames in each test matched the corresponding source
+review segments. Six-second clips covering 598–604 seconds are saved as
+<code>episode-v1/review/continuation-join-clean.mp4</code> and
+<code>continuation-join-captioned.mp4</code>. The continuation completes the word and
+sentence at the old preview boundary; audio is supplied continuously from the
+full canonical master. Internal still samples at 601, 1,251 and 3,154 seconds
+show the accepted character treatment, full scenery coverage and legible
+active captions. These checks do not replace review of the finished episode.</p>
+<p>The lossless FFV1/PCM playlist also passed the same 48-frame boundary check,
+plus exact comparison of 96,000 stereo samples spanning 599–601 seconds.
+PCM identity uses integer sample indices after decoding. An earlier diagnostic
+that sought the Matroska stream with <code>-ss 599</code> was not sample-exact; it was
+replaced by <code>atrim=start_sample=28752000:end_sample=28848000</code>. The original
+segment checks already compare their complete PCM ranges exactly. This
+distinction and the successful playlist proof are recorded in
+<code>episode-v1/review/lossless-join-verification.json</code>; the reproducible checker
+is <code>scripts/hlt-local-stage5-full-join-check.py</code>.</p>
+<p>Current progress is in this new root's <code>continuation.json</code> and
+<code>episode-v1/readiness.json</code>; <code>execution-session.json</code> identifies the live tool
+session. Resume a stopped production with
+<code>python3 scripts/hlt-local-stage5-full-run.py run</code>. It verifies and reuses
+completed segments, including the late-route canaries, before continuing.
+The full runner also invokes delivery, final checks, documentation and state
+recording when rendering completes. Keep the coordinator lock and ledger
+reservations intact while it is live.</p>
+<h3 id="full-episode-still-inspection-and-remaining-visual-review">Full-episode still inspection and remaining visual review</h3>
+<p>Twelve sampled clean-film frames cover 0:00, 9:59, 10:00, then five-minute
+intervals through 50:00 and 52:34. The characters retain the approved scale,
+forward staging and connected silhouettes; the terrain and foreground remain
+covered through the final turn. Some extended terrain joins bend or pinch
+the illustrated ridges, particularly around 20:00, 35:00 and 52:34. Review
+those passages at normal speed for acceptable terrain shape and continuity.
+The still inspection cannot establish gait, lip synchronization, gaze timing
+or motion continuity throughout the movie. Its bounded observations are saved
+in <code>episode-v1/review/full-episode-visual-inspection.json</code>; full-length visual
+and listening review remains open.</p>
+<h2 id="complete-episode-delivered-november-1-production">Complete episode delivered — November 1 production</h2>
+<p>Recorded 2026-11-01T15:45:38.484147+00:00.
+Open the <a href="/review/here-lies-trouble-local-full-20261117/">complete episode review</a>,
+the <a href="/review/here-lies-trouble-local-full-20261117/">clean film</a>,
+or the <a href="/review/here-lies-trouble-local-full-20261117/">captioned film</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Result</th>
+<th>Verified value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Complete duration</td>
+<td>52:35.375 / 3,155.375 seconds</td>
+</tr>
+<tr>
+<td>Picture</td>
+<td>75,729 frames, 1080×1920, 24 fps</td>
+</tr>
+<tr>
+<td>Canonical sound</td>
+<td>151,458,000 stereo 48-kHz sample frames; full original PCM retained</td>
+</tr>
+<tr>
+<td>Canonical speech</td>
+<td>191 turns, 297 chunks, 8,107 caption tokens</td>
+</tr>
+<tr>
+<td>Captions</td>
+<td>800 cues, exact canonical words and punctuation</td>
+</tr>
+<tr>
+<td>Approved prefix</td>
+<td>First 14,400 frames / 600 seconds reused</td>
+</tr>
+<tr>
+<td>Newly rendered</td>
+<td>61,329 frames / 42:35.375</td>
+</tr>
+<tr>
+<td>Lossless master</td>
+<td>257 ordered FFV1/PCM segments</td>
+</tr>
+<tr>
+<td>Workers selected by measurement</td>
+<td>3</td>
+</tr>
+<tr>
+<td>New production ledger</td>
+<td>19885.428 / 28,800 aggregate worker seconds</td>
+</tr>
+<tr>
+<td>Original exploration ledger</td>
+<td>Unchanged; its recorded hash still matches</td>
+</tr>
+<tr>
+<td>New provider credits / training / image inference</td>
+<td>0 / 0 / 0</td>
+</tr>
+</tbody>
+</table>
+<p>Input identity: <code>c8a891c7b0afc5d9263f913f23a0df9ca3c0203a39f4e310cb0daac7a1e3f9df</code>. Every new segment's decoded RGB
+frames and PCM samples matched the rendered pixel records and canonical audio
+range before its temporary PNGs were removed. The prefix retains its approved
+exact-media verification and was freshly hashed. Both complete review movies
+decode to the expected 75,729 frames, retain the full duration, and use the
+canonical audio continuously rather than joining independently encoded AAC.
+All source intervals and turns are represented; the preview's cut sentence is
+completed and the final turn and original audio tail are included.</p>
+<p>The restart test stopped a 24-frame continuation job after 12 frames, resumed
+without changing the saved prefix bytes or modification times, and matched
+the corresponding production segment's pixel hashes. Its receipt is
+<code>episode-v1/review/restart-verification.json</code>. Admission measurements and exact
+input hashes are alongside it. The full review checks and lossless segment
+manifest are under <code>delivery/episode-v1/</code>.</p>
+<h3 id="full-production-restart-and-future-evolution">Full-production restart and future evolution</h3>
+<p>From <code>/home/bkoz/src/izzi</code>, read this production root's <code>continuation.json</code>
+and <code>episode-v1/readiness.json</code>. An active coordinator holds <code>coordinator.lock</code>.
+Do not start a second coordinator over a live run. A stopped run resumes with:</p>
+<pre><code class="language-bash">python3 scripts/hlt-local-stage5-full-run.py run
+</code></pre>
+<p>Completed segment receipts are verified and reused; incomplete jobs preserve
+their PNG checkpoints. Each active job has a finite reservation in the new
+production ledger. Concurrent jobs reserve independently under a short ledger
+lock, and all their elapsed charges count toward the same ceiling. A hard-killed
+worker can leave a reservation; reconcile its recorded evidence rather than
+resetting the allowance. An input or implementation change requires a new
+candidate, not modification of the delivered episode.</p>
+<p>The scripts below currently target the recorded <code>local-rendering-stage-5-full-20261101/episode-v1</code>
+candidate; they are not generic commands that allocate a fresh candidate.
+For an exact rebuild, use a separate checkout with the same relative layout
+and restore its documented approved-v7 dependencies first. For an evolved
+candidate in this checkout, select a new production root consistently in the
+preparation, worker, coordinator, delivery, join-check and completion sources
+before preparation and freezing. Keep the original frozen implementation,
+receipts and ledgers intact. Then use this build sequence; do not run it over
+the delivered candidate or repeat its canaries without a concrete reason.</p>
+<pre><code class="language-bash">python3 scripts/hlt-local-stage5-full-prepare.py all
+python3 scripts/hlt-local-stage5-full-run.py canaries
+python3 scripts/hlt-local-stage5-full-run.py measure
+python3 scripts/hlt-local-stage5-full-run.py run
+</code></pre>
+<p>The full runner invokes <code>hlt-local-stage5-full-deliver.py assemble</code>, then
+<code>verify</code>, followed by <code>hlt-local-stage5-full-complete.py</code>. Those individual
+commands support a known interrupted delivery step. The approved v7 archive
+contains the prior source library and optional preparation inputs; the new
+recipe stores the compiled full-route assets, controls, exact full audio,
+frozen implementation, fonts, receipts, current source scripts and this record.
+The canary action includes the review and lossless join checks; <code>measure</code>
+adds the recorded three-worker measurement and updates resource admission.</p>
+<p>The full lossless master is represented by
+<code>delivery/episode-v1/lossless-segment-manifest.json</code> and <code>lossless.ffconcat</code>,
+with media under <code>episode-v1/jobs/segments/</code>. Preserve that directory as well
+as the compact recipe archive. The recipe deliberately excludes those large
+lossless/review media files to fit the available storage. It is sufficient to
+regenerate them with the recorded environment and an appropriate future compute
+allowance when combined with the preserved approved v7 archive or prefix media;
+it is not a second stored copy of the complete film. Existing exact
+pixel hashes provide the comparison for any regeneration.</p>
+<p>For corruption of a completed segment, retain its damaged files and receipts
+in a separately named quarantine, regenerate that same interval from immutable
+inputs in a new job directory, and compare its pixels with the preserved
+expected hashes before selecting the replacement. Do not treat a missing or
+corrupt media file as a reason to reset source identities or old budgets.</p>
+<p>The complete-episode visual/listening review remains open. In particular,
+review long-duration repetition, the illustrated route continuation, the
+ten-minute join, all speaker handoffs and the final sentence. The approved
+unicorn source-occlusion approximations and forward-only staggered attention
+remain the accepted baseline treatment, with future refinements optional.</p>
+<h3 id="verified-complete-episode-restart-recipe">Verified complete-episode restart recipe</h3>
+<p>The <span>compact restart recipe <small>(local archive)</small></span> is
+1,407,088,640 bytes; 2,667 payload paths passed
+member verification. SHA-256: <code>93f9ac516825cb2e08f86d0b6c195ad575bf84e3437a0d93a2bd8d8b3bc4344f</code>.
+Large lossless segments and review movies remain separately under the full
+production root; preserve them with the recipe and their manifest. This is a
+local copy, with no independent-host duplicate. The external receipt is
+<code>delivery/episode-v1/recipe-verification.json</code>. Its documentation snapshot
+precedes this final hash and completion state.</p>
+</html>

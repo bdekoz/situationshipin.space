@@ -18,7 +18,7 @@ const MEMBERS = [
   {
     name: "workflow-hardware-software-diagram",
     title: "Compute software",
-    description: "A grayscale map with devp.ac and situationshipin.space aligned across the center. Custom Software contains FFmpeg / Inkscape / Ghostscript, Cartofreako, Izzi and Clusterops. Local Database contains Ipinfo between Custom Software and Local AI's media models, DeepSeek V4 Flash and Ornith 1.5. Hosted AI groups Motion generation, Image generation and Coding. Local connections are solid; hosted connections are dotted.",
+    description: "Current software roles: native tools and HLT CPU replay; MOSS appearance and SAM pose extraction; local audio and retained local LLMs; fal motion references and Codex authoring. Saved assets drive the complete local film. New fal model comparisons remain proposed. Revised for issue #82, November 17, 2026.",
   },
   {
     name: "devpac-compute-resources-diagram",
@@ -32,7 +32,7 @@ const MEMBERS = [
   },
 ];
 const TITLE = "Workflow diagrams, hardware & local models";
-const DESCRIPTION = "Three updated diagrams for the current Izzi workflow, including DeepSeek V4 Flash and Ornith 1.5 on eureka. Inventory: October 27, 2026.";
+const DESCRIPTION = "Three workflow diagrams refreshed November 17, 2026: current software roles, compute hardware and the production loop. Hardware observations remain dated October 27; MOSS/SAM and CPU replay reflect later production records.";
 const CSS = `
 .review-page .review-hero h1{font-size:clamp(2rem,4vw,3.5rem);line-height:1.08;letter-spacing:-.035em;max-width:none}
 .review-page .review-media>h2,.review-page #feedback-title{font-size:1.6rem;letter-spacing:-.025em}
@@ -77,9 +77,10 @@ function links(spec) {
 
 function indexContent(commit) {
   const source = `https://github.com/bdekoz/izzi/blob/${commit}/docs/workflows.md`;
-  return `<h2>Current hardware and local models</h2>
-<div class="workflow-intro"><p><strong>Both new LLMs are on eureka.</strong> DeepSeek V4 Flash uses the ROCm <code>ds4</code> runner; Ornith 1.5 is installed as <code>ornith-1.5:35b</code> in Ollama. They share one 96 GiB GPU allocation.</p>
-<p>DeepSeek’s saved October 21 inference and API trials passed. Its server is on demand and was not listening at inventory time; Ollama was listening. The diagrams show available local authoring choices. Model installation does not add automatic workflow routing.</p></div>
+  return `<h2>Current software and production roles</h2>
+<div class="workflow-intro"><p><strong>The complete HLT film replays saved assets on CPUs.</strong> MOSS supplied appearance, SAM supplied extraction masks, and saved Seedance poses support authored motion. Local dialogue and captions complete the 52:35 film. <a href="/review/here-lies-trouble-local-full-20261117/">Review the full local film</a> · <a href="/review/here-lies-trouble-local-stage5-workflow-20261117/">Stage 5 durable workflow</a>.</p>
+<p>fal Seedance 2.0 has project canary evidence. The November migration and newer model comparisons are planned acquisition work, not dependencies of film replay. Full-film human review remains open.</p>
+<p>The October 27 inventory places DeepSeek V4 Flash (<code>ds4</code> / ROCm, on demand) and <code>ornith-1.5:35b</code> (Ollama) on eureka, sharing one 96 GiB GPU allocation. This publication does not recheck live services or add automatic model routing.</p></div>
 <ul class="workflow-cards">${MEMBERS.map((spec) => `<li class="workflow-card">
 <h3><a href="/review/${spec.name}/">${escape(spec.title)}</a></h3>
 <p>${escape(spec.description)}</p>

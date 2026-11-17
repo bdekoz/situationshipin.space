@@ -23,13 +23,16 @@
   <g id="node-PRODUCE">
     <rect x="550" y="40" width="440" height="230" rx="4" fill="#e6e6e6" stroke="#666666" stroke-width="2" />
     <text x="770.0" y="83" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">2. PRODUCE</text>
-    <text x="770.0" y="121" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">Transcript + keyframes for review</text>
-    <text x="770.0" y="151" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">Voice audio · video render + mux</text>
+    <text x="770.0" y="121" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">Native SVG + portrait engraving</text>
+    <text x="770.0" y="151" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">MOSS stills + saved-asset animation</text>
+    <text x="770.0" y="181" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">Voice audio · video render + mux</text>
   </g>
   <g id="node-REVIEW">
     <rect x="1060" y="40" width="440" height="230" rx="4" fill="#e6e6e6" stroke="#666666" stroke-width="2" />
     <text x="1280.0" y="83" text-anchor="middle" fill="#222222" font-size="22" font-weight="700">3. REVISE</text>
-    <text x="1280.0" y="121" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">Portal review · KEEP / REVISE</text>
+    <text x="1280.0" y="121" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">Digital checks and exact receipts</text>
+    <text x="1280.0" y="151" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">Human KEEP / REVISE</text>
+    <text x="1280.0" y="181" text-anchor="middle" fill="#222222" font-size="19" font-weight="400">Print proof or audiovisual review</text>
   </g>
   <rect x="723.5" y="316" width="93" height="28" rx="4" fill="white" />
   <text x="770" y="337" text-anchor="middle" fill="#222222" font-size="19">stage 1</text>

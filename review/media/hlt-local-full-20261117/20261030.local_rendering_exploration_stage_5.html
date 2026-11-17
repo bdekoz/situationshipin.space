@@ -1,0 +1,665 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Here Lies Trouble — Stage 5 production and revision record</title><style>body{max-width:70rem;margin:auto;padding:1.5rem;font:17px/1.6 system-ui;color:#172d40;background:#fcfbf7;overflow-wrap:anywhere}pre{overflow:auto;padding:1rem;background:#eee}table{display:block;overflow:auto;border-collapse:collapse}td,th{border:1px solid #aaa;padding:.4rem}a{color:#173a55}</style><p><a href="/plans.html">Plans</a> · <a href="/review/here-lies-trouble-local-full-20261117/">Complete film review</a> · <a href="/review/media/hlt-local-full-20261117/20261030.local_rendering_exploration_stage_5.md">Original Markdown</a></p><p>Published November 17 from the current committed Stage 5 record. References marked “local archive” remain in production storage.</p><p>Revisions from:
+20261029.local_rendering_exploration_stage_4.md</p>
+<p>Human review of the latest video, the 5 minute render is:</p>
+<ol>
+<li>
+<p>Gait, leg and body animation, animated leg and torsomotion, the albatross landing and then takeoff is very alkward with the leg and feet motion. All animal motion with connections of legs to torson on all animals: weak. Re-evaluate the seedance-generated stage 4 outputs again, in fine detail. How can the local render match that quality? Generate a plan for improvement.</p>
+</li>
+<li>
+<p>Evaulate using seedance2.ai credits in November to produce gait, leg and body animation cutouts, face left/right/center profiles, up, down, etc. Could this be used with the existing stage-4 rendering pipeline to improve gait/motion animation?</p>
+</li>
+<li>
+<p>foreground, background, all good, scrolling works, location tracking: all good</p>
+</li>
+<li>
+<p>other naimals animations good</p>
+</li>
+<li>
+<p>mouth motions are pretty good, especially for dog and albatross. Cat could use some work, but this is progressing much faster and better than gait.</p>
+</li>
+<li>
+<p>gaze, animal attention, facial position: all weak. Scaling and warping on the dog is common, any head movement is a warp and distortion instead of a movement through head positions. Think about what kind of profile information would allow better head animations, and plan a prompt to generate the profiles with seedance.</p>
+</li>
+<li>
+<p>Legs on the animals are not really rendering well. The for the dog, the front paws get distorted when the animations overlap, and the back leg is revealed to be a stick leg, and not even an animal leg. The horse legs are not proportioned to the body of the horse, and look like the horse is falling over. Re-track the canonical seedance 4 leg motion and shapes. Redo this.</p>
+</li>
+</ol>
+<p>Make these changes, and render out the first 10 minutes for stage 5.</p>
+<p>Append any production notes, audits, suggestions for improvement. Put in the docs the fully-rendered audio track, and put that audio rendering up on situationshipin.space for review and script improvement.</p>
+<hr />
+<h2 id="current-production-november-1-2026">Current production — November 1, 2026</h2>
+<p>November 17 review publication: <a href="https://situationshipin.space/review/here-lies-trouble-local-full-20261117/">complete local film, 52:35</a>,
+<a href="https://situationshipin.space/review/here-lies-trouble-local-stage5-record-20261117/">this Stage 5 record</a>,
+and <a href="https://situationshipin.space/review/here-lies-trouble-local-stage5-workflow-20261117/">durable workflow</a>.
+The video is a complete 720p review derivative of the November 1 delivery,
+with copied dialogue audio and optional English captions. Full-film human
+review remains open; the published 103-second provider film is an earlier comparison.</p>
+<p>The human-approved baseline is <strong>opening-v7</strong>. The complete 52:35.375 episode now uses that treatment.
+Use the <a href="/review/media/hlt-local-full-20261117/20261030.local_rendering_exploration_stage_5_durable_workflow.html">Stage 5 durable workflow</a>
+for current status, selected implementation, restart commands and review limits.
+The October 30 record below describes the preserved opening-v6 baseline;
+the October 31 review and revision are appended later in this file.</p>
+<h2 id="execution-record-october-30-2026">Execution record — October 30, 2026</h2>
+<p>The text above is the human review and execution instruction, preserved as
+received. The current instruction authorizes unattended implementation and a
+600-second candidate. It does not mark that future candidate visually accepted.
+This is local exploration Stage 5, distinct from the earlier production Stage 5
+planning document and the hosted Seedance production Stage 4 reference.</p>
+<h3 id="scope-and-preserved-components">Scope and preserved components</h3>
+<ul>
+<li>Preserve canonical fourth-draft words and the existing four-voice master.</li>
+<li>Preserve the reviewed foreground, illustrated OSM terrain, common scrolling
+  clock, incidental animals, and useful dog/albatross mouth treatment.</li>
+<li>Replace the failing whole-body leg and head deformation approach after a
+  detailed, time-indexed comparison with the canonical Seedance footage.</li>
+<li>Render the first 600 seconds at 1080×1920, 24 fps, with exactly 28,800,000
+  stereo sample frames from the existing 48-kHz dialogue master.</li>
+<li>Keep opening-v5 and its archive immutable. New work lives in
+  <code>outputs/here-lies-trouble/local-rendering-stage-5-performance-20261030/</code>.</li>
+<li>Evaluate November Seedance asset production and prepare prompts; do not
+  submit paid jobs or buy credits as part of this evaluation.</li>
+<li>Publish a bounded complete audio listening derivative on the existing
+  situationshipin.space review portal, retaining the full lossless master locally.</li>
+</ul>
+<h3 id="implementation-sequence">Implementation sequence</h3>
+<ol>
+<li><strong>Reference audit:</strong> inspect the 103-second clean Seedance reference,
+   including individual walking phases, anatomical silhouettes, head views and
+   occlusions. Preserve source times, masks and limitations.</li>
+<li><strong>Pose-library experiment:</strong> test complete, matted animal poses extracted
+   from existing reference footage. A pose library can retain source anatomy
+   that a single-image skin mesh cannot reconstruct. Reject poor mattes,
+   occluded limbs and discontinuous loop boundaries before production selection.</li>
+<li><strong>Performance revision:</strong> register independent head views at the neck;
+   preserve head aspect ratio; attach anatomical mouths to their selected view.
+   Use forward attention as neutral and explicit partner targets. Rework bird
+   approach, foot reach, contact, crouch, push-off and departure as separate phases.</li>
+<li><strong>Integration canaries:</strong> compare opening, speaking, gait, head direction,
+   landing and loop seams against v5 and the source at matched times. These are
+   internal checks under the unattended instruction; record actual limitations
+   and leave human naturalness/readability acceptance pending.</li>
+<li><strong>Ten-minute production:</strong> extend scenery coverage and the measured dialogue
+   control timeline, freeze source/implementation hashes, render restartable
+   chunks, assemble exact PCM/lossless picture and review proxies, verify and
+   record recovery evidence. Test measured runtime against the remaining shared
+   CPU-worker allowance before admitting the full run; no allowance reset.</li>
+<li><strong>Audio and handoff:</strong> publish the complete listening track, verify the live
+   review URL, save resource/source receipts, append implementation details and
+   remaining review issues here, and update project state.</li>
+</ol>
+<h3 id="initial-root-cause-findings">Initial root-cause findings</h3>
+<p>V5's geodesic weights preserve connected alpha, but cannot reconstruct an
+occluded rear leg or the changing silhouette of a paw from a single source
+pose. Connected pixels did not establish anatomical quality. Its two-segment
+limb targets also simplify the equine fetlock and canine/feline hock. Head
+foreshortening changes width without supplying the far eye, muzzle, ear or
+neck surfaces revealed by a real turn. The bird's former landing moves feet
+between points without a coordinated pelvis/knee/ankle and body impulse.</p>
+<p>The new source-pose experiment addresses these representation limits rather
+than treating a larger pixel difference as evidence of better animation.
+Actual source coverage, matte quality and temporal continuity still require
+inspection; the existing reference cannot supply unseen views automatically.</p>
+<h3 id="starting-resource-state">Starting resource state</h3>
+<p>The shared CPU ledger begins at 11,729.382 / 21,600 worker seconds, leaving
+9,870.618 seconds. The earlier image/training allowances are exhausted;
+no new MOSS sampling or training is planned. Frame-pose caching and one
+persistent renderer per chunk will be measured before the ten-minute run.
+Preparation, source analysis, audio publication and encoding overhead are
+recorded separately where the existing ledger does not charge them.
+For this run the ledger charges frame workers, technical preflight,
+master/proxy encoding, exact-media verification and restart proofs. Source
+segmentation, interactive assembly inspection, site publication, review-only
+derivative encoding and archive construction remain preparation/delivery
+work outside that inherited worker allowance; their receipts retain timings
+where measured.</p>
+<h3 id="october-30-production-selection-preserved-opening-v6">October 30 production selection — preserved opening-v6</h3>
+<p>The candidate selected on October 30 was <strong>opening-v6</strong>. Its immutable scene and renderer
+were frozen after 624 internal canary frames and source/performance checks.
+Production completed in 60 restartable 240-frame chunks. The authoritative progress files
+are <code>opening-v6/readiness.json</code>, <code>opening-v6/heartbeat.json</code> and the root
+<code>continuation.json</code> under the Stage 5 output directory. The completion and archive receipts below record the final verified result.</p>
+<p>The selected input identity is
+<code>cd765879c17775c20801eee70080c6fe805d05a172bb7ae00cd18baea2c63219</code>.
+This pins the compiled assets, performance, source excerpt, input receipts and
+all eleven frozen Python files. Do not edit those files in place. A changed
+candidate needs a new run, scene and implementation identity.</p>
+<h3 id="complete-audio-for-script-review-published">Complete audio for script review — published</h3>
+<p>Listen to the <a href="https://situationshipin.space/review/here-lies-trouble-draft4-complete-audio-20261030/">complete fourth-draft audio review</a>
+and read the <a href="https://situationshipin.space/review/here-lies-trouble-fourth-draft-20261026/">matching canonical screenplay</a>.</p>
+<p>The existing master contains <strong>52:35.375 of complete dialogue</strong>. No words,
+voices, pauses or ordering were edited for this publication. The listening
+file is a mono 24-kHz, 40-kbit/s MP3 derivative, 15,777,591 bytes. The full
+lossless stereo 48-kHz, 24-bit WAV remains available locally:</p>
+<p><span>Complete lossless dialogue master <small>(local archive)</small></span>.</p>
+<table>
+<thead>
+<tr>
+<th>Artifact</th>
+<th>SHA-256</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Complete lossless master</td>
+<td><code>efc0ad9a7bdf1bd39a47003db860c4efc9d6659b912e6c32d22f66aa1d000cec</code></td>
+</tr>
+<tr>
+<td>Complete listening MP3</td>
+<td><code>8608e5939b15fc9d814f3425284c45391a5e5a75eb9adb2c44ba7bd2cda8c3ce</code></td>
+</tr>
+<tr>
+<td>Canonical fourth-draft source</td>
+<td><code>889c2fdd91008e7acd998a7ed1ab94c4a0a20e71c5cba06ec37070e47001f4f6</code></td>
+</tr>
+</tbody>
+</table>
+<p>The MP3 decodes to exactly <strong>75,729,000 mono sample frames at 24 kHz</strong>,
+preserving the full duration. Its unshifted waveform cosine against the
+downmixed source is 0.990811. It is a lossy listening copy, not PCM-identical
+to the master. Detailed receipts are in <code>audio-review/verification.json</code> and
+<code>audio-review/publication-live.json</code>.</p>
+<p>The existing situationshipin.space GitHub Pages workflow published commit
+<code>99f3696</code>. Live page and media requests returned HTTP 200, and the downloaded
+media hash matched the local MP3. Publication used an isolated temporary
+checkout based on the latest remote main. The site payload allowance was
+raised from 256 to 272 MiB for this one 15.8-MB audio file; its 16-MiB per-file
+limit remains enforced. Site validation passed with 865 catalog items and
+3,646 referenced paths. The publication does not mark the script, voices or
+new picture human-approved.</p>
+<h3 id="detailed-reference-reassessment">Detailed reference reassessment</h3>
+<p>The clean 103-second reference is
+<code>outputs/here-lies-trouble/stage-4-20261026-option-b-v3/review/sequence-silent.mp4</code>.
+The <code>reference-audit/</code> directory preserves the overview, quarter-second gait
+crops, time-indexed head coverage, mask failures and enlarged mouth/ear
+registration images.</p>
+<p>The reference's changing limb silhouettes already contain the shoulder,
+elbow, hock, fetlock and paw/hoof shapes that v5's single-image mesh lacked.
+Its actual head turns reveal a second eye, different ear overlap and muzzle
+foreshortening. Those surfaces cannot be supplied by narrowing a side-view
+image. The revision therefore uses <strong>complete walking poses plus separate
+registered source head views</strong>. It retains the existing generated bird and
+scenery artwork, and does not perform new MOSS generation or LoRA training.</p>
+<table>
+<thead>
+<tr>
+<th>Animal</th>
+<th>Walking source selection</th>
+<th style="text-align: right;">Output cycle</th>
+<th>Head-view source selection</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unicorn</td>
+<td>Reference frames 0–21, 0.000–0.875 s</td>
+<td style="text-align: right;">40 frames / 1.667 s</td>
+<td>Frames 48–72, 2.000–3.000 s; 25 views</td>
+</tr>
+<tr>
+<td>Dog</td>
+<td>Frames 11–28, 0.458–1.167 s</td>
+<td style="text-align: right;">35 frames / 1.458 s</td>
+<td>Frames 1710–1728, 71.250–72.000 s; 19 views</td>
+</tr>
+<tr>
+<td>Cat</td>
+<td>Frames 266–276, 11.083–11.500 s</td>
+<td style="text-align: right;">18 frames / 0.750 s</td>
+<td>Frames 1152–1176, 48.000–49.000 s; 25 views</td>
+</tr>
+<tr>
+<td>Albatross</td>
+<td>Existing selected MOSS bird and retained wing system</td>
+<td style="text-align: right;">Intermittent flight beats</td>
+<td>Existing head/beak layer, with rigid pitch and iris travel</td>
+</tr>
+</tbody>
+</table>
+<p>Source contact-foot displacement estimates were approximately 8, 8.5 and
+7 source pixels per frame for unicorn, dog and cat. The selected retiming
+produces approximately 105.6, 104.9 and 102.7 pixels/s during stance, close to
+the shared 105-pixel/s world travel. These are source-image estimates and
+authored retiming, not recovered three-dimensional biomechanics. The horse
+has the slowest cycle and the cat the fastest.</p>
+<p>The original source dog obscures parts of the unicorn's rear legs; the cat's
+tail crosses a front fetlock. Reusing independently timed mattes exposes those
+holes. The preparation code explicitly completes short missing sections
+between existing limb surfaces, using their endpoint colors and local width.
+It records each completion polygon in the source-bank manifest. This is
+<strong>authored completion of hidden pixels</strong>, not observed anatomy. Tiny detached
+mask flecks are removed. Those repairs remain a visual review concern and a
+reason to acquire unobstructed November source clips.</p>
+<h3 id="segmentation-masks-and-rejected-experiments">Segmentation, masks and rejected experiments</h3>
+<p>Classical GrabCut and optical-flow mask propagation were tested first.
+Loose masks captured scenery/shadows or neighboring animals; tight masks
+removed feet and ears. Those experiments remain in <code>pose-experiments/</code> and
+<code>pose-experiments-v2/</code> and are excluded from the selected scene.</p>
+<p>SAM 2.1 hiera small produced the selected prompt-guided masks. Its source
+and checkpoint are Apache-2.0 licensed; the optional CUDA post-processing
+extension was not needed for this CPU extraction path.
+<a href="https://github.com/facebookresearch/sam2">Official SAM 2 repository</a>.</p>
+<ul>
+<li>Source revision: <code>2b90b9f5ceec907a1c18123530e92e794ad901a4</code>.</li>
+<li>Checkpoint: <code>sam2.1_hiera_small.pt</code>, 184,416,285 bytes.</li>
+<li>Checkpoint SHA-256:
+  <code>6d1aa6f30de5c92224f8172114de081d104bbd23dd9dc5c58996f0cad5dc4d38</code>.</li>
+<li>Configuration: <code>configs/sam2.1/sam2.1_hiera_s.yaml</code>.</li>
+<li>Inference device: <strong>CPU on rizal</strong>. CUDA was unavailable in this execution
+  environment; the historical NVIDIA machine configuration is not evidence
+  that this extraction used the GPU.</li>
+<li>Extraction runtime: the existing Python 3.12.16 / Torch 2.14.1+cu130 runtime,
+  with additional dependencies isolated under the Stage 5 <code>python-packages/</code>.
+  The older MOSS environment was not modified.</li>
+</ul>
+<p>The selected extraction script is <code>scripts/hlt-local-stage5-sam.py</code>. Each
+source bank records source frame/time, crop, original image hash, model hash,
+mask area and predicted IoU. Predicted IoU is a model estimate, not a human
+quality score. The dog ears needed further restoration: source RGB inside
+traced ear interiors replaces SAM's holes where black ears met the black
+unicorn. That correction does not draw a new dog identity.</p>
+<p><code>reference-audit/extraction-inputs.json</code> records the original per-bank boxes,
+positive/negative points and settings. The opening bank used two dog-positive
+points; the later head bank added an ear point. The final extraction script
+contains that later default, so do not assume re-running it unchanged recreates
+the earlier prompt configuration. Exact replay uses the stored masks and
+compiled sprites, whose hashes are preserved.</p>
+<h3 id="head-mouth-and-body-integration">Head, mouth and body integration</h3>
+<p><code>source-pose-bank.json</code> records the complete compiled body cycles, real head
+views, original source rows, neck anchors and per-view eye/lower-lip landmarks.
+Body temporal interpolation uses local optical flow between neighboring
+source poses, including the loop join. It does not apply a skeletal whole-body
+mesh to a single image. Alpha thresholds suppress translucent duplicate paws.</p>
+<p>Head selection follows a smooth attention envelope but selects actual saved
+views. Head width and height stay at <strong>1:1 source scale</strong>. Small pitch changes
+are rigid rotations around the registered neck, not nonuniform head warps.
+The dog uses a stronger partial turn for companions ahead, and a fuller turn
+for partners behind. All animals return to a forward neutral view between
+glances. The current source library covers side-to-front; opposite-side and
+full up/down views remain missing.</p>
+<p>The initial integration exposed a horizontal transparency seam: two half-alpha
+neck mattes do not sum to opaque coverage under normal alpha compositing.
+The selected implementation retains an opaque 24-pixel source-neck overlap
+under the feathered head. Source translation occurs before the final head
+cut, keeping the seam in the body coordinate system.</p>
+<p>Mouths use the actual selected view's lower-lip endpoints. Unicorn landmarks
+are below the nostrils; cat landmarks follow the short lower jaw and paired
+frontal muzzle. A short local jaw displacement and clipped cavity respond to
+the existing audio envelope. The albatross retains its accepted beak layer.
+Only the active canonical speaker's mouth opens, with silence hysteresis at
+RMS 0.003/0.006. This remains energy-driven articulation, not phoneme visemes.</p>
+<p>The voice mapping is unchanged:</p>
+<table>
+<thead>
+<tr>
+<th>Speaker</th>
+<th>Animal</th>
+<th>Voice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Unicorn</td>
+<td><code>af_bella</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Dog</td>
+<td><code>am_echo</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Albatross</td>
+<td><code>af_nicole</code></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Cat</td>
+<td><code>af_heart</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="albatross-contact-revision">Albatross contact revision</h3>
+<p>The albatross keeps its reviewed flight artwork and basic wing motion. The
+49–59.5-second event now has separate approach, ride, crouch, push-off and
+departure states. Feet move forward during braking, then settle under the
+body. The contact point follows the actual upper contour of the current
+unicorn pose at the saddle region.</p>
+<table>
+<thead>
+<tr>
+<th>Time</th>
+<th>State</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Before 49 s</td>
+<td>Flight, trailing feet</td>
+</tr>
+<tr>
+<td>49–51.5 s</td>
+<td>Approach; feet reach forward and settle</td>
+</tr>
+<tr>
+<td>51.5–56.3 s</td>
+<td>Ride; planted toes follow the moving back contour</td>
+</tr>
+<tr>
+<td>56.3–56.8 s</td>
+<td>Crouch; body descends while feet stay planted</td>
+</tr>
+<tr>
+<td>56.8–57.15 s</td>
+<td>Push-off; leg extension lifts the body from planted toes</td>
+</tr>
+<tr>
+<td>57.15–59.5 s</td>
+<td>Departure; wings beat and feet retract</td>
+</tr>
+<tr>
+<td>After 59.5 s</td>
+<td>Flight</td>
+</tr>
+</tbody>
+</table>
+<p>Beyond the available 103-second reference, bounded wingbeat windows recur
+every 18 seconds. This is an authored extension. The candidate includes the
+one explicit back-riding event above; it does not claim a new observed flight
+trajectory for the remaining seven-plus minutes. Folded-wing shape and the
+naturalness of toe/ankle motion remain human review items.</p>
+<h3 id="preserved-scenery-and-long-duration-extension">Preserved scenery and long-duration extension</h3>
+<p>The first 32,860 columns of the accepted v5 panorama are byte-for-byte
+identical in the extended atlas, preserving every terrain pixel used through
+the first 300 seconds. The atlas extends to <strong>67,072 × 1,280 pixels</strong>, using
+the same saved illustration materials, spatial quilting, OSM route geometry
+and USGS height trend. Camera position is <code>round(280 + 105 × seconds)</code>.
+Ground, terrain and foreground use the same 105-pixel/s travel clock.</p>
+<p>There are no timed scene dissolves. The sky motif remains fixed as before.
+The saved first-103-second actor staging is retained as position offsets;
+after that, the final formation is held while the scenery continues. At
+600 seconds, the illustrated route progress is approximately 428.3 metres.
+Texture reuse and an approximate skyline remain inherent in this illustrated
+method; no exact photographic terrain reconstruction is claimed. No Google
+imagery or new Google mapping data were used.</p>
+<p>Incidental animal drawing code and event inputs are retained. The accepted
+foreground artwork is hash-identical to v5. The existing visitor schedule is
+not silently replaced with additional events during the extended duration.</p>
+<h3 id="internal-canary-and-preflight-evidence">Internal canary and preflight evidence</h3>
+<p>Five canary intervals covered 624 frames: 0–6, 18–21, 30–33, 42–45 and
+49–60 seconds. Their frame-worker time was <strong>154.691 seconds</strong>, or
+0.247902 seconds per frame; the measured full-frame projection was
+3,569.788 seconds before assembly and verification. The canaries remain in
+<code>opening-v6-dev/jobs/canaries/</code>, with opening and landing/takeoff MP4s in its
+<code>review/</code>. The final candidate slightly strengthens the dog's turn and has
+its own frozen identity and final preflight.</p>
+<p>Final preflight checks establish exact canonical PCM extraction, four actors,
+speaker-only mouth activity, covered terrain positions, the preserved first
+300-second panorama and an exact 105-pixel translation from seconds 5 to 6
+inside opaque terrain. They also inspect all body-cycle silhouettes and
+record actual head-view/mouth landmark coverage.</p>
+<table>
+<thead>
+<tr>
+<th>Actor</th>
+<th style="text-align: right;">Sample time</th>
+<th style="text-align: right;">Mouth-changed pixels in actor crop</th>
+<th style="text-align: right;">Attention-changed pixels in actor crop</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unicorn</td>
+<td style="text-align: right;">1.167 s</td>
+<td style="text-align: right;">441</td>
+<td style="text-align: right;">22,455</td>
+</tr>
+<tr>
+<td>Dog</td>
+<td style="text-align: right;">19.208 s</td>
+<td style="text-align: right;">536</td>
+<td style="text-align: right;">7,198</td>
+</tr>
+<tr>
+<td>Albatross</td>
+<td style="text-align: right;">31.083 s</td>
+<td style="text-align: right;">397</td>
+<td style="text-align: right;">1,844</td>
+</tr>
+<tr>
+<td>Cat</td>
+<td style="text-align: right;">42.625 s</td>
+<td style="text-align: right;">299</td>
+<td style="text-align: right;">6,360</td>
+</tr>
+</tbody>
+</table>
+<p>These ablations prove that the selected controls affect the intended actor's
+image. They do <strong>not</strong> prove natural performance or correct perceived gaze.
+The loop-join image-difference ratios relative to each cycle's median adjacent
+change are 2.584 for unicorn, 1.539 for dog and 0.976 for cat. The unicorn's
+join deserves particular normal-speed review. The comparison image and full
+measurement details are in <code>opening-v6/review/performance-verification.json</code>
+and <code>four-speaker-performance.jpg</code>.</p>
+<p>A follow-up occlusion audit found a residual unicorn hoof fragment in cycle
+phases 25 and 26 (183 and 152 pixels). The actual dog matte fully covers it
+in 707 of the 720 occurrences across ten minutes. Thirteen early frames expose
+some pixels; the clearest cases are <strong>2.708–2.750 seconds</strong> and
+<strong>4.375–4.417 seconds</strong>. This is a remaining source-matte/occlusion defect,
+not a fully resolved anatomical surface. Its exact frame list is saved in
+<code>opening-v6/review/occluded-component-audit.json</code>. Include these moments in
+human review; the connected-component checks do not justify claiming that
+every unicorn leg is seamless. Dog and cat body cycles had no additional
+components above the 100-pixel audit threshold.</p>
+<p>Production stills at 420, 480, 540 and 599.958 seconds confirm continued scene
+coverage and the retained cast. The last sample also exposes <strong>residual
+interpolation ghosting of a unicorn lower leg near the loop wrap</strong>. Silhouette
+connectivity and alpha thresholding have not eliminated every translucent
+double edge. Inspect <code>production-late-performance.jpg</code> and the normal/half-speed
+gait review before accepting this treatment. The candidate improves source
+anatomical coverage but does not establish Seedance-equivalent temporal quality.</p>
+<h3 id="november-credits-and-source-clip-prompts">November credits and source-clip prompts</h3>
+<p>Use the <a href="https://github.com/bdekoz/izzi/blob/3d8e8505529bc019a5374ebbbcddef4bc2ab8b29/resources.static/here-lies-trouble/local-rendering-stage-5/november-asset-acquisition.md">November asset acquisition plan</a>
+for ready-to-review gait, yaw, pitch and landing prompts; seeds; source
+references; import metadata; and staged human review gates.</p>
+<p>A new authenticated balance check still reports <strong>40 credits</strong>. A November 1
+refill is not confirmed. The conditional plan allocates 78 seconds of selected
+first attempts plus an 18-second bounded retry reserve. At the project's old
+60-credit/s rate, that totals 5,760 credits. It requires a current quote,
+verified renewal and separate spend authorization. No paid jobs, subscriptions
+or purchases were submitted during this local Stage 5 work.</p>
+<h3 id="software-hosts-ai-and-data-flow">Software, hosts, AI and data flow</h3>
+<pre><code class="language-mermaid">flowchart TD
+    Human[Human Stage 5 review and unattended instruction] --&gt; Codex[Codex: analysis, code, prompts and internal inspection]
+    Seedance[Saved 103-second Seedance reference] --&gt; Audit[Time-indexed source audit]
+    Audit --&gt; SAM[SAM 2.1 on rizal CPU: masks]
+    SAM --&gt; Prepare[OpenCV and Pillow: source pose atlas, mask corrections, registration]
+    SavedArt[Existing MOSS bird and terrain artwork] --&gt; Prepare
+    Maps[Saved OSM route and USGS elevations] --&gt; Terrain[Extend fixed spatial panorama]
+    Transcript[Canonical fourth-draft text and four-voice master] --&gt; Controls[600-second exact PCM and performance JSON]
+    Prepare --&gt; Frozen[Frozen scene-v6 and implementation-v6]
+    Terrain --&gt; Frozen
+    Controls --&gt; Frozen
+    Frozen --&gt; Canary[Internal canaries and measured resource admission]
+    Canary --&gt; Frames[240-frame restartable chunks on rizal CPU]
+    Frames --&gt; FFmpeg[FFmpeg: FFV1 plus PCM master and H.264 review copies]
+    FFmpeg --&gt; Checks[Exact pixels and PCM, captions, recovery and delivery checks]
+    Checks --&gt; Review[Ten-minute local review and matched comparisons]
+    Checks --&gt; Bundle[Local restart archive and hash receipts]
+    Transcript --&gt; Audio[Complete listening MP3]
+    Audio --&gt; Portal[GitHub Pages: situationshipin.space]
+    Review --&gt; HumanReview[Human naturalness, gaze and contact review]
+</code></pre>
+<pre><code class="language-mermaid">flowchart LR
+    Inputs[JSON controls, source-bank metadata, PNG sprites, WAV excerpt] --&gt; Identity[SHA-256 input identity]
+    Identity --&gt; Claim[Serial CPU-budget reservation and chunk lock]
+    Claim --&gt; Frame[Render one deterministic frame]
+    Frame --&gt; Atomic[Atomic PNG and checkpoint write]
+    Atomic --&gt; More{More frames?}
+    More --&gt;|yes| Frame
+    More --&gt;|no| Receipt[Completed chunk receipt]
+    Restart[Interrupted process] --&gt; Resume[Validate saved hashes; retain completed frames]
+    Resume --&gt; Claim
+    Receipt --&gt; Assemble[Assemble only a complete ordered frame set]
+</code></pre>
+<p>The render host is <strong>rizal</strong>, Fedora Linux 7.2.11, Python 3.14.8, NumPy 2.4.6,
+SciPy 1.16.2, Pillow 12.3.0, OpenCV 4.13.0 and FFmpeg/FFprobe 8.1.3. The
+selected environment and eleven Python source hashes are saved in
+<code>runtime-environment.json</code> and <code>implementation-manifest.json</code> in the run's
+<code>review/</code> directory. Old dependency module docstrings describe their original
+v4 behavior; the selected Stage 5 entry point is <code>hlt_local_stage5_art.py</code>,
+which does use compiled reference-derived poses.</p>
+<p>Codex authored and inspected the implementation. SAM supplied segmentation,
+not new artwork. Saved Seedance footage supplied quadruped appearance and
+motion views; earlier MOSS artwork supplied the retained bird/scenery. No new
+speech, still generation, training or hosted video generation occurs during
+the ten-minute render. There is <strong>no database server</strong>: data and state are
+files—JSON, PNG, WAV, MP4, MKV, hashes and a tar archive.</p>
+<h3 id="restart-and-evolution-instructions">Restart and evolution instructions</h3>
+<p>Work from <code>/home/bkoz/src/izzi</code>. Start by reading this document and
+<code>outputs/here-lies-trouble/local-rendering-stage-5-performance-20261030/continuation.json</code>.
+Do not start a second worker if the heartbeat is current and its process is
+alive. Chunk locks and the shared CPU lock reject concurrent admission.
+The recorded PID is local to this execution namespace; use the current job
+session, timestamps and file locks to determine activity, rather than treating
+that number as a host-wide process ID.</p>
+<pre><code class="language-bash">python3 scripts/hlt-local-stage5-run.py full
+python3 scripts/hlt-local-stage5-run.py verify
+python3 scripts/hlt-local-stage5-run.py recover
+python3 scripts/hlt-local-stage5-deliver.py
+python3 scripts/hlt-local-stage5-delivery-check.py
+python3 scripts/hlt-local-stage5-state.py --final
+python3 scripts/hlt-local-stage5-package.py
+python3 scripts/hlt-local-stage5-state.py --final
+</code></pre>
+<p><code>full</code> resumes incomplete chunks and validates completed PNG hashes. It then
+assembles the master and verifies decoded frames in four 3,600-frame parts,
+each inside the existing finite CPU reservation. <code>recover</code> deliberately stops
+and resumes two separate 24-frame proof jobs, preserving completed frames and
+checking them against production. It does not destroy production chunks.
+Do not reset the inherited six-hour ledger at
+<code>outputs/here-lies-trouble/local-rendering-stage-3-opening-20261028/cpu-budget.json</code>.</p>
+<p><code>opening-v6/inputs.json</code> selects <code>implementation-v6</code> and <code>scene-v6</code>; its
+<code>assets</code> link points to <code>../scene-v6/assets</code>. Replaying the compiled scene
+requires no SAM checkpoint, GPU, provider account or network. SAM and the
+preparation scripts are needed only to revise source extraction. Exact output
+should be checked against saved pixel hashes on a restored environment;
+different image-library versions can change rasterization.</p>
+<p>For another evolution, create new run/scene/implementation names. Copy the
+canonical inputs and selected compiled assets, then change only the candidate
+copies. Retain all source time/hash metadata, recorded completions and human
+decisions. Acquire genuinely missing views rather than silently relabeling a
+front view as an opposite-side profile. Re-run targeted gait, mouth, gaze,
+landing and scene-continuity canaries before a longer job.</p>
+<p>The archive is a local restart copy, not an independent-host backup. Its
+external <code>bundle-verification.json</code> is authoritative for the final archive
+hash; a bundle cannot include its own final hash. Preserve any newer CPU ledger
+when restoring. Archive recipes include the canonical text/audio and reference
+sources as well as compiled assets, frames, implementation and selected source
+mattes. Existing earlier candidate archives remain untouched.</p>
+<h3 id="open-decisions-for-human-review">Open decisions for human review</h3>
+<ol>
+<li>Do the complete source poses correct the stiff shoulder/hip and paw/hoof
+   failures sufficiently? Inspect the unicorn's occlusion completions and
+   loop boundary, residual interpolation ghosting, and any thin or irregular
+   lower-leg sections.</li>
+<li>Do real head-view changes read as attention to the intended partner?
+   Inspect the dog's ear edges, view stepping and neck joins. The available
+   footage does not provide true left profiles or comprehensive pitch views.</li>
+<li>Are the cat and unicorn mouths clearly on the lower jaw across turns?
+   Energy-based openings remain an approximation of speech articulation.</li>
+<li>Does the bird's forward foot reach, contact, crouch and push-off feel
+   coordinated? Inspect folded wings, toe contact and body lift at 49–59.5 s.</li>
+<li>Does ten-minute playback expose distracting cycle repetition, fixed actor
+   formation, occasional matte edges or spatial terrain texture reuse?</li>
+<li>Which unobstructed source asset should receive the first future paid
+   canary? The November document recommends dog gait first, followed by its
+   head-view set, subject to actual available credits and review.</li>
+</ol>
+<p>The human has accepted the inherited scenery/location tracking and incidental
+animals. Technical checks and unattended execution do not approve the new
+candidate's overall visual quality.</p>
+<h3 id="completed-ten-minute-production-and-delivery">Completed ten-minute production and delivery</h3>
+<p>Completed at 2026-10-31T01:03:00.220588+00:00.
+Open the <span>ten-minute review player <small>(local archive)</small></span>,
+the <span>clean film <small>(local archive)</small></span>,
+or the <span>matched Seedance comparison <small>(local archive)</small></span>.
+The player also provides captions, exact PCM, the lossless master, enlarged
+speaking faces, landing/takeoff, five-minute continuity and a v5/v6 comparison.</p>
+<ul>
+<li>Picture: <strong>600 seconds, 14,400 frames, 1080×1920, 24 fps</strong>; all decoded
+  lossless RGB frames match their production pixel hashes.</li>
+<li>Audio: exactly <strong>28,800,000 stereo 48-kHz sample frames</strong>, PCM-identical to
+  the first ten minutes of the unchanged complete dialogue master.</li>
+<li>Captions: <strong>1413 canonical tokens / 141 cues</strong>; source offsets,
+  words, punctuation, intervals and review links validated. The exact endpoint
+  falls during “doesn't” in albatross/speaker 3 turn 33.</li>
+<li>Restart: two real interrupted/resumed 24-frame proof jobs, beginning at
+  frames 1,200 and 4,800, preserve the first 12 saved frames and reproduce
+  production PNG bytes exactly.</li>
+<li>Frozen inputs: 381 code/input/asset paths freshly rehashed during delivery
+  validation; identity remains <code>cd765879c17775c20801eee70080c6fe805d05a172bb7ae00cd18baea2c63219</code>.</li>
+<li>Frame-worker time: <strong>3237.735 seconds</strong> across 60 chunks. Master/proxy
+  assembly elapsed <strong>515.618 seconds</strong>.</li>
+<li>Shared CPU ledger: <strong>15951.148 / 21,600 seconds</strong>, leaving
+  <strong>5648.852 seconds</strong>. The allowance was not reset.</li>
+<li>New paid video credits, MOSS still generations and training attempts: <strong>0</strong>.</li>
+</ul>
+<p>Lossless master SHA-256: <code>1068ad5f12eb421013cdbd4d8e3a353b81e546ed391d36436ff3990231f1deee</code>.
+Clean review MP4 SHA-256: <code>37daed0326ecd010c76a619cc95de3be2bfd6e7140a87eb7cbd0d9cc762deb01</code>.
+Exact excerpt PCM SHA-256: <code>0a23e55f1325e312ce906196af125f20438d20aae381aa981b84e49df6d3defb</code>.</p>
+<p>Technical delivery is complete. The open naturalness, source-occlusion,
+head-view, mouth and bird-contact decisions listed above remain for human
+review. No automatic visual acceptance or future paid generation is implied.</p>
+<h3 id="completed-local-restart-archive">Completed local restart archive</h3>
+<p><span>Local opening-v6 archive <small>(local archive)</small></span> contains the compiled
+scene, all 14,400 frame PNGs, exact excerpt/master, complete canonical text and
+audio, original selected source mattes, model provenance, frozen renderer,
+review derivatives and restart recipes.</p>
+<ul>
+<li>Size: <strong>45,584,640,000 bytes</strong>.</li>
+<li>SHA-256: <code>7db7278130d600e370dd2303a280e8f8e0ba1338bcf5b2d634728b7dfa85e1ae</code>.</li>
+<li>Payload paths checked against their hashes: <strong>30,028</strong>.</li>
+<li>Archive construction and payload verification: <strong>379.372 seconds</strong>.</li>
+<li>Independent-host copy: <strong>not made</strong>. This is a local restart archive.</li>
+</ul>
+<p>The external <span>bundle receipt <small>(local archive)</small></span>
+and <span>member manifest <small>(local archive)</small></span>
+are authoritative. The archived document/state snapshot precedes this final
+archive hash; the current repository state points to the completed receipt.</p>
+<h3 id="october-31-human-review-and-opening-v7-revision">October 31 human review and opening-v7 revision</h3>
+<p>The human reports that the cast looks at the camera together, rather than
+looking toward a conversational neighbor only when walking side by side.
+Actors ahead or behind should keep looking forward. The human approves that
+replacement algorithm. Cat/dog gait is good; the unicorn jerks, and visible
+body/leg gaps and matte joins still need correction. The exact review and
+execution instructions are preserved in
+<code>resources.static/here-lies-trouble/local-rendering-stage-5/review-and-revision.20261031.json</code>.</p>
+<p>The independent opening-v7 revision replaces the truncated unicorn loop with
+a complete matching source cycle, preserves cat/dog cadence, and keeps each
+neutral walking head attached to its full source surface. Masked optical flow,
+opaque interiors, narrow crack cleanup and local jaw registration address the
+matte/attachment defects. Per-frame route-plane geometry controls eligibility
+for at most one conversation pair. The unchanged formation contains no abreast
+pair, so forward gaze is the correct current output; missing reciprocal away
+views are not substituted with frontal camera poses.</p>
+<p>The selected v7 implementation and restart instructions are self-contained in
+<a href="/review/media/hlt-local-full-20261117/20261030.local_rendering_exploration_stage_5_durable_workflow.html">20261030.local_rendering_exploration_stage_5_durable_workflow.md</a>.
+Use <code>v7-continuation.json</code> and <code>v7-completion.json</code> under the Stage 5 output
+root for current production state. The earlier v6 technical results remain
+valid for that preserved candidate; they do not override this visual review.</p>
+<h3 id="completed-october-31-opening-v7-revision">Completed October 31 opening-v7 revision</h3>
+<p>The revised ten-minute opening-v7 is delivered for human review. The full
+unicorn source cycle, complete neutral walking surfaces, corrected matte
+interpolation, local jaw registration and position-gated gaze replace the
+reviewed v6 treatment. The unchanged formation contains no abreast pair, so
+all characters keep forward attention. See the self-contained
+<a href="/review/media/hlt-local-full-20261117/20261030.local_rendering_exploration_stage_5_durable_workflow.html">Stage 5 durable workflow</a>
+for implementation, exact replay, verification, archive receipts and remaining
+source-view/anatomy limitations. Opening-v6 and its archive remain preserved.</p>
+<h3 id="november-1-approval-and-complete-episode">November 1 approval and complete episode</h3>
+<p>The human approved opening-v7 and explicitly authorized the entire transcript.
+The complete 52:35.375 episode is delivered using the approved treatment, with
+the first ten minutes preserved. See the <a href="/review/media/hlt-local-full-20261117/20261030.local_rendering_exploration_stage_5_durable_workflow.html">durable workflow</a>
+for exact production, verification, storage, restart details and full-length review.</p>
+</html>

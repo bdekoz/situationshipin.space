@@ -6,6 +6,7 @@
 import { readFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { mediaUrl } from "./review-media.mjs";
 
 const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -289,9 +290,11 @@ function localFullResolutionPath(item, localRoot) {
 }
 
 export function renderReviewPage(item, localRoot = "") {
+  const videoUrl = item.media_kind === "video" ? escape(mediaUrl(item)) : "";
+  const caption = item.caption_track ? `<track kind="subtitles" srclang="en" label="English" src="/${escape(item.caption_track)}">` : "";
   const media =
     item.media_kind === "video"
-      ? `<video controls preload="metadata" src="/${escape(item.published_path)}"><p>Your browser cannot play this proxy. <a href="/${escape(item.published_path)}">Download it</a>.</p></video>`
+      ? `<video controls preload="metadata"${item.poster ? ` poster="/${escape(item.poster)}"` : ""} src="${videoUrl}">${caption}<p>Your browser cannot play this proxy. <a href="${videoUrl}">Download it</a>.</p></video><p><a href="${videoUrl}">Download review video</a>${item.external_media ? " · Hosted as a versioned GitHub release asset." : ""}</p>`
       : item.media_kind === "audio"
         ? `<audio controls preload="metadata" src="/${escape(item.published_path)}"><p>Your browser cannot play this audio. <a href="/${escape(item.published_path)}">Download it</a>.</p></audio>`
       : item.media_kind === "plan"
@@ -330,7 +333,10 @@ function planMedia(item) {
     links.push(`<a class="plan-document-link" href="/${escape(link.path)}" target="_blank" rel="noopener">${escape(link.label)} ↗</a>`);
   }
   let preview = "";
-  if (/\.pdf$/i.test(item.published_path)) {
+  if (item.plan_html) {
+    links.unshift(`<a class="plan-document-link" href="/${escape(item.plan_html)}" target="_blank" rel="noopener">Read the production record ↗</a>`);
+    preview = `<iframe src="/${escape(item.plan_html)}" title="${escape(item.title)}"></iframe>`;
+  } else if (/\.pdf$/i.test(item.published_path)) {
     preview = `<object data="${href}" type="application/pdf" aria-label="Plan document preview"><p>PDF preview unavailable in this browser. Use the link above.</p></object>`;
   } else if (item.format === "markdown" || /\.md$/i.test(item.published_path || "")) {
     try {
@@ -367,7 +373,7 @@ export function renderReviewManifest(item) {
       ...(item.source_artifact ? { source_artifact: item.source_artifact } : {}),
       proxy:
         item.media_kind === "video" || item.media_kind === "audio"
-          ? { path: "/" + item.published_path, sha256: item.sha256 }
+          ? { path: mediaUrl(item), sha256: item.sha256 }
           : null,
       document:
         item.media_kind === "plan" || item.media_kind === "index"

@@ -1,0 +1,15 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "here-lies-trouble-local-stage5-record-20261117",
+  "artifact_id": "here-lies-trouble-local-stage5-record-20261117",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": null,
+  "document": {
+    "path": "/review/media/hlt-local-full-20261117/20261030.local_rendering_exploration_stage_5.md",
+    "sha256": "911dca24154c2462f6b5b185ce2a6bf78f5d95a2371a7489da2210dbd18bb6c1",
+    "format": "markdown",
+    "plan_stage": "PLAN-DRAFT",
+    "plan_pdf": null
+  }
+}

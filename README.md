@@ -58,6 +58,10 @@ node scripts/check-review-site.mjs
 [Open the diagram index](https://situationshipin.space/review/workflow-v2-diagram-index/)
 for three views: Compute software, compute resources and the
 Workflow diagram. Each has PNG, zoomable SVG and editable Mermaid downloads.
+The November 17 refresh for issue #82 adds the completed HLT CPU replay path,
+MOSS appearance and SAM extraction roles, and separates recorded fal canaries
+from the proposed provider/model migration. The diagram index links the complete
+local film and current Stage 5 records.
 The October 27 inventory places
 both DeepSeek V4 Flash (`ds4` / ROCm, on demand) and `ornith-1.5:35b`
 (Ollama) on eureka, sharing its 96 GiB GPU allocation.
@@ -88,7 +92,8 @@ After committing the source, prepare this site's bounded publication:
 ```sh
 node scripts/publish-workflow-diagrams.mjs \
   --izzi-commit <40-hex-source-commit> \
-  --diagrams-dir /home/bkoz/src/izzi/outputs/workflows-v2/20261027-review-80
+  --izzi-root /home/bkoz/src/izzi \
+  --diagrams-dir /home/bkoz/src/izzi/outputs/workflows-v2/20261117-review-82
 node scripts/update-build-manifest.mjs
 node scripts/check-review-site.mjs
 ```
@@ -98,6 +103,38 @@ copying it. Downloads live under `review/media/workflow-v2-diagrams/`;
 Mermaid sources use `.mermaid.txt` URLs and download as `.mmd` files. The
 index also links the inventory, render receipt, render configuration and
 commit-pinned editable documentation. Updated diagrams await human review.
+
+## Complete local Here Lies Trouble review
+
+[Watch the complete 52:35 local film](https://situationshipin.space/review/here-lies-trouble-local-full-20261117/).
+This is a 720 × 1280/24 fps review derivative of the November 1 episode-v1
+delivery. It preserves all 75,729 frames and copies the source AAC audio.
+English WebVTT captions and the current Stage 5 session/durable workflow are
+published with it. Full-film human review remains open.
+
+The video is hosted as a versioned GitHub release asset because it exceeds the
+16 MiB per-file Pages budget. The catalog retains its exact URL, release/asset
+identity, byte count and SHA-256. A local, hash-checked receipt records GitHub's
+upload digest and the canonical source hash. `review-media.mjs` validates this
+contract; CI checks the receipt offline, and publication verifies live playback.
+The build manifest reports external bytes separately from the bounded Pages
+payload. This review derivative is not a backup of the lossless production tree.
+
+Reproduce publication after preparing and verifying the release upload:
+
+```sh
+node scripts/publish-hlt-local-full.mjs --approve PROJECT-APPROVED \
+  --izzi-root /home/bkoz/src/izzi --izzi-commit <40-hex-source-commit> \
+  --packet /home/bkoz/src/izzi/outputs/review-publication/here-lies-trouble-local-full-20261117
+node scripts/update-build-manifest.mjs
+node --test scripts/*.test.mjs
+node scripts/check-review-site.mjs
+```
+
+The publisher reads committed Stage 5 Markdown, retains original downloads,
+and creates readable versions with pinned repository links and explicit local
+archive references. The previous 103-second provider review remains available
+as historical comparison.
 
 ## Here Lies Trouble — current Stage 4 review
 

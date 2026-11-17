@@ -1,7 +1,7 @@
 flowchart LR
     PLAN["<b>1. PLAN</b><br/>Audio, visual styling and video plans<br/>Optional local authoring on eureka:<br/>DeepSeek V4 Flash · Ornith 1.5"]
-    PRODUCE["<b>2. PRODUCE</b><br/>Transcript + keyframes for review<br/>Voice audio · video render + mux"]
-    REVIEW["<b>3. REVISE</b><br/>Portal review · KEEP / REVISE"]
+    PRODUCE["<b>2. PRODUCE</b><br/>Native SVG + portrait engraving<br/>MOSS stills + saved-asset animation<br/>Voice audio · video render + mux"]
+    REVIEW["<b>3. REVISE</b><br/>Digital checks and exact receipts<br/>Human KEEP / REVISE<br/>Print proof or audiovisual review"]
     PLAN --> PRODUCE
     PRODUCE --> REVIEW
     REVIEW -->|stage 1| PLAN

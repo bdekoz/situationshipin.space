@@ -1,0 +1,20 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "here-lies-trouble-local-full-20261117",
+  "artifact_id": "here-lies-trouble-local-full-20261117",
+  "style": "house-style",
+  "source_media": {
+    "path": "outputs/here-lies-trouble/local-rendering-stage-5-full-20261101/delivery/episode-v1/complete-clean.mp4",
+    "sha256": "5d21325b8b7c7d34af06516a1c6e35e8ddb109448fe17f5ac97ac0efba85d3d2",
+    "bytes": 1731268450,
+    "duration_seconds": 3155.375,
+    "width": 1080,
+    "height": 1920,
+    "published": false
+  },
+  "proxy": {
+    "path": "https://github.com/bdekoz/situationshipin.space/releases/download/hlt-local-full-20261117/here-lies-trouble-local-full-720p.mp4",
+    "sha256": "93f043622d3078d8a914a69d549a579fd79f1a9e27df6b4ebd81394c7a8f8f72"
+  },
+  "document": null
+}

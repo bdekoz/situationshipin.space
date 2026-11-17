@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "portal_build": "izzi-review-2026-08-11.7",
-  "generated_at": "2026-11-17T19:01:02.030Z",
+  "generated_at": "2026-11-17T19:40:01.243Z",
   "portal_repository": "bdekoz/situationshipin.space",
   "portal_source_commit": "219a9b7f0891998c1525c94fa15b43c490b5d79f",
   "izzi_repository": "bdekoz/izzi",
@@ -10,19 +10,21 @@
   "human_review_state": "UNREVIEWED",
   "baseline_state": "NOT-PROMOTED",
   "training_conversion_transfer_state": "NOT-SHARED",
-  "artifact_count": 865,
+  "artifact_count": 868,
   "review_category_counts": {
-    "proofs": 55,
+    "proofs": 56,
     "style_processing": 801,
-    "planning": 9
+    "planning": 11
   },
-  "artifact_payload_bytes": 279018825,
+  "artifact_payload_bytes": 279495371,
+  "external_media_count": 1,
+  "external_media_bytes": 579286761,
   "provider_staging_bytes": 0,
   "provider_staging_active_count": 0,
   "provider_staging_manifest_sha256": "946e9156b2de13886912150a7e7e53b9d54561d674934f69239145961658cb09",
   "frame_preview_count": 0,
   "sampled_frame_count": 0,
-  "source_media_bytes_represented": 1127970608,
+  "source_media_bytes_represented": 2859239058,
   "source_image_count": 795,
   "source_image_bytes_represented": 918759032,
   "aesthetic_collection_counts": {
@@ -54,7 +56,7 @@
     },
     {
       "path": "proofs.html",
-      "sha256": "9eff94e4608fa847723cbf626ea06fa494da192ee772d47ad8080e65c4e5af48"
+      "sha256": "e985f0a113707e97eb368d4fe50d71c05eb2ebd1d152ab1fe1b9d9293ec0b79b"
     },
     {
       "path": "style.html",
@@ -62,7 +64,7 @@
     },
     {
       "path": "plans.html",
-      "sha256": "9e7a112349138c72c9723ddf138395403b7c380c67353b439cedae323a022685"
+      "sha256": "5baac2f7d428fa78e00ad53f072ec33c518bbeb56984255daba6315204b2c50c"
     },
     {
       "path": "assets/css/review.css",
@@ -109,6 +111,18 @@
       "sha256": "b5eb4c4e63156ddab50a386b7d79d979c7d114faa5421786de30c16ddba89fe7"
     },
     {
+      "path": "scripts/review-media.mjs",
+      "sha256": "3b09d3eb2f1b4fc3fd2ed34f63eaf5780f20c3e149f6ad2018b7f58054e24dfb"
+    },
+    {
+      "path": "scripts/review-media.test.mjs",
+      "sha256": "e3ae3fc0e445de9ddc004c66b09f2d2a6f05df52c2d2eafb1a1bf961336c5398"
+    },
+    {
+      "path": "scripts/publish-hlt-local-full.mjs",
+      "sha256": "4ec0f968bc056349deb7cff58c5b0ee5941a557aa41935695a28f57e88fc4f07"
+    },
+    {
       "path": "scripts/provider-staging.mjs",
       "sha256": "fdd39e5313bceb02cfe3e497b96cc0677c75512a8b37d9668f9883235fc3651e"
     },
@@ -126,19 +140,19 @@
     },
     {
       "path": "data/review-items.json",
-      "sha256": "30e0a9b0148280e7b62b8a37dac0031508b8d16ad5e42ffa0b1e10e28c3c6ea6"
+      "sha256": "0963ac0459c68d687b3cb4526cf02f22889a9a7ec6d215e75044084160384a46"
     },
     {
       "path": "scripts/check-review-site.mjs",
-      "sha256": "6579adbdbfef8c5e5f2877b6400af14f9e373140104094dc68478f02827149fa"
+      "sha256": "4d98aa10b75a47307996ed08ef813f712b87f96050bbe371f80ba3c3649913ee"
     },
     {
       "path": "scripts/update-build-manifest.mjs",
-      "sha256": "d15dec25548bb810e2d60f1ce42793acee4d2ab1f456a5f25ebab67c2df3400a"
+      "sha256": "46fff4b0ae5bdee822986f7413e1b9e8dae4e67b288379265f85ad322f797a10"
     },
     {
       "path": "README.md",
-      "sha256": "0be9a63368f51df345d43ff41310bbbdc0d8a9f2d467c6b310904725fb23b923"
+      "sha256": "6c578a1994fd8881c54e5bab33ea5b173d238ded2a57d216068b66a5bfc4d2de"
     },
     {
       "path": "_config.yml",
@@ -170,7 +184,7 @@
     },
     {
       "path": "scripts/publish-workflow-diagrams.mjs",
-      "sha256": "20c8397d790c489b4f6ccd1228326ffd31444ca293912d3caae4a2aa36e3c648"
+      "sha256": "a78c554d7125c58156d34b3b7c0f9b5edd5730323e99c633ee31a50de571f2a4"
     },
     {
       "path": "scripts/publish-plan-proof.mjs",
@@ -206,7 +220,7 @@
     },
     {
       "path": "scripts/review-page.mjs",
-      "sha256": "38d8df80cba481e42ed10519e34287d8c4de8a0e787bcbef48e795b533b027c0"
+      "sha256": "27ac61321f092c919145bc5ffd953320d3b9ee808598354fb8834b9de467fae9"
     },
     {
       "path": "scripts/prepare-cartofreako-plates.py",
@@ -230,7 +244,7 @@
     }
   ],
   "artifact_inventory": "data/review-items.json",
-  "catalog_sha256": "30e0a9b0148280e7b62b8a37dac0031508b8d16ad5e42ffa0b1e10e28c3c6ea6",
+  "catalog_sha256": "0963ac0459c68d687b3cb4526cf02f22889a9a7ec6d215e75044084160384a46",
   "notes": [
     "The catalog binds every published derivative to an Izzi source path and SHA-256.",
     "Active provider inputs require archive receipts, owner/job attribution and expiry; their bytes count against the same payload budget.",

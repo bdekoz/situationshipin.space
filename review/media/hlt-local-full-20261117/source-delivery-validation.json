@@ -1,0 +1,32 @@
+{
+  "status": "technical_pass_full_episode_review_pending",
+  "identity": "c8a891c7b0afc5d9263f913f23a0df9ca3c0203a39f4e310cb0daac7a1e3f9df",
+  "frames": 75729,
+  "seconds": 3155.375,
+  "sample_frames": 151458000,
+  "canonical_turns": 191,
+  "speech_chunks": 297,
+  "canonical_tokens": 8107,
+  "caption_cues": 800,
+  "canonical_words_exact": true,
+  "lossless_frames_verified": 75729,
+  "segment_count": 257,
+  "approved_prefix_reused": true,
+  "human_prefix_approved": true,
+  "human_full_episode_approved": false,
+  "provider_credits": 0,
+  "movies": {
+    "complete-clean.mp4": {
+      "sha256": "5d21325b8b7c7d34af06516a1c6e35e8ddb109448fe17f5ac97ac0efba85d3d2",
+      "bytes": 1731268450,
+      "decoded_frames": 75729,
+      "duration_seconds": 3155.395996
+    },
+    "complete-captioned.mp4": {
+      "sha256": "21bff90ddd2420711e21424d3a5a40d29ce36883f9720da6546c6fefe5f85e62",
+      "bytes": 1734610556,
+      "decoded_frames": 75729,
+      "duration_seconds": 3155.395996
+    }
+  }
+}

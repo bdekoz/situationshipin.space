@@ -6,6 +6,7 @@ import { dirname, extname, posix, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { hasReviewPublicationApproval } from "./review-publication-approval.mjs";
 import { inspectStaging, PREFIX as providerInputPrefix } from "./provider-staging.mjs";
+import { validateExternalMedia, validateReleaseReceipt } from "./review-media.mjs";
 
 const repositoryRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const catalogPath = resolve(repositoryRoot, "data/review-items.json");
@@ -27,7 +28,7 @@ const maximumPayloadBytes = 272 * 1024 * 1024;
 // .mp3 added 2026-08-14 for audio review artifacts (Kokoro female voice bank).
 // .txt added 2026-08-18 for the W3 canonical transcript review container.
 // Editable screenplay companions are bounded and hash-checked like other assets.
-const allowedExtensions = new Set([".png", ".jpg", ".jpeg", ".svg", ".html", ".json", ".mp4", ".mp3", ".webp", ".pdf", ".md", ".txt", ".fdx", ".fountain"]);
+const allowedExtensions = new Set([".png", ".jpg", ".jpeg", ".svg", ".html", ".json", ".mp4", ".mp3", ".webp", ".pdf", ".md", ".txt", ".fdx", ".fountain", ".vtt"]);
 const forbiddenExtensions = new Set([".mkv", ".wav", ".mov"]);
 
 let failures = 0;
@@ -241,41 +242,48 @@ for (const item of catalog.items) {
   if (!allowedExtensions.has(extension) || forbiddenExtensions.has(extension)) {
     fail(`${item.artifact_id} uses disallowed media type ${extension || "(none)"}`);
   }
-  if (!item.published_path.startsWith("review/")) {
+  if (!item.external_media && !item.published_path.startsWith("review/")) {
     fail(`${item.artifact_id} is outside the bounded review directory`);
   }
 
   const artifactPath = resolve(repositoryRoot, item.published_path);
-  if (!withinRepository(artifactPath)) {
+  if (!item.external_media && !withinRepository(artifactPath)) {
     fail(`${item.artifact_id} resolves outside the repository`);
     continue;
   }
 
   try {
-    const artifactStat = await stat(artifactPath);
-    const bytes = await readFile(artifactPath);
-    const hash = createHash("sha256").update(bytes).digest("hex");
-    payloadBytes += artifactStat.size;
+    if (item.external_media) {
+      validateExternalMedia(item);
+      const receipt = JSON.parse(await readFile(resolve(repositoryRoot, item.external_media.receipt_path), "utf8"));
+      validateReleaseReceipt(item, receipt);
+      pass(`${item.artifact_id} release asset identity and receipt verified`);
+    } else {
+      const artifactStat = await stat(artifactPath);
+      const bytes = await readFile(artifactPath);
+      const hash = createHash("sha256").update(bytes).digest("hex");
+      payloadBytes += artifactStat.size;
 
-    if (artifactStat.size !== item.bytes) {
-      fail(`${item.artifact_id} byte count differs from catalog`);
-    }
-    if (artifactStat.size > maximumFileBytes) {
-      fail(`${item.artifact_id} exceeds the bounded 16 MiB review object budget`);
-    }
-    if (hash !== item.sha256) {
-      fail(`${item.artifact_id} SHA-256 differs from catalog`);
-    }
-    if (extension === ".png") {
-      const dimensions = readPngDimensions(bytes);
-      if (!dimensions || dimensions.width !== item.width || dimensions.height !== item.height) {
-        fail(`${item.artifact_id} dimensions differ from catalog`);
+      if (artifactStat.size !== item.bytes) {
+        fail(`${item.artifact_id} byte count differs from catalog`);
       }
-    }
-    if (extension === ".jpg" || extension === ".jpeg") {
-      const dimensions = readJpegDimensions(bytes);
-      if (!dimensions || dimensions.width !== item.width || dimensions.height !== item.height) {
-        fail(`${item.artifact_id} JPEG dimensions differ from catalog`);
+      if (artifactStat.size > maximumFileBytes) {
+        fail(`${item.artifact_id} exceeds the bounded 16 MiB review object budget`);
+      }
+      if (hash !== item.sha256) {
+        fail(`${item.artifact_id} SHA-256 differs from catalog`);
+      }
+      if (extension === ".png") {
+        const dimensions = readPngDimensions(bytes);
+        if (!dimensions || dimensions.width !== item.width || dimensions.height !== item.height) {
+          fail(`${item.artifact_id} dimensions differ from catalog`);
+        }
+      }
+      if (extension === ".jpg" || extension === ".jpeg") {
+        const dimensions = readJpegDimensions(bytes);
+        if (!dimensions || dimensions.width !== item.width || dimensions.height !== item.height) {
+          fail(`${item.artifact_id} JPEG dimensions differ from catalog`);
+        }
       }
     }
 
@@ -458,7 +466,7 @@ const addReviewCompanions = (id) => {
 for (const item of catalog.items) {
   addReviewCompanions(item.artifact_id);
   for (const memberId of item.index_members || []) addReviewCompanions(memberId);
-  if (item.published_path) referencedReviewFiles.add(posix.normalize(item.published_path));
+  if (item.published_path && !item.external_media) referencedReviewFiles.add(posix.normalize(item.published_path));
   if (item.plan_pdf?.path) referencedReviewFiles.add(posix.normalize(item.plan_pdf.path));
   if (item.frame_manifest_path) referencedReviewFiles.add(posix.normalize(item.frame_manifest_path));
   for (const asset of item.review_assets || []) referencedReviewFiles.add(posix.normalize(asset.path));
@@ -510,6 +518,8 @@ try {
     izzi_source_commit: catalog.source_commit,
     artifact_count: catalog.items.length,
     artifact_payload_bytes: payloadBytes,
+    external_media_count: catalog.items.filter(item => item.external_media).length,
+    external_media_bytes: catalog.items.filter(item => item.external_media).reduce((sum, item) => sum + item.bytes, 0),
     provider_staging_bytes: staging.bytes,
     provider_staging_active_count: staging.activePaths.length,
     provider_staging_manifest_sha256: staging.manifestSha256,

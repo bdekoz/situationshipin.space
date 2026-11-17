@@ -1,0 +1,15 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "here-lies-trouble-local-stage5-workflow-20261117",
+  "artifact_id": "here-lies-trouble-local-stage5-workflow-20261117",
+  "style": "house-style",
+  "source_media": null,
+  "proxy": null,
+  "document": {
+    "path": "/review/media/hlt-local-full-20261117/20261030.local_rendering_exploration_stage_5_durable_workflow.md",
+    "sha256": "a25395f3054b2c0a25c452fcd33a5625725134d71a73761775da0ae14e7bd936",
+    "format": "markdown",
+    "plan_stage": "PLAN-DRAFT",
+    "plan_pdf": null
+  }
+}

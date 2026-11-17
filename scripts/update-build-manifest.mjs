@@ -26,6 +26,9 @@ const codePaths = [
   "scripts/review-publication-approval.mjs",
   "scripts/review-publication-approval.test.mjs",
   "scripts/review-catalog.test.mjs",
+  "scripts/review-media.mjs",
+  "scripts/review-media.test.mjs",
+  "scripts/publish-hlt-local-full.mjs",
   "scripts/provider-staging.mjs",
   "scripts/provider-staging.test.mjs",
   "scripts/stage-provider-input.mjs",
@@ -77,7 +80,7 @@ let framePreviewCount = 0;
 let sampledFrameCount = 0;
 
 for (const item of catalog.items) {
-  artifactPayloadBytes += item.bytes;
+  if (!item.external_media) artifactPayloadBytes += item.bytes;
   artifactPayloadBytes += (item.review_assets || []).reduce((sum, asset) => sum + asset.bytes, 0);
   if (item.plan_pdf) {
     artifactPayloadBytes += item.plan_pdf.bytes;
@@ -138,6 +141,8 @@ const manifest = {
     planning: planningCount
   },
   artifact_payload_bytes: artifactPayloadBytes,
+  external_media_count: catalog.items.filter(item => item.external_media).length,
+  external_media_bytes: catalog.items.filter(item => item.external_media).reduce((sum, item) => sum + item.bytes, 0),
   provider_staging_bytes: staging.bytes,
   provider_staging_active_count: staging.activePaths.length,
   provider_staging_manifest_sha256: staging.manifestSha256,

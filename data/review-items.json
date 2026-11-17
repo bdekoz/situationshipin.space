@@ -1,6 +1,6 @@
 {
   "baseline_state": "NOT-PROMOTED",
-  "generated_at": "2026-10-30T18:13:08.250Z",
+  "generated_at": "2026-11-17T19:40:00.549Z",
   "human_review_state": "UNREVIEWED",
   "items": [
     {
@@ -21311,23 +21311,23 @@
       "feedback_round": "workflow-v2-diagrams",
       "review_scope": "WORKFLOW-V2-DIAGRAMS",
       "review_mode": "output",
-      "source_path": "izzi 1f7e5f04dc8e12aae236ea08d9f1d3795c50c6b1 docs/workflows.md",
-      "source_sha256": "be3877d718d27accfbf76713748a9054ef162b7723fcfeca9fed57b36f434ac0",
-      "generation_commit": "1f7e5f04dc8e12aae236ea08d9f1d3795c50c6b1",
+      "source_path": "izzi 3d8e8505529bc019a5374ebbbcddef4bc2ab8b29 docs/workflows.md",
+      "source_sha256": "6759fb8ee00efdd36f783cc6bde642c939776dc6aaa0a443902b8fb82bdbfa1b",
+      "generation_commit": "3d8e8505529bc019a5374ebbbcddef4bc2ab8b29",
       "generation_state": "CURRENT",
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-10-28T03:04:13.509Z",
+      "added_at": "2026-11-17T19:37:19.060Z",
       "artifact_id": "workflow-v2-diagram-index",
       "title": "Workflow diagrams, hardware & local models",
-      "description": "Three updated diagrams for the current Izzi workflow, including DeepSeek V4 Flash and Ornith 1.5 on eureka. Inventory: October 27, 2026.",
+      "description": "Three workflow diagrams refreshed November 17, 2026: current software roles, compute hardware and the production loop. Hardware observations remain dated October 27; MOSS/SAM and CPU replay reflect later production records.",
       "alt": "Three diagrams: Compute software, compute hardware and Workflow.",
       "generation_class": "workflow-diagram-index",
       "media_kind": "index",
       "published_path": "review/media/workflow-v2-diagrams/workflow-v2-diagram-index.index.html",
-      "sha256": "2ea7a088c3fd3f42770ea46b1fa29aabd481e9830139c656c169014d0196e27d",
-      "bytes": 8963,
+      "sha256": "ef9dd96ca1c58e6886f019b57c2344c69767f936fe849d8e2781d235261b313e",
+      "bytes": 9327,
       "format": "html",
       "technical_state": "WORKFLOW-DIAGRAM-INDEX",
       "index_members": [
@@ -21348,8 +21348,8 @@
         },
         {
           "path": "review/media/workflow-v2-diagrams/render-manifest.json",
-          "bytes": 3638,
-          "sha256": "cc7c2ae239bc85db8cdf547e8dc51a737b3bcc125658a61a5b4dd7a5ab08b4e7"
+          "bytes": 3639,
+          "sha256": "b311a883b354f115b5213b585fb1eadc1b5b14bfc3e6e7e9bc7a02d9be81ec6f"
         }
       ]
     },
@@ -21358,14 +21358,14 @@
       "feedback_round": "workflow-v2-diagrams",
       "review_scope": "WORKFLOW-V2-DIAGRAMS",
       "review_mode": "output",
-      "source_path": "izzi 1f7e5f04dc8e12aae236ea08d9f1d3795c50c6b1 docs/workflows.md",
-      "source_sha256": "be3877d718d27accfbf76713748a9054ef162b7723fcfeca9fed57b36f434ac0",
-      "generation_commit": "1f7e5f04dc8e12aae236ea08d9f1d3795c50c6b1",
+      "source_path": "izzi 3d8e8505529bc019a5374ebbbcddef4bc2ab8b29 docs/workflows.md",
+      "source_sha256": "6759fb8ee00efdd36f783cc6bde642c939776dc6aaa0a443902b8fb82bdbfa1b",
+      "generation_commit": "3d8e8505529bc019a5374ebbbcddef4bc2ab8b29",
       "generation_state": "CURRENT",
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-10-28T03:04:13.509Z",
+      "added_at": "2026-11-17T19:37:19.060Z",
       "artifact_id": "workflow-v2-loop-diagram",
       "title": "Workflow",
       "description": "PLAN, PRODUCE and REVISE share one horizontal row of gray boxes. The stage 1, stage 2, pilot and release arrows return beneath PRODUCE into the bottom of PLAN. Revised for issue #78.",
@@ -21373,8 +21373,8 @@
       "generation_class": "workflow-diagram",
       "media_kind": "image",
       "published_path": "review/media/workflow-v2-diagrams/workflow-v2-loop-diagram.png",
-      "sha256": "7d3dd1c99566a668aba4bb2ef6e6e7a22ccc5f4ffe2688500449a80365e75b43",
-      "bytes": 102686,
+      "sha256": "9dc76499ed7343224ce0481f7ad75d29bfd072831531f527196432db4301183b",
+      "bytes": 130468,
       "width": 3080,
       "height": 1060,
       "format": "png",
@@ -21382,13 +21382,13 @@
       "review_assets": [
         {
           "path": "review/media/workflow-v2-diagrams/workflow-v2-loop-diagram.svg",
-          "bytes": 3711,
-          "sha256": "c2541e81ac8b3c9f8f44d69daef4ef8125eff3a43583c3415bbe32c67da2e33e"
+          "bytes": 4116,
+          "sha256": "81d59552edd59b9a79f776912a17fb429788c5ef0448256945ee6658f70f8fe5"
         },
         {
           "path": "review/media/workflow-v2-diagrams/workflow-v2-loop-diagram.mermaid.txt",
-          "bytes": 605,
-          "sha256": "8a10743232a6dbdebd3c2347a050d31486c67255ebab5aca68772ec96aae398d"
+          "bytes": 708,
+          "sha256": "7ae95ecfc4ddf862a03316e083cb0432599799d1dfd3a68cd25c9e2faf2561d8"
         },
         {
           "path": "review/media/workflow-v2-diagrams/workflow-v2-loop-diagram.config.json",
@@ -33795,42 +33795,42 @@
       "feedback_round": "workflow-v2-diagrams",
       "review_scope": "WORKFLOW-V2-DIAGRAMS",
       "review_mode": "output",
-      "source_path": "izzi 1f7e5f04dc8e12aae236ea08d9f1d3795c50c6b1 docs/workflows.md",
-      "source_sha256": "be3877d718d27accfbf76713748a9054ef162b7723fcfeca9fed57b36f434ac0",
-      "generation_commit": "1f7e5f04dc8e12aae236ea08d9f1d3795c50c6b1",
+      "source_path": "izzi 3d8e8505529bc019a5374ebbbcddef4bc2ab8b29 docs/workflows.md",
+      "source_sha256": "6759fb8ee00efdd36f783cc6bde642c939776dc6aaa0a443902b8fb82bdbfa1b",
+      "generation_commit": "3d8e8505529bc019a5374ebbbcddef4bc2ab8b29",
       "generation_state": "CURRENT",
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-10-28T03:04:13.509Z",
+      "added_at": "2026-11-17T19:37:19.060Z",
       "artifact_id": "workflow-hardware-software-diagram",
       "title": "Compute software",
-      "description": "A grayscale map with devp.ac and situationshipin.space aligned across the center. Custom Software contains FFmpeg / Inkscape / Ghostscript, Cartofreako, Izzi and Clusterops. Local Database contains Ipinfo between Custom Software and Local AI's media models, DeepSeek V4 Flash and Ornith 1.5. Hosted AI groups Motion generation, Image generation and Coding. Local connections are solid; hosted connections are dotted.",
-      "alt": "A grayscale map with devp.ac and situationshipin.space aligned across the center. Custom Software contains FFmpeg / Inkscape / Ghostscript, Cartofreako, Izzi and Clusterops. Local Database contains Ipinfo between Custom Software and Local AI's media models, DeepSeek V4 Flash and Ornith 1.5. Hosted AI groups Motion generation, Image generation and Coding. Local connections are solid; hosted connections are dotted.",
+      "description": "Current software roles: native tools and HLT CPU replay; MOSS appearance and SAM pose extraction; local audio and retained local LLMs; fal motion references and Codex authoring. Saved assets drive the complete local film. New fal model comparisons remain proposed. Revised for issue #82, November 17, 2026.",
+      "alt": "Current software roles: native tools and HLT CPU replay; MOSS appearance and SAM pose extraction; local audio and retained local LLMs; fal motion references and Codex authoring. Saved assets drive the complete local film. New fal model comparisons remain proposed. Revised for issue #82, November 17, 2026.",
       "generation_class": "workflow-diagram",
       "media_kind": "image",
       "published_path": "review/media/workflow-v2-diagrams/workflow-hardware-software-diagram.png",
-      "sha256": "c68fb1dbc6759857979ca8b90cb2d6d1ec3a1bb7dcfba3cb51e419e597571233",
-      "bytes": 374289,
+      "sha256": "70e91cb008ea2a4832d58afc142370fa4e005ddfd539782d12d464f40fb8c042",
+      "bytes": 500895,
       "width": 3800,
-      "height": 5400,
+      "height": 6360,
       "format": "png",
       "technical_state": "RENDER-VERIFIED-FIXED-SVG-1",
       "review_assets": [
         {
           "path": "review/media/workflow-v2-diagrams/workflow-hardware-software-diagram.svg",
-          "bytes": 10550,
-          "sha256": "b5fc61fba5a35a2392db5801194324c5a165386336fff234d1bf3bd8ed78c0bf"
+          "bytes": 12891,
+          "sha256": "781036a3e633e196334496426aa58c3b977ed37722fd8d74b92f745cc56b3a6f"
         },
         {
           "path": "review/media/workflow-v2-diagrams/workflow-hardware-software-diagram.mermaid.txt",
-          "bytes": 1965,
-          "sha256": "99f048dec3a35aa3659d0486f72b742f0bd60aa4610acc33102bdd7e33710e54"
+          "bytes": 2396,
+          "sha256": "ce2a62f276c62e5e8b0554ad0a9cf8bba9590c0ddeac7c5a4e58817c89a1921d"
         },
         {
           "path": "review/media/workflow-v2-diagrams/workflow-hardware-software-diagram.config.json",
-          "bytes": 9452,
-          "sha256": "6d056ef837d103f6e8d010c56c7710bcf24f1ec5dff0106c7bd9d7394f4d0540"
+          "bytes": 11959,
+          "sha256": "ed469359b0ca91f6d13063b1c33a5264c1d94be5a8a007199e7ff4bf48d0aaf9"
         }
       ]
     },
@@ -33839,14 +33839,14 @@
       "feedback_round": "workflow-v2-diagrams",
       "review_scope": "WORKFLOW-V2-DIAGRAMS",
       "review_mode": "output",
-      "source_path": "izzi 1f7e5f04dc8e12aae236ea08d9f1d3795c50c6b1 docs/workflows.md",
-      "source_sha256": "be3877d718d27accfbf76713748a9054ef162b7723fcfeca9fed57b36f434ac0",
-      "generation_commit": "1f7e5f04dc8e12aae236ea08d9f1d3795c50c6b1",
+      "source_path": "izzi 3d8e8505529bc019a5374ebbbcddef4bc2ab8b29 docs/workflows.md",
+      "source_sha256": "6759fb8ee00efdd36f783cc6bde642c939776dc6aaa0a443902b8fb82bdbfa1b",
+      "generation_commit": "3d8e8505529bc019a5374ebbbcddef4bc2ab8b29",
       "generation_state": "CURRENT",
       "human_review_state": "UNREVIEWED",
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
-      "added_at": "2026-10-28T03:04:13.509Z",
+      "added_at": "2026-11-17T19:37:19.060Z",
       "artifact_id": "devpac-compute-resources-diagram",
       "title": "Compute hardware — rizal, ord and eureka",
       "description": "Three grayscale rectangular Fedora 44 host boxes arranged in a triangle: rizal above eureka and ord. Each host lists its hardware and local model paths; Gold 20TB cold storage sits below the workers, connected to their horizontal USB4/Thunderbolt local link. Revised for issue #79.",
@@ -33854,27 +33854,27 @@
       "generation_class": "workflow-diagram",
       "media_kind": "image",
       "published_path": "review/media/workflow-v2-diagrams/devpac-compute-resources-diagram.png",
-      "sha256": "b3d5a19a0d3905e55a07ce7afe647790c201ab4556da2954cc67e71a756b2dd8",
-      "bytes": 307132,
+      "sha256": "48add1b86ecaa49c9ca7b1f062910680fdf505fea5901c8e388116bd6bd9b4b3",
+      "bytes": 336194,
       "width": 3120,
-      "height": 2280,
+      "height": 2420,
       "format": "png",
       "technical_state": "RENDER-VERIFIED-FIXED-SVG-1",
       "review_assets": [
         {
           "path": "review/media/workflow-v2-diagrams/devpac-compute-resources-diagram.svg",
-          "bytes": 5888,
-          "sha256": "11dbd0b394f96c286c39597c88b19ab9ede0b0dc43187d127fd23326b3885990"
+          "bytes": 6159,
+          "sha256": "003ea2bf678a5fd2ee53faa087c0f7a0920dd0f710f16a17f484091f52c44777"
         },
         {
           "path": "review/media/workflow-v2-diagrams/devpac-compute-resources-diagram.mermaid.txt",
-          "bytes": 1317,
-          "sha256": "000da6dd630a41ed54ce0dcb28041650795ce1629a7315f64f1758a719b08312"
+          "bytes": 1384,
+          "sha256": "6da663002fb1c2a98503447a8c8df6771f576092a40bcdd03400ee0557f392d6"
         },
         {
           "path": "review/media/workflow-v2-diagrams/devpac-compute-resources-diagram.config.json",
-          "bytes": 2244,
-          "sha256": "5468b288341aaa5a1ba43cd068c5346cffd232e483bb95d80b1dfd60027f3a93"
+          "bytes": 2246,
+          "sha256": "f10b6c29a3d54652f0bedf3a3aecbe32273bf6898614d22a250f78478a55ebd4"
         }
       ]
     },
@@ -34032,6 +34032,179 @@
       "baseline_state": "NOT-PROMOTED",
       "review_category": "proofs",
       "added_at": "2026-10-28T04:12:21.045Z"
+    },
+    {
+      "review_mode": "output",
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "generation_state": "CURRENT",
+      "generation_commit": "3d8e8505529bc019a5374ebbbcddef4bc2ab8b29",
+      "added_at": "2026-11-17T19:40:00.549Z",
+      "artifact_id": "here-lies-trouble-local-full-20261117",
+      "title": "Here Lies Trouble — complete local MOSS film (52:35)",
+      "description": "The latest complete local film: 52:35, 24 fps. MOSS appearance, saved poses and SAM masks, authored CPU animation, and the original four-voice dialogue. Review gait, gaze, mouth timing, scenery continuity and the full conversation. Opening-v7 is approved; full-film human review remains open. This 720p review copy preserves every frame and the source AAC audio; English subtitles are available in the player.",
+      "family": "here-lies-trouble-local-film",
+      "generation_class": "complete-local-film-review",
+      "feedback_round": "local-stage5-full-20261117",
+      "review_category": "proofs",
+      "review_scope": "COMPLETE-LOCAL-FILM",
+      "media_kind": "video",
+      "format": "mp4",
+      "published_path": "https://github.com/bdekoz/situationshipin.space/releases/download/hlt-local-full-20261117/here-lies-trouble-local-full-720p.mp4",
+      "sha256": "93f043622d3078d8a914a69d549a579fd79f1a9e27df6b4ebd81394c7a8f8f72",
+      "bytes": 579286761,
+      "width": 720,
+      "height": 1280,
+      "duration_seconds": 3155.375,
+      "frame_count": 75729,
+      "fps": 24,
+      "alt": "Complete local Here Lies Trouble film with four animal characters walking through illustrated Runyon terrain.",
+      "source_path": "outputs/here-lies-trouble/local-rendering-stage-5-full-20261101/delivery/episode-v1/complete-clean.mp4",
+      "source_sha256": "5d21325b8b7c7d34af06516a1c6e35e8ddb109448fe17f5ac97ac0efba85d3d2",
+      "source_media": {
+        "path": "outputs/here-lies-trouble/local-rendering-stage-5-full-20261101/delivery/episode-v1/complete-clean.mp4",
+        "sha256": "5d21325b8b7c7d34af06516a1c6e35e8ddb109448fe17f5ac97ac0efba85d3d2",
+        "bytes": 1731268450,
+        "duration_seconds": 3155.375,
+        "width": 1080,
+        "height": 1920,
+        "published": false
+      },
+      "external_media": {
+        "provider": "github-release",
+        "release_tag": "hlt-local-full-20261117",
+        "asset_id": 760366478,
+        "receipt_path": "review/media/hlt-local-full-20261117/release-asset.json"
+      },
+      "poster": "review/media/hlt-local-full-20261117/poster.jpg",
+      "caption_track": "review/media/hlt-local-full-20261117/captions.vtt",
+      "review_assets": [
+        {
+          "path": "review/media/hlt-local-full-20261117/release-asset.json",
+          "bytes": 755,
+          "sha256": "3b8674441a5f12a353f282f04f6e31df2f515a5964c73a71979d4ba787e8f518"
+        },
+        {
+          "path": "review/media/hlt-local-full-20261117/encoding-verification.json",
+          "bytes": 416,
+          "sha256": "c8a1e839c47daf548969e6d028fe502e2db1d591b821bd7609e1189c6d451529"
+        },
+        {
+          "path": "review/media/hlt-local-full-20261117/proxy-probe.json",
+          "bytes": 3533,
+          "sha256": "4e9a6bcd8749f59b5f3b73d16fd2b32dea7789f88c91126733287298eccb66f7"
+        },
+        {
+          "path": "review/media/hlt-local-full-20261117/captions.vtt",
+          "bytes": 71676,
+          "sha256": "f8067f41c5831acb3ec72ad28a08b60b70ba0ffc84d10c4941d41909583cd7e5"
+        },
+        {
+          "path": "review/media/hlt-local-full-20261117/poster.jpg",
+          "bytes": 20783,
+          "sha256": "69cd77817c62999cbca9bebaa782ef99e5bed7954d2bf463e16355a5de1ae1d1",
+          "width": 270,
+          "height": 480
+        },
+        {
+          "path": "review/media/hlt-local-full-20261117/source-delivery-validation.json",
+          "bytes": 994,
+          "sha256": "3db5897532aa136e88d41624337b7301ec35a406ab767894c812937d4b877174"
+        }
+      ],
+      "technical_state": "COMPLETE-LOCAL-FILM-REVIEW-PROXY-VERIFIED",
+      "review_publication": {
+        "decision": "APPROVED",
+        "scope": "EXISTING-ARTIFACT-REVIEW",
+        "authority": "Explicit project-owner request",
+        "approved_on": "2026-11-17",
+        "instruction": "ok https://situationshipin.space/proofs.html is missing the current top-of-tree 55 minute latest render using the local MOSS loRA pipeline. Can you put that up for review please?",
+        "artifact_id": "here-lies-trouble-local-full-20261117",
+        "source_sha256": "5d21325b8b7c7d34af06516a1c6e35e8ddb109448fe17f5ac97ac0efba85d3d2",
+        "proxy_sha256": "93f043622d3078d8a914a69d549a579fd79f1a9e27df6b4ebd81394c7a8f8f72",
+        "creative_acceptance": false,
+        "further_production_authorized": false
+      }
+    },
+    {
+      "review_mode": "output",
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "generation_state": "CURRENT",
+      "generation_commit": "3d8e8505529bc019a5374ebbbcddef4bc2ab8b29",
+      "added_at": "2026-11-17T19:40:00.549Z",
+      "artifact_id": "here-lies-trouble-local-stage5-record-20261117",
+      "title": "Here Lies Trouble — Stage 5 production and revision record",
+      "description": "The current Stage 5 record, including October revisions, approved opening-v7 and November 1 complete-episode delivery. Earlier instructions and findings remain dated history; full-length review is open.",
+      "alt": "Here Lies Trouble — Stage 5 production and revision record",
+      "family": "here-lies-trouble-local-plans",
+      "generation_class": "production-document-review",
+      "feedback_round": "local-stage5-full-20261117",
+      "review_category": "planning",
+      "review_scope": "LOCAL-STAGE5-PRODUCTION-RECORD",
+      "media_kind": "plan",
+      "plan_stage": "PLAN-DRAFT",
+      "format": "markdown",
+      "published_path": "review/media/hlt-local-full-20261117/20261030.local_rendering_exploration_stage_5.md",
+      "sha256": "911dca24154c2462f6b5b185ce2a6bf78f5d95a2371a7489da2210dbd18bb6c1",
+      "bytes": 36666,
+      "source_path": "docs/development/sessions/20261030.local_rendering_exploration_stage_5.md",
+      "source_sha256": "911dca24154c2462f6b5b185ce2a6bf78f5d95a2371a7489da2210dbd18bb6c1",
+      "plan_html": "review/media/hlt-local-full-20261117/20261030.local_rendering_exploration_stage_5.html",
+      "review_assets": [
+        {
+          "path": "review/media/hlt-local-full-20261117/20261030.local_rendering_exploration_stage_5.html",
+          "bytes": 41990,
+          "sha256": "6002cb2fe5b8c864a014340a8c5b903d5f0f20ecb286531fe6e328b60fa3fd9e"
+        }
+      ],
+      "plan_links": [
+        {
+          "label": "Complete local film",
+          "path": "review/here-lies-trouble-local-full-20261117/"
+        }
+      ],
+      "technical_state": "COMMITTED-SOURCE-AND-PUBLISHED-LINKS-VERIFIED"
+    },
+    {
+      "review_mode": "output",
+      "human_review_state": "UNREVIEWED",
+      "baseline_state": "NOT-PROMOTED",
+      "generation_state": "CURRENT",
+      "generation_commit": "3d8e8505529bc019a5374ebbbcddef4bc2ab8b29",
+      "added_at": "2026-11-17T19:40:00.549Z",
+      "artifact_id": "here-lies-trouble-local-stage5-workflow-20261117",
+      "title": "Here Lies Trouble — Stage 5 durable workflow and full delivery",
+      "description": "Current local-production software, frozen assets, exact audio/captions, 257-segment full-film delivery, restart recipe and remaining human review. Hardware observations retain their original dates.",
+      "alt": "Here Lies Trouble — Stage 5 durable workflow and full delivery",
+      "family": "here-lies-trouble-local-plans",
+      "generation_class": "production-document-review",
+      "feedback_round": "local-stage5-full-20261117",
+      "review_category": "planning",
+      "review_scope": "LOCAL-STAGE5-PRODUCTION-RECORD",
+      "media_kind": "plan",
+      "plan_stage": "PLAN-DRAFT",
+      "format": "markdown",
+      "published_path": "review/media/hlt-local-full-20261117/20261030.local_rendering_exploration_stage_5_durable_workflow.md",
+      "sha256": "a25395f3054b2c0a25c452fcd33a5625725134d71a73761775da0ae14e7bd936",
+      "bytes": 51034,
+      "source_path": "docs/development/sessions/20261030.local_rendering_exploration_stage_5_durable_workflow.md",
+      "source_sha256": "a25395f3054b2c0a25c452fcd33a5625725134d71a73761775da0ae14e7bd936",
+      "plan_html": "review/media/hlt-local-full-20261117/20261030.local_rendering_exploration_stage_5_durable_workflow.html",
+      "review_assets": [
+        {
+          "path": "review/media/hlt-local-full-20261117/20261030.local_rendering_exploration_stage_5_durable_workflow.html",
+          "bytes": 58757,
+          "sha256": "230de503c13a67f865010493aa4bc6c4735b171e5d486b5269138502838d8143"
+        }
+      ],
+      "plan_links": [
+        {
+          "label": "Complete local film",
+          "path": "review/here-lies-trouble-local-full-20261117/"
+        }
+      ],
+      "technical_state": "COMMITTED-SOURCE-AND-PUBLISHED-LINKS-VERIFIED"
     }
   ],
   "portal_build": "izzi-review-2026-08-11.7",

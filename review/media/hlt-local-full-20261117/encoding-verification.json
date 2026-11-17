@@ -1,0 +1,11 @@
+{
+  "source_sha256": "5d21325b8b7c7d34af06516a1c6e35e8ddb109448fe17f5ac97ac0efba85d3d2",
+  "sha256": "93f043622d3078d8a914a69d549a579fd79f1a9e27df6b4ebd81394c7a8f8f72",
+  "bytes": 579286761,
+  "frames": 75729,
+  "duration_seconds": 3155.416016,
+  "audio_packets_sha256": "SHA256=61a15fa7dc2f69ed95e1e1e176f28fce57e1e6bb069f2187837524a112f2f854",
+  "audio_packets_identical": true,
+  "width": 720,
+  "height": 1280
+}

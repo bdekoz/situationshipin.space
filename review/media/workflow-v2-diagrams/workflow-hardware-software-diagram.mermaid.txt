@@ -6,6 +6,7 @@ flowchart LR
         CARTO["Cartofreako<br/>cartographic visualization"]
         IZZI["Izzi<br/>2D / 4D visualization"]
         CLUSTEROPS["Clusterops<br/>ansible, python utilities"]
+        REPLAY["HLT local animation · Python<br/>CPU replay · saved assets, PCM and captions"]
     end
     subgraph DATABASE["Local Database"]
         direction TB
@@ -15,14 +16,16 @@ flowchart LR
         direction TB
         AUDIO["Kokoro voices + Whisper checks<br/>rizal CPU · current HLT audio"]
         PRIOR["Qwen image editing + Higgs TTS<br/>eureka · retained earlier paths"]
+        MOSS["MOSS-Image-Base + appearance LoRA<br/>rizal GPU · accepted step 512 · saved artwork"]
+        SAM["SAM 2.1 segmentation<br/>rizal CPU · saved pose extraction"]
         DS["DeepSeek V4 Flash<br/>eureka · ds4 / ROCm · on-demand runner"]
         ORN["Ornith 1.5 · 35B<br/>eureka · Ollama · Q4_K_M"]
     end
     subgraph HOSTEDAI["Hosted AI"]
         direction TB
-        CLOUD["Motion generation<br/>seedance2ai.io / fal.ai"]
-        IMAGE["Image generation<br/>gpt-sol-6.1 / gpt-astra-6"]
-        CODING["Coding<br/>gpt-sol-6.1 / deepseek-v4"]
+        CLOUD["Motion generation<br/>fal.ai · Seedance 2.0 reference clips"]
+        IMAGE["Image generation<br/>Saved anchors · new fal models proposed"]
+        CODING["Coding<br/>Codex · GPT-family authoring"]
     end
     REVIEW["situationshipin.space<br/>Human review"]
     I --> DS
@@ -30,22 +33,28 @@ flowchart LR
     I -.-> CODING
     I --> AUDIO
     I --> PRIOR
+    I --> MOSS
+    I --> SAM
     I --> NATIVE
     I --> CARTO
     I --> IZZI
     I --> CLUSTEROPS
+    I --> REPLAY
     I --> IPINFO
     I -.-> CLOUD
     I -.-> IMAGE
     AUDIO --> REVIEW
     PRIOR --> REVIEW
+    MOSS --> REVIEW
+    SAM --> REVIEW
     NATIVE --> REVIEW
     CARTO --> REVIEW
     IZZI --> REVIEW
+    REPLAY --> REVIEW
     CLOUD -.-> REVIEW
     IMAGE -.-> REVIEW
     classDef node fill:#e6e6e6,stroke:#666666,color:#222222,stroke-width:2px
-    class I,AUDIO,PRIOR,NATIVE,CARTO,IZZI,CLUSTEROPS,IPINFO,DS,ORN,CLOUD,IMAGE,CODING,REVIEW node
+    class I,AUDIO,PRIOR,MOSS,SAM,NATIVE,CARTO,IZZI,CLUSTEROPS,REPLAY,IPINFO,DS,ORN,CLOUD,IMAGE,CODING,REVIEW node
     style SOFTWARE fill:#d9d9d9,stroke:#999999,color:#222222
     style DATABASE fill:#d9d9d9,stroke:#999999,color:#222222
     style LOCALAI fill:#d9d9d9,stroke:#999999,color:#222222
