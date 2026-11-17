@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-anthropocene-ocean-thermal-season-2026--ocean-thermal-season-season-length-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-anthropocene-ocean-thermal-season-2026--ocean-thermal-season-season-length-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/climate/ocean-thermal-season/season/length/legends/world/pdf/anthropocene-ocean-thermal-season-2026-legend.pdf",
+    "sha256": "9cb2dacc909ace483418d9a276e0b069ddccc177f86c7b71d213fcae60dda3ad",
+    "bytes": 19798,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

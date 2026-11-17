@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-coastal-compound-heat-2026--coastal-compound-heat-annual-both-days-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-coastal-compound-heat-2026--coastal-compound-heat-annual-both-days-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/climate/coastal-compound-heat/annual/both_days/legends/japan/pdf/anthropocene-coastal-compound-heat-2026-legend.pdf",
+    "sha256": "67ab97cdcd78f1d02e45b4e0fa8ff7efc0eb029094b5cf3e1e1b442164cd9a58",
+    "bytes": 20140,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

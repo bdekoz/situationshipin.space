@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-resources-mineral-uranium-mine-production-2024-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-resources-mineral-uranium-mine-production-2024-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/legends/japan/png/resources-mineral-uranium-mine-production-2024-legend.png",
+    "sha256": "5d9bda56636f81718e2166a75a5c292e2667c8db50ed932bac422186747526cf",
+    "bytes": 510410,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

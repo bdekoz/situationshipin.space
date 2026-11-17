@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-coastal-compound-heat-2025--coastal-compound-heat-matched-fraction",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-coastal-compound-heat-2025--coastal-compound-heat-matched-fraction",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/climate/coastal-compound-heat/matched/fraction/maps/japan/pdf/anthropocene-coastal-compound-heat-2025.pdf",
+    "sha256": "a5f065fb798b24948300fb5b5d922a5d4e5424c78fcf63127078a1db6f06a90c",
+    "bytes": 1300399,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

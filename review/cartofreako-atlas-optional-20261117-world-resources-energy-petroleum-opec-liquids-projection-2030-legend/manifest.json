@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-resources-energy-petroleum-opec-liquids-projection-2030-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-resources-energy-petroleum-opec-liquids-projection-2030-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/legends/world/png/resources-energy-petroleum-opec-liquids-projection-2030-legend.png",
+    "sha256": "cdcba2424301225e7e90af572f99a469ad744157d0a06c2ab6e518ca3fd87884",
+    "bytes": 417661,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

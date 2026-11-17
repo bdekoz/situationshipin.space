@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "portal_build": "izzi-review-2026-08-11.7",
-  "generated_at": "2026-11-17T19:40:01.243Z",
+  "generated_at": "2026-11-17T20:03:37.832Z",
   "portal_repository": "bdekoz/situationshipin.space",
   "portal_source_commit": "219a9b7f0891998c1525c94fa15b43c490b5d79f",
   "izzi_repository": "bdekoz/izzi",
@@ -10,13 +10,13 @@
   "human_review_state": "UNREVIEWED",
   "baseline_state": "NOT-PROMOTED",
   "training_conversion_transfer_state": "NOT-SHARED",
-  "artifact_count": 868,
+  "artifact_count": 869,
   "review_category_counts": {
-    "proofs": 56,
+    "proofs": 57,
     "style_processing": 801,
     "planning": 11
   },
-  "artifact_payload_bytes": 279495371,
+  "artifact_payload_bytes": 666594482,
   "external_media_count": 1,
   "external_media_bytes": 579286761,
   "provider_staging_bytes": 0,
@@ -37,7 +37,7 @@
     "tokyo-psychedelic": 30
   },
   "maximum_artifact_bytes": 16777216,
-  "maximum_payload_bytes": 285212672,
+  "maximum_payload_bytes": 671088640,
   "excluded_media": [
     "mkv",
     "mp4",
@@ -72,7 +72,7 @@
     },
     {
       "path": "assets/js/review.js",
-      "sha256": "870ae8bbb3ebed1779d41e147502a8f625eee13a20ca4a165a165ad4fbe33630"
+      "sha256": "94e58956823ca992b8c1267e0eadd423dc1b1859e33ab401ec01047adf226486"
     },
     {
       "path": "assets/css/hamonshu-crops.css",
@@ -108,7 +108,7 @@
     },
     {
       "path": "scripts/review-catalog.test.mjs",
-      "sha256": "b5eb4c4e63156ddab50a386b7d79d979c7d114faa5421786de30c16ddba89fe7"
+      "sha256": "2f4bb3ecec1c6bc9e32b790b4bc39cad34439d1d6c40426e414f7f8f8e8b46e1"
     },
     {
       "path": "scripts/review-media.mjs",
@@ -140,19 +140,19 @@
     },
     {
       "path": "data/review-items.json",
-      "sha256": "0963ac0459c68d687b3cb4526cf02f22889a9a7ec6d215e75044084160384a46"
+      "sha256": "fcc25dccea4bea5b4810a493d8700831f6fd8de5bfd7f0238ce9865beccea4bd"
     },
     {
       "path": "scripts/check-review-site.mjs",
-      "sha256": "4d98aa10b75a47307996ed08ef813f712b87f96050bbe371f80ba3c3649913ee"
+      "sha256": "db6442cb26ca672a555c94b3e8519743581a189b825e9c6dcf913a3bb6902169"
     },
     {
       "path": "scripts/update-build-manifest.mjs",
-      "sha256": "46fff4b0ae5bdee822986f7413e1b9e8dae4e67b288379265f85ad322f797a10"
+      "sha256": "2875aa3cc8e3ff1ab96e75efd455ff1a03e6846309476b9b1c2783668b62e14b"
     },
     {
       "path": "README.md",
-      "sha256": "6c578a1994fd8881c54e5bab33ea5b173d238ded2a57d216068b66a5bfc4d2de"
+      "sha256": "fb19b7c1178203d8f2d6fc5d3e00f4b224f3ec4c6b710a9c84480048cb300377"
     },
     {
       "path": "_config.yml",
@@ -231,20 +231,40 @@
       "sha256": "d1c05412978d1f82e6ea404fd86ea83b060db254f6994091d0e6bb2a62ef7ad2"
     },
     {
+      "path": "scripts/prepare-cartofreako-atlas.py",
+      "sha256": "33ae19a0af92205fb14d71db239e20d120a5612a6b69a5f4d17d93785e0980f3"
+    },
+    {
+      "path": "scripts/publish-cartofreako-atlas.mjs",
+      "sha256": "1b9b76223e21050aff26b9126193832e156fef43c4dfec288639d28eeac25c24"
+    },
+    {
+      "path": "scripts/cartofreako-atlas-packet.mjs",
+      "sha256": "f1a98462f9a1b0e6965cb158dd634b2e9be852f9cfeaaee7f6111219079219fa"
+    },
+    {
+      "path": "scripts/cartofreako-atlas-packet.test.mjs",
+      "sha256": "f6b09fbf258911bf90b3b7b7c166fce208b2120e8f2f1f865808028f2823a874"
+    },
+    {
+      "path": "scripts/test-cartofreako-atlas.py",
+      "sha256": "80ec8823d177c190475c1bc4d7ec5e4725fca49cec074861ef91f835ae40b9ec"
+    },
+    {
       "path": "assets/css/cartofreako-plates.css",
-      "sha256": "53283972aff2fc3261deb8cb571ee6d221be1c4b234f9e69de037b0379c2f1bf"
+      "sha256": "d69105d171c95cdb875efb9f96035ed7ab5ee1c97a85ebeec9f2af2ef683dace"
     },
     {
       "path": "assets/js/cartofreako-plates.js",
-      "sha256": "eba0fb0c5eb90a04aafd81a64c2fed6c5118369f1c6e045f52ab88cbb3f6f5d9"
+      "sha256": "33d6c7d72a118d681c9acab2bce38ca170ce860ae0bc24dbfd724c849d858dc3"
     },
     {
       "path": ".github/workflows/jekyll-gh-pages.yml",
-      "sha256": "ce93f44376d613b8a929c89cb4d7ac87ff943552a1b59fdb6d9dbec9938d3e17"
+      "sha256": "7f84d3c181067679fc7b31a9b20ea77f452d51276efdafcbe92b348726c2dc23"
     }
   ],
   "artifact_inventory": "data/review-items.json",
-  "catalog_sha256": "0963ac0459c68d687b3cb4526cf02f22889a9a7ec6d215e75044084160384a46",
+  "catalog_sha256": "fcc25dccea4bea5b4810a493d8700831f6fd8de5bfd7f0238ce9865beccea4bd",
   "notes": [
     "The catalog binds every published derivative to an Izzi source path and SHA-256.",
     "Active provider inputs require archive receipts, owner/job attribution and expiry; their bytes count against the same payload budget.",

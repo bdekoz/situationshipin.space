@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-anthropocene-water-temperature-anomaly-2026-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-anthropocene-water-temperature-anomaly-2026-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/ocean/legends/world/pdf/anthropocene-water-temperature-anomaly-2026-legend.pdf",
+    "sha256": "bffac7e3d6d29c710b6c5192e0524de450ca741818ff98d90b3a7670f343dbcb",
+    "bytes": 23839,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

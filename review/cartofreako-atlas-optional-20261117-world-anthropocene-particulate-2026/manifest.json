@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-anthropocene-particulate-2026",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-anthropocene-particulate-2026",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/maps/world/png/anthropocene-particulate-2026.png",
+    "sha256": "08c67dc0a3b76173da809793af72784ed883001deab35254f6f349aeac67e75a",
+    "bytes": 33482393,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

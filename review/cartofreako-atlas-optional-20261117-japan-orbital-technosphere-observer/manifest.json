@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-orbital-technosphere-observer",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-orbital-technosphere-observer",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/maps/japan/png/orbital-technosphere-observer.png",
+    "sha256": "97d810d251af6c954c3a686c63d7bb79fc310f23e493bf2fdb61424cf5084a49",
+    "bytes": 3083108,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

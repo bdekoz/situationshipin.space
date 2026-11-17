@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-anthropocene-land-temperature-2026",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-anthropocene-land-temperature-2026",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/maps/world/png/anthropocene-land-temperature-2026.png",
+    "sha256": "5db220b08b1107e31d75f761972d6c4688e8ab2d1740e8fa3ce4bcdfd153e604",
+    "bytes": 11987541,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

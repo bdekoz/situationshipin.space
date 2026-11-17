@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-land-temperature-2026",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-land-temperature-2026",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/maps/japan/png/anthropocene-land-temperature-2026.png",
+    "sha256": "0dcedd8628f75442f6f68f2bce8531c5479751bf146a74a362d051e30c73e8a8",
+    "bytes": 4035459,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

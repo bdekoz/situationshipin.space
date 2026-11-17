@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-marine-heatwave-2026--marine-heatwave-annual-cumulative-intensity",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-marine-heatwave-2026--marine-heatwave-annual-cumulative-intensity",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/climate/marine-heatwave/annual/cumulative_intensity/maps/japan/pdf/anthropocene-marine-heatwave-2026.pdf",
+    "sha256": "e98b4a9b2a01c1a8387f4e02f3bb1fc8251059ced18f552c53fc69df6895ee80",
+    "bytes": 23507621,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

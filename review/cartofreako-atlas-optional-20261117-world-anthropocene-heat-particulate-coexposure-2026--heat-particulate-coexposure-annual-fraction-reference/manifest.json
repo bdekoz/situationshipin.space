@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-anthropocene-heat-particulate-coexposure-2026--heat-particulate-coexposure-annual-fraction-reference",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-anthropocene-heat-particulate-coexposure-2026--heat-particulate-coexposure-annual-fraction-reference",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/climate/heat-particulate-coexposure/annual/fraction/reference/maps/world/pdf/anthropocene-heat-particulate-coexposure-2026.pdf",
+    "sha256": "657aeb8a2c50118864662a6a873f09fc60b5e665ddc9a4e1e68ac2e0c3de1ab0",
+    "bytes": 1835578,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

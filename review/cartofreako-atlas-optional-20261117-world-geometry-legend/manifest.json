@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-geometry-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-geometry-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/legends/world/png/geometry-legend.png",
+    "sha256": "f71c0f9ef912697cf2c9f60bca32ce0492cbdf035c2d03fc36167f36f685e93e",
+    "bytes": 394345,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

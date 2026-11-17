@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-resources-human-bachelors-attainment-latest-2024",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-resources-human-bachelors-attainment-latest-2024",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/maps/japan/png/resources-human-bachelors-attainment-latest-2024.png",
+    "sha256": "fd5d97e6fc8e23c08640d70277456d4096a8e8eb11427f6319df6fa32ff0298e",
+    "bytes": 1310802,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

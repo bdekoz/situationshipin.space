@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-resources-energy-petroleum-opec-country-coverage-2026-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-resources-energy-petroleum-opec-country-coverage-2026-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/legends/japan/png/resources-energy-petroleum-opec-country-coverage-2026-legend.png",
+    "sha256": "4e7abeb3905db23e7a7574fb30d595cbbe52e259531ca49fd1fd15a1f2780318",
+    "bytes": 382382,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

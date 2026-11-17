@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-resources-energy-nuclear-operating-capacity-2024-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-resources-energy-nuclear-operating-capacity-2024-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/legends/world/png/resources-energy-nuclear-operating-capacity-2024-legend.png",
+    "sha256": "65afed92e0883ae1c0af2fdd23eb27feec0b7f300cfdc1554fd1605ab705a9ee",
+    "bytes": 552547,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

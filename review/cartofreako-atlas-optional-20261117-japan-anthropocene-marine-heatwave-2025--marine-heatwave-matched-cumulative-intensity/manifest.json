@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-marine-heatwave-2025--marine-heatwave-matched-cumulative-intensity",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-marine-heatwave-2025--marine-heatwave-matched-cumulative-intensity",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/climate/marine-heatwave/matched/cumulative_intensity/maps/japan/pdf/anthropocene-marine-heatwave-2025.pdf",
+    "sha256": "db483aa49125e81e1651d9ed8db052eb60f2c6b2bd07d62463c184f4f0b582b3",
+    "bytes": 23920312,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

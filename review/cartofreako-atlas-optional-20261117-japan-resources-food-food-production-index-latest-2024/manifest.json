@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-resources-food-food-production-index-latest-2024",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-resources-food-food-production-index-latest-2024",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/maps/japan/png/resources-food-food-production-index-latest-2024.png",
+    "sha256": "e859caba33f787d8f8540e275ed56df8aa8948d4bf729354f9a95c2de35e6aa2",
+    "bytes": 1244753,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

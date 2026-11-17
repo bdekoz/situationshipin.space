@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-resources-mineral-lithium-mine-production-2025-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-resources-mineral-lithium-mine-production-2025-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/legends/world/png/resources-mineral-lithium-mine-production-2025-legend.png",
+    "sha256": "ab942012a60f183766a7b2d3310f97d05a69943009239356eaac67d2bcb492dd",
+    "bytes": 533237,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

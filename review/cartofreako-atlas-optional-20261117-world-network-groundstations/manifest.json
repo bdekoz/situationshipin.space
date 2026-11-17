@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-network-groundstations",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-network-groundstations",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/maps/world/png/network-groundstations.png",
+    "sha256": "20e78c8dae3cbb33dfc570c90aaec808a0f88c4345fec261fd2c5997004a7a41",
+    "bytes": 4254030,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

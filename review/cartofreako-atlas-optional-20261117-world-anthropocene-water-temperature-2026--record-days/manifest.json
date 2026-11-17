@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-anthropocene-water-temperature-2026--record-days",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-anthropocene-water-temperature-2026--record-days",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/ocean/record-days/maps/world/pdf/anthropocene-water-temperature-2026.pdf",
+    "sha256": "89f6c9ad850033c3b6c5a759a1d58a5f4df2cdbc3adc2967f59a5720ce95c46b",
+    "bytes": 168697345,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

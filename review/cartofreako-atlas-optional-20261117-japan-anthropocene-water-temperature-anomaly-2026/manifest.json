@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-water-temperature-anomaly-2026",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-water-temperature-anomaly-2026",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/ocean/maps/japan/pdf/anthropocene-water-temperature-anomaly-2026.pdf",
+    "sha256": "ca711b2faed71f89c3cee183a477819f49f5c6b3bf3d963ac4b3b00f350f349c",
+    "bytes": 7723388,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

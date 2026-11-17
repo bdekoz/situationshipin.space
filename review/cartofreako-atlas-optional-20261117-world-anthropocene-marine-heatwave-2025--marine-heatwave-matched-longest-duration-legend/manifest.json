@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-anthropocene-marine-heatwave-2025--marine-heatwave-matched-longest-duration-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-anthropocene-marine-heatwave-2025--marine-heatwave-matched-longest-duration-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/climate/marine-heatwave/matched/longest_duration/legends/world/pdf/anthropocene-marine-heatwave-2025-legend.pdf",
+    "sha256": "f7110699317d5295331de5a4bde799fb845cc886e551057eb8f2cee9f2982783",
+    "bytes": 19593,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

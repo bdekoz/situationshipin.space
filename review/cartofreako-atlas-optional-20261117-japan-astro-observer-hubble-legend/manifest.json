@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-astro-observer-hubble-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-astro-observer-hubble-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/legends/japan/png/astro-observer-hubble-legend.png",
+    "sha256": "d93e8924f36f0f360d9b45375666b79df57f030849a25d52579bbfc74adf46ec",
+    "bytes": 571081,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

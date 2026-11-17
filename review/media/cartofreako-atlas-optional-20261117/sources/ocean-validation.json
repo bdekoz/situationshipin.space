@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "reference_checks": [
+    {
+      "year": 2025,
+      "period": "annual",
+      "days": 365,
+      "independent_reference_cells": 8
+    },
+    {
+      "year": 2025,
+      "period": "matched",
+      "days": 313,
+      "independent_reference_cells": 8
+    },
+    {
+      "year": 2026,
+      "period": "annual",
+      "days": 313,
+      "independent_reference_cells": 8
+    },
+    {
+      "year": 2026,
+      "period": "matched",
+      "days": 313,
+      "independent_reference_cells": 8
+    }
+  ],
+  "native_grids_checked": 90,
+  "occupied_h3_cells": 596710,
+  "checked_export_sheets": 36,
+  "data_only": false,
+  "products_sha256": "ac9a3d567612df8fd2bf3a43689870b3f7cf1993479141df9aeb44f7a8f319ee",
+  "script_sha256": "cda112126a44ed1dbe8bc300e795977c57260dbc664e780a9dbe662e78ab3f4e",
+  "scientific_validation_reused_from_sha256": "6e4c9c8a5d538eb57c352c6f95dafa26cadbff4e37fb15afb79c4d294546f9d1"
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-astro-all-sky",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-astro-all-sky",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/maps/world/png/astro-all-sky.png",
+    "sha256": "ac4302a81bc49e605a936541d7d68c13c808d7276f0b0dd928c263e1b3bcbaa0",
+    "bytes": 1852908,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-land-temperature-2025-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-land-temperature-2025-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/legends/japan/png/anthropocene-land-temperature-2025-legend.png",
+    "sha256": "a06c168b8fd07bc7cba88b7836fce9b03994d21d58030d088c8215d1da3a3308",
+    "bytes": 463194,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-anthropocene-water-temperature-2026",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-anthropocene-water-temperature-2026",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/ocean/maps/world/pdf/anthropocene-water-temperature-2026.pdf",
+    "sha256": "fe445d759a9d4f9aaa4cacb7792b233b03401b69aaa5a1e7355141551aeab3af",
+    "bytes": 92456277,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

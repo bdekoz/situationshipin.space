@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-anthropocene-ocean-thermal-season-2025--ocean-thermal-season-season-observed-warm-days-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-anthropocene-ocean-thermal-season-2025--ocean-thermal-season-season-observed-warm-days-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/climate/ocean-thermal-season/season/observed_warm_days/legends/world/pdf/anthropocene-ocean-thermal-season-2025-legend.pdf",
+    "sha256": "a7e7086cfc3571c839f9a79d2ad032fab2444351184fdab355a4c8997e7eb9cf",
+    "bytes": 19757,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

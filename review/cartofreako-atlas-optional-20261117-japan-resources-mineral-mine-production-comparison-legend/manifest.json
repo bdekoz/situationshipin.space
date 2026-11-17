@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-resources-mineral-mine-production-comparison-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-resources-mineral-mine-production-comparison-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/legends/japan/png/resources-mineral-mine-production-comparison-legend.png",
+    "sha256": "8bc1b9dd96290c8db7903a4d9ea284663d0b68de7d66d348a83d83efec5cee15",
+    "bytes": 1234275,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

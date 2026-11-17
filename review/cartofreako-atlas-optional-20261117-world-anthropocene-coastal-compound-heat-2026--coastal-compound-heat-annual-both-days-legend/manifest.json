@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-anthropocene-coastal-compound-heat-2026--coastal-compound-heat-annual-both-days-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-anthropocene-coastal-compound-heat-2026--coastal-compound-heat-annual-both-days-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/climate/coastal-compound-heat/annual/both_days/legends/world/pdf/anthropocene-coastal-compound-heat-2026-legend.pdf",
+    "sha256": "79bd1551b6016562f149469a9f01190635c9625fed31b84e14d59a7143dc8fd5",
+    "bytes": 19915,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

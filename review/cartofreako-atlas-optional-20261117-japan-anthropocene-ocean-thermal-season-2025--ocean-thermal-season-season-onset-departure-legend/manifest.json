@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-ocean-thermal-season-2025--ocean-thermal-season-season-onset-departure-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-ocean-thermal-season-2025--ocean-thermal-season-season-onset-departure-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/climate/ocean-thermal-season/season/onset_departure/legends/japan/pdf/anthropocene-ocean-thermal-season-2025-legend.pdf",
+    "sha256": "019f3685b10fbb8c03f9ca3fc856f919947cf035fc668ed6c3aa0479fd06bde4",
+    "bytes": 23544,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

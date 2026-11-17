@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-anthropocene-marine-heatwave-2026--marine-heatwave-annual-cumulative-intensity",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-anthropocene-marine-heatwave-2026--marine-heatwave-annual-cumulative-intensity",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/climate/marine-heatwave/annual/cumulative_intensity/maps/world/pdf/anthropocene-marine-heatwave-2026.pdf",
+    "sha256": "34145e559ca066fb7ee2f50f35b267ccd69960edce279ee60a3a293a55924af9",
+    "bytes": 262393360,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

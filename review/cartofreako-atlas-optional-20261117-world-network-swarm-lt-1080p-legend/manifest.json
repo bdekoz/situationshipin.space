@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-network-swarm-lt-1080p-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-network-swarm-lt-1080p-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/legends/world/png/network-swarm-lt-1080p-legend.png",
+    "sha256": "f6fe8c09d713c2deaafdac947ddca9c42f1fd29b3dbb4741ce7c3cd75b5143da",
+    "bytes": 660097,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-resources-energy-petroleum-eia-liquids-2025-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-resources-energy-petroleum-eia-liquids-2025-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/legends/japan/png/resources-energy-petroleum-eia-liquids-2025-legend.png",
+    "sha256": "b020f92938f3f13eea735b59e0a263e8b55b03ed0aa5deb287f68ce46c2fe5ed",
+    "bytes": 469718,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

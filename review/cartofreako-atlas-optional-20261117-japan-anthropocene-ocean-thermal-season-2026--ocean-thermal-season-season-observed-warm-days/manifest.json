@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-ocean-thermal-season-2026--ocean-thermal-season-season-observed-warm-days",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-ocean-thermal-season-2026--ocean-thermal-season-season-observed-warm-days",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/climate/ocean-thermal-season/season/observed_warm_days/maps/japan/pdf/anthropocene-ocean-thermal-season-2026.pdf",
+    "sha256": "520198c5d385771a715f2415d55316ad8c7fd7ff87160570136f16811228a3d2",
+    "bytes": 28432707,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-resources-mineral-lithium-mine-production-2025-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-resources-mineral-lithium-mine-production-2025-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/legends/japan/png/resources-mineral-lithium-mine-production-2025-legend.png",
+    "sha256": "7df97ecbeb9aa8af51e741b1f0bdc077e8a3d570863cd97ba6e1847825379744",
+    "bytes": 531971,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

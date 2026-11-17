@@ -385,10 +385,58 @@ privacy, and publication decision.
 Technical publication does not imply human acceptance or baseline promotion.
 
 
-## Cartofreako / Setouchi 2028 plates
+## Current Cartofreako atlas-optional review
+
+The [November 17 review round](https://situationshipin.space/review/cartofreako-atlas-optional-20261117/)
+implements [issue #83](https://github.com/bdekoz/situationshipin.space/issues/83):
+all World/Japan sheets from the selected completed `atlas-optional` build,
+using its current map presentation and separate A3 legend/source sheets.
+It contains **80 subjects, 151 maps and 151 legends**, for **302 sheets**.
+There are 80 World views and 71 Japan views. Nine optional World/India
+variants contribute their World sheets; no Japan view is fabricated.
+
+The source is the validated November 11 data edition, completed November 13.
+The preparer verifies the selected build pointer, full-build receipt,
+validation reports, style/catalog fingerprints and every selected SVG and
+PNG/PDF hash. Atlas PNG masters and optional print PDFs supply lossless,
+up-to-3840-pixel WebP review images with 960-pixel thumbnails. The source
+observation dates and original build revision remain distinct from the
+publication date and checkout revision. No data acquisition is performed.
+
+Reproduce from the completed Cartofreako checkout with Python, Pillow,
+Poppler and Node available:
+
+```sh
+python3 scripts/prepare-cartofreako-atlas.py \
+  --cartofreako-root /home/bkoz/src/cartofreako \
+  --output /tmp/cartofreako-atlas-review --jobs 2
+python3 scripts/test-cartofreako-atlas.py
+node --test scripts/*.test.mjs
+node scripts/publish-cartofreako-atlas.mjs \
+  --approve PROJECT-APPROVED --prepared /tmp/cartofreako-atlas-review \
+  --collection cartofreako-atlas-optional-20261117
+node scripts/update-build-manifest.mjs
+node scripts/check-review-site.mjs
+```
+
+Completed preparation outputs can be reused after their source, settings,
+tool version and output hashes match. Publication requires a fresh
+collection ID for changed media. Map and legend pages have separate
+hash-bound reviews, geographic filters count the actual available sheets,
+and the combined download records each sheet's kind. The October 30 gallery,
+all its media and individual review identities remain available as the
+previous round; it links forward to the new collection. Its saved feedback
+is not reassigned to revised images.
+
+The shared payload cap is **640 MiB**, increased from 272 MiB for this
+explicitly requested complete revision while preserving prior reviews.
+The **16 MiB per-object cap** is unchanged. The measured full-site payload
+is recorded in `data/build-manifest.json` and enforced by the site checker.
+
+## Earlier Cartofreako / Setouchi 2028 plates
 
 The [world/Japan review gallery](https://situationshipin.space/review/cartofreako-setouchi-2028-20261030/)
-contains 38 subjects and 76 plates from the latest complete Cartofreako delivery.
+contains the earlier 38 subjects and 76 plates from the October delivery.
 Each subject pairs a world plate with its Japan companion, including separate
 1080p/4K and 720p/SD native swarm plates. Review images are 3840-pixel lossless
 WebP derivatives of checksum-verified 300 dpi PNG masters. The gallery uses

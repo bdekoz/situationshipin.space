@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-ocean-thermal-season-2025--ocean-thermal-season-season-length",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-ocean-thermal-season-2025--ocean-thermal-season-season-length",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/climate/ocean-thermal-season/season/length/maps/japan/pdf/anthropocene-ocean-thermal-season-2025.pdf",
+    "sha256": "22660549b96e4b41fe1839b43000103890ec2ec94139bbf5618a7dd3e82aee99",
+    "bytes": 18109755,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

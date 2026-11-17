@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-astro-observer-ground-multiband-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-astro-observer-ground-multiband-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/legends/japan/png/astro-observer-ground-multiband-legend.png",
+    "sha256": "1ff3c37e583a40dce5e473f5748a3dc333424d86e008f693e6d2d279d9815efc",
+    "bytes": 516344,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

@@ -326,7 +326,8 @@ function categoryItems() {
   return state.catalog.items.filter((item) =>
     item.review_category === state.category
     && !(["proofs", "planning"].includes(state.category)
-      && item.generation_state === "STALE" && !elements.showArchived?.checked)
+      && (item.generation_state === "STALE" || item.generation_state === "SUPERSEDED")
+      && !elements.showArchived?.checked)
   );
 }
 

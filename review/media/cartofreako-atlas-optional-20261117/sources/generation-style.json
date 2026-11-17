@@ -1,0 +1,544 @@
+{
+  "schema_version": 1,
+  "name": "Reviewed Cartofreako generation defaults",
+  "reviewed_on": "2026-11-10",
+  "default_projection": "authagraph",
+  "reference_sheet_inches": [
+    44,
+    19.052559
+  ],
+  "atlas": {
+    "preset": "setouchi-st2",
+    "reference_render_date": "2026-11-03",
+    "reference_generation_commit": "d1118f3",
+    "presentation": {
+      "groundstation_recipe_file": "config/starlink-star-light-v3-20261109.json",
+      "family": "msp-speculation-5",
+      "default_palette": "wine-amber",
+      "recipe_file": "config/msp-speculations-20261103.json",
+      "approved_delivery": "output/msp-speculations-20261103",
+      "data_colors": "preserve-source",
+      "base_edition": "setouchi-st2",
+      "world_recipe_file": "config/starlink-star-light-world-20261110.json"
+    },
+    "sheet_sequence": [
+      "map",
+      "legend"
+    ],
+    "bibliography": "per-legend-sheet",
+    "pdf_editions": [
+      "world",
+      "japan",
+      "combined"
+    ],
+    "pdf_excluded_stems": [
+      "bathymetry-roulette",
+      "bathymetry-hamonshu"
+    ],
+    "image_width_inches": 43.5,
+    "world_shift_source_inches": 4.4,
+    "antarctica_translation_source_inches": [
+      -37.3872,
+      1.5506589999999996
+    ],
+    "plate_number": {
+      "size_pt": 36,
+      "weight": "700",
+      "fill": "#ffffff",
+      "stroke": "#000000",
+      "stroke_width_pt": 0.5,
+      "opacity": 1
+    },
+    "title_page": {
+      "title": "CARTOFREAKO",
+      "font": "Atkinson-Bold",
+      "margin_pt": 18.0,
+      "line_gap_pt": 36.0,
+      "date_size_ratio": 0.5,
+      "date_timezone": "America/Los_Angeles"
+    },
+    "png_dpi": 300
+  },
+  "fiber": {
+    "width_pt": 0.5,
+    "opacity": 0.75,
+    "terrestrial_color": "#4cbb17",
+    "japan_landing_radius_multiplier": 0.5,
+    "japan_landing_outline_pt": 0.5
+  },
+  "water": {
+    "river_width_pt": 0.75,
+    "japan_river_width_pt": 1.5,
+    "river_opacity": 0.85
+  },
+  "coastline": {
+    "japan_width_pt": 1.0,
+    "atmosphere_width_pt": 0.5,
+    "atmosphere_opacity": 0.75
+  },
+  "resources": {
+    "fill_opacity": 1.0,
+    "palette": "izzi-hue",
+    "metric_palettes": {
+      "wind-capacity": [
+        "lightcyan",
+        "cyan",
+        "crayolacerulean",
+        "shinbashiiro",
+        "hanada"
+      ],
+      "nuclear-operating-capacity": [
+        "lavender",
+        "mediumpurple",
+        "slateblue",
+        "darkslateblue",
+        "midnightblue"
+      ],
+      "petroleum-refinery-throughput": [
+        "duboisbrown5",
+        "duboisbrown4",
+        "kohakuiro",
+        "duboisbrown2",
+        "duboisbrown3"
+      ],
+      "food-production-index": [
+        "pink",
+        "hotpink",
+        "deeppink",
+        "mediumvioletred",
+        "peony"
+      ],
+      "fisheries-production": [
+        "lightblue",
+        "skyblue",
+        "deepskyblue",
+        "dodgerblue",
+        "navy"
+      ],
+      "forest-area-percent": [
+        "byakuroku",
+        "usumoegi",
+        "moegi",
+        "midori",
+        "duboisgreen5"
+      ],
+      "rare-earth-mine-production": [
+        "#e5cbf4",
+        "#cea7e6",
+        "#b782d4",
+        "#a362c0",
+        "#8845aa"
+      ],
+      "population-under-30": [
+        "greenyellow",
+        "chartreuse",
+        "hiwamoegi",
+        "rokusho",
+        "aotakeiro"
+      ],
+      "population-over-60": [
+        "coral",
+        "salmon",
+        "tomato",
+        "crimson",
+        "foreigncrimson"
+      ],
+      "upper-secondary-attainment": [
+        "atmosphericp",
+        "dustyrose",
+        "usuiro",
+        "ayameiro",
+        "murasaki"
+      ],
+      "bachelors-attainment": [
+        "navajowhite",
+        "kanzoiro",
+        "akebonoiro",
+        "sohi",
+        "benikaba"
+      ],
+      "resident-patent-applications-per-million": [
+        "lightskyblue",
+        "cornflowerblue",
+        "royalblue",
+        "blueprintlight",
+        "blueprintdark"
+      ],
+      "lithium-mine-production": [
+        "#c8f6f3",
+        "#8fe0db",
+        "#51c5c1",
+        "#23a6a6",
+        "#118184"
+      ],
+      "uranium-mine-production": [
+        "#fff1b6",
+        "#ffe084",
+        "#fcc553",
+        "#dc9f2f",
+        "#b47b18"
+      ]
+    },
+    "solar_colors": [
+      "hellayellow",
+      "duboisyellow2",
+      "gold",
+      "orange",
+      "dutchorange",
+      "darkorange"
+    ],
+    "solar_upper_mw": [
+      100,
+      1000,
+      10000,
+      50000,
+      200000
+    ],
+    "mineral_types": {
+      "rare-earth": {
+        "color": "#b782d4",
+        "shape": "circle"
+      },
+      "lithium": {
+        "color": "#51c5c1",
+        "shape": "square"
+      },
+      "uranium": {
+        "color": "#fcc553",
+        "shape": "triangle"
+      }
+    }
+  },
+  "temperature": {
+    "high_upper_days": [
+      5,
+      10,
+      20,
+      40,
+      80
+    ],
+    "high_colors": [
+      "#fff0bc",
+      "#ffce64",
+      "#f4a340",
+      "#e5712d",
+      "#c44724",
+      "#8f2825"
+    ]
+  },
+  "atmosphere": {
+    "foreground_land_fill_opacity": 0.0,
+    "cloud_colors": [
+      "#ffe0ef",
+      "#ffbfda",
+      "#ff91c2",
+      "#fa64a5",
+      "#e93c8b",
+      "#c92070"
+    ]
+  },
+  "coral": {
+    "strategy": "honeycomb",
+    "macrohex_radius_in": 0.16,
+    "microhex_spacing_radius_in": 0.0175,
+    "microhex_radius_in": 0.016,
+    "microhex_outline_in": 0.0015,
+    "display_cell_cap": 61,
+    "colors": [
+      "seijiiro",
+      "goldenyellow",
+      "asamaorange",
+      "duboisred3"
+    ]
+  },
+  "cdn": {
+    "strategy": "alpha60-vendor-reel-r8",
+    "fill_opacity": 0.33,
+    "group_grid_in": 0.0625,
+    "record_cap": 320,
+    "outline_in": 0.0035,
+    "reference_radius_in": 0.09375,
+    "reference_outline_in": 0.006,
+    "maximum_labels_per_vendor": 5,
+    "vendors": [
+      {
+        "id": "google",
+        "label": "Google",
+        "providers": [
+          "Google",
+          "Google Cloud"
+        ],
+        "color": "#eb4335",
+        "rotation": 0
+      },
+      {
+        "id": "cloudflare",
+        "label": "Cloudflare",
+        "providers": [
+          "Cloudflare"
+        ],
+        "color": "#f38020",
+        "rotation": 17
+      },
+      {
+        "id": "microsoft",
+        "label": "Microsoft",
+        "providers": [
+          "Microsoft",
+          "Microsoft Azure",
+          "Microsoft Azure operated by 21Vianet"
+        ],
+        "color": "#f25022",
+        "rotation": 34
+      },
+      {
+        "id": "amazon-web-services",
+        "label": "Amazon Web Services",
+        "providers": [
+          "Amazon Web Services"
+        ],
+        "color": "#ff9900",
+        "rotation": 51
+      },
+      {
+        "id": "fastly",
+        "label": "Fastly",
+        "providers": [
+          "Fastly"
+        ],
+        "color": "#ff282d",
+        "rotation": 8
+      },
+      {
+        "id": "cachefly",
+        "label": "CacheFly",
+        "providers": [
+          "CacheFly"
+        ],
+        "color": "#210f57",
+        "rotation": 25
+      },
+      {
+        "id": "alibaba-cloud",
+        "label": "Alibaba Cloud",
+        "providers": [
+          "Alibaba Cloud"
+        ],
+        "color": "#ff6a00",
+        "rotation": 42
+      },
+      {
+        "id": "tencent-cloud",
+        "label": "Tencent Cloud",
+        "providers": [
+          "Tencent Cloud"
+        ],
+        "color": "#00a3ff",
+        "rotation": 59
+      },
+      {
+        "id": "baidu-ai-cloud",
+        "label": "Baidu AI Cloud",
+        "providers": [
+          "Baidu AI Cloud"
+        ],
+        "color": "#2464f5",
+        "rotation": 16
+      },
+      {
+        "id": "huawei-cloud",
+        "label": "Huawei Cloud",
+        "providers": [
+          "Huawei Cloud"
+        ],
+        "color": "#c7000b",
+        "rotation": 33
+      },
+      {
+        "id": "volcano-engine",
+        "label": "Volcano Engine",
+        "providers": [
+          "Volcano Engine"
+        ],
+        "color": "#006eff",
+        "rotation": 50
+      },
+      {
+        "id": "kingsoft-cloud",
+        "label": "Kingsoft Cloud",
+        "providers": [
+          "Kingsoft Cloud"
+        ],
+        "color": "#e6002d",
+        "rotation": 7
+      },
+      {
+        "id": "jd-cloud",
+        "label": "JD Cloud",
+        "providers": [
+          "JD Cloud"
+        ],
+        "color": "#e1251b",
+        "rotation": 24
+      },
+      {
+        "id": "china-telecom-tianyi-cloud",
+        "label": "China Telecom Tianyi Cloud",
+        "providers": [
+          "China Telecom Tianyi Cloud"
+        ],
+        "color": "#df0428",
+        "rotation": 41
+      },
+      {
+        "id": "chindata",
+        "label": "Chindata",
+        "providers": [
+          "Chindata"
+        ],
+        "color": "#dc162b",
+        "rotation": 58
+      },
+      {
+        "id": "akamai",
+        "label": "Akamai",
+        "providers": [
+          "Akamai"
+        ],
+        "color": "#0096d6",
+        "rotation": 15
+      },
+      {
+        "id": "apple",
+        "label": "Apple",
+        "providers": [
+          "Apple"
+        ],
+        "color": "#000000",
+        "rotation": 32
+      },
+      {
+        "id": "meta",
+        "label": "Meta",
+        "providers": [
+          "Meta"
+        ],
+        "color": "#0467df",
+        "rotation": 49
+      },
+      {
+        "id": "netflix",
+        "label": "Netflix",
+        "providers": [
+          "Netflix"
+        ],
+        "color": "#b1060f",
+        "rotation": 6
+      },
+      {
+        "id": "coreweave",
+        "label": "CoreWeave",
+        "providers": [
+          "CoreWeave"
+        ],
+        "color": "#2741e7",
+        "rotation": 23
+      },
+      {
+        "id": "oracle-cloud-infrastructure",
+        "label": "Oracle Cloud Infrastructure",
+        "providers": [
+          "Oracle Cloud Infrastructure"
+        ],
+        "color": "#f80000",
+        "rotation": 40
+      },
+      {
+        "id": "ibm-cloud",
+        "label": "IBM Cloud",
+        "providers": [
+          "IBM Cloud"
+        ],
+        "color": "#0f62fe",
+        "rotation": 57
+      },
+      {
+        "id": "yandex",
+        "label": "Yandex",
+        "providers": [
+          "Yandex",
+          "Yandex Cloud"
+        ],
+        "color": "#2a9fff",
+        "rotation": 14
+      },
+      {
+        "id": "qiniu-cloud",
+        "label": "Qiniu Cloud",
+        "providers": [
+          "Qiniu Cloud"
+        ],
+        "color": "#06aeef",
+        "rotation": 31
+      },
+      {
+        "id": "selectel",
+        "label": "Selectel",
+        "providers": [
+          "Selectel"
+        ],
+        "color": "#666666",
+        "rotation": 0
+      },
+      {
+        "id": "cloudru",
+        "label": "Cloud.ru",
+        "providers": [
+          "Cloud.ru"
+        ],
+        "color": "#666666",
+        "rotation": 0
+      },
+      {
+        "id": "ixcellerate",
+        "label": "IXcellerate",
+        "providers": [
+          "IXcellerate"
+        ],
+        "color": "#666666",
+        "rotation": 0
+      },
+      {
+        "id": "tata-communications",
+        "label": "Tata Communications",
+        "providers": [
+          "Tata Communications"
+        ],
+        "color": "#666666",
+        "rotation": 0
+      }
+    ],
+    "hex_radius_in": 0.0234375
+  },
+  "swarm": {
+    "renderer": "alpha60-carto-geo",
+    "collection": "dan-da-dan-210",
+    "cache_archive": "/mnt/gold/src/alpha60-samples-cache.gold/dan-da-dan-210.cache/cache.20260304.tar.xz",
+    "fill_opacity": 0.05,
+    "location_label_outline": false,
+    "partitions": {
+      "ge-1080p": "1080p / 4K",
+      "lt-1080p": "720p / SD"
+    },
+    "japan_preserve_physical_circle_area": true
+  },
+  "japan": {
+    "viewport_inches": [
+      0.7,
+      2,
+      28,
+      15
+    ],
+    "boundary_padding_inches": 0.2
+  }
+}

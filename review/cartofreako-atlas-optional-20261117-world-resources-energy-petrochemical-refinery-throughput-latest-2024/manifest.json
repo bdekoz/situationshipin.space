@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-resources-energy-petrochemical-refinery-throughput-latest-2024",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-resources-energy-petrochemical-refinery-throughput-latest-2024",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/maps/world/png/resources-energy-petrochemical-refinery-throughput-latest-2024.png",
+    "sha256": "f36877abfd6c3809cbf04cd305d07d72fa93ebfe7bc0a75fdcf70c337cd388a7",
+    "bytes": 1907647,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

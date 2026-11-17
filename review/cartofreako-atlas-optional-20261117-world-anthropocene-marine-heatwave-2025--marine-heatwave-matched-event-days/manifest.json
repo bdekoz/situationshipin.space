@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-anthropocene-marine-heatwave-2025--marine-heatwave-matched-event-days",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-anthropocene-marine-heatwave-2025--marine-heatwave-matched-event-days",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/climate/marine-heatwave/matched/event_days/maps/world/pdf/anthropocene-marine-heatwave-2025.pdf",
+    "sha256": "3ea81a7a268a3028c1a2dadbdf21408b02d224cfc9317c5c6b42b2b5d54454b2",
+    "bytes": 237808073,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

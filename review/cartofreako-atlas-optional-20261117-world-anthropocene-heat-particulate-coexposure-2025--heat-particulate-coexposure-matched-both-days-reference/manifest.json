@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-anthropocene-heat-particulate-coexposure-2025--heat-particulate-coexposure-matched-both-days-reference",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-anthropocene-heat-particulate-coexposure-2025--heat-particulate-coexposure-matched-both-days-reference",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/climate/heat-particulate-coexposure/matched/both_days/reference/maps/world/pdf/anthropocene-heat-particulate-coexposure-2025.pdf",
+    "sha256": "c9ec6c3e4add894d687484bea0d916969c431ee936402c38590099ab78519ecf",
+    "bytes": 1832168,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

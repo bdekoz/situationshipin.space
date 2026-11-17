@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-resources-human-upper-secondary-attainment-latest-2025-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-resources-human-upper-secondary-attainment-latest-2025-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/legends/world/png/resources-human-upper-secondary-attainment-latest-2025-legend.png",
+    "sha256": "577687d2c07142829f722fe031c5116b5eb9827553454fa1f7c4a1692bec2381",
+    "bytes": 528978,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117",
+  "artifact_id": "cartofreako-atlas-optional-20261117",
+  "style": "cartofreako",
+  "source_media": null,
+  "proxy": null,
+  "document": {
+    "path": "/review/cartofreako-atlas-optional-20261117/index.html",
+    "sha256": "4d558ecd63c6885468ea5f45d7b6f0994b04579b99e279ffb49b60fd321ccfc4",
+    "format": "html",
+    "plan_stage": null,
+    "plan_pdf": null
+  }
+}

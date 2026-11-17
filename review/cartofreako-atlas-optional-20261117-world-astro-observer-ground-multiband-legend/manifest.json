@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-astro-observer-ground-multiband-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-astro-observer-ground-multiband-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/legends/world/png/astro-observer-ground-multiband-legend.png",
+    "sha256": "2e738726c6d91c886820d8af1086528e7e0ffd73b299395aa9da512cfcc7b955",
+    "bytes": 517764,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-network-groundstations",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-network-groundstations",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/maps/japan/png/network-groundstations.png",
+    "sha256": "3feb48ef76d796a97c07df0cd8e37b391cd4688f90e46c0c8b56b62640c7479a",
+    "bytes": 1019866,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

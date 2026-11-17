@@ -1,0 +1,683 @@
+{
+  "schema": "cartofreako-atlas-catalog-v1",
+  "reviewed_on": "2026-11-08",
+  "groups": [
+    {
+      "id": "projection-foundations",
+      "title": "Projection foundations"
+    },
+    {
+      "id": "networks",
+      "title": "Networks"
+    },
+    {
+      "id": "anthropocene",
+      "title": "Anthropocene"
+    },
+    {
+      "id": "sky-and-orbital-passes",
+      "title": "Sky and orbital passes"
+    },
+    {
+      "id": "resources-energy",
+      "title": "Energy resources"
+    },
+    {
+      "id": "resources-food",
+      "title": "Food resources"
+    },
+    {
+      "id": "resources-fauna",
+      "title": "Fauna resources"
+    },
+    {
+      "id": "resources-flora",
+      "title": "Flora resources"
+    },
+    {
+      "id": "resources-mineral",
+      "title": "Minerals"
+    },
+    {
+      "id": "resources-human",
+      "title": "Human resources"
+    },
+    {
+      "id": "prototypes",
+      "title": "Prototypes"
+    }
+  ],
+  "plates": [
+    {
+      "id": "geometry",
+      "title": "Native geometry",
+      "group": "projection-foundations",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "geometry",
+      "aliases": []
+    },
+    {
+      "id": "graticules",
+      "title": "Graticules",
+      "group": "projection-foundations",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "graticules",
+      "aliases": []
+    },
+    {
+      "id": "earth",
+      "title": "Earth",
+      "group": "projection-foundations",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "earth",
+      "aliases": []
+    },
+    {
+      "id": "water",
+      "title": "Water",
+      "group": "projection-foundations",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "water",
+      "aliases": []
+    },
+    {
+      "id": "bathymetry-roulette",
+      "title": "Bathymetry Roulette",
+      "group": "prototypes",
+      "lifecycle": "optional",
+      "maturity": "prototype",
+      "default": false,
+      "source_stem": "bathymetry-roulette",
+      "aliases": []
+    },
+    {
+      "id": "bathymetry-hamonshu",
+      "title": "Bathymetry Hamonshu",
+      "group": "prototypes",
+      "lifecycle": "optional",
+      "maturity": "prototype",
+      "default": false,
+      "source_stem": "bathymetry-hamonshu",
+      "aliases": []
+    },
+    {
+      "id": "cloud-atmosphere",
+      "title": "Atmosphere",
+      "group": "projection-foundations",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "cloud-atmosphere",
+      "aliases": [],
+      "selected_presentation": {
+        "root": "output/setouchi-futures-h3r5-20261106/print",
+        "settings": "config/setouchi-futures-20261106-h3r5.json",
+        "h3_resolution": 5,
+        "map_background": "#fcc553",
+        "inputs": [
+          {
+            "path": "config/setouchi-futures-20261106-h3r5.json",
+            "sha256": "fe14c21b5264e5aeb9363c045b58e0ef39a04d026bc150463069b931bb43ef76"
+          },
+          {
+            "path": "output/setouchi-futures-h3r5-20261106/print/legends/japan/cloud-atmosphere-legend.svg",
+            "sha256": "8cbbcfb26a19bee549c502c3f1f2a3e5640bed7d399937d32bbe9d6002932a57"
+          },
+          {
+            "path": "output/setouchi-futures-h3r5-20261106/print/legends/world/cloud-atmosphere-legend.svg",
+            "sha256": "39a97b033cbd7b8623558114f700578d326ad7d347e4df1264419798dc863332"
+          },
+          {
+            "path": "output/setouchi-futures-h3r5-20261106/print/maps/japan/cloud-atmosphere.svg",
+            "sha256": "8c1e1bb786195398568861afc677ef4ea2becba76927c30d4978e16b09b72334"
+          },
+          {
+            "path": "output/setouchi-futures-h3r5-20261106/print/maps/japan/layers/cloud-atmosphere-aerosol-optical-depth.png",
+            "sha256": "feb890408cd405d6d537a8ee0a5cc8f045f96e2131d183eaa39eab632705356f"
+          },
+          {
+            "path": "output/setouchi-futures-h3r5-20261106/print/maps/japan/layers/cloud-atmosphere-cloud-fraction.png",
+            "sha256": "287e38125ce377cb6197971bfa67c6785b485397b64ab7922b6d60025a6f5b66"
+          },
+          {
+            "path": "output/setouchi-futures-h3r5-20261106/print/maps/japan/layers/cloud-atmosphere-cloud-optical-thickness.png",
+            "sha256": "9475b1e12f9756abc7d786f6b2b4584c04876f245b3e5a63334377f3c22fdbee"
+          },
+          {
+            "path": "output/setouchi-futures-h3r5-20261106/print/maps/japan/layers/cloud-atmosphere-cloud-top-height.png",
+            "sha256": "0cb33624e96a4709bbf7d3dc000e19c98b6da07baf97a6036be515f5f2e998b6"
+          },
+          {
+            "path": "output/setouchi-futures-h3r5-20261106/print/maps/japan/layers/cloud-atmosphere-cloud-type.png",
+            "sha256": "dcd82da3e9789cfa9110b17cb275e0dc7d397e768a36d8dd28b09f6bbbe78d30"
+          },
+          {
+            "path": "output/setouchi-futures-h3r5-20261106/print/maps/japan/layers/cloud-atmosphere-precipitation-rate.png",
+            "sha256": "7c536c91d2c09cfe991c7c04bfea1096cd7e519d23494cbb0f5d3279ef422511"
+          },
+          {
+            "path": "output/setouchi-futures-h3r5-20261106/print/maps/japan/layers/cloud-atmosphere-surface-shortwave-radiation.png",
+            "sha256": "f53184f28879d8399913c04089d4c633277e856f210a64816b7b12545cbac386"
+          },
+          {
+            "path": "output/setouchi-futures-h3r5-20261106/print/maps/world/cloud-atmosphere.svg",
+            "sha256": "ab98f617f58b1e6b035930c75ccaab1fcb519749767eae2f1624d5e25ac155e6"
+          },
+          {
+            "path": "output/setouchi-futures-h3r5-20261106/print/maps/world/layers/cloud-atmosphere-aerosol-optical-depth.png",
+            "sha256": "46b1346ddecf9db0019dcccb3543c84d6d4539a0baa5ad967784bf02884ed58f"
+          },
+          {
+            "path": "output/setouchi-futures-h3r5-20261106/print/maps/world/layers/cloud-atmosphere-cloud-fraction.png",
+            "sha256": "d4e85664dd10431f74f39b118de5148f323be14ec3270d6ff191e3eeb9d956e1"
+          },
+          {
+            "path": "output/setouchi-futures-h3r5-20261106/print/maps/world/layers/cloud-atmosphere-cloud-optical-thickness.png",
+            "sha256": "6f8da714a0825a06ece1f4114e2189fcd5d08e6e3bad34c327161e8e3d695388"
+          },
+          {
+            "path": "output/setouchi-futures-h3r5-20261106/print/maps/world/layers/cloud-atmosphere-cloud-top-height.png",
+            "sha256": "ee94fdcdbb5023261039eb496b169010893cfb31e6298df172eeb11fc25fbe46"
+          },
+          {
+            "path": "output/setouchi-futures-h3r5-20261106/print/maps/world/layers/cloud-atmosphere-cloud-type.png",
+            "sha256": "59e96143b65b1643b227bbdc11521dcfc52c4b4d60ffeaba3380de5ed0d42afb"
+          },
+          {
+            "path": "output/setouchi-futures-h3r5-20261106/print/maps/world/layers/cloud-atmosphere-precipitation-rate.png",
+            "sha256": "c3182b0145a66053bd56451fad31944f963ba76cad39a4ba25c7fd584ec439d7"
+          },
+          {
+            "path": "output/setouchi-futures-h3r5-20261106/print/maps/world/layers/cloud-atmosphere-surface-shortwave-radiation.png",
+            "sha256": "4b10ea7a38d91c8fdc9e5e44d614941a36096b22b13456aaa948dd1d0c1e939f"
+          }
+        ]
+      }
+    },
+    {
+      "id": "network-cdn",
+      "title": "Network CDN / source records",
+      "group": "networks",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "network-cdn",
+      "aliases": []
+    },
+    {
+      "id": "network-fiber",
+      "title": "Network Fiber",
+      "group": "networks",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "network-fiber",
+      "aliases": []
+    },
+    {
+      "id": "network-groundstations",
+      "title": "Network Groundstations",
+      "group": "networks",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "network-groundstations",
+      "aliases": []
+    },
+    {
+      "id": "network-swarm-ge-1080p",
+      "title": "Network swarm / Dan Da Dan / 1080p / 4K",
+      "group": "networks",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "network-swarm-ge-1080p",
+      "aliases": []
+    },
+    {
+      "id": "network-swarm-lt-1080p",
+      "title": "Network swarm / Dan Da Dan / 720p / SD",
+      "group": "networks",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "network-swarm-lt-1080p",
+      "aliases": []
+    },
+    {
+      "id": "anthropocene-particulate-2025",
+      "title": "Particulate 2025",
+      "group": "anthropocene",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "anthropocene-particulate-2025",
+      "aliases": []
+    },
+    {
+      "id": "anthropocene-particulate-2026",
+      "title": "Particulate 2026",
+      "group": "anthropocene",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "anthropocene-particulate-2026",
+      "aliases": []
+    },
+    {
+      "id": "anthropocene-land-temperature-2025",
+      "title": "Land temperature records / 2025",
+      "group": "anthropocene",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "anthropocene-temperature-2025",
+      "aliases": [
+        "anthropocene-temperature-2025"
+      ]
+    },
+    {
+      "id": "anthropocene-land-temperature-2026",
+      "title": "Land temperature records / 2026",
+      "group": "anthropocene",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "anthropocene-temperature-2026",
+      "aliases": [
+        "anthropocene-temperature-2026"
+      ]
+    },
+    {
+      "id": "astro-all-sky",
+      "title": "Astronomy: all sky",
+      "group": "sky-and-orbital-passes",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "astro-all-sky",
+      "aliases": []
+    },
+    {
+      "id": "astro-observer-ground-multiband",
+      "title": "Astronomy: ground observer",
+      "group": "sky-and-orbital-passes",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "astro-observer-ground-multiband",
+      "aliases": []
+    },
+    {
+      "id": "astro-observer-hubble",
+      "title": "Astronomy: Hubble observer",
+      "group": "sky-and-orbital-passes",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "astro-observer-hubble",
+      "aliases": []
+    },
+    {
+      "id": "orbital-technosphere-global",
+      "title": "Orbital Technosphere: global",
+      "group": "sky-and-orbital-passes",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "orbital-technosphere-global",
+      "aliases": []
+    },
+    {
+      "id": "orbital-technosphere-observer",
+      "title": "Orbital Technosphere: observer",
+      "group": "sky-and-orbital-passes",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "orbital-technosphere-observer",
+      "aliases": []
+    },
+    {
+      "id": "resources-energy-solar-capacity-2025",
+      "title": "Installed solar generating capacity",
+      "group": "resources-energy",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "resources-energy-solar-capacity-2025",
+      "aliases": []
+    },
+    {
+      "id": "resources-energy-wind-capacity-2025",
+      "title": "Installed wind generating capacity",
+      "group": "resources-energy",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "resources-energy-wind-capacity-2025",
+      "aliases": []
+    },
+    {
+      "id": "resources-energy-nuclear-operating-capacity-2024",
+      "title": "Operating nuclear net electrical capacity",
+      "group": "resources-energy",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "resources-energy-nuclear-operating-capacity-2024",
+      "aliases": []
+    },
+    {
+      "id": "resources-energy-petrochemical-refinery-throughput-latest-2024",
+      "title": "Petroleum refinery throughput",
+      "group": "resources-energy",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "resources-energy-petrochemical-refinery-throughput-latest-2024",
+      "aliases": []
+    },
+    {
+      "id": "resources-food-food-production-index-latest-2024",
+      "title": "Food production index",
+      "group": "resources-food",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "resources-food-food-production-index-latest-2024",
+      "aliases": []
+    },
+    {
+      "id": "resources-fauna-fisheries-production-latest-2024",
+      "title": "Total fisheries production",
+      "group": "resources-fauna",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "resources-fauna-fisheries-production-latest-2024",
+      "aliases": []
+    },
+    {
+      "id": "anthropocene-coral-reef-threat-2011",
+      "title": "Coral reef threat / 2011 historical baseline",
+      "group": "anthropocene",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "resources-fauna-coral-reef-threat-2011",
+      "aliases": [
+        "resources-fauna-coral-reef-threat-2011"
+      ]
+    },
+    {
+      "id": "resources-flora-forest-area-percent-2024",
+      "title": "Forest area",
+      "group": "resources-flora",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "resources-flora-forest-area-percent-2024",
+      "aliases": []
+    },
+    {
+      "id": "resources-mineral-rare-earth-mine-production-2025",
+      "title": "Rare-earth mine production",
+      "group": "resources-mineral",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "resources-mineral-rare-earth-mine-production-2025",
+      "aliases": []
+    },
+    {
+      "id": "resources-human-population-under-30-2024",
+      "title": "Population under age 30",
+      "group": "resources-human",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "resources-human-population-under-30-2024",
+      "aliases": []
+    },
+    {
+      "id": "resources-human-population-over-60-2024",
+      "title": "Population age 60 and older",
+      "group": "resources-human",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "resources-human-population-over-60-2024",
+      "aliases": []
+    },
+    {
+      "id": "resources-human-upper-secondary-attainment-latest-2025",
+      "title": "Completed ISCED 3 or higher, age 25+",
+      "group": "resources-human",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "resources-human-upper-secondary-attainment-latest-2025",
+      "aliases": []
+    },
+    {
+      "id": "resources-human-bachelors-attainment-latest-2024",
+      "title": "Completed ISCED 6 or higher, age 25+",
+      "group": "resources-human",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "resources-human-bachelors-attainment-latest-2024",
+      "aliases": []
+    },
+    {
+      "id": "resources-human-resident-patent-applications-per-million-2019-2021",
+      "title": "Resident patent applications",
+      "group": "resources-human",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "resources-human-resident-patent-applications-per-million-2019-2021",
+      "aliases": []
+    },
+    {
+      "id": "resources-energy-petroleum-eia-liquids-2025",
+      "title": "Petroleum and other liquid fuels / 2025",
+      "group": "resources-energy",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "petroleum-eia-liquids-2025",
+      "aliases": [
+        "petroleum-eia-liquids-2025"
+      ]
+    },
+    {
+      "id": "resources-energy-petroleum-opec-liquids-projection-2030",
+      "title": "OPEC total liquids / 2030 projection",
+      "group": "resources-energy",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "petroleum-opec-liquids-projection-2030",
+      "aliases": [
+        "petroleum-opec-liquids-projection-2030"
+      ]
+    },
+    {
+      "id": "resources-energy-petroleum-opec-country-coverage-2026",
+      "title": "World Oil Outlook / country coverage",
+      "group": "resources-energy",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "petroleum-opec-country-coverage-2026",
+      "aliases": [
+        "petroleum-opec-country-coverage-2026"
+      ]
+    },
+    {
+      "id": "resources-mineral-lithium-mine-production-2025",
+      "title": "Lithium mine production / 2025 estimate",
+      "group": "resources-mineral",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "resources-mineral-lithium-mine-production-2025",
+      "aliases": []
+    },
+    {
+      "id": "resources-mineral-uranium-mine-production-2024",
+      "title": "Uranium mine production / 2024",
+      "group": "resources-mineral",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "resources-mineral-uranium-mine-production-2024",
+      "aliases": []
+    },
+    {
+      "id": "resources-mineral-mine-production-comparison",
+      "title": "Mineral mine production / source-specific years",
+      "group": "resources-mineral",
+      "lifecycle": "standard",
+      "maturity": "accepted-experimental",
+      "default": true,
+      "source_stem": "resources-mineral-mine-production-comparison",
+      "aliases": []
+    },
+    {
+      "id": "anthropocene-water-temperature-2025",
+      "title": "Sea-surface temperature and coral heat stress / 2025",
+      "group": "anthropocene",
+      "lifecycle": "optional",
+      "maturity": "prototype",
+      "default": false,
+      "source_stem": "anthropocene-water-temperature-2025",
+      "aliases": []
+    },
+    {
+      "id": "anthropocene-water-temperature-anomaly-2025",
+      "title": "Sea-surface temperature anomaly / 2025",
+      "group": "anthropocene",
+      "lifecycle": "optional",
+      "maturity": "prototype",
+      "default": false,
+      "source_stem": "anthropocene-water-temperature-anomaly-2025",
+      "aliases": []
+    },
+    {
+      "id": "anthropocene-water-temperature-2026",
+      "title": "Sea-surface temperature and coral heat stress / 2026",
+      "group": "anthropocene",
+      "lifecycle": "optional",
+      "maturity": "prototype",
+      "default": false,
+      "source_stem": "anthropocene-water-temperature-2026",
+      "aliases": []
+    },
+    {
+      "id": "anthropocene-water-temperature-anomaly-2026",
+      "title": "Sea-surface temperature anomaly / 2026",
+      "group": "anthropocene",
+      "lifecycle": "optional",
+      "maturity": "prototype",
+      "default": false,
+      "source_stem": "anthropocene-water-temperature-anomaly-2026",
+      "aliases": []
+    },
+    {
+      "id": "anthropocene-marine-heatwave-2025",
+      "title": "Marine heatwaves / 2025",
+      "group": "anthropocene",
+      "lifecycle": "optional",
+      "maturity": "prototype",
+      "default": false,
+      "source_stem": "anthropocene-marine-heatwave-2025",
+      "aliases": []
+    },
+    {
+      "id": "anthropocene-marine-heatwave-2026",
+      "title": "Marine heatwaves / 2026",
+      "group": "anthropocene",
+      "lifecycle": "optional",
+      "maturity": "prototype",
+      "default": false,
+      "source_stem": "anthropocene-marine-heatwave-2026",
+      "aliases": []
+    },
+    {
+      "id": "anthropocene-ocean-thermal-season-2025",
+      "title": "Ocean thermal seasons / 2025",
+      "group": "anthropocene",
+      "lifecycle": "optional",
+      "maturity": "prototype",
+      "default": false,
+      "source_stem": "anthropocene-ocean-thermal-season-2025",
+      "aliases": []
+    },
+    {
+      "id": "anthropocene-ocean-thermal-season-2026",
+      "title": "Ocean thermal seasons / 2026",
+      "group": "anthropocene",
+      "lifecycle": "optional",
+      "maturity": "prototype",
+      "default": false,
+      "source_stem": "anthropocene-ocean-thermal-season-2026",
+      "aliases": []
+    },
+    {
+      "id": "anthropocene-coastal-compound-heat-2025",
+      "title": "Date-aligned coastal heat / 2025",
+      "group": "anthropocene",
+      "lifecycle": "optional",
+      "maturity": "prototype",
+      "default": false,
+      "source_stem": "anthropocene-coastal-compound-heat-2025",
+      "aliases": []
+    },
+    {
+      "id": "anthropocene-coastal-compound-heat-2026",
+      "title": "Date-aligned coastal heat / 2026",
+      "group": "anthropocene",
+      "lifecycle": "optional",
+      "maturity": "prototype",
+      "default": false,
+      "source_stem": "anthropocene-coastal-compound-heat-2026",
+      "aliases": []
+    },
+    {
+      "id": "anthropocene-heat-particulate-coexposure-2025",
+      "title": "India heat–particulate co-occurrence / 2025",
+      "group": "anthropocene",
+      "lifecycle": "optional",
+      "maturity": "prototype",
+      "default": false,
+      "source_stem": "anthropocene-heat-particulate-coexposure-2025",
+      "aliases": []
+    },
+    {
+      "id": "anthropocene-heat-particulate-coexposure-2026",
+      "title": "India heat–particulate co-occurrence / 2026",
+      "group": "anthropocene",
+      "lifecycle": "optional",
+      "maturity": "prototype",
+      "default": false,
+      "source_stem": "anthropocene-heat-particulate-coexposure-2026",
+      "aliases": []
+    }
+  ],
+  "notes": [
+    "Default selection and presentation grouping are independent of legacy data-preparation family names.",
+    "Dated editions and source filenames remain historical evidence; aliases resolve them to the current canonical plate ID.",
+    "The water-temperature stage-one previews remain optional until exhibition/default promotion is approved."
+  ]
+}

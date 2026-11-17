@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-resources-energy-solar-capacity-2025-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-resources-energy-solar-capacity-2025-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/legends/world/png/resources-energy-solar-capacity-2025-legend.png",
+    "sha256": "84872beb5d04cc54ce46e1c7fab138ec160a416683ed5d5806349927beffb50b",
+    "bytes": 580687,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

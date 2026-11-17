@@ -24,7 +24,9 @@ const maximumFileBytes = 16 * 1024 * 1024;
 // plates, with lossless 3840-pixel images and compact gallery thumbnails.
 // Raised 2026-10-30 to 272 MiB for the explicitly requested complete
 // Here Lies Trouble listening proxy (15,777,591 bytes); 16 MiB per file stays.
-const maximumPayloadBytes = 272 * 1024 * 1024;
+// Raised 2026-11-17 to 640 MiB for issue #83: the complete current
+// atlas-optional World/Japan maps and legends, retaining the October round.
+const maximumPayloadBytes = 640 * 1024 * 1024;
 // .mp3 added 2026-08-14 for audio review artifacts (Kokoro female voice bank).
 // .txt added 2026-08-18 for the W3 canonical transcript review container.
 // Editable screenplay companions are bounded and hash-checked like other assets.

@@ -34,6 +34,10 @@ jobs:
           node-version: '22'
       - name: Test browser catalog, publication and provider staging
         run: node --test scripts/*.test.mjs
+      - name: Test atlas source admission and sheet pairing
+        run: |
+          python3 -m pip install Pillow==12.3.0
+          PYTHONDONTWRITEBYTECODE=1 python3 scripts/test-cartofreako-atlas.py
       - name: Validate review site before building
         run: node scripts/check-review-site.mjs
       - name: Setup Pages

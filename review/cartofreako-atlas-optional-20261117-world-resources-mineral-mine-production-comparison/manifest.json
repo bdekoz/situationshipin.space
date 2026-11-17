@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-resources-mineral-mine-production-comparison",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-resources-mineral-mine-production-comparison",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/maps/world/png/resources-mineral-mine-production-comparison.png",
+    "sha256": "b57ae0d79651a43e8c14900ba80f62852b8c05620abee7c2c4e14e989e384c15",
+    "bytes": 2086015,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

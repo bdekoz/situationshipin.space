@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-network-fiber-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-network-fiber-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/legends/world/png/network-fiber-legend.png",
+    "sha256": "6342a197c6d4a507a79e1591b988a801a8f92e00d5ed0d44d38db4afb430e5c8",
+    "bytes": 604583,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

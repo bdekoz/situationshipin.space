@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-resources-mineral-rare-earth-mine-production-2025-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-resources-mineral-rare-earth-mine-production-2025-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/legends/japan/png/resources-mineral-rare-earth-mine-production-2025-legend.png",
+    "sha256": "fb28b216802c74a12e818a4e9be1725930449ea90d5564dca32f3d181b1473d3",
+    "bytes": 514941,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

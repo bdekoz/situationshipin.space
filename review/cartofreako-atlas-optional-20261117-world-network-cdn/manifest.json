@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-network-cdn",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-network-cdn",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/maps/world/png/network-cdn.png",
+    "sha256": "ab77c884763e51328fa1fee709e56eb61d63a5d28fe8d5c5b74c88e47da748d6",
+    "bytes": 4695235,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

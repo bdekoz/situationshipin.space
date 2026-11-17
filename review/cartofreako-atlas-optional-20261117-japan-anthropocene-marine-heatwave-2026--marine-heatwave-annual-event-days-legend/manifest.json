@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-marine-heatwave-2026--marine-heatwave-annual-event-days-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-marine-heatwave-2026--marine-heatwave-annual-event-days-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/climate/marine-heatwave/annual/event_days/legends/japan/pdf/anthropocene-marine-heatwave-2026-legend.pdf",
+    "sha256": "420b99aaebeb8d96b3bbc039a290c573f0587e8ced2d04412db218cf5843bfbe",
+    "bytes": 19803,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

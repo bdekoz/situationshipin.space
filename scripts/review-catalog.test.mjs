@@ -59,7 +59,7 @@ test("earlier plans remain available through the archive control", () => {
   const context = browserLogic();
   context.fixture = catalog;
   vm.runInContext("state.catalog = fixture; state.category = 'planning'; elements.showArchived = {checked: false};", context);
-  assert.ok(context.categoryItems().every(item => item.generation_state !== "STALE"));
+  assert.ok(context.categoryItems().every(item => !["STALE", "SUPERSEDED"].includes(item.generation_state)));
   vm.runInContext("elements.showArchived.checked = true", context);
   assert.equal(context.categoryItems().length, catalog.items.filter(item => item.review_category === "planning").length);
 });

@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-resources-human-population-over-60-2024-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-resources-human-population-over-60-2024-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/legends/world/png/resources-human-population-over-60-2024-legend.png",
+    "sha256": "4edbfb12039aa532b12547ad2da2f7ef8e7a55cc9b797a0a5457321e202248a4",
+    "bytes": 495915,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

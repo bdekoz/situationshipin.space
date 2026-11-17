@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-resources-flora-forest-area-percent-2024",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-resources-flora-forest-area-percent-2024",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/maps/world/png/resources-flora-forest-area-percent-2024.png",
+    "sha256": "be0066ec25608cab64b64ed8a9fa4b6055e8fff55cddbae49004124e34ff68a0",
+    "bytes": 1938093,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

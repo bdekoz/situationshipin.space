@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-resources-human-population-under-30-2024",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-resources-human-population-under-30-2024",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/maps/japan/png/resources-human-population-under-30-2024.png",
+    "sha256": "0f3470f62c584c26d08f306f4c478b5f10e1d67c09d0a1dcf117a2f887a7b059",
+    "bytes": 1275052,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

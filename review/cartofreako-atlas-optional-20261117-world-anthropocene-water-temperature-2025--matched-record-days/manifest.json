@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-anthropocene-water-temperature-2025--matched-record-days",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-anthropocene-water-temperature-2025--matched-record-days",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/ocean/matched/record-days/maps/world/pdf/anthropocene-water-temperature-2025.pdf",
+    "sha256": "d518e1676d85b6f0e21e9d0c30345c31a8d9aaa218e421acd7df85eb29674841",
+    "bytes": 156834675,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

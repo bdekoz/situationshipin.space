@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-anthropocene-ocean-thermal-season-2025--ocean-thermal-season-season-onset-departure",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-anthropocene-ocean-thermal-season-2025--ocean-thermal-season-season-onset-departure",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/climate/ocean-thermal-season/season/onset_departure/maps/world/pdf/anthropocene-ocean-thermal-season-2025.pdf",
+    "sha256": "78ce270bf9aaa5937e08f1c8178376fd9316c364cf4148ff10408018e306f7a7",
+    "bytes": 176569749,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

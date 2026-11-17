@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-ocean-thermal-season-2026--ocean-thermal-season-season-onset-departure-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-ocean-thermal-season-2026--ocean-thermal-season-season-onset-departure-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/climate/ocean-thermal-season/season/onset_departure/legends/japan/pdf/anthropocene-ocean-thermal-season-2026-legend.pdf",
+    "sha256": "e211b610195718947cdd2581e653333a9c6de028439bd05a7fdbb03a2c1d6248",
+    "bytes": 23553,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

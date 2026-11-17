@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-resources-mineral-rare-earth-mine-production-2025",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-resources-mineral-rare-earth-mine-production-2025",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/maps/world/png/resources-mineral-rare-earth-mine-production-2025.png",
+    "sha256": "3ce05788ad155e5fcda496bec16461a6d9f067de6a5f82b76d5b2e59cda4c22e",
+    "bytes": 2010931,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

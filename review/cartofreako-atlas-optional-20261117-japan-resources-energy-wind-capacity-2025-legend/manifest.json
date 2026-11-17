@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-resources-energy-wind-capacity-2025-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-resources-energy-wind-capacity-2025-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/legends/japan/png/resources-energy-wind-capacity-2025-legend.png",
+    "sha256": "a36ca0ec466dd51afcd0b42623aec84ff6eff3e205fcd2c34448ec9e2dd6e129",
+    "bytes": 526138,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

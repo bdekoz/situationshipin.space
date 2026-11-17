@@ -8,15 +8,19 @@ let scope = 'both';
 function filter() {
   const query = search.value.trim().toLowerCase();
   let shown = 0;
+  let sheets = 0;
   for (const card of cards) {
-    card.hidden = !card.dataset.search.includes(query);
+    const columns = [...card.querySelectorAll('[data-plate-scope]')];
+    card.hidden = !card.dataset.search.includes(query)
+      || !columns.some(column => scope === 'both' || column.dataset.plateScope === scope);
     if (!card.hidden) shown++;
-    for (const figure of card.querySelectorAll('[data-plate-scope]')) {
-      figure.hidden = scope !== 'both' && figure.dataset.plateScope !== scope;
+    for (const column of columns) {
+      column.hidden = scope !== 'both' && column.dataset.plateScope !== scope;
+      if (!card.hidden && !column.hidden) sheets += Number(column.dataset.sheetCount || 1);
     }
   }
   document.getElementById('plates').classList.toggle('single-scope', scope !== 'both');
-  count.textContent = `${shown} of ${cards.length} subjects · ${shown * (scope === 'both' ? 2 : 1)} plates shown`;
+  count.textContent = `${shown} of ${cards.length} subjects · ${sheets} ${collection.plates.some(plate => plate.kind) ? 'sheets' : 'plates'} shown`;
   document.getElementById('empty').hidden = shown > 0;
 }
 search.addEventListener('input', filter);
@@ -54,7 +58,7 @@ document.getElementById('download-collection-review').addEventListener('click', 
   saveNotes();
   const reviews = collection.plates.map(plate => {
     const saved = readReview(plate.artifact_id);
-    return { review_id: plate.artifact_id, scope: plate.scope, subject: plate.stem,
+    return { review_id: plate.artifact_id, scope: plate.scope, kind: plate.kind || 'map', subject: plate.stem,
       proxy_sha256: plate.sha256, source_sha256: plate.source_sha256,
       decision: saved?.decision || 'UNREVIEWED', note: saved?.note || '',
       saved_at: saved?.saved_at || null };

@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-resources-flora-forest-area-percent-2024",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-resources-flora-forest-area-percent-2024",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/maps/japan/png/resources-flora-forest-area-percent-2024.png",
+    "sha256": "17a9daee086fee204fa2c9609c78a6acae6fe24f2c37f19f733847dbefbf343e",
+    "bytes": 1194654,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-ocean-thermal-season-2025--ocean-thermal-season-season-observed-warm-days",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-ocean-thermal-season-2025--ocean-thermal-season-season-observed-warm-days",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/climate/ocean-thermal-season/season/observed_warm_days/maps/japan/pdf/anthropocene-ocean-thermal-season-2025.pdf",
+    "sha256": "cc094f51a0974a0e087904f53c80c1c06befe806523c09aa0e6929994b1b6955",
+    "bytes": 18420064,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

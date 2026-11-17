@@ -1,0 +1,175 @@
+{
+  "status": "passed",
+  "source_files_verified": 15171,
+  "independent_calendar_baselines": 20,
+  "independent_cell_periods": 60,
+  "reconciled_event_rows": 5098859,
+  "independent_season_cell_years": 40,
+  "coastal_pairs": 8993,
+  "line_of_sight_memberships": 110119,
+  "independent_pair_years": 16,
+  "independent_land_ocean_baselines": 8,
+  "station_day_rows": 13558,
+  "canonical_monitors": 25,
+  "station_month_coverage_rows": 848,
+  "independent_hourly_checks": [
+    {
+      "station": "openaq:10599",
+      "date": "2025-12-31",
+      "hours": 24,
+      "raw_sha256": {
+        "location-10599-20251230.csv.gz": "d088505586a087c25498cbe9f604fc0d880e3622a7ad97e0b029eeffcf44c56c",
+        "location-10599-20251231.csv.gz": "ae10abfc5140d6a3b65090c6144793f1252476128e7518fa82cda225e67d8b84",
+        "location-10599-20260101.csv.gz": "ed4ffed02f05f42d7914873767beacacd64c4b0f26ce66b578963b420c9f1499"
+      }
+    },
+    {
+      "station": "openaq:10599",
+      "date": "2026-11-07",
+      "hours": 24,
+      "raw_sha256": {
+        "location-10599-20261106.csv.gz": "6c820742d1f1a9889862975923d465bbd47d9910831b2bf78e59c8d93a6c3cf6",
+        "location-10599-20261107.csv.gz": "ea86ba0f6c0a86109f771300dba6f73b5991d2657c5648d0ccff479fb3a35431"
+      }
+    },
+    {
+      "station": "openaq:10919",
+      "date": "2025-12-31",
+      "hours": 24,
+      "raw_sha256": {
+        "location-10919-20251230.csv.gz": "61ad0e96d927cd5653dc11e0991889dfe3eb263029f5f6c7730de282d5aff9da",
+        "location-10919-20251231.csv.gz": "783fea33ef5776464019d8ab90627a487df1841fe2ccc33061ec4c9bc99318c8",
+        "location-10919-20260101.csv.gz": "8023a1de88cdcc529d556b317b6a38fb639607fc2208694516d3e33af950af60"
+      }
+    },
+    {
+      "station": "openaq:10919",
+      "date": "2026-11-07",
+      "hours": 23,
+      "raw_sha256": {
+        "location-10919-20261106.csv.gz": "690a1ff46df1aad701139899c092dd9418c5a53edd998cc9a536c189c84dd33a",
+        "location-10919-20261107.csv.gz": "5a6d3a3e3b7547d34651caa6248bb841f479db8eab16319b06b36df542444783"
+      }
+    },
+    {
+      "station": "openaq:235",
+      "date": "2025-12-31",
+      "hours": 24,
+      "raw_sha256": {
+        "location-235-20251230.csv.gz": "37f51d20134ef1265681a43f512085d336ee2099f52f7721e04c0699a2dcb685",
+        "location-235-20251231.csv.gz": "40b2b25dbafdefe1975610d2cbf56a203a239fe7ec5cde562269309023e663a3",
+        "location-235-20260101.csv.gz": "83692e8ea67debc444be328117de52eb332be79b34525a9455ca7402f4622c6c"
+      }
+    },
+    {
+      "station": "openaq:235",
+      "date": "2026-11-07",
+      "hours": 24,
+      "raw_sha256": {
+        "location-235-20261106.csv.gz": "a53cb7721e01183e225436a0f40135533d62e8008d43af3a55a5a1308e5f2bf5",
+        "location-235-20261107.csv.gz": "417b571cd8cd4455cff70323b737978bce6e3308b57e3848b72c93c7efd8a573"
+      }
+    },
+    {
+      "station": "openaq:407",
+      "date": "2025-12-31",
+      "hours": 24,
+      "raw_sha256": {
+        "location-407-20251230.csv.gz": "6d448130c5cb70e12e7917a5da2137da58f27fcf6c224a4946ea30772c9d1ef9",
+        "location-407-20251231.csv.gz": "d0d45f953fd39cf747aad99c7ba19691d75c75ff684af9ed320f3e0e77671f25",
+        "location-407-20260101.csv.gz": "da3f77a48265ef8c49e62540c21f8d87a3dd4511703ca8d33fe6ad7ccf4ce233"
+      }
+    },
+    {
+      "station": "openaq:407",
+      "date": "2026-11-05",
+      "hours": 24,
+      "raw_sha256": {
+        "location-407-20261104.csv.gz": "2af159858e51f08073db232a880061bbfd5e464a203d916ba812530da2c9ee9a",
+        "location-407-20261105.csv.gz": "7adbe1ddbade2d30fdb0c9449a0472e05829e28bb132e2ae93bce62ae9eb1af1",
+        "location-407-20261106.csv.gz": "697bac001ca8750a8335cbdcc6d24f12c4d574f74500182839000b7e85d70e4c"
+      }
+    },
+    {
+      "station": "openaq:5569",
+      "date": "2025-12-31",
+      "hours": 24,
+      "raw_sha256": {
+        "location-5569-20251230.csv.gz": "c88346edf3d77c60127b052f312e8ca5c02dad65947ad3023a86a62f61a76390",
+        "location-5569-20251231.csv.gz": "6519c0d6d6294115f24bcac5a97108d14407707e5015e43278cb37c106c2547e",
+        "location-5569-20260101.csv.gz": "9355a70b058c8edde7ffe41f10d5b966eb55aa7019152097071ae9831503a245"
+      }
+    },
+    {
+      "station": "openaq:5569",
+      "date": "2026-11-07",
+      "hours": 24,
+      "raw_sha256": {
+        "location-5569-20261106.csv.gz": "95daace7b7fcd6a3b7fc1f34038b227f5f562d61746d118ac4170173ac3100a6",
+        "location-5569-20261107.csv.gz": "4288fdd162d5f99f1d1555d8b282be54e80cf0210309951710cb157451fdab57"
+      }
+    },
+    {
+      "station": "openaq:5665",
+      "date": "2025-12-31",
+      "hours": 23,
+      "raw_sha256": {
+        "location-5665-20251230.csv.gz": "327620a303b1c105643260490f2e74552036150b35bd60915d5e4ef1fe2d88a9",
+        "location-5665-20251231.csv.gz": "2debfe1b62afd8ba6eb6e8247806d615444f1b7e6bfb4cabf75c7e01f7cc3052",
+        "location-5665-20260101.csv.gz": "1e2fed8a4aebbfa6f4a7c085da378fdaad9c87126cb05c07ac0d61d413f94a2b"
+      }
+    },
+    {
+      "station": "openaq:5665",
+      "date": "2026-11-02",
+      "hours": 24,
+      "raw_sha256": {
+        "location-5665-20261101.csv.gz": "37fda97db54f91926b9e5367c11839d1c6d58a176cfac4b6d02af26dab4b5944",
+        "location-5665-20261102.csv.gz": "062d816579090a9688a4c0ae41c1d9423340efa30439ee3f2c9ee5383f789c1e",
+        "location-5665-20261103.csv.gz": "f8919d7576e3172ff0f76090ae9c707a13819477cfe60430232377b6a955ca09"
+      }
+    },
+    {
+      "station": "openaq:8118",
+      "date": "2025-12-31",
+      "hours": 24,
+      "raw_sha256": {
+        "location-8118-20251230.csv.gz": "d76c782560369d7e3b01cab3d7fce280254c2f66def998d9146d10a6be3084c9",
+        "location-8118-20251231.csv.gz": "8325275917d925af8dcec57b8077458def421b8fbd8e1118b3c83b5d92f06326",
+        "location-8118-20260101.csv.gz": "d004692c07035a0ca9296f0d8b1651ee859d68c480a9679883c24246e74d84f0"
+      }
+    },
+    {
+      "station": "openaq:8118",
+      "date": "2026-11-07",
+      "hours": 24,
+      "raw_sha256": {
+        "location-8118-20261106.csv.gz": "4e82d0feef60c615cf1c9e5b6cc238fe5b2ea09e5fbf3244b6452e25bfafa5e0",
+        "location-8118-20261107.csv.gz": "24e7a3a736552df9415999c02560f7e5080d7fabbe169f9432243ec36f391f1c"
+      }
+    }
+  ],
+  "matched_station_days": 3809,
+  "data_only": false,
+  "method_config_sha256": "e552a33ef8474f156c29cbcad9ce9e8247b375e18dbd55dfd77f74a411b9b0b9",
+  "checked_at": "2026-11-12T21:47:58.440204-08:00",
+  "implementation_sha256": {
+    "scripts/ocean_stage_2.py": "9a6e186e5ca5bfc1d1b9aac44e0c49c698f795cccf90c683d861cc4008eea488",
+    "scripts/ocean-stage-2-kernels.cc": "f684dad834664de7fd4bff86def816825120735344c0662544d9915f284e0076",
+    "scripts/project-stage-2-points.cc": "ead9352a474753732dc7de102021731a0721b00e585ca6b5f6558ab81837aff9",
+    "scripts/prepare-ocean-climate-baseline.py": "f93f67f4b6cc238550910f6819c36aaa6e5df54516005005a0670eaa424ad7d7",
+    "scripts/prepare-marine-heatwaves.py": "51f0f221e9be94b62875791b75876ffa6f7fbd15740e8f7e1b75918f9962162a",
+    "scripts/prepare-ocean-thermal-seasons.py": "543815b0c73e4d851003cd0fcdd32d07ab2766255cf7aacd9e36be520444072d",
+    "scripts/prepare-coastal-compound-heat.py": "66d8271291ae3bb4a155f44b6908891853f4ef36e348c72249edda799c43a215",
+    "scripts/prepare-heat-particulate-coexposure.py": "39d157748a209f6166db12f0379e9ffbd3f51f63e7e0d5b681a0a421970ba00f",
+    "scripts/analyze-ocean-stage-2.py": "4adf4cb395fa26e22f10a109f4f193e97377212dfa8f449af1034f71a992f9d1",
+    "scripts/build-ocean-stage-2-plates.py": "fc08fb1a1355763a757a832b5aede55f4e57b8e474e8fb2fa152045080ec6e19",
+    "scripts/fetch-ocean-stage-2.py": "dadb0a423e30c777d6c80a3b71f19036699e084f3cab0a5f7920b14ae14575a4",
+    "scripts/validate-ocean-stage-2.py": "b66e41d4c30f875f4f385ae8c73b555f3b02589274f1b5657186c867bd8047c9",
+    "tests/test-ocean-stage-2.py": "f3be31973a831e6f5ee6ae86b22d2295915add14c0431550aa9bf28f10b81d09"
+  },
+  "exported_sheets": 128,
+  "measure_period_views": 32,
+  "scientific_figures": 4,
+  "index_links_checked": 455
+}

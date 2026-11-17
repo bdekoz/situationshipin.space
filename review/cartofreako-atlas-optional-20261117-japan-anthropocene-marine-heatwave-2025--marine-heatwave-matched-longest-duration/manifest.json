@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-marine-heatwave-2025--marine-heatwave-matched-longest-duration",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-marine-heatwave-2025--marine-heatwave-matched-longest-duration",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/climate/marine-heatwave/matched/longest_duration/maps/japan/pdf/anthropocene-marine-heatwave-2025.pdf",
+    "sha256": "53631fd4b4d39fba8a0c807c65af177e228d191e19e509c991c8c7a1c6c73f02",
+    "bytes": 24004628,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

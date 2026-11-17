@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-anthropocene-marine-heatwave-2026--marine-heatwave-annual-event-days",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-anthropocene-marine-heatwave-2026--marine-heatwave-annual-event-days",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/climate/marine-heatwave/annual/event_days/maps/world/pdf/anthropocene-marine-heatwave-2026.pdf",
+    "sha256": "72fc8874a508eb6c5c65c0dc5fe31f84a41d3b00e9190c2c4efa7c26d387bc9f",
+    "bytes": 262036294,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

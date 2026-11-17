@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-resources-human-population-over-60-2024",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-resources-human-population-over-60-2024",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/maps/japan/png/resources-human-population-over-60-2024.png",
+    "sha256": "91f35ecba8b833b1b484c91caea9431f7c726afe46a0f0a4c9ec210a881777d3",
+    "bytes": 1231230,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

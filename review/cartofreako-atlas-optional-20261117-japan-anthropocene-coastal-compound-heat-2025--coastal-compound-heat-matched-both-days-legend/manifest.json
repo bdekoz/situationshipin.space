@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-coastal-compound-heat-2025--coastal-compound-heat-matched-both-days-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-coastal-compound-heat-2025--coastal-compound-heat-matched-both-days-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/climate/coastal-compound-heat/matched/both_days/legends/japan/pdf/anthropocene-coastal-compound-heat-2025-legend.pdf",
+    "sha256": "a39c4131392c287dc13bdb971030b3080d307ecbded9498386ddf797ac55af52",
+    "bytes": 20114,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

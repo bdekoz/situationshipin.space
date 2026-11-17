@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-water-temperature-2025--matched-record-days",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-water-temperature-2025--matched-record-days",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/ocean/matched/record-days/maps/japan/pdf/anthropocene-water-temperature-2025.pdf",
+    "sha256": "af1404c8d3d218d57cac45facb5f22ebc8aa03f2500ae2bfedc67d588d89f9ac",
+    "bytes": 17169861,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

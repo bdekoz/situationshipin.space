@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-particulate-2025",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-particulate-2025",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/atlas/maps/japan/png/anthropocene-particulate-2025.png",
+    "sha256": "2e8c7218073e0166b5fc447a82b985923ae572659509f0e0baaebf8ff83eafce",
+    "bytes": 6435641,
+    "format": "png",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

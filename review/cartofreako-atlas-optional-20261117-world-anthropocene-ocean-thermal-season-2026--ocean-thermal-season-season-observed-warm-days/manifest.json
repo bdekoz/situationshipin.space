@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-anthropocene-ocean-thermal-season-2026--ocean-thermal-season-season-observed-warm-days",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-anthropocene-ocean-thermal-season-2026--ocean-thermal-season-season-observed-warm-days",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/climate/ocean-thermal-season/season/observed_warm_days/maps/world/pdf/anthropocene-ocean-thermal-season-2026.pdf",
+    "sha256": "d6429ed69d353ec35d718f8b0d3f0bfd01da95a4c28e015e1f43e738fef9a28d",
+    "bytes": 212949518,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

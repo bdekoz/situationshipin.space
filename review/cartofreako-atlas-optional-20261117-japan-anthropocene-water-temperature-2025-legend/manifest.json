@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-water-temperature-2025-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-japan-anthropocene-water-temperature-2025-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/ocean/legends/japan/pdf/anthropocene-water-temperature-2025-legend.pdf",
+    "sha256": "a0702794067649569cbb1ddb52417e72df17c54a4658348b1b2cb9aa2129c1a7",
+    "bytes": 24644,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}

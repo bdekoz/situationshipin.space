@@ -1,0 +1,17 @@
+{
+  "schema_version": "situationship-review-page-1",
+  "review_id": "cartofreako-atlas-optional-20261117-world-anthropocene-coastal-compound-heat-2026--coastal-compound-heat-annual-fraction-legend",
+  "artifact_id": "cartofreako-atlas-optional-20261117-world-anthropocene-coastal-compound-heat-2026--coastal-compound-heat-annual-fraction-legend",
+  "style": "cartofreako",
+  "source_media": null,
+  "source_artifact": {
+    "repository": "bdekoz/cartofreako",
+    "path": "output/data-edition/20261111/anthropocene-optional/climate/coastal-compound-heat/annual/fraction/legends/world/pdf/anthropocene-coastal-compound-heat-2026-legend.pdf",
+    "sha256": "4786ed1d38b5f39416c91c42dd10ab2c1fe98b2488d1d200b16e14a051c3a4e9",
+    "bytes": 20094,
+    "format": "pdf",
+    "published": false
+  },
+  "proxy": null,
+  "document": null
+}
